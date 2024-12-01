@@ -233,7 +233,9 @@ const Page = () => {
       />
 
       <ExpertsAwait />
-      <FAQSection faqs={faqs} />
+      <div style={{ marginTop: "6rem" }}>
+        <FAQSection faqs={faqs} />
+      </div>
       <Contact />
     </>
   );

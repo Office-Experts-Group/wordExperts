@@ -207,11 +207,6 @@ const schema = {
         "https://www.linkedin.com/company/office-experts-group",
         "https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw",
       ],
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
     },
   ],
 };
@@ -232,7 +227,9 @@ const Page = () => {
         p="Our Quick Parts solutions allow your team to easily insert prebuilt content blocks, ensuring faster document creation, consistency, and improved productivity across the board."
       />
       <ExpertsAwait />
-      <FAQSection faqs={faqs} />
+      <div style={{ marginTop: "6rem" }}>
+        <FAQSection faqs={faqs} />
+      </div>
       <Contact />
     </>
   );
