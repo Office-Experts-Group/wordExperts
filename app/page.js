@@ -11,9 +11,13 @@ import Brands from "../components/Brands";
 import Promo from "../components/Promo";
 import Contact from "../components/Contact";
 
+import { getHomePageSchema } from "../utils/testimonialSchemaGenerator";
+import { testimonials } from "../testimonials";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    ...getHomePageSchema(testimonials)["@graph"],
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/",
@@ -159,7 +163,7 @@ const Page = () => {
       <CTAMain />
       <IsRight />
       <SolutionsCarousel />
-      <Testimonials />
+      <Testimonials testimonials={testimonials} />
       <Brands />
       <CTAFull />
       <Promo

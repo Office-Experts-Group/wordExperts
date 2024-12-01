@@ -7,6 +7,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -46,6 +47,7 @@ a,
 span,
 button,
 input,
+label,
 textarea {
   font-family: var(--font-aptos), sans-serif;
 }
@@ -98,7 +100,6 @@ button {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  text-transform: uppercase;
 }
 
 .btn {
@@ -108,19 +109,19 @@ button {
   border-radius: 0.1rem;
   color: #fff;
   display: inline-block;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1px;
   line-height: 1;
   margin-bottom: 0;
   padding: 13px 25px;
   text-align: center;
-
   touch-action: manipulation;
   vertical-align: middle;
   white-space: nowrap;
   position: relative;
   z-index: 1;
   overflow: hidden;
+  text-transform: uppercase;
 
   &::before {
     content: "";

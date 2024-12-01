@@ -1,16 +1,16 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import AnimateOnScroll from "./AnimateOnScroll";
 
 import styles from "../styles/expertsAwait.module.css";
 
 import bg from "../public/service-bg.webp";
-import computer from "../public/icons/computerRed.png";
-import training from "../public/icons/training.png";
-import support from "../public/icons/support.png";
-import handShake from "../public/icons/handShake.png";
-import Link from "next/link";
+import computer from "../public/icons/computerBlue.webp";
+import training from "../public/icons/supportBlue.webp";
+import support from "../public/icons/supportBlue.webp";
+import handShake from "../public/icons/handShakeBlue.webp";
 
 const ExpertsAwait = () => {
   return (

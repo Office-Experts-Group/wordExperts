@@ -6,6 +6,15 @@
   gap: 1.5rem;
   flex-wrap: wrap;
   justify-content: center;
+  @include tablet {
+    padding: 3rem 2vw 4rem 2vw;
+  }
+  @include phoneLandscape {
+    display: none;
+  }
+  @include phone {
+    display: none;
+  }
 }
 
 .card {
@@ -23,6 +32,13 @@
     flex-direction: column;
     flex: 1;
     cursor: pointer;
+  }
+
+  @include phone {
+    display: none;
+  }
+  @include phoneLandscape {
+    display: none;
   }
 }
 
@@ -49,7 +65,6 @@
     line-height: 1.5rem;
     color: $black;
     font-weight: 900;
-
     min-height: 2.75rem;
     transition: color 0.3s ease-in-out;
     margin: 0;
@@ -57,11 +72,14 @@
 
   p {
     color: $darkGrayText;
-
     font-weight: 700;
     font-size: 0.8rem;
     letter-spacing: 1px;
     margin-bottom: 0.5rem;
+  }
+
+  @include phone {
+    padding: 1rem;
   }
 }
 
@@ -70,6 +88,9 @@
   width: 60px;
   height: 60px;
   transition: filter 0.3s ease-in-out;
+  @include phone {
+    display: none;
+  }
 }
 
 .imageWrapper {
@@ -77,6 +98,9 @@
   width: 100%;
   aspect-ratio: 7 / 4;
   overflow: hidden; // This is crucial for containing the zoom
+  @include phone {
+    display: none;
+  }
 }
 
 .mainImage {
@@ -118,4 +142,8 @@
   100% {
     transform: scale(1);
   }
+}
+
+.hidden {
+  display: none;
 }

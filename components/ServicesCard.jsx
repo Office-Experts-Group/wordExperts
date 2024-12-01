@@ -7,7 +7,7 @@ import styles from "../styles/servicesCard.module.css";
 
 const ServicesCard = ({ src, alt, h3, li, link }) => {
   return (
-    <div className={styles.card}>
+    <div className={styles.card} data-card>
       <div className={styles.cardImage}>
         <Image
           src={src}

@@ -3,6 +3,23 @@
 .solutions {
   background-color: $grayBGC;
   padding: 6rem 0;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.solutionsCopy {
+  background-color: $grayBGC;
+  padding: 0 0 6rem 0;
+  margin-top: -6rem;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.6vw;
+  }
 }
 
 .title {
@@ -11,16 +28,16 @@
     color: $theme;
     letter-spacing: 1px;
     font-weight: 500;
-
+    text-transform: uppercase;
     margin-bottom: -0.4rem;
   }
 
   h2 {
     font-size: 3rem;
     color: #1e1e1e;
-
+    text-transform: uppercase;
     font-weight: 900;
-    margin: 1.25rem 0 2.5rem 0;
+    margin: 1.25rem 0 3.5rem 0;
   }
 
   div {
@@ -28,12 +45,6 @@
     width: -moz-fit-content;
     width: fit-content;
   }
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .cardWrapper {
@@ -135,7 +146,7 @@
   h3 {
     font-size: 1rem;
     font-weight: 700;
-
+    text-transform: uppercase;
     color: $offWhite;
   }
 

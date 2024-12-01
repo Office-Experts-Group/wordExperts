@@ -12,6 +12,7 @@ import Segment4Repeat from "./(components)/Segment4Repeat";
 import FAQSection from "../../components/FAQSection";
 
 import faqs from "../../faqs/training";
+import Contents from "./(components)/Contents";
 
 const schema = {
   "@context": "https://schema.org",
@@ -154,6 +155,7 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <Contents />
       <ServiceHero title="Microsoft Word Help and Training" />
       <ServicePageCards />
       <PageSegmentMain />

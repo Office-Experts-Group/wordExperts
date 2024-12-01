@@ -6,7 +6,6 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 import styles from "../../../styles/pageSegment.module.css";
 
 import migrate from "../../../public/migrate600x400.webp";
-import Link from "next/link";
 
 const PageSegmentMain = () => {
   return (

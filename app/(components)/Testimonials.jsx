@@ -4,22 +4,20 @@ import styles from "../../styles/testimonialsSection.module.css";
 
 import TestimonialCard from "../../components/TestimonialCard";
 
-import { testimonials } from "../../testimonials";
+const Testimonials = ({ testimonials }) => {
+  const getRandomTestimonials = (count = 10) => {
+    // Filter out testimonials without images or content first
+    const validTestimonials = testimonials.filter(
+      (testimonial) => testimonial.image && testimonial.content.trim()
+    );
 
-const getRandomTestimonials = (count = 10) => {
-  // Filter out testimonials without images or content first
-  const validTestimonials = testimonials.filter(
-    (testimonial) => testimonial.image && testimonial.content.trim()
-  );
+    // Create a shuffled copy of the filtered testimonials
+    const shuffled = [...validTestimonials].sort(() => 0.5 - Math.random());
 
-  // Create a shuffled copy of the filtered testimonials
-  const shuffled = [...validTestimonials].sort(() => 0.5 - Math.random());
+    // Return the requested number of testimonials
+    return shuffled.slice(0, count);
+  };
 
-  // Return the requested number of testimonials
-  return shuffled.slice(0, count);
-};
-
-const Testimonials = () => {
   // Get 10 random testimonials (or adjust the number as needed)
   const selectedTestimonials = getRandomTestimonials(10);
 
@@ -33,7 +31,7 @@ const Testimonials = () => {
       <div className={styles.box}>
         <h2>Client Testimonials</h2>
       </div>
-      <h3>What they say?</h3>
+      <h3>What They Say?</h3>
 
       <div
         className={styles.testimonialsWrapper}

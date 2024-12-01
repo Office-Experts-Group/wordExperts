@@ -7,8 +7,8 @@ import SocialLinks from "./SocialLinks";
 import styles from "../styles/footerLogo.module.css";
 
 import logo from "../public/logo200x86.webp";
-import msg from "../public/icons/msg.png";
-import emailSlide from "../public/icons/emailSlide.png";
+import msg from "../public/icons/msgBlue.webp";
+import emailSlide from "../public/icons/emailSlideBlue.webp";
 
 const FooterLogoSection = () => {
   return (
@@ -26,9 +26,9 @@ const FooterLogoSection = () => {
           <Image src={msg} alt="msg" width={18} height={18} />
           1300 10 28 10
         </Link>
-        <Link href={"mailto:consult@officeexperts.com.au"}>
+        <Link href={"mailto:consult@wordexperts.com.au"}>
           <Image src={emailSlide} alt="msg" width={22} height={13} />
-          consult@officeexperts.com.au
+          consult@wordexperts.com.au
         </Link>
       </div>
 

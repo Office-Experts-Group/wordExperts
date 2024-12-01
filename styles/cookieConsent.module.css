@@ -12,6 +12,11 @@
     max-width: 28rem;
   }
 }
+@media (max-width: 768px) {
+  .container {
+    max-width: 95vw;
+  }
+}
 
 .alert {
   position: relative;
@@ -23,7 +28,7 @@
 
 .title {
   font-size: 1.125rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 

@@ -7,8 +7,7 @@ import styles from "../../styles/header.module.css";
 
 import { navigationData } from "../../navigationData";
 
-import MobileNav from "./MobileNav";
-import HomeDropdown from "../../components/HomeDropdown";
+import MobileNav from "../../components/MobileNavigation/MobileNav";
 import ServicesDropdown from "../../components/ServicesDropdown";
 import SocialLinks from "../../components/SocialLinks";
 
@@ -19,9 +18,14 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
+    // Check initial scroll position
+    const initialScroll = window.scrollY > 10;
+    setIsScrolled(initialScroll);
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -37,22 +41,21 @@ const Header = () => {
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
       <div
-        className={styles.logo}
-        style={
-          isScrolled
-            ? {
-                transform: "scale(0.5)",
-                transition: "transform 0.3s ease-in-out",
-              }
-            : {}
-        }
+        className={`${styles.logo} ${isScrolled ? styles.scrolledLogo : ""}`}
       >
-        <Image src={logo} alt="Office experts logo" width={300} height={130} />
+        <Link href="/">
+          <Image
+            src={logo}
+            alt="Office experts logo"
+            width={300}
+            height={130}
+            className={styles.logoImg}
+          />
+        </Link>
       </div>
 
-      <div className={styles.mobNav}>
-        <MobileNav />
-      </div>
+      {/* <MobileNav /> */}
+      <MobileNav />
 
       <nav className={styles.nav}>
         <ul className={styles.navList}>
@@ -65,7 +68,6 @@ const Header = () => {
             <Link href="/">
               <p className={styles.navLink}>Home</p>
             </Link>
-            {activeDropdown === "home" && <HomeDropdown />}
           </li>
 
           {/* Services dropdown */}
@@ -76,6 +78,30 @@ const Header = () => {
           >
             <p className={styles.navLink}>Services</p>
             {activeDropdown === "services" && <ServicesDropdown />}
+          </li>
+
+          {/* About Us dropdown */}
+          <li
+            className={styles.navItem}
+            onMouseEnter={() => handleMouseEnter("aboutUs")}
+            onMouseLeave={handleMouseLeave}
+          >
+            <div className={styles.navLink}>
+              <span>About Us</span>
+            </div>
+            {activeDropdown === "aboutUs" && (
+              <div className={styles.dropdown}>
+                <ul>
+                  {navigationData.aboutUs.items.map((item, index) => (
+                    <li key={index}>
+                      <Link href={item.href}>
+                        <span>{item.label}</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </li>
 
           {/* Static Links */}
