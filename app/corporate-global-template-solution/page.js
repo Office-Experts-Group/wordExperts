@@ -226,7 +226,9 @@ const Page = () => {
       <BlackSegment />
       <PageSegment4 />
       <PageSegment5 />
-      <FAQSection faqs={faqs} />
+      <div style={{ marginTop: "6rem" }}>
+        <FAQSection faqs={faqs} />
+      </div>
       <Contact />
     </>
   );

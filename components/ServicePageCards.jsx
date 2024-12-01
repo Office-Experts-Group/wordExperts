@@ -6,7 +6,7 @@ import styles from "../styles/servicePageCards.module.css";
 // Import icons
 import stuckIcon from "../public/icons/computerBlue.webp";
 import issuesIcon from "../public/icons/supportBlue.webp";
-import expertsIcon from "../public/icons/deal.png";
+import expertsIcon from "../public/icons/handShakeBlue.webp";
 import migrateIcon from "../public/icons/ideaBlue.webp";
 
 // Import main images

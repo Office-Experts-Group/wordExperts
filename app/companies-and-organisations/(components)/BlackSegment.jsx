@@ -10,7 +10,7 @@ import bg from "../../../public/service-bg.webp";
 import stuckIcon from "../../../public/icons/computerBlue.webp";
 import issuesIcon from "../../../public/icons/supportBlue.webp";
 import migrateIcon from "../../../public/icons/ideaBlue.webp";
-import expertsIcon from "../../../public/icons/deal.png";
+import expertsIcon from "../../../public/icons/handShakeBlue.webp";
 
 const BlackSegment = () => {
   return (
