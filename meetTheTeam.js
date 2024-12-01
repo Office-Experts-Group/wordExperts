@@ -49,6 +49,36 @@ export const teamMembers = [
     image: rochelle,
   },
   {
+    name: "Damien",
+    role: "SENIOR WORD/POWERPOINT DESIGNER",
+    skills: ["Word", "PowerPoint"],
+    image: damien,
+  },
+  {
+    name: "Aleisha",
+    role: "SENIOR WORD/POWERPOINT DESIGNER",
+    skills: ["Word", "PowerPoint", "InDesign"],
+    image: aleisha,
+  },
+  {
+    name: "Nae",
+    role: "SENIOR WORD/POWERPOINT DESIGNER",
+    skills: ["Word", "PowerPoint", "Photoshop", "Illustrator", "Indesign"],
+    image: nae,
+  },
+  {
+    name: "Renee",
+    role: "SENIOR WORD/POWERPOINT DESIGNER",
+    skills: ["Word", "PowerPoint"],
+    image: renee,
+  },
+  {
+    name: "Lani",
+    role: "SENIOR WORD/POWERPOINT DESIGNER",
+    skills: ["Word", "PowerPoint"],
+    image: lani,
+  },
+  {
     name: "Joshua",
     role: "OPERATIONS MANAGER",
     skills: [
@@ -114,12 +144,6 @@ export const teamMembers = [
       "Office 365",
     ],
     image: marcello,
-  },
-  {
-    name: "Damien",
-    role: "SENIOR WORD/POWERPOINT DESIGNER",
-    skills: ["Word", "PowerPoint"],
-    image: damien,
   },
   {
     name: "Stephen",
@@ -192,12 +216,6 @@ export const teamMembers = [
     image: paulD,
   },
   {
-    name: "Aleisha",
-    role: "SENIOR WORD/POWERPOINT DESIGNER",
-    skills: ["Word", "PowerPoint", "InDesign"],
-    image: aleisha,
-  },
-  {
     name: "Andreas",
     role: "SENIOR ANALYST PROGRAMMER",
     skills: [
@@ -258,18 +276,6 @@ export const teamMembers = [
     image: jason,
   },
   {
-    name: "Nae",
-    role: "SENIOR WORD/POWERPOINT DESIGNER",
-    skills: ["Word", "PowerPoint", "Photoshop", "Illustrator", "Indesign"],
-    image: nae,
-  },
-  {
-    name: "Renee",
-    role: "SENIOR WORD/POWERPOINT DESIGNER",
-    skills: ["Word", "PowerPoint"],
-    image: renee,
-  },
-  {
     name: "Linda",
     role: "SENIOR ANALYST PROGRAMMER",
     skills: ["Excel", "VBA", "Power BI"],
@@ -292,13 +298,6 @@ export const teamMembers = [
     role: "SENIOR ANALYST PROGRAMMER",
     skills: ["Excel", "Word", "Access", "PowerPoint", "VBA", "VSTO"],
     image: penny,
-  },
-
-  {
-    name: "Lani",
-    role: "SENIOR WORD/POWERPOINT DESIGNER",
-    skills: ["Word", "PowerPoint"],
-    image: lani,
   },
   {
     name: "Jamie",
