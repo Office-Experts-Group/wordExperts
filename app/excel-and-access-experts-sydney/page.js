@@ -1,5 +1,6 @@
 import React from "react";
 import ServiceHero from "../../components/ServiceHero";
+import ContactLocationSegment from "../../components/ContactLocationSegment";
 import CTAMainProps from "../(components)/CTAMainProps";
 import LocationPages from "../(components)/LocationPages";
 import LocationPromos from "../(components)/LocationPromos";

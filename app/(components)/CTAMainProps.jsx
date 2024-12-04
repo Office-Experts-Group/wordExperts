@@ -63,7 +63,10 @@ const CTAMainProps = ({ location }) => {
               </p>
             </div>
 
-            <Link href="/about-us" className={styles.link}>
+            <Link
+              href="https://www.officeexperts.com.au/about-us"
+              className={styles.link}
+            >
               Discover More
             </Link>
           </div>
