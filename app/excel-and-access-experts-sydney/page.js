@@ -150,6 +150,8 @@ const schema = {
 };
 
 const Page = () => {
+  const location = "Sydney";
+
   return (
     <>
       <script
