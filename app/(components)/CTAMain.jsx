@@ -48,7 +48,7 @@ const CTAMain = () => {
                 </svg>
               </div>
               <div className={styles.phone}>
-                <p>Get A Free Consultation</p>
+                <p>Get a free consultation</p>
                 <a href="tel:1300102810">
                   <h3>1300 102 810</h3>
                 </a>
@@ -63,7 +63,7 @@ const CTAMain = () => {
               </p>
             </div>
 
-            <Link href="/training" className={styles.link}>
+            <Link href="https//officeexperts.com.au" className={styles.link}>
               Discover More
             </Link>
           </div>

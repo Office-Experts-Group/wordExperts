@@ -142,11 +142,6 @@ const schema = {
         "https://www.linkedin.com/company/office-experts-group",
         "https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw",
       ],
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
     },
   ],
 };
