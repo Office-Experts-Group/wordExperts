@@ -9,6 +9,9 @@ import FAQSection from "../../components/FAQSection";
 
 import faqs from "../../faqs/government-departments";
 
+import deskGraph from "../../public/pageHeros/deskGraph.webp";
+import graph from "../../public/pageHeros/mob/graph.webp";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -86,12 +89,12 @@ const schema = {
       "@id": "https://www.wordexperts.com.au/#organization",
       name: "Word Experts Group",
       url: "https://www.wordexperts.com.au/",
-      telephone: "1300 12 20 38",
+      telephone: "1300 122 038",
       email: "consult@wordexperts.com.au",
       contactPoint: [
         {
           "@type": "ContactPoint",
-          telephone: "1300 12 20 38",
+          telephone: "1300 122 038",
           contactType: "customer service",
           email: "consult@wordexperts.com.au",
           availableLanguage: ["en", "en-AU"],
@@ -172,7 +175,13 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <ServiceHero title="Government Departments" />
+      <ServiceHero
+        title="Government Departments"
+        desktopImage={deskGraph}
+        mobileImage={graph}
+        altDesk={"graphs on a table"}
+        altMob={"graphs on a table"}
+      />
       <PageSegmentMain />
       <Segment4Repeat />
       <ExpertsAwait />

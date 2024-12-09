@@ -10,6 +10,9 @@ import Contact from "../../components/Contact";
 
 import faqs from "../../faqs/corporate-identity";
 
+import invoice from "../../public/pageHeros/invoice.webp";
+import codingMob from "../../public/pageHeros/mob/codingMob.webp";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -100,12 +103,12 @@ const schema = {
       "@id": "https://www.wordexperts.com.au/#organization",
       name: "Word Experts Group",
       url: "https://www.wordexperts.com.au/",
-      telephone: "1300 12 20 38",
+      telephone: "1300 122 038",
       email: "consult@wordexperts.com.au",
       contactPoint: [
         {
           "@type": "ContactPoint",
-          telephone: "1300 12 20 38",
+          telephone: "1300 122 038",
           contactType: "customer service",
           email: "consult@wordexperts.com.au",
           availableLanguage: ["en", "en-AU"],
@@ -170,11 +173,6 @@ const schema = {
         "https://www.linkedin.com/company/office-experts-group",
         "https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw",
       ],
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
     },
   ],
 };
@@ -186,7 +184,13 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <ServiceHero title="Corporate Identity" />
+      <ServiceHero
+        title="Corporate Identity"
+        desktopImage={invoice}
+        mobileImage={codingMob}
+        altDesk={"spreadsheet on a computer screen"}
+        altMob={"code being written on a computer"}
+      />
       <PageSegmentMain />
       <PageSegment4 />
       <PageSegment5 />

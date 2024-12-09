@@ -141,12 +141,12 @@ const schema = {
       "@id": "https://www.wordexperts.com.au/#organization",
       name: "Word Experts Group",
       url: "https://www.wordexperts.com.au/",
-      telephone: "1300 12 20 38",
+      telephone: "1300 122 038",
       email: "consult@wordexperts.com.au",
       contactPoint: [
         {
           "@type": "ContactPoint",
-          telephone: "1300 12 20 38",
+          telephone: "1300 122 038",
           contactType: "customer service",
           email: "consult@wordexperts.com.au",
           availableLanguage: ["en", "en-AU"],
@@ -210,11 +210,6 @@ const schema = {
         "https://www.linkedin.com/company/office-experts-group",
         "https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw",
       ],
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
     },
   ],
 };
@@ -234,7 +229,6 @@ const Page = () => {
         p="Our automation solutions make document creation faster and more consistent, allowing your team to focus on high-priority work while we handle the repetitive tasks."
       />
       <ExpertsAwait />
-
       <FAQSection faqs={faqs} />
       <Contact />
     </>

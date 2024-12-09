@@ -4,7 +4,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 0 6rem 0;
+  padding: 6rem 0;
 
   h2 {
     margin-bottom: 3rem;
@@ -12,19 +12,15 @@
   }
   @include phone {
     max-width: 90vw;
-    padding: 0rem 0rem 6rem 0rem;
   }
   @include phoneLandscape {
     max-width: 90vw;
-    padding: 0rem 0rem 6rem 0rem;
   }
   @include tablet {
     max-width: 90vw;
-    padding: 0rem 0rem 6rem 0rem;
   }
   @include desktop {
     max-width: 90vw;
-    padding: 0rem 0rem 6rem 0rem;
   }
 }
 

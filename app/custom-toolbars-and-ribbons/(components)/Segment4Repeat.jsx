@@ -5,7 +5,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment4.module.css";
 
-import template from "../../../public/template450x300.webp";
+import template from "../../../public/board600x450.webp";
 
 const Segment4Repeat = () => {
   const checkItems = [

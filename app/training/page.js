@@ -10,9 +10,12 @@ import PageSegment4 from "./(components)/PageSegment4";
 import PageSegment5 from "./(components)/PageSegment5";
 import Segment4Repeat from "./(components)/Segment4Repeat";
 import FAQSection from "../../components/FAQSection";
+import Contents from "./(components)/Contents";
 
 import faqs from "../../faqs/training";
-import Contents from "./(components)/Contents";
+
+import support from "../../public/pageHeros/support.webp";
+import coffeeMob from "../../public/pageHeros/mob/coffeeMob.webp";
 
 const schema = {
   "@context": "https://schema.org",
@@ -70,12 +73,12 @@ const schema = {
       "@id": "https://www.wordexperts.com.au/#organization",
       name: "Word Experts Group",
       url: "https://www.wordexperts.com.au/",
-      telephone: "1300 12 20 38",
+      telephone: "1300 122 038",
       email: "consult@wordexperts.com.au",
       contactPoint: [
         {
           "@type": "ContactPoint",
-          telephone: "1300 12 20 38",
+          telephone: "1300 122 038",
           contactType: "customer service",
           email: "consult@wordexperts.com.au",
           availableLanguage: ["en", "en-AU"],
@@ -139,11 +142,6 @@ const schema = {
         "https://www.linkedin.com/company/office-experts-group",
         "https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw",
       ],
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
     },
   ],
 };
@@ -156,7 +154,13 @@ const Page = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <Contents />
-      <ServiceHero title="Microsoft Word Help and Training" />
+      <ServiceHero
+        title="Microsoft Word Help and Training"
+        desktopImage={support}
+        mobileImage={coffeeMob}
+        altDesk={"support"}
+        altMob={"coffee cup and laptop"}
+      />
       <ServicePageCards />
       <PageSegmentMain />
       <PageSegment8 />

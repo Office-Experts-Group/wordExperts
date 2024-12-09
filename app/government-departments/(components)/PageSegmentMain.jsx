@@ -5,7 +5,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment.module.css";
 
-import AiLady from "../../../public/AiLady600x400.webp";
+import programmer from "../../../public/programmer600x400.webp";
 
 const PageSegmentMain = () => {
   return (
@@ -13,7 +13,7 @@ const PageSegmentMain = () => {
       <div className={styles.imgWrapper} style={{ height: "fit-content" }}>
         <AnimateOnScroll animation="slide-left" duration={1} delay={0}>
           <Image
-            src={AiLady}
+            src={programmer}
             alt="Image of a files leaving a computer"
             width={600}
             height={400}

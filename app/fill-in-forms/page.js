@@ -9,6 +9,9 @@ import FAQSection from "../../components/FAQSection";
 
 import faqs from "../../faqs/fill-in-forms";
 
+import penPoint from "../../public/pageHeros/penPoint.webp";
+import glassesMob from "../../public/pageHeros/mob/glassesMob.webp";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -84,12 +87,12 @@ const schema = {
       "@id": "https://www.wordexperts.com.au/#organization",
       name: "Word Experts Group",
       url: "https://www.wordexperts.com.au/",
-      telephone: "1300 12 20 38",
+      telephone: "1300 122 038",
       email: "consult@wordexperts.com.au",
       contactPoint: [
         {
           "@type": "ContactPoint",
-          telephone: "1300 12 20 38",
+          telephone: "1300 122 038",
           contactType: "customer service",
           email: "consult@wordexperts.com.au",
           availableLanguage: ["en", "en-AU"],
@@ -153,11 +156,6 @@ const schema = {
         "https://www.linkedin.com/company/office-experts-group",
         "https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw",
       ],
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
     },
   ],
 };
@@ -169,7 +167,13 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <ServiceHero title="Fill In Forms" />
+      <ServiceHero
+        title="Fill In Forms"
+        desktopImage={penPoint}
+        mobileImage={glassesMob}
+        altDesk={"pointing a pen at a computer screen"}
+        altMob={"reading glasses on a table"}
+      />
       <PageSegmentMain />
       <Segment4Repeat />
       <ExpertsAwait />

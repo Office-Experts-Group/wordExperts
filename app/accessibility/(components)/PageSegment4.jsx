@@ -5,7 +5,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment4.module.css";
 
-import eyes from "../../../public/eyes600x394.webp";
+import presentation from "../../../public/presentation600x450.webp";
 
 const Segment4Repeat = () => {
   return (
@@ -36,10 +36,10 @@ const Segment4Repeat = () => {
         <AnimateOnScroll animation="scale-up" duration={1} delay={0.2}>
           <div className="image-wrapper">
             <Image
-              src={eyes}
-              alt="person clicking a computer mouse"
-              width={600}
-              height={394}
+              src={presentation}
+              alt="person giving a presentation with a white board"
+              width={450}
+              height={300}
             />
           </div>
         </AnimateOnScroll>

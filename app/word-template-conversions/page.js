@@ -10,6 +10,9 @@ import FAQSection from "../../components/FAQSection";
 
 import faqs from "../../faqs/template-conversions";
 
+import penPoint from "../../public/pageHeros/penPoint.webp";
+import seatMob from "../../public/pageHeros/mob/seatMob.webp";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -87,12 +90,12 @@ const schema = {
       "@id": "https://www.wordexperts.com.au/#organization",
       name: "Word Experts Group",
       url: "https://www.wordexperts.com.au/",
-      telephone: "1300 12 20 38",
+      telephone: "1300 122 038",
       email: "consult@wordexperts.com.au",
       contactPoint: [
         {
           "@type": "ContactPoint",
-          telephone: "1300 12 20 38",
+          telephone: "1300 122 038",
           contactType: "customer service",
           email: "consult@wordexperts.com.au",
           availableLanguage: ["en", "en-AU"],
@@ -156,11 +159,6 @@ const schema = {
         "https://www.linkedin.com/company/office-experts-group",
         "https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw",
       ],
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
     },
   ],
 };
@@ -172,7 +170,13 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <ServiceHero title="Word Template Conversions" />
+      <ServiceHero
+        title="Word Template Conversions"
+        desktopImage={penPoint}
+        mobileImage={seatMob}
+        altMob="Empty office environment"
+        altDesk="person pointing at a computer"
+      />
       <PageSegmentMain />
       <PageSegment4 />
       <PageSegment5 />

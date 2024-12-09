@@ -2,7 +2,7 @@ export const metadata = {
   title:
     "Word Template Creation | Word Document Creation | Microsoft Word Services | Word Experts",
   description:
-    "Professional Microsoft Word template creation services. Custom document templates that maintain brand consistency and improve productivity. Call 1300 12 20 38.",
+    "Professional Microsoft Word template creation services. Custom document templates that maintain brand consistency and improve productivity. Call 1300 122 038.",
   keywords: [
     // Core services
     "word template creation",

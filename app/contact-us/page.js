@@ -3,7 +3,6 @@ import React from "react";
 import Contact from "../../components/Contact";
 import ServiceHero from "../../components/ServiceHero";
 import CTAMain from "./(components)/CTAMain";
-import ContactDetails from "../../components/ContactDetails";
 
 const schema = {
   "@context": "https://schema.org",
@@ -122,12 +121,12 @@ const schema = {
       "@id": "https://www.wordexperts.com.au/#organization",
       name: "Word Experts Group",
       url: "https://www.wordexperts.com.au/",
-      telephone: "1300 12 20 38",
+      telephone: "1300 122 038",
       email: "consult@wordexperts.com.au",
       contactPoint: [
         {
           "@type": "ContactPoint",
-          telephone: "1300 12 20 38",
+          telephone: "1300 122 038",
           contactType: "customer service",
           email: "consult@wordexperts.com.au",
           availableLanguage: ["en", "en-AU"],
@@ -191,11 +190,6 @@ const schema = {
         "https://www.linkedin.com/company/office-experts-group",
         "https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw",
       ],
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
     },
   ],
 };
@@ -210,7 +204,6 @@ const Page = () => {
       <ServiceHero title="Contact Us" />
       <CTAMain />
       <Contact />
-      <ContactDetails />
     </>
   );
 };

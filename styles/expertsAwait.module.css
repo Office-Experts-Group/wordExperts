@@ -71,6 +71,11 @@
     gap: 1rem;
   }
 }
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .content {
+    gap: 2rem;
+  }
+}
 
 .bar {
   border-bottom: 6px solid #046999;
@@ -97,6 +102,11 @@
   font-size: 1.125rem;
   margin-top: 0.5rem;
 }
+@media screen and (min-width: 1024px) {
+  .text p {
+    margin-top: 4.5rem;
+  }
+}
 
 .center {
   place-self: center;
@@ -120,6 +130,11 @@
 }
 .link:hover p {
   color: #046999;
+}
+@media screen and (min-width: 1024px) {
+  .link {
+    margin-bottom: 1rem;
+  }
 }
 
 .cards {
@@ -203,21 +218,59 @@
   border-radius: 50%;
   transition: background-color 0.3s ease;
 }
-.card:hover {
-  background-color: #046999;
+@media (hover: hover) {
+  .card:hover {
+    background-color: #046999;
+  }
+  .card:hover .imageWrapper {
+    animation: bounce 1.2s cubic-bezier(0.28, 0.84, 0.42, 1);
+  }
+  .card:hover .imageWrapper img {
+    filter: brightness(0) invert(1);
+  }
+  .card:hover p {
+    color: #f8f8f8;
+  }
+  .card:hover::before {
+    background-color: #046999;
+    filter: brightness(1.2);
+  }
 }
-.card:hover .imageWrapper {
-  animation: bounce 1.2s cubic-bezier(0.28, 0.84, 0.42, 1);
+@media (max-width: 449px) {
+  .card[data-intersecting=true] {
+    background-color: #046999 !important;
+  }
+  .card[data-intersecting=true] .imageWrapper {
+    animation: bounce 1.2s cubic-bezier(0.28, 0.84, 0.42, 1);
+  }
+  .card[data-intersecting=true] .imageWrapper img {
+    filter: brightness(0) invert(1) !important;
+  }
+  .card[data-intersecting=true] p {
+    color: #f8f8f8 !important;
+  }
+  .card[data-intersecting=true]::before {
+    background-color: #046999 !important;
+    filter: brightness(1.2);
+  }
 }
-.card:hover .imageWrapper img {
-  filter: brightness(0) invert(1);
-}
-.card:hover p {
-  color: #f8f8f8;
-}
-.card:hover::before {
-  background-color: #046999;
-  filter: brightness(1.2);
+@media (min-width: 450px) and (max-width: 766px) {
+  .card[data-intersecting=true] {
+    background-color: #046999 !important;
+  }
+  .card[data-intersecting=true] .imageWrapper {
+    animation: bounce 1.2s cubic-bezier(0.28, 0.84, 0.42, 1);
+  }
+  .card[data-intersecting=true] .imageWrapper img {
+    filter: brightness(0) invert(1) !important;
+  }
+  .card[data-intersecting=true] p {
+    color: #f8f8f8 !important;
+  }
+  .card[data-intersecting=true]::before {
+    background-color: #046999 !important;
+    filter: brightness(1.2);
+  }
 }
 
 @keyframes bounce {

@@ -1,6 +1,7 @@
-"use client";
 import React from "react";
+
 import { navigationData } from "../../navigationData";
+
 import MobileNavList from "./MobileNavList";
 
 const getMenuItems = (currentView = "main") => {

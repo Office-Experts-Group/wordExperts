@@ -9,9 +9,12 @@ import PageSegment8 from "./(components)/PageSegment8";
 import PageSegment4 from "./(components)/PageSegment4";
 import PageSegment5 from "./(components)/PageSegment5";
 import FAQSection from "../../components/FAQSection";
+import Contents from "./(components)/Contents";
 
 import faqs from "../../faqs/corporate-solutions";
-import Contents from "./(components)/Contents";
+
+import deskGraph from "../../public/pageHeros/deskGraph.webp";
+import graph from "../../public/pageHeros/mob/graph.webp";
 
 const schema = {
   "@context": "https://schema.org",
@@ -132,12 +135,12 @@ const schema = {
       "@id": "https://www.wordexperts.com.au/#organization",
       name: "Word Experts Group",
       url: "https://www.wordexperts.com.au/",
-      telephone: "1300 12 20 38",
+      telephone: "1300 122 038",
       email: "consult@wordexperts.com.au",
       contactPoint: [
         {
           "@type": "ContactPoint",
-          telephone: "1300 12 20 38",
+          telephone: "1300 122 038",
           contactType: "customer service",
           email: "consult@wordexperts.com.au",
           availableLanguage: ["en", "en-AU"],
@@ -202,11 +205,6 @@ const schema = {
         "https://www.linkedin.com/company/office-experts-group",
         "https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw",
       ],
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
     },
   ],
 };
@@ -219,16 +217,20 @@ const Page = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <Contents />
-      <ServiceHero title="Corporate Global Template Solution" />
+      <ServiceHero
+        title="Corporate Global Template Solution"
+        desktopImage={deskGraph}
+        mobileImage={graph}
+        altDesk={"graphs"}
+        altMob={"graphs"}
+      />
       <ServicePageCards />
       <PageSegmentMain />
       <PageSegment8 />
       <BlackSegment />
       <PageSegment4 />
       <PageSegment5 />
-      <div style={{ marginTop: "6rem" }}>
-        <FAQSection faqs={faqs} />
-      </div>
+      <FAQSection faqs={faqs} />
       <Contact />
     </>
   );

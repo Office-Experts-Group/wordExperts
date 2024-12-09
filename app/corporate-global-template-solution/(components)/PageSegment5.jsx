@@ -5,7 +5,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment3.module.css";
 
-import template from "../../../public/template600x400.webp";
+import workGraph from "../../../public/graphWork600x400.webp";
 
 const PageSegment3 = () => {
   const checkItems = [
@@ -23,8 +23,8 @@ const PageSegment3 = () => {
     >
       <AnimateOnScroll animation="slide-left" duration={1} delay={0}>
         <Image
-          src={template}
-          alt="person clicking a computer mouse"
+          src={workGraph}
+          alt="two people looking at graphs"
           width={600}
           height={400}
         />

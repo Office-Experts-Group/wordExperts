@@ -62,6 +62,9 @@
     flex-direction: column;
     gap: 1rem;
   }
+  @include desktop {
+    gap: 2rem;
+  }
 }
 
 .bar {
@@ -87,6 +90,10 @@
     line-height: 2.5rem;
     font-size: 1.125rem;
     margin-top: 0.5rem;
+
+    @media screen and (min-width: "1024px") {
+      margin-top: 4.5rem;
+    }
   }
 }
 
@@ -115,6 +122,9 @@
   }
   &:hover p {
     color: $theme;
+  }
+  @media screen and (min-width: "1024px") {
+    margin-bottom: 1rem;
   }
 }
 
@@ -199,24 +209,74 @@
     transition: background-color 0.3s ease;
   }
 
-  &:hover {
-    background-color: $theme;
+  // Desktop hover effects
+  @media (hover: hover) {
+    &:hover {
+      background-color: $theme;
 
-    .imageWrapper {
-      animation: bounce 1.2s cubic-bezier(0.28, 0.84, 0.42, 1);
+      .imageWrapper {
+        animation: bounce 1.2s cubic-bezier(0.28, 0.84, 0.42, 1);
 
-      img {
-        filter: brightness(0) invert(1);
+        img {
+          filter: brightness(0) invert(1);
+        }
+      }
+
+      p {
+        color: $offWhite;
+      }
+
+      &::before {
+        background-color: $theme;
+        filter: brightness(1.2);
       }
     }
+  }
 
-    p {
-      color: $offWhite;
+  // Mobile intersection observer effects
+  @include phone {
+    &[data-intersecting="true"] {
+      background-color: $theme !important;
+
+      .imageWrapper {
+        animation: bounce 1.2s cubic-bezier(0.28, 0.84, 0.42, 1);
+
+        img {
+          filter: brightness(0) invert(1) !important;
+        }
+      }
+
+      p {
+        color: $offWhite !important;
+      }
+
+      &::before {
+        background-color: $theme !important;
+        filter: brightness(1.2);
+      }
     }
+  }
 
-    &::before {
-      background-color: $theme;
-      filter: brightness(1.2);
+  @include phoneLandscape {
+    &[data-intersecting="true"] {
+      background-color: $theme !important;
+
+      .imageWrapper {
+        animation: bounce 1.2s cubic-bezier(0.28, 0.84, 0.42, 1);
+
+        img {
+          filter: brightness(0) invert(1) !important;
+        }
+      }
+
+      p {
+        color: $offWhite !important;
+      }
+
+      &::before {
+        background-color: $theme !important;
+        filter: brightness(1.2);
+      }
     }
   }
 }

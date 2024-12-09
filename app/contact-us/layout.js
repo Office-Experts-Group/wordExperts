@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Contact | Microsoft Excel | Microsoft Access | Power BI | MS Office",
   description:
-    "Contact Word Experts for professional Microsoft Word solutions. Expert consultants across Australia available onsite or by remote access. Call 1300 12 20 38.",
+    "Contact Word Experts for professional Microsoft Word solutions. Expert consultants across Australia available onsite or by remote access. Call 1300 122 038.",
   keywords: [
     // Contact methods
     "contact word experts",

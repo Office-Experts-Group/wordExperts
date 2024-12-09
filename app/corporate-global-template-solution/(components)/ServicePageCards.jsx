@@ -10,10 +10,10 @@ import expertsIcon from "../../../public/icons/handShakeBlue.webp";
 import migrateIcon from "../../../public/icons/ideaBlue.webp";
 
 // Import main images
-import stuckImage from "../../../public/service-img-1350x201.webp";
-import issuesImage from "../../../public/service-img-2350x201.webp";
-import expertsImage from "../../../public/service-img-3350x201.webp";
-import migrateImage from "../../../public/service-img-4350x201.webp";
+import stuckImage from "../../../public/word250x200.webp";
+import issuesImage from "../../../public/coding250x200.webp";
+import expertsImage from "../../../public/meeting250x200.webp";
+import migrateImage from "../../../public/files250x200.webp";
 
 const ServicePageCards = () => {
   return (

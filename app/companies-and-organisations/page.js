@@ -9,9 +9,12 @@ import PageSegment8 from "./(components)/PageSegment8";
 import PageSegment4 from "./(components)/PageSegment4";
 import PageSegment5 from "./(components)/PageSegment5";
 import FAQSection from "../../components/FAQSection";
+import Contents from "./(components)/Contents";
 
 import faqs from "../../faqs/companies-and-organisations";
-import Contents from "./(components)/Contents";
+
+import report from "../../public/pageHeros/report.webp";
+import glassesMob from "../../public/pageHeros/mob/glassesMob.webp";
 
 const schema = {
   "@context": "https://schema.org",
@@ -148,12 +151,12 @@ const schema = {
       "@id": "https://www.wordexperts.com.au/#organization",
       name: "Word Experts Group",
       url: "https://www.wordexperts.com.au/",
-      telephone: "1300 12 20 38",
+      telephone: "1300 122 038",
       email: "consult@wordexperts.com.au",
       contactPoint: [
         {
           "@type": "ContactPoint",
-          telephone: "1300 12 20 38",
+          telephone: "1300 122 038",
           contactType: "customer service",
           email: "consult@wordexperts.com.au",
           availableLanguage: ["en", "en-AU"],
@@ -217,11 +220,6 @@ const schema = {
         "https://www.linkedin.com/company/office-experts-group",
         "https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw",
       ],
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
     },
   ],
 };
@@ -234,7 +232,13 @@ const Page = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <Contents />
-      <ServiceHero title="Microsoft Power Apps Consulting Services" />
+      <ServiceHero
+        title="Microsoft Power Apps Consulting Services"
+        desktopImage={report}
+        mobileImage={glassesMob}
+        altMob={"glasses on a desk with a graph"}
+        altDesk={"meeting with person looking at a computer"}
+      />
       <ServicePageCards />
       <PageSegmentMain />
       <PageSegment8 />

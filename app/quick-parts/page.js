@@ -138,12 +138,12 @@ const schema = {
       "@id": "https://www.wordexperts.com.au/#organization",
       name: "Word Experts Group",
       url: "https://www.wordexperts.com.au/",
-      telephone: "1300 12 20 38",
+      telephone: "1300 122 038",
       email: "consult@wordexperts.com.au",
       contactPoint: [
         {
           "@type": "ContactPoint",
-          telephone: "1300 12 20 38",
+          telephone: "1300 122 038",
           contactType: "customer service",
           email: "consult@wordexperts.com.au",
           availableLanguage: ["en", "en-AU"],
@@ -227,9 +227,7 @@ const Page = () => {
         p="Our Quick Parts solutions allow your team to easily insert prebuilt content blocks, ensuring faster document creation, consistency, and improved productivity across the board."
       />
       <ExpertsAwait />
-      <div style={{ marginTop: "6rem" }}>
-        <FAQSection faqs={faqs} />
-      </div>
+      <FAQSection faqs={faqs} />
       <Contact />
     </>
   );

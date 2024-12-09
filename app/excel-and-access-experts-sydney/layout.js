@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Excel and Access Experts - Sydney - Word Experts",
   description:
-    "Microsoft Excel consulting and Access development services in Sydney. Expert solutions for Word, Access, and Excel. Call our Sydney team at 1300 12 20 38.",
+    "Microsoft Excel consulting and Access development services in Sydney. Expert solutions for Word, Access, and Excel. Call our Sydney team at 1300 122 038.",
   keywords: [
     // Location specific
     "excel experts sydney",

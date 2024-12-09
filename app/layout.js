@@ -59,7 +59,7 @@ const garamond = EB_Garamond({
 export const metadata = {
   title: "Microsoft Word Designer & Experts | Word Consulting",
   description:
-    "Word Experts is the Leading Microsoft Word Design Service in Australia. Expert Word Development & Consulting. Call 1300 12 20 38",
+    "Word Experts is the Leading Microsoft Word Design Service in Australia. Expert Word Development & Consulting. Call 1300 122 038",
   keywords: [
     // Core services
     "microsoft word design australia",
@@ -98,7 +98,7 @@ export const metadata = {
   openGraph: {
     title: "Microsoft Word Designer & Experts | Word Consulting",
     description:
-      "Word Experts is the Leading Microsoft Word Design Service in Australia. Expert Word Development & Consulting. Call 1300 12 20 38",
+      "Word Experts is the Leading Microsoft Word Design Service in Australia. Expert Word Development & Consulting. Call 1300 122 038",
     url: "https://www.wordexperts.com.au/",
     siteName: "Word Experts",
     images: [
@@ -116,7 +116,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Microsoft Word Designer & Experts | Word Consulting",
     description:
-      "Word Experts is the Leading Microsoft Word Design Service in Australia. Expert Word Development & Consulting. Call 1300 12 20 38",
+      "Word Experts is the Leading Microsoft Word Design Service in Australia. Expert Word Development & Consulting. Call 1300 122 038",
     images: [
       "https://www.wordexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
     ],
