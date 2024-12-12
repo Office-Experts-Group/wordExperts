@@ -6,38 +6,22 @@ export const metadata = {
   keywords: [
     // Core solutions
     "global word templates",
-    "corporate template solution",
+    "microsoft corporate template solution",
     "word document control",
-    "template management system",
-    "document standardization",
-
-    // Features
-    "brand consistency control",
-    "template automation",
-    "document protection",
-    "style management",
-    "format enforcement",
-
-    // Business benefits
-    "document efficiency",
-    "corporate compliance",
-    "brand governance",
-    "productivity improvement",
-    "quality assurance",
+    "microsoft template management system",
+    "word document standardisation",
 
     // Technical aspects
-    "template development",
-    "style protection",
-    "format control",
-    "content management",
-    "document security",
+    "Word template development",
+    "word templet",
+    "microsoft templates",
 
     // Implementation
     "global template deployment",
     "enterprise word solution",
-    "corporate rollout",
-    "template implementation",
-    "system integration",
+    "corporate rollout for Microsoft Word",
+    "word template implementation",
+    "microsoft word system integration",
   ],
   openGraph: {
     title:
@@ -45,42 +29,9 @@ export const metadata = {
     description:
       "Advanced Corporate Word Template Solution enabling efficient creation of corporate documents in a controlled environment.",
     url: "https://www.wordexperts.com.au/corporate-global-template-solution/",
-    siteName: "Word Experts",
-    images: [
-      {
-        url: "https://www.wordexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-        width: 1200,
-        height: 630,
-        alt: "Word Experts Logo",
-      },
-    ],
-    locale: "en-AU",
-    type: "article",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Corporate Word Solutions | Microsoft Word Corporate Integrity",
-    description:
-      "Advanced Corporate Word Template Solution enabling efficient creation of corporate documents in a controlled environment.",
-    images: [
-      "https://www.wordexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-    ],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    "max-image-preview": "large",
-    "max-snippet": -1,
-    "max-video-preview": -1,
   },
   canonical:
     "https://www.wordexperts.com.au/corporate-global-template-solution/",
-  // Icons
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-32x32.png",
-    apple: "/apple-touch-icon.png",
-  },
 };
 
 export default function Layout({ children }) {

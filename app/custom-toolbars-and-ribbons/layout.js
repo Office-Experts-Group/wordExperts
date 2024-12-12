@@ -45,42 +45,9 @@ export const metadata = {
     description:
       "Expert Microsoft Word toolbar and ribbon customization services. Improve productivity with custom Word toolbars.",
     url: "https://www.wordexperts.com.au/custom-toolbars-and-ribbons/",
-    siteName: "Word Experts",
-    images: [
-      {
-        url: "https://www.wordexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-        width: 1200,
-        height: 630,
-        alt: "Word Experts Logo",
-      },
-    ],
-    locale: "en-AU",
-    type: "article",
   },
-  twitter: {
-    card: "summary_large_image",
-    title:
-      "Advanced Customer Toolbars / Ribbons | Custom Toolbar Services | Word Experts",
-    description:
-      "Expert Microsoft Word toolbar and ribbon customization services. Improve productivity with custom Word toolbars.",
-    images: [
-      "https://www.wordexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-    ],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    "max-image-preview": "large",
-    "max-snippet": -1,
-    "max-video-preview": -1,
-  },
+
   canonical: "https://www.wordexperts.com.au/custom-toolbars-and-ribbons/",
-  // Icons
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-32x32.png",
-    apple: "/apple-touch-icon.png",
-  },
 };
 
 export default function Layout({ children }) {

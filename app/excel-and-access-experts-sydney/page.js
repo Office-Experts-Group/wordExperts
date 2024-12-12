@@ -5,6 +5,10 @@ import CTAMainProps from "../(components)/CTAMainProps";
 import LocationPages from "../(components)/LocationPages";
 import LocationPromos from "../(components)/LocationPromos";
 
+import sydney from "../../public/pageHeros/sydney.webp";
+
+import sydneyMob from "../../public/pageHeros/mob/sydneyMob.webp";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -59,94 +63,6 @@ const schema = {
       ],
       inLanguage: "en-AU",
     },
-    {
-      "@type": "Organization",
-      "@id": "https://www.wordexperts.com.au/#organization",
-      name: "Word Experts Group",
-      url: "https://www.wordexperts.com.au/",
-      telephone: "1300 122 038",
-      email: "consult@wordexperts.com.au",
-      contactPoint: [
-        {
-          "@type": "ContactPoint",
-          telephone: "1300 122 038",
-          contactType: "customer service",
-          email: "consult@wordexperts.com.au",
-          availableLanguage: ["en", "en-AU"],
-          areaServed: {
-            "@type": "City",
-            name: "Sydney",
-            containedIn: {
-              "@type": "AdministrativeArea",
-              name: "New South Wales",
-            },
-          },
-        },
-      ],
-      areaServed: [
-        {
-          "@type": "Country",
-          name: "Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "New South Wales",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Victoria",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Queensland",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Western Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "South Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Tasmania",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Australian Capital Territory",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Northern Territory",
-        },
-      ],
-      logo: {
-        "@type": "ImageObject",
-        inLanguage: "en-AU",
-        "@id": "https://www.wordexperts.com.au/#/schema/logo/image/",
-        url: "/logo.png",
-        contentUrl: "/logo.png",
-        width: 1181,
-        height: 1181,
-        caption: "Word Experts Group",
-      },
-      image: {
-        "@id": "https://www.wordexperts.com.au/#/schema/logo/image/",
-      },
-      sameAs: [
-        "https://www.facebook.com/MSOfficeExperts",
-        "https://x.com/OfficeExpertsG1",
-        "https://www.instagram.com/officeexpertsgroup",
-        "https://www.linkedin.com/company/office-experts-group",
-        "https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw",
-      ],
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
-    },
   ],
 };
 
@@ -159,7 +75,13 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <ServiceHero title={`Excel and Access Consultants ${location}`} />
+      <ServiceHero
+        title={`Excel and Access Consultants ${location}`}
+        desktopImage={sydney}
+        mobileImage={sydneyMob}
+        altDesk={"Sydney Harbor Bridge, Australia"}
+        altMob={"centrepoint tower Sydney, Australia"}
+      />
       <LocationPages location={location} />
       <CTAMainProps location={location} />
       <LocationPromos location={location} />

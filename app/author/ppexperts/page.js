@@ -3,6 +3,9 @@ import React from "react";
 import ServiceHero from "../../../components/ServiceHero";
 import PageSegment4 from "./(components)/PageSegment4";
 
+import tableGraph from "../../../public/pageHeros/tableGraph.webp";
+import teamMob from "../../../public/pageHeros/mob/teamMob.webp";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -79,79 +82,6 @@ const schema = {
       ],
       inLanguage: "en-AU",
     },
-    {
-      "@type": "Organization",
-      "@id": "https://www.wordexperts.com.au/#organization",
-      name: "Word Experts Australia",
-      url: "https://www.wordexperts.com.au/",
-      telephone: "1300 10 28 10",
-      email: "consult@wordexperts.com.au",
-      contactPoint: [
-        {
-          "@type": "ContactPoint",
-          telephone: "1300 10 28 10",
-          contactType: "customer service",
-          email: "consult@wordexperts.com.au",
-          availableLanguage: ["en", "en-AU"],
-        },
-      ],
-      areaServed: [
-        {
-          "@type": "Country",
-          name: "Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "New South Wales",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Victoria",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Queensland",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Western Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "South Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Tasmania",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Australian Capital Territory",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Northern Territory",
-        },
-      ],
-      logo: {
-        "@type": "ImageObject",
-        inLanguage: "en-AU",
-        "@id": "https://www.wordexperts.com.au/#/schema/logo/image/",
-        url: "/logo.png",
-        contentUrl: "/logo.png",
-        width: 1181,
-        height: 1181,
-        caption: "Word Experts Australia",
-      },
-      image: {
-        "@id": "https://www.wordexperts.com.au/#/schema/logo/image/",
-      },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-      },
-    },
   ],
 };
 
@@ -162,7 +92,13 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <ServiceHero title="Word Experts" />
+      <ServiceHero
+        title="Word Experts"
+        desktopImage={tableGraph}
+        mobileImage={teamMob}
+        altDesk={"graphs on a table"}
+        altMob={"office coworkers celebrating together"}
+      />
       <PageSegment4 />
     </>
   );

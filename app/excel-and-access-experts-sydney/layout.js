@@ -13,9 +13,6 @@ export const metadata = {
     // Service specific
     "sydney excel consulting",
     "access database development sydney",
-    "word template design sydney",
-    "powerpoint specialist sydney",
-    "office automation sydney",
 
     // Industry combinations
     "sydney corporate excel solutions",
@@ -42,41 +39,8 @@ export const metadata = {
     description:
       "Microsoft Excel consulting and Access development services in Sydney. Expert solutions for Word, Access, and Excel.",
     url: "https://www.wordexperts.com.au/excel-and-access-experts-sydney/",
-    siteName: "Word Experts",
-    images: [
-      {
-        url: "https://www.wordexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-        width: 1200,
-        height: 630,
-        alt: "Word Experts Logo",
-      },
-    ],
-    locale: "en-AU",
-    type: "article",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Excel and Access Experts - Sydney - Word Experts",
-    description:
-      "Microsoft Excel consulting and Access development services in Sydney. Expert solutions for Word, Access, and Excel.",
-    images: [
-      "https://www.wordexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-    ],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    "max-image-preview": "large",
-    "max-snippet": -1,
-    "max-video-preview": -1,
   },
   canonical: "https://www.wordexperts.com.au/excel-and-access-experts-sydney/",
-  // Icons
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-32x32.png",
-    apple: "/apple-touch-icon.png",
-  },
 };
 
 export default function Layout({ children }) {

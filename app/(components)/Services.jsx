@@ -58,7 +58,6 @@ const Services = () => {
                 "Our advanced Corporate Word Template Solution enables users to efficiently create corporate documents in a controlled environment within your branding guidelines.",
               ]}
               link={"/corporate-global-template-solution"}
-              data-card={true}
             />
           </CardIntersectionWrapper>
           <CardIntersectionWrapper>

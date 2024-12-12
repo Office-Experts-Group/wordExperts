@@ -13,30 +13,18 @@ export const metadata = {
     // Service availability
     "remote word consulting",
     "onsite word services",
-    "australia wide support",
-    "online word help",
-    "virtual consulting",
+    "australia wide microsoft support",
 
     // Expertise areas
     "word template assistance",
     "document design contact",
     "corporate template support",
-    "word automation help",
-    "document solutions",
 
     // Location specific
-    "australian word experts",
-    "sydney word consultants",
-    "melbourne word support",
-    "brisbane word services",
-    "perth word consulting",
-
-    // Contact purposes
-    "word consultation booking",
-    "template quote request",
-    "document support inquiry",
-    "word expert consultation",
-    "professional word advice",
+    "word experts contact",
+    "contact word experts Sydney",
+    "contact word experts Melbourne",
+    "contact word experts Brisbane",
   ],
   openGraph: {
     title:
