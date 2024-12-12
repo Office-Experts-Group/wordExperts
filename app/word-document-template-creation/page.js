@@ -10,7 +10,8 @@ import FAQSection from "../../components/FAQSection";
 
 import faqs from "../../faqs/document-template-creation";
 
-import 
+import graphTable from "../../public/pageHeros/graphTable.webp";
+import graph from "../../public/pageHeros/mob/graph.webp";
 
 const schema = {
   "@context": "https://schema.org",
@@ -96,7 +97,13 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <ServiceHero title="Word Document Template Creation" />
+      <ServiceHero
+        title="Word Document Template Creation"
+        desktopImage={graphTable}
+        mobileImage={graph}
+        altDesk={"graphs on a table"}
+        altMob={"graphs"}
+      />
       <PageSegmentMain />
       <PageSegment4 />
       <PageSegment5 />
