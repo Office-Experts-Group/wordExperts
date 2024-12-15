@@ -5,7 +5,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment3.module.css";
 
-import template from "../../../public/template600x400.webp";
+import form from "../../../public/form600x400.webp";
 
 const PageSegment5 = () => {
   const checkItems = [
@@ -23,8 +23,8 @@ const PageSegment5 = () => {
     >
       <AnimateOnScroll animation="slide-left" duration={1} delay={0}>
         <Image
-          src={template}
-          alt="person clicking a computer mouse"
+          src={form}
+          alt="person filling out a form"
           width={600}
           height={400}
         />

@@ -6,7 +6,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment4.module.css";
 
-import success from "../../../public/success400x267.webp";
+import coder from "../../../public/coder400x300.webp";
 
 const Segment4Repeat = () => {
   const benefits = [
@@ -69,10 +69,10 @@ const Segment4Repeat = () => {
         <AnimateOnScroll animation="scale-up" duration={1} delay={0.2}>
           <div className="image-wrapper">
             <Image
-              src={success}
-              alt="person clicking a computer mouse"
+              src={coder}
+              alt="person writing code on a computer"
               width={400}
-              height={267}
+              height={300}
             />
           </div>
         </AnimateOnScroll>

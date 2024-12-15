@@ -5,7 +5,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment4.module.css";
 
-import remoteSupport from "../../../public/remoteSupport600x400.webp";
+import upgrade from "../../../public/upgrade600x400.webp";
 
 const PageSegment4 = () => {
   return (
@@ -29,8 +29,8 @@ const PageSegment4 = () => {
         <AnimateOnScroll animation="scale-up" duration={1} delay={0.2}>
           <div className="image-wrapper">
             <Image
-              src={remoteSupport}
-              alt="person clicking a computer mouse"
+              src={upgrade}
+              alt="upgrade text on digital design"
               width={600}
               height={400}
             />

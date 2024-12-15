@@ -5,7 +5,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment4.module.css";
 
-import programmer from "../../../public/programmer600x400.webp";
+import experts from "../../../public/experts600x400.webp";
 
 const PageSegment8 = () => {
   return (
@@ -27,8 +27,8 @@ const PageSegment8 = () => {
 
       <AnimateOnScroll animation="scale-up" duration={1} delay={0}>
         <Image
-          src={programmer}
-          alt="person clicking a computer mouse"
+          src={experts}
+          alt="ask the experts text"
           width={450}
           height={300}
         />

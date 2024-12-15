@@ -61,6 +61,17 @@ export const metadata = {
   description:
     "Word Experts is the Leading Microsoft Word Design Service in Australia. Expert Word Development & Consulting. Call 1300 122 038",
   keywords: [
+    // already ranking
+    "microsoft word consulting",
+    "microsoft word designer",
+    "microsoft word development",
+    "microsoft word expert",
+    "word consulting",
+    "word design",
+    "word designer",
+    "word designs",
+    "word expert",
+    "word specialist",
     // Core services
     "microsoft word design australia",
     "word template design services",
@@ -73,27 +84,6 @@ export const metadata = {
     "microsoft word experts melbourne",
     "word template designers brisbane",
     "word document specialists perth",
-
-    // Service specific
-    "corporate word templates",
-    "word document automation",
-    "microsoft word form creation",
-    "word accessibility solutions",
-    "word template conversion services",
-
-    // Task specific
-    "word document formatting",
-    "custom word toolbar development",
-    "word macro programming",
-    "word template migration",
-    "document standardization services",
-
-    // Industry specific
-    "government word templates",
-    "corporate word solutions",
-    "business document automation",
-    "professional word consulting",
-    "enterprise document solutions",
   ],
   openGraph: {
     title: "Microsoft Word Designer & Experts | Word Consulting",

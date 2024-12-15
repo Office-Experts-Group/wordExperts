@@ -5,7 +5,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment4.module.css";
 
-import template from "../../../public/template450x300.webp";
+import form from "../../../public/form600x400.webp";
 
 const Segment4Repeat = () => {
   return (
@@ -32,12 +32,7 @@ const Segment4Repeat = () => {
 
         <AnimateOnScroll animation="scale-up" duration={1} delay={0.2}>
           <div className="image-wrapper">
-            <Image
-              src={template}
-              alt="person clicking a computer mouse"
-              width={450}
-              height={300}
-            />
+            <Image src={form} alt="form on a desk" width={450} height={300} />
           </div>
         </AnimateOnScroll>
       </div>

@@ -14,7 +14,7 @@ import Contents from "./(components)/Contents";
 
 import faqs from "../../faqs/training";
 
-import support from "../../public/pageHeros/support.webp";
+import twoComputers from "../../public/pageHeros/twoComputers.webp";
 import coffeeMob from "../../public/pageHeros/mob/coffeeMob.webp";
 
 const schema = {
@@ -81,9 +81,9 @@ const Page = () => {
       <Contents />
       <ServiceHero
         title="Microsoft Word Help and Training"
-        desktopImage={support}
+        desktopImage={twoComputers}
         mobileImage={coffeeMob}
-        altDesk={"support"}
+        altDesk={"two computers"}
         altMob={"coffee cup and laptop"}
       />
       <ServicePageCards />

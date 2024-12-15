@@ -128,8 +128,8 @@ const schema = {
         "@id": "https://www.wordexperts.com.au/#/schema/logo/image/",
         url: "/logo.png",
         contentUrl: "/logo.png",
-        width: 1181,
-        height: 1181,
+        width: 1200,
+        height: 630,
         caption: "Word Experts Group",
       },
       image: {

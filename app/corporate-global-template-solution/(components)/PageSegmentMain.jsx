@@ -5,7 +5,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment.module.css";
 
-import headHands from "../../../public/headHands600x400.webp";
+import coder from "../../../public/540x480/coder.webp";
 
 const PageSegmentMain = () => {
   return (
@@ -13,10 +13,10 @@ const PageSegmentMain = () => {
       <div className={styles.imgWrapper} style={{ height: "fit-content" }}>
         <AnimateOnScroll animation="slide-left" duration={1} delay={0}>
           <Image
-            src={headHands}
-            alt="person looking frustrated at a computer"
-            width={600}
-            height={400}
+            src={coder}
+            alt="person working on computer code"
+            width={540}
+            height={480}
             priority
           />
         </AnimateOnScroll>

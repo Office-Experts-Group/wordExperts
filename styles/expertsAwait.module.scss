@@ -91,9 +91,11 @@
     font-size: 1.125rem;
     margin-top: 0.5rem;
 
-    @media screen and (min-width: "1024px") {
-      margin-top: 4.5rem;
-    }
+    // &:first-of-type {
+    //   @media screen and (min-width: "1024px") {
+    //     margin-top: 4.5rem;
+    //   }
+    // }
   }
 }
 

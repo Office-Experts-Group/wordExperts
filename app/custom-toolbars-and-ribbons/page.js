@@ -9,8 +9,8 @@ import Segment4Repeat from "./(components)/Segment4Repeat";
 
 import faqs from "../../faqs/custom-toolbars";
 
-import invoice from "../../public/pageHeros/invoice.webp";
-import codingMob from "../../public/pageHeros/mob/codingMob.webp";
+import puzzle from "../../public/pageHeros/puzzle.webp";
+import puzzleMob from "../../public/pageHeros/mob/puzzleMob.webp";
 
 const schema = {
   "@context": "https://schema.org",
@@ -80,10 +80,10 @@ const Page = () => {
       />
       <ServiceHero
         title="Custom Toolbars and Ribbons"
-        desktopImage={invoice}
-        mobileImage={codingMob}
-        altDesk={"invoice on a computer screen"}
-        mobDesk={"laptop with programmers code displayed"}
+        desktopImage={puzzle}
+        mobileImage={puzzleMob}
+        altDesk={"people holding large puzzle pieces"}
+        altMob={"people holding large puzzle pieces"}
       />
       <PageSegmentMain />
       <Segment4Repeat />

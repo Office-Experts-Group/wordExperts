@@ -5,7 +5,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment4.module.css";
 
-import template from "../../../public/board600x450.webp";
+import blueCode from "../../../public/blueCode600x400.webp";
 
 const Segment4Repeat = () => {
   const checkItems = [
@@ -61,8 +61,8 @@ const Segment4Repeat = () => {
         <AnimateOnScroll animation="scale-up" duration={1} delay={0.2}>
           <div className="image-wrapper">
             <Image
-              src={template}
-              alt="person clicking a computer mouse"
+              src={blueCode}
+              alt="digital design, futuristic coder"
               width={450}
               height={300}
             />

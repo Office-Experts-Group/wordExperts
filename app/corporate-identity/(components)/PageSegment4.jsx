@@ -16,7 +16,7 @@ const Segment4Repeat = () => {
             <h2 style={{ marginBottom: "1rem" }}>Need Consistent Branding?</h2>
             <p>
               We can create professional, easy to use templates that will keep
-              to your company’s branding, thus creating a consistent look and a
+              to your company's branding, thus creating a consistent look and a
               professional feel. One of our designers would be happy to help you
               with your requirements.
             </p>
@@ -32,7 +32,7 @@ const Segment4Repeat = () => {
           <div className="image-wrapper">
             <Image
               src={template}
-              alt="person clicking a computer mouse"
+              alt="design template"
               width={450}
               height={300}
             />

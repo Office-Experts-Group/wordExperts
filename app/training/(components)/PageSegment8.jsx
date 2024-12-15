@@ -5,7 +5,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment4.module.css";
 
-import programmer from "../../../public/programmer600x400.webp";
+import blueCode from "../../../public/blueCode600x400.webp";
 
 const PageSegment8 = () => {
   return (
@@ -31,8 +31,8 @@ const PageSegment8 = () => {
 
       <AnimateOnScroll animation="scale-up" duration={1} delay={0}>
         <Image
-          src={programmer}
-          alt="person clicking a computer mouse"
+          src={blueCode}
+          alt="digital design of person and code"
           width={450}
           height={300}
         />
