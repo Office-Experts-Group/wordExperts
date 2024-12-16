@@ -3,7 +3,6 @@ import React from "react";
 import Contact from "../../../components/Contact";
 import ServiceHero from "../../../components/ServiceHero";
 import CTAMain from "../(components)/CTAMain";
-import ContactDetails from "../../../components/ContactDetails";
 
 import calculator from "../../../public/pageHeros/calculator.webp";
 import calcMob from "../../../public/pageHeros/mob/calcMob.webp";
@@ -81,7 +80,6 @@ const Page = () => {
       />
       <CTAMain />
       <Contact isQuote={true} />
-      <ContactDetails />
     </>
   );
 };

@@ -49,6 +49,21 @@ export const teamMembers = [
     image: rochelle,
   },
   {
+    name: "Joshua",
+    role: "OPERATIONS MANAGER",
+    skills: [
+      "Power Apps",
+      "Power Automate",
+      "Power BI",
+      "Excel",
+      "Access",
+      "SQL Server",
+      "Azure",
+      "Office Script",
+    ],
+    image: joshua,
+  },
+  {
     name: "Damien",
     role: "SENIOR WORD/POWERPOINT DESIGNER",
     skills: ["Word", "PowerPoint"],
@@ -77,21 +92,6 @@ export const teamMembers = [
     role: "SENIOR WORD/POWERPOINT DESIGNER",
     skills: ["Word", "PowerPoint"],
     image: lani,
-  },
-  {
-    name: "Joshua",
-    role: "OPERATIONS MANAGER",
-    skills: [
-      "Power Apps",
-      "Power Automate",
-      "Power BI",
-      "Excel",
-      "Access",
-      "SQL Server",
-      "Azure",
-      "Office Script",
-    ],
-    image: joshua,
   },
   {
     name: "David",

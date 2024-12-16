@@ -116,7 +116,7 @@ export const navigationData = {
           },
           {
             label: "Training and Skill Development",
-            href: "https://www.officeexperts.com.au/services/microsoft-office-365/",
+            href: "https://www.excelexperts.com.au/excel-support/",
           },
         ],
       },

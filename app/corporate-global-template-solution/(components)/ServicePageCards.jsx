@@ -11,7 +11,7 @@ import migrateIcon from "../../../public/icons/ideaBlue.webp";
 
 // Import main images
 import stuckImage from "../../../public/cards/data350x200.webp";
-import issuesImage from "../../../public/cards/deskGraph350x200.webp";
+import issuesImage from "../../../public/cards/penGraph350x200.webp";
 import expertsImage from "../../../public/cards/graphHands350x200.webp";
 import migrateImage from "../../../public/cards/penGraph350x200.webp";
 

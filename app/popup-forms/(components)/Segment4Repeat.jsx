@@ -5,7 +5,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment4.module.css";
 
-import experts from "../../../public/experts600x450.webp";
+import experts from "../../../public/experts600x400.webp";
 
 const Segment4Repeat = () => {
   return (
