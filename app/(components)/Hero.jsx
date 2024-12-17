@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import styles from "../../styles/hero.module.css";
 
@@ -7,7 +8,6 @@ import handShake from "../../public/hero/handShake.webp";
 import graph from "../../public/hero/graph.webp";
 import shapeLeft from "../../public/hero/shapeLeft.png";
 import shapeRight from "../../public/hero/shapeRight.webp";
-import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -26,6 +26,7 @@ const Hero = () => {
             src={graph}
             alt="Document design"
             className={styles.slideImage}
+            priority
           />
         </div>
       </div>

@@ -5,19 +5,31 @@ import styles from "../styles/cookieConsent.module.css";
 const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isClient, setIsClient] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
-    if (typeof window !== "undefined") {
-      const consentChoice = localStorage.getItem("cookieConsent");
-      if (!consentChoice) {
-        setIsVisible(true);
-      }
-      if (consentChoice === "accepted") {
-        initializeAnalytics();
-      }
+
+    // Check if consent already exists
+    const consentChoice = localStorage.getItem("cookieConsent");
+    if (consentChoice === "accepted") {
+      initializeAnalytics();
+      return; // Exit early if consent already given
     }
-  }, []);
+
+    // Add scroll listener
+    const handleScroll = () => {
+      if (!hasScrolled && window.scrollY > 100) {
+        // Show after 100px scroll
+        setHasScrolled(true);
+        setIsVisible(true);
+        window.removeEventListener("scroll", handleScroll); // Clean up listener
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [hasScrolled]);
 
   const initializeAnalytics = () => {
     if (typeof window === "undefined" || window.GA_INITIALIZED) return;
