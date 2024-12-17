@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import dynamic from "next/dynamic";
 
 import localFont from "next/font/local";
 import { EB_Garamond } from "next/font/google";
