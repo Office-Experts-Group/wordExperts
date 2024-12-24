@@ -6,24 +6,24 @@ export const metadata = {
   keywords: [
     // Team expertise
     "word experts team",
-    "microsoft consultants",
-    "word document specialists",
-    "word template developers",
-    "word professionals",
+    // "microsoft consultants",
+    // "word document specialists",
+    // "word template developers",
+    // "word professionals",
 
-    // Professional roles
-    "word designers",
-    "word template specialists",
-    "word document consultants",
+    // // Professional roles
+    // "word designers",
+    // "word template specialists",
+    // "word document consultants",
 
-    // Expertise areas
-    "template development experts",
-    "corporate word template experts",
+    // // Expertise areas
+    // "template development experts",
+    // "corporate word template experts",
 
-    // Location specific
-    "australian word experts",
-    "sydney microsoft consultants",
-    "perth word professionals",
+    // // Location specific
+    // "australian word experts",
+    // "sydney microsoft consultants",
+    // "perth word professionals",
   ],
   openGraph: {
     title:

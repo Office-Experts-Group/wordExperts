@@ -6,26 +6,26 @@ export const metadata = {
   keywords: [
     // Core features
     "word quick parts",
-    "building blocks gallery",
-    "microsoft Word document automation",
-    "microsoft Word content management",
-    "microsoft Word template components",
+    // "building blocks gallery",
+    // "microsoft Word document automation",
+    // "microsoft Word content management",
+    // "microsoft Word template components",
 
-    // Technical aspects
-    "quick parts development",
-    "building blocks creation",
-    "microsoft Word content controls",
-    "microsoft Word autotext elements",
-    "microsoft Word document fragments",
+    // // Technical aspects
+    // "quick parts development",
+    // "building blocks creation",
+    // "microsoft Word content controls",
+    // "microsoft Word autotext elements",
+    // "microsoft Word document fragments",
 
-    // Business benefits
-    "microsoft Word productivity improvement",
-    "microsoft Word time saving solutions",
+    // // Business benefits
+    // "microsoft Word productivity improvement",
+    // "microsoft Word time saving solutions",
 
-    // Implementation
-    "quick parts design",
-    "microsoft Word template automation",
-    "word document assembly",
+    // // Implementation
+    // "quick parts design",
+    // "microsoft Word template automation",
+    // "word document assembly",
   ],
   openGraph: {
     title:

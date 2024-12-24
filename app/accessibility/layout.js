@@ -7,29 +7,29 @@ export const metadata = {
   keywords: [
     // Core accessibility
     "word accessibility solutions",
-    "accessible word documents",
-    "wcag compliant templates",
-    "document accessibility",
-    "accessibility compliance",
+    // "accessible word documents",
+    // "wcag compliant templates",
+    // "document accessibility",
+    // "accessibility compliance",
 
-    // Services
-    "accessibility audits",
-    "document remediation",
-    "accessibility testing",
-    "template compliance",
-    "accessibility conversion",
+    // // Services
+    // "accessibility audits",
+    // "document remediation",
+    // "accessibility testing",
+    // "template compliance",
+    // "accessibility conversion",
 
-    // Document types
-    "accessible word templates",
-    "compliance documents in microsoft Word",
-    "government documents accessibility",
-    "accessible word forms",
+    // // Document types
+    // "accessible word templates",
+    // "compliance documents in microsoft Word",
+    // "government documents accessibility",
+    // "accessible word forms",
 
-    // Technical aspects
-    "screen reader compatibility",
-    "alt text implementation microsoft word",
-    "microsoft word document navigation",
-    "microsoft word accessibility tags",
+    // // Technical aspects
+    // "screen reader compatibility",
+    // "alt text implementation microsoft word",
+    // "microsoft word document navigation",
+    // "microsoft word accessibility tags",
   ],
   openGraph: {
     title:

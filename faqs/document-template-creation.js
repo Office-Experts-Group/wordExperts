@@ -1,30 +1,13 @@
-export const faqs = [
+const faqs = [
   {
-    question: "What types of documents can you create templates for?",
+    question: "What is a Word Template?",
     answer:
-      "We can create templates for various document types, including corporate brochures, reports, contracts, presentations, and any custom document your business requires.",
+      "A Word template is a pre-designed document that serves as a starting point for creating new documents. Templates can be built to include preset styles and formatting, certain text can be pre-loaded and automation can be added to guide a user. Using a template for a specific document format allows for a consistent and professional approach and for a uniform aesthetic to be used for all documents.",
   },
   {
-    question: "How can document templates help maintain our brand consistency?",
+    question: "What are the benefits of using Templates?",
     answer:
-      "Templates standardize your company’s fonts, colors, headers, footers, and styles, ensuring that all documents adhere to your brand guidelines and present a consistent, professional look.",
-  },
-  {
-    question:
-      "Can you add special features like automated tables of contents or headers and footers?",
-    answer:
-      "Yes, we can incorporate features like automated tables of contents, headers, footers, content controls, and more to enhance functionality and improve user experience.",
-  },
-  {
-    question:
-      "What are the benefits of using a professionally designed template?",
-    answer:
-      "A professionally designed template saves time, reduces errors, and provides a consistent look and feel. It also includes user-friendly controls that guide document formatting and maintain document integrity over time.",
-  },
-  {
-    question: "How do you ensure that templates are easy for our team to use?",
-    answer:
-      "Our templates are designed with ease of use in mind. We can include content controls, tooltips, and other elements that make it simple for any team member to create and format documents accurately and efficiently.",
+      "Using Word templates saves time by providing a pre-defined starting point for any new document. This ensures uniform formatting and consistency is applied and gives documents a more professional look. Templates are easy to use and allow anyone to create a well-structured document. Templates can also be customised to business needs to enhance productivity and maintain high standards in document creation.",
   },
 ];
 

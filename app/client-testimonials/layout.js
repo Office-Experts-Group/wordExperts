@@ -6,15 +6,6 @@ export const metadata = {
   keywords: [
     // Reviews and feedback
     "word experts reviews",
-    "microsoft word testimonials",
-
-    // Service experience
-    "word expert experience",
-
-    // Service areas
-    "template design reviews",
-    "document automation feedback",
-    "word consulting reviews",
   ],
   openGraph: {
     title:

@@ -6,38 +6,38 @@ export const metadata = {
   keywords: [
     // Core services
     "custom word toolbars",
-    "word ribbon customization",
-    "microsoft word toolbar development",
-    "custom ribbon interface",
-    "word toolbar automation",
+    // "word ribbon customization",
+    // "microsoft word toolbar development",
+    // "custom ribbon interface",
+    // "word toolbar automation",
 
-    // Features
-    "word toolbar design",
-    "custom ribbon buttons",
-    "word interface customization",
-    "toolbar automation tools",
-    "microsoft word macros",
+    // // Features
+    // "word toolbar design",
+    // "custom ribbon buttons",
+    // "word interface customization",
+    // "toolbar automation tools",
+    // "microsoft word macros",
 
-    // Business benefits
-    "word productivity tools",
-    "document automation solutions",
-    "custom word interface",
-    "business workflow automation",
-    "document efficiency tools",
+    // // Business benefits
+    // "word productivity tools",
+    // "document automation solutions",
+    // "custom word interface",
+    // "business workflow automation",
+    // "document efficiency tools",
 
-    // Technical aspects
-    "word vba development",
-    "ribbon xml customization",
-    "toolbar programming",
-    "word add-in development",
-    "custom command interfaces",
+    // // Technical aspects
+    // "word vba development",
+    // "ribbon xml customization",
+    // "toolbar programming",
+    // "word add-in development",
+    // "custom command interfaces",
 
-    // Industry specific
-    "corporate word customization",
-    "enterprise toolbar solutions",
-    "business document automation",
-    "custom word solutions",
-    "professional word tools",
+    // // Industry specific
+    // "corporate word customization",
+    // "enterprise toolbar solutions",
+    // "business document automation",
+    // "custom word solutions",
+    // "professional word tools",
   ],
   openGraph: {
     title:

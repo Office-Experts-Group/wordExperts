@@ -13,6 +13,7 @@ import FAQSection from "../../components/FAQSection";
 import Contents from "./(components)/Contents";
 
 import faqs from "../../faqs/training";
+import faqSchema from "../../faqs/trainingSchema";
 
 import twoComputers from "../../public/pageHeros/twoComputers.webp";
 import coffeeMob from "../../public/pageHeros/mob/coffeeMob.webp";
@@ -77,6 +78,10 @@ const Page = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <Contents />
       <ServiceHero

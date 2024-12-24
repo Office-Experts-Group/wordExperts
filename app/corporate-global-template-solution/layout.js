@@ -6,22 +6,22 @@ export const metadata = {
   keywords: [
     // Core solutions
     "global word templates",
-    "microsoft corporate template solution",
-    "word document control",
-    "microsoft template management system",
-    "word document standardisation",
+    // "microsoft corporate template solution",
+    // "word document control",
+    // "microsoft template management system",
+    // "word document standardisation",
 
-    // Technical aspects
-    "Word template development",
-    "word templet",
-    "microsoft templates",
+    // // Technical aspects
+    // "Word template development",
+    // "word templet",
+    // "microsoft templates",
 
-    // Implementation
-    "global template deployment",
-    "enterprise word solution",
-    "corporate rollout for Microsoft Word",
-    "word template implementation",
-    "microsoft word system integration",
+    // // Implementation
+    // "global template deployment",
+    // "enterprise word solution",
+    // "corporate rollout for Microsoft Word",
+    // "word template implementation",
+    // "microsoft word system integration",
   ],
   openGraph: {
     title:

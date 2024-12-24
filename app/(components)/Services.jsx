@@ -58,6 +58,7 @@ const Services = () => {
                 "Our advanced Corporate Word Template Solution enables users to efficiently create corporate documents in a controlled environment within your branding guidelines.",
               ]}
               link={"/corporate-global-template-solution"}
+              linkText={"Template Solutions"}
             />
           </CardIntersectionWrapper>
           <CardIntersectionWrapper>
@@ -69,6 +70,7 @@ const Services = () => {
                 "Let us take the stress out of your company templates. We create easy to use templates for all of your organisation's documents with your branding, a consistent look and a professional feel.",
               ]}
               link={"/word-document-template-creation"}
+              linkText={"Template Creation"}
             />
           </CardIntersectionWrapper>
           <CardIntersectionWrapper>
@@ -81,6 +83,7 @@ const Services = () => {
                 "Ensure your Corporate or Government documentation adheres to Accessibility Guidelines.",
               ]}
               link={"/accessibility"}
+              linkText={"Accessibility"}
             />
           </CardIntersectionWrapper>
           <CardIntersectionWrapper>
@@ -93,6 +96,7 @@ const Services = () => {
                 "With Quick Parts and Building Blocks we can pre-design page layouts, content, image placements and more for easy insertion by users",
               ]}
               link={"/quick-parts"}
+              linkText={"Quick Parts"}
             />
           </CardIntersectionWrapper>
         </div>

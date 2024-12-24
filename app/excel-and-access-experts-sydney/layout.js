@@ -7,32 +7,32 @@ export const metadata = {
     "excel experts sydney",
     "access experts sydney",
     "word experts sydney",
-    "microsoft consultants sydney",
-    "office 365 sydney consulting",
+    // "microsoft consultants sydney",
+    // "office 365 sydney consulting",
 
-    // Service specific
-    "sydney excel consulting",
-    "access database development sydney",
+    // // Service specific
+    // "sydney excel consulting",
+    // "access database development sydney",
 
-    // Industry combinations
-    "sydney corporate excel solutions",
-    "business access database sydney",
-    "enterprise word templates sydney",
-    "sydney government document solutions",
+    // // Industry combinations
+    // "sydney corporate excel solutions",
+    // "business access database sydney",
+    // "enterprise word templates sydney",
+    // "sydney government document solutions",
 
-    // Service combinations
-    "excel vba development sydney",
-    "access database consulting sydney",
-    "word template automation sydney",
-    "excel macros sydney",
-    "microsoft office training sydney",
+    // // Service combinations
+    // "excel vba development sydney",
+    // "access database consulting sydney",
+    // "word template automation sydney",
+    // "excel macros sydney",
+    // "microsoft office training sydney",
 
-    // Expertise specific
-    "sydney excel programming",
-    "access database expert sydney",
-    "word document specialist sydney",
-    "microsoft office consultant sydney",
-    "database development sydney",
+    // // Expertise specific
+    // "sydney excel programming",
+    // "access database expert sydney",
+    // "word document specialist sydney",
+    // "microsoft office consultant sydney",
+    // "database development sydney",
   ],
   openGraph: {
     title: "Excel and Access Experts - Sydney - Word Experts",

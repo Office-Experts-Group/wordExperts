@@ -17,6 +17,10 @@ const Testimonials = dynamic(() => import("./(components)/Testimonials"));
 const Brands = dynamic(() => import("../components/Brands"));
 const Promo = dynamic(() => import("../components/Promo"));
 const Contact = dynamic(() => import("../components/Contact"));
+const FAQSection = dynamic(() => import("../components/FAQSection"));
+
+import faqs from "../faqs/home";
+import faqSchema from "../faqs/homeSchema";
 
 import { getHomePageSchema } from "../utils/testimonialSchemaGenerator";
 import { testimonials } from "../testimonials";
@@ -132,15 +136,15 @@ const schema = {
       logo: {
         "@type": "ImageObject",
         inLanguage: "en-AU",
-        "@id": "https://www.wordexperts.com.au/#/schema/logo/image/",
-        url: "/logo.png",
-        contentUrl: "/logo.png",
+        "@id": "https://www.wordexperts.com.au//logo.webp",
+        url: "/logo.webp",
+        contentUrl: "/logo.webp",
         width: 1200,
         height: 630,
         caption: "Word Experts Group",
       },
       image: {
-        "@id": "https://www.wordexperts.com.au/#/schema/logo/image/",
+        "@id": "https://www.wordexperts.com.au/logo.webp",
       },
       sameAs: [
         "https://www.facebook.com/MSOfficeExperts",
@@ -160,6 +164,10 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Hero />
       <Services />
       <CTAMain />
@@ -172,6 +180,9 @@ const Page = () => {
         h2="Master Your Documents"
         p="Professional Microsoft Word solutions to protect your brand, automate workflows, and empower your team to create consistent, high-quality documentation."
       />
+      <div style={{ marginTop: "-6rem" }}>
+        <FAQSection faqs={faqs} />
+      </div>
       <Contact />
     </>
   );

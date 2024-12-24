@@ -6,20 +6,20 @@ export const metadata = {
     // Core services
     "word version upgrade",
     "word document migration",
-    "microsoft word conversion",
-    "microsoft document upgrade service",
-    "word template migration",
+    // "microsoft word conversion",
+    // "microsoft document upgrade service",
+    // "word template migration",
 
-    // Version specific
-    "word 365 migration",
-    "word 2021 upgrade",
-    "legacy word conversion",
-    "word version update",
-    "repair word documents",
+    // // Version specific
+    // "word 365 migration",
+    // "word 2021 upgrade",
+    // "legacy word conversion",
+    // "word version update",
+    // "repair word documents",
 
-    // Business focus
-    "business document migration",
-    "corporate word upgrade",
+    // // Business focus
+    // "business document migration",
+    // "corporate word upgrade",
   ],
   openGraph: {
     title: "Word Upgrades and Migration | Office Expert Australia",

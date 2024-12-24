@@ -5,26 +5,26 @@ export const metadata = {
   keywords: [
     // Contact methods
     "contact word experts",
-    "word consultants contact",
-    "microsoft word support",
-    "document experts contact",
-    "word template help",
+    // "word consultants contact",
+    // "microsoft word support",
+    // "document experts contact",
+    // "word template help",
 
-    // Service availability
-    "remote word consulting",
-    "onsite word services",
-    "australia wide microsoft support",
+    // // Service availability
+    // "remote word consulting",
+    // "onsite word services",
+    // "australia wide microsoft support",
 
-    // Expertise areas
-    "word template assistance",
-    "document design contact",
-    "corporate template support",
+    // // Expertise areas
+    // "word template assistance",
+    // "document design contact",
+    // "corporate template support",
 
-    // Location specific
-    "word experts contact",
-    "contact word experts Sydney",
-    "contact word experts Melbourne",
-    "contact word experts Brisbane",
+    // // Location specific
+    // "word experts contact",
+    // "contact word experts Sydney",
+    // "contact word experts Melbourne",
+    // "contact word experts Brisbane",
   ],
   openGraph: {
     title:

@@ -6,29 +6,29 @@ export const metadata = {
   keywords: [
     // Core services
     "word template conversion",
-    "adobe to word conversion",
-    "indesign to word conversion",
-    "pdf to word template",
-    "word document format conversion",
+    // "adobe to word conversion",
+    // "indesign to word conversion",
+    // "pdf to word template",
+    // "word document format conversion",
 
-    // Service specifics
-    "professional word template conversions",
-    "word template design conversion",
-    "microsoft document conversion services",
-    "word template migration",
+    // // Service specifics
+    // "professional word template conversions",
+    // "word template design conversion",
+    // "microsoft document conversion services",
+    // "word template migration",
 
-    // Features
-    "corporate document conversion",
-    "word document automation",
+    // // Features
+    // "corporate document conversion",
+    // "word document automation",
 
-    // Technical aspects
-    "word template development",
+    // // Technical aspects
+    // "word template development",
 
-    // Industry specific
-    "corporate document migration",
-    "enterprise word solutions",
-    "professional word document services",
-    "commercial word template conversion",
+    // // Industry specific
+    // "corporate document migration",
+    // "enterprise word solutions",
+    // "professional word document services",
+    // "commercial word template conversion",
   ],
   openGraph: {
     title:

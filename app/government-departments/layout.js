@@ -6,18 +6,18 @@ export const metadata = {
   keywords: [
     // Core services
     "government word templates",
-    "government document solutions",
-    "government word consulting",
+    // "government document solutions",
+    // "government word consulting",
 
-    // Compliance focus
-    "wcag word templates",
-    "government word document standards",
-    "compliant word government solutions",
+    // // Compliance focus
+    // "wcag word templates",
+    // "government word document standards",
+    // "compliant word government solutions",
 
-    // Features
-    "secure word document templates",
-    "microsoft document version control",
-    "word document automation",
+    // // Features
+    // "secure word document templates",
+    // "microsoft document version control",
+    // "word document automation",
   ],
   openGraph: {
     title:

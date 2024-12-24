@@ -7,7 +7,8 @@ import Contact from "../../components/Contact";
 import PageSegmentMain from "./(components)/PageSegmentMain";
 import Segment4Repeat from "./(components)/Segment4Repeat";
 
-import faqs from "../../faqs/custom-toolbars";
+import faqs from "../../faqs/automation";
+import faqSchema from "../../faqs/automationSchema";
 
 import puzzle from "../../public/pageHeros/puzzle.webp";
 import puzzleMob from "../../public/pageHeros/mob/puzzleMob.webp";
@@ -77,6 +78,10 @@ const Page = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <ServiceHero
         title="Custom Toolbars and Ribbons"

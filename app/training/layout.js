@@ -5,28 +5,28 @@ export const metadata = {
   keywords: [
     // Core training
     "microsoft word training",
-    "word template training",
-    "word document training",
-    "microsoft word help in Australia",
-    "word expert Australian support",
+    // "word template training",
+    // "word document training",
+    // "microsoft word help in Australia",
+    // "word expert Australian support",
 
-    // Training types
-    "onsite word training",
-    "remote word training",
-    "corporate microsoft word training",
+    // // Training types
+    // "onsite word training",
+    // "remote word training",
+    // "corporate microsoft word training",
 
-    // Specific skills
-    "word template creation training",
-    "word automation training",
-    "word accessibility training",
-    "word macro training",
+    // // Specific skills
+    // "word template creation training",
+    // "word automation training",
+    // "word accessibility training",
+    // "word macro training",
 
-    // Location specific
-    "word training australia",
-    "microsoft word courses sydney",
-    "word expert training melbourne",
-    "word document training brisbane",
-    "word consulting perth",
+    // // Location specific
+    // "word training australia",
+    // "microsoft word courses sydney",
+    // "word expert training melbourne",
+    // "word document training brisbane",
+    // "word consulting perth",
   ],
   openGraph: {
     title: "Microsoft Word Training | Microsoft Word Help | Word Experts",

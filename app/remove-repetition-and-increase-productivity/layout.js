@@ -6,17 +6,17 @@ export const metadata = {
   keywords: [
     // Core benefits
     "word automation solutions",
-    "document productivity with Microsoft Word",
-    "reduce repetition in Word documents",
-    "microsoft workflow automation solutions",
-    "efficiency improvement with Word",
+    // "document productivity with Microsoft Word",
+    // "reduce repetition in Word documents",
+    // "microsoft workflow automation solutions",
+    // "efficiency improvement with Word",
 
-    // Features
-    "document automation for Microsoft Word",
-    "template automation for Word",
-    "task automation for Word documents",
-    "process streamlining with Word",
-    "automated workflows for Word",
+    // // Features
+    // "document automation for Microsoft Word",
+    // "template automation for Word",
+    // "task automation for Word documents",
+    // "process streamlining with Word",
+    // "automated workflows for Word",
   ],
   openGraph: {
     title:

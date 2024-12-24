@@ -6,33 +6,33 @@ export const metadata = {
   keywords: [
     // Core services
     "word template creation",
-    "document template design",
-    "custom word templates",
-    "microsoft word templates",
-    "professional document templates",
+    // "document template design",
+    // "custom word templates",
+    // "microsoft word templates",
+    // "professional document templates",
 
-    // Features
-    "brand consistent templates",
-    "corporate document templates",
-    "automated word templates",
+    // // Features
+    // "brand consistent templates",
+    // "corporate document templates",
+    // "automated word templates",
 
-    // Business benefits
-    "microsoft word document consistency",
-    "microsoft productivity templates",
-    "efficient word documentation",
-    "standardised word documents",
+    // // Business benefits
+    // "microsoft word document consistency",
+    // "microsoft productivity templates",
+    // "efficient word documentation",
+    // "standardised word documents",
 
-    // Technical aspects
-    "microsoft word template development",
-    "word document design",
-    "word template programming",
-    "word document structure",
+    // // Technical aspects
+    // "microsoft word template development",
+    // "word document design",
+    // "word template programming",
+    // "word document structure",
 
-    // Industry specific
-    "corporate word solutions",
-    "enterprise word templates",
-    "professional word document design",
-    "commercial word templates",
+    // // Industry specific
+    // "corporate word solutions",
+    // "enterprise word templates",
+    // "professional word document design",
+    // "commercial word templates",
   ],
   openGraph: {
     title:

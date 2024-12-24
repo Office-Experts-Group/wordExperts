@@ -9,6 +9,7 @@ import ExpertsAwait from "../../components/ExpertsAwait";
 import FAQSection from "../../components/FAQSection";
 
 import faqs from "../../faqs/document-template-creation";
+import faqSchema from "../../faqs/homeSchema";
 
 import graphTable from "../../public/pageHeros/graphTable.webp";
 import graph from "../../public/pageHeros/mob/graph.webp";
@@ -96,6 +97,10 @@ const Page = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <ServiceHero
         title="Word Document Template Creation"

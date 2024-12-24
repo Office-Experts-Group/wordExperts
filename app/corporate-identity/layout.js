@@ -5,20 +5,20 @@ export const metadata = {
     "Professional corporate identity protection through Microsoft Word templates. Ensure brand consistency and document compliance across your organization.",
   keywords: [
     // Core services
-    "corporate word templates",
-    "brand identity protection",
     "corporate document control",
+    // "corporate word templates",
+    // "brand identity protection",
 
-    // Brand focus
-    "brand consistency solutions",
-    "corporate branding word templates",
-    "brand compliant word documents",
-    "microsoft corporate style guides",
+    // // Brand focus
+    // "brand consistency solutions",
+    // "corporate branding word templates",
+    // "brand compliant word documents",
+    // "microsoft corporate style guides",
 
-    // Document control
-    "word document formatting control",
-    "word template protection",
-    "word template standardization",
+    // // Document control
+    // "word document formatting control",
+    // "word template protection",
+    // "word template standardization",
   ],
   openGraph: {
     title:
