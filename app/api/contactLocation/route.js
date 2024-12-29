@@ -6,7 +6,16 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 export async function POST(req) {
   try {
     const body = await req.json();
-    const { name, email, phone, message, honeypot } = body;
+    const {
+      name,
+      email,
+      phone,
+      message,
+      honeypot,
+      location,
+      service, // New field for Microsoft service
+      operatingSystem, // New field for operating system selection
+    } = body;
 
     // Validate required fields
     if (!name || !email || !message) {
@@ -16,7 +25,7 @@ export async function POST(req) {
       );
     }
 
-    // Check honeypot (hidden field) to detect bot submissions
+    // Check honeypot
     if (honeypot) {
       return Response.json(
         { error: "Bot submission detected" },
@@ -24,13 +33,16 @@ export async function POST(req) {
       );
     }
 
-    // Get the email signature
     const { htmlSignature, textSignature } = getEmailSignature();
 
-    // Compose plain text messages
+    // Updated messages to include location and service information
     const clientTextMessage = `
-      You have received a new message from ${name} (${email}).
-      Phone: ${phone || "Not provided"}.
+      You have received a new message from ${name} (${email}) from ${
+      location || "Unknown location"
+    }.
+      Phone: ${phone || "Not provided"}
+      Service Requested: ${service || "Not specified"}
+      Operating System: ${operatingSystem || "Not specified"}
       Message: ${message}
 
       This form was filled out on the website: https://wordexperts.com.au @ ${new Date().toLocaleString()}
@@ -39,7 +51,9 @@ export async function POST(req) {
     const customerTextMessage = `
       Hi ${name},
 
-      Thank you for reaching out. We've received your message:
+      Thank you for reaching out to our ${
+        location || ""
+      } office. We've received your message:
 
       ${message}
 
@@ -48,10 +62,15 @@ export async function POST(req) {
       ${textSignature}
     `;
 
-    // Compose HTML messages
     const clientHtmlMessage = `
-      <p>You have received a new message from <strong>${name}</strong> (${email}).</p>
+      <p>You have received a new message from <strong>${name}</strong> (${email}) from ${
+      location || "Unknown location"
+    }.</p>
       <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
+      <p><strong>Service Requested:</strong> ${service || "Not specified"}</p>
+      <p><strong>Operating System:</strong> ${
+        operatingSystem || "Not specified"
+      }</p>
       <p><strong>Message:</strong></p>
       <p>${message}</p>
       
@@ -60,30 +79,33 @@ export async function POST(req) {
 
     const customerHtmlMessage = `
       <p>Hi ${name},</p>
-      <p>Thank you for reaching out. We've received your message:</p>
+      <p>Thank you for reaching out to our ${
+        location || ""
+      } office. We've received your message:</p>
       <p>${message}</p>
-      <p>On of our team members will get back to you soon.</p>
+      <p>One of our team members will get back to you soon.</p>
       ${htmlSignature}
     `;
 
-    // Send emails
     try {
+      // Send to primary business email
       await sgMail.send({
         from: "consult@officeexperts.com.au",
         to: "joshua@officeexperts.com.au",
-        subject: "New Contact Form Submission",
+        subject: `New Contact Form Submission from ${location || "Website"}`,
         text: clientTextMessage,
         html: clientHtmlMessage,
-        replyTo: email, // Add reply-to header
+        replyTo: email,
       });
 
+      //   Send to general business email
       await sgMail.send({
         from: "consult@officeexperts.com.au",
         to: "consult@wordexperts.com.au",
-        subject: "New Contact Form Submission",
+        subject: `New Contact Form Submission from ${location || "Website"}`,
         text: clientTextMessage,
         html: clientHtmlMessage,
-        replyTo: email, // Add reply-to header
+        replyTo: email,
       });
 
       // Send confirmation to customer

@@ -5,7 +5,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment4.module.css";
 
-import cloudSolution from "../../../public/cloudSolution600x400.webp";
+import brand from "../../../public/brand600x400.webp";
 
 const PageSegment4 = () => {
   return (
@@ -33,8 +33,8 @@ const PageSegment4 = () => {
         <AnimateOnScroll animation="scale-up" duration={1} delay={0}>
           <div className="image-wrapper">
             <Image
-              src={cloudSolution}
-              alt="person clicking a computer mouse"
+              src={brand}
+              alt="branding matters"
               width={450}
               height={300}
             />

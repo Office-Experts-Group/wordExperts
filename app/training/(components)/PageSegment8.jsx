@@ -5,7 +5,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment4.module.css";
 
-import blueCode from "../../../public/blueCode600x400.webp";
+import handsIn from "../../../public/handsIn600x400.webp";
 
 const PageSegment8 = () => {
   return (
@@ -31,8 +31,8 @@ const PageSegment8 = () => {
 
       <AnimateOnScroll animation="scale-up" duration={1} delay={0}>
         <Image
-          src={blueCode}
-          alt="digital design of person and code"
+          src={handsIn}
+          alt="people joining hands"
           width={450}
           height={300}
         />

@@ -82,6 +82,9 @@
     margin-top: 0;
   }
 }
+.header li {
+  list-style: none;
+}
 
 .nav {
   margin: 0 auto;

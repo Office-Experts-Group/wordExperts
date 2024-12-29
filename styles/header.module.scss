@@ -76,6 +76,10 @@
   @include phoneLandscape {
     margin-top: 0;
   }
+
+  li {
+    list-style: none;
+  }
 }
 
 .nav {

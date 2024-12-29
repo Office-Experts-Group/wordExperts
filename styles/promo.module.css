@@ -3,6 +3,7 @@
   margin: 6rem 8rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .promo a {
   color: #046999;
@@ -55,6 +56,7 @@
 .text {
   display: flex;
   flex-direction: column;
+  max-width: 70%;
 }
 .text h2 {
   color: #1e1e1e;
@@ -79,12 +81,14 @@
   .text {
     margin-bottom: 2rem;
     align-items: center;
+    max-width: 100%;
   }
 }
 @media (min-width: 450px) and (max-width: 766px) {
   .text {
     margin-bottom: 2rem;
     align-items: center;
+    max-width: 100%;
   }
 }
 
@@ -138,6 +142,7 @@
 .content {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
   margin-left: 2rem;
 }
@@ -209,7 +214,7 @@
 .container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   margin-right: 10vw;
 }
 @media (max-width: 449px) {
@@ -259,4 +264,11 @@
   .promoWithLocation {
     margin: 6rem 1rem 0 1rem;
   }
+}
+
+.promoCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6rem 1rem;
 }/*# sourceMappingURL=promo.module.css.map */

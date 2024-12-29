@@ -22,7 +22,6 @@ const VALID_FILE_TYPES = [
   "image/webp",
   "image/svg+xml",
   "image/tiff",
-  "image/avif",
 
   // Archives (if needed)
   "application/zip",
@@ -41,8 +40,6 @@ export async function POST(req) {
     const body = await req.json();
     const {
       file,
-      filename,
-      type,
       name,
       email,
       phone,
@@ -51,6 +48,8 @@ export async function POST(req) {
       softwareVersions,
       website,
       honeypot,
+      location,
+      service,
     } = body;
 
     // Validate required fields
@@ -68,17 +67,14 @@ export async function POST(req) {
       );
     }
 
-    // File validation (only if a file is provided)
+    // File validation
     let attachments = [];
     if (file) {
-      if (!VALID_FILE_TYPES.includes(type)) {
+      if (!VALID_FILE_TYPES.includes(file.type)) {
         return Response.json({ error: "Invalid file type" }, { status: 400 });
       }
 
-      if (
-        typeof file.content === "string" &&
-        Buffer.byteLength(file.content, "base64") > MAX_FILE_SIZE
-      ) {
+      if (Buffer.byteLength(file.content, "base64") > MAX_FILE_SIZE) {
         return Response.json(
           { error: "File size exceeds limit" },
           { status: 400 }
@@ -97,11 +93,14 @@ export async function POST(req) {
     const { htmlSignature, textSignature } = getEmailSignature();
 
     const clientTextMessage = `
-      You have received a new quote request from ${name} (${email}).
-      Phone: ${phone || "Not provided"}.
-      Operating System: ${operatingSystem || "Not provided"}.
-      Software Versions: ${softwareVersions || "Not provided"}.
-      Website: ${website || "Not provided"}.
+      You have received a new quote request from ${name} (${email}) from ${
+      location || "Unknown location"
+    }.
+      Phone: ${phone || "Not provided"}
+      Service Requested: ${service || "Not specified"}
+      Operating System: ${operatingSystem || "Not provided"}
+      Software Versions: ${softwareVersions || "Not provided"}
+      Website: ${website || "Not provided"}
       Message: ${message || "Not provided"}
 
       ${textSignature}
@@ -110,11 +109,14 @@ export async function POST(req) {
     const customerTextMessage = `
       Hi ${name},
 
-      Thank you for reaching out. We've received your quote request:
+      Thank you for reaching out to our ${
+        location || ""
+      } office. We've received your quote request:
 
-      Operating System: ${operatingSystem || "Not provided"}.
-      Software Versions: ${softwareVersions || "Not provided"}.
-      Website: ${website || "Not provided"}.
+      Service Requested: ${service || "Not specified"}
+      Operating System: ${operatingSystem || "Not provided"}
+      Software Versions: ${softwareVersions || "Not provided"}
+      Website: ${website || "Not provided"}
       Message: ${message || "Not provided"}
 
       We'll get back to you soon!
@@ -123,8 +125,11 @@ export async function POST(req) {
     `;
 
     const clientHtmlMessage = `
-      <p>You have received a new quote request from <strong>${name}</strong> (${email}).</p>
+      <p>You have received a new quote request from <strong>${name}</strong> (${email}) from ${
+      location || "Unknown location"
+    }.</p>
       <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
+      <p><strong>Service Requested:</strong> ${service || "Not specified"}</p>
       <p><strong>Operating System:</strong> ${
         operatingSystem || "Not provided"
       }</p>
@@ -139,7 +144,10 @@ export async function POST(req) {
 
     const customerHtmlMessage = `
       <p>Hi ${name},</p>
-      <p>Thank you for reaching out. We've received your quote request:</p>
+      <p>Thank you for reaching out to our ${
+        location || ""
+      } office. We've received your quote request:</p>
+      <p><strong>Service Requested:</strong> ${service || "Not specified"}</p>
       <p><strong>Operating System:</strong> ${
         operatingSystem || "Not provided"
       }</p>
@@ -154,28 +162,29 @@ export async function POST(req) {
     `;
 
     try {
-      // Send email to business
+      // Send to primary business email
       await sgMail.send({
         from: "consult@officeexperts.com.au",
         to: "joshua@officeexperts.com.au",
-        subject: "New Quote Request Submission",
+        subject: `New Quote Request from ${location || "Website"}`,
         text: clientTextMessage,
         html: clientHtmlMessage,
         ...(attachments.length > 0 && { attachments }),
         replyTo: email,
       });
 
+      // Send to general business email
       await sgMail.send({
         from: "consult@officeexperts.com.au",
         to: "consult@wordexperts.com.au",
-        subject: "New Quote Request Submission",
+        subject: `New Quote Request from ${location || "Website"}`,
         text: clientTextMessage,
         html: clientHtmlMessage,
         ...(attachments.length > 0 && { attachments }),
         replyTo: email,
       });
 
-      // Send email to customer
+      // Send to customer
       await sgMail.send({
         from: "consult@officeexperts.com.au",
         to: email,

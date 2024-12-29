@@ -130,7 +130,7 @@
   list-style-type: disc;
   margin-left: 1rem;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .cardContent a {
   display: flex;

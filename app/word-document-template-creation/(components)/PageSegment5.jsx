@@ -6,17 +6,17 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment3.module.css";
 
-import eyes from "../../../public/eyes400x263.webp";
+import training from "../../../public/training600x400.webp";
 
 const PageSegment3 = () => {
   return (
     <section className={styles.pageSegment} style={{ marginBottom: "6rem" }}>
       <AnimateOnScroll animation="slide-left" duration={1} delay={0}>
         <Image
-          src={eyes}
+          src={training}
           alt="person clicking a computer mouse"
           width={400}
-          height={267}
+          height={250}
         />
       </AnimateOnScroll>
 
