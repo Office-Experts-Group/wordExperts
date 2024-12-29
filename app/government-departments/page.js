@@ -26,7 +26,7 @@ const schema = {
       datePublished: "2018-07-15T16:07:45+00:00",
       dateModified: "2024-11-12T00:00:00+00:00",
       description:
-        "Specialized Microsoft Word solutions for government departments. Accessible documents, compliant templates, and secure document management solutions.",
+        "specialised Microsoft Word solutions for government departments. Accessible documents, compliant templates, and secure document management solutions.",
       breadcrumb: {
         "@id":
           "https://www.wordexperts.com.au/government-departments/#breadcrumb",
