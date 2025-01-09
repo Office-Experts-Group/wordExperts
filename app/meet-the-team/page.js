@@ -124,6 +124,7 @@ const Page = () => {
         mobileImage={handShakeMob}
         altDesk={"Handshake"}
         altMob={"Handshake"}
+        isMeetTeam={true}
       />
       <MeetTheTeam />
       <Contact />
