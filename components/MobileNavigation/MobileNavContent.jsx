@@ -1,6 +1,7 @@
 import React from "react";
 
-import { navigationData } from "../../navigationData";
+import { oldNavigationData } from "../../oldNavigationData";
+// import { navigationData } from "../../navigationData";
 
 import MobileNavList from "./MobileNavList";
 
@@ -9,17 +10,17 @@ const getMenuItems = (currentView = "main") => {
     case "main":
       return [
         { label: "Home", href: "/" },
-        { label: "Services", items: navigationData.services.items },
-        { label: "About Us", items: navigationData.aboutUs.items },
+        { label: "Services", items: oldNavigationData.services.items },
+        { label: "About Us", items: oldNavigationData.aboutUs.items },
         { label: "Testimonials", href: "/client-testimonials" },
         { label: "Contact Us", href: "/contact-us" },
       ];
     case "Services":
-      return navigationData.services.items;
+      return oldNavigationData.services.items;
     case "About Us":
-      return navigationData.aboutUs.items || [];
+      return oldNavigationData.aboutUs.items || [];
     default:
-      const serviceCategory = navigationData.services.items.find(
+      const serviceCategory = oldNavigationData.services.items.find(
         (item) => item.label === currentView
       );
       if (serviceCategory?.items) {

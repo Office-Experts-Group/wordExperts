@@ -5,7 +5,8 @@ import Link from "next/link";
 
 import styles from "../../styles/header.module.css";
 
-import { navigationData } from "../../navigationData";
+import { oldNavigationData } from "../../oldNavigationData";
+// import { navigationData } from "../../navigationData";
 import ServicesDropdown from "../../components/ServicesDropdown";
 import SocialLinks from "../../components/SocialLinks";
 import MobileNav from "../../components/MobileNavigation/MobileNav";
@@ -97,7 +98,7 @@ const Header = () => {
             {activeDropdown === "aboutUs" && (
               <div className={styles.dropdown}>
                 <ul>
-                  {navigationData.aboutUs.items.map((item, index) => (
+                  {oldNavigationData.aboutUs.items.map((item, index) => (
                     <li key={index}>
                       <Link href={item.href}>
                         <span>{item.label}</span>
@@ -110,7 +111,7 @@ const Header = () => {
           </li>
 
           {/* Static Links */}
-          {navigationData.staticLinks.map((link, index) => (
+          {oldNavigationData.staticLinks.map((link, index) => (
             <li key={index} className={styles.navItem}>
               <Link href={link.href} className={styles.navLink}>
                 <span>{link.label}</span>

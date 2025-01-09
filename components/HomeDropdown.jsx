@@ -1,14 +1,13 @@
 import React from "react";
-
-import { navigationData } from "../navigationData";
-
-import DropdownItem from "./DropdownItem";
-
-import styles from "../styles/header.module.css";
 import Link from "next/link";
 
+import { oldNavigationData } from "../oldNavigationData";
+// import { navigationData } from "../navigationData";
+
+import styles from "../styles/header.module.css";
+
 export default function HomeDropdown() {
-  const homeItems = navigationData?.home?.items;
+  const homeItems = oldNavigationData?.home?.items;
 
   return (
     <ul className={styles.dropdown}>

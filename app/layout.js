@@ -83,7 +83,7 @@ export const metadata = {
       {
         url: "https://www.wordexperts.com.au/logo.webp",
         width: 1200,
-        height: 630,
+        height: 620,
         alt: "Word Experts Logo",
       },
     ],
