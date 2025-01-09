@@ -1,6 +1,5 @@
 export const metadata = {
-  title:
-    "Expert Creation of Word Fill in Forms | Word Fill In Form Experts | Word Experts",
+  title: "Expert Creation of Word Fill in Forms | Word Experts",
   description:
     "Professional Microsoft Word form creation services. Custom fillable forms with data validation and protection. Improve data entry efficiency and accuracy.",
   keywords: [
@@ -40,8 +39,7 @@ export const metadata = {
     // "commercial form templates",
   ],
   openGraph: {
-    title:
-      "Expert Creation of Word Fill in Forms | Word Fill In Form Experts | Word Experts",
+    title: "Expert Creation of Word Fill in Forms | Word Experts",
     description:
       "Professional Microsoft Word form creation services. Custom fillable forms with data validation and protection.",
     url: "https://www.wordexperts.com.au/fill-in-forms/",

@@ -1,6 +1,5 @@
 export const metadata = {
-  title:
-    "Advanced Customer Toolbars / Ribbons | Custom Toolbar Services | Word Experts",
+  title: "Custom Toolbars and Ribbons | Word Experts",
   description:
     "Expert Microsoft Word toolbar and ribbon customization services. Improve productivity with custom Word toolbars tailored to your business needs.",
   keywords: [
@@ -40,8 +39,7 @@ export const metadata = {
     // "professional word tools",
   ],
   openGraph: {
-    title:
-      "Advanced Customer Toolbars / Ribbons | Custom Toolbar Services | Word Experts",
+    title: "Custom Toolbars and Ribbons | Word Experts",
     description:
       "Expert Microsoft Word toolbar and ribbon customization services. Improve productivity with custom Word toolbars.",
     url: "https://www.wordexperts.com.au/custom-toolbars-and-ribbons/",

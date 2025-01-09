@@ -1,6 +1,5 @@
 export const metadata = {
-  title:
-    "Corporate Word Solutions | Microsoft Word Corporate Integrity | Word Experts",
+  title: "Corporate Word Solutions | Word Experts",
   description:
     "Advanced Corporate Word Template Solution enabling efficient creation of corporate documents in a controlled environment. Maintain brand consistency and document integrity.",
   keywords: [
@@ -24,8 +23,7 @@ export const metadata = {
     // "microsoft word system integration",
   ],
   openGraph: {
-    title:
-      "Corporate Word Solutions | Microsoft Word Corporate Integrity | Word Experts",
+    title: "Corporate Word Solutions | Word Experts",
     description:
       "Advanced Corporate Word Template Solution enabling efficient creation of corporate documents in a controlled environment.",
     url: "https://www.wordexperts.com.au/corporate-global-template-solution/",

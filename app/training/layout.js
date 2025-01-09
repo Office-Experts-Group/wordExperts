@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Microsoft Word Training | Microsoft Word Help | Word Experts",
+  title: "Microsoft Word Training | Word Experts",
   description:
     "Professional Microsoft Word training and support services. Expert help with templates, documents, and Word automation. Available remotely or onsite across Australia.",
   keywords: [
@@ -29,7 +29,7 @@ export const metadata = {
     // "word consulting perth",
   ],
   openGraph: {
-    title: "Microsoft Word Training | Microsoft Word Help | Word Experts",
+    title: "Microsoft Word Training | Word Experts",
     description:
       "Professional Microsoft Word training and support services. Expert help with templates, documents, and Word automation.",
     url: "https://www.wordexperts.com.au/training/",

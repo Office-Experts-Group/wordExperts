@@ -1,6 +1,5 @@
 export const metadata = {
-  title:
-    "Word Template Creation | Word Document Creation | Microsoft Word Services | Word Experts",
+  title: "Word Template Creation | Word Experts",
   description:
     "Professional Microsoft Word template creation services. Custom document templates that maintain brand consistency and improve productivity. Call 1300 122 038.",
   keywords: [
@@ -35,8 +34,7 @@ export const metadata = {
     // "commercial word templates",
   ],
   openGraph: {
-    title:
-      "Word Template Creation | Word Document Creation | Microsoft Word Services | Word Experts",
+    title: "Word Template Creation | Word Experts",
     description:
       "Professional Microsoft Word template creation services. Custom document templates that maintain brand consistency and improve productivity.",
     url: "https://www.wordexperts.com.au/word-document-template-creation/",

@@ -9,8 +9,10 @@
     cursor: pointer;
     transition: all 0.3s ease;
     &:hover {
-      color: $theme;
+      fill: $theme;
     }
+    width: 15px;
+    height: 15px;
   }
 }
 

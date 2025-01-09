@@ -1,6 +1,5 @@
 export const metadata = {
-  title:
-    "Microsoft Word Document Quick Parts Services | Quick Parts Design Consulting Services | Word Experts",
+  title: "Microsoft Word Document Quick Parts Services | Word Experts",
   description:
     "Expert Microsoft Word Quick Parts implementation. Enhance document creation with pre-built content and automated building blocks. Improve efficiency and consistency.",
   keywords: [
@@ -28,8 +27,7 @@ export const metadata = {
     // "word document assembly",
   ],
   openGraph: {
-    title:
-      "Microsoft Word Document Quick Parts Services | Quick Parts Design Consulting",
+    title: "Microsoft Word Document Quick Parts Services | Word Experts",
     description:
       "Expert Microsoft Word Quick Parts implementation. Enhance document creation with pre-built content and automated building blocks.",
     url: "https://www.wordexperts.com.au/quick-parts/",

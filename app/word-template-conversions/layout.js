@@ -1,6 +1,5 @@
 export const metadata = {
-  title:
-    "Word Design Services | Word Template Designers | Word Design Company | Word Experts",
+  title: "Word template conversions | Word Experts",
   description:
     "Professional Word template conversion services. Convert Adobe, InDesign and other formats to fully functional Microsoft Word templates with preserved branding.",
   keywords: [
@@ -31,8 +30,7 @@ export const metadata = {
     // "commercial word template conversion",
   ],
   openGraph: {
-    title:
-      "Word Design Services | Word Template Designers | Word Design Company | Word Experts",
+    title: "Word template conversions | Word Experts",
     description:
       "Professional Word template conversion services. Convert Adobe, InDesign and other formats to fully functional Microsoft Word templates.",
     url: "https://www.wordexperts.com.au/word-template-conversions/",

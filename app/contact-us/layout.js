@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Contact | Microsoft Excel | Microsoft Access | Power BI | MS Office",
+  title: "Contact Us | Word Experts",
   description:
     "Contact Word Experts for professional Microsoft Word solutions. Expert consultants across Australia available onsite or by remote access. Call 1300 122 038.",
   keywords: [
@@ -27,8 +27,7 @@ export const metadata = {
     // "contact word experts Brisbane",
   ],
   openGraph: {
-    title:
-      "Contact | Microsoft Excel | Microsoft Access | Power BI | MS Office",
+    title: "Contact Us | Word Experts",
     description:
       "Contact Word Experts for professional Microsoft Word solutions. Expert consultants across Australia.",
     url: "https://www.wordexperts.com.au/contact-us/",

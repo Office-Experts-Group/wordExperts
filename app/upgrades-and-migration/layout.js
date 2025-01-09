@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Word Upgrades and Migration | Office Expert Australia",
+  title: "Word Upgrades and Migration | Word Experts",
   description:
     "Stuck on an old version? Expert Microsoft Word upgrade and migration services. Resolve formatting issues, maintain document integrity, and ensure smooth transitions.",
   keywords: [
@@ -22,7 +22,7 @@ export const metadata = {
     // "corporate word upgrade",
   ],
   openGraph: {
-    title: "Word Upgrades and Migration | Office Expert Australia",
+    title: "Word Upgrades and Migration | Word Experts",
     description:
       "Stuck on an old version? Expert Microsoft Word upgrade and migration services. Resolve formatting issues and ensure smooth transitions.",
     url: "https://www.wordexperts.com.au/upgrades-and-migration/",

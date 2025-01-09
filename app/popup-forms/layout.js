@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Word Popup Form | Word Popup Window | Word Experts",
+  title: "Word Popup Form | Word Experts",
   description:
     "Professional Microsoft Word popup form development. Custom data entry forms with validation and automation. Improve efficiency and data accuracy.",
   keywords: [
@@ -22,7 +22,7 @@ export const metadata = {
     // "word form controls",
   ],
   openGraph: {
-    title: "Word Popup Form | Word Popup Window | Word Experts",
+    title: "Word Popup Form | Word Experts",
     description:
       "Professional Microsoft Word popup form development. Custom data entry forms with validation and automation.",
     url: "https://www.wordexperts.com.au/popup-forms/",

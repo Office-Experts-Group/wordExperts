@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Word Template Designers | Word Document Designer | Word Experts",
+  title: "Word Template Designers | Word Experts",
   description:
     "Professional Word template solutions for companies and organizations. Custom document templates that protect corporate identity and improve efficiency.",
 
@@ -18,7 +18,7 @@ export const metadata = {
     // "microsoft Word template management",
   ],
   openGraph: {
-    title: "Word Template Designers | Word Document Designer | Word Experts",
+    title: "Word Template Designers | Word Experts",
     description:
       "Professional Word template solutions for companies and organizations. Custom document templates that protect corporate identity.",
     url: "https://www.wordexperts.com.au/companies-and-organisations/",

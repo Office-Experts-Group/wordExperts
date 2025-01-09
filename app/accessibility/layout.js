@@ -1,6 +1,5 @@
 export const metadata = {
-  title:
-    "Word Accessibility Solutions | Microsoft Word Accessibility | Word Experts",
+  title: "Microsoft Word Accessibility | Word Experts",
   description:
     "Professional accessible Word document creation and template services. WCAG compliant documents, accessibility audits, and remediation services for government and enterprise.",
 
@@ -32,8 +31,7 @@ export const metadata = {
     // "microsoft word accessibility tags",
   ],
   openGraph: {
-    title:
-      "Word Accessibility Solutions | Microsoft Word Accessibility | Word Experts",
+    title: "Microsoft Word Accessibility | Word Experts",
     description:
       "Professional accessible Word document creation and template services. WCAG compliant documents and accessibility solutions.",
     url: "https://www.wordexperts.com.au/accessibility/",

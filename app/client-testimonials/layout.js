@@ -1,6 +1,5 @@
 export const metadata = {
-  title:
-    "Testimonials - Word Experts - Microsoft Word Design, Development and Consulting",
+  title: "Client Testimonials | Word Experts",
   description:
     "Read what our clients say about Word Experts' professional Microsoft Word services. Client testimonials from businesses across Australia.",
   keywords: [
@@ -8,8 +7,7 @@ export const metadata = {
     "word experts reviews",
   ],
   openGraph: {
-    title:
-      "Testimonials - Word Experts - Microsoft Word Design, Development and Consulting",
+    title: "Client Testimonials | Word Experts",
     description:
       "Read what our clients say about Word Experts' professional Microsoft Word services. Client testimonials from businesses across Australia.",
     url: "https://www.wordexperts.com.au/client-testimonials/",

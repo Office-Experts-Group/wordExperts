@@ -1,6 +1,5 @@
 export const metadata = {
-  title:
-    "Word/Corporate Global Template Solution / Corporate Governance Word Document | Word Experts",
+  title: "Word Corporate Global Template Solution | Word Experts",
   description:
     "Professional corporate identity protection through Microsoft Word templates. Ensure brand consistency and document compliance across your organization.",
   keywords: [
@@ -21,8 +20,7 @@ export const metadata = {
     // "word template standardization",
   ],
   openGraph: {
-    title:
-      "Word/Corporate Global Template Solution / Corporate Governance Word Document",
+    title: "Word Corporate Global Template Solution | Word Experts",
     description:
       "Professional corporate identity protection through Microsoft Word templates. Ensure brand consistency and document compliance.",
 

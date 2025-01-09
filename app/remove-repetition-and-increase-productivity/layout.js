@@ -1,6 +1,5 @@
 export const metadata = {
-  title:
-    "Word Remove Repetition | Word Increase Productivity | Word Document Services",
+  title: "Remove Repetition and Increase Productivity | Word Experts",
   description:
     "Automate repetitive Word tasks and increase productivity. Custom automation solutions for Microsoft Word documents and templates. Streamline your workflow.",
   keywords: [
@@ -19,8 +18,7 @@ export const metadata = {
     // "automated workflows for Word",
   ],
   openGraph: {
-    title:
-      "Word Remove Repetition | Word Increase Productivity | Word Document Services",
+    title: "Remove Repetition and Increase Productivity | Word Experts",
     description:
       "Automate repetitive Word tasks and increase productivity. Custom automation solutions for Microsoft Word documents.",
     url: "https://www.wordexperts.com.au/remove-repetition-and-increase-productivity/",

@@ -1,6 +1,5 @@
 export const metadata = {
-  title:
-    "Meet The Team - Word Experts - Microsoft Word Design, Development and Consulting",
+  title: "Meet The Team | Word Experts",
   description:
     "Meet our expert team of Microsoft Word consultants, developers, and designers. Professional Word template and document specialists across Australia.",
   keywords: [
@@ -26,8 +25,7 @@ export const metadata = {
     // "perth word professionals",
   ],
   openGraph: {
-    title:
-      "Meet The Team - Word Experts - Microsoft Word Design, Development and Consulting",
+    title: "Meet The Team | Word Experts",
     description:
       "Meet our expert team of Microsoft Word consultants, developers, and designers. Professional Word specialists across Australia.",
     url: "https://www.wordexperts.com.au/meet-the-team/",

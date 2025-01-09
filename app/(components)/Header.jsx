@@ -12,12 +12,15 @@ import SocialLinks from "../../components/SocialLinks";
 import MobileNav from "../../components/MobileNavigation/MobileNav";
 
 import logo from "../../public/logo300x130.webp";
-import SearchInput from "../../components/SearchInput";
+// import SearchInput from "../../components/SearchInput";
+import certified from "../../public/microsoft/certified.gif";
+import ideaBlue from "../../public/icons/ideaBlue.webp";
 
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [search, setSearch] = useState(false);
+  // const [search, setSearch] = useState(false);
+  const [logoHover, setLogoHover] = useState(false);
 
   useEffect(() => {
     // Check initial scroll position
@@ -121,11 +124,41 @@ const Header = () => {
         </ul>
       </nav>
 
+      <div
+        className={
+          isScrolled ? styles.microContainerScrolled : styles.microContainer
+        }
+        onMouseEnter={() => setLogoHover(true)}
+        onMouseLeave={() => setLogoHover(false)}
+      >
+        <Image
+          src={certified}
+          alt="Microsoft certified logo"
+          width={130}
+          height={85}
+          className={isScrolled ? styles.microLogoScrolled : styles.microLogo}
+        />
+
+        {logoHover && (
+          <div
+            className={`${styles.logoHover} ${
+              isScrolled && styles.logoHoverScrolled
+            }`}
+          >
+            <Image src={ideaBlue} alt="Idea Blue Logo" width={60} height={60} />
+            <p>
+              We are officially Microsoft Certified, Microsoft Partners and
+              Certified Solutions Associates!
+            </p>
+          </div>
+        )}
+      </div>
+
       <div className={styles.headerContacts}>
         <div className={styles.socialLinks}>
           <SocialLinks />
         </div>
-        {!search ? (
+        {/* {!search ? (
           <svg
             onClick={() => setSearch(!search)}
             className={styles.searchIcon}
@@ -141,7 +174,7 @@ const Header = () => {
           </svg>
         ) : (
           <SearchInput />
-        )}
+        )} */}
         <Link href="/contact-us" className="btn">
           Contact Us
         </Link>
