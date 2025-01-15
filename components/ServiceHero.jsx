@@ -37,7 +37,11 @@ const ServiceHero = ({
           style={{ objectFit: "cover", objectPosition: "center" }}
         />
       </div>
-      <h1 style={isMeetTeam ? { fontSize: "8vw" } : { fontSize: "" }}>
+      <h1
+        style={
+          isMeetTeam ? { fontSize: "clamp(3rem, 6vw, 8vw)" } : { fontSize: "" }
+        }
+      >
         {title}
       </h1>
     </section>

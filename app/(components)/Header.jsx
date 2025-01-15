@@ -63,9 +63,6 @@ const Header = () => {
         </Link>
       </div>
 
-      {/* <MobileNav /> */}
-      <MobileNav />
-
       <nav className={styles.nav}>
         <ul className={styles.navList}>
           {/* Home */}
@@ -179,6 +176,9 @@ const Header = () => {
           Contact Us
         </Link>
       </div>
+
+      {/* <MobileNav /> */}
+      <MobileNav />
     </header>
   );
 };

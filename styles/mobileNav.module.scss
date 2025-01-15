@@ -3,6 +3,7 @@
 .mobileNavContainer {
   position: relative;
   overflow-x: hidden;
+  width: fit-content;
 
   @include deskL {
     display: none;
@@ -19,7 +20,7 @@
   @include phoneLandscape {
     display: flex;
   }
-  margin-left: auto;
+  // margin-left: auto;
 }
 
 .menuButton {
