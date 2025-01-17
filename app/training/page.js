@@ -18,12 +18,16 @@ import faqSchema from "../../faqs/trainingSchema";
 import twoComputers from "../../public/pageHeros/twoComputers.webp";
 import coffeeMob from "../../public/pageHeros/mob/coffeeMob.webp";
 
-import { generateProfessionalServiceSchema } from "../../utils/schemaGenerators";
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+} from "../../utils/schemaGenerators";
 
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
     generateProfessionalServiceSchema(),
+    generateOrganizationSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/training/",

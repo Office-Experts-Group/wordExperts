@@ -12,12 +12,16 @@ import faqs from "../../faqs/government-departments";
 import deskGraph from "../../public/pageHeros/deskGraph.webp";
 import meetingMob from "../../public/pageHeros/mob/meetingMob.webp";
 
-import { generateProfessionalServiceSchema } from "../../utils/schemaGenerators";
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+} from "../../utils/schemaGenerators";
 
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
     generateProfessionalServiceSchema(),
+    generateOrganizationSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/government-departments/",

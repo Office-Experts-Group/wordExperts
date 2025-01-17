@@ -5,7 +5,10 @@ import TestimonialPage from "./(components)/TestimonialPage";
 import ServiceHero from "../../components/ServiceHero";
 
 import { getTestimonialsPageSchema } from "../../utils/testimonialSchemaGenerator";
-import { generateProfessionalServiceSchema } from "../../utils/schemaGenerators";
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+} from "../../utils/schemaGenerators";
 
 import { testimonials } from "../../testimonials";
 
@@ -17,6 +20,7 @@ const schema = {
   "@graph": [
     ...getTestimonialsPageSchema(testimonials)["@graph"],
     generateProfessionalServiceSchema(),
+    generateOrganizationSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/client-testimonials/",

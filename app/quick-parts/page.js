@@ -14,12 +14,16 @@ import faqs from "../../faqs/quick-parts";
 import whiteBoard from "../../public/pageHeros/whiteBoard.webp";
 import puzzleMob from "../../public/pageHeros/mob/puzzleMob.webp";
 
-import { generateProfessionalServiceSchema } from "../../utils/schemaGenerators";
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+} from "../../utils/schemaGenerators";
 
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
     generateProfessionalServiceSchema(),
+    generateOrganizationSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/quick-parts/",

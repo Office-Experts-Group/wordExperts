@@ -14,12 +14,16 @@ import faqSchema from "../../faqs/homeSchema";
 import graphTable from "../../public/pageHeros/graphTable.webp";
 import graph from "../../public/pageHeros/mob/graph.webp";
 
-import { generateProfessionalServiceSchema } from "../../utils/schemaGenerators";
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+} from "../../utils/schemaGenerators";
 
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
     generateProfessionalServiceSchema(),
+    generateOrganizationSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/word-document-template-creation/",

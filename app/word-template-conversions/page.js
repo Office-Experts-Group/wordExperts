@@ -13,12 +13,16 @@ import faqs from "../../faqs/template-conversions";
 import penPoint from "../../public/pageHeros/penPoint.webp";
 import seatMob from "../../public/pageHeros/mob/seatMob.webp";
 
-import { generateProfessionalServiceSchema } from "../../utils/schemaGenerators";
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+} from "../../utils/schemaGenerators";
 
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
     generateProfessionalServiceSchema(),
+    generateOrganizationSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/word-template-conversions/",
