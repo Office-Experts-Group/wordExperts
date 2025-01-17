@@ -10,4 +10,5 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+// Wrap the nextConfig with next-optimized-classnames
+module.exports = require("next-optimized-classnames")(nextConfig);
