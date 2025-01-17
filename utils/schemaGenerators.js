@@ -50,6 +50,201 @@ export const generateProfessionalServiceSchema = () => ({
       name: "Northern Territory",
     },
   ],
+  location: [
+    // New South Wales
+    {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "AU",
+        addressRegion: "NSW",
+        addressLocality: "Sydney",
+        postalCode: "2000",
+      },
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: "Sydney Metropolitan Area",
+      },
+    },
+    {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "AU",
+        addressRegion: "NSW",
+        addressLocality: "Grafton",
+        postalCode: "2460",
+      },
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: "Grafton Region",
+      },
+    },
+    {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "AU",
+        addressRegion: "NSW",
+        addressLocality: "Newcastle",
+        postalCode: "2300",
+      },
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: "Newcastle Metropolitan Area",
+      },
+    },
+    {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "AU",
+        addressRegion: "NSW",
+        addressLocality: "Wollongong",
+        postalCode: "2500",
+      },
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: "Wollongong Metropolitan Area",
+      },
+    },
+    // Victoria
+    {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "AU",
+        addressRegion: "VIC",
+        addressLocality: "Melbourne",
+        postalCode: "3000",
+      },
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: "Melbourne Metropolitan Area",
+      },
+    },
+    {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "AU",
+        addressRegion: "VIC",
+        addressLocality: "Richmond",
+        postalCode: "3121",
+      },
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: "Richmond Area",
+      },
+    },
+    {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "AU",
+        addressRegion: "VIC",
+        addressLocality: "Geelong",
+        postalCode: "3220",
+      },
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: "Geelong Metropolitan Area",
+      },
+    },
+    // Queensland
+    {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "AU",
+        addressRegion: "QLD",
+        addressLocality: "Brisbane",
+        postalCode: "4000",
+      },
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: "Brisbane Metropolitan Area",
+      },
+    },
+    {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "AU",
+        addressRegion: "QLD",
+        addressLocality: "Gold Coast",
+        postalCode: "4217",
+      },
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: "Gold Coast Metropolitan Area",
+      },
+    },
+    // Western Australia
+    {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "AU",
+        addressRegion: "WA",
+        addressLocality: "Perth",
+        postalCode: "6000",
+      },
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: "Perth Metropolitan Area",
+      },
+    },
+    // South Australia
+    {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "AU",
+        addressRegion: "SA",
+        addressLocality: "Adelaide",
+        postalCode: "5000",
+      },
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: "Adelaide Metropolitan Area",
+      },
+    },
+    // Northern Territory
+    {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "AU",
+        addressRegion: "NT",
+        addressLocality: "Darwin",
+        postalCode: "0800",
+      },
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: "Darwin Metropolitan Area",
+      },
+    },
+    // ACT
+    {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "AU",
+        addressRegion: "ACT",
+        addressLocality: "Canberra",
+        postalCode: "2600",
+      },
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: "Canberra Metropolitan Area",
+      },
+    },
+  ],
+  virtualLocation: {
+    "@type": "VirtualLocation",
+    name: "Remote Service Available Australia-wide",
+  },
   provider: {
     "@type": "Organization",
     "@id": `https://www.wordexperts.com.au/#organization`,
