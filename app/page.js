@@ -23,70 +23,18 @@ import faqs from "../faqs/home";
 import faqSchema from "../faqs/homeSchema";
 
 import { getHomePageSchema } from "../utils/testimonialSchemaGenerator";
+
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+} from "../utils/schemaGenerators";
 import { testimonials } from "../testimonials";
 
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
-    {
-      "@type": "ProfessionalService",
-      "@id": "https://www.wordexperts.com.au/#business",
-      name: "Microsoft Word Consulting Services",
-      url: "https://www.wordexperts.com.au/",
-      description:
-        "Professional Microsoft Word consulting and support services",
-      priceRange: "$$",
-      serviceType: "Microsoft Word Consulting",
-      availableService: {
-        "@type": "Service",
-        name: "Remote Consulting",
-        description: "Australia-wide remote Microsoft Word consulting services",
-      },
-      areaServed: [
-        {
-          "@type": "Country",
-          name: "Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "New South Wales",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Victoria",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Queensland",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Western Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "South Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Tasmania",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Australian Capital Territory",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Northern Territory",
-        },
-      ],
-      provider: {
-        "@type": "Organization",
-        "@id": "https://www.wordexperts.com.au/#organization",
-      },
-      telephone: "1300 122 038",
-      email: "consult@wordexperts.com.au",
-    },
+    generateProfessionalServiceSchema(),
+    generateOrganizationSchema(),
     ...getHomePageSchema(testimonials)["@graph"],
     {
       "@type": "WebPage",
@@ -137,81 +85,6 @@ const schema = {
         },
       ],
       inLanguage: "en-AU",
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://www.wordexperts.com.au/#organization",
-      name: "Word Experts Group",
-      url: "https://www.wordexperts.com.au/",
-      telephone: "1300 122 038",
-      email: "consult@wordexperts.com.au",
-      contactPoint: [
-        {
-          "@type": "ContactPoint",
-          telephone: "1300 122 038",
-          contactType: "customer service",
-          email: "consult@wordexperts.com.au",
-          availableLanguage: ["en", "en-AU"],
-        },
-      ],
-      areaServed: [
-        {
-          "@type": "Country",
-          name: "Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "New South Wales",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Victoria",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Queensland",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Western Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "South Australia",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Tasmania",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Australian Capital Territory",
-        },
-        {
-          "@type": "AdministrativeArea",
-          name: "Northern Territory",
-        },
-      ],
-      logo: {
-        "@type": "ImageObject",
-        inLanguage: "en-AU",
-        "@id": "https://www.wordexperts.com.au//logo.webp",
-        url: "/logo.webp",
-        contentUrl: "/logo.webp",
-        width: 1200,
-        height: 630,
-        caption: "Word Experts Group",
-      },
-      image: {
-        "@id": "https://www.wordexperts.com.au/logo.webp",
-      },
-      sameAs: [
-        "https://www.facebook.com/MSOfficeExperts",
-        "https://x.com/OfficeExpertsG1",
-        "https://www.instagram.com/officeexpertsgroup",
-        "https://www.linkedin.com/company/office-experts-group",
-        "https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw",
-      ],
     },
   ],
 };
