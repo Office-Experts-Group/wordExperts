@@ -30,7 +30,13 @@ export const metadata = {
       "Meet our expert team of Microsoft Word consultants, developers, and designers. Professional Word specialists across Australia.",
     url: "https://www.wordexperts.com.au/meet-the-team/",
   },
-  canonical: "https://www.wordexperts.com.au/meet-the-team/",
+  metadataBase: new URL("https://www.wordexperts.com.au"),
+  alternates: {
+    canonical: "/meet-the-team/",
+    languages: {
+      "en-AU": "/meet-the-team/",
+    },
+  },
 };
 
 export default function Layout({ children }) {

@@ -12,9 +12,12 @@ import faqs from "../../faqs/accesibility";
 import deskGraph from "../../public/pageHeros/deskGraph.webp";
 import calcMob from "../../public/pageHeros/mob/calcMob.webp";
 
+import { generateProfessionalServiceSchema } from "../../utils/schemaGenerators";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/accessibility/",

@@ -13,9 +13,12 @@ import faqSchema from "../../faqs/automationSchema";
 import puzzle from "../../public/pageHeros/puzzle.webp";
 import puzzleMob from "../../public/pageHeros/mob/puzzleMob.webp";
 
+import { generateProfessionalServiceSchema } from "../../utils/schemaGenerators";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/custom-toolbars-and-ribbons/",

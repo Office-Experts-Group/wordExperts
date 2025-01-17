@@ -40,7 +40,13 @@ export const metadata = {
       "Microsoft Excel consulting and Access development services in Sydney. Expert solutions for Word, Access, and Excel.",
     url: "https://www.wordexperts.com.au/excel-and-access-experts-sydney/",
   },
-  canonical: "https://www.wordexperts.com.au/excel-and-access-experts-sydney/",
+  metadataBase: new URL("https://www.wordexperts.com.au"),
+  alternates: {
+    canonical: "/excel-and-access-experts-sydney/",
+    languages: {
+      "en-AU": "/excel-and-access-experts-sydney/",
+    },
+  },
 };
 
 export default function Layout({ children }) {

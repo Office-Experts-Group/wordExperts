@@ -36,7 +36,13 @@ export const metadata = {
       "Use the form below to provide us with all relevant information to quickly and efficiently process your enquiry.",
     url: "https://www.wordexperts.com.au/contact-us/request-a-quote/",
   },
-  canonical: "https://www.wordexperts.com.au/contact-us/request-a-quote/",
+  metadataBase: new URL("https://www.wordexperts.com.au"),
+  alternates: {
+    canonical: "/contact-us/request-a-quote/",
+    languages: {
+      "en-AU": "/contact-us/request-a-quote/",
+    },
+  },
 };
 
 export default function Layout({ children }) {

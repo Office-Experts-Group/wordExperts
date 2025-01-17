@@ -16,9 +16,12 @@ import faqs from "../../faqs/corporate-solutions";
 import deskGraph from "../../public/pageHeros/deskGraph.webp";
 import graph from "../../public/pageHeros/mob/graph.webp";
 
+import { generateProfessionalServiceSchema } from "../../utils/schemaGenerators";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
       "@id":

@@ -9,9 +9,12 @@ import sydney from "../../public/pageHeros/sydney.webp";
 
 import sydneyMob from "../../public/pageHeros/mob/sydneyMob.webp";
 
+import { generateProfessionalServiceSchema } from "../../utils/schemaGenerators";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/excel-and-access-experts-sydney/",

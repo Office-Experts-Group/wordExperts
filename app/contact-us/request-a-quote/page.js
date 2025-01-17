@@ -7,9 +7,12 @@ import CTAMain from "../(components)/CTAMain";
 import calculator from "../../../public/pageHeros/calculator.webp";
 import calcMob from "../../../public/pageHeros/mob/calcMob.webp";
 
+import { generateProfessionalServiceSchema } from "../../../utils/schemaGenerators";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/contact-us/request-a-quote/",

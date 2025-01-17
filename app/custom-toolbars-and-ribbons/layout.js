@@ -44,8 +44,13 @@ export const metadata = {
       "Expert Microsoft Word toolbar and ribbon customization services. Improve productivity with custom Word toolbars.",
     url: "https://www.wordexperts.com.au/custom-toolbars-and-ribbons/",
   },
-
-  canonical: "https://www.wordexperts.com.au/custom-toolbars-and-ribbons/",
+  metadataBase: new URL("https://www.wordexperts.com.au"),
+  alternates: {
+    canonical: "/custom-toolbars-and-ribbons/",
+    languages: {
+      "en-AU": "/custom-toolbars-and-ribbons/",
+    },
+  },
 };
 
 export default function Layout({ children }) {

@@ -37,7 +37,13 @@ export const metadata = {
     url: "https://www.wordexperts.com.au/accessibility/",
   },
 
-  canonical: "https://www.wordexperts.com.au/accessibility/",
+  metadataBase: new URL("https://www.wordexperts.com.au"),
+  alternates: {
+    canonical: "/accessibility/",
+    languages: {
+      "en-AU": "/accessibility/",
+    },
+  },
 };
 
 export default function Layout({ children }) {

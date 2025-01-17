@@ -16,9 +16,12 @@ import faqs from "../../faqs/companies-and-organisations";
 import report from "../../public/pageHeros/report.webp";
 import glassesMob from "../../public/pageHeros/mob/glassesMob.webp";
 
+import { generateProfessionalServiceSchema } from "../../utils/schemaGenerators";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/companies-and-organisations/",

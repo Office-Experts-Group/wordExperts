@@ -26,7 +26,13 @@ export const metadata = {
 
     url: "https://www.wordexperts.com.au/corporate-identity/",
   },
-  canonical: "https://www.wordexperts.com.au/corporate-identity/",
+  metadataBase: new URL("https://www.wordexperts.com.au"),
+  alternates: {
+    canonical: "/corporate-identity/",
+    languages: {
+      "en-AU": "/corporate-identity/",
+    },
+  },
 };
 
 export default function Layout({ children }) {

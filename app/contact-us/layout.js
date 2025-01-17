@@ -59,7 +59,13 @@ export const metadata = {
     "max-snippet": -1,
     "max-video-preview": -1,
   },
-  canonical: "https://www.wordexperts.com.au/contact-us/",
+  metadataBase: new URL("https://www.wordexperts.com.au"),
+  alternates: {
+    canonical: "/contact-us/",
+    languages: {
+      "en-AU": "/contact-us/",
+    },
+  },
 };
 
 export default function Layout({ children }) {

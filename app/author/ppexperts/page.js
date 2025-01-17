@@ -6,9 +6,12 @@ import PageSegment4 from "./(components)/PageSegment4";
 import tableGraph from "../../../public/pageHeros/tableGraph.webp";
 import teamMob from "../../../public/pageHeros/mob/teamMob.webp";
 
+import { generateProfessionalServiceSchema } from "../../../utils/schemaGenerators";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/author/ppexperts/",

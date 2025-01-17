@@ -104,8 +104,13 @@ export const metadata = {
     "max-snippet": -1,
     "max-video-preview": -1,
   },
-  canonical: "https://www.wordexperts.com.au/",
-  // Icons
+  metadataBase: new URL("https://www.wordexperts.com.au"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-AU": "/",
+    },
+  }, // Icons
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-32x32.png",

@@ -5,6 +5,8 @@ import TestimonialPage from "./(components)/TestimonialPage";
 import ServiceHero from "../../components/ServiceHero";
 
 import { getTestimonialsPageSchema } from "../../utils/testimonialSchemaGenerator";
+import { generateProfessionalServiceSchema } from "../../utils/schemaGenerators";
+
 import { testimonials } from "../../testimonials";
 
 import testimonialsPic from "../../public/pageHeros/testimonials.webp";
@@ -14,6 +16,7 @@ const schema = {
   "@context": "https://schema.org",
   "@graph": [
     ...getTestimonialsPageSchema(testimonials)["@graph"],
+    generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/client-testimonials/",
@@ -58,9 +61,8 @@ const schema = {
       "@type": "Review",
       "@id": "https://www.wordexperts.com.au/client-testimonials/#reviews",
       itemReviewed: {
-        "@type": "LocalBusiness",
-        name: "Word Experts Group",
-        "@id": "https://www.wordexperts.com.au/#organization",
+        "@type": "ProfessionalService", // Changed from LocalBusiness
+        "@id": "https://www.wordexperts.com.au/#business", // Reference the ProfessionalService above
       },
       reviewRating: {
         "@type": "AggregateRating",
@@ -75,7 +77,6 @@ const schema = {
       },
       publisher: {
         "@type": "Organization",
-        name: "Word Experts Group",
         "@id": "https://www.wordexperts.com.au/#organization",
       },
     },

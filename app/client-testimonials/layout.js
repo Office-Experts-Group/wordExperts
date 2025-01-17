@@ -13,7 +13,13 @@ export const metadata = {
     url: "https://www.wordexperts.com.au/client-testimonials/",
   },
 
-  canonical: "https://www.wordexperts.com.au/client-testimonials/",
+  metadataBase: new URL("https://www.wordexperts.com.au"),
+  alternates: {
+    canonical: "/client-testimonials/",
+    languages: {
+      "en-AU": "/client-testimonials/",
+    },
+  },
 };
 
 export default function Layout({ children }) {

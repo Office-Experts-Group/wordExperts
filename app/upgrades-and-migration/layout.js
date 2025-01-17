@@ -28,7 +28,13 @@ export const metadata = {
     url: "https://www.wordexperts.com.au/upgrades-and-migration/",
   },
 
-  canonical: "https://www.wordexperts.com.au/upgrades-and-migration/",
+  metadataBase: new URL("https://www.wordexperts.com.au"),
+  alternates: {
+    canonical: "/upgrades-and-migration/",
+    languages: {
+      "en-AU": "/upgrades-and-migration/",
+    },
+  },
 };
 
 export default function Layout({ children }) {

@@ -19,7 +19,13 @@ export const metadata = {
   keywords: ["Office Experts Group Author"],
 
   // Additional tags
-  canonical: "https://www.wordexperts.com.au/author/ppexperts",
+  metadataBase: new URL("https://www.wordexperts.com.au"),
+  alternates: {
+    canonical: "/author/ppexperts/",
+    languages: {
+      "en-AU": "/author/ppexperts/",
+    },
+  },
 };
 
 export default function RootLayout({ children }) {

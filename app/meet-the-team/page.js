@@ -7,9 +7,12 @@ import Contact from "../../components/Contact";
 import handShake from "../../public/pageHeros/handShake.webp";
 import handShakeMob from "../../public/pageHeros/mob/handShakeMob.webp";
 
+import { generateProfessionalServiceSchema } from "../../utils/schemaGenerators";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
+    generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/meet-the-team/",
