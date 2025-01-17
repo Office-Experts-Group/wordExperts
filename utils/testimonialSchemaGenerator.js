@@ -210,7 +210,7 @@ export const getAboutPageSchema = (testimonials) => {
 export const getTestimonialsPageSchema = (testimonials) => {
   return generateTestimonialsSchema(
     testimonials,
-    "https://www.officeexperts.com.au",
+    "https://www.wordexperts.com.au",
     "/client-testimonials/",
     true
   );
