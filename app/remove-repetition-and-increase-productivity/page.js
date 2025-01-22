@@ -9,6 +9,7 @@ import Promo from "../../components/Promo";
 import FAQSection from "../../components/FAQSection";
 
 import faqs from "../../faqs/remove-repitition";
+import faqSchema from "../../faqs/repetitionSchema";
 
 import desk from "../../public/pageHeros/desk.webp";
 import glassesMob from "../../public/pageHeros/mob/glassesMob.webp";
@@ -155,6 +156,10 @@ const Page = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <ServiceHero
         title="Remove Repetition and Increase Productivity"

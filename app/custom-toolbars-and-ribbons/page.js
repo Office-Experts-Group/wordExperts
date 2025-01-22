@@ -8,7 +8,7 @@ import PageSegmentMain from "./(components)/PageSegmentMain";
 import Segment4Repeat from "./(components)/Segment4Repeat";
 
 import faqs from "../../faqs/automation";
-import faqSchema from "../../faqs/automationSchema";
+import faqSchema from "../../faqs/customToolbarsSchema";
 
 import puzzle from "../../public/pageHeros/puzzle.webp";
 import puzzleMob from "../../public/pageHeros/mob/puzzleMob.webp";

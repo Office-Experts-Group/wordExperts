@@ -47,8 +47,8 @@ const CTAMain = () => {
             </div>
             <div className={styles.phone}>
               <p>General Enquiries</p>
-              <Link href="tel:1300 102 810">
-                <h3>1300 102 810</h3>
+              <Link href="tel:1300 122 038">
+                <h3>1300 122 038</h3>
               </Link>
             </div>
           </div>

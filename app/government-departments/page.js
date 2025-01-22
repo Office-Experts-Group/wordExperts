@@ -8,6 +8,7 @@ import ExpertsAwait from "../../components/ExpertsAwait";
 import FAQSection from "../../components/FAQSection";
 
 import faqs from "../../faqs/government-departments";
+import faqSchema from "../../faqs/govSchema";
 
 import deskGraph from "../../public/pageHeros/deskGraph.webp";
 import meetingMob from "../../public/pageHeros/mob/meetingMob.webp";
@@ -100,6 +101,10 @@ const Page = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <ServiceHero
         title="Government Departments"

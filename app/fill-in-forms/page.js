@@ -8,6 +8,7 @@ import ExpertsAwait from "../../components/ExpertsAwait";
 import FAQSection from "../../components/FAQSection";
 
 import faqs from "../../faqs/fill-in-forms";
+import faqSchema from "../../faqs/fillFormsSchema";
 
 import penPoint from "../../public/pageHeros/penPoint.webp";
 import glassesMob from "../../public/pageHeros/mob/glassesMob.webp";
@@ -98,6 +99,10 @@ const Page = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <ServiceHero
         title="Fill In Forms"

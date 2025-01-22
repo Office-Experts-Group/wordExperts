@@ -10,6 +10,7 @@ import Promo from "../../components/Promo";
 import FAQSection from "../../components/FAQSection";
 
 import faqs from "../../faqs/popup-forms";
+import faqSchema from "../../faqs/popupSchema";
 
 import notes from "../../public/pageHeros/notes.webp";
 import graphTableMob from "../../public/pageHeros/mob/graphTableMob.webp";
@@ -152,6 +153,10 @@ const Page = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <ServiceHero
         title="Popup Forms"

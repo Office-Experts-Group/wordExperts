@@ -7,11 +7,19 @@ export const generateProfessionalServiceSchema = () => ({
   description: "Professional Microsoft Word consulting and support services",
   priceRange: "$$",
   serviceType: "Microsoft Word Consulting",
-  availableService: {
-    "@type": "Service",
-    name: "Remote Consulting",
-    description: "Australia-wide remote Microsoft Word consulting services",
-  },
+  availableService: [
+    {
+      "@type": "Service",
+      name: "Remote Consulting",
+      description: "Australia-wide remote Microsoft Word consulting services",
+    },
+    {
+      "@type": "Service",
+      name: "On-site Consulting",
+      description:
+        "In-house Microsoft Word consulting services available in major metropolitan areas",
+    },
+  ],
   areaServed: [
     {
       "@type": "Country",
@@ -275,15 +283,63 @@ export const generateOrganizationSchema = () => ({
   // Remote service availability
   hasOfferCatalog: {
     "@type": "OfferCatalog",
-    name: "Services",
+    name: "Word Document Services",
     itemListElement: [
       {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Remote Microsoft Word Consulting",
+          name: "Template Creation",
+          description: "Professional Word document template development",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Template Conversion",
+          description: "Legacy template modernization and conversion services",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Accessibility Solutions",
+          description: "WCAG compliance and accessibility implementation",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Custom UI Development",
+          description: "Customised toolbar and ribbon interface development",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Training Services",
+          description: "Specialised Microsoft Word training programs",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Form Development",
+          description: "Interactive form creation and automation",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Government Solutions",
           description:
-            "Australia-wide remote Microsoft Word consulting and support",
+            "Specialised documentation solutions for government departments",
         },
       },
     ],

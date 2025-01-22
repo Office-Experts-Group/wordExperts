@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "gen-desc": "node scripts/generateDescriptions.js"
   },
   "dependencies": {
     "@sendgrid/mail": "^8.1.4",

@@ -9,6 +9,7 @@ import FAQSection from "../../components/FAQSection";
 import Contact from "../../components/Contact";
 
 import faqs from "../../faqs/corporate-identity";
+import faqSchema from "../../faqs/corporateSchema";
 
 import invoice from "../../public/pageHeros/invoice.webp";
 import codingMob from "../../public/pageHeros/mob/codingMob.webp";
@@ -114,6 +115,10 @@ const Page = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <ServiceHero
         title="Corporate Identity"

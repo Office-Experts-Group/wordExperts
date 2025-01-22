@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import PropTypes from "prop-types";
 
 import styles from "../styles/servicesCard.module.css";
 
@@ -46,11 +45,3 @@ const ServicesCard = ({ src, alt, h3, li, link, linktext }) => {
 };
 
 export default ServicesCard;
-
-ServicesCard.propTypes = {
-  src: PropTypes.string,
-  alt: PropTypes.string,
-  h3: PropTypes.string,
-  li: PropTypes.array,
-  link: PropTypes.string,
-};

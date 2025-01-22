@@ -10,6 +10,7 @@ import Promo from "../../components/Promo";
 import FAQSection from "../../components/FAQSection";
 
 import faqs from "../../faqs/quick-parts";
+import faqSchema from "../../faqs/quickPartsSchema";
 
 import whiteBoard from "../../public/pageHeros/whiteBoard.webp";
 import puzzleMob from "../../public/pageHeros/mob/puzzleMob.webp";
@@ -152,6 +153,10 @@ const Page = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <ServiceHero
         title="Quick Parts"
