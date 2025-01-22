@@ -8,7 +8,7 @@ import FAQSection from "../../components/FAQSection";
 import Contact from "../../components/Contact";
 
 import faqs from "../../faqs/accesibility";
-import faqSchema from "../../faqs/accesibilitySchema";
+import faqSchema from "../../faqs/accessibilitySchema";
 
 import deskGraph from "../../public/pageHeros/deskGraph.webp";
 import calcMob from "../../public/pageHeros/mob/calcMob.webp";

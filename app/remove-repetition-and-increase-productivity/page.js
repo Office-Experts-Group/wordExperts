@@ -9,7 +9,7 @@ import Promo from "../../components/Promo";
 import FAQSection from "../../components/FAQSection";
 
 import faqs from "../../faqs/remove-repitition";
-import faqSchema from "../../faqs/repetitionSchema";
+import faqSchema from "../../faqs/repititionSchema";
 
 import desk from "../../public/pageHeros/desk.webp";
 import glassesMob from "../../public/pageHeros/mob/glassesMob.webp";
