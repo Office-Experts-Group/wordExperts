@@ -16,6 +16,7 @@ import scrabble from "../../public/350x260/scrabble.webp";
 import laptop from "../../public/350x260/laptop.webp";
 import graph2 from "../../public/350x260/graph2.webp";
 import automation from "../../public/350x260/automation.webp";
+import government from "../../public/cards/government350x200.webp";
 
 const SolutionsCarousel = () => {
   const solutionsData = [
@@ -46,7 +47,7 @@ const SolutionsCarousel = () => {
     {
       title: "Government Departments",
       link: "/government-departments",
-      image: dashboard,
+      image: government,
       alt: "dashboard design",
       description: [
         "Create accessible templates and documents",

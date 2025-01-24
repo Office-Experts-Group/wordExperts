@@ -1,4 +1,11 @@
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const REDIRECTS = [
+  {
+    source: "/https/officeexperts.com.au",
+    destination: "https://officeexperts.com.au",
+    permanent: true,
+  },
+];
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -12,6 +19,10 @@ const nextConfig = {
   images: {
     formats: ["image/webp"],
     minimumCacheTTL: 31536000,
+  },
+
+  async redirects() {
+    return REDIRECTS;
   },
 
   webpack: (config, { dev, isServer }) => {

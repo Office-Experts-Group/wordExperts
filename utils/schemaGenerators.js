@@ -542,15 +542,15 @@ export const generateOrganizationSchema = () => ({
   logo: {
     "@type": "ImageObject",
     inLanguage: "en-AU",
-    "@id": "https://www.wordexperts.com.au//logo.webp",
-    url: "/logo.webp",
-    contentUrl: "/logo.webp",
+    "@id": "/logo.png",
+    url: "/logo.png",
+    contentUrl: "/logo.png",
     width: 1200,
     height: 630,
     caption: "Word Experts Group",
   },
   image: {
-    "@id": "https://www.wordexperts.com.au/logo.webp",
+    "@id": "/logo.png",
   },
   sameAs: [
     "https://www.facebook.com/MSOfficeExperts",

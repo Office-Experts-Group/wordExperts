@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import styles from "../styles/servicesCard.module.css";
 
-const ServicesCard = ({ src, alt, h3, li, link, linktext }) => {
+const ServicesCard = ({ src, alt, h3, li, link, linkText }) => {
   return (
     <div className={styles.card} data-card>
       <div className={styles.cardImage}>
@@ -26,7 +26,7 @@ const ServicesCard = ({ src, alt, h3, li, link, linktext }) => {
           ))}
         </ul>
         <Link href={link}>
-          {linktext}
+          {linkText}
           <svg
             stroke="currentColor"
             fill="currentColor"

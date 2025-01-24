@@ -55,23 +55,6 @@ const SocialLinks = ({ inNav }) => {
         </svg>
       </Link>
 
-      {/* <Link
-        href="https://www.twitter.com/OfficeExpertsG1"
-        target="_blank"
-        rel="noreferrer"
-        aria-label="visit our X formerly twitter page"
-        className={inNav ? styles.socialLinkNav : ""}
-      >
-        <Image
-          src={x}
-          alt="X (formerly Twitter) icon"
-          width={15}
-          height={15}
-          style={{ filter: "brightness(150%)" }}
-          priority
-        />
-      </Link> */}
-
       <Link
         href="https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw"
         target="_blank"

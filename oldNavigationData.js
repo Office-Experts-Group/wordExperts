@@ -36,13 +36,9 @@ export const oldNavigationData = {
     label: "Services",
     items: [
       {
-        label: "Word Services",
-        href: "/services",
+        label: "Microsoft Word",
+        href: "/",
         items: [
-          // {
-          //   label: "Word Experts Home",
-          //   href: WORD_EXPERTS_URL,
-          // },
           {
             label: "Corporate Global Template",
             href: "/corporate-global-template-solution",
@@ -110,13 +106,9 @@ export const oldNavigationData = {
         ],
       },
       {
-        label: "Office Services",
+        label: "Microsoft Office",
         href: `${OFFICE_EXPERTS_URL}/services`,
         items: [
-          // {
-          //   label: "Office Experts Home",
-          //   href: OFFICE_EXPERTS_URL,
-          // },
           {
             label: "VBA & Macro Development",
             href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/vba-macro-development`,
@@ -156,13 +148,9 @@ export const oldNavigationData = {
         ],
       },
       {
-        label: "Excel Services",
+        label: "Microsoft Excel",
         href: EXCEL_EXPERTS_URL,
         items: [
-          // {
-          //   label: "Excel Experts Home",
-          //   href: EXCEL_EXPERTS_URL,
-          // },
           {
             label: "Custom Design & Development",
             href: `${EXCEL_EXPERTS_URL}/custom-design-and-development`,
@@ -218,13 +206,9 @@ export const oldNavigationData = {
         ],
       },
       {
-        label: "Access Services",
+        label: "Microsoft Access",
         href: ACCESS_EXPERTS_URL,
         items: [
-          // {
-          //   label: "Access Experts Home",
-          //   href: ACCESS_EXPERTS_URL,
-          // },
           {
             label: "Database Solutions",
             href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/database-development-and-solutions`,
@@ -256,13 +240,9 @@ export const oldNavigationData = {
         ],
       },
       {
-        label: "Power Platform Services",
+        label: "Microsoft Power Platform",
         href: POWER_PLATFORM_EXPERTS_URL,
         items: [
-          // {
-          //   label: "Power Platform Home",
-          //   href: POWER_PLATFORM_EXPERTS_URL,
-          // },
           {
             label: "App Development with Power Apps",
             href: `${POWER_PLATFORM_EXPERTS_URL}/services/microsoft-power-platform/microsoft-power-apps`,
@@ -344,10 +324,6 @@ export const oldNavigationData = {
             href: `${OFFICE_EXPERTS_URL}/services/microsoft-dot-net`,
           },
           {
-            label: "Office 365",
-            href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365`,
-          },
-          {
             label: "Outlook",
             href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/custom-office-solutions`,
           },
@@ -363,23 +339,18 @@ export const oldNavigationData = {
       },
     ],
   },
-  aboutUs: {
-    label: "About Us",
-    items: [
-      {
-        label: "About Us",
-        href: "/about-us",
-      },
-      {
-        label: "Meet Our Team",
-        href: "/meet-the-team",
-      },
-    ],
-  },
   staticLinks: [
     {
       label: "Testimonials",
       href: "/client-testimonials",
+    },
+    {
+      label: "About Us",
+      href: `${OFFICE_EXPERTS_URL}/about-us`,
+    },
+    {
+      label: "Meet Our Team",
+      href: "/meet-the-team",
     },
   ],
 };

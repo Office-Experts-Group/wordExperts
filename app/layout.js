@@ -80,7 +80,7 @@ export const metadata = {
     siteName: "Word Experts",
     images: [
       {
-        url: "https://www.wordexperts.com.au/logo.webp",
+        url: "/logo.png",
         width: 1200,
         height: 620,
         alt: "Word Experts Logo",
@@ -94,7 +94,7 @@ export const metadata = {
     title: "Microsoft Word Designer & Experts | Word Consulting",
     description:
       "Word Experts is the Leading Microsoft Word Design Service in Australia. Expert Word Development & Consulting. Call 1300 122 038",
-    images: ["https://www.wordexperts.com.au/logo.webp"],
+    images: ["/logo.png"],
   },
   robots: {
     index: true,

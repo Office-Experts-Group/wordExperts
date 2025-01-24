@@ -565,7 +565,7 @@ $cycle-duration: 33s;
   border-left: 1px solid rgba(255, 255, 255, 0.275);
   margin-left: 0.8rem;
   padding-left: 0.8rem;
-  @media screen and (max-width: 1260px) {
+  @media screen and (max-width: 1400px) {
     display: none;
   }
 }
@@ -600,8 +600,11 @@ $cycle-duration: 33s;
   scale: 1;
   // margin: 0 0 0 auto;
   transition: all 0.5s ease;
-  @media screen and (min-width: 1200px) and (max-width: 1260px) {
+  @media screen and (min-width: 1200px) and (max-width: 1400px) {
     margin-right: 1rem;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1262px) {
+    display: none;
   }
   @media screen and (min-width: 450px) and (max-width: 540px) {
     display: none;

@@ -1,0 +1,445 @@
+SCAN DETAILS
+============
+Scanned Directories: app, components, styles, public
+Total Files Scanned: 242
+
+FILES SCANNED
+============
+app/(components)/CTAFull.jsx
+app/(components)/CTAMain.jsx
+app/(components)/CTAMainProps.jsx
+app/(components)/Footer.jsx
+app/(components)/FooterHelpSection.jsx
+app/(components)/FooterServicesSection.jsx
+app/(components)/Header.jsx
+app/(components)/Hero.jsx
+app/(components)/IsRight.jsx
+app/(components)/LocationPages.jsx
+app/(components)/LocationPromos.jsx
+app/(components)/Services.jsx
+app/(components)/SolutionsCarousel.jsx
+app/(components)/Testimonials.jsx
+app/accessibility/(components)/PageSegment4.jsx
+app/accessibility/(components)/PageSegmentMain.jsx
+app/accessibility/layout.js
+app/accessibility/page.js
+app/api/contactForm/route.js
+app/api/contactLocation/route.js
+app/api/quoteForm/route.js
+app/api/quoteLocation/route.js
+app/api/search/route.js
+app/api/surveyForm/route.js
+app/author/ppexperts/(components)/PageSegment4.jsx
+app/author/ppexperts/layout.js
+app/author/ppexperts/page.js
+app/client-testimonials/(components)/TestimonialPage.jsx
+app/client-testimonials/layout.js
+app/client-testimonials/page.js
+app/companies-and-organisations/(components)/BlackSegment.jsx
+app/companies-and-organisations/(components)/Contents.jsx
+app/companies-and-organisations/(components)/PageSegment4.jsx
+app/companies-and-organisations/(components)/PageSegment5.jsx
+app/companies-and-organisations/(components)/PageSegment8.jsx
+app/companies-and-organisations/(components)/PageSegmentMain.jsx
+app/companies-and-organisations/(components)/ServicePageCards.jsx
+app/companies-and-organisations/layout.js
+app/companies-and-organisations/page.js
+app/contact-us/(components)/CTAMain.jsx
+app/contact-us/layout.js
+app/contact-us/page.js
+app/contact-us/request-a-quote/layout.js
+app/contact-us/request-a-quote/page.js
+app/corporate-global-template-solution/(components)/BlackSegment.jsx
+app/corporate-global-template-solution/(components)/Contents.jsx
+app/corporate-global-template-solution/(components)/PageSegment4.jsx
+app/corporate-global-template-solution/(components)/PageSegment5.jsx
+app/corporate-global-template-solution/(components)/PageSegment8.jsx
+app/corporate-global-template-solution/(components)/PageSegmentMain.jsx
+app/corporate-global-template-solution/(components)/ServicePageCards.jsx
+app/corporate-global-template-solution/layout.js
+app/corporate-global-template-solution/page.js
+app/corporate-identity/(components)/PageSegment4.jsx
+app/corporate-identity/(components)/PageSegment5.jsx
+app/corporate-identity/(components)/PageSegmentMain.jsx
+app/corporate-identity/layout.js
+app/corporate-identity/page.js
+app/custom-toolbars-and-ribbons/(components)/PageSegmentMain.jsx
+app/custom-toolbars-and-ribbons/(components)/Segment4Repeat.jsx
+app/custom-toolbars-and-ribbons/layout.js
+app/custom-toolbars-and-ribbons/page.js
+app/excel-and-access-experts-sydney/layout.js
+app/excel-and-access-experts-sydney/page.js
+app/fill-in-forms/(components)/PageSegmentMain.jsx
+app/fill-in-forms/(components)/Segment4Repeat.jsx
+app/fill-in-forms/layout.js
+app/fill-in-forms/page.js
+app/global.css
+app/government-departments/(components)/PageSegmentMain.jsx
+app/government-departments/(components)/Segment4Repeat.jsx
+app/government-departments/layout.js
+app/government-departments/page.js
+app/layout.js
+app/meet-the-team/(components)/Services.jsx
+app/meet-the-team/layout.js
+app/meet-the-team/page.js
+app/page.js
+app/popup-forms/(components)/PageSegment5.jsx
+app/popup-forms/(components)/PageSegmentMain.jsx
+app/popup-forms/(components)/Segment4Repeat.jsx
+app/popup-forms/layout.js
+app/popup-forms/page.js
+app/quick-parts/(components)/PageSegment5.jsx
+app/quick-parts/(components)/PageSegmentMain.jsx
+app/quick-parts/(components)/Segment4Repeat.jsx
+app/quick-parts/layout.js
+app/quick-parts/page.js
+app/remove-repetition-and-increase-productivity/(components)/PageSegment4.jsx
+app/remove-repetition-and-increase-productivity/(components)/PageSegmentMain.jsx
+app/remove-repetition-and-increase-productivity/layout.js
+app/remove-repetition-and-increase-productivity/page.js
+app/training/(components)/Contents.jsx
+app/training/(components)/PageSegment4.jsx
+app/training/(components)/PageSegment5.jsx
+app/training/(components)/PageSegment8.jsx
+app/training/(components)/PageSegmentMain.jsx
+app/training/(components)/Segment4Repeat.jsx
+app/training/(components)/ServicePageCards.jsx
+app/training/layout.js
+app/training/page.js
+app/upgrades-and-migration/(components)/BlackSegment.jsx
+app/upgrades-and-migration/(components)/Contents.jsx
+app/upgrades-and-migration/(components)/ExpertsAwait.jsx
+app/upgrades-and-migration/(components)/PageSegment4.jsx
+app/upgrades-and-migration/(components)/PageSegmentMain.jsx
+app/upgrades-and-migration/(components)/Promo.jsx
+app/upgrades-and-migration/(components)/Segment4Repeat.jsx
+app/upgrades-and-migration/(components)/ServicePageCards.jsx
+app/upgrades-and-migration/layout.js
+app/upgrades-and-migration/page.js
+app/word-document-template-creation/(components)/PageSegment4.jsx
+app/word-document-template-creation/(components)/PageSegment5.jsx
+app/word-document-template-creation/(components)/PageSegmentMain.jsx
+app/word-document-template-creation/layout.js
+app/word-document-template-creation/page.js
+app/word-template-conversions/(components)/PageSegment4.jsx
+app/word-template-conversions/(components)/PageSegment5.jsx
+app/word-template-conversions/(components)/PageSegmentMain.jsx
+app/word-template-conversions/layout.js
+app/word-template-conversions/page.js
+components/AnimateOnScroll.jsx
+components/Brands.jsx
+components/CardIntersectionWrapper.jsx
+components/Contact.jsx
+components/ContactForm.jsx
+components/ContactLocation.jsx
+components/ContactLocationSegment.jsx
+components/CookieConsent.jsx
+components/Copyright.jsx
+components/DropdownItem.jsx
+components/ExpertsAwait.jsx
+components/ExpertsCardWrapper.jsx
+components/FAQSection.jsx
+components/FooterLocationsSection.jsx
+components/FooterLogoSection.jsx
+components/HeadTop.jsx
+components/HomeDropdown.jsx
+components/MeetTheTeam.jsx
+components/MobileNavigation/MobileContact.jsx
+components/MobileNavigation/MobileNav.jsx
+components/MobileNavigation/MobileNavBackButton.jsx
+components/MobileNavigation/MobileNavButton.jsx
+components/MobileNavigation/MobileNavContent.jsx
+components/MobileNavigation/MobileNavList.jsx
+components/Promo.jsx
+components/QuoteForm.jsx
+components/QuoteLocation.jsx
+components/ScrollBtn.jsx
+components/ServiceHero.jsx
+components/ServicePageCards.jsx
+components/ServicesCard.jsx
+components/ServicesDropdown.jsx
+components/SocialLinks.jsx
+components/SurveyForm.jsx
+components/TestimonialCard.jsx
+styles/animate.module.css
+styles/animate.module.scss
+styles/brands.module.css
+styles/brands.module.scss
+styles/contact.module.css
+styles/contact.module.scss
+styles/contents.module.css
+styles/contents.module.scss
+styles/contentsComponent.module.css
+styles/contentsComponent.module.scss
+styles/cookieConsent.module.css
+styles/cookieConsent.module.scss
+styles/copyright.module.css
+styles/copyright.module.scss
+styles/ctaFull.module.css
+styles/ctaFull.module.scss
+styles/ctaMain.module.css
+styles/ctaMain.module.scss
+styles/expertsAwait.module.css
+styles/expertsAwait.module.scss
+styles/faqSection.module.css
+styles/faqSection.module.scss
+styles/footer.module.css
+styles/footer.module.scss
+styles/footerHelp.module.css
+styles/footerHelp.module.scss
+styles/footerLocations.module.css
+styles/footerLocations.module.scss
+styles/footerLogo.module.css
+styles/footerLogo.module.scss
+styles/footerServices.module.css
+styles/footerServices.module.scss
+styles/globals.css
+styles/globals.scss
+styles/header.module.css
+styles/header.module.scss
+styles/hero.module.css
+styles/hero.module.scss
+styles/isRight.module.css
+styles/isRight.module.scss
+styles/meetTheTeam.module.css
+styles/meetTheTeam.module.scss
+styles/mobileNav.module.css
+styles/mobileNav.module.scss
+styles/pageSegment.module.css
+styles/pageSegment.module.scss
+styles/pageSegment2.module.css
+styles/pageSegment2.module.scss
+styles/pageSegment3.module.css
+styles/pageSegment3.module.scss
+styles/pageSegment4.module.css
+styles/pageSegment4.module.scss
+styles/pageSegmentCenter.module.css
+styles/pageSegmentCenter.module.scss
+styles/pageSegmentDropdowns.module.css
+styles/pageSegmentDropdowns.module.scss
+styles/pageSegmentSmall.module.css
+styles/pageSegmentSmall.module.scss
+styles/promo.module.css
+styles/promo.module.scss
+styles/scrollBtn.module.css
+styles/scrollBtn.module.scss
+styles/search.module.css
+styles/search.module.scss
+styles/serviceHero.module.css
+styles/serviceHero.module.scss
+styles/servicePageCards.module.css
+styles/servicePageCards.module.scss
+styles/services.module.css
+styles/services.module.scss
+styles/servicesCard.module.css
+styles/servicesCard.module.scss
+styles/socialLinks.module.css
+styles/socialLinks.module.scss
+styles/solutionsCarousel.module.css
+styles/solutionsCarousel.module.scss
+styles/teamCard.module.css
+styles/teamCard.module.scss
+styles/testimonialPage.module.css
+styles/testimonialPage.module.scss
+styles/testimonialsCard.module.css
+styles/testimonialsCard.module.scss
+styles/testimonialsSection.module.css
+styles/testimonialsSection.module.scss
+styles/videoSegment.module.css
+styles/videoSegment.module.scss
+
+LINKS FOUND IN FILES
+===================
+app/(components)/CTAFull.jsx:
+  /contact-us
+
+app/(components)/CTAMainProps.jsx:
+  https://www.officeexperts.com.au/about-us
+
+app/(components)/FooterHelpSection.jsx:
+  /contact-us
+  https://www.officeexperts.com.au/faq
+  https://www.officeexperts.com.au/terms-and-conditions
+  https://www.officeexperts.com.au/privacy-policy
+  https://www.officeexperts.com.au/refund-policy
+
+app/(components)/FooterServicesSection.jsx:
+  /meet-the-team
+  /client-testimonials
+  /
+  https://www.officeexperts.com.au/about-us
+  https://www.powerplatformexperts.com.au/
+  https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-apps
+  https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-bi
+  https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate
+  https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages
+  https://www.officeexperts.com.au/services/microsoft-office
+  https://www.excelexperts.com.au/
+  https://www.accessexperts.com.au/
+  https://www.officeexperts.com.au/services/microsoft-powerpoint
+  https://www.officeexperts.com.au/services/microsoft-office-365
+  https://www.officeexperts.com.au/services/by-business-solution/cloud-based-solutions-with-azure
+  https://www.officeexperts.com.au/services/by-business-solution/office-and-sql-server-integration
+  https://www.officeexperts.com.au/services/by-business-solution/online-solutions
+  https://www.officeexperts.com.au/services/by-product-and-technology/microsoft-dot-net
+  https://www.officeexperts.com.au/services/by-business-solution/custom-office-solutions
+  https://www.officeexperts.com.au/services/by-product-and-technology/microsoft-publisher
+
+app/(components)/Header.jsx:
+  /
+  /contact-us
+
+app/(components)/Hero.jsx:
+  /contact-us
+
+app/companies-and-organisations/(components)/PageSegmentMain.jsx:
+  /
+
+app/meet-the-team/(components)/Services.jsx:
+  https://officeexperts.com.au/about-us
+
+app/word-document-template-creation/(components)/PageSegmentMain.jsx:
+  /
+
+components/Brands.jsx:
+  https://www.dulux.com.au
+  https://www.bekaert.com/en/
+  http://www.queenslandrail.com.au/
+  https://www.hyundai.com.au/
+  https://www.sgwater.com.au/
+
+components/HomeDropdown.jsx:
+  /
+
+components/QuoteForm.jsx:
+  https://www.officeexperts.com.au/privacy-policy
+  https://www.officeexperts.com.au/terms-and-conditions
+
+components/QuoteLocation.jsx:
+  https://www.officeexperts.com.au/privacy-policy
+  https://www.officeexperts.com.au/terms-and-conditions
+
+components/SocialLinks.jsx:
+  https://www.facebook.com/MSOfficeExperts
+  https://www.instagram.com/officeexpertsgroup
+  https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw
+  https://www.linkedin.com/company/office-experts-group
+
+components/SurveyForm.jsx:
+  /
+
+ROUTES FOUND
+===========
+Total Routes: 52
+/contact-us
+https://www.officeexperts.com.au/about-us
+https://www.officeexperts.com.au/faq
+https://www.officeexperts.com.au/terms-and-conditions
+https://www.officeexperts.com.au/privacy-policy
+https://www.officeexperts.com.au/refund-policy
+/meet-the-team
+/client-testimonials
+/
+https://www.powerplatformexperts.com.au/
+https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-apps
+https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-bi
+https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate
+https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages
+https://www.officeexperts.com.au/services/microsoft-office
+https://www.excelexperts.com.au/
+https://www.accessexperts.com.au/
+https://www.officeexperts.com.au/services/microsoft-powerpoint
+https://www.officeexperts.com.au/services/microsoft-office-365
+https://www.officeexperts.com.au/services/by-business-solution/cloud-based-solutions-with-azure
+https://www.officeexperts.com.au/services/by-business-solution/office-and-sql-server-integration
+https://www.officeexperts.com.au/services/by-business-solution/online-solutions
+https://www.officeexperts.com.au/services/by-product-and-technology/microsoft-dot-net
+https://www.officeexperts.com.au/services/by-business-solution/custom-office-solutions
+https://www.officeexperts.com.au/services/by-product-and-technology/microsoft-publisher
+/accessibility
+/author/ppexperts
+/companies-and-organisations
+/contact-us/request-a-quote
+/corporate-global-template-solution
+/corporate-identity
+/custom-toolbars-and-ribbons
+/excel-and-access-experts-sydney
+/fill-in-forms
+/government-departments
+https://officeexperts.com.au/about-us
+/popup-forms
+/quick-parts
+/remove-repetition-and-increase-productivity
+/training
+/upgrades-and-migration
+/word-document-template-creation
+/word-template-conversions
+https://www.dulux.com.au
+https://www.bekaert.com/en/
+http://www.queenslandrail.com.au/
+https://www.hyundai.com.au/
+https://www.sgwater.com.au/
+https://www.facebook.com/MSOfficeExperts
+https://www.instagram.com/officeexpertsgroup
+https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw
+https://www.linkedin.com/company/office-experts-group
+
+CHECK RESULTS
+============
+1/52: /contact-us - Status: 200
+2/52: https://www.officeexperts.com.au/about-us - Status: 200
+3/52: https://www.officeexperts.com.au/faq - Status: 200
+4/52: https://www.officeexperts.com.au/terms-and-conditions - Status: 200
+5/52: https://www.officeexperts.com.au/privacy-policy - Status: 200
+6/52: https://www.officeexperts.com.au/refund-policy - Status: 200
+7/52: /meet-the-team - Status: 200
+8/52: /client-testimonials - Status: 200
+9/52: / - Status: 200
+10/52: https://www.powerplatformexperts.com.au/ - Status: 200
+11/52: https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-apps - Status: 200
+12/52: https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-bi - Status: 200
+13/52: https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate - Status: 200
+14/52: https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages - Status: 200
+15/52: https://www.officeexperts.com.au/services/microsoft-office - Status: 200
+16/52: https://www.excelexperts.com.au/ - Status: 200
+17/52: https://www.accessexperts.com.au/ - Status: 200
+18/52: https://www.officeexperts.com.au/services/microsoft-powerpoint - Status: 200
+19/52: https://www.officeexperts.com.au/services/microsoft-office-365 - Status: 200
+20/52: https://www.officeexperts.com.au/services/by-business-solution/cloud-based-solutions-with-azure - Status: 200
+21/52: https://www.officeexperts.com.au/services/by-business-solution/office-and-sql-server-integration - Status: 200
+22/52: https://www.officeexperts.com.au/services/by-business-solution/online-solutions - Status: 200
+23/52: https://www.officeexperts.com.au/services/by-product-and-technology/microsoft-dot-net - Status: 200
+24/52: https://www.officeexperts.com.au/services/by-business-solution/custom-office-solutions - Status: 200
+25/52: https://www.officeexperts.com.au/services/by-product-and-technology/microsoft-publisher - Status: 200
+26/52: /accessibility - Status: 200
+27/52: /author/ppexperts - Status: 200
+28/52: /companies-and-organisations - Status: 200
+29/52: /contact-us/request-a-quote - Status: 200
+30/52: /corporate-global-template-solution - Status: 200
+31/52: /corporate-identity - Status: 200
+32/52: /custom-toolbars-and-ribbons - Status: 200
+33/52: /excel-and-access-experts-sydney - Status: 200
+34/52: /fill-in-forms - Status: 200
+35/52: /government-departments - Status: 200
+36/52: https://officeexperts.com.au/about-us - Status: 200
+37/52: /popup-forms - Status: 200
+38/52: /quick-parts - Status: 200
+39/52: /remove-repetition-and-increase-productivity - Status: 200
+40/52: /training - Status: 200
+41/52: /upgrades-and-migration - Status: 200
+42/52: /word-document-template-creation - Status: 200
+43/52: /word-template-conversions - Status: 200
+44/52: https://www.dulux.com.au - Error: fetch failed
+45/52: https://www.bekaert.com/en/ - Status: 200
+46/52: http://www.queenslandrail.com.au/ - Status: 200
+47/52: https://www.hyundai.com.au/ - Error: fetch failed
+48/52: https://www.sgwater.com.au/ - Status: 503
+49/52: https://www.facebook.com/MSOfficeExperts - Status: 400
+50/52: https://www.instagram.com/officeexpertsgroup - Status: 200
+51/52: https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw - Status: 200
+52/52: https://www.linkedin.com/company/office-experts-group - Status: 200
+
+ERRORS
+======
+44/52: https://www.dulux.com.au - Error: fetch failed
+47/52: https://www.hyundai.com.au/ - Error: fetch failed
