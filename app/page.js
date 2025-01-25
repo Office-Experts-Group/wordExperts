@@ -35,7 +35,7 @@ const schema = {
   "@graph": [
     generateProfessionalServiceSchema(),
     generateOrganizationSchema(),
-    ...getHomePageSchema(testimonials)["@graph"],
+    ...getHomePageSchema(testimonials, "word")["@graph"],
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/",

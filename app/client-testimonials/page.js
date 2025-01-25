@@ -5,12 +5,17 @@ import TestimonialPage from "./(components)/TestimonialPage";
 import ServiceHero from "../../components/ServiceHero";
 
 import { getTestimonialsPageSchema } from "../../utils/testimonialSchemaGenerator";
+
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
 } from "../../utils/schemaGenerators";
 
 import { testimonials } from "../../testimonials";
+import { filterAndSortTestimonials } from "../../utils/filterTestimonials";
+
+const serviceTestimonials =
+  filterAndSortTestimonials(testimonials, "word") || testimonials;
 
 import testimonialsPic from "../../public/pageHeros/testimonials.webp";
 import testimonialsMob from "../../public/pageHeros/mob/testimonialsMob.webp";
@@ -18,7 +23,7 @@ import testimonialsMob from "../../public/pageHeros/mob/testimonialsMob.webp";
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
-    ...getTestimonialsPageSchema(testimonials)["@graph"],
+    ...getTestimonialsPageSchema(serviceTestimonials, "word")["@graph"],
     generateProfessionalServiceSchema(),
     generateOrganizationSchema(),
     {
@@ -60,29 +65,6 @@ const schema = {
           name: "Testimonials",
         },
       ],
-    },
-    {
-      "@type": "Review",
-      "@id": "https://www.wordexperts.com.au/client-testimonials/#reviews",
-      itemReviewed: {
-        "@type": "ProfessionalService", // Changed from LocalBusiness
-        "@id": "https://www.wordexperts.com.au/#business", // Reference the ProfessionalService above
-      },
-      reviewRating: {
-        "@type": "AggregateRating",
-        ratingValue: "5",
-        reviewCount: "112",
-        bestRating: "5",
-        worstRating: "1",
-      },
-      author: {
-        "@type": "Organization",
-        name: "Word Experts Clients",
-      },
-      publisher: {
-        "@type": "Organization",
-        "@id": "https://www.wordexperts.com.au/#organization",
-      },
     },
     {
       "@type": "WebSite",
@@ -128,7 +110,7 @@ const Page = () => {
         altDesk={"Wooden block with smiley face"}
         altMob={"five stars"}
       />
-      <TestimonialPage testimonials={testimonials} />
+      <TestimonialPage testimonials={serviceTestimonials} />
       <Contact />
     </>
   );
