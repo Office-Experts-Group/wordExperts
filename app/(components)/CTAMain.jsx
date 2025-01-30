@@ -63,7 +63,10 @@ const CTAMain = () => {
               </p>
             </div>
 
-            <Link href="https//officeexperts.com.au" className={styles.link}>
+            <Link
+              href="https://officeexperts.com.au/about-us"
+              className={styles.link}
+            >
               Discover More
             </Link>
           </div>
