@@ -42,9 +42,9 @@ export const metadata = {
   },
   metadataBase: new URL("https://www.wordexperts.com.au"),
   alternates: {
-    canonical: "/excel-and-access-experts-sydney/",
+    canonical: "/excel-and-access-experts-sydney",
     languages: {
-      "en-AU": "/excel-and-access-experts-sydney/",
+      "en-AU": "/excel-and-access-experts-sydney",
     },
   },
 };

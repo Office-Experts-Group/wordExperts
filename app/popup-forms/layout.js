@@ -29,9 +29,9 @@ export const metadata = {
   },
   metadataBase: new URL("https://www.wordexperts.com.au"),
   alternates: {
-    canonical: "/popup-forms/",
+    canonical: "/popup-forms",
     languages: {
-      "en-AU": "/popup-forms/",
+      "en-AU": "/popup-forms",
     },
   },
 };

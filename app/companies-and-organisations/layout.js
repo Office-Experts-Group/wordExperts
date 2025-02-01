@@ -25,9 +25,9 @@ export const metadata = {
   },
   metadataBase: new URL("https://www.wordexperts.com.au"),
   alternates: {
-    canonical: "/companies-and-organisations/",
+    canonical: "/companies-and-organisations",
     languages: {
-      "en-AU": "/companies-and-organisations/",
+      "en-AU": "/companies-and-organisations",
     },
   },
 };

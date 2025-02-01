@@ -20,9 +20,9 @@ export const metadata = {
   // Additional tags
   metadataBase: new URL("https://www.wordexperts.com.au"),
   alternates: {
-    canonical: "/author/ppexperts/",
+    canonical: "/author/ppexperts",
     languages: {
-      "en-AU": "/author/ppexperts/",
+      "en-AU": "/author/ppexperts",
     },
   },
 };

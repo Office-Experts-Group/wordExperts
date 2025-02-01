@@ -15,9 +15,9 @@ export const metadata = {
 
   metadataBase: new URL("https://www.wordexperts.com.au"),
   alternates: {
-    canonical: "/client-testimonials/",
+    canonical: "/client-testimonials",
     languages: {
-      "en-AU": "/client-testimonials/",
+      "en-AU": "/client-testimonials",
     },
   },
 };

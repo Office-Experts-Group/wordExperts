@@ -28,9 +28,9 @@ export const metadata = {
   },
   metadataBase: new URL("https://www.wordexperts.com.au"),
   alternates: {
-    canonical: "/corporate-identity/",
+    canonical: "/corporate-identity",
     languages: {
-      "en-AU": "/corporate-identity/",
+      "en-AU": "/corporate-identity",
     },
   },
 };

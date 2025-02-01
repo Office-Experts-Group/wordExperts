@@ -34,9 +34,9 @@ export const metadata = {
   },
   metadataBase: new URL("https://www.wordexperts.com.au"),
   alternates: {
-    canonical: "/quick-parts/",
+    canonical: "/quick-parts",
     languages: {
-      "en-AU": "/quick-parts/",
+      "en-AU": "/quick-parts",
     },
   },
 };

@@ -47,9 +47,9 @@ export const metadata = {
 
   metadataBase: new URL("https://www.wordexperts.com.au"),
   alternates: {
-    canonical: "/fill-in-forms/",
+    canonical: "/fill-in-forms",
     languages: {
-      "en-AU": "/fill-in-forms/",
+      "en-AU": "/fill-in-forms",
     },
   },
 };

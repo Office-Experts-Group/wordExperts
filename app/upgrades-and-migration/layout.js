@@ -30,9 +30,9 @@ export const metadata = {
 
   metadataBase: new URL("https://www.wordexperts.com.au"),
   alternates: {
-    canonical: "/upgrades-and-migration/",
+    canonical: "/upgrades-and-migration",
     languages: {
-      "en-AU": "/upgrades-and-migration/",
+      "en-AU": "/upgrades-and-migration",
     },
   },
 };

@@ -46,9 +46,9 @@ export const metadata = {
   },
   metadataBase: new URL("https://www.wordexperts.com.au"),
   alternates: {
-    canonical: "/custom-toolbars-and-ribbons/",
+    canonical: "/custom-toolbars-and-ribbons",
     languages: {
-      "en-AU": "/custom-toolbars-and-ribbons/",
+      "en-AU": "/custom-toolbars-and-ribbons",
     },
   },
 };

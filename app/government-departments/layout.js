@@ -26,9 +26,9 @@ export const metadata = {
   },
   metadataBase: new URL("https://www.wordexperts.com.au"),
   alternates: {
-    canonical: "/government-departments/",
+    canonical: "/government-departments",
     languages: {
-      "en-AU": "/government-departments/",
+      "en-AU": "/government-departments",
     },
   },
 };

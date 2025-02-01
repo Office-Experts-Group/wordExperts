@@ -41,9 +41,9 @@ export const metadata = {
   },
   metadataBase: new URL("https://www.wordexperts.com.au"),
   alternates: {
-    canonical: "/word-document-template-creation/",
+    canonical: "/word-document-template-creation",
     languages: {
-      "en-AU": "/word-document-template-creation/",
+      "en-AU": "/word-document-template-creation",
     },
   },
 };

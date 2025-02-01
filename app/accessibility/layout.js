@@ -39,9 +39,9 @@ export const metadata = {
 
   metadataBase: new URL("https://www.wordexperts.com.au"),
   alternates: {
-    canonical: "/accessibility/",
+    canonical: "/accessibility",
     languages: {
-      "en-AU": "/accessibility/",
+      "en-AU": "/accessibility",
     },
   },
 };

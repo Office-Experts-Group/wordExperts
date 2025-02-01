@@ -36,9 +36,9 @@ export const metadata = {
   },
   metadataBase: new URL("https://www.wordexperts.com.au"),
   alternates: {
-    canonical: "/training/",
+    canonical: "/training",
     languages: {
-      "en-AU": "/training/",
+      "en-AU": "/training",
     },
   },
 };

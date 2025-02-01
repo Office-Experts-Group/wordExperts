@@ -25,9 +25,9 @@ export const metadata = {
   },
   metadataBase: new URL("https://www.wordexperts.com.au"),
   alternates: {
-    canonical: "/remove-repetition-and-increase-productivity/",
+    canonical: "/remove-repetition-and-increase-productivity",
     languages: {
-      "en-AU": "/remove-repetition-and-increase-productivity/",
+      "en-AU": "/remove-repetition-and-increase-productivity",
     },
   },
 };

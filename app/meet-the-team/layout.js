@@ -32,9 +32,9 @@ export const metadata = {
   },
   metadataBase: new URL("https://www.wordexperts.com.au"),
   alternates: {
-    canonical: "/meet-the-team/",
+    canonical: "/meet-the-team",
     languages: {
-      "en-AU": "/meet-the-team/",
+      "en-AU": "/meet-the-team",
     },
   },
 };
