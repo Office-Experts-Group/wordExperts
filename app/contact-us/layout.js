@@ -30,11 +30,11 @@ export const metadata = {
     title: "Contact Us | Word Experts",
     description:
       "Contact Word Experts for professional Microsoft Word solutions. Expert consultants across Australia.",
-    url: "https://www.wordexperts.com.au/contact-us/",
+    url: "https://www.wordexperts.com.au/contact-us",
     siteName: "Word Experts",
     images: [
       {
-        url: "https://www.wordexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "Word Experts Logo",
@@ -48,9 +48,7 @@ export const metadata = {
     title: "Contact Word Experts | Professional Microsoft Word Solutions",
     description:
       "Contact Word Experts for professional Microsoft Word solutions. Expert consultants across Australia.",
-    images: [
-      "https://www.wordexperts.com.au/wp-content/uploads/2023/09/microsoft-office-experts-group-logo.png",
-    ],
+    images: ["/logo.png"],
   },
   robots: {
     index: true,
@@ -58,13 +56,6 @@ export const metadata = {
     "max-image-preview": "large",
     "max-snippet": -1,
     "max-video-preview": -1,
-  },
-  metadataBase: new URL("https://www.wordexperts.com.au"),
-  alternates: {
-    canonical: "/contact-us",
-    languages: {
-      "en-AU": "/contact-us",
-    },
   },
 };
 

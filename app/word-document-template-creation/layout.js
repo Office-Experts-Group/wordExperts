@@ -37,14 +37,7 @@ export const metadata = {
     title: "Word Template Creation | Word Experts",
     description:
       "Professional Microsoft Word template creation services. Custom document templates that maintain brand consistency and improve productivity.",
-    url: "https://www.wordexperts.com.au/word-document-template-creation/",
-  },
-  metadataBase: new URL("https://www.wordexperts.com.au"),
-  alternates: {
-    canonical: "/word-document-template-creation",
-    languages: {
-      "en-AU": "/word-document-template-creation",
-    },
+    url: "https://www.wordexperts.com.au/word-document-template-creation",
   },
 };
 

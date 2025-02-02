@@ -255,7 +255,7 @@ export const generateProfessionalServiceSchema = () => ({
   },
   provider: {
     "@type": "Organization",
-    "@id": `https://www.wordexperts.com.au/#organization`,
+    "@id": `https://www.wordexperts.com.au#organization`,
   },
   telephone: "1300 122 038",
   email: "consult@wordexperts.com.au",
@@ -263,7 +263,7 @@ export const generateProfessionalServiceSchema = () => ({
 
 export const generateOrganizationSchema = () => ({
   "@type": "Organization",
-  "@id": "https://www.wordexperts.com.au/#organization",
+  "@id": "https://www.wordexperts.com.au#organization",
   name: "Word Experts Group",
   url: "https://www.wordexperts.com.au/",
   telephone: "1300 122 038",

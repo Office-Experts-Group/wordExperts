@@ -27,11 +27,11 @@ const schema = {
     {
       "@type": "WebPage",
       "@id":
-        "https://www.wordexperts.com.au/remove-repetition-and-increase-productivity/",
-      url: "https://www.wordexperts.com.au/remove-repetition-and-increase-productivity/",
+        "https://www.wordexperts.com.au/remove-repetition-and-increase-productivity",
+      url: "https://www.wordexperts.com.au/remove-repetition-and-increase-productivity",
       name: "Word Remove Repetition | Word Increase Productivity | Word Document Services",
       isPartOf: {
-        "@id": "https://www.wordexperts.com.au/#website",
+        "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-07-15T16:11:12+00:00",
       dateModified: "2024-11-12T00:00:00+00:00",
@@ -39,14 +39,14 @@ const schema = {
         "Automate repetitive Word tasks and increase productivity. Custom automation solutions for Microsoft Word documents and templates.",
       breadcrumb: {
         "@id":
-          "https://www.wordexperts.com.au/remove-repetition-and-increase-productivity/#breadcrumb",
+          "https://www.wordexperts.com.au/remove-repetition-and-increase-productivity#breadcrumb",
       },
       inLanguage: "en-AU",
       potentialAction: [
         {
           "@type": "ReadAction",
           target: [
-            "https://www.wordexperts.com.au/remove-repetition-and-increase-productivity/",
+            "https://www.wordexperts.com.au/remove-repetition-and-increase-productivity",
           ],
         },
       ],
@@ -54,13 +54,13 @@ const schema = {
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.wordexperts.com.au/remove-repetition-and-increase-productivity/#breadcrumb",
+        "https://www.wordexperts.com.au/remove-repetition-and-increase-productivity#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.wordexperts.com.au/",
+          item: "https://www.wordexperts.com.au",
         },
         {
           "@type": "ListItem",
@@ -72,10 +72,10 @@ const schema = {
     {
       "@type": "Service",
       "@id":
-        "https://www.wordexperts.com.au/remove-repetition-and-increase-productivity/#service",
+        "https://www.wordexperts.com.au/remove-repetition-and-increase-productivity#service",
       name: "Word Automation Solutions",
       provider: {
-        "@id": "https://www.wordexperts.com.au/#organization",
+        "@id": "https://www.wordexperts.com.au#organization",
       },
       description:
         "Professional Microsoft Word automation services for improved productivity",
@@ -119,33 +119,6 @@ const schema = {
           },
         ],
       },
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.wordexperts.com.au/#website",
-      url: "https://www.wordexperts.com.au/",
-      name: "Word Experts: Microsoft Word Development and Consulting Services",
-      description:
-        "Your Microsoft Word Design, Development and Consulting Experts",
-      publisher: {
-        "@id": "https://www.wordexperts.com.au/#organization",
-      },
-      potentialAction: [
-        {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate:
-              "https://www.wordexperts.com.au/?s={search_term_string}",
-          },
-          "query-input": {
-            "@type": "PropertyValueSpecification",
-            valueRequired: true,
-            valueName: "search_term_string",
-          },
-        },
-      ],
-      inLanguage: "en-AU",
     },
   ],
 };

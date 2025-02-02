@@ -34,15 +34,7 @@ export const metadata = {
     title: "Microsoft Word Accessibility | Word Experts",
     description:
       "Professional accessible Word document creation and template services. WCAG compliant documents and accessibility solutions.",
-    url: "https://www.wordexperts.com.au/accessibility/",
-  },
-
-  metadataBase: new URL("https://www.wordexperts.com.au"),
-  alternates: {
-    canonical: "/accessibility",
-    languages: {
-      "en-AU": "/accessibility",
-    },
+    url: "https://www.wordexperts.com.au/accessibility",
   },
 };
 

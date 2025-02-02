@@ -33,14 +33,7 @@ export const metadata = {
     title: "Word template conversions | Word Experts",
     description:
       "Professional Word template conversion services. Convert Adobe, InDesign and other formats to fully functional Microsoft Word templates.",
-    url: "https://www.wordexperts.com.au/word-template-conversions/",
-  },
-  metadataBase: new URL("https://www.wordexperts.com.au"),
-  alternates: {
-    canonical: "/word-template-conversions",
-    languages: {
-      "en-AU": "/word-template-conversions",
-    },
+    url: "https://www.wordexperts.com.au/word-template-conversions",
   },
 };
 

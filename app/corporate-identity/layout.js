@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Word Corporate Global Template Solution | Word Experts",
   description:
-    "Professional corporate identity protection through Microsoft Word templates. Ensure brand consistency and document compliance across your organization.",
+    "Professional corporate identity protection through Microsoft Word templates. Ensure brand consistency and document compliance across your organisation.",
   keywords: [
     // Core services
     "corporate document control",
@@ -24,14 +24,7 @@ export const metadata = {
     description:
       "Professional corporate identity protection through Microsoft Word templates. Ensure brand consistency and document compliance.",
 
-    url: "https://www.wordexperts.com.au/corporate-identity/",
-  },
-  metadataBase: new URL("https://www.wordexperts.com.au"),
-  alternates: {
-    canonical: "/corporate-identity",
-    languages: {
-      "en-AU": "/corporate-identity",
-    },
+    url: "https://www.wordexperts.com.au/corporate-identity",
   },
 };
 

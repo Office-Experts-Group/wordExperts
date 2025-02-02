@@ -30,11 +30,11 @@ const schema = {
     {
       "@type": "WebPage",
       "@id":
-        "https://www.wordexperts.com.au/corporate-global-template-solution/",
-      url: "https://www.wordexperts.com.au/corporate-global-template-solution/",
+        "https://www.wordexperts.com.au/corporate-global-template-solution",
+      url: "https://www.wordexperts.com.au/corporate-global-template-solution",
       name: "Corporate Word Solutions | Microsoft Word Corporate Integrity",
       isPartOf: {
-        "@id": "https://www.wordexperts.com.au/#website",
+        "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-07-15T15:50:26+00:00",
       dateModified: "2024-11-12T00:00:00+00:00",
@@ -42,14 +42,14 @@ const schema = {
         "Advanced Corporate Word Template Solution enabling efficient creation of corporate documents in a controlled environment. Maintain brand consistency and document integrity.",
       breadcrumb: {
         "@id":
-          "https://www.wordexperts.com.au/corporate-global-template-solution/#breadcrumb",
+          "https://www.wordexperts.com.au/corporate-global-template-solution#breadcrumb",
       },
       inLanguage: "en-AU",
       potentialAction: [
         {
           "@type": "ReadAction",
           target: [
-            "https://www.wordexperts.com.au/corporate-global-template-solution/",
+            "https://www.wordexperts.com.au/corporate-global-template-solution",
           ],
         },
       ],
@@ -57,13 +57,13 @@ const schema = {
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.wordexperts.com.au/corporate-global-template-solution/#breadcrumb",
+        "https://www.wordexperts.com.au/corporate-global-template-solution#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.wordexperts.com.au/",
+          item: "https://www.wordexperts.com.au",
         },
         {
           "@type": "ListItem",
@@ -75,10 +75,10 @@ const schema = {
     {
       "@type": "Service",
       "@id":
-        "https://www.wordexperts.com.au/corporate-global-template-solution/#service",
+        "https://www.wordexperts.com.au/corporate-global-template-solution#service",
       name: "Corporate Global Template Solution",
       provider: {
-        "@id": "https://www.wordexperts.com.au/#organization",
+        "@id": "https://www.wordexperts.com.au#organization",
       },
       description:
         "Advanced Corporate Word Template Solution for enterprise-wide document control and brand consistency",
@@ -110,33 +110,6 @@ const schema = {
           },
         ],
       },
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.wordexperts.com.au/#website",
-      url: "https://www.wordexperts.com.au/",
-      name: "Word Experts: Microsoft Word Development and Consulting Services",
-      description:
-        "Your Microsoft Word Design, Development and Consulting Experts",
-      publisher: {
-        "@id": "https://www.wordexperts.com.au/#organization",
-      },
-      potentialAction: [
-        {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate:
-              "https://www.wordexperts.com.au/?s={search_term_string}",
-          },
-          "query-input": {
-            "@type": "PropertyValueSpecification",
-            valueRequired: true,
-            valueName: "search_term_string",
-          },
-        },
-      ],
-      inLanguage: "en-AU",
     },
   ],
 };

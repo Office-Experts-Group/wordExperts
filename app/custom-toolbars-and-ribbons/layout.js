@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Custom Toolbars and Ribbons | Word Experts",
   description:
-    "Expert Microsoft Word toolbar and ribbon customization services. Improve productivity with custom Word toolbars tailored to your business needs.",
+    "Expert Microsoft Word toolbar and ribbon customisation services. Improve productivity with custom Word toolbars tailored to your business needs.",
   keywords: [
     // Core services
     "custom word toolbars",
@@ -42,14 +42,7 @@ export const metadata = {
     title: "Custom Toolbars and Ribbons | Word Experts",
     description:
       "Expert Microsoft Word toolbar and ribbon customization services. Improve productivity with custom Word toolbars.",
-    url: "https://www.wordexperts.com.au/custom-toolbars-and-ribbons/",
-  },
-  metadataBase: new URL("https://www.wordexperts.com.au"),
-  alternates: {
-    canonical: "/custom-toolbars-and-ribbons",
-    languages: {
-      "en-AU": "/custom-toolbars-and-ribbons",
-    },
+    url: "https://www.wordexperts.com.au/custom-toolbars-and-ribbons",
   },
 };
 

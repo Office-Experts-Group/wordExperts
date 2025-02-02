@@ -14,42 +14,42 @@ const schema = {
     generateProfessionalServiceSchema(),
     {
       "@type": "WebPage",
-      "@id": "https://www.wordexperts.com.au/author/ppexperts/",
-      url: "https://www.wordexperts.com.au/author/ppexperts/",
+      "@id": "https://www.wordexperts.com.au/author/ppexperts",
+      url: "https://www.wordexperts.com.au/author/ppexperts",
       name: "Word Experts Australia | Expert Authors",
       isPartOf: {
-        "@id": "https://www.wordexperts.com.au/#website",
+        "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2024-10-27T00:00:00+00:00",
       dateModified: "2024-10-27T00:00:00+00:00",
       description:
         "Meet our Microsoft Word consultants and trainers. Specialists in document automation, template development, and corporate training across Australia.",
       breadcrumb: {
-        "@id": "https://www.wordexperts.com.au/author/ppexperts/#breadcrumb",
+        "@id": "https://www.wordexperts.com.au/author/ppexperts#breadcrumb",
       },
       inLanguage: "en-AU",
       potentialAction: [
         {
           "@type": "ReadAction",
-          target: ["https://www.wordexperts.com.au/author/wordexperts/"],
+          target: ["https://www.wordexperts.com.au/author/wordexperts"],
         },
       ],
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.wordexperts.com.au/author/ppexperts/#breadcrumb",
+      "@id": "https://www.wordexperts.com.au/author/ppexperts#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.wordexperts.com.au/",
+          item: "https://www.wordexperts.com.au",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Authors",
-          item: "https://www.wordexperts.com.au/author/",
+          item: "https://www.wordexperts.com.au/author",
         },
         {
           "@type": "ListItem",
@@ -57,33 +57,6 @@ const schema = {
           name: "Word Experts Australia",
         },
       ],
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.wordexperts.com.au/#website",
-      url: "https://www.wordexperts.com.au/",
-      name: "Word Experts: Microsoft Word Consulting and Training Services",
-      description:
-        "Your Microsoft Word Document Automation and Corporate Training Experts",
-      publisher: {
-        "@id": "https://www.wordexperts.com.au/#organization",
-      },
-      potentialAction: [
-        {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate:
-              "https://www.wordexperts.com.au/?s={search_term_string}",
-          },
-          "query-input": {
-            "@type": "PropertyValueSpecification",
-            valueRequired: true,
-            valueName: "search_term_string",
-          },
-        },
-      ],
-      inLanguage: "en-AU",
     },
   ],
 };

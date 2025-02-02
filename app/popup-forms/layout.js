@@ -25,7 +25,7 @@ export const metadata = {
     title: "Word Popup Form | Word Experts",
     description:
       "Professional Microsoft Word popup form development. Custom data entry forms with validation and automation.",
-    url: "https://www.wordexperts.com.au/popup-forms/",
+    url: "https://www.wordexperts.com.au/popup-forms",
   },
   metadataBase: new URL("https://www.wordexperts.com.au"),
   alternates: {

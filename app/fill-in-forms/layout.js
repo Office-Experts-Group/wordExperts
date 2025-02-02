@@ -42,15 +42,7 @@ export const metadata = {
     title: "Expert Creation of Word Fill in Forms | Word Experts",
     description:
       "Professional Microsoft Word form creation services. Custom fillable forms with data validation and protection.",
-    url: "https://www.wordexperts.com.au/fill-in-forms/",
-  },
-
-  metadataBase: new URL("https://www.wordexperts.com.au"),
-  alternates: {
-    canonical: "/fill-in-forms",
-    languages: {
-      "en-AU": "/fill-in-forms",
-    },
+    url: "https://www.wordexperts.com.au/fill-in-forms",
   },
 };
 

@@ -32,14 +32,7 @@ export const metadata = {
     title: "Microsoft Word Training | Word Experts",
     description:
       "Professional Microsoft Word training and support services. Expert help with templates, documents, and Word automation.",
-    url: "https://www.wordexperts.com.au/training/",
-  },
-  metadataBase: new URL("https://www.wordexperts.com.au"),
-  alternates: {
-    canonical: "/training",
-    languages: {
-      "en-AU": "/training",
-    },
+    url: "https://www.wordexperts.com.au/training",
   },
 };
 

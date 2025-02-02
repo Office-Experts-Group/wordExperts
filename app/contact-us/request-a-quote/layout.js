@@ -34,14 +34,7 @@ export const metadata = {
     title: "Request a Quote | Word Experts",
     description:
       "Use the form below to provide us with all relevant information to quickly and efficiently process your enquiry.",
-    url: "https://www.wordexperts.com.au/contact-us/request-a-quote/",
-  },
-  metadataBase: new URL("https://www.wordexperts.com.au"),
-  alternates: {
-    canonical: "/contact-us/request-a-quote/",
-    languages: {
-      "en-AU": "/contact-us/request-a-quote/",
-    },
+    url: "https://www.wordexperts.com.au/contact-us/request-a-quote",
   },
 };
 

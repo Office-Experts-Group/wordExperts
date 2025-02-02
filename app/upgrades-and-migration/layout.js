@@ -24,16 +24,8 @@ export const metadata = {
   openGraph: {
     title: "Word Upgrades and Migration | Word Experts",
     description:
-      "Stuck on an old version? Expert Microsoft Word upgrade and migration services. Resolve formatting issues and ensure smooth transitions.",
-    url: "https://www.wordexperts.com.au/upgrades-and-migration/",
-  },
-
-  metadataBase: new URL("https://www.wordexperts.com.au"),
-  alternates: {
-    canonical: "/upgrades-and-migration",
-    languages: {
-      "en-AU": "/upgrades-and-migration",
-    },
+      "Stuck on an old version? Expert Microsoft Word upgrade and migration services. Resolve formatting issues, maintain document integrity, and ensure smooth transitions.",
+    url: "https://www.wordexperts.com.au/upgrades-and-migration",
   },
 };
 

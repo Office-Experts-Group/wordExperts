@@ -30,51 +30,24 @@ const schema = {
     generateOrganizationSchema(),
     {
       "@type": "WebPage",
-      "@id": "https://www.wordexperts.com.au/training/",
-      url: "https://www.wordexperts.com.au/training/",
+      "@id": "https://www.wordexperts.com.au/training",
+      url: "https://www.wordexperts.com.au/training",
       name: "Microsoft Word Training | Microsoft Word Help | Word Experts",
       isPartOf: {
-        "@id": "https://www.wordexperts.com.au/#website",
+        "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-07-15T15:59:22+00:00",
       dateModified: "2024-11-12T00:00:00+00:00",
       breadcrumb: {
-        "@id": "https://www.wordexperts.com.au/training/#breadcrumb",
+        "@id": "https://www.wordexperts.com.au/training#breadcrumb",
       },
       inLanguage: "en-AU",
       potentialAction: [
         {
           "@type": "ReadAction",
-          target: ["https://www.wordexperts.com.au/training/"],
+          target: ["https://www.wordexperts.com.au/training"],
         },
       ],
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.wordexperts.com.au/#website",
-      url: "https://www.wordexperts.com.au/",
-      name: "Word Experts: Microsoft Word Development and Consulting Services",
-      description:
-        "Your Microsoft Word Design, Development and Consulting Experts",
-      publisher: {
-        "@id": "https://www.wordexperts.com.au/#organization",
-      },
-      potentialAction: [
-        {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate:
-              "https://www.wordexperts.com.au/?s={search_term_string}",
-          },
-          "query-input": {
-            "@type": "PropertyValueSpecification",
-            valueRequired: true,
-            valueName: "search_term_string",
-          },
-        },
-      ],
-      inLanguage: "en-AU",
     },
   ],
 };

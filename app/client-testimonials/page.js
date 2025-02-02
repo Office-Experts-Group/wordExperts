@@ -28,36 +28,36 @@ const schema = {
     generateOrganizationSchema(),
     {
       "@type": "WebPage",
-      "@id": "https://www.wordexperts.com.au/client-testimonials/",
-      url: "https://www.wordexperts.com.au/client-testimonials/",
+      "@id": "https://www.wordexperts.com.au/client-testimonials",
+      url: "https://www.wordexperts.com.au/client-testimonials",
       name: "Testimonials - Word Experts - Microsoft Word Design, Development and Consulting",
       isPartOf: {
-        "@id": "https://www.wordexperts.com.au/#website",
+        "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2019-08-06T07:26:47+00:00",
       dateModified: "2024-11-12T00:00:00+00:00",
       description:
         "Read what our clients say about Word Experts' professional Microsoft Word services. Client testimonials from businesses across Australia.",
       breadcrumb: {
-        "@id": "https://www.wordexperts.com.au/client-testimonials/#breadcrumb",
+        "@id": "https://www.wordexperts.com.au/client-testimonials#breadcrumb",
       },
       inLanguage: "en-AU",
       potentialAction: [
         {
           "@type": "ReadAction",
-          target: ["https://www.wordexperts.com.au/client-testimonials/"],
+          target: ["https://www.wordexperts.com.au/client-testimonials"],
         },
       ],
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.wordexperts.com.au/client-testimonials/#breadcrumb",
+      "@id": "https://www.wordexperts.com.au/client-testimonials#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.wordexperts.com.au/",
+          item: "https://www.wordexperts.com.au",
         },
         {
           "@type": "ListItem",
@@ -65,33 +65,6 @@ const schema = {
           name: "Testimonials",
         },
       ],
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.wordexperts.com.au/#website",
-      url: "https://www.wordexperts.com.au/",
-      name: "Word Experts: Microsoft Word Development and Consulting Services",
-      description:
-        "Your Microsoft Word Design, Development and Consulting Experts",
-      publisher: {
-        "@id": "https://www.wordexperts.com.au/#organization",
-      },
-      potentialAction: [
-        {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate:
-              "https://www.wordexperts.com.au/?s={search_term_string}",
-          },
-          "query-input": {
-            "@type": "PropertyValueSpecification",
-            valueRequired: true,
-            valueName: "search_term_string",
-          },
-        },
-      ],
-      inLanguage: "en-AU",
     },
   ],
 };

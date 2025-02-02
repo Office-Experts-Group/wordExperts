@@ -77,7 +77,7 @@ export const metadata = {
     title: "Microsoft Word Designer & Experts | Word Consulting",
     description:
       "Word Experts is the Leading Microsoft Word Design Service in Australia. Expert Word Development & Consulting. Call 1300 122 038",
-    url: "https://www.wordexperts.com.au/",
+    url: "https://www.wordexperts.com.au",
     siteName: "Word Experts",
     images: [
       {
@@ -104,13 +104,13 @@ export const metadata = {
     "max-snippet": -1,
     "max-video-preview": -1,
   },
-  metadataBase: new URL("https://www.wordexperts.com.au"),
-  alternates: {
-    canonical: "/",
-    languages: {
-      "en-AU": "/",
-    },
-  }, // Icons
+  metadataBase: new URL(
+    process.env.NODE_ENV === "production"
+      ? "https://www.wordexperts.com.au"
+      : "http://localhost:3000"
+  ),
+
+  // Icons
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-32x32.png",

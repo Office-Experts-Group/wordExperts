@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Government Department Word Document Solutions | Word Experts",
   description:
-    "specialised Microsoft Word solutions for government departments. Accessible documents, compliant templates, and secure document management solutions.",
+    "Specialised Microsoft Word solutions for government departments. Accessible documents, compliant templates, and secure document management solutions.",
   keywords: [
     // Core services
     "government word templates",
@@ -21,8 +21,8 @@ export const metadata = {
   openGraph: {
     title: "Government Department Word Document Solutions | Word Experts",
     description:
-      "specialised Microsoft Word solutions for government departments. Accessible documents, compliant templates, and secure document management solutions.",
-    url: "https://www.wordexperts.com.au/government-departments/",
+      "Specialised Microsoft Word solutions for government departments. Accessible documents, compliant templates, and secure document management solutions.",
+    url: "https://www.wordexperts.com.au/government-departments",
   },
   metadataBase: new URL("https://www.wordexperts.com.au"),
   alternates: {

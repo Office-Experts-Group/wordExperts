@@ -10,15 +10,7 @@ export const metadata = {
     title: "Client Testimonials | Word Experts",
     description:
       "Read what our clients say about Word Experts' professional Microsoft Word services. Client testimonials from businesses across Australia.",
-    url: "https://www.wordexperts.com.au/client-testimonials/",
-  },
-
-  metadataBase: new URL("https://www.wordexperts.com.au"),
-  alternates: {
-    canonical: "/client-testimonials",
-    languages: {
-      "en-AU": "/client-testimonials",
-    },
+    url: "https://www.wordexperts.com.au/client-testimonials",
   },
 };
 

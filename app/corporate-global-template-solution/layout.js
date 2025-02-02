@@ -26,14 +26,7 @@ export const metadata = {
     title: "Corporate Word Solutions | Word Experts",
     description:
       "Advanced Corporate Word Template Solution enabling efficient creation of corporate documents in a controlled environment.",
-    url: "https://www.wordexperts.com.au/corporate-global-template-solution/",
-  },
-  metadataBase: new URL("https://www.wordexperts.com.au"),
-  alternates: {
-    canonical: "/corporate-global-template-solution",
-    languages: {
-      "en-AU": "/corporate-global-template-solution",
-    },
+    url: "https://www.wordexperts.com.au/corporate-global-template-solution",
   },
 };
 

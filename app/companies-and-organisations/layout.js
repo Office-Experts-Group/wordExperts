@@ -21,14 +21,7 @@ export const metadata = {
     title: "Word Template Designers | Word Experts",
     description:
       "Professional Word template solutions for companies and organizations. Custom document templates that protect corporate identity.",
-    url: "https://www.wordexperts.com.au/companies-and-organisations/",
-  },
-  metadataBase: new URL("https://www.wordexperts.com.au"),
-  alternates: {
-    canonical: "/companies-and-organisations",
-    languages: {
-      "en-AU": "/companies-and-organisations",
-    },
+    url: "https://www.wordexperts.com.au/companies-and-organisations",
   },
 };
 

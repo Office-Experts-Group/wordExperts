@@ -25,36 +25,36 @@ const schema = {
     generateOrganizationSchema(),
     {
       "@type": "WebPage",
-      "@id": "https://www.wordexperts.com.au/accessibility/",
-      url: "https://www.wordexperts.com.au/accessibility/",
+      "@id": "https://www.wordexperts.com.au/accessibility",
+      url: "https://www.wordexperts.com.au/accessibility",
       name: "Word Accessibility Solutions | Microsoft Word Accessibility | Word Experts",
       isPartOf: {
-        "@id": "https://www.wordexperts.com.au/#website",
+        "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-07-15T16:14:28+00:00",
       dateModified: "2024-11-12T00:00:00+00:00",
       description:
         "Professional accessible Word document creation and template services. WCAG compliant documents, accessibility audits, and remediation services.",
       breadcrumb: {
-        "@id": "https://www.wordexperts.com.au/accessibility/#breadcrumb",
+        "@id": "https://www.wordexperts.com.au/accessibility#breadcrumb",
       },
       inLanguage: "en-AU",
       potentialAction: [
         {
           "@type": "ReadAction",
-          target: ["https://www.wordexperts.com.au/accessibility/"],
+          target: ["https://www.wordexperts.com.au/accessibility"],
         },
       ],
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.wordexperts.com.au/accessibility/#breadcrumb",
+      "@id": "https://www.wordexperts.com.au/accessibility#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.wordexperts.com.au/",
+          item: "https://www.wordexperts.com.au",
         },
         {
           "@type": "ListItem",
@@ -65,10 +65,10 @@ const schema = {
     },
     {
       "@type": "Service",
-      "@id": "https://www.wordexperts.com.au/accessibility/#service",
+      "@id": "https://www.wordexperts.com.au/accessibility#service",
       name: "Word Accessibility Solutions",
       provider: {
-        "@id": "https://www.wordexperts.com.au/#organization",
+        "@id": "https://www.wordexperts.com.au#organization",
       },
       description:
         "Professional Microsoft Word accessibility services including WCAG compliance and document remediation",
@@ -106,33 +106,6 @@ const schema = {
           },
         ],
       },
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.wordexperts.com.au/#website",
-      url: "https://www.wordexperts.com.au/",
-      name: "Word Experts: Microsoft Word Development and Consulting Services",
-      description:
-        "Your Microsoft Word Design, Development and Consulting Experts",
-      publisher: {
-        "@id": "https://www.wordexperts.com.au/#organization",
-      },
-      potentialAction: [
-        {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate:
-              "https://www.wordexperts.com.au/?s={search_term_string}",
-          },
-          "query-input": {
-            "@type": "PropertyValueSpecification",
-            valueRequired: true,
-            valueName: "search_term_string",
-          },
-        },
-      ],
-      inLanguage: "en-AU",
     },
   ],
 };

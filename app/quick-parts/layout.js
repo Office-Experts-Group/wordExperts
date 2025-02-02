@@ -4,7 +4,7 @@ export const metadata = {
     "Expert Microsoft Word Quick Parts implementation. Enhance document creation with pre-built content and automated building blocks. Improve efficiency and consistency.",
   keywords: [
     // Core features
-    "word quick parts",
+    "Microsoft Word quick parts",
     // "building blocks gallery",
     // "microsoft Word document automation",
     // "microsoft Word content management",
@@ -30,14 +30,7 @@ export const metadata = {
     title: "Microsoft Word Document Quick Parts Services | Word Experts",
     description:
       "Expert Microsoft Word Quick Parts implementation. Enhance document creation with pre-built content and automated building blocks.",
-    url: "https://www.wordexperts.com.au/quick-parts/",
-  },
-  metadataBase: new URL("https://www.wordexperts.com.au"),
-  alternates: {
-    canonical: "/quick-parts",
-    languages: {
-      "en-AU": "/quick-parts",
-    },
+    url: "https://www.wordexperts.com.au/quick-parts",
   },
 };
 

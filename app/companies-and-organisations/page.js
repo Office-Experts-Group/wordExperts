@@ -29,11 +29,11 @@ const schema = {
     generateOrganizationSchema(),
     {
       "@type": "WebPage",
-      "@id": "https://www.wordexperts.com.au/companies-and-organisations/",
-      url: "https://www.wordexperts.com.au/companies-and-organisations/",
+      "@id": "https://www.wordexperts.com.au/companies-and-organisations",
+      url: "https://www.wordexperts.com.au/companies-and-organisations",
       name: "Word Template Designers | Word Document Designer | Word Experts",
       isPartOf: {
-        "@id": "https://www.wordexperts.com.au/#website",
+        "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-07-15T16:09:50+00:00",
       dateModified: "2024-11-12T00:00:00+00:00",
@@ -41,14 +41,14 @@ const schema = {
         "Professional Word template solutions for companies and organizations. Custom document templates that protect corporate identity and improve efficiency.",
       breadcrumb: {
         "@id":
-          "https://www.wordexperts.com.au/companies-and-organisations/#breadcrumb",
+          "https://www.wordexperts.com.au/companies-and-organisations#breadcrumb",
       },
       inLanguage: "en-AU",
       potentialAction: [
         {
           "@type": "ReadAction",
           target: [
-            "https://www.wordexperts.com.au/companies-and-organisations/",
+            "https://www.wordexperts.com.au/companies-and-organisations",
           ],
         },
       ],
@@ -56,13 +56,13 @@ const schema = {
     {
       "@type": "BreadcrumbList",
       "@id":
-        "https://www.wordexperts.com.au/companies-and-organisations/#breadcrumb",
+        "https://www.wordexperts.com.au/companies-and-organisations#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.wordexperts.com.au/",
+          item: "https://www.wordexperts.com.au",
         },
         {
           "@type": "ListItem",
@@ -74,10 +74,10 @@ const schema = {
     {
       "@type": "Service",
       "@id":
-        "https://www.wordexperts.com.au/companies-and-organisations/#service",
+        "https://www.wordexperts.com.au/companies-and-organisations#service",
       name: "Corporate Document Solutions",
       provider: {
-        "@id": "https://www.wordexperts.com.au/#organization",
+        "@id": "https://www.wordexperts.com.au#organization",
       },
       description:
         "Professional Microsoft Word template and document solutions for companies and organizations",
@@ -126,33 +126,6 @@ const schema = {
           },
         ],
       },
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.wordexperts.com.au/#website",
-      url: "https://www.wordexperts.com.au/",
-      name: "Word Experts: Microsoft Word Development and Consulting Services",
-      description:
-        "Your Microsoft Word Design, Development and Consulting Experts",
-      publisher: {
-        "@id": "https://www.wordexperts.com.au/#organization",
-      },
-      potentialAction: [
-        {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate:
-              "https://www.wordexperts.com.au/?s={search_term_string}",
-          },
-          "query-input": {
-            "@type": "PropertyValueSpecification",
-            valueRequired: true,
-            valueName: "search_term_string",
-          },
-        },
-      ],
-      inLanguage: "en-AU",
     },
   ],
 };

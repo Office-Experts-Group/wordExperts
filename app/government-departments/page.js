@@ -25,38 +25,37 @@ const schema = {
     generateOrganizationSchema(),
     {
       "@type": "WebPage",
-      "@id": "https://www.wordexperts.com.au/government-departments/",
-      url: "https://www.wordexperts.com.au/government-departments/",
+      "@id": "https://www.wordexperts.com.au/government-departments",
+      url: "https://www.wordexperts.com.au/government-departments",
       name: "Government Department Word Document Solutions | Word Government Consultants",
       isPartOf: {
-        "@id": "https://www.wordexperts.com.au/#website",
+        "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-07-15T16:07:45+00:00",
       dateModified: "2024-11-12T00:00:00+00:00",
       description:
-        "specialised Microsoft Word solutions for government departments. Accessible documents, compliant templates, and secure document management solutions.",
+        "Specialised Microsoft Word solutions for government departments. Accessible documents, compliant templates, and secure document management solutions.",
       breadcrumb: {
         "@id":
-          "https://www.wordexperts.com.au/government-departments/#breadcrumb",
+          "https://www.wordexperts.com.au/government-departments#breadcrumb",
       },
       inLanguage: "en-AU",
       potentialAction: [
         {
           "@type": "ReadAction",
-          target: ["https://www.wordexperts.com.au/government-departments/"],
+          target: ["https://www.wordexperts.com.au/government-departments"],
         },
       ],
     },
     {
       "@type": "BreadcrumbList",
-      "@id":
-        "https://www.wordexperts.com.au/government-departments/#breadcrumb",
+      "@id": "https://www.wordexperts.com.au/government-departments#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.wordexperts.com.au/",
+          item: "https://www.wordexperts.com.au",
         },
         {
           "@type": "ListItem",
@@ -64,33 +63,6 @@ const schema = {
           name: "Government Departments",
         },
       ],
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.wordexperts.com.au/#website",
-      url: "https://www.wordexperts.com.au/",
-      name: "Word Experts: Microsoft Word Development and Consulting Services",
-      description:
-        "Your Microsoft Word Design, Development and Consulting Experts",
-      publisher: {
-        "@id": "https://www.wordexperts.com.au/#organization",
-      },
-      potentialAction: [
-        {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate:
-              "https://www.wordexperts.com.au/?s={search_term_string}",
-          },
-          "query-input": {
-            "@type": "PropertyValueSpecification",
-            valueRequired: true,
-            valueName: "search_term_string",
-          },
-        },
-      ],
-      inLanguage: "en-AU",
     },
   ],
 };

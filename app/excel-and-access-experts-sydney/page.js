@@ -21,54 +21,27 @@ const schema = {
     generateOrganizationSchema(),
     {
       "@type": "WebPage",
-      "@id": "https://www.wordexperts.com.au/excel-and-access-experts-sydney/",
-      url: "https://www.wordexperts.com.au/excel-and-access-experts-sydney/",
+      "@id": "https://www.wordexperts.com.au/excel-and-access-experts-sydney",
+      url: "https://www.wordexperts.com.au/excel-and-access-experts-sydney",
       name: "Excel and Access Experts - Sydney - Word Experts",
       isPartOf: {
-        "@id": "https://www.wordexperts.com.au/#website",
+        "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2019-06-24T07:07:52+00:00",
       dateModified: "2024-11-24T07:07:52+00:00",
       breadcrumb: {
         "@id":
-          "https://www.wordexperts.com.au/excel-and-access-experts-sydney/#breadcrumb",
+          "https://www.wordexperts.com.au/excel-and-access-experts-sydney#breadcrumb",
       },
       inLanguage: "en-AU",
       potentialAction: [
         {
           "@type": "ReadAction",
           target: [
-            "https://www.wordexperts.com.au/excel-and-access-experts-sydney/",
+            "https://www.wordexperts.com.au/excel-and-access-experts-sydney",
           ],
         },
       ],
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.wordexperts.com.au/#website",
-      url: "https://www.wordexperts.com.au/",
-      name: "Word Experts: Microsoft Word Development and Consulting Services",
-      description:
-        "Your Microsoft Word Design, Development and Consulting Experts",
-      publisher: {
-        "@id": "https://www.wordexperts.com.au/#organization",
-      },
-      potentialAction: [
-        {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate:
-              "https://www.wordexperts.com.au/?s={search_term_string}",
-          },
-          "query-input": {
-            "@type": "PropertyValueSpecification",
-            valueRequired: true,
-            valueName: "search_term_string",
-          },
-        },
-      ],
-      inLanguage: "en-AU",
     },
   ],
 };

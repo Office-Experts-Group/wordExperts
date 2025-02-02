@@ -19,24 +19,24 @@ const schema = {
     generateOrganizationSchema(),
     {
       "@type": "WebPage",
-      "@id": "https://www.wordexperts.com.au/contact-us/",
-      url: "https://www.wordexperts.com.au/contact-us/",
+      "@id": "https://www.wordexperts.com.au/contact-us",
+      url: "https://www.wordexperts.com.au/contact-us",
       name: "Contact | Microsoft Excel | Microsoft Access | Power BI | MS Office",
       isPartOf: {
-        "@id": "https://www.wordexperts.com.au/#website",
+        "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2017-11-19T03:48:14+00:00",
       dateModified: "2024-11-12T00:00:00+00:00",
       description:
         "Contact Word Experts for professional Microsoft Word solutions. Expert consultants across Australia available onsite or by remote access.",
       breadcrumb: {
-        "@id": "https://www.wordexperts.com.au/contact-us/#breadcrumb",
+        "@id": "https://www.wordexperts.com.au/contact-us#breadcrumb",
       },
       inLanguage: "en-AU",
       potentialAction: [
         {
           "@type": "ReadAction",
-          target: ["https://www.wordexperts.com.au/contact-us/"],
+          target: ["https://www.wordexperts.com.au/contact-us"],
         },
         {
           "@type": "CommunicateAction",
@@ -57,13 +57,13 @@ const schema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.wordexperts.com.au/contact-us/#breadcrumb",
+      "@id": "https://www.wordexperts.com.au/contact-us#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.wordexperts.com.au/",
+          item: "https://www.wordexperts.com.au",
         },
         {
           "@type": "ListItem",
@@ -74,13 +74,13 @@ const schema = {
     },
     {
       "@type": "ContactPage",
-      "@id": "https://www.wordexperts.com.au/contact-us/#contactpage",
+      "@id": "https://www.wordexperts.com.au/contact-us#contactpage",
       name: "Contact Word Experts",
       description:
         "Get in touch with our Microsoft Word experts for professional document solutions",
-      url: "https://www.wordexperts.com.au/contact-us/",
+      url: "https://www.wordexperts.com.au/contact-us",
       provider: {
-        "@id": "https://www.wordexperts.com.au/#organization",
+        "@id": "https://www.wordexperts.com.au#organization",
       },
       contactPoint: [
         {
@@ -91,33 +91,6 @@ const schema = {
           availableLanguage: ["en", "en-AU"],
         },
       ],
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.wordexperts.com.au/#website",
-      url: "https://www.wordexperts.com.au/",
-      name: "Word Experts: Microsoft Word Development and Consulting Services",
-      description:
-        "Your Microsoft Word Design, Development and Consulting Experts",
-      publisher: {
-        "@id": "https://www.wordexperts.com.au/#organization",
-      },
-      potentialAction: [
-        {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate:
-              "https://www.wordexperts.com.au/?s={search_term_string}",
-          },
-          "query-input": {
-            "@type": "PropertyValueSpecification",
-            valueRequired: true,
-            valueName: "search_term_string",
-          },
-        },
-      ],
-      inLanguage: "en-AU",
     },
   ],
 };

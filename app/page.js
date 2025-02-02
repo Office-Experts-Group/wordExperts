@@ -38,36 +38,36 @@ const schema = {
     ...getHomePageSchema(testimonials, "word")["@graph"],
     {
       "@type": "WebPage",
-      "@id": "https://www.wordexperts.com.au/",
-      url: "https://www.wordexperts.com.au/",
+      "@id": "https://www.wordexperts.com.au",
+      url: "https://www.wordexperts.com.au",
       name: "Microsoft Word Designer & Experts | Word Consulting",
       isPartOf: {
-        "@id": "https://www.wordexperts.com.au/#website",
+        "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2017-11-22T14:23:06+00:00",
       dateModified: "2024-11-17T23:52:31+00:00",
       description:
         "Word Experts is the Leading Microsoft Word Design Service in Australia. Expert Word Development & Consulting.",
       breadcrumb: {
-        "@id": "https://www.wordexperts.com.au/#breadcrumb",
+        "@id": "https://www.wordexperts.com.au#breadcrumb",
       },
       inLanguage: "en-AU",
       potentialAction: [
         {
           "@type": "ReadAction",
-          target: ["https://www.wordexperts.com.au/"],
+          target: ["https://www.wordexperts.com.au"],
         },
       ],
     },
     {
       "@type": "WebSite",
-      "@id": "https://www.wordexperts.com.au/#website",
-      url: "https://www.wordexperts.com.au/",
+      "@id": "https://www.wordexperts.com.au#website",
+      url: "https://www.wordexperts.com.au",
       name: "Word Experts: Microsoft Word Development and Consulting Services",
       description:
         "Your Microsoft Word Design, Development and Consulting Experts",
       publisher: {
-        "@id": "https://www.wordexperts.com.au/#organization",
+        "@id": "https://www.wordexperts.com.au#organization",
       },
       potentialAction: [
         {
@@ -75,7 +75,7 @@ const schema = {
           target: {
             "@type": "EntryPoint",
             urlTemplate:
-              "https://www.wordexperts.com.au/?s={search_term_string}",
+              "https://www.wordexperts.com.au?s={search_term_string}",
           },
           "query-input": {
             "@type": "PropertyValueSpecification",
