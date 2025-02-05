@@ -5,6 +5,7 @@ export const metadata = {
   keywords: [
     // Core services
     "word template creation",
+    "template design for ms word",
     // "document template design",
     // "custom word templates",
     // "microsoft word templates",

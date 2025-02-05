@@ -15,6 +15,7 @@ export async function POST(req) {
       location,
       service, // New field for Microsoft service
       operatingSystem, // New field for operating system selection
+      company,
     } = body;
 
     // Validate required fields
@@ -33,6 +34,20 @@ export async function POST(req) {
       );
     }
 
+    // Format current time in AEST
+    const timeFormatter = new Intl.DateTimeFormat("en-AU", {
+      timeZone: "Australia/Sydney",
+      year: "numeric",
+      month: "numeric",
+      day: "numeric",
+      hour: "numeric",
+      minute: "numeric",
+      second: "numeric",
+      hour12: true,
+    });
+
+    const currentTimeAEST = timeFormatter.format(new Date());
+
     const { htmlSignature, textSignature } = getEmailSignature();
 
     // Updated messages to include location and service information
@@ -41,11 +56,12 @@ export async function POST(req) {
       location || "Unknown location"
     }.
       Phone: ${phone || "Not provided"}
+      Company: ${company || "Not provided"}
       Service Requested: ${service || "Not specified"}
       Operating System: ${operatingSystem || "Not specified"}
       Message: ${message}
 
-      This form was filled out on the website: https://wordexperts.com.au @ ${new Date().toLocaleString()}
+      This form was filled out on the website: https://wordexperts.com.au @ ${currentTimeAEST}
     `;
 
     const customerTextMessage = `
@@ -63,6 +79,7 @@ export async function POST(req) {
       location || "Unknown location"
     }.</p>
       <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
+      <p><strong>Company:</strong> ${company || "Not provided"}</p>
       <p><strong>Service Requested:</strong> ${service || "Not specified"}</p>
       <p><strong>Operating System:</strong> ${
         operatingSystem || "Not specified"
@@ -70,7 +87,7 @@ export async function POST(req) {
       <p><strong>Message:</strong></p>
       <p>${message}</p>
       
-      <em>This form was filled out on the website: https://wordexperts.com.au @ ${new Date().toLocaleString()}</em>
+      <em>This form was filled out on the website: https://wordexperts.com.au @ ${currentTimeAEST}</em>
     `;
 
     const customerHtmlMessage = `
@@ -81,16 +98,6 @@ export async function POST(req) {
     `;
 
     try {
-      // Send to primary business email
-      await sgMail.send({
-        from: "consult@officeexperts.com.au",
-        to: "joshua@officeexperts.com.au",
-        subject: `New Contact Form Submission from ${location || "Website"}`,
-        text: clientTextMessage,
-        html: clientHtmlMessage,
-        replyTo: email,
-      });
-
       //   Send to general business email
       await sgMail.send({
         from: "consult@officeexperts.com.au",

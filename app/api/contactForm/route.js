@@ -6,7 +6,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 export async function POST(req) {
   try {
     const body = await req.json();
-    const { name, email, phone, message, honeypot } = body;
+    const { name, email, phone, message, honeypot, company } = body;
 
     // Validate required fields
     if (!name || !email || !message) {
@@ -24,6 +24,20 @@ export async function POST(req) {
       );
     }
 
+    // Format current time in AEST
+    const timeFormatter = new Intl.DateTimeFormat("en-AU", {
+      timeZone: "Australia/Sydney",
+      year: "numeric",
+      month: "numeric",
+      day: "numeric",
+      hour: "numeric",
+      minute: "numeric",
+      second: "numeric",
+      hour12: true,
+    });
+
+    const currentTimeAEST = timeFormatter.format(new Date());
+
     // Get the email signature
     const { htmlSignature, textSignature } = getEmailSignature();
 
@@ -31,9 +45,10 @@ export async function POST(req) {
     const clientTextMessage = `
       You have received a new message from ${name} (${email}).
       Phone: ${phone || "Not provided"}.
+      Company: ${company || "Not provided"}.
       Message: ${message}
 
-      This form was filled out on the website: https://wordexperts.com.au @ ${new Date().toLocaleString()}
+      This form was filled out on the website: https://wordexperts.com.au @ ${currentTimeAEST}
     `;
 
     const customerTextMessage = `
@@ -50,10 +65,11 @@ export async function POST(req) {
     const clientHtmlMessage = `
       <p>You have received a new message from <strong>${name}</strong> (${email}).</p>
       <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
+      <p><strong>Company:</strong> ${company || "Not provided"}</p>
       <p><strong>Message:</strong></p>
       <p>${message}</p>
       
-      <em>This form was filled out on the website: https://wordexperts.com.au @ ${new Date().toLocaleString()}</em>
+      <em>This form was filled out on the website: https://wordexperts.com.au @ ${currentTimeAEST}</em>
     `;
 
     const customerHtmlMessage = `
@@ -65,15 +81,6 @@ export async function POST(req) {
 
     // Send emails
     try {
-      await sgMail.send({
-        from: "consult@officeexperts.com.au",
-        to: "joshua@officeexperts.com.au",
-        subject: "New Contact Form Submission",
-        text: clientTextMessage,
-        html: clientHtmlMessage,
-        replyTo: email, // Add reply-to header
-      });
-
       await sgMail.send({
         from: "consult@officeexperts.com.au",
         to: "consult@wordexperts.com.au",
