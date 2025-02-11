@@ -28,6 +28,17 @@ export const metadata = {
       "Advanced Corporate Word Template Solution enabling efficient creation of corporate documents in a controlled environment.",
     url: "https://www.wordexperts.com.au/corporate-global-template-solution",
   },
+  alternates: {
+    canonical: "https://wordexperts.com.au/corporate-global-template-solution",
+    alternates: [
+      {
+        url: "https://excelexperts.com.au/services/microsoft-word/corporate-global-template-solution",
+      },
+      {
+        url: "https://officeexperts.com.au/services/microsoft-word/corporate-global-template-solution",
+      },
+    ],
+  },
 };
 
 export default function Layout({ children }) {

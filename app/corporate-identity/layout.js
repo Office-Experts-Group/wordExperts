@@ -26,6 +26,17 @@ export const metadata = {
 
     url: "https://www.wordexperts.com.au/corporate-identity",
   },
+  alternates: {
+    canonical: "https://wordexperts.com.au/corporate-identity",
+    alternates: [
+      {
+        url: "https://excelexperts.com.au/services/microsoft-word/corporate-identity",
+      },
+      {
+        url: "https://officeexperts.com.au/services/microsoft-word/corporate-identity",
+      },
+    ],
+  },
 };
 
 export default function Layout({ children }) {

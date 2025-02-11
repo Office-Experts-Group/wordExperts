@@ -2,6 +2,9 @@
 import React, { useEffect, useState } from "react";
 import styles from "../styles/cookieConsent.module.css";
 
+const GA_ID = "G-3PV97H4KTP";
+const GTM_ID = "GTM-W2ZMP2P3";
+
 const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isClient, setIsClient] = useState(false);
@@ -14,16 +17,15 @@ const CookieConsent = () => {
     const consentChoice = localStorage.getItem("cookieConsent");
     if (consentChoice === "accepted") {
       initializeAnalytics();
-      return; // Exit early if consent already given
+      return;
     }
 
     // Add scroll listener
     const handleScroll = () => {
       if (!hasScrolled && window.scrollY > 100) {
-        // Show after 100px scroll
         setHasScrolled(true);
         setIsVisible(true);
-        window.removeEventListener("scroll", handleScroll); // Clean up listener
+        window.removeEventListener("scroll", handleScroll);
       }
     };
 
@@ -32,28 +34,45 @@ const CookieConsent = () => {
   }, [hasScrolled]);
 
   const initializeAnalytics = () => {
-    if (typeof window === "undefined" || window.GA_INITIALIZED) return;
-
-    window.GA_INITIALIZED = true;
+    if (typeof window === "undefined") return;
 
     try {
-      const gtmScript = document.createElement("script");
-      gtmScript.defer = true;
-      gtmScript.src = `https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`;
+      // Initialize GA4
+      const gaScript = document.createElement("script");
+      gaScript.async = true;
+      gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+      document.head.appendChild(gaScript);
 
-      const initScript = document.createElement("script");
-      initScript.defer = true;
-      initScript.textContent = `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}', {
-          page_path: window.location.pathname,
-        });
-      `;
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      window.gtag = gtag;
+      gtag("js", new Date());
+      gtag("config", GA_ID);
 
-      document.head.appendChild(gtmScript);
-      document.head.appendChild(initScript);
+      // Initialize GTM
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", GTM_ID);
+
+      // Add GTM noscript iframe
+      const noscript = document.createElement("noscript");
+      const iframe = document.createElement("iframe");
+      iframe.src = `https://www.googletagmanager.com/ns.html?id=${GTM_ID}`;
+      iframe.height = "0";
+      iframe.width = "0";
+      iframe.style.display = "none";
+      iframe.style.visibility = "hidden";
+      noscript.appendChild(iframe);
+      document.body.insertBefore(noscript, document.body.firstChild);
     } catch (error) {
       console.error("Failed to initialize analytics:", error);
     }
@@ -74,7 +93,6 @@ const CookieConsent = () => {
     }
   };
 
-  // Don't render anything on server
   if (!isClient || !isVisible) return null;
 
   return (

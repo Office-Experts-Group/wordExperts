@@ -23,6 +23,18 @@ export const metadata = {
       "Automate repetitive Word tasks and increase productivity. Custom automation solutions for Microsoft Word documents.",
     url: "https://www.wordexperts.com.au/remove-repetition-and-increase-productivity",
   },
+  alternates: {
+    canonical:
+      "https://wordexperts.com.au/remove-repetition-and-increase-productivity",
+    alternates: [
+      {
+        url: "https://officeexperts.com.au/services/microsoft-word/remove-repetition-and-increase-productivity",
+      },
+      {
+        url: "https://excelexperts.com.au/services/microsoft-word/remove-repetition-and-increase-productivity",
+      },
+    ],
+  },
 };
 
 export default function Layout({ children }) {

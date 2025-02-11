@@ -12,6 +12,9 @@ export const metadata = {
       "Read what our clients say about Word Experts' professional Microsoft Word services. Client testimonials from businesses across Australia.",
     url: "https://www.wordexperts.com.au/client-testimonials",
   },
+  alternates: {
+    canonical: "https://wordexperts.com.au/client-testimonials",
+  },
 };
 
 export default function Layout({ children }) {

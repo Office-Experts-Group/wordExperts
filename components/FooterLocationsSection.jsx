@@ -8,7 +8,7 @@ const locationsByState = {
   "New South Wales": {
     Sydney: "https://officeexperts.com.au/word-and-powerpoint-experts-sydney/",
     Wollongong:
-      "https://www.officeexperts.com.au/office-excel-access-and-word-experts-wollongong/",
+      "https://www.officeexperts.com.au/office-excel-access-and-365-experts-wollongong/",
     "Central Coast":
       "https://officeexperts.com.au/excel-and-access-experts-central-coast-nsw/",
     "Northern Rivers":

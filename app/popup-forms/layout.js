@@ -27,12 +27,16 @@ export const metadata = {
       "Professional Microsoft Word popup form development. Custom data entry forms with validation and automation.",
     url: "https://www.wordexperts.com.au/popup-forms",
   },
-  metadataBase: new URL("https://www.wordexperts.com.au"),
   alternates: {
-    canonical: "/popup-forms",
-    languages: {
-      "en-AU": "/popup-forms",
-    },
+    canonical: "https://wordexperts.com.au/popup-forms",
+    alternates: [
+      {
+        url: "https://officeexperts.com.au/services/microsoft-word/popup-forms",
+      },
+      {
+        url: "https://excelexperts.com.au/services/microsoft-word/popup-forms",
+      },
+    ],
   },
 };
 

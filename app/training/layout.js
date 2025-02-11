@@ -34,6 +34,17 @@ export const metadata = {
       "Professional Microsoft Word training and support services. Expert help with templates, documents, and Word automation.",
     url: "https://www.wordexperts.com.au/training",
   },
+  alternates: {
+    canonical: "https://wordexperts.com.au/training",
+    alternates: [
+      {
+        url: "https://officeexperts.com.au/services/microsoft-word/training",
+      },
+      {
+        url: "https://excelexperts.com.au/services/microsoft-word/training",
+      },
+    ],
+  },
 };
 
 export default function Layout({ children }) {

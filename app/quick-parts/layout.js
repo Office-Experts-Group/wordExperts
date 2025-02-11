@@ -32,6 +32,17 @@ export const metadata = {
       "Expert Microsoft Word Quick Parts implementation. Enhance document creation with pre-built content and automated building blocks.",
     url: "https://www.wordexperts.com.au/quick-parts",
   },
+  alternates: {
+    canonical: "https://wordexperts.com.au/quick-parts",
+    alternates: [
+      {
+        url: "https://officeexperts.com.au/services/microsoft-word/quick-parts",
+      },
+      {
+        url: "https://excelexperts.com.au/services/microsoft-word/quick-parts",
+      },
+    ],
+  },
 };
 
 export default function Layout({ children }) {

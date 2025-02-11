@@ -36,6 +36,17 @@ export const metadata = {
       "Professional accessible Word document creation and template services. WCAG compliant documents and accessibility solutions.",
     url: "https://www.wordexperts.com.au/accessibility",
   },
+  alternates: {
+    canonical: "https://wordexperts.com.au/accessibility",
+    alternates: [
+      {
+        url: "https://excelexperts.com.au/services/microsoft-word/accessibility",
+      },
+      {
+        url: "https://officeexperts.com.au/services/microsoft-word/accessibility",
+      },
+    ],
+  },
 };
 
 export default function Layout({ children }) {

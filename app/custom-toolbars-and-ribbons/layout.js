@@ -41,8 +41,19 @@ export const metadata = {
   openGraph: {
     title: "Custom Toolbars and Ribbons | Word Experts",
     description:
-      "Expert Microsoft Word toolbar and ribbon customization services. Improve productivity with custom Word toolbars.",
+      "Expert Microsoft Word toolbar and ribbon customisation services. Improve productivity with custom Word toolbars.",
     url: "https://www.wordexperts.com.au/custom-toolbars-and-ribbons",
+  },
+  alternates: {
+    canonical: "https://wordexperts.com.au/custom-toolbars-and-ribbons",
+    alternates: [
+      {
+        url: "https://officeexperts.com.au/services/microsoft-word/custom-toolbars-and-ribbons",
+      },
+      {
+        url: "https://excelexperts.com.au/services/microsoft-word/custom-toolbars-and-ribbons",
+      },
+    ],
   },
 };
 

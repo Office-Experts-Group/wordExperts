@@ -1,0 +1,232 @@
+[
+  {
+    "path": "/(components)",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/accessibility",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/accessibility/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/api",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/api/contactForm",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/api/contactLocation",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/api/quoteForm",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/api/quoteLocation",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/api/surveyForm",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/author",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/author/ppexperts",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/author/ppexperts/(components)",
+    "depth": 2,
+    "type": "directory"
+  },
+  {
+    "path": "/client-testimonials",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/client-testimonials/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/companies-and-organisations",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/companies-and-organisations/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/contact-us",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/contact-us/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/contact-us/request-a-quote",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/corporate-global-template-solution",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/corporate-global-template-solution/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/corporate-identity",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/corporate-identity/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/custom-toolbars-and-ribbons",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/custom-toolbars-and-ribbons/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/excel-and-access-experts-sydney",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/fill-in-forms",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/fill-in-forms/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/government-departments",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/government-departments/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/meet-the-team",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/meet-the-team/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/popup-forms",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/popup-forms/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/quick-parts",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/quick-parts/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/remove-repetition-and-increase-productivity",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/remove-repetition-and-increase-productivity/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/training",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/training/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/upgrades-and-migration",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/upgrades-and-migration/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/word-document-template-creation",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/word-document-template-creation/(components)",
+    "depth": 1,
+    "type": "directory"
+  },
+  {
+    "path": "/word-template-conversions",
+    "depth": 0,
+    "type": "directory"
+  },
+  {
+    "path": "/word-template-conversions/(components)",
+    "depth": 1,
+    "type": "directory"
+  }
+]

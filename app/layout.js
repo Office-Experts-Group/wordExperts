@@ -91,6 +91,9 @@ export const metadata = {
     locale: "en-AU",
     type: "website",
   },
+  verification: {
+    google: "Cd3MeCNj26i89f0hDQhRSZ6LFv3vXf051XxcSkYWfn4",
+  },
   twitter: {
     card: "summary_large_image",
     title: "Microsoft Word Designer & Experts | Word Consulting",

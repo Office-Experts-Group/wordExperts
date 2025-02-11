@@ -27,6 +27,17 @@ export const metadata = {
       "Stuck on an old version? Expert Microsoft Word upgrade and migration services. Resolve formatting issues, maintain document integrity, and ensure smooth transitions.",
     url: "https://www.wordexperts.com.au/upgrades-and-migration",
   },
+  alternates: {
+    canonical: "https://wordexperts.com.au/upgrades-and-migration",
+    alternates: [
+      {
+        url: "https://officeexperts.com.au/services/microsoft-word/upgrades-and-migration",
+      },
+      {
+        url: "https://excelexperts.com.au/services/microsoft-word/upgrades-and-migration",
+      },
+    ],
+  },
 };
 
 export default function Layout({ children }) {

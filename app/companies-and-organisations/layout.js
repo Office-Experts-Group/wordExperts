@@ -23,6 +23,17 @@ export const metadata = {
       "Professional Word template solutions for companies and organizations. Custom document templates that protect corporate identity.",
     url: "https://www.wordexperts.com.au/companies-and-organisations",
   },
+  alternates: {
+    canonical: "https://wordexperts.com.au/companies-and-organisations",
+    alternates: [
+      {
+        url: "https://excelexperts.com.au/services/microsoft-word/companies-and-organisations",
+      },
+      {
+        url: "https://officeexperts.com.au/services/microsoft-word/companies-and-organisations",
+      },
+    ],
+  },
 };
 
 export default function Layout({ children }) {

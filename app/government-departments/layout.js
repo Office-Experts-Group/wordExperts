@@ -24,12 +24,16 @@ export const metadata = {
       "Specialised Microsoft Word solutions for government departments. Accessible documents, compliant templates, and secure document management solutions.",
     url: "https://www.wordexperts.com.au/government-departments",
   },
-  metadataBase: new URL("https://www.wordexperts.com.au"),
   alternates: {
-    canonical: "/government-departments",
-    languages: {
-      "en-AU": "/government-departments",
-    },
+    canonical: "https://wordexperts.com.au/government-departments",
+    alternates: [
+      {
+        url: "https://officeexperts.com.au/services/microsoft-word/government-departments",
+      },
+      {
+        url: "https://excelexperts.com.au/services/microsoft-word/government-departments",
+      },
+    ],
   },
 };
 

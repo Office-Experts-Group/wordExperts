@@ -44,6 +44,17 @@ export const metadata = {
       "Professional Microsoft Word form creation services. Custom fillable forms with data validation and protection.",
     url: "https://www.wordexperts.com.au/fill-in-forms",
   },
+  alternates: {
+    canonical: "https://wordexperts.com.au/fill-in-forms",
+    alternates: [
+      {
+        url: "https://officeexperts.com.au/services/microsoft-word/fill-in-forms",
+      },
+      {
+        url: "https://excelexperts.com.au/services/microsoft-word/fill-in-forms",
+      },
+    ],
+  },
 };
 
 export default function Layout({ children }) {

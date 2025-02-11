@@ -50,12 +50,8 @@ export const metadata = {
       "Contact Word Experts for professional Microsoft Word solutions. Expert consultants across Australia.",
     images: ["/logo.png"],
   },
-  robots: {
-    index: true,
-    follow: true,
-    "max-image-preview": "large",
-    "max-snippet": -1,
-    "max-video-preview": -1,
+  alternates: {
+    canonical: "https://wordexperts.com.au/contact-us",
   },
 };
 

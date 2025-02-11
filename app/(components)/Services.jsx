@@ -25,7 +25,7 @@ const Services = () => {
               <span> for Microsoft Word</span>
             </p>
           </div>
-          <h2>Microsoft Word Designer & Consultants</h2>
+          <h1>Microsoft Word Designer & Consultants</h1>
           <p>
             When it comes to Microsoft Word, our Australia-wide, cross-industry
             consultants deliver a prompt, quality service with competitive

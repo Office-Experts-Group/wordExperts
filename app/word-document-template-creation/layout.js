@@ -40,6 +40,17 @@ export const metadata = {
       "Professional Microsoft Word template creation services. Custom document templates that maintain brand consistency and improve productivity.",
     url: "https://www.wordexperts.com.au/word-document-template-creation",
   },
+  alternates: {
+    canonical: "https://wordexperts.com.au/word-document-template-creation",
+    alternates: [
+      {
+        url: "https://officeexperts.com.au/services/microsoft-word/word-document-template-creation",
+      },
+      {
+        url: "https://excelexperts.com.au/services/microsoft-word/word-document-template-creation",
+      },
+    ],
+  },
 };
 
 export default function Layout({ children }) {

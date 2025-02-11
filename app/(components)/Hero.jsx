@@ -58,9 +58,9 @@ const Hero = () => {
             </h4>
           </div>
         </div>
-        <h1>
+        <h2>
           Word<br></br>Experts
-        </h1>
+        </h2>
         <Link href="/contact-us" className="btn">
           Discover More
         </Link>
