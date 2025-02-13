@@ -92,7 +92,7 @@ export const metadata = {
     type: "website",
   },
   verification: {
-    google: "Cd3MeCNj26i89f0hDQhRSZ6LFv3vXf051XxcSkYWfn4",
+    google: "NtRDR5S5MTLlWLTBf2FvyCqmInUCfftjw2OiFxTxltw",
   },
   twitter: {
     card: "summary_large_image",
