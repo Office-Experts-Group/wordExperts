@@ -2,46 +2,21 @@ import { NextResponse } from "next/server";
 import { goneUrls } from "./utils/goneUrls";
 
 export function middleware(request) {
-  if (!request || !request.nextUrl || !request.nextUrl.pathname) {
-    return NextResponse.next();
-  }
-
   const path = request.nextUrl.pathname;
   const normalizedPath = path.toLowerCase();
 
-  // Return early for static files and API routes
-  if (
-    path.startsWith("/_next/static") ||
-    path.startsWith("/api/") ||
-    path === "/favicon.ico"
-  ) {
-    return NextResponse.next();
-  }
-
-  // Handle static media files
+  // Handle static media files - prevent URL indexing while preserving image discovery
   if (path.includes("/_next/static/media/")) {
     const response = NextResponse.next();
-    response.headers.set("X-Robots-Tag", "noindex, noimageindex");
+    response.headers.set("X-Robots-Tag", "noimageindex, noindex");
     return response;
-  }
-
-  // Handle Wordfence parameters
-  const hasWordfenceParam = request.nextUrl.searchParams?.has("wordfence_lh");
-  if (hasWordfenceParam) {
-    return new NextResponse(null, {
-      status: 410,
-      statusText: "Gone",
-      headers: {
-        "X-Robots-Tag": "noindex",
-      },
-    });
   }
 
   const pathWithSlash = normalizedPath.endsWith("/")
     ? normalizedPath
     : `${normalizedPath}/`;
 
-  // Check gone URLs
+  // Check both with and without trailing slash for gone URLs
   if (goneUrls.includes(normalizedPath) || goneUrls.includes(pathWithSlash)) {
     return new NextResponse(null, {
       status: 410,
@@ -68,11 +43,14 @@ export function middleware(request) {
       "font-src 'self'; " +
       "frame-src 'self' *.vimeo.com player.vimeo.com *.googletagmanager.com; " +
       "media-src 'self' *.vimeo.com *.vimeocdn.com; " +
-      "connect-src 'self' *.vimeo.com *.vimeocdn.com *.google-analytics.com *.googletagmanager.com;"
+      "connect-src 'self' *.vimeo.com *.vimeocdn.com *.google-analytics.com *.googletagmanager.com *.officeexperts.com.au;"
   );
 
   // Handle Next.js system paths
-  if (path.startsWith("/_next/") && !path.startsWith("/_next/image")) {
+  if (
+    request.nextUrl.pathname.startsWith("/_next/") &&
+    !request.nextUrl.pathname.startsWith("/_next/image")
+  ) {
     response.headers.set("X-Robots-Tag", "noindex, nofollow");
   }
 

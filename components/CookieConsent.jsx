@@ -3,45 +3,40 @@ import React, { useEffect, useState } from "react";
 import styles from "../styles/cookieConsent.module.css";
 
 const GA_ID = "G-3PV97H4KTP";
-const GTM_ID = "GTM-W2ZMP2P3";
 
 const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isClient, setIsClient] = useState(false);
-  const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
 
     // Check if consent already exists
     const consentChoice = localStorage.getItem("cookieConsent");
-    if (consentChoice === "accepted") {
+    if (consentChoice === "accepted" && !window.gtag) {
       initializeAnalytics();
       return;
     }
 
-    // Add scroll listener
-    const handleScroll = () => {
-      if (!hasScrolled && window.scrollY > 100) {
-        setHasScrolled(true);
+    // Show consent after slight delay if no choice made
+    const timer = setTimeout(() => {
+      if (!localStorage.getItem("cookieConsent")) {
         setIsVisible(true);
-        window.removeEventListener("scroll", handleScroll);
       }
-    };
+    }, 2000);
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [hasScrolled]);
+    return () => clearTimeout(timer);
+  }, []);
 
   const initializeAnalytics = () => {
     if (typeof window === "undefined") return;
 
     try {
       // Initialize GA4
-      const gaScript = document.createElement("script");
-      gaScript.async = true;
-      gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
-      document.head.appendChild(gaScript);
+      const script = document.createElement("script");
+      script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+      script.async = true;
+      document.head.appendChild(script);
 
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -50,47 +45,20 @@ const CookieConsent = () => {
       window.gtag = gtag;
       gtag("js", new Date());
       gtag("config", GA_ID);
-
-      // Initialize GTM
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", GTM_ID);
-
-      // Add GTM noscript iframe
-      const noscript = document.createElement("noscript");
-      const iframe = document.createElement("iframe");
-      iframe.src = `https://www.googletagmanager.com/ns.html?id=${GTM_ID}`;
-      iframe.height = "0";
-      iframe.width = "0";
-      iframe.style.display = "none";
-      iframe.style.visibility = "hidden";
-      noscript.appendChild(iframe);
-      document.body.insertBefore(noscript, document.body.firstChild);
     } catch (error) {
       console.error("Failed to initialize analytics:", error);
     }
   };
 
   const handleAccept = () => {
-    if (typeof window !== "undefined") {
-      localStorage.setItem("cookieConsent", "accepted");
-      initializeAnalytics();
-      setIsVisible(false);
-    }
+    localStorage.setItem("cookieConsent", "accepted");
+    initializeAnalytics();
+    setIsVisible(false);
   };
 
   const handleDecline = () => {
-    if (typeof window !== "undefined") {
-      localStorage.setItem("cookieConsent", "declined");
-      setIsVisible(false);
-    }
+    localStorage.setItem("cookieConsent", "declined");
+    setIsVisible(false);
   };
 
   if (!isClient || !isVisible) return null;
@@ -102,7 +70,6 @@ const CookieConsent = () => {
         <div className={styles.description}>
           <p className={styles.message}>
             We use cookies to analyze our traffic and improve your experience.
-            This includes Google Analytics and Google Tag Manager.
           </p>
           <div className={styles.buttonGroup}>
             <button onClick={handleAccept} className={styles.acceptButton}>

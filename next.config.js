@@ -1,4 +1,5 @@
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+
 const REDIRECTS = [
   {
     source: "/https/officeexperts.com.au",
@@ -28,6 +29,7 @@ const nextConfig = {
   async headers() {
     return [
       {
+        // Default headers for all routes
         source: "/:path*",
         headers: [
           {
@@ -40,7 +42,6 @@ const nextConfig = {
   },
 
   webpack: (config, { dev, isServer }) => {
-    // Add CSS minification in production builds
     if (!dev && !isServer) {
       config.optimization.minimizer.push(new CssMinimizerPlugin());
     }
