@@ -3,7 +3,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const REDIRECTS = [
   {
     source: "/https/officeexperts.com.au",
-    destination: "https://officeexperts.com.au",
+    destination: "https://www.excelexperts.com.au",
     permanent: true,
   },
 ];

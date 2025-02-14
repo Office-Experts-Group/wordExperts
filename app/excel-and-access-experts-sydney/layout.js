@@ -41,7 +41,7 @@ export const metadata = {
     url: "https://www.wordexperts.com.au/excel-and-access-experts-sydney",
   },
   alternates: {
-    canonical: "https://wordexperts.com.au/excel-and-access-experts-sydney",
+    canonical: "/excel-and-access-experts-sydney",
   },
 };
 

@@ -28,13 +28,13 @@ export const metadata = {
     url: "https://www.wordexperts.com.au/popup-forms",
   },
   alternates: {
-    canonical: "https://wordexperts.com.au/popup-forms",
-    alternates: [
+    canonical: "/popup-forms",
+    alternate: [
       {
-        url: "https://officeexperts.com.au/services/microsoft-word/popup-forms",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/popup-forms",
       },
       {
-        url: "https://excelexperts.com.au/services/microsoft-word/popup-forms",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/popup-forms",
       },
     ],
   },

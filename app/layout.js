@@ -60,20 +60,6 @@ export const metadata = {
   title: "Microsoft Word Designer & Experts | Word Consulting",
   description:
     "Word Experts is the Leading Microsoft Word Design Service in Australia. Expert Word Development & Consulting. Call 1300 122 038",
-  keywords: [
-    // already ranking
-    "microsoft word consulting",
-    "microsoft word designer",
-    "microsoft word development",
-    "microsoft word expert",
-    "word consulting",
-    "word template design",
-    "word designer",
-    "design for word",
-    "word experts",
-    "word specialist",
-    "template word",
-  ],
   openGraph: {
     title: "Microsoft Word Designer & Experts | Word Consulting",
     description:
@@ -113,6 +99,9 @@ export const metadata = {
       ? "https://www.wordexperts.com.au"
       : "http://localhost:3000"
   ),
+  alternates: {
+    canonical: "https://www.wordexperts.com.au",
+  },
 
   // Icons
   icons: {

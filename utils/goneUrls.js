@@ -64,4 +64,5 @@ export const goneUrls = [
   "/yuriy",
   "/services/microsoft-powerpoint",
   "/page-sitemap.html",
+  "/?wordfence_lh=1&hid=093C7E5003E9818090FE01A50C975614",
 ].map((url) => url.toLowerCase());

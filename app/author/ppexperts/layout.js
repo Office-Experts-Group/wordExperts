@@ -17,7 +17,7 @@ export const metadata = {
   // Additional metadata
   keywords: ["Office Experts Group Author"],
   alternates: {
-    canonical: "https://wordexperts.com.au/author/ppexperts",
+    canonical: "/author/ppexperts",
   },
   robots: {
     index: false,

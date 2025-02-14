@@ -5,29 +5,6 @@ export const metadata = {
   keywords: [
     // Core services
     "word template conversion",
-    // "adobe to word conversion",
-    // "indesign to word conversion",
-    // "pdf to word template",
-    // "word document format conversion",
-
-    // // Service specifics
-    // "professional word template conversions",
-    // "word template design conversion",
-    // "microsoft document conversion services",
-    // "word template migration",
-
-    // // Features
-    // "corporate document conversion",
-    // "word document automation",
-
-    // // Technical aspects
-    // "word template development",
-
-    // // Industry specific
-    // "corporate document migration",
-    // "enterprise word solutions",
-    // "professional word document services",
-    // "commercial word template conversion",
   ],
   openGraph: {
     title: "Word template conversions | Word Experts",
@@ -36,13 +13,13 @@ export const metadata = {
     url: "https://www.wordexperts.com.au/word-template-conversions",
   },
   alternates: {
-    canonical: "https://wordexperts.com.au/word-template-conversions",
-    alternates: [
+    canonical: "/word-template-conversions",
+    alternate: [
       {
-        url: "https://officeexperts.com.au/services/microsoft-word/word-template-conversions",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/word-template-conversions",
       },
       {
-        url: "https://excelexperts.com.au/services/microsoft-word/word-template-conversions",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/word-template-conversions",
       },
     ],
   },

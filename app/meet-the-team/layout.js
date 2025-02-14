@@ -31,7 +31,7 @@ export const metadata = {
     url: "https://www.wordexperts.com.au/meet-the-team",
   },
   alternates: {
-    canonical: "https://wordexperts.com.au/meet-the-team",
+    canonical: "/meet-the-team",
   },
 };
 

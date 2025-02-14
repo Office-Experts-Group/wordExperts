@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://wordexperts.com.au
+Host: https://www.wordexperts.com.au
 
 # Sitemaps
-Sitemap: https://wordexperts.com.au/sitemap.xml
+Sitemap: https://www.wordexperts.com.au/sitemap.xml

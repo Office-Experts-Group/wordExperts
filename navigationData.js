@@ -36,19 +36,19 @@ export const navigationData = {
         items: [
           {
             label: "App Development with Power Apps",
-            href: "https://powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-apps/",
+            href: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-apps/",
           },
           {
             label: "Workflow Automation with Power Automate",
-            href: "https://powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate/",
+            href: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-automate/",
           },
           {
             label: "Data Analytics with Power BI",
-            href: "https://powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-bi/",
+            href: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-bi/",
           },
           {
             label: "Simple, Scalable Websites with Power Pages",
-            href: "https://powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages/",
+            href: "https://www.powerplatformexperts.com.au/services/microsoft-power-platform/microsoft-power-pages/",
           },
         ],
       },

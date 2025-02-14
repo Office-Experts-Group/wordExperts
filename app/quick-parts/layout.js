@@ -33,13 +33,13 @@ export const metadata = {
     url: "https://www.wordexperts.com.au/quick-parts",
   },
   alternates: {
-    canonical: "https://wordexperts.com.au/quick-parts",
-    alternates: [
+    canonical: "/quick-parts",
+    alternate: [
       {
-        url: "https://officeexperts.com.au/services/microsoft-word/quick-parts",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/quick-parts",
       },
       {
-        url: "https://excelexperts.com.au/services/microsoft-word/quick-parts",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/quick-parts",
       },
     ],
   },

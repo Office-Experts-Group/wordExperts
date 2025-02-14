@@ -37,7 +37,7 @@ export const metadata = {
     url: "https://www.wordexperts.com.au/contact-us/request-a-quote",
   },
   alternates: {
-    canonical: "https://wordexperts.com.au/contact-us/request-a-quote",
+    canonical: "/contact-us/request-a-quote",
   },
 };
 

@@ -27,13 +27,13 @@ export const metadata = {
     url: "https://www.wordexperts.com.au/corporate-identity",
   },
   alternates: {
-    canonical: "https://wordexperts.com.au/corporate-identity",
-    alternates: [
+    canonical: "/corporate-identity",
+    alternate: [
       {
-        url: "https://excelexperts.com.au/services/microsoft-word/corporate-identity",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/corporate-identity",
       },
       {
-        url: "https://officeexperts.com.au/services/microsoft-word/corporate-identity",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/corporate-identity",
       },
     ],
   },

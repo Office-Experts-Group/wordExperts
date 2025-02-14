@@ -48,7 +48,7 @@ export async function POST(req) {
       Company: ${company || "Not provided"}.
       Message: ${message}
 
-      This form was filled out on the website: https://wordexperts.com.au @ ${currentTimeAEST}
+      This form was filled out on the website: https://www.wordexperts.com.au @ ${currentTimeAEST}
     `;
 
     const customerTextMessage = `
@@ -69,7 +69,7 @@ export async function POST(req) {
       <p><strong>Message:</strong></p>
       <p>${message}</p>
       
-      <em>This form was filled out on the website: https://wordexperts.com.au @ ${currentTimeAEST}</em>
+      <em>This form was filled out on the website: https://www.wordexperts.com.au @ ${currentTimeAEST}</em>
     `;
 
     const customerHtmlMessage = `

@@ -35,13 +35,13 @@ export const metadata = {
     url: "https://www.wordexperts.com.au/training",
   },
   alternates: {
-    canonical: "https://wordexperts.com.au/training",
-    alternates: [
+    canonical: "/training",
+    alternate: [
       {
-        url: "https://officeexperts.com.au/services/microsoft-word/training",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/training",
       },
       {
-        url: "https://excelexperts.com.au/services/microsoft-word/training",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/training",
       },
     ],
   },

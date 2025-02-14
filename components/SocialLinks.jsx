@@ -12,7 +12,7 @@ const SocialLinks = ({ inNav }) => {
       <Link
         href="https://www.facebook.com/MSOfficeExperts"
         target="_blank"
-        rel="noreferrer"
+        rel="nofollow noopener noreferrer"
         aria-label="visit our facebook page"
         className={inNav ? styles.socialLinkNav : ""}
       >
@@ -33,7 +33,7 @@ const SocialLinks = ({ inNav }) => {
       <Link
         href="https://www.instagram.com/officeexpertsgroup"
         target="_blank"
-        rel="noreferrer"
+        rel="nofollow noopener noreferrer"
         aria-label="visit our instagram page"
         className={inNav ? styles.socialLinkNav : ""}
       >
@@ -58,7 +58,7 @@ const SocialLinks = ({ inNav }) => {
       <Link
         href="https://www.youtube.com/channel/UCw2Xf02ukEwvM6fQ2lVZxuw"
         target="_blank"
-        rel="noreferrer"
+        rel="nofollow noopener noreferrer"
         aria-label="visit our youtube channel"
         className={inNav ? styles.socialLinkNav : ""}
       >
@@ -82,7 +82,7 @@ const SocialLinks = ({ inNav }) => {
       <Link
         href="https://www.linkedin.com/company/office-experts-group"
         target="_blank"
-        rel="noreferrer"
+        rel="nofollow noopener noreferrer"
         aria-label="Visit our LinkedIn page"
         className={inNav ? styles.socialLinkNav : ""}
       >

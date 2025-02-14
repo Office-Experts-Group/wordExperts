@@ -45,13 +45,13 @@ export const metadata = {
     url: "https://www.wordexperts.com.au/fill-in-forms",
   },
   alternates: {
-    canonical: "https://wordexperts.com.au/fill-in-forms",
-    alternates: [
+    canonical: "/fill-in-forms",
+    alternate: [
       {
-        url: "https://officeexperts.com.au/services/microsoft-word/fill-in-forms",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/fill-in-forms",
       },
       {
-        url: "https://excelexperts.com.au/services/microsoft-word/fill-in-forms",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/fill-in-forms",
       },
     ],
   },

@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://wordexperts.com.au",
+  siteUrl: "https://www.wordexperts.com.au",
   generateRobotsTxt: true,
   // Optional: other configuration
   changefreq: "weekly",

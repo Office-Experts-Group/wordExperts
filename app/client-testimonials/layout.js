@@ -13,7 +13,7 @@ export const metadata = {
     url: "https://www.wordexperts.com.au/client-testimonials",
   },
   alternates: {
-    canonical: "https://wordexperts.com.au/client-testimonials",
+    canonical: "/client-testimonials",
   },
 };
 

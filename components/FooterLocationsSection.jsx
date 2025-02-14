@@ -6,40 +6,41 @@ import styles from "../styles/footerLocations.module.scss";
 
 const locationsByState = {
   "New South Wales": {
-    Sydney: "https://officeexperts.com.au/word-and-powerpoint-experts-sydney/",
+    Sydney:
+      "https://www.excelexperts.com.au/word-and-powerpoint-experts-sydney/",
     Wollongong:
       "https://www.officeexperts.com.au/office-excel-access-and-365-experts-wollongong/",
     "Central Coast":
-      "https://officeexperts.com.au/excel-and-access-experts-central-coast-nsw/",
+      "https://www.excelexperts.com.au/excel-and-access-experts-central-coast-nsw/",
     "Northern Rivers":
-      "https://officeexperts.com.au/office-excel-access-and-365-experts-northern-rivers-nsw/",
+      "https://www.excelexperts.com.au/office-excel-access-and-365-experts-northern-rivers-nsw/",
   },
   Victoria: {
     Melbourne:
-      "https://officeexperts.com.au/word-and-powerpoint-experts-melbourne/",
+      "https://www.excelexperts.com.au/word-and-powerpoint-experts-melbourne/",
     Richmond:
-      "https://officeexperts.com.au/office-and-office-365-experts-richmond/",
+      "https://www.excelexperts.com.au/office-and-office-365-experts-richmond/",
   },
   Queensland: {
     Brisbane:
-      "https://officeexperts.com.au/office-excel-access-and-365-experts-brisbane/",
+      "https://www.excelexperts.com.au/office-excel-access-and-365-experts-brisbane/",
     "Gold Coast":
-      "https://officeexperts.com.au/word-and-powerpoint-experts-gold-coast/",
+      "https://www.excelexperts.com.au/word-and-powerpoint-experts-gold-coast/",
   },
   "Western Australia": {
-    Perth: "https://officeexperts.com.au/word-and-powerpoint-experts-perth/",
+    Perth: "https://www.excelexperts.com.au/word-and-powerpoint-experts-perth/",
   },
   ACT: {
     Canberra:
-      "https://officeexperts.com.au/word-and-powerpoint-experts-canberra/",
+      "https://www.excelexperts.com.au/word-and-powerpoint-experts-canberra/",
   },
   "Northern Territory": {
     Darwin:
-      "https://officeexperts.com.au/office-excel-access-and-365-experts-darwin/",
+      "https://www.excelexperts.com.au/office-excel-access-and-365-experts-darwin/",
   },
   "South Australia": {
     Adelaide:
-      "https://officeexperts.com.au/office-excel-access-and-365-experts-adelaide/",
+      "https://www.excelexperts.com.au/office-excel-access-and-365-experts-adelaide/",
   },
 };
 

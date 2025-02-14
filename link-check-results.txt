@@ -296,7 +296,7 @@ app/companies-and-organisations/(components)/PageSegmentMain.jsx:
   /
 
 app/meet-the-team/(components)/Services.jsx:
-  https://officeexperts.com.au/about-us
+  https://www.excelexperts.com.au/about-us
 
 app/word-document-template-creation/(components)/PageSegmentMain.jsx:
   /
@@ -366,7 +366,7 @@ https://www.officeexperts.com.au/services/by-product-and-technology/microsoft-pu
 /excel-and-access-experts-sydney
 /fill-in-forms
 /government-departments
-https://officeexperts.com.au/about-us
+https://www.excelexperts.com.au/about-us
 /popup-forms
 /quick-parts
 /remove-repetition-and-increase-productivity
@@ -421,7 +421,7 @@ CHECK RESULTS
 33/52: /excel-and-access-experts-sydney - Status: 200
 34/52: /fill-in-forms - Status: 200
 35/52: /government-departments - Status: 200
-36/52: https://officeexperts.com.au/about-us - Status: 200
+36/52: https://www.excelexperts.com.au/about-us - Status: 200
 37/52: /popup-forms - Status: 200
 38/52: /quick-parts - Status: 200
 39/52: /remove-repetition-and-increase-productivity - Status: 200

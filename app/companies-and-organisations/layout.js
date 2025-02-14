@@ -24,13 +24,13 @@ export const metadata = {
     url: "https://www.wordexperts.com.au/companies-and-organisations",
   },
   alternates: {
-    canonical: "https://wordexperts.com.au/companies-and-organisations",
-    alternates: [
+    canonical: "/companies-and-organisations",
+    alternate: [
       {
-        url: "https://excelexperts.com.au/services/microsoft-word/companies-and-organisations",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/companies-and-organisations",
       },
       {
-        url: "https://officeexperts.com.au/services/microsoft-word/companies-and-organisations",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/companies-and-organisations",
       },
     ],
   },

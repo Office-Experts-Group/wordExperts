@@ -6,29 +6,6 @@ export const metadata = {
   keywords: [
     // Core accessibility
     "word accessibility solutions",
-    // "accessible word documents",
-    // "wcag compliant templates",
-    // "document accessibility",
-    // "accessibility compliance",
-
-    // // Services
-    // "accessibility audits",
-    // "document remediation",
-    // "accessibility testing",
-    // "template compliance",
-    // "accessibility conversion",
-
-    // // Document types
-    // "accessible word templates",
-    // "compliance documents in microsoft Word",
-    // "government documents accessibility",
-    // "accessible word forms",
-
-    // // Technical aspects
-    // "screen reader compatibility",
-    // "alt text implementation microsoft word",
-    // "microsoft word document navigation",
-    // "microsoft word accessibility tags",
   ],
   openGraph: {
     title: "Microsoft Word Accessibility | Word Experts",
@@ -37,13 +14,13 @@ export const metadata = {
     url: "https://www.wordexperts.com.au/accessibility",
   },
   alternates: {
-    canonical: "https://wordexperts.com.au/accessibility",
-    alternates: [
+    canonical: "/accessibility",
+    alternate: [
       {
-        url: "https://excelexperts.com.au/services/microsoft-word/accessibility",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/accessibility",
       },
       {
-        url: "https://officeexperts.com.au/services/microsoft-word/accessibility",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/accessibility",
       },
     ],
   },

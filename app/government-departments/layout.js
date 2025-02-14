@@ -25,13 +25,13 @@ export const metadata = {
     url: "https://www.wordexperts.com.au/government-departments",
   },
   alternates: {
-    canonical: "https://wordexperts.com.au/government-departments",
-    alternates: [
+    canonical: "/government-departments",
+    alternate: [
       {
-        url: "https://officeexperts.com.au/services/microsoft-word/government-departments",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/government-departments",
       },
       {
-        url: "https://excelexperts.com.au/services/microsoft-word/government-departments",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/government-departments",
       },
     ],
   },

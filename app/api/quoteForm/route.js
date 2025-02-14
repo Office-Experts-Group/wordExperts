@@ -119,7 +119,7 @@ export async function POST(req) {
       Software Versions: ${softwareVersions || "Not provided"}.
       Website: ${website || "Not provided"}.
       Message: ${message || "Not provided"}
-      This form was filled out on the website: https://wordexperts.com.au @ ${currentTimeAEST}
+      This form was filled out on the website: https://www.wordexperts.com.au @ ${currentTimeAEST}
     `;
 
     const customerTextMessage = `
@@ -145,7 +145,7 @@ export async function POST(req) {
       <p><strong>Website:</strong> ${website || "Not provided"}</p>
       <p><strong>Message:</strong></p>
       <p>${message || "Not provided"}</p>
-      <em>This form was filled out on the website: https://wordexperts.com.au @ ${currentTimeAEST}</em>
+      <em>This form was filled out on the website: https://www.wordexperts.com.au @ ${currentTimeAEST}</em>
     `;
 
     const customerHtmlMessage = `

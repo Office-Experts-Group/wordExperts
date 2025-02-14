@@ -41,13 +41,13 @@ export const metadata = {
     url: "https://www.wordexperts.com.au/word-document-template-creation",
   },
   alternates: {
-    canonical: "https://wordexperts.com.au/word-document-template-creation",
-    alternates: [
+    canonical: "/word-document-template-creation",
+    alternate: [
       {
-        url: "https://officeexperts.com.au/services/microsoft-word/word-document-template-creation",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/word-document-template-creation",
       },
       {
-        url: "https://excelexperts.com.au/services/microsoft-word/word-document-template-creation",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/word-document-template-creation",
       },
     ],
   },

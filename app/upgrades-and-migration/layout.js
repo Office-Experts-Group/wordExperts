@@ -28,13 +28,13 @@ export const metadata = {
     url: "https://www.wordexperts.com.au/upgrades-and-migration",
   },
   alternates: {
-    canonical: "https://wordexperts.com.au/upgrades-and-migration",
-    alternates: [
+    canonical: "/upgrades-and-migration",
+    alternate: [
       {
-        url: "https://officeexperts.com.au/services/microsoft-word/upgrades-and-migration",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/upgrades-and-migration",
       },
       {
-        url: "https://excelexperts.com.au/services/microsoft-word/upgrades-and-migration",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/upgrades-and-migration",
       },
     ],
   },

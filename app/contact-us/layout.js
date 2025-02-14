@@ -51,7 +51,7 @@ export const metadata = {
     images: ["/logo.png"],
   },
   alternates: {
-    canonical: "https://wordexperts.com.au/contact-us",
+    canonical: "/contact-us",
   },
 };
 

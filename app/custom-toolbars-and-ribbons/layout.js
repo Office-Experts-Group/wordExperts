@@ -45,13 +45,13 @@ export const metadata = {
     url: "https://www.wordexperts.com.au/custom-toolbars-and-ribbons",
   },
   alternates: {
-    canonical: "https://wordexperts.com.au/custom-toolbars-and-ribbons",
-    alternates: [
+    canonical: "/custom-toolbars-and-ribbons",
+    alternate: [
       {
-        url: "https://officeexperts.com.au/services/microsoft-word/custom-toolbars-and-ribbons",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/custom-toolbars-and-ribbons",
       },
       {
-        url: "https://excelexperts.com.au/services/microsoft-word/custom-toolbars-and-ribbons",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/custom-toolbars-and-ribbons",
       },
     ],
   },

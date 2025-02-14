@@ -24,14 +24,13 @@ export const metadata = {
     url: "https://www.wordexperts.com.au/remove-repetition-and-increase-productivity",
   },
   alternates: {
-    canonical:
-      "https://wordexperts.com.au/remove-repetition-and-increase-productivity",
-    alternates: [
+    canonical: "/remove-repetition-and-increase-productivity",
+    alternate: [
       {
-        url: "https://officeexperts.com.au/services/microsoft-word/remove-repetition-and-increase-productivity",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/remove-repetition-and-increase-productivity",
       },
       {
-        url: "https://excelexperts.com.au/services/microsoft-word/remove-repetition-and-increase-productivity",
+        url: "https://www.excelexperts.com.au/services/microsoft-word/remove-repetition-and-increase-productivity",
       },
     ],
   },
