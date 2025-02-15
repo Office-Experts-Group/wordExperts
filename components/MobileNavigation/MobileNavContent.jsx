@@ -10,7 +10,10 @@ const getMenuItems = (currentView = "main") => {
       return [
         { label: "Home", href: "/" },
         { label: "Services", items: oldNavigationData.services.items },
-        { label: "About Us", href: "https://www.excelexperts.com.au/about-us" },
+        {
+          label: "About Us",
+          href: "https://www.officeexperts.com.au/about-us",
+        },
         { label: "Meet Our Team", href: "/meet-the-team" },
         { label: "Testimonials", href: "/client-testimonials" },
         { label: "Contact Us", href: "/contact-us" },

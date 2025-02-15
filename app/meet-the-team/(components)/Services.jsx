@@ -24,7 +24,7 @@ const Services = ({ meetStyles, teamMembers }) => {
             programming, and analysis. Our team of over 20 professionals works
             remotely or onsite to deliver the custom solutions your business
             deserves. Learn more about what makes us tick on the{" "}
-            <Link href={"https://www.excelexperts.com.au/about-us"}>
+            <Link href={"https://www.officeexperts.com.au/about-us"}>
               About Us
             </Link>{" "}
             page.

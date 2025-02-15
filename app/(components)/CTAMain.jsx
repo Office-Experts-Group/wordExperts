@@ -64,7 +64,7 @@ const CTAMain = () => {
             </div>
 
             <Link
-              href="https://www.excelexperts.com.au/about-us"
+              href="https://www.officeexperts.com.au/about-us"
               className={styles.link}
             >
               Discover More
