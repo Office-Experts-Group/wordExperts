@@ -69,6 +69,16 @@
   line-height: 2rem;
   max-width: 80%;
 }
+@media (max-width: 449px) {
+  .text p {
+    text-align: center;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .text p {
+    text-align: center;
+  }
+}
 .text a {
   color: #046999;
   font-weight: 700 !important;

@@ -61,6 +61,12 @@
     color: #777a7e;
     line-height: 2rem;
     max-width: 80%;
+    @include phone {
+      text-align: center;
+    }
+    @include phoneLandscape {
+      text-align: center;
+    }
   }
 
   a {
