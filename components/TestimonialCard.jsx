@@ -16,8 +16,7 @@ const TestimonialCard = ({ content, name, contact, image, index }) => {
               alt={contact ? `${contact}'s logo` : "Company logo"}
               width={image.width || 150}
               height={image.height || 150}
-              priority={isAboveFold}
-              loading={isAboveFold ? undefined : "lazy"}
+              priority={isAboveFold ? true : false}
             />
           </div>
         )}

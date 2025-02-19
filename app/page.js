@@ -106,7 +106,7 @@ const Page = () => {
       <IsRight />
       <SolutionsCarousel />
       <Testimonials testimonials={testimonials} />
-      <Brands />
+      <Brands isBelowFold={true} />
       <CTAFull />
       <Promo
         h2="Master Your Documents"

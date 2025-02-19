@@ -14,12 +14,6 @@ const FooterLogoSection = () => {
   return (
     <div className={styles.footerLogo}>
       <Image src={logo} alt="logo" width={200} height={86} />
-
-      {/* <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-        aliquam nemo eveniet accusamus ab veniam consectetur perspiciatis.
-        Ipsum, harum commodi.
-      </p> */}
       <div className={styles.contact}>
         <h3>Contact Us</h3>
         <Link href={"tel:+61-1300-122-038"}>
