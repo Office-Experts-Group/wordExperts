@@ -65,4 +65,11 @@ export const goneUrls = [
   "/services/microsoft-powerpoint",
   "/page-sitemap.html",
   "/?wordfence_lh=1&hid=093C7E5003E9818090FE01A50C975614",
+  "/index.php/component/contact/",
+  "https://www.wordexperts.com.au/reference-request-form/",
+  "https://www.wordexperts.com.au/word-and-powerpoint-experts-melbourne",
+  "https://www.wordexperts.com.au/contact-us/con_info/",
+  "https://www.wordexperts.com.au/contact-us/con_tel/",
+  "https://www.wordexperts.com.au/stefen-1024x591/",
+  "https://www.wordexperts.com.au/martinn-1024x592/",
 ].map((url) => url.toLowerCase());
