@@ -11,6 +11,7 @@ import corporate from "../../public/microsoft/corporateNoBG.webp";
 import word from "../../public/microsoft/wordNoBG.webp";
 import accessibility from "../../public/microsoft/accessibilityNoBG.webp";
 import quickParts from "../../public/microsoft/quickPartsNoBG.webp";
+
 import scott from "../../public/scott.webp";
 import signature from "../../public/signature.webp";
 

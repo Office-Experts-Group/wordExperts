@@ -26,7 +26,7 @@ const PageSegmentMain = () => {
         <AnimateOnScroll animation="fade-up" duration={1} delay={0.3}>
           <div className={styles.content}>
             <p>Expert Advice</p>
-            <h2>Accessible Documentation</h2>
+            <h2>Word Document Accessibility</h2>
             <p>
               Our team of word design experts can deliver your document
               templates to the highest accessibility standards, setting your

@@ -4,31 +4,24 @@ export const metadata = {
     "Meet our expert team of Microsoft Word consultants, developers, and designers. Professional Word template and document specialists across Australia.",
   keywords: [
     // Team expertise
-    "word experts team",
-    // "microsoft consultants",
-    // "word document specialists",
-    // "word template developers",
-    // "word professionals",
-
-    // // Professional roles
-    // "word designers",
-    // "word template specialists",
-    // "word document consultants",
-
-    // // Expertise areas
-    // "template development experts",
-    // "corporate word template experts",
-
-    // // Location specific
-    // "australian word experts",
-    // "sydney microsoft consultants",
-    // "perth word professionals",
+    "meet the experts team",
   ],
   openGraph: {
     title: "Meet The Team | Word Experts",
     description:
       "Meet our expert team of Microsoft Word consultants, developers, and designers. Professional Word specialists across Australia.",
     url: "https://www.wordexperts.com.au/meet-the-team",
+    siteName: "Word Experts",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Word Experts Logo",
+      },
+    ],
+    locale: "en-AU",
+    type: "website",
   },
   alternates: {
     canonical: "/meet-the-team",

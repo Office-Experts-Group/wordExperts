@@ -11,6 +11,17 @@ export const metadata = {
     description:
       "Advanced Corporate Word Template Solution enabling efficient creation of corporate documents in a controlled environment.",
     url: "https://www.wordexperts.com.au/corporate-global-template-solution",
+    siteName: "Word Experts",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Word Experts Logo",
+      },
+    ],
+    locale: "en-AU",
+    type: "website",
   },
   alternates: {
     canonical: "/corporate-global-template-solution",

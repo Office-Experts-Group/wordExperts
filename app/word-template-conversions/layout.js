@@ -11,7 +11,19 @@ export const metadata = {
     description:
       "Professional Word template conversion services. Convert Adobe, InDesign and other formats to fully functional Microsoft Word templates.",
     url: "https://www.wordexperts.com.au/word-template-conversions",
+    siteName: "Word Experts",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Word Experts Logo",
+      },
+    ],
+    locale: "en-AU",
+    type: "website",
   },
+
   alternates: {
     canonical: "/word-template-conversions",
     alternate: [
@@ -19,7 +31,7 @@ export const metadata = {
         url: "https://www.excelexperts.com.au/services/microsoft-word/word-template-conversions",
       },
       {
-        url: "https://www.excelexperts.com.au/services/microsoft-word/word-template-conversions",
+        url: "https://www.officeexperts.com.au/services/microsoft-word/word-template-conversions",
       },
     ],
   },

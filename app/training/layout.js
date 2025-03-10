@@ -2,38 +2,26 @@ export const metadata = {
   title: "Microsoft Word Training | Word Experts",
   description:
     "Professional Microsoft Word training and support services. Expert help with templates, documents, and Word automation. Available remotely or onsite across Australia.",
-  keywords: [
-    // Core training
-    "microsoft word training",
-    // "word template training",
-    // "word document training",
-    // "microsoft word help in Australia",
-    // "word expert Australian support",
+  keywords: ["microsoft word training"],
 
-    // // Training types
-    // "onsite word training",
-    // "remote word training",
-    // "corporate microsoft word training",
-
-    // // Specific skills
-    // "word template creation training",
-    // "word automation training",
-    // "word accessibility training",
-    // "word macro training",
-
-    // // Location specific
-    // "word training australia",
-    // "microsoft word courses sydney",
-    // "word expert training melbourne",
-    // "word document training brisbane",
-    // "word consulting perth",
-  ],
   openGraph: {
     title: "Microsoft Word Training | Word Experts",
     description:
       "Professional Microsoft Word training and support services. Expert help with templates, documents, and Word automation.",
     url: "https://www.wordexperts.com.au/training",
+    siteName: "Word Experts",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Word Experts Logo",
+      },
+    ],
+    locale: "en-AU",
+    type: "website",
   },
+
   alternates: {
     canonical: "/training",
     alternate: [
@@ -41,7 +29,7 @@ export const metadata = {
         url: "https://www.excelexperts.com.au/services/microsoft-word/training",
       },
       {
-        url: "https://www.excelexperts.com.au/services/microsoft-word/training",
+        url: "https://www.officeexperts.com.au/services/microsoft-word/training",
       },
     ],
   },

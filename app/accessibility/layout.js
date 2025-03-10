@@ -12,6 +12,17 @@ export const metadata = {
     description:
       "Professional accessible Word document creation and template services. WCAG compliant documents and accessibility solutions.",
     url: "https://www.wordexperts.com.au/accessibility",
+    siteName: "Word Experts",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Word Experts Logo",
+      },
+    ],
+    locale: "en-AU",
+    type: "website",
   },
   alternates: {
     canonical: "/accessibility",

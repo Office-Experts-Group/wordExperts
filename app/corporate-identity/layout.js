@@ -25,6 +25,17 @@ export const metadata = {
       "Professional corporate identity protection through Microsoft Word templates. Ensure brand consistency and document compliance.",
 
     url: "https://www.wordexperts.com.au/corporate-identity",
+    siteName: "Word Experts",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Word Experts Logo",
+      },
+    ],
+    locale: "en-AU",
+    type: "website",
   },
   alternates: {
     canonical: "/corporate-identity",
@@ -33,7 +44,7 @@ export const metadata = {
         url: "https://www.excelexperts.com.au/services/microsoft-word/corporate-identity",
       },
       {
-        url: "https://www.excelexperts.com.au/services/microsoft-word/corporate-identity",
+        url: "https://www.officeexperts.com.au/services/microsoft-word/corporate-identity",
       },
     ],
   },

@@ -6,41 +6,30 @@ import styles from "../styles/footerLocations.module.scss";
 
 const locationsByState = {
   "New South Wales": {
-    Sydney:
-      "https://www.excelexperts.com.au/word-and-powerpoint-experts-sydney/",
-    Wollongong:
-      "https://www.officeexperts.com.au/office-excel-access-and-365-experts-wollongong/",
-    "Central Coast":
-      "https://www.excelexperts.com.au/excel-and-access-experts-central-coast-nsw/",
-    "Northern Rivers":
-      "https://www.excelexperts.com.au/office-excel-access-and-365-experts-northern-rivers-nsw/",
+    Sydney: "/word-consultants-sydney",
+    Wollongong: "/word-consultants-wollongong",
+    "Central Coast": "/word-consultants-central-coast-nsw",
+    "Northern Rivers": "/word-consultants-northern-rivers-nsw",
   },
   Victoria: {
-    Melbourne:
-      "https://www.excelexperts.com.au/word-and-powerpoint-experts-melbourne/",
-    Richmond:
-      "https://www.excelexperts.com.au/office-and-office-365-experts-richmond/",
+    Melbourne: "/word-consultants-melbourne",
+    Richmond: "/word-consultants-richmond",
   },
   Queensland: {
-    Brisbane:
-      "https://www.excelexperts.com.au/office-excel-access-and-365-experts-brisbane/",
-    "Gold Coast":
-      "https://www.excelexperts.com.au/word-and-powerpoint-experts-gold-coast/",
+    Brisbane: "/word-consultants-brisbane",
+    "Gold Coast": "/word-consultants-gold-coast",
   },
   "Western Australia": {
-    Perth: "https://www.excelexperts.com.au/word-and-powerpoint-experts-perth/",
+    Perth: "/word-consultants-perth",
   },
   ACT: {
-    Canberra:
-      "https://www.excelexperts.com.au/word-and-powerpoint-experts-canberra/",
+    Canberra: "/word-consultants-canberra",
   },
   "Northern Territory": {
-    Darwin:
-      "https://www.excelexperts.com.au/office-excel-access-and-365-experts-darwin/",
+    Darwin: "/word-consultants-darwin",
   },
   "South Australia": {
-    Adelaide:
-      "https://www.excelexperts.com.au/office-excel-access-and-365-experts-adelaide/",
+    Adelaide: "/word-consultants-adelaide",
   },
 };
 
@@ -75,7 +64,9 @@ export default function FooterLocationsSection() {
 
   return (
     <div className={styles.locationsSection}>
-      <h3>Our Locations</h3>
+      <Link href="/locations">
+        <h3>Our Locations</h3>
+      </Link>
       <p className={styles.remoteAccess}>Australia-wide via remote access</p>
 
       <div className={styles.statesGrid}>
@@ -102,11 +93,7 @@ export default function FooterLocationsSection() {
                 <div className={styles.dropdownContent}>
                   {Object.entries(locations).map(([city, url]) => (
                     <div key={city} className={styles.cityItem}>
-                      <Link
-                        rel="nofollow noopener noreferrer"
-                        href={url}
-                        className={styles.cityLink}
-                      >
+                      <Link href={url} className={styles.cityLink}>
                         {city}
                       </Link>
                     </div>
