@@ -25,20 +25,20 @@ const LocationPages = ({ location }) => {
       <div className={styles.contentWrapper}>
         <AnimateOnScroll animation="fade-up" duration={1} delay={0.3}>
           <div className={styles.content}>
-            <p>Microsoft Office consultants</p>
+            <p>Microsoft Word Consultants</p>
             <h2>{location}</h2>
             <p>
-              Our Microsoft Office consultants at Office Experts Group{" "}
-              {location} specialise in custom development across the entire
-              suite of Office products. We are second to none in databases,
-              custom coding, document design, dashboards and reporting
-              solutions.
+              Our Microsoft Word team at Word Experts {location} specialise in
+              document solutions and template development. We deliver
+              exceptional results in corporate documentation, form creation,
+              accessibility compliance, and document automation workflows.
             </p>
             <p>
               Through our extensive and growing customer base, our highly
-              trained Microsoft Office consulting team is known for efficiency,
-              excellent customer service, innovative solutions, tailored
-              education, expert troubleshooting and reliable support.
+              experienced Microsoft Word consulting team is renowned for
+              productivity enhancement, responsive client support, creative
+              document solutions, customised training programs, and
+              comprehensive troubleshooting capabilities.
             </p>
           </div>
           <a href="#contact" className={`${styles.btn} ${styles.locationBtn}`}>
