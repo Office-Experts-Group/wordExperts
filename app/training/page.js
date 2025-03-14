@@ -37,7 +37,7 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-07-15T15:59:22+00:00",
-      dateModified: "2024-11-12T00:00:00+00:00",
+      dateModified: "2025-03-12T00:00:00+00:00",
       breadcrumb: {
         "@id": "https://www.wordexperts.com.au/training#breadcrumb",
       },
@@ -65,7 +65,7 @@ const Page = () => {
       />
       <Contents />
       <ServiceHero
-        title="Microsoft Word Help and Training"
+        title="Microsoft Word Support and Training"
         desktopImage={twoComputers}
         mobileImage={coffeeMob}
         altDesk={"two computers"}

@@ -50,6 +50,9 @@ $border-color: #e0e0e0;
     height: auto;
     width: auto;
     object-fit: contain;
+    @media screen and (min-width: 768px) {
+      min-width: 500px;
+    }
   }
 }
 
@@ -117,6 +120,8 @@ $border-color: #e0e0e0;
   }
 
   a {
+    color: $theme;
+    font-weight: 700;
     font-family: var(--aptos);
     text-decoration: underline;
   }
