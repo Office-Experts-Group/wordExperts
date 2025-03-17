@@ -45,7 +45,7 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2017-11-22T14:23:06+00:00",
-      dateModified: "2024-11-17T23:52:31+00:00",
+      dateModified: "2025-03-17T23:52:31+00:00",
       description:
         "Word Experts is the Leading Microsoft Word Design Service in Australia. Expert Word Development & Consulting.",
       breadcrumb: {
@@ -65,7 +65,7 @@ const schema = {
       url: "https://www.wordexperts.com.au",
       name: "Word Experts: Microsoft Word Development and Consulting Services",
       description:
-        "Your Microsoft Word Design, Development and Consulting Experts",
+        "Word Experts is the Leading Microsoft Word Design Service in Australia. Expert Word Development & Consulting.",
       publisher: {
         "@id": "https://www.wordexperts.com.au#organization",
       },
@@ -85,6 +85,17 @@ const schema = {
         },
       ],
       inLanguage: "en-AU",
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.wordexperts.com.au#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+        },
+      ],
     },
   ],
 };

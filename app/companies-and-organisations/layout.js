@@ -6,16 +6,6 @@ export const metadata = {
   keywords: [
     // Business focus
     "corporate word templates",
-    // "business document solutions",
-    // "enterprise word services",
-    // "Word solutions for companies",
-    // "Word solutions for organisations",
-
-    // // Service types
-    // "Word template design services",
-    // "Word document standardization",
-    // "Word document automation",
-    // "microsoft Word template management",
   ],
   openGraph: {
     title: "Word Template Designers | Word Experts",
