@@ -144,6 +144,14 @@ export const oldNavigationData = {
             label: "VBScript",
             href: `${OFFICE_EXPERTS_URL}/services/microsoft-vbscript`,
           },
+          {
+            label: "Support & Training",
+            href: `${OFFICE_EXPERTS_URL}/microsoft-support-and-training-australia`,
+          },
+          {
+            label: "Add-in Creation",
+            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/add-in-creation`,
+          },
         ],
       },
       {
@@ -197,10 +205,6 @@ export const oldNavigationData = {
           {
             label: "Office Integration with Excel",
             href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/3rd-party-application-or-office-integration`,
-          },
-          {
-            label: "Add-in Creation",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/add-in-creation`,
           },
         ],
       },

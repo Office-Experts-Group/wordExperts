@@ -92,6 +92,10 @@ export const navigationData = {
             label: "Publisher",
             href: "https://www.officeexperts.com.au/services/microsoft-publisher",
           },
+          {
+            label: "Support & Training",
+            href: "https://www.officeexperts.com.au/microsoft-support-and-training-australia",
+          },
         ],
       },
       {
