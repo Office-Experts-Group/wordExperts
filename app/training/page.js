@@ -49,6 +49,24 @@ const schema = {
         },
       ],
     },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.wordexperts.com.au/training#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.wordexperts.com.au",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "MIcrosoft Word Training",
+          item: "https://www.wordexperts.com.au/training",
+        },
+      ],
+    },
   ],
 };
 

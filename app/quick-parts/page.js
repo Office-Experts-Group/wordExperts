@@ -62,6 +62,7 @@ const schema = {
           "@type": "ListItem",
           position: 2,
           name: "Quick Parts",
+          item: "https://www.wordexperts.com.au/quick-parts",
         },
       ],
     },

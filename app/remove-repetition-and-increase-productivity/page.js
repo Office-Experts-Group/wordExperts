@@ -66,6 +66,7 @@ const schema = {
           "@type": "ListItem",
           position: 2,
           name: "Remove Repetition and Increase Productivity",
+          item: "https://www.wordexperts.com.au/remove-repetition-and-increase-productivity",
         },
       ],
     },

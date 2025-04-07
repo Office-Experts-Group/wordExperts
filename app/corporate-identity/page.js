@@ -61,6 +61,7 @@ const schema = {
           "@type": "ListItem",
           position: 2,
           name: "Corporate Identity",
+          item: "https://www.wordexperts.com.au/corporate-identity",
         },
       ],
     },

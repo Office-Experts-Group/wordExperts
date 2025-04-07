@@ -65,6 +65,8 @@ const schema = {
           "@type": "ListItem",
           position: 2,
           name: "Word Document/Template Creation",
+          item:
+            "https://www.wordexperts.com.au/word-document-template-creation",
         },
       ],
     },

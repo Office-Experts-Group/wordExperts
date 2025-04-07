@@ -69,6 +69,7 @@ const schema = {
           "@type": "ListItem",
           position: 2,
           name: "Corporate Global Template Solution",
+          item: "https://www.wordexperts.com.au/corporate-global-template-solution",
         },
       ],
     },

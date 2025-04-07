@@ -68,6 +68,7 @@ const schema = {
           "@type": "ListItem",
           position: 2,
           name: "Companies and Organisations",
+          item: "https://www.wordexperts.com.au/companies-and-organisations",
         },
       ],
     },
