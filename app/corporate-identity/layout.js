@@ -5,19 +5,6 @@ export const metadata = {
   keywords: [
     // Core services
     "corporate document control",
-    // "corporate word templates",
-    // "brand identity protection",
-
-    // // Brand focus
-    // "brand consistency solutions",
-    // "corporate branding word templates",
-    // "brand compliant word documents",
-    // "microsoft corporate style guides",
-
-    // // Document control
-    // "word document formatting control",
-    // "word template protection",
-    // "word template standardization",
   ],
   openGraph: {
     title: "Word Corporate Global Template Solution | Word Experts",

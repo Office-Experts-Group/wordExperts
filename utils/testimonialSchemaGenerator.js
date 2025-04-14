@@ -25,7 +25,6 @@ const generateTestimonialSchema = (testimonial, domain, page, index) => {
         "@type": "Organization",
         "@id": `${domain}#organization`,
       },
-      serviceType: `Microsoft ${serviceName} Consulting`,
       description: `Professional Microsoft ${serviceName} consulting and support services`,
       areaServed: [
         {

@@ -258,6 +258,14 @@ export const oldNavigationData = {
             label: "Simple, Scalable Websites with Power Pages",
             href: `${POWER_PLATFORM_EXPERTS_URL}/services/microsoft-power-platform/microsoft-power-pages`,
           },
+          {
+            label: "Power Bi Support",
+            href: `${POWER_PLATFORM_EXPERTS_URL}/power-bi-support`
+          },
+          {
+            label: "Power Apps Support",
+            href: `${POWER_PLATFORM_EXPERTS_URL}/power-apps-support`
+          },
         ],
       },
       {

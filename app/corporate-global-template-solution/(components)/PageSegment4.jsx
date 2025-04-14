@@ -6,6 +6,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 import styles from "../../../styles/pageSegment4.module.css";
 
 import city from "../../../public/city400x300.webp";
+import Link from "next/link";
 
 const Segment4Repeat = () => {
   const checkItems = [
@@ -26,8 +27,8 @@ const Segment4Repeat = () => {
           <div className={styles.content}>
             <h2 style={{ marginBottom: "1rem" }}>No More Headaches!</h2>
             <p>
-              We can help you put an end to messy documents that break corporate
-              branding.
+              We can help you put an end to messy documents that break <Link href="/corporate-identity">corporate
+              branding.</Link>
             </p>
           </div>
 

@@ -31,7 +31,7 @@ const PageSegmentMain = () => {
             <p>
               Our team of Word design experts deliver versatile templates that
               meet the needs of any company or organisation. Our{" "}
-              <Link href={"/"}>experienced word designers</Link> will ensure
+              <Link href={"/meet-the-team"}>experienced word designers</Link> will ensure
               your corporate identity is protected and can cut your costs
               through setting you up to produce your own inhouse reports.
             </p>

@@ -34,7 +34,7 @@ const PageSegment4 = () => {
               <h2>Simple Integration</h2>
             </div>
             <p>
-              We&apos;ll make documents consistent and effortless across your
+              We'll make documents consistent and effortless across your
               business.
             </p>
           </div>

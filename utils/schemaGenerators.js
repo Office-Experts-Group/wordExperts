@@ -6,20 +6,30 @@ export const generateProfessionalServiceSchema = () => ({
   url: "https://www.wordexperts.com.au/",
   description: "Professional Microsoft Word consulting and support services",
   priceRange: "$$",
-  serviceType: "Microsoft Word Consulting",
-  availableService: [
-    {
-      "@type": "Service",
-      name: "Remote Consulting",
-      description: "Australia-wide remote Microsoft Word consulting services",
-    },
-    {
-      "@type": "Service",
-      name: "On-site Consulting",
-      description:
-        "In-house Microsoft Word consulting services available in major metropolitan areas",
-    },
-  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Consulting Services",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Remote Consulting",
+          description:
+            "Australia-wide remote Microsoft Power Platform consulting services",
+        }
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "On-site Consulting",
+          description:
+            "In-house Microsoft Power Platform consulting services available in major metropolitan areas",
+        }
+      }
+    ]
+  },
   areaServed: [
     {
       "@type": "Country",
@@ -249,10 +259,13 @@ export const generateProfessionalServiceSchema = () => ({
       },
     },
   ],
-  provider: {
+  parentOrganization: {
     "@type": "Organization",
-    "@id": `https://www.wordexperts.com.au#organization`,
+    "@id": `https://www.powerplatformexperts.com.au#organization`,
   },
+  
+  telephone: "1300 102 810",
+  email: "consult@officeexperts.com.au",
   telephone: "1300 122 038",
   email: "consult@wordexperts.com.au",
 });
@@ -273,8 +286,12 @@ export const generateOrganizationSchema = () => ({
       email: "consult@wordexperts.com.au",
       availableLanguage: ["en", "en-AU"],
       contactOption: "TollFree",
-      hoursAvailable: "Mo,Tu,We,Th,Fr 09:00-17:00",
-    },
+      hoursAvailable: {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "09:00",
+        closes: "17:00"
+      }    },
   ],
   // Remote service availability
   hasOfferCatalog: {
