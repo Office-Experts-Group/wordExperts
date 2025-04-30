@@ -35,7 +35,7 @@ const schema = {
       datePublished: "2018-07-15T15:51:37+00:00",
       dateModified: "2024-11-12T00:00:00+00:00",
       description:
-        "Professional corporate identity protection through Microsoft Word templates. Ensure brand consistency and document compliance across your organization.",
+        "Professional corporate identity protection through Microsoft Word templates. Ensure brand consistency and document compliance across your organisation.",
       breadcrumb: {
         "@id": "https://www.wordexperts.com.au/corporate-identity#breadcrumb",
       },

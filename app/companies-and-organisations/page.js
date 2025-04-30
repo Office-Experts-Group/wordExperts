@@ -81,12 +81,12 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#organization",
       },
       description:
-        "Professional Microsoft Word template and document solutions for companies and organizations",
+        "Professional Microsoft Word template and document solutions for companies and organisations",
       serviceType: "Business Solutions",
       category: "Document Management",
       audience: {
         "@type": "BusinessAudience",
-        audienceType: "Corporate organizations and businesses",
+        audienceType: "Corporate organisations and businesses",
       },
       hasOfferCatalog: {
         "@type": "OfferCatalog",
