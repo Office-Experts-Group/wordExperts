@@ -5,6 +5,7 @@ import CodeBlock from '../../../components/CodeBlock';
 import Contact from '../../../components/Contact';
 
 import styles from '../../../styles/blogPost.module.scss';
+import Image from 'next/image';
 
 const CanvaToWordBlogPost = () => {
   // Sample code for Word style setup
@@ -78,22 +79,18 @@ const CanvaToWordBlogPost = () => {
             <p>Author: Daniel Thomas</p>
             <p>Reading time: 5min</p>
           </div>
-          <div className={styles.svgs}>
-            <a 
-              href="https://www.linkedin.com/in/marcellobrocchi/?originalSubdomain=au" 
-              rel="nofollow noreferrer noopener"
-            >
-              <svg stroke="currentColor" fill="#0A66C2" strokeWidth="0" viewBox="0 0 1024 1024" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM349.3 793.7H230.6V411.9h118.7v381.8zm-59.3-434a68.8 68.8 0 1 1 68.8-68.8c-.1 38-30.9 68.8-68.8 68.8zm503.7 434H675.1V608c0-44.3-.8-101.2-61.7-101.2-61.7 0-71.2 48.2-71.2 98v188.9H423.7V411.9h113.8v52.2h1.6c15.8-30 54.5-61.7 112.3-61.7 120.2 0 142.3 79.1 142.3 181.9v209.4z"></path></svg>
-            </a>
-            <a 
-              href="https://www.youtube.com/@ChinoDoesStuff/featured" 
-              rel="nofollow noreferrer noopener"
-            >
-              <svg stroke="currentColor" fill="#FF0000" strokeWidth="0" viewBox="0 0 1024 1024" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M941.3 296.1a112.3 112.3 0 0 0-79.2-79.3C792.2 198 512 198 512 198s-280.2 0-350.1 18.7A112.12 112.12 0 0 0 82.7 296C64 366 64 512 64 512s0 146 18.7 215.9c10.3 38.6 40.7 69 79.2 79.3C231.8 826 512 826 512 826s280.2 0 350.1-18.8c38.6-10.3 68.9-40.7 79.2-79.3C960 658 960 512 960 512s0-146-18.7-215.9zM423 646V378l232 133-232 135z"></path></svg>
-            </a>
-          </div>
         </div>
         <h1 className={styles.blogTitle}>How to Convert a Canva Design into a Microsoft Word Template</h1>
+
+        <Image
+          src="/canva-to-word.webp"
+          alt="Canva to Word Template"
+          width={600}
+          height={400}
+          priority
+          className={styles.img}
+          style={{ margin: "2rem auto 0 auto"}}
+        />
         
         <div className={styles.blogContent}>
           <h2>Introduction</h2>
@@ -257,7 +254,7 @@ const CanvaToWordBlogPost = () => {
             <li>Are creating templates that many people will use</li>
           </ul>
           <p>
-            At <strong>WordExperts</strong>, we specialize in turning Canva or PDF designs into clean, editable, on-brand Word templates for businesses, NDIS providers, consultants, and more.
+            At <strong>WordExperts</strong>, we specialise in turning Canva or PDF designs into clean, editable, on-brand Word templates for businesses, NDIS providers, consultants, and more.
           </p>
           
           <h2>Conclusion</h2>
@@ -268,7 +265,7 @@ const CanvaToWordBlogPost = () => {
             The key is to focus on the function of the document in Word, not just its appearance. By understanding what elements transfer well and which need reimagining, you can create professional Word templates that maintain your brand identity while adding the editability and compatibility that Word provides.
           </p>
           
-          <p>If you need professional support with Microsoft Word templates, be sure to get in contact with me at <Link href={'/'}> Powerplatform Experts.</Link></p>
+          <p>If you need professional support with Microsoft Word templates, be sure to get in contact with me at <Link href={'/'}> Word Experts.</Link></p>
         </div>
       </div>
       <Contact />

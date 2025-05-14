@@ -102,6 +102,14 @@ export const oldNavigationData = {
             label: "Training and User Support",
             href: "/training",
           },
+          {
+            label: "Document Rebranding",
+            href: "/document-rebranding-services",
+          },
+          {
+            label: "Brand Templates",
+            href: "/brand-templates",
+          }
         ],
       },
       {

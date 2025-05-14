@@ -7,14 +7,14 @@ import DropdownItem from "./DropdownItem";
 
 import styles from "../styles/header.module.css";
 
-export default function ServicesDropdown() {
+export default function ServicesDropdown({ handleLinkClick }) {
   // Directly use the services items from navigationData
   const serviceItems = oldNavigationData.services.items;
 
   return (
     <ul className={styles.dropdown}>
       {serviceItems.map((item, index) => (
-        <DropdownItem key={index} item={item} />
+        <DropdownItem key={index} item={item} handleLinkClick={handleLinkClick} />
       ))}
     </ul>
   );

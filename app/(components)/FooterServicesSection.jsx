@@ -44,6 +44,7 @@ const FooterServicesSection = () => {
         </Link>
         <Link href="/meet-the-team">Our Team</Link>
         <Link href="/client-testimonials">Testimonials</Link>
+        <Link href="/blog">Blog</Link>
       </div>
 
       {/* Power Platform Services Dropdown */}
@@ -191,3 +192,4 @@ const FooterServicesSection = () => {
 };
 
 export default FooterServicesSection;
+
