@@ -34,17 +34,18 @@ export function middleware(request) {
   response.headers.set("X-Frame-Options", "DENY");
   response.headers.set("X-XSS-Protection", "1; mode=block");
   response.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
-  response.headers.set(
-    "Content-Security-Policy",
-    "default-src 'self'; " +
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' *.vimeo.com *.googletagmanager.com *.google-analytics.com analytics.ahrefs.com; " +
-      "style-src 'self' 'unsafe-inline' fonts.googleapis.com; " +
-      "img-src 'self' data: https: *.vimeocdn.com *.google-analytics.com *.googletagmanager.com *.ahrefs.com; " +
-      "font-src 'self' fonts.gstatic.com fonts.googleapis.com; " +
-      "frame-src 'self' *.vimeo.com player.vimeo.com *.googletagmanager.com *.youtube.com www.youtube.com youtube.com; " +
-      "media-src 'self' *.vimeo.com *.vimeocdn.com *.youtube.com www.youtube.com youtube.com; " +
-      "connect-src 'self' *.vimeo.com *.vimeocdn.com *.youtube.com www.youtube.com youtube.com *.google-analytics.com *.googletagmanager.com *.officeexperts.com.au *.ahrefs.com analytics.ahrefs.com;"
-  );
+response.headers.set(
+  "Content-Security-Policy",
+  "default-src 'self'; " +
+    "script-src 'self' 'unsafe-inline' 'unsafe-eval' *.vimeo.com *.googletagmanager.com *.google-analytics.com analytics.ahrefs.com googleads.g.doubleclick.net; " +
+    "style-src 'self' 'unsafe-inline' fonts.googleapis.com *.googletagmanager.com; " +
+    "img-src 'self' data: https: *.vimeocdn.com *.google-analytics.com *.googletagmanager.com *.ahrefs.com; " +
+    "font-src 'self' fonts.gstatic.com fonts.googleapis.com; " +
+    "frame-src 'self' *.vimeo.com player.vimeo.com *.googletagmanager.com *.youtube.com www.youtube.com youtube.com td.doubleclick.net; " +
+    "media-src 'self' *.vimeo.com *.vimeocdn.com *.youtube.com www.youtube.com youtube.com; " +
+    "connect-src 'self' *.vimeo.com *.vimeocdn.com *.youtube.com www.youtube.com youtube.com *.google-analytics.com *.googletagmanager.com www.google.com *.officeexperts.com.au *.ahrefs.com analytics.ahrefs.com googleads.g.doubleclick.net;"
+);
+
 
   // Handle Next.js system paths
   if (
