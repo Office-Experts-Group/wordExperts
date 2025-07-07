@@ -1,6 +1,6 @@
 // Base URLs for different sites (change these for production)
 const WORD_EXPERTS_URL = "/";
-const OFFICE_EXPERTS_URL = "https://www.excelexperts.com.au";
+const OFFICE_EXPERTS_URL = "https://www.officeexperts.com.au";
 const EXCEL_EXPERTS_URL = "https://www.excelexperts.com.au";
 const POWER_PLATFORM_EXPERTS_URL = "https://www.powerplatformexperts.com.au";
 const ACCESS_EXPERTS_URL = "https://www.accessexperts.com.au";
@@ -341,7 +341,7 @@ export const oldNavigationData = {
     },
     {
       label: "About Us",
-      href: `${OFFICE_EXPERTS_URL}/about-us`,
+      href: `/about-us`,
     },
     {
       label: "Meet Our Team",

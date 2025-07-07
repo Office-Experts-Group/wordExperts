@@ -67,6 +67,7 @@ const schema = {
           "@type": "ListItem",
           position: 2,
           name: "Microsoft Word Consultants Wollongong",
+          item: "https://www.wordexperts.com.au/word-consultants-wollongong",
         },
       ],
     },

@@ -7,8 +7,8 @@ import ServiceHero from "../../../components/ServiceHero";
 import word from "../../../public/blog/word-template.webp";
 import wordMob from "../../../public/blog/mob/word-template.webp";
 import meme from "../../../public/blog/automate-meme.webp";
-import diymeme from "../../../public/blog/diy-meme.webp";
 import math from "../../../public/blog/math-meme.webp";
+import template from "../../../public/template.webp"
 
 export default function WordTemplatesBlogPost() {
   return (
@@ -40,6 +40,14 @@ export default function WordTemplatesBlogPost() {
               organisation.
             </p>
           </div>
+
+          <Image
+            src={template}
+            alt="word templates"
+            width={600}
+            height={400}
+            className={styles.meme}
+          />
 
           <section className={styles.blogSection}>
             <h2>What Is a Word Template?</h2>
@@ -530,8 +538,6 @@ export default function WordTemplatesBlogPost() {
               professional image in all communications.
             </p>
           </section>
-
-          <Image src={diymeme} height={375} width={548} alt="diy meme" />
 
           <div className={styles.ctaSection}>
             <p>

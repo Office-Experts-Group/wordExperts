@@ -63,6 +63,7 @@ const schema = {
           "@type": "ListItem",
           position: 2,
           name: "Testimonials",
+          item: "https://www.wordexperts.com.au/client-testimonials",
         },
       ],
     },

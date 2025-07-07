@@ -31,14 +31,14 @@ const schema = {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/companies-and-organisations",
       url: "https://www.wordexperts.com.au/companies-and-organisations",
-      name: "Word Template Designers | Word Document Designer | Word Experts",
+      name: "Companies and Organisations | Word Experts",
       isPartOf: {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-07-15T16:09:50+00:00",
-      dateModified: "2024-11-12T00:00:00+00:00",
+      dateModified: "2025-03-12T00:00:00+00:00",
       description:
-        "Professional Word template solutions for companies and organizations. Custom document templates that protect corporate identity and improve efficiency.",
+        "Professional Word template solutions for companies and organisations. Custom document templates that protect corporate identity and improve efficiency.",
       breadcrumb: {
         "@id":
           "https://www.wordexperts.com.au/companies-and-organisations#breadcrumb",
@@ -68,6 +68,7 @@ const schema = {
           "@type": "ListItem",
           position: 2,
           name: "Companies and Organisations",
+          item: "https://www.wordexperts.com.au/companies-and-organisations",
         },
       ],
     },
@@ -80,12 +81,12 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#organization",
       },
       description:
-        "Professional Microsoft Word template and document solutions for companies and organizations",
+        "Professional Microsoft Word template and document solutions for companies and organisations",
       serviceType: "Business Solutions",
       category: "Document Management",
       audience: {
         "@type": "BusinessAudience",
-        audienceType: "Corporate organizations and businesses",
+        audienceType: "Corporate organisations and businesses",
       },
       hasOfferCatalog: {
         "@type": "OfferCatalog",
@@ -96,7 +97,7 @@ const schema = {
             itemOffered: {
               "@type": "Service",
               name: "Corporate Templates",
-              description: "Custom template development for organizations",
+              description: "Custom template development for organisations",
             },
           },
           {
@@ -111,7 +112,7 @@ const schema = {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "Document Standardization",
+              name: "Document Standardisation",
               description: "Enterprise-wide document standards",
             },
           },
@@ -119,7 +120,7 @@ const schema = {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "Workflow Optimization",
+              name: "Workflow Optimisation",
               description:
                 "Business process improvement through document automation",
             },
@@ -143,7 +144,7 @@ const Page = () => {
       />
       <Contents />
       <ServiceHero
-        title="Microsoft Power Apps Consulting Services"
+        title="Companies and Organisations"
         desktopImage={report}
         mobileImage={glassesMob}
         altMob={"glasses on a desk with a graph"}

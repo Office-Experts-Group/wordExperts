@@ -333,6 +333,7 @@
   font-size: 1.125rem;
   line-height: 2rem;
 }
+
 .centerText {
   @include phoneLandscape {
     text-align: center;
@@ -343,6 +344,7 @@
     width: 100%;
   }
 }
+
 .hidden {
   @include phone {
     display: none;

@@ -6,6 +6,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 import styles from "../../../styles/pageSegment4.module.css";
 
 import upgrade from "../../../public/upgrade600x400.webp";
+import Link from "next/link";
 
 const PageSegment4 = () => {
   return (
@@ -17,7 +18,7 @@ const PageSegment4 = () => {
               <h2>Upgrades and Migration</h2>
             </div>
             <p>
-              The extensive experience of our team of Word design experts is
+              The extensive experience of our <Link href={"/meet-the-team"}> team of Word design experts</Link> is
               available to ensure your upgrades and migrations go smoothly, by
               mitigating the risk of formatting and design issues and saving you
               the associated stress and frustrations of troubleshooting and

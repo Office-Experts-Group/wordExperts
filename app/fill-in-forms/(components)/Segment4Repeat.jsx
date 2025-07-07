@@ -6,6 +6,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 import styles from "../../../styles/pageSegment4.module.css";
 
 import meetDesk from "../../../public/meetDesk600x450.webp";
+import Link from "next/link";
 
 const Segment4Repeat = () => {
   return (
@@ -22,7 +23,7 @@ const Segment4Repeat = () => {
             </p>
             <p>
               We can then use VBA to create a data extraction solution if
-              required. Why not chat to one of our designers about your
+              required. Why not <Link href={"/contact-us/request-a-quote"}> chat to one of our designers</Link> about your
               requirements.
             </p>
           </div>

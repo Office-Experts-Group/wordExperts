@@ -87,6 +87,7 @@ export const goneUrls = [
   "/blogger/",
   "/banner-1/",
   "/author/wordexperts/",
+  "/author/ppexperts",
   "/tips-and-tricks",
   "/banner-2/",
   "/services/",

@@ -35,7 +35,7 @@ const IsRight = () => {
             Word solutions that protect your corporate identity and streamline
             document creation. Our team of experienced consultants delivers
             professional templates with built-in automation, ensuring consistent
-            branding and formatting across your organization. From government
+            branding and formatting across your organisation. From government
             departments to corporate entities, we provide comprehensive document
             solutions including template design, accessibility compliance, and
             custom automation to save time and reduce errors.

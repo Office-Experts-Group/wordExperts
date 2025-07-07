@@ -6,6 +6,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 import styles from "../../../styles/pageSegment.module.css";
 
 import ladyComputer from "../../../public/ladyComputer600x400.webp";
+import Link from "next/link";
 
 const PageSegmentMain = () => {
   return (
@@ -29,8 +30,8 @@ const PageSegmentMain = () => {
             <h2>Accessible, Consistent, and Compliant Document Templates</h2>
             <p>
               Our team of Word design experts are highly experienced in working
-              with Government departments. We take your need for accessible
-              documents and templates seriously and deliver consistent
+              with Government departments. We take your need for <Link href={"/accessibility"}>accessible
+              documents and templates</Link> seriously and deliver consistent
               formatting, corporate identity protection and so much more.
             </p>
           </div>

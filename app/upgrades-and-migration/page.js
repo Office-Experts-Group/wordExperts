@@ -62,6 +62,7 @@ const schema = {
           "@type": "ListItem",
           position: 2,
           name: "Upgrades and Migration",
+          item: "https://www.wordexperts.com.au/upgrades-and-migration",
         },
       ],
     },

@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Word Consultants Melbourne",
   description:
-    "Leading Microsoft Word consultants in Melbourne specialising in expert development, integration and support. Word Experts have provided custom solutions for over 25yrs",
+  "Microsoft Word consultants in Melbourne offering expert document development, system integration and support. Trusted solutions for over 25 years.",
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Word Consultants Melbourne",
     description:
-      "Leading Microsoft Word consultants in Melbourne specialising in expert development, integration and support. Word Experts have provided custom solutions for over 25yrs",
+      "Microsoft Word consultants in Melbourne offering expert document development, system integration and support. Trusted solutions for over 25 years.",
     url: "https://www.wordexperts.com.au/word-consultants-melbourne",
     siteName: "Word Experts",
     images: [
@@ -37,7 +37,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Word Experts Melbourne | Microsoft Office Solutions",
     description:
-      "Leading Microsoft Word consultants in Melbourne specialising in expert development, integration and support. Word Experts have provided custom solutions for over 25yrs",
+      "Microsoft Word consultants in Melbourne offering expert document development, system integration and support. Trusted solutions for over 25 years.",
     images: ["/logo.png"],
   },
 

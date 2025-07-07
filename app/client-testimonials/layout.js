@@ -3,7 +3,6 @@ export const metadata = {
   description:
     "Read what our clients say about Word Experts' professional Microsoft Word services. Client testimonials from businesses across Australia.",
   keywords: [
-    // Reviews and feedback
     "word experts reviews",
   ],
   openGraph: {
@@ -26,6 +25,20 @@ export const metadata = {
   alternates: {
     canonical: "/client-testimonials",
   },
+
+      // Twitter Card
+      twitter: {
+        card: "summary_large_image",
+        site: "@OfficeExpertsG1",
+        title: "Client Testimonials | Word Experts",
+        description:
+          "Read what our clients say about Word Experts' professional Microsoft Word services. Client testimonials from businesses across Australia.",
+        images: ["/logo.png"],
+      },
+    
+      alternates: {
+        canonical: "/client-testimonials",
+      },
 };
 
 export default function Layout({ children }) {

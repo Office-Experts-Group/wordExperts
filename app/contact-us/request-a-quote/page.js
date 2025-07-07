@@ -39,6 +39,30 @@ const schema = {
         },
       ],
     },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.wordexperts.com.au/upgrades-and-migration#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.wordexperts.com.au",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Contact Us",
+          item: "https://www.wordexperts.com.au/contact-us",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Request a Quote",
+          item: "https://www.wordexperts.com.au/contact-us/request-a-quote",
+        },
+      ],
+    },
   ],
 };
 

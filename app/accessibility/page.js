@@ -60,6 +60,7 @@ const schema = {
           "@type": "ListItem",
           position: 2,
           name: "Accessibility",
+          item: "https://www.wordexperts.com.au/accessibility",
         },
       ],
     },

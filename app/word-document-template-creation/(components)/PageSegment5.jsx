@@ -29,7 +29,7 @@ const PageSegment3 = () => {
             We create brand consistent solutions for your company. Controls can
             be added to documents to assist users. We can create highly complex
             documents by using features such as headers/footers, styles,
-            protection, tables, columns, content controls, VBA, quick parts,
+            protection, tables, columns, content controls, <Link href="https://www.excelexperts.com.au/vba-macro-development">VBA</Link>,  <Link href="/quick-parts">quick parts,</Link>
             bookmarks, fields, table of contents and many other features.
           </p>
 

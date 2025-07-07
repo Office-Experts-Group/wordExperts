@@ -15,7 +15,7 @@ Read what our clients say about Word Experts import { generateProfessionalServic
 Path: app/companies-and-organisations
 Length: 151 characters
 Suggested description:
-Professional Word template solutions for companies and organizations. Custom document templates that protect corporate identity and improve efficiency.
+Professional Word template solutions for companies and organisations. Custom document templates that protect corporate identity and improve efficiency.
 
 ---
 
@@ -36,7 +36,7 @@ Advanced Corporate Word Template Solution enabling efficient creation of corpora
 Path: app/corporate-identity
 Length: 151 characters
 Suggested description:
-Professional corporate identity protection through Microsoft Word templates. Ensure brand consistency and document compliance across your organization.
+Professional corporate identity protection through Microsoft Word templates. Ensure brand consistency and document compliance across your organisation.
 
 ---
 

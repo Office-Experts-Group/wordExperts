@@ -49,7 +49,7 @@ const CTAMainProps = ({ location }) => {
               </div>
               <div className={styles.phone}>
                 <p>Get A Free Consultation</p>
-                <a href="tel:1300102810">
+                <a href="tel:1300122038">
                   <h3>1300 122 038</h3>
                 </a>
               </div>

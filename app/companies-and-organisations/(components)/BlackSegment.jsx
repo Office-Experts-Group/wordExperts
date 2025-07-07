@@ -28,8 +28,8 @@ const BlackSegment = () => {
           </div>
           <div className={styles.text}>
             <p>
-              Our custom template solutions give users access to pre-approved
-              styles and colors based on your brand&aspo;s unique
+              Our <Link href="/corporate-global-template-solution">custom template solutions</Link> give users access to pre-approved
+              styles and colors based on your brand's unique
               specifications. By limiting font and style changes, our controlled
               environment ensures that every document aligns with your corporate
               identity, preserving brand consistency while empowering users to
