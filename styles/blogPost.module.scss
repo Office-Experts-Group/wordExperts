@@ -327,17 +327,33 @@
 .split {
   display: flex;
   margin-top: 2rem;
+
+  div:first-of-type {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 800px) {
+    flex-direction: column-reverse;
+    margin-top: 0;
+  }
 }
 
 .splitPit {
   display: flex;
   align-items: center;
-  margin-top: -1rem;
   max-width: 1000px;
   margin: 0 auto;
   gap: 5vw;
   img {
     opacity: 0.45;
+  }
+  @media screen and (max-width: 800px) {
+    flex-direction: column-reverse;
+    gap: 0;
+    img {
+      max-width: 400px;
+      height: auto;
+    }
   }
 }
 
@@ -352,19 +368,6 @@
   }
 }
 
-.padTitle {
-  margin: 2rem 0 4.5vw 0;
-}
-
-.director {
-  float: left;
-  shape-outside: url("/blog/director.webp"); /* Correct path - no ../public */
-  shape-image-threshold: 0.1;
-  width: 600px; /* Use fixed dimensions */
-  height: 400px;
-  margin-top: 2rem;
-}
-
 .splitImage {
   float: right;
   shape-outside: url("/blog/waste.webp"); /* Correct path - no ../public */
@@ -372,4 +375,38 @@
   width: 600px; /* Use fixed dimensions */
   height: 400px;
   margin-top: 2rem;
+
+  @media screen and (max-width: 800px) {
+    float: none;
+    margin: 0 auto;
+    max-width: 90vw;
+    height: auto;
+  }
+}
+
+.padTitle {
+  margin: 2rem 0 4.5vw 0;
+}
+
+.director {
+  float: left;
+  shape-outside: url("/blog/director.webp");
+  shape-image-threshold: 0.1;
+  width: 600px; /* Use fixed dimensions */
+  height: 400px;
+  margin-top: 2rem;
+  @media screen and (max-width: 800px) {
+    float: none;
+    margin: 0 auto;
+    max-width: 90vw;
+    height: auto;
+  }
+}
+
+#pitfall {
+  @include phone {
+    margin: 0 auto;
+    max-width: 60vw;
+    height: auto;
+  }
 }

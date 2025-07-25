@@ -161,7 +161,7 @@ const FieldsRepeatingDataBlogPost = () => {
             <h2>Why Repeating Data Fields Matter in Business Templates</h2>
             <p>
               In the very nature of organisations, is repetitive business
-              temoplates. Be that for employee names, client addresses, contract
+              templates. Be that for employee names, client addresses, contract
               numbers, dates, and countless other details. While these elements
               are essential, the way they're typically handled is often far from
               efficient. Manually entering the same information in multiple
@@ -216,8 +216,8 @@ const FieldsRepeatingDataBlogPost = () => {
             This method involves creating a <strong>Bookmark</strong> at the
             original data point (such as the client name), then inserting{" "}
             <strong>REF fields</strong> anywhere you want that data repeated.
-            When the original value is updated, all linked REF fields update
-            automatically as well.
+            When the original value is modified and then all fields are updated,
+            all linked REF fields update automatically as well.
           </p>
           <p>
             This approach works best for short documents with scattered repeated
@@ -313,7 +313,7 @@ const FieldsRepeatingDataBlogPost = () => {
           </p>
           <p>
             As a pro tip, you can edit these properties from File → Info →
-            Properties → Advanced Properties for centralized control.
+            Properties → Advanced Properties for centralised control.
           </p>
           <h3>Step 4: Use XML Mapping + Content Controls</h3>
           <p>
@@ -386,10 +386,7 @@ const FieldsRepeatingDataBlogPost = () => {
             process fragile. Using Content Controls + Mapped XML creates
             intelligent forms where client info appears in both the header and
             summary, itemised tables auto-generate from XML nodes, and total
-            figures reflect across the document without duplication. Tools like
-            Docupilot and Smartsheet report that auto-generated templates reduce
-            human error by over 70% and improve turnaround time for client
-            documents.
+            figures reflect across the document without duplication.
           </p>
           <h3>Operations Teams: Field Forms & Checklists</h3>
           <p>
@@ -417,7 +414,7 @@ const FieldsRepeatingDataBlogPost = () => {
                 alt="clip art of person falling in a hole"
                 width={600}
                 height={400}
-                className={styles.pitfall}
+                id={styles.pitfall}
               />
               <div className="">
                 <h2>Common Pitfalls & How to Avoid Them</h2>
