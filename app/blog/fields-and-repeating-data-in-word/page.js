@@ -13,6 +13,7 @@ import dataSwirl from "../../../public/blog/dataSwirl.webp";
 import paste from "../../../public/blog/paste.webp";
 import director from "../../../public/blog/director.webp";
 import pitfall from "../../../public/blog/pitfall.webp";
+import waste from "../../../public/blog/waste.webp";
 
 const FieldsRepeatingDataBlogPost = () => {
   const articleSchema = {
@@ -117,33 +118,38 @@ const FieldsRepeatingDataBlogPost = () => {
         </h1>
 
         <div className={styles.blogContent}>
-          <Image
-            src={fields}
-            alt="A football field with data coming out of it"
-            width={600}
-            height={400}
-            className={styles.mainImage}
-          />
-          <h2>Stop Wasting Time on Copy-Paste Chaos</h2>
-          <p>
-            Every week, business professionals waste hours copying the same
-            names, dates, and client details into contracts, HR forms, invoices,
-            and reports. This tedious process isn't just time-consuming—it's
-            genuinely risky. A single copy-paste mistake in a legal agreement or
-            procurement document can snowball into costly errors, especially in
-            high-stakes workflows. According to a report by Whale, data entry
-            errors in supply chain and procurement cost businesses over{" "}
-            <strong>$600 billion globally each year</strong>.
-          </p>
-          <p>
-            The good news is that Microsoft Word has the tools to fix this. When
-            used correctly, fields in Word transform static templates into
-            smart, self-updating documents that do the heavy lifting for you.
-            We'll walk you through how to build reliable, reusable templates
-            using Word's fields, from quick wins like REF fields and document
-            properties to advanced features like XML mapping and content
-            controls.
-          </p>
+          <div className={styles.split}>
+            <div className="">
+              <h2>Stop Wasting Time on Copy-Paste Chaos</h2>
+              <p>
+                Every week, business professionals waste hours copying the same
+                names, dates, and client details into contracts, HR forms,
+                invoices, and reports. This tedious process isn't just
+                time-consuming—it's genuinely risky. A single copy-paste mistake
+                in a legal agreement or procurement document can snowball into
+                costly errors, especially in high-stakes workflows. According to
+                a report by Whale, data entry errors in supply chain and
+                procurement cost businesses over{" "}
+                <strong>$600 billion globally each year</strong>.
+              </p>
+              <p>
+                The good news is that Microsoft Word has the tools to fix this.
+                When used correctly, fields in Word transform static templates
+                into smart, self-updating documents that do the heavy lifting
+                for you. We'll walk you through how to build reliable, reusable
+                templates using Word's fields, from quick wins like REF fields
+                and document properties to advanced features like XML mapping
+                and content controls.
+              </p>
+            </div>
+            <Image
+              src={waste}
+              alt="Hand writing do not waste time, take action"
+              width={600}
+              height={400}
+              className={styles.splitImage}
+            />
+          </div>
           <div className={styles.BgImageContainer}>
             <Image
               src={copy}
@@ -406,16 +412,6 @@ const FieldsRepeatingDataBlogPost = () => {
 
           <div className={styles.BgImageContainer}>
             <div className={styles.splitPit}>
-              <div className="">
-                <h2>Common Pitfalls & How to Avoid Them</h2>
-                <p>
-                  Even with the best intentions, many teams struggle with Word's
-                  field tools—not because the tools are flawed, but because of a
-                  few avoidable missteps. Here's how to protect your templates
-                  and avoid the headaches that come from broken or misused
-                  fields.
-                </p>
-              </div>
               <Image
                 src={pitfall}
                 alt="clip art of person falling in a hole"
@@ -423,6 +419,16 @@ const FieldsRepeatingDataBlogPost = () => {
                 height={400}
                 className={styles.pitfall}
               />
+              <div className="">
+                <h2>Common Pitfalls & How to Avoid Them</h2>
+                <p style={{ lineHeight: "2" }}>
+                  Even with the best intentions, many teams struggle with Word's
+                  field tools—not because the tools are flawed, but because of a
+                  few avoidable missteps. Here's how to protect your templates
+                  and avoid the headaches that come from broken or misused
+                  fields.
+                </p>
+              </div>
             </div>
 
             <h3>Broken Links (Deleted Bookmarks)</h3>
@@ -484,6 +490,13 @@ const FieldsRepeatingDataBlogPost = () => {
             </p>
           </div>
 
+          <Image
+            src={fields}
+            alt="A football field with data coming out of it"
+            width={600}
+            height={400}
+            className={styles.mainImage}
+          />
           <div className={styles.quote}>
             <p>
               "Repeating text fields are one of those underappreciated gems,

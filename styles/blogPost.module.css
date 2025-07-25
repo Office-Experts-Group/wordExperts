@@ -319,4 +319,13 @@
   width: 600px; /* Use fixed dimensions */
   height: 400px;
   margin-top: 2rem;
+}
+
+.splitImage {
+  float: right;
+  shape-outside: url("/blog/waste.webp"); /* Correct path - no ../public */
+  shape-image-threshold: 0.1;
+  width: 600px; /* Use fixed dimensions */
+  height: 400px;
+  margin-top: 2rem;
 }/*# sourceMappingURL=blogPost.module.css.map */
