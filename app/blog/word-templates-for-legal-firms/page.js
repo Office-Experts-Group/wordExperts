@@ -192,7 +192,7 @@ const LegalTemplatesBlogPost = () => {
               </li>
               <li>
                 <strong>Outdated clauses</strong> can be reused without
-                realizing they're no longer compliant.
+                realising they're no longer compliant.
               </li>
               <li>
                 <strong>Inconsistent formatting</strong> reflects poorly on a
@@ -306,6 +306,11 @@ const LegalTemplatesBlogPost = () => {
             <li>
               You ensure that formatting updates cascade throughout the document
               in seconds
+            </li>
+            <li>
+              You make your documents{" "}
+              <strong>compatible with automation tools</strong> like document
+              assembly software and legal AI
             </li>
           </ul>
           <div className={styles.quote}>
