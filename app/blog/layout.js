@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Word Experts Australia Blog",
   description:
-    "Explore expert tutorials, tips, and best practices for Microsoft Word. Our experts share their knowledge to help you create professional documents and improve your productivity.",
+    "Explore expert tutorials, tips, and best practices for Microsoft Word. Our experts share their knowledge to help you improve your productivity.",
 
   // OpenGraph
   openGraph: {
     title: "Word Experts Australia Blog",
     description:
-      "Explore expert tutorials, tips, and best practices for Microsoft Word. Our experts share their knowledge to help you create professional documents and improve your productivity.",
+      "Explore expert tutorials, tips, and best practices for Microsoft Word. Our experts share their knowledge to help you improve your productivity.",
     url: "https://www.wordexperts.com.au/blog",
     siteName: "Word Experts Australia",
     images: [
@@ -26,9 +26,7 @@ export const metadata = {
   },
 
   // Additional metadata
-  keywords: [
-    "Word experts blog",
-  ],
+  keywords: ["Word experts blog"],
 
   // Twitter Card
   twitter: {
@@ -36,7 +34,7 @@ export const metadata = {
     site: "@WordExpertsAU",
     title: "Word Experts Australia Blog",
     description:
-      "Explore expert tutorials, tips, and best practices for Microsoft Word. Our experts share their knowledge to help you create professional documents and improve your productivity.",
+      "Explore expert tutorials, tips, and best practices for Microsoft Word. Our experts share their knowledge to help you improve your productivity.",
     images: ["/logo.png"],
   },
 

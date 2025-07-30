@@ -129,7 +129,7 @@ export const navigationData = {
             href: "https://www.accessexperts.com.au/",
           },
           {
-            label: "Cloud-based and Online Database Solutions",
+            label: "Cloud-based Solutions",
             href: "https://www.accessexperts.com.au/access-online/",
           },
           {

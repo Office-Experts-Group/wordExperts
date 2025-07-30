@@ -6,6 +6,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 import styles from "../../../styles/pageSegment4.module.css";
 
 import form from "../../../public/form600x400.webp";
+import Link from "next/link";
 
 const Segment4Repeat = () => {
   return (
@@ -17,9 +18,10 @@ const Segment4Repeat = () => {
               Data Integrity and Efficiency
             </h2>
             <p>
-              We can create easy to use popup forms to allow your staff to
-              effortlessly and efficiently enter data and to help validate and
-              protect the integrity of the document.
+              We can create easy to use{" "}
+              <Link href={"/popup-forms"}>popup forms</Link> to allow your staff
+              to effortlessly and efficiently enter data and to help validate
+              and protect the integrity of the document.
             </p>
             <p>
               A popup form, can lead the users through what they need to do step

@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Word Consultants Locations",
   description:
-    "Microsoft Word consulting services available across Australia. Remote support and on-site consultants in Sydney, Melbourne, Brisbane, Perth, Adelaide, Canberra and more locations.",
+    "Microsoft Word consulting services available across Australia. Remote support and on-site consultants in all major cities.",
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Word Consultants Locations",
     description:
-      "Microsoft Word consulting services available across Australia. Remote support and on-site consultants in Sydney, Melbourne, Brisbane, Perth, Adelaide, Canberra and more locations.",
+      "Microsoft Word consulting services available across Australia. Remote support and on-site consultants in all major cities.",
     url: "https://www.wordexperts.com.au/locations",
     siteName: "Word Experts",
     images: [
@@ -37,7 +37,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Microsoft Word Consultants Locations | Office Experts Group",
     description:
-      "Microsoft Word consulting services available across Australia. Remote support and on-site consultants in Sydney, Melbourne, Brisbane, Perth, Adelaide, Canberra and more locations.",
+      "Microsoft Word consulting services available across Australia. Remote support and on-site consultants in all major cities.",
     images: ["/logo.png"],
   },
 

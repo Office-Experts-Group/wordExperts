@@ -8,7 +8,7 @@ export const metadata = {
   openGraph: {
     title: "About Us | Word Experts",
     description:
-      "Word Experts are Australia's leading Microsoft Word specialists, creating custom templates, toolbars, ribbons, and document automation solutions for businesses nationwide.",
+      "Australia's leading Microsoft Word specialists, creating custom templates, toolbars, ribbons, and document automation solutions for businesses nationwide.",
     url: "https://www.wordexperts.com.au/about-us",
     siteName: "Word Experts",
     images: [
@@ -30,7 +30,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "About Us | Word Experts",
     description:
-      "Word Experts are Australia's leading Microsoft Word specialists, creating custom templates, toolbars, ribbons, and document automation solutions for businesses nationwide.",
+      "Australia's leading Microsoft Word specialists, creating custom templates, toolbars, ribbons, and document automation solutions for businesses nationwide.",
     images: ["/logo.png"],
   },
   alternates: {

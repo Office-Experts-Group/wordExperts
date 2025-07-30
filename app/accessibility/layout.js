@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Microsoft Word Accessibility | Word Experts",
   description:
-    "Professional accessible Word document creation and template services. WCAG compliant documents, accessibility audits, and remediation services for government and enterprise.",
+    "Accessible Word document creation and template services. WCAG-compliant documents, accessibility audits, and remediation services for government and enterprise.",
 
   keywords: [
     // Core accessibility
@@ -10,7 +10,7 @@ export const metadata = {
   openGraph: {
     title: "Microsoft Word Accessibility | Word Experts",
     description:
-      "Professional accessible Word document creation and template services. WCAG compliant documents and accessibility solutions.",
+      "Accessible Word document creation and template services. WCAG-compliant documents, accessibility audits, and remediation services for government and enterprise.",
     url: "https://www.wordexperts.com.au/accessibility",
     siteName: "Word Experts",
     images: [
@@ -26,14 +26,6 @@ export const metadata = {
   },
   alternates: {
     canonical: "/accessibility",
-    alternate: [
-      {
-        url: "https://www.excelexperts.com.au/services/microsoft-word/accessibility",
-      },
-      {
-        url: "https://www.excelexperts.com.au/services/microsoft-word/accessibility",
-      },
-    ],
   },
 };
 

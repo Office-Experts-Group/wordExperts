@@ -35,7 +35,7 @@ const schema = {
       datePublished: "2018-09-11T00:20:15+00:00",
       dateModified: "2024-11-12T00:00:00+00:00",
       description:
-        "Stuck on an old version? Expert Microsoft Word upgrade and migration services. Resolve formatting issues, maintain document integrity, and ensure smooth transitions.",
+        "Expert Microsoft Word upgrade and migration services. Resolve formatting issues, maintain document integrity, and ensure smooth transitions.",
       breadcrumb: {
         "@id":
           "https://www.wordexperts.com.au/upgrades-and-migration#breadcrumb",

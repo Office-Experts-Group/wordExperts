@@ -63,8 +63,7 @@ const CanvaToWordBlogPost = () => {
       "Learn how to convert Canva designs into functional Microsoft Word templates. This guide shows you the best methods for creating editable Word documents while maintaining your brand elements from Canva designs.",
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id":
-        "https://www.wordexperts.com.au/blog/convert-canva-to-word-template",
+      "@id": "https://www.wordexperts.com.au/blog/convert-canva-to-word",
     },
   };
 

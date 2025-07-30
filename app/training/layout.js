@@ -1,13 +1,13 @@
 export const metadata = {
   title: "Microsoft Word Training | Word Experts",
   description:
-    "Professional Microsoft Word training and support services. Expert help with templates, documents, and Word automation. Available remotely or onsite across Australia.",
+    "Professional Microsoft Word training and support services. Expert help with templates, documents, and automation. Available remotely or onsite across Australia.",
   keywords: ["microsoft word training"],
 
   openGraph: {
     title: "Microsoft Word Training | Word Experts",
     description:
-      "Professional Microsoft Word training and support services. Expert help with templates, documents, and Word automation.",
+      "Professional Microsoft Word training and support services. Expert help with templates, documents, and automation. Available remotely or onsite across Australia.",
     url: "https://www.wordexperts.com.au/training",
     siteName: "Word Experts",
     images: [
@@ -24,14 +24,6 @@ export const metadata = {
 
   alternates: {
     canonical: "/training",
-    alternate: [
-      {
-        url: "https://www.excelexperts.com.au/services/microsoft-word/training",
-      },
-      {
-        url: "https://www.officeexperts.com.au/services/microsoft-word/training",
-      },
-    ],
   },
 };
 

@@ -14,6 +14,7 @@ import quickParts from "../../public/microsoft/quickPartsNoBG.webp";
 
 import scott from "../../public/scott.webp";
 import signature from "../../public/signature.webp";
+import Link from "next/link";
 
 const Services = () => {
   return (
@@ -31,8 +32,10 @@ const Services = () => {
             When it comes to Microsoft Word, our Australia-wide, cross-industry
             consultants deliver a prompt, quality service with competitive
             pricing. Our Microsoft Word experts specialise in templates,
-            document design, forms, online documents, accessibility,
-            integration, training and support.
+            document design, <Link href={"../fill-in-forms"}>forms</Link>,
+            online documents, <Link href={"../accessibility"}></Link>
+            accessibility, integration,{" "}
+            <Link href={"../training"}>training and support</Link>.
           </p>
           <div className={styles.signature}>
             <div>

@@ -32,9 +32,9 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-07-15T16:14:28+00:00",
-      dateModified: "2024-11-12T00:00:00+00:00",
+      dateModified: "2025-07-30T00:00:00+00:00",
       description:
-        "Professional accessible Word document creation and template services. WCAG compliant documents, accessibility audits, and remediation services.",
+        "Accessible Word document creation and template services. WCAG-compliant documents, accessibility audits, and remediation services for government and enterprise.",
       breadcrumb: {
         "@id": "https://www.wordexperts.com.au/accessibility#breadcrumb",
       },

@@ -346,6 +346,9 @@
   stroke: #0eaa0e;
   color: #0eaa0e;
 }
+.tick a {
+  color: #046999 !important;
+}
 
 .btns {
   display: flex;

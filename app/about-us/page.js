@@ -35,10 +35,10 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2025-07-07T00:00:00+00:00",
+      dateModified: "2025-07-30T00:00:00+00:00",
       name: "About Us | Word Experts",
       description:
-        "Word Experts are Australia's leading Microsoft Word specialists, creating custom templates, toolbars, ribbons, and document automation solutions for businesses nationwide.",
+        "Australia's leading Microsoft Word specialists, creating custom templates, toolbars, ribbons, and document automation solutions for businesses nationwide.",
       breadcrumb: {
         "@id": "https://www.wordexperts.com.au/about-us#breadcrumb",
       },

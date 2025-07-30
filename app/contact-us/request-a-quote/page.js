@@ -21,12 +21,14 @@ const schema = {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/contact-us/request-a-quote",
       url: "https://www.wordexperts.com.au/contact-us/request-a-quote",
-      name: "Request a Quote | Get a Quote | Office Experts Group",
+      name: "Request a Quote | Office Experts Group",
+      description:
+        "Use the form below for quotes and estimates include associated requirements, issues, budget and time constraints.",
       isPartOf: {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2019-03-22T04:43:26+00:00",
-      dateModified: "2019-04-09T09:51:09+00:00",
+      dateModified: "2025-07-30T09:51:09+00:00",
       breadcrumb: {
         "@id":
           "https://www.wordexperts.com.au/contact-us/request-a-quote#breadcrumb",

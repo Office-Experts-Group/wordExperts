@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Request a Quote | Word Experts",
   description:
-    "Use the form below to provide us with all relevant information to quickly and efficiently process your enquiry. For quotes and estimates include associated requirements, issues, budget and time constraints.",
+    "Use the form below for quotes and estimates include associated requirements, issues, budget and time constraints.",
   keywords: [
     // Core quote services
     "microsoft word quote services",
@@ -9,7 +9,7 @@ export const metadata = {
   openGraph: {
     title: "Request a Quote | Word Experts",
     description:
-      "Use the form below to provide us with all relevant information to quickly and efficiently process your enquiry.",
+      "Use the form below for quotes and estimates include associated requirements, issues, budget and time constraints.",
     url: "https://www.wordexperts.com.au/contact-us/request-a-quote",
     siteName: "Word Experts",
     images: [

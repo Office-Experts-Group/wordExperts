@@ -8,66 +8,91 @@ import CTAMain from "../(components)/CTAMain";
 
 import styles from "../../styles/blog.module.scss";
 
+import { blogPosts } from "./blogPosts";
+
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+} from "../../utils/schemaGenerators";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    generateOrganizationSchema(),
+    generateProfessionalServiceSchema(),
+    {
+      "@type": "WebPage",
+      "@id": "https://www.wordexperts.com.au/blog",
+      url: "https://www.wordexperts.com.au/blog",
+      name: "Word Experts Australia Blog",
+      isPartOf: {
+        "@id": "https://www.wordexperts.com.au#website",
+      },
+      datePublished: "2024-10-26T00:00:00+00:00",
+      dateModified: "2025-07-30T00:00:00+00:00",
+      description:
+        "Explore expert tutorials, tips, and best practices for Microsoft Word. Our experts share their knowledge to help you improve your productivity.",
+      breadcrumb: {
+        "@id": "https://www.wordexperts.com.au/blog#breadcrumb",
+      },
+      inLanguage: "en-AU",
+      potentialAction: [
+        {
+          "@type": "ReadAction",
+          target: ["https://www.wordexperts.com.au/blog"],
+        },
+      ],
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.wordexperts.com.au/blog#breadcrumb",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.wordexperts.com.au",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Blog",
+        },
+      ],
+    },
+    {
+      "@type": "Blog",
+      "@id": "https://www.wordexperts.com.au/blog#blog",
+      url: "https://www.wordexperts.com.au/blog",
+      name: "Word Experts Australia Blog",
+      description:
+        "Expert tutorials, tips, and best practices for Microsoft Word",
+      inLanguage: "en-AU",
+      publisher: {
+        "@type": "Organization",
+        name: "Word Experts Australia",
+        url: "https://www.wordexperts.com.au",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://www.wordexperts.com.au/logo.png",
+        },
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.wordexperts.com.au#website",
+      url: "https://www.wordexperts.com.au",
+      name: "Word Experts Australia",
+      description:
+        "Australia's leading Microsoft Word specialists, creating custom templates, toolbars, ribbons, and document automation solutions for businesses nationwide.",
+      inLanguage: "en-AU",
+    },
+  ],
+};
+
 const BlogPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
-
-  // Blog post data for Word Experts
-  const blogPosts = [
-    {
-      id: 1,
-      title: "How to Convert a Canva Design into a Microsoft Word Template",
-      description:
-        "Learn how to convert Canva designs into functional Microsoft Word templates. This guide shows you the best methods for creating editable Word documents while maintaining your brand elements from Canva designs.",
-      slug: "convert-canva-to-word",
-      date: "April 14, 2025",
-      author: "Daniel Thomas",
-      readingTime: "5 min",
-      category: "Conversions",
-      featured: true,
-      imagePath: "/canva-to-word.webp",
-    },
-    {
-      id: 2,
-      title: "Ultimate Guide to Microsoft Word Templates",
-      description:
-        "What is a Word Template? Explore the benefits, types, and implementation of Microsoft Word templates for your organization. Learn how templates can ensure consistency and save valuable time.",
-      slug: "ultimate-guide-to-word-templates",
-      date: "April 8, 2025",
-      author: "Daniel Thomas",
-      readingTime: "8 min",
-      category: "Templates",
-      featured: false,
-      imagePath: "/template.webp",
-    },
-    {
-      id: 3,
-      title:
-        "Fields and Repeating Data in Word: Best Practices for Business Templates",
-      description:
-        "Learn how to use Word's fields to transform static templates into dynamic, error-resistant tools. Master REF fields, document properties, and content controls to eliminate manual data entry and reduce costly errors.",
-      slug: "fields-and-repeating-data-in-word",
-      date: "July 24, 2025",
-      author: "Daniel Thomas",
-      readingTime: "12 min",
-      category: "Templates",
-      featured: false,
-      imagePath: "/blog/waste.webp",
-    },
-    {
-      id: 4,
-      title: "Creating Word Templates for Legal Firms: Best Practices",
-      description:
-        "Learn how to create professional, efficient Word templates for legal firms. Discover best practices for reducing errors, ensuring consistency, and protecting client confidentiality with smart template design.",
-      slug: "word-templates-for-legal-firms",
-      date: "July 25, 2025",
-      author: "Daniel Thomas",
-      readingTime: "10 min",
-      category: "Legal",
-      featured: false,
-      imagePath: "/blog/legal.webp",
-    },
-  ];
 
   // Extract unique categories
   const categories = [
@@ -119,6 +144,10 @@ const BlogPage = () => {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <div className={styles.headFiller}></div>
       <div className={styles.blogHeader}>
         <div className={styles.headerContent}>

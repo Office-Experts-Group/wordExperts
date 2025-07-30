@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Word Upgrades and Migration | Word Experts",
   description:
-    "Stuck on an old version? Expert Microsoft Word upgrade and migration services. Resolve formatting issues, maintain document integrity, and ensure smooth transitions.",
+    "Expert Microsoft Word upgrade and migration services. Resolve formatting issues, maintain document integrity, and ensure smooth transitions.",
   keywords: [
     // Core services
     "microsoft word version upgrade",
@@ -10,7 +10,7 @@ export const metadata = {
   openGraph: {
     title: "Word Upgrades and Migration | Word Experts",
     description:
-      "Stuck on an old version? Expert Microsoft Word upgrade and migration services. Resolve formatting issues, maintain document integrity, and ensure smooth transitions.",
+      "Expert Microsoft Word upgrade and migration services. Resolve formatting issues, maintain document integrity, and ensure smooth transitions.",
     url: "https://www.wordexperts.com.au/upgrades-and-migration",
     siteName: "Word Experts",
     images: [
@@ -26,14 +26,6 @@ export const metadata = {
   },
   alternates: {
     canonical: "/upgrades-and-migration",
-    alternate: [
-      {
-        url: "https://www.excelexperts.com.au/services/microsoft-word/upgrades-and-migration",
-      },
-      {
-        url: "https://www.officeexperts.com.au/services/microsoft-word/upgrades-and-migration",
-      },
-    ],
   },
 };
 

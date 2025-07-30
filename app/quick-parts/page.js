@@ -34,7 +34,7 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-01-13T14:26:38+00:00",
-      dateModified: "2024-11-12T00:00:00+00:00",
+      dateModified: "2025-07-30T00:00:00+00:00",
       description:
         "Expert Microsoft Word Quick Parts implementation. Enhance document creation with pre-built content and automated building blocks.",
       breadcrumb: {

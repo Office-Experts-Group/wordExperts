@@ -1,14 +1,12 @@
 export const metadata = {
   title: "Corporate Global Template Solution - Microsoft Word",
   description:
-    "Advanced Corporate Word Template Solution enabling efficient creation of corporate documents in a controlled environment. Maintain brand consistency and document integrity.",
-  keywords: [
-    "global word templates",
-  ],
+    "Advanced Corporate Word Template Solutions enabling efficient creation of corporate documents, brand consistency and document integrity.",
+  keywords: ["global word templates"],
   openGraph: {
     title: "Corporate Global Template Solution - Microsoft Word",
     description:
-      "Advanced Corporate Word Template Solution enabling efficient creation of corporate documents in a controlled environment.",
+      "Advanced Corporate Word Template Solutions enabling efficient creation of corporate documents, brand consistency and document integrity.",
     url: "https://www.wordexperts.com.au/corporate-global-template-solution",
     siteName: "Word Experts",
     images: [
@@ -24,14 +22,6 @@ export const metadata = {
   },
   alternates: {
     canonical: "/corporate-global-template-solution",
-    alternate: [
-      {
-        url: "https://www.excelexperts.com.au/services/microsoft-word/corporate-global-template-solution",
-      },
-      {
-        url: "https://www.excelexperts.com.au/services/microsoft-word/corporate-global-template-solution",
-      },
-    ],
   },
 };
 

@@ -37,9 +37,9 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-07-15T15:50:26+00:00",
-      dateModified: "2024-11-12T00:00:00+00:00",
+      dateModified: "2025-07-30T00:00:00+00:00",
       description:
-        "Advanced Corporate Word Template Solution enabling efficient creation of corporate documents in a controlled environment. Maintain brand consistency and document integrity.",
+        "Advanced Corporate Word Template Solutions enabling efficient creation of corporate documents, brand consistency and document integrity.",
       breadcrumb: {
         "@id":
           "https://www.wordexperts.com.au/corporate-global-template-solution#breadcrumb",

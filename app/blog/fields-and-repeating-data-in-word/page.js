@@ -51,7 +51,7 @@ const FieldsRepeatingDataBlogPost = () => {
 
     // Dates
     datePublished: "2025-07-24T09:00:00+10:00",
-    dateModified: "2025-07-24T09:00:00+10:00",
+    dateModified: "2025-07-29T09:00:00+10:00",
 
     // Article structure
     articleSection: "Word Templates",
@@ -172,7 +172,10 @@ const FieldsRepeatingDataBlogPost = () => {
               According to IDC research, employees spend nearly{" "}
               <strong>30% of their time simply searching for documents</strong>.
               When you combine this with the manual re-entry of data across
-              forms, contracts, and reports, the inefficiency quickly compounds.
+              <Link href={"../../fill-in-forms"}>
+                forms, contracts, and reports
+              </Link>
+              , the inefficiency quickly compounds.
             </p>
             <p>
               The risks extend far beyond mere appearance issues. A Whale

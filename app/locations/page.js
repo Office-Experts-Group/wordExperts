@@ -36,11 +36,13 @@ const schema = {
       "@id": "https://www.wordexperts.com.au/locations",
       url: "https://www.wordexperts.com.au/locations",
       name: "Microsoft Word Experts Locations | Australia-Wide Service",
+      description:
+        "Microsoft Word consulting services available across Australia. Remote support and on-site consultants in all major cities.",
       isPartOf: {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2025-03-26T00:00:00+00:00",
+      dateModified: "2025-07-30T00:00:00+00:00",
       breadcrumb: {
         "@id": "https://www.wordexperts.com.au/locations#breadcrumb",
       },

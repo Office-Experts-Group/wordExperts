@@ -33,11 +33,13 @@ const schema = {
       "@id": "https://www.wordexperts.com.au/training",
       url: "https://www.wordexperts.com.au/training",
       name: "Microsoft Word Training | Microsoft Word Help | Word Experts",
+      description:
+        "Professional Microsoft Word training and support services. Expert help with templates, documents, and automation. Available remotely or onsite across Australia.",
       isPartOf: {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-07-15T15:59:22+00:00",
-      dateModified: "2025-03-12T00:00:00+00:00",
+      dateModified: "2025-07-30T00:00:00+00:00",
       breadcrumb: {
         "@id": "https://www.wordexperts.com.au/training#breadcrumb",
       },
