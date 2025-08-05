@@ -9,7 +9,7 @@ export const metadata = {
   openGraph: {
     title: "Word Corporate Global Template Solution | Word Experts",
     description:
-      "Professional corporate identity protection through Microsoft Word templates. Ensure brand consistency and document compliance.",
+      "Professional corporate identity protection through Microsoft Word templates. Ensure brand consistency and document compliance across your organisation.",
 
     url: "https://www.wordexperts.com.au/corporate-identity",
     siteName: "Word Experts",
@@ -26,14 +26,6 @@ export const metadata = {
   },
   alternates: {
     canonical: "/corporate-identity",
-    alternate: [
-      {
-        url: "https://www.excelexperts.com.au/services/microsoft-word/corporate-identity",
-      },
-      {
-        url: "https://www.officeexperts.com.au/services/microsoft-word/corporate-identity",
-      },
-    ],
   },
 };
 

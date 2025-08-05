@@ -25,14 +25,6 @@ export const metadata = {
   },
   alternates: {
     canonical: "/custom-toolbars-and-ribbons",
-    alternate: [
-      {
-        url: "https://www.excelexperts.com.au/services/microsoft-word/custom-toolbars-and-ribbons",
-      },
-      {
-        url: "https://www.excelexperts.com.au/services/microsoft-word/custom-toolbars-and-ribbons",
-      },
-    ],
   },
 };
 

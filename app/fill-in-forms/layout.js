@@ -25,14 +25,6 @@ export const metadata = {
   },
   alternates: {
     canonical: "/fill-in-forms",
-    alternate: [
-      {
-        url: "https://www.excelexperts.com.au/services/microsoft-word/fill-in-forms",
-      },
-      {
-        url: "https://www.officeexperts.com.au/services/microsoft-word/fill-in-forms",
-      },
-    ],
   },
 };
 

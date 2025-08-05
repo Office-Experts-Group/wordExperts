@@ -25,14 +25,6 @@ export const metadata = {
   },
   alternates: {
     canonical: "/popup-forms",
-    alternate: [
-      {
-        url: "https://www.officeexperts.com.au/services/microsoft-word/popup-forms",
-      },
-      {
-        url: "https://www.excelexperts.com.au/services/microsoft-word/popup-forms",
-      },
-    ],
   },
 };
 

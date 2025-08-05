@@ -5,18 +5,6 @@ export const metadata = {
   keywords: [
     // Core services
     "government word templates",
-    // "government document solutions",
-    // "government word consulting",
-
-    // // Compliance focus
-    // "wcag word templates",
-    // "government word document standards",
-    // "compliant word government solutions",
-
-    // // Features
-    // "secure word document templates",
-    // "microsoft document version control",
-    // "word document automation",
   ],
   openGraph: {
     title: "Government Department Word Document Solutions | Word Experts",
@@ -37,14 +25,6 @@ export const metadata = {
   },
   alternates: {
     canonical: "/government-departments",
-    alternate: [
-      {
-        url: "https://www.excelexperts.com.au/services/microsoft-word/government-departments",
-      },
-      {
-        url: "https://www.officeexperts.com.au/services/microsoft-word/government-departments",
-      },
-    ],
   },
 };
 
