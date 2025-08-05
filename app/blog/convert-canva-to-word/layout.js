@@ -39,7 +39,7 @@ export const metadata = {
   },
 
   alternates: {
-    canonical: "/convert-canva-to-word",
+    canonical: "/blog/convert-canva-to-word",
   },
 };
 

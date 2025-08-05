@@ -40,39 +40,392 @@ const CanvaToWordBlogPost = () => {
 1. Click File > New > Personal
 2. Your template will appear in the gallery`;
 
-  const articleSchema = {
+  // Main BlogPosting Schema
+  const blogPostingSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
+    "@id":
+      "https://www.wordexperts.com.au/blog/convert-canva-to-word#BlogPosting",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://www.wordexperts.com.au/blog/convert-canva-to-word",
+    },
     headline: "How to Convert a Canva Design into a Microsoft Word Template",
-    image: "https://img.youtube.com/vi/_placeholder_/maxresdefault.jpg",
+    name: "How to Convert a Canva Design into a Microsoft Word Template",
+    description:
+      "Learn how to convert Canva designs into functional Microsoft Word templates. This comprehensive guide shows you the best methods for creating editable Word documents while maintaining your brand elements from Canva designs.",
+    image: {
+      "@type": "ImageObject",
+      url: "https://www.wordexperts.com.au/canva-to-word.webp",
+      width: 600,
+      height: 400,
+      caption: "Canva to Word Template conversion process",
+    },
+    author: {
+      "@type": "Person",
+      name: "Daniel Thomas",
+      url: "https://www.wordexperts.com.au/about/daniel-thomas",
+      jobTitle: "Microsoft Word Expert",
+      worksFor: {
+        "@type": "Organization",
+        name: "Word Experts",
+        url: "https://www.wordexperts.com.au",
+      },
+    },
+    publisher: {
+      "@type": "Organization",
+      "@id": "https://www.wordexperts.com.au#organization",
+      name: "Word Experts",
+      url: "https://www.wordexperts.com.au",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.wordexperts.com.au/logo.png",
+        width: 1200,
+        height: 630,
+      },
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "Australia",
+      },
+      telephone: "+611300122038",
+    },
+    datePublished: "2025-04-14T09:00:00+10:00",
+    dateModified: "2025-04-14T09:00:00+10:00",
+    inLanguage: "en-AU",
+    audience: {
+      "@type": "BusinessAudience",
+      audienceType: "Business owners, admin staff, and Microsoft Word users",
+    },
+    about: [
+      {
+        "@type": "SoftwareApplication",
+        name: "Canva",
+        applicationCategory: "Design Software",
+      },
+      {
+        "@type": "SoftwareApplication",
+        name: "Microsoft Word",
+        applicationCategory: "Word Processing Software",
+      },
+      {
+        "@type": "Thing",
+        name: "Document Templates",
+        description: "Professional business document formatting solutions",
+      },
+    ],
+    keywords: [
+      "Canva to Word template",
+      "convert Canva design",
+      "Microsoft Word templates",
+      "document conversion",
+      "brand consistency",
+      "template design",
+    ],
+    wordCount: 1800,
+    timeRequired: "PT5M",
+    articleSection: "Tutorial",
+    isPartOf: {
+      "@type": "Blog",
+      "@id": "https://www.wordexperts.com.au/blog#Blog",
+      name: "Word Experts Blog",
+      description: "Expert tips and tutorials for Microsoft Word users",
+    },
+  };
+
+  // HowTo Schema for the conversion process
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "@id": "https://www.wordexperts.com.au/blog/convert-canva-to-word#HowTo",
+    name: "How to Convert a Canva Design into a Microsoft Word Template",
+    description:
+      "Step-by-step instructions for converting Canva designs into functional Microsoft Word templates while maintaining brand consistency.",
+    image: {
+      "@type": "ImageObject",
+      url: "https://www.wordexperts.com.au/canva-to-word.webp",
+      width: 600,
+      height: 400,
+    },
+    estimatedCost: {
+      "@type": "MonetaryAmount",
+      currency: "AUD",
+      value: "0",
+    },
+    totalTime: "PT30M",
+    supply: [
+      {
+        "@type": "HowToSupply",
+        name: "Canva design (exported as PDF or PNG)",
+      },
+      {
+        "@type": "HowToSupply",
+        name: "Microsoft Word software",
+      },
+      {
+        "@type": "HowToSupply",
+        name: "Brand assets (logos, fonts, color codes)",
+      },
+    ],
+    tool: [
+      {
+        "@type": "HowToTool",
+        name: "Microsoft Word",
+        description: "Word processing software for template creation",
+      },
+      {
+        "@type": "HowToTool",
+        name: "Canva",
+        description: "Design software for creating original designs",
+      },
+    ],
+    step: [
+      {
+        "@type": "HowToStep",
+        position: 1,
+        name: "Export from Canva",
+        text: "Download your Canva design as a high-resolution PDF or PNG for reference. Note the exact fonts, colors, and measurements used.",
+        image: {
+          "@type": "ImageObject",
+          url: "https://www.wordexperts.com.au/canva-export-step.webp",
+          width: 400,
+          height: 300,
+        },
+      },
+      {
+        "@type": "HowToStep",
+        position: 2,
+        name: "Set up Word document",
+        text: "Open Microsoft Word with a blank document. Set the page size to match your Canva design using Layout > Margins > Custom Margins.",
+        image: {
+          "@type": "ImageObject",
+          url: "https://www.wordexperts.com.au/word-setup-step.webp",
+          width: 400,
+          height: 300,
+        },
+      },
+      {
+        "@type": "HowToStep",
+        position: 3,
+        name: "Recreate the structure",
+        text: "Use tables, shapes, and text boxes to recreate your Canva layout. Insert logos and images from your Canva design using Insert > Pictures.",
+        image: {
+          "@type": "ImageObject",
+          url: "https://www.wordexperts.com.au/word-structure-step.webp",
+          width: 400,
+          height: 300,
+        },
+      },
+      {
+        "@type": "HowToStep",
+        position: 4,
+        name: "Apply brand formatting",
+        text: "Match fonts and colors exactly using Format > Font Color > More Colors > Custom to enter RGB values from your brand guidelines.",
+        image: {
+          "@type": "ImageObject",
+          url: "https://www.wordexperts.com.au/word-formatting-step.webp",
+          width: 400,
+          height: 300,
+        },
+      },
+      {
+        "@type": "HowToStep",
+        position: 5,
+        name: "Lock formatting and save template",
+        text: "Use Word's Styles and Content Controls to prevent unwanted changes. Save as .dotx Word Template file for reuse.",
+        image: {
+          "@type": "ImageObject",
+          url: "https://www.wordexperts.com.au/word-save-template-step.webp",
+          width: 400,
+          height: 300,
+        },
+      },
+    ],
+    video: {
+      "@type": "VideoObject",
+      name: "Converting Canva Design to Word Template",
+      description:
+        "Video tutorial showing the complete process of converting a Canva design into a Microsoft Word template",
+      thumbnailUrl:
+        "https://www.wordexperts.com.au/canva-to-word-video-thumb.webp",
+      uploadDate: "2025-04-14T09:00:00+10:00",
+      duration: "PT8M30S",
+      embedUrl: "https://www.youtube.com/embed/placeholder-video-id",
+    },
+  };
+
+  // BreadcrumbList Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id":
+      "https://www.wordexperts.com.au/blog/convert-canva-to-word#breadcrumb",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.wordexperts.com.au",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Blog",
+        item: "https://www.wordexperts.com.au/blog",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "How to Convert a Canva Design into a Microsoft Word Template",
+        item: "https://www.wordexperts.com.au/blog/convert-canva-to-word",
+      },
+    ],
+  };
+
+  // Organization Schema
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.wordexperts.com.au#organization",
+    name: "Word Experts",
+    alternateName: "Office Experts Group - Word Division",
+    url: "https://www.wordexperts.com.au",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://www.wordexperts.com.au/logo.png",
+      width: 1200,
+      height: 630,
+    },
+    description:
+      "Professional Microsoft Word template and document solutions for Australian businesses and organizations",
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "Australia",
+    },
+    telephone: "+611300122038",
+    areaServed: {
+      "@type": "Country",
+      name: "Australia",
+    },
+    serviceArea: {
+      "@type": "Country",
+      name: "Australia",
+    },
+    sameAs: [
+      "https://twitter.com/OfficeExpertsG1",
+      "https://www.facebook.com/MSOfficeExperts",
+      "https://www.linkedin.com/company/office-experts-group",
+    ],
+    founder: {
+      "@type": "Person",
+      name: "Scott Robinson",
+      jobTitle: "Managing Director",
+    },
+    foundingDate: "2002",
+    numberOfEmployees: {
+      "@type": "QuantitativeValue",
+      value: 50,
+    },
+    makesOffer: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Microsoft Word Template Design",
+          description: "Custom Word template creation and brand implementation",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Document Conversion Services",
+          description:
+            "Convert designs from Canva, PDF, or other formats to Word templates",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Word Training and Support",
+          description:
+            "Expert training and ongoing support for Microsoft Word users",
+        },
+      },
+    ],
+  };
+
+  // WebPage Schema
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://www.wordexperts.com.au/blog/convert-canva-to-word",
+    url: "https://www.wordexperts.com.au/blog/convert-canva-to-word",
+    name: "How to Convert a Canva Design into a Microsoft Word Template",
+    description:
+      "Convert Canva designs into functional Microsoft Word templates. Create editable Word documents while maintaining your brand elements from Canva designs.",
+    inLanguage: "en-AU",
+    isPartOf: {
+      "@type": "WebSite",
+      "@id": "https://www.wordexperts.com.au#website",
+      name: "Word Experts",
+      url: "https://www.wordexperts.com.au",
+    },
+    datePublished: "2025-04-14T09:00:00+10:00",
+    dateModified: "2025-04-14T09:00:00+10:00",
     author: {
       "@type": "Person",
       name: "Daniel Thomas",
     },
     publisher: {
-      "@type": "Organization",
-      name: "Word Experts",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.wordexperts.com.au/logo.png",
+      "@id": "https://www.wordexperts.com.au#organization",
+    },
+    breadcrumb: {
+      "@id":
+        "https://www.wordexperts.com.au/blog/convert-canva-to-word#breadcrumb",
+    },
+    mainEntity: {
+      "@id":
+        "https://www.wordexperts.com.au/blog/convert-canva-to-word#BlogPosting",
+    },
+    potentialAction: [
+      {
+        "@type": "ReadAction",
+        target: ["https://www.wordexperts.com.au/blog/convert-canva-to-word"],
       },
-    },
-    datePublished: "2025-04-14T09:00:00+10:00",
-    dateModified: "2025-04-14T09:00:00+10:00",
-    description:
-      "Learn how to convert Canva designs into functional Microsoft Word templates. This guide shows you the best methods for creating editable Word documents while maintaining your brand elements from Canva designs.",
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": "https://www.wordexperts.com.au/blog/convert-canva-to-word",
-    },
+      {
+        "@type": "ShareAction",
+        target: ["https://www.wordexperts.com.au/blog/convert-canva-to-word"],
+      },
+    ],
+  };
+
+  // Combined Schema using @graph
+  const combinedSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      blogPostingSchema,
+      howToSchema,
+      breadcrumbSchema,
+      organizationSchema,
+      webPageSchema,
+    ],
   };
 
   return (
     <>
+      {/* Primary comprehensive schema markup */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchema) }}
       />
+
+      {/* Additional standalone schema for better compatibility */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
+
       <div className={styles.head}></div>
       <div className={styles.blogContainer}>
         <div className={styles.preface}>
@@ -87,7 +440,7 @@ const CanvaToWordBlogPost = () => {
 
         <Image
           src="/canva-to-word.webp"
-          alt="Canva to Word Template"
+          alt="Canva to Word Template conversion process"
           width={600}
           height={400}
           priority
@@ -291,7 +644,7 @@ const CanvaToWordBlogPost = () => {
             <li>Lock or restrict editing if sharing templates externally</li>
           </ul>
 
-          <h2>When You Might Want Professional Help</h2>
+          <h2>When You Might Consider Our Professional Help</h2>
           <p>
             Converting from Canva to Word can be time-consuming, especially for
             complex designs. Consider professional help if you:
@@ -309,7 +662,7 @@ const CanvaToWordBlogPost = () => {
             </li>
           </ul>
           <p>
-            At <strong>WordExperts</strong>, we specialise in turning Canva or
+            At <strong>Word Experts</strong>, we specialise in turning Canva or
             PDF designs into clean, editable, on-brand Word templates for
             businesses, NDIS providers, consultants, and more.
           </p>
@@ -318,9 +671,8 @@ const CanvaToWordBlogPost = () => {
           <p>
             Converting a Canva design into Microsoft Word isn't just possible —
             it can be a smart move for your brand. With a little time and
-            attention to detail (or help from professionals), you can create a
-            branded template that works just as beautifully in Word as it does
-            in Canva.
+            attention to detail (or help from us!), you can create a branded
+            template that works just as beautifully in Word as it does in Canva.
           </p>
           <p>
             The key is to focus on the function of the document in Word, not

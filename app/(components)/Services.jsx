@@ -14,21 +14,21 @@ import quickParts from "../../public/microsoft/quickPartsNoBG.webp";
 
 import scott from "../../public/scott.webp";
 import signature from "../../public/signature.webp";
-import Link from "next/link";
+// import Link from "next/link";
 
 const Services = () => {
   return (
     <section className={styles.services}>
       <AnimateOnScroll animation="slide-left" delay={0} duration={1.5}>
         <div className={styles.content}>
-          <div className={styles.subBox}>
+          {/* <div className={styles.subBox}>
             <p>
               Document Design and Development
               <span> for Microsoft Word</span>
             </p>
-          </div>
-          <h1>Microsoft Word Designer & Consultants</h1>
-          <p>
+          </div> */}
+          <h1>Microsoft Word Designers & Consultants</h1>
+          {/* <p>
             When it comes to Microsoft Word, our Australia-wide, cross-industry
             consultants deliver a prompt, quality service with competitive
             pricing. Our Microsoft Word experts specialise in templates,
@@ -36,6 +36,26 @@ const Services = () => {
             online documents, <Link href={"../accessibility"}></Link>
             accessibility, integration,{" "}
             <Link href={"../training"}>training and support</Link>.
+          </p> */}
+          <p>
+            At Word Experts, we know Microsoft Word packs serious power under
+            the hood, with powerful features extending beyond surface-level
+            styling tools such as fonts, themes, and layouts.
+          </p>
+          <p>
+            Properly engineered Word templates function as dynamic
+            frameworks—leveraging advanced elements to enforce document
+            consistency, automate formatting, and streamline workflows.
+          </p>
+          <p>
+            They become more than just documents—they're intelligent tools that
+            drive consistency and cut down manual work and human error. And with
+            our custom automation powered by VBA, we push Word to its
+            limits—creating smart solutions that generate documents, handle
+            complex logic, and adapt to real-world workflows. Whether you're
+            producing reports, proposals, or legal docs, our templates quietly
+            run the show so teams stay efficient and on-brand without barely
+            lifting a finger.
           </p>
           <div className={styles.signature}>
             <div>

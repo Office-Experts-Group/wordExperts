@@ -18,6 +18,7 @@ const Brands = dynamic(() => import("../components/Brands"));
 const Promo = dynamic(() => import("../components/Promo"));
 const Contact = dynamic(() => import("../components/Contact"));
 const FAQSection = dynamic(() => import("../components/FAQSection"));
+const IFrame = dynamic(() => import("./(components)/IFrame"));
 
 import faqs from "../faqs/home";
 import faqSchema from "../faqs/homeSchema";
@@ -45,7 +46,7 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2017-11-22T14:23:06+00:00",
-      dateModified: "2025-03-17T23:52:31+00:00",
+      dateModified: "2025-08-05T23:52:31+00:00",
       description:
         "Word Experts is the Leading Microsoft Word Design Service in Australia. Expert Word Development & Consulting.",
       breadcrumb: {
@@ -116,6 +117,7 @@ const Page = () => {
       <CTAMain />
       <IsRight />
       <SolutionsCarousel />
+      <IFrame />
       <Testimonials testimonials={testimonials} />
       <Brands isBelowFold={true} />
       <CTAFull />
