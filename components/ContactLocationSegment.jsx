@@ -63,7 +63,7 @@ const Contact = ({ isQuote, location }) => {
             <div className={styles.description}>
               <p>
                 Need pricing for a specific project? Fill out our quote form and
-                we&apos;ll provide you with a detailed estimate tailored to your
+                we'll provide you with a detailed estimate tailored to your
                 needs.
               </p>
             </div>
