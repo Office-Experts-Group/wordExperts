@@ -35,7 +35,7 @@ export function middleware(request) {
   response.headers.set("X-XSS-Protection", "1; mode=block");
   response.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
 
-  // Enhanced Content Security Policy with proper external domains
+  // Enhanced Content Security Policy with Google Ads support
   response.headers.set(
     "Content-Security-Policy",
     "default-src 'self'; " +
@@ -43,20 +43,30 @@ export function middleware(request) {
       "*.vimeo.com " +
       "*.googletagmanager.com " +
       "*.google-analytics.com " +
-      "analytics.ahrefs.com; " +
+      "analytics.ahrefs.com " +
+      "https://www.googleadservices.com " +
+      "https://www.google.com " +
+      "https://pagead2.googlesyndication.com " +
+      "https://googleads.g.doubleclick.net; " +
       "style-src 'self' 'unsafe-inline' " +
       "fonts.googleapis.com; " +
       "img-src 'self' data: https: " +
       "*.vimeocdn.com " +
       "*.google-analytics.com " +
-      "*.googletagmanager.com; " +
+      "*.googletagmanager.com " +
+      "https://googleads.g.doubleclick.net " +
+      "https://www.google.com " +
+      "https://pagead2.googlesyndication.com " +
+      "https://www.googleadservices.com " +
+      "https://google.com; " +
       "font-src 'self' " +
       "fonts.googleapis.com " +
       "fonts.gstatic.com; " +
       "frame-src 'self' " +
       "*.vimeo.com " +
       "player.vimeo.com " +
-      "*.googletagmanager.com; " +
+      "*.googletagmanager.com " +
+      "https://td.doubleclick.net; " +
       "media-src 'self' " +
       "*.vimeo.com " +
       "*.vimeocdn.com; " +
@@ -66,7 +76,12 @@ export function middleware(request) {
       "*.google-analytics.com " +
       "*.googletagmanager.com " +
       "*.officeexperts.com.au " +
-      "analytics.ahrefs.com;"
+      "analytics.ahrefs.com " +
+      "https://pagead2.googlesyndication.com " +
+      "https://www.googleadservices.com " +
+      "https://www.google.com " +
+      "https://google.com " +
+      "https://googleads.g.doubleclick.net;"
   );
 
   // Handle Next.js system paths
