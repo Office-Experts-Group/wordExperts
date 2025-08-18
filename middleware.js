@@ -49,7 +49,8 @@ export function middleware(request) {
       "https://pagead2.googlesyndication.com " +
       "https://googleads.g.doubleclick.net; " +
       "style-src 'self' 'unsafe-inline' " +
-      "fonts.googleapis.com; " +
+      "fonts.googleapis.com " +
+      "https://www.googletagmanager.com; " +
       "img-src 'self' data: https: " +
       "*.vimeocdn.com " +
       "*.google-analytics.com " +
