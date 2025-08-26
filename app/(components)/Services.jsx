@@ -22,7 +22,7 @@ const Services = () => {
         <div className={styles.content}>
           <div className={styles.subBox}>
             <p>
-              From Design to implentation
+              From Design to implementation
               <span> for Microsoft Word</span>
             </p>
           </div>
