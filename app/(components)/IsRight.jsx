@@ -6,6 +6,7 @@ import AnimateOnScroll from "../../components/AnimateOnScroll";
 import styles from "../../styles/isRight.module.css";
 
 import isRight from "../../public/isRight.webp";
+import Link from "next/link";
 
 const IsRight = () => {
   return (
@@ -32,13 +33,28 @@ const IsRight = () => {
           <h2>Professional Word Template Solutions for Your Business</h2>
           <p className={styles.text}>
             At Word Experts, we specialise in creating sophisticated Microsoft
-            Word solutions that protect your corporate identity and streamline
-            document creation. Our team of experienced consultants delivers
-            professional templates with built-in automation, ensuring consistent
-            branding and formatting across your organisation. From government
-            departments to corporate entities, we provide comprehensive document
-            solutions including template design, accessibility compliance, and
-            custom automation to save time and reduce errors.
+            Word solutions that protect your{" "}
+            <Link href="/corporate-identity">
+              , maintain your corporate identity
+            </Link>
+            , and streamline document creation. Our team of experienced
+            consultants delivers
+            <Link href="/document-template-creation">
+              {" "}
+              professional templates
+            </Link>{" "}
+            with built-in automation, ensuring consistent branding and
+            formatting across your organisation. From{" "}
+            <Link href="/government-departments">
+              government departments
+            </Link>{" "}
+            to corporate entities, we provide comprehensive document solutions
+            including template design,{" "}
+            <Link href="/accessibility-compliance">
+              {" "}
+              accessibility compliance
+            </Link>
+            , and custom automation to save time and reduce errors.
           </p>
           <div className={styles.contentGrid}>
             <div className={styles.excerpt}>

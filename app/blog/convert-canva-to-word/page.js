@@ -20,7 +20,7 @@ const CanvaToWordBlogPost = () => {
   // Content controls code
   const contentControlsCode = `# Adding Content Controls in Word
 1. Enable the Developer tab:
-   File > Options > Customize Ribbon > Check "Developer"
+   File > Options > customise Ribbon > Check "Developer"
 
 2. Place cursor where you want a control
 3. Go to Developer tab > Controls section

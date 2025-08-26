@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: 50% 1fr;
   padding: 7rem 10vw;
+  gap: 2rem;
 
   @media screen and (max-width: 1300px) {
     padding: 7rem 5vw;
@@ -26,6 +27,11 @@
     flex-direction: column;
     gap: 2rem;
     padding: 7rem 1rem;
+  }
+
+  a {
+    font-weight: 700;
+    color: $theme;
   }
 }
 

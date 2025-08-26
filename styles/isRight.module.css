@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 50% 1fr;
   padding: 7rem 10vw;
+  gap: 2rem;
 }
 @media screen and (max-width: 1300px) {
   .isRight {
@@ -31,6 +32,10 @@
     gap: 2rem;
     padding: 7rem 1rem;
   }
+}
+.isRight a {
+  font-weight: 700;
+  color: #046999;
 }
 
 .imgDiv {

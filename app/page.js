@@ -18,7 +18,6 @@ const Brands = dynamic(() => import("../components/Brands"));
 const Promo = dynamic(() => import("../components/Promo"));
 const Contact = dynamic(() => import("../components/Contact"));
 const FAQSection = dynamic(() => import("../components/FAQSection"));
-const IFrame = dynamic(() => import("./(components)/IFrame"));
 
 import faqs from "../faqs/home";
 import faqSchema from "../faqs/homeSchema";
@@ -117,13 +116,12 @@ const Page = () => {
       <CTAMain />
       <IsRight />
       <SolutionsCarousel />
-      <IFrame />
       <Testimonials testimonials={testimonials} />
       <Brands isBelowFold={true} />
       <CTAFull />
       <Promo
         h2="Master Your Documents"
-        p="Professional Microsoft Word solutions to protect your brand, automate workflows, and empower your team to create consistent, high-quality documentation."
+        p="Discover how our Microsoft Word solutions can protect your brand, boost efficiency, and deliver consistent, professional documents with ease."
       />
       <div style={{ marginTop: "-6rem" }}>
         <FAQSection faqs={faqs} />

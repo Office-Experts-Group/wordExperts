@@ -51,6 +51,16 @@
   margin: 1.25rem 0 2.5rem 0;
   z-index: 5;
 }
+.ctaWrapper p {
+  position: relative;
+  color: #f8f8f8;
+  font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+  line-height: 2rem;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+  z-index: 5;
+}
 
 .ctaBtn {
   z-index: 2;

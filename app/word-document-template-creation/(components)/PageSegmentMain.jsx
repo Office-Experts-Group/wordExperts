@@ -29,14 +29,18 @@ const PageSegmentMain = () => {
             <p>For a consistent and professional look</p>
             <h2>Custom Document and Template Solutions</h2>
             <p>
-              Our team of <Link href="/">Word designers</Link> can create your
-              company documents and templates with our easy to use templates,
-              complete with your branding, a consistent look and a professional
-              feel.
+              We create Microsoft Word templates that are{" "}
+              <strong>striking, refined, and impeccably crafted.</strong> Every
+              design blends elegant form and flawless function — with polished
+              layouts, brand-perfect styling, and user-friendly features that
+              make document creation effortless.
             </p>
             <p>
-              Let us help you create templates that are easy to use and
-              perfectly aligned with your branding.
+              Our templates are robust and reliable, holding their formatting no
+              matter who uses them. They save your team valuable time, reduce
+              errors, and deliver consistent, professional, and visually
+              stunning results — whether it's a single letterhead or a complete
+              corporate suite.
             </p>
           </div>
         </AnimateOnScroll>

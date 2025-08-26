@@ -3,7 +3,8 @@
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-family: 'Fira Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: "Fira Code", Consolas, Monaco, "Andale Mono", "Ubuntu Mono",
+    monospace;
 }
 
 .codeHeader {
@@ -44,14 +45,15 @@
   padding: 0 1.5rem;
 }
 
-/* Customize the toolbar */
+/* customise the toolbar */
 .codeBlockContainer :global(div.code-toolbar > .toolbar) {
   opacity: 1 !important;
   top: 0.5rem !important;
   right: 0.5rem !important;
 }
 
-.codeBlockContainer :global(div.code-toolbar > .toolbar > .toolbar-item > button) {
+.codeBlockContainer
+  :global(div.code-toolbar > .toolbar > .toolbar-item > button) {
   background-color: #333 !important;
   color: #ddd !important;
   padding: 4px 8px !important;
@@ -59,7 +61,8 @@
   font-size: 0.8rem !important;
 }
 
-.codeBlockContainer :global(div.code-toolbar > .toolbar > .toolbar-item > button:hover) {
+.codeBlockContainer
+  :global(div.code-toolbar > .toolbar > .toolbar-item > button:hover) {
   background-color: #444 !important;
   color: #fff !important;
 }

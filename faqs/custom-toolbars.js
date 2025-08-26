@@ -2,7 +2,7 @@ const faqs = [
   {
     question: "What are custom toolbars and ribbons?",
     answer:
-      "Custom toolbars and ribbons are personalized tools added to your Microsoft Word interface to streamline document creation, making frequently used functions more accessible. They can be customized to include shortcuts to specific templates, functions, or automated features that your team uses most.",
+      "Custom toolbars and ribbons are personalized tools added to your Microsoft Word interface to streamline document creation, making frequently used functions more accessible. They can be customised to include shortcuts to specific templates, functions, or automated features that your team uses most.",
   },
   {
     question: "How do custom toolbars and ribbons benefit my business?",

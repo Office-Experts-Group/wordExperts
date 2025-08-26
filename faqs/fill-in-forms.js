@@ -5,7 +5,7 @@ const faqs = [
       "Fill-in forms are custom data entry templates designed to make data input easy, accurate, and consistent. They help your team efficiently collect and manage information, minimizing errors and ensuring uniformity across documents.",
   },
   {
-    question: "Can the forms be customized to fit our specific needs?",
+    question: "Can the forms be customised to fit our specific needs?",
     answer:
       "Yes, we design forms that are tailored to your requirements, from simple step-by-step forms to more complex templates with controls and protection. We work closely with you to create forms that are intuitive and aligned with your workflow.",
   },
@@ -17,7 +17,7 @@ const faqs = [
   {
     question: "How does VBA enhance the functionality of these forms?",
     answer:
-      "With VBA (Visual Basic for Applications), we can add automation features to your forms, such as data validation, auto-filling, and customized data extraction. VBA enables advanced functionality, helping your team save time and reduce manual errors.",
+      "With VBA (Visual Basic for Applications), we can add automation features to your forms, such as data validation, auto-filling, and customised data extraction. VBA enables advanced functionality, helping your team save time and reduce manual errors.",
   },
   {
     question: "Can these forms be protected to prevent data tampering?",

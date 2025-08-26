@@ -10,14 +10,14 @@ const faqs = [
       "Popup forms guide users step-by-step through data input, validating each entry to minimize errors and maintain document consistency.",
   },
   {
-    question: "Can popup forms be customized for different document needs?",
+    question: "Can popup forms be customised for different document needs?",
     answer:
       "Yes, popup forms are highly versatile and can be tailored for various tasks, including data integration, document setup, and linking to external data sources.",
   },
   {
     question: "What types of documents benefit most from popup forms?",
     answer:
-      "Documents that require consistent data input, data validation, or customized formatting benefit significantly from the use of popup forms, as they streamline complex entry tasks.",
+      "Documents that require consistent data input, data validation, or customised formatting benefit significantly from the use of popup forms, as they streamline complex entry tasks.",
   },
   {
     question: "How do I get started with popup forms for my business?",

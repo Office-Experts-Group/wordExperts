@@ -117,6 +117,7 @@ export default function RootLayout({ children }) {
     <html lang="en-AU">
       <body className={`${aptos.variable} ${garamond.variable}`}>
         {/* Google Tag Manager (noscript) - Required for GTM */}
+        {/* Still not recording conversions TODO  */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-NZSL2SN2"

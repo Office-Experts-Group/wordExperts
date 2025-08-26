@@ -5,7 +5,7 @@
   scroll-margin-top: 150px;
   display: flex;
   gap: 4rem;
-  margin: 8rem;
+  margin: 8rem 10vw;
   @include phone {
     flex-direction: column;
     margin: 6rem 1rem;
@@ -293,5 +293,11 @@
     flex: 0 0 auto; // Prevents svg from shrinking or growing
     width: 1.5em;
     height: 1.5em;
+  }
+}
+
+.imgMarginTop {
+  @media screen and (min-width: 700px) {
+    margin-top: 6rem;
   }
 }

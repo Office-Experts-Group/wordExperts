@@ -39,7 +39,7 @@ export const faqSchema = {
       name: "How do I get started with Quick Parts for my documents?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Contact our team to discuss how Quick Parts can be integrated into your templates. We'll help you set up and organize your Quick Parts Gallery to enhance document workflows.",
+        text: "Contact our team to discuss how Quick Parts can be integrated into your templates. We'll help you set up and organise your Quick Parts Gallery to enhance document workflows.",
       },
     },
   ],

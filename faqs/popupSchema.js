@@ -20,7 +20,7 @@ export const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Can popup forms be customized for different document needs?",
+      name: "Can popup forms be customised for different document needs?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Yes, popup forms are highly versatile and can be tailored for various tasks, including data integration, document setup, and linking to external data sources.",
@@ -31,7 +31,7 @@ export const faqSchema = {
       name: "What types of documents benefit most from popup forms?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Documents that require consistent data input, data validation, or customized formatting benefit significantly from the use of popup forms, as they streamline complex entry tasks.",
+        text: "Documents that require consistent data input, data validation, or customised formatting benefit significantly from the use of popup forms, as they streamline complex entry tasks.",
       },
     },
     {

@@ -300,4 +300,49 @@
   .mobPad {
     padding: 2rem 1rem 0 1rem !important;
   }
+}
+
+.deskImage {
+  display: flex;
+  margin: 3rem auto;
+}
+@media (max-width: 449px) {
+  .deskImage {
+    display: none;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .deskImage {
+    display: none;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .deskImage {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .mobImage {
+    display: none;
+  }
+}
+
+@media (max-width: 449px) {
+  .deskOnly {
+    display: none;
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .deskOnly {
+    display: none;
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .deskOnly {
+    display: none;
+    margin-bottom: 3rem;
+  }
 }/*# sourceMappingURL=pageSegment3.module.css.map */

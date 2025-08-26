@@ -12,7 +12,7 @@ export const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Can the forms be customized to fit our specific needs?",
+      name: "Can the forms be customised to fit our specific needs?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Yes, we design forms that are tailored to your requirements, from simple step-by-step forms to more complex templates with controls and protection. We work closely with you to create forms that are intuitive and aligned with your workflow.",
@@ -31,7 +31,7 @@ export const faqSchema = {
       name: "How does VBA enhance the functionality of these forms?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "With VBA (Visual Basic for Applications), we can add automation features to your forms, such as data validation, auto-filling, and customized data extraction. VBA enables advanced functionality, helping your team save time and reduce manual errors.",
+        text: "With VBA (Visual Basic for Applications), we can add automation features to your forms, such as data validation, auto-filling, and customised data extraction. VBA enables advanced functionality, helping your team save time and reduce manual errors.",
       },
     },
     {

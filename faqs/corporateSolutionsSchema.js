@@ -20,7 +20,7 @@ export const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Can document templates be customized to our specific branding guidelines?",
+      name: "Can document templates be customised to our specific branding guidelines?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Yes, corporate document templates can be tailored to include your specific branding guidelines, such as approved colors, fonts, and styles. This customization helps ensure every document produced remains consistent with your brand identity.",

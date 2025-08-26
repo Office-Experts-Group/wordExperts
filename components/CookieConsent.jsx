@@ -325,6 +325,7 @@ const CookieConsent = () => {
   return (
     <>
       {/* Google Tag Manager - Initialize dataLayer and set default consent */}
+      {/* *TODO change GTM ID for conversion tracking  */}
       <Script id="gtm-consent-defaults" strategy="beforeInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
@@ -350,7 +351,6 @@ const CookieConsent = () => {
         `}
       </Script>
 
-      {/* GTM NoScript fallback - you'll need to add this to your layout */}
       {isClient && (
         <noscript>
           <iframe
