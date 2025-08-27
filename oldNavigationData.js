@@ -103,6 +103,14 @@ export const oldNavigationData = {
             href: "/training",
           },
           {
+            label: "Document Rebranding",
+            href: "/document-rebranding-services",
+          },
+          {
+            label: "Brand Templates",
+            href: "/brand-templates",
+          },
+          {
             label: "Google Docs Migration",
             href: "/google-docs-to-word-migration",
           },
