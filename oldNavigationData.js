@@ -102,6 +102,10 @@ export const oldNavigationData = {
             label: "Training and User Support",
             href: "/training",
           },
+          {
+            label: "Google Docs Migration",
+            href: "/google-docs-to-word-migration",
+          },
         ],
       },
       {
