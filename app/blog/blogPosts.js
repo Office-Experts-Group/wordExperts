@@ -52,4 +52,18 @@ export const blogPosts = [
     featured: false,
     imagePath: "/blog/legal.webp",
   },
+  {
+    id: 5,
+    title:
+      "Google Docs vs Microsoft Word: Which Is Best for Enterprise Workflows?",
+    description:
+      "Compare Google Docs and Microsoft Word for enterprise use. Discover why many organisations migrate from Google Docs to Word for advanced features, compliance, automation, and scalability needs.",
+    slug: "google-docs-vs-microsoft-word",
+    date: "August 27, 2025",
+    author: "Rochelle Robinson",
+    readingTime: "12 min",
+    category: "Comparison",
+    featured: false,
+    imagePath: "/blog/google-docs-or-word.webp",
+  },
 ];

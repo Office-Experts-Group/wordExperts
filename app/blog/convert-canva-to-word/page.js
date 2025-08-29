@@ -240,17 +240,6 @@ const CanvaToWordBlogPost = () => {
         },
       },
     ],
-    video: {
-      "@type": "VideoObject",
-      name: "Converting Canva Design to Word Template",
-      description:
-        "Video tutorial showing the complete process of converting a Canva design into a Microsoft Word template",
-      thumbnailUrl:
-        "https://www.wordexperts.com.au/canva-to-word-video-thumb.webp",
-      uploadDate: "2025-04-14T09:00:00+10:00",
-      duration: "PT8M30S",
-      embedUrl: "https://www.youtube.com/embed/placeholder-video-id",
-    },
   };
 
   // BreadcrumbList Schema
