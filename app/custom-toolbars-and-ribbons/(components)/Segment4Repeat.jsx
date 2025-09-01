@@ -1,80 +1,3 @@
-// import React from "react";
-// import Image from "next/image";
-
-// import AnimateOnScroll from "../../../components/AnimateOnScroll";
-
-// import styles from "../../../styles/pageSegment4.module.css";
-
-// import blueCode from "../../../public/blueCode600x400.webp";
-
-// const Segment4Repeat = () => {
-//   const checkItems = [
-//     "Covers",
-//     "Image layout pages",
-//     "Chapter break pages",
-//     "Pre-built tables",
-//     "Landscape pages",
-//     "Content",
-//     "A3 pages",
-//     "Multiple column sections",
-//     "Appendix sections",
-//     "Terms and conditions sections",
-//     "Automation of header and footer content",
-//   ];
-
-//   return (
-//     <div className="animate-wrapper">
-//       <div className={styles.pageSegment} style={{ margin: "6rem 0" }}>
-//         <AnimateOnScroll animation="slide-left" duration={1} delay={0}>
-//           <div className={styles.content}>
-//             <h2 style={{ marginBottom: "1rem" }}>
-//               Custom Document Components for Tailored Solutions
-//             </h2>
-//             <p>
-//               Our comprehensive suite of custom document components gives you
-//               access to advanced formatting and layout options, including:
-//             </p>
-//           </div>
-
-//           <div className={styles.pointsGrid}>
-//             {checkItems.map((text, index) => (
-//               <div key={index} className={styles.point}>
-//                 <div className={styles.tick}>
-//                   <svg
-//                     stroke="currentColor"
-//                     fill="currentColor"
-//                     strokeWidth="1"
-//                     viewBox="0 0 24 24"
-//                     height="1em"
-//                     width="1em"
-//                     xmlns="http://www.w3.org/2000/svg"
-//                   >
-//                     <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"></path>
-//                   </svg>
-//                 </div>
-//                 <p>{text}</p>
-//               </div>
-//             ))}
-//           </div>
-//         </AnimateOnScroll>
-
-//         <AnimateOnScroll animation="scale-up" duration={1} delay={0.2}>
-//           <div className="image-wrapper">
-//             <Image
-//               src={blueCode}
-//               alt="digital design, futuristic coder"
-//               width={450}
-//               height={300}
-//             />
-//           </div>
-//         </AnimateOnScroll>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Segment4Repeat;
-
 import React from "react";
 import Image from "next/image";
 
@@ -89,33 +12,28 @@ const Segment4Repeat = () => {
     "Covers",
     "Image layout pages",
     "Chapter break pages",
-    "Pre-built tables",
-    "Landscape pages (A4 & A3, insert/remove)",
-    "A3 pages",
-    "Multiple column sections",
     "Appendix sections",
+    "Insert table of contents",
     "Terms and conditions sections",
     "Document content options",
-    "Styles clean up",
-    "Multilevel list clean up",
-    "Table list styles button & reset table numbering",
-    "Insert and remove columns",
-    "Additional custom colours theme",
     "Chart templates",
     "Custom page layouts",
   ];
 
   const automationItems = [
     "Automation of header and footer content",
-    "Insert table of contents",
-    "Insert table & format table",
-    "Apply table sub header/format cells",
+    "Insert and remove Landscape pages",
+    "Insert and remove A3 pages",
+    "Insert and remove Multiple column sections",
+    "Styles clean up, Multilevel list clean up",
+    "Insert Table lists & reset table lists numbering",
+    "Additional custom colours theme",
+    "Insert table, format table, apply table sub header row, and add caption",
     "Remove instructional text",
     "Removing heading numbers",
     "Apply paragraph numbering",
     "Custom find & replace",
-    "Search and insert from a content data source",
-    "Change entity",
+    "Search and insert content from a data source",
   ];
 
   const renderList = (items) => (
@@ -159,8 +77,9 @@ const Segment4Repeat = () => {
               Advanced Layout & Design Options
             </h3>
             <p>
-              Go beyond standard Word formatting with professional-grade layout
-              and styling features:
+              We help you go beyond standard Word formatting with advanced
+              layout and styling tools that make your documents professional,
+              consistent, and visually engaging.
             </p>
             {renderList(layoutItems)}
 
@@ -168,8 +87,8 @@ const Segment4Repeat = () => {
               Automation & Smart Document Tools
             </h3>
             <p>
-              Save time and reduce errors with intelligent automation and
-              content management tools:
+              Save time and reduce errors with intelligent automation features
+              and content management tools that streamline complex tasks.
             </p>
             {renderList(automationItems)}
           </div>

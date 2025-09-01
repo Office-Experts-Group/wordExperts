@@ -460,9 +460,6 @@ const GoogleDocsVsWordBlogPost = () => {
                 </tr>
               </thead>
               <tbody>
-                {/* <tr className={styles.categoryHeader}>
-                  <td colSpan="3">Collaboration</td>
-                </tr> */}
                 <tr>
                   <td>Real-Time Collaboration</td>
                   <td>
@@ -499,17 +496,6 @@ const GoogleDocsVsWordBlogPost = () => {
                   </td>
                 </tr>
 
-                {/* <tr className={styles.categoryHeader}>
-                  <td colSpan="3">Document Management</td>
-                </tr> */}
-                <tr>
-                  <td>Document Size Handling</td>
-                  <td>Struggles with 100+ pages, performance lags</td>
-                  <td>
-                    <span className={styles.checkmark}>✔</span> Stable with
-                    thousands of pages, handles complex files
-                  </td>
-                </tr>
                 <tr>
                   <td>Advanced Formatting</td>
                   <td>
@@ -551,9 +537,6 @@ const GoogleDocsVsWordBlogPost = () => {
                   </td>
                 </tr>
 
-                {/* <tr className={styles.categoryHeader}>
-                  <td colSpan="3">Automation & Productivity</td>
-                </tr> */}
                 <tr>
                   <td>Custom Templates & Workflows</td>
                   <td>
@@ -591,9 +574,6 @@ const GoogleDocsVsWordBlogPost = () => {
                   </td>
                 </tr>
 
-                {/* <tr className={styles.categoryHeader}>
-                  <td colSpan="3">Security & Compliance</td>
-                </tr> */}
                 <tr>
                   <td>Security Controls</td>
                   <td>Basic Workspace policies</td>
@@ -633,9 +613,6 @@ const GoogleDocsVsWordBlogPost = () => {
                   </td>
                 </tr>
 
-                {/* <tr className={styles.categoryHeader}>
-                  <td colSpan="3">Professional Publishing</td>
-                </tr> */}
                 <tr>
                   <td>Citations & Bibliographies</td>
                   <td>
@@ -793,8 +770,8 @@ const GoogleDocsVsWordBlogPost = () => {
           <ul>
             <li>
               <strong>Document Integrity - </strong>
-              Word is engineered to handle complex, multi-hundred-page documents
-              without slowing down or breaking formatting.
+              Word is engineered to handle complex, multi-hundred-page
+              documents.
             </li>
           </ul>
 
