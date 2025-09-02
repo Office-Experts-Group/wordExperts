@@ -35,7 +35,7 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2019-08-06T07:26:47+00:00",
-      dateModified: "2024-11-12T00:00:00+00:00",
+      dateModified: "2025-09-02T00:00:00+00:00",
       description:
         "Read what our clients say about Word Experts' professional Microsoft Word services. Client testimonials from businesses across Australia.",
       breadcrumb: {
