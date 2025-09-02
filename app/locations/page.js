@@ -25,6 +25,8 @@ import northernRivers from "../../public/pageHeros/mob/northernRiversMob.webp";
 import wollongong from "../../public/pageHeros/mob/wollongongMob.webp";
 import richmond from "../../public/pageHeros/mob/richmondMob.webp";
 import darwin from "../../public/pageHeros/mob/darwinMob.webp";
+import goldCoast from "../../public/pageHeros/mob/goldCoastMob.webp";
+import centralCoast from "../../public/pageHeros/mob/centralCoastMob.webp";
 
 const schema = {
   "@context": "https://schema.org",
@@ -124,6 +126,24 @@ const Page = () => {
             office: "https://www.officeexperts.com.au/contact-us",
           },
         },
+        {
+          name: "Central Coast, NSW",
+          image: centralCoast,
+          alt: "Central Coast region",
+          description:
+            "On the beautiful Central Coast region of NSW, our team provides Microsoft solutions for a variety of businesses. Working either through remote access and online support, or on-site support for the entire Microsoft suite.",
+          serviceLinks: {
+            excel:
+              "https://www.excelexperts.com.au/excel-consultants-central-coast-nsw",
+            word: "/word-consultants-central-coast-nsw",
+            access:
+              "https://www.accessexperts.com.au/access-consultants-central-coast-nsw",
+            powerplatform:
+              "https://www.powerplatformexperts.com.au/power-platform-consultants-central-coast-nsw",
+            office:
+              "https://www.officeexperts.com.au/office-consultants-central-coast-nsw",
+          },
+        },
       ],
     },
     {
@@ -176,6 +196,24 @@ const Page = () => {
             access: "https://www.accessexperts.com.au/contact-us",
             powerplatform: "https://www.powerplatformexperts.com.au/contact-us",
             office: "https://www.officeexperts.com.au/contact-us",
+          },
+        },
+        {
+          name: "Gold Coast, QLD",
+          image: goldCoast,
+          alt: "Gold Coast skyline and beaches",
+          description:
+            "Our Gold Coast team specialises in Microsoft Office consulting and training for local businesses. From Excel automation to Word templates, Access databases, and Power Platform solutions, we provide tailored services to improve efficiency and productivity.",
+          serviceLinks: {
+            excel:
+              "https://www.excelexperts.com.au/excel-consultants-gold-coast",
+            word: "/contact-us",
+            access:
+              "https://www.accessexperts.com.au/access-consultants-gold-coast",
+            powerplatform:
+              "https://www.powerplatformexperts.com.au/powerplatform-consultants-gold-coast",
+            office:
+              "https://www.officeexperts.com.au/word-and-powerpoint-experts-gold-coast",
           },
         },
       ],
