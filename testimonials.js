@@ -113,15 +113,6 @@ export const testimonials = [
   },
   {
     content:
-      "Scott has provided exceptional service and support. He has an excellent knowledge of Access Databases and manufacturing procedures. He is fast and effective.",
-    name: "Peter Norwood",
-    contact: "www.astau.co",
-    image: ast,
-    width: 150,
-    height: 41,
-  },
-  {
-    content:
       'Stephen has proven to be amazing, expeditious, knowledgeable and creative in his approach to working with me, developing project management software specific to our industry. He has created a product tailor made that was impossible to buy "off the shelf". I have no hesitation in recommending Office Experts to any colleagues.',
     name: "Sarah-Jane Burchett",
     contact: "facaderesolutions.com.au",
