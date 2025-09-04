@@ -125,10 +125,6 @@ export const oldNavigationData = {
             href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/vba-macro-development`,
           },
           {
-            label: "Custom Office Solutions",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/custom-office-solutions`,
-          },
-          {
             label: "Database Development Solutions",
             href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/database-development-and-solutions`,
           },
