@@ -51,10 +51,6 @@ export const oldNavigationData = {
             href: "/word-document-template-creation",
           },
           {
-            label: "VBA & Macro Development",
-            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/vba-macro-development`,
-          },
-          {
             label: "Government Departments",
             href: "/government-departments",
           },
