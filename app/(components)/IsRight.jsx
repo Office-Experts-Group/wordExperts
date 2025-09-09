@@ -39,7 +39,7 @@ const IsRight = () => {
             </Link>
             , and streamline document creation. Our team of experienced
             consultants delivers
-            <Link href="/document-template-creation">
+            <Link href="/word-document-template-creation">
               {" "}
               professional templates
             </Link>{" "}
@@ -50,11 +50,8 @@ const IsRight = () => {
             </Link>{" "}
             to corporate entities, we provide comprehensive document solutions
             including template design,{" "}
-            <Link href="/accessibility-compliance">
-              {" "}
-              accessibility compliance
-            </Link>
-            , and custom automation to save time and reduce errors.
+            <Link href="/accessibility"> accessibility compliance</Link>, and
+            custom automation to save time and reduce errors.
           </p>
           <div className={styles.contentGrid}>
             <div className={styles.excerpt}>

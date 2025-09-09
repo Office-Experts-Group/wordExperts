@@ -102,17 +102,17 @@ const FooterServicesSection = () => {
           <div className={styles.dropdownContent}>
             <Link
               rel="nofollow noopener noreferrer"
-              href="https://www.officeexperts.com.au/services/microsoft-office"
+              href="https://www.officeexperts.com.au"
             >
               Microsoft Office
             </Link>
             <Link
               rel="nofollow noopener noreferrer"
-              href="https://www.excelexperts.com.au/"
+              href="https://www.excelexperts.com.au"
             >
               Microsoft Excel
             </Link>
-            <Link href="https://www.accessexperts.com.au/">
+            <Link href="https://www.accessexperts.com.au">
               Microsoft Access
             </Link>
             <Link href="/">Microsoft Word</Link>

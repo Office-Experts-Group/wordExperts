@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment.module.css";
 
 import hands from "../../../public/540x480/hands.webp";
-import Link from "next/link";
 
 const PageSegmentMain = () => {
   return (
@@ -16,8 +16,12 @@ const PageSegmentMain = () => {
           <Image
             src={hands}
             alt="hands on a computer"
-            width={540}
-            height={480}
+            // width={540}
+            // height={480}
+            // width={432}
+            // height={384}
+            width={270}
+            height={240}
             priority
           />
         </AnimateOnScroll>

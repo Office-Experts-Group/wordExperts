@@ -6,6 +6,7 @@ import ServiceHero from "../../components/ServiceHero";
 import Contact from "../../components/Contact";
 import PageSegmentMain from "./(components)/PageSegmentMain";
 import Segment4Repeat from "./(components)/Segment4Repeat";
+import BulletPoints from "./(components)/BulletPoints";
 
 import faqs from "../../faqs/automation";
 import faqSchema from "../../faqs/customToolbarsSchema";
@@ -32,7 +33,7 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-07-15T16:04:37+00:00",
-      dateModified: "2024-11-12T00:00:00+00:00",
+      dateModified: "2025-09-09T00:00:00+00:00",
       description:
         "Expert Microsoft Word toolbar and ribbon customisation services. Improve productivity with custom Word toolbars tailored to your business needs.",
       breadcrumb: {
@@ -51,7 +52,8 @@ const schema = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.wordexperts.com.au/custom-toolbars-and-ribbons#breadcrumb",
+      "@id":
+        "https://www.wordexperts.com.au/custom-toolbars-and-ribbons#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
@@ -90,6 +92,7 @@ const Page = () => {
       />
       <PageSegmentMain />
       <Segment4Repeat />
+      <BulletPoints />
       <ExpertsAwait />
       <FAQSection faqs={faqs} />
       <Contact />
