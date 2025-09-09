@@ -9,7 +9,7 @@ const Conclusion = () => {
   return (
     <div className="animate-wrapper">
       <div className={styles.pageSegment} style={{ margin: "3rem 0" }}>
-        <AnimateOnScroll animation="slide-left" duration={1} delay={0}>
+        <AnimateOnScroll animation="fade-up" duration={1} delay={0}>
           <div className={styles.content}>
             <p style={{ fontWeight: "700", textAlign: "center" }}>
               With Word Experts, you're not just getting a template — you're
@@ -26,7 +26,7 @@ const Conclusion = () => {
                 style={{ color: "#046999", fontWeight: "700" }}
                 href="/custom-toolbars-and-ribbons"
               >
-                a custom Word ribbon
+                custom Word ribbon
               </Link>
               , providing quick access to your templates, building blocks, and
               key features directly within Word.

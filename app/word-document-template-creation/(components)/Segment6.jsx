@@ -48,7 +48,7 @@ const Segment6 = () => {
         </AnimateOnScroll>
       </div>
 
-      <AnimateOnScroll animation="slide-left" duration={1} delay={0}>
+      <AnimateOnScroll animation="slide-right" duration={1} delay={0}>
         <Image
           src={quick}
           alt="Quick Parts for Faster Document Creation icons"
