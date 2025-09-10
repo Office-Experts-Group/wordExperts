@@ -5,8 +5,6 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment4.module.css";
 
-import migration from "../../../public/migration.webp";
-
 const Bullets = () => {
   const checkItems = [
     "Connecting Word with business systems and databases - We integrate Microsoft Word directly with your core business applications such as CRMs, ERPs, or HR systems. This allows documents like proposals, invoices, or contracts to be generated automatically with the right data every time, eliminating manual entry and reducing the risk of errors.",
@@ -38,6 +36,7 @@ const Bullets = () => {
       style={{
         scrollMarginTop: "150px",
         backgroundColor: "rgb(242, 243, 245)",
+        paddingTop: "3rem",
       }}
     >
       <div
@@ -79,17 +78,6 @@ const Bullets = () => {
             ))}
           </div>
         </AnimateOnScroll>
-
-        {/* <AnimateOnScroll animation="scale-up" duration={1} delay={0.2}>
-          <div className="image-wrapper">
-            <Image
-              src={migration}
-              alt="globe with figurines walking around it"
-              width={400}
-              height={400}
-            />
-          </div>
-        </AnimateOnScroll> */}
       </div>
     </div>
   );

@@ -6,16 +6,19 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment.module.css";
 
-import blueCode from "../../../public/blueCode600x400.webp";
+import javascript from "../../../public/javascript.webp";
 
 const PageSegmentMain = () => {
   return (
     <section className={styles.pageSegment}>
-      <div className={styles.imgWrapper} style={{ height: "fit-content" }}>
+      <div
+        className={styles.imgWrapper}
+        style={{ height: "fit-content", borderBottom: "none" }}
+      >
         <AnimateOnScroll animation="slide-left" duration={1} delay={0}>
           <Image
-            src={blueCode}
-            alt="digital design featuring a person and code"
+            src={javascript}
+            alt="javascript digital design"
             width={600}
             height={400}
             priority

@@ -1,53 +1,48 @@
 export const metadata = {
-  title: "Word Template Designers | Word Experts - Microsoft Word",
+  title: "Microsoft Word API Development & Integrations",
   description:
-    "Professional Word template solutions for companies and organisations. Custom document templates that protect corporate identity and improve efficiency.",
+    "Expert Microsoft Word API development and custom integrations. Connect Word with CRM, SharePoint, databases and business systems. JavaScript specialists for Word automation solutions.",
 
   keywords: [
-    // Business focus
-    "corporate word templates",
+    // Core API/Development focus
+    "microsoft word api development",
   ],
+
   openGraph: {
-    title: "Word Template Designers | Word Experts - Microsoft Word",
+    title: "Microsoft Word API Development & Integrations",
     description:
-      "Professional Word template solutions for companies and organisations. Custom document templates that protect corporate identity.",
-    url: "https://www.wordexperts.com.au/companies-and-organisations",
+      "Expert Microsoft Word API development and custom integrations. Connect Word with CRM, SharePoint, databases and business systems for automated document workflows.",
+    url: "https://www.wordexperts.com.au/microsoft-word-api-integrations",
     siteName: "Word Experts",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Word Experts Logo",
+        alt: "Office Experts Group Logo",
       },
     ],
     locale: "en-AU",
     type: "website",
-  },
-  alternates: {
-    canonical: "/companies-and-organisations",
-    alternate: [
-      {
-        url: "https://www.excelexperts.com.au/services/microsoft-word/companies-and-organisations",
-      },
-      {
-        url: "https://www.excelexperts.com.au/services/microsoft-word/companies-and-organisations",
-      },
-    ],
   },
 
   // Twitter Card
   twitter: {
     card: "summary_large_image",
     site: "@OfficeExpertsG1",
-    title: "Word Template Designers | Word Experts - Microsoft Word",
+    title: "Microsoft Word API Development & Integrations",
     description:
-      "Professional Word template solutions for companies and organisations. Custom document templates that protect corporate identity.",
+      "Expert Microsoft Word API development and custom integrations. Connect Word with CRM, SharePoint, databases and business systems.",
     images: ["/logo.png"],
   },
 
   alternates: {
     canonical: "/companies-and-organisations",
+    alternate: [
+      {
+        url: "https://www.wordexperts.com.au/microsoft-word-api-integrations",
+      },
+    ],
   },
 };
 
