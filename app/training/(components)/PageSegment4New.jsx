@@ -5,7 +5,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment4.module.css";
 
-import inefficiency from "../../../public/inefficiency.webp";
+import inefficiency from "../../../public/Inefficiency.webp";
 
 const PageSegment4New = () => {
   return (
