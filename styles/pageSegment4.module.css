@@ -179,11 +179,12 @@
 .content a:hover {
   text-decoration: underline;
 }
+
 .underline {
   margin-bottom: 2rem;
 }
 .underline h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -216,6 +217,13 @@
 .point p {
   color: #777a7e;
   margin: 0 !important;
+}
+.point a {
+  color: #046999 !important;
+  font-weight: 700;
+}
+.point a:hover {
+  text-decoration: underline;
 }
 
 .tick {

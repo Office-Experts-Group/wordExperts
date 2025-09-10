@@ -4,7 +4,7 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Word Consultants Central Coast, NSW",
   description:
-  "Microsoft Word consultants in Canberra offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+    "Microsoft Word consultants in Canberra offering expert document development, system integration and support. Trusted solutions for over 25 years.",
 
   // OpenGraph
   openGraph: {
@@ -42,7 +42,7 @@ export const metadata = {
   },
 
   alternates: {
-    canonical: "/word-consultants-central-coast-nsw",
+    canonical: "/word-consultants-canberra",
   },
 };
 

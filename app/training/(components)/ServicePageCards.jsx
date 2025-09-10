@@ -22,7 +22,7 @@ const ServicePageCards = () => {
       style={{ margin: "4rem 0 0rem 0" }}
     >
       <div className={styles.card}>
-        <a href="#get-in-touch">
+        <a href="#contact">
           <div className={styles.content}>
             <p>We're here for you</p>
             <h2>Just get in touch</h2>

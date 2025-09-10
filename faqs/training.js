@@ -1,14 +1,23 @@
 const faqs = [
   {
-    question:
-      "Can you provide customised training for Microsoft Word for my team?",
+    question: "Can you train our staff using our own company templates?",
     answer:
-      "Yes, Office Experts provides customised training for Microsoft Word. We work with your business to ensure the service we provide aligns with your requirements.",
+      "Absolutely. We customise all training around your existing templates and workflows so your team learns with the documents they use every day. This ensures the training is practical, relevant, and immediately valuable.",
   },
   {
-    question: "What sort of support services do you offer in Microsoft Word?",
+    question: "What problems can you fix in Microsoft Word documents?",
     answer:
-      "We provide full comprehensive support for any solution we provide to our clients. We ensure we're available for follow up work or modifications to existing and past solutions so that our clients feel supported and comfortable in what we provide.",
+      "We can resolve issues such as formatting errors, broken templates, slow or unstable documents, incorrect numbering, and brand inconsistencies. Our goal is to save your team time and reduce frustration by getting documents working the way they should.",
+  },
+  {
+    question: "Do you offer remote as well as onsite training?",
+    answer:
+      "Yes, we deliver training both onsite and remotely, depending on what works best for your business. Generally the most economic approach is remote training.",
+  },
+  {
+    question: "How do I know if my business needs professional Word support?",
+    answer:
+      "If staff are spending too much time fixing formatting, if your documents look inconsistent, or if templates keep breaking, it's a sign that professional support will save you time and money. We can review your current setup and recommend the best solutions.",
   },
 ];
 

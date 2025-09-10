@@ -21,19 +21,22 @@ const BlackSegment = () => {
     >
       <Image className={styles.bgImg} src={bg} alt="shape icon" fill="true" />
 
-      <AnimateOnScroll animation="slide-left" delay={0.1} duration={1.2}>
+      <AnimateOnScroll animation="bounce-simple" delay={0.1} duration={1.2}>
         <div className={styles.content}>
           <div className={styles.title}>
             <h2>Streamlined and Secure Document Creation</h2>
           </div>
           <div className={styles.text}>
             <p>
-              Our <Link href="/corporate-global-template-solution">custom template solutions</Link> give users access to pre-approved
-              styles and colors based on your brand's unique
-              specifications. By limiting font and style changes, our controlled
-              environment ensures that every document aligns with your corporate
-              identity, preserving brand consistency while empowering users to
-              work efficiently within set guidelines.
+              Our{" "}
+              <Link href="/corporate-global-template-solution">
+                custom template solutions
+              </Link>{" "}
+              give users access to pre-approved styles and colors based on your
+              brand's unique specifications. By limiting font and style changes,
+              our controlled environment ensures that every document aligns with
+              your corporate identity, preserving brand consistency while
+              empowering users to work efficiently within set guidelines.
             </p>
             <div className={styles.link}>
               <Link
@@ -63,8 +66,8 @@ const BlackSegment = () => {
         </div>
       </AnimateOnScroll>
 
-      <AnimateOnScroll animation="fade-down" delay={0.3} duration={1.2}>
-        <div className={styles.points}>
+      <div className={styles.points}>
+        <AnimateOnScroll animation="bounce-simple" delay={0.3} duration={1.2}>
           <div className={styles.point}>
             <Image
               src={issuesIcon}
@@ -78,7 +81,9 @@ const BlackSegment = () => {
               pallet, based on your specifications
             </p>
           </div>
+        </AnimateOnScroll>
 
+        <AnimateOnScroll animation="bounce-simple" delay={0.3} duration={1.2}>
           <div className={styles.point}>
             <Image
               src={stuckIcon}
@@ -92,7 +97,9 @@ const BlackSegment = () => {
               edit fonts or font sizes from the Home tab
             </p>
           </div>
+        </AnimateOnScroll>
 
+        <AnimateOnScroll animation="bounce-simple" delay={0.3} duration={1.2}>
           <div className={styles.point}>
             <Image
               src={migrateIcon}
@@ -106,7 +113,9 @@ const BlackSegment = () => {
               ensures only your corporate fonts are permitted
             </p>
           </div>
+        </AnimateOnScroll>
 
+        <AnimateOnScroll animation="bounce-simple" delay={0.3} duration={1.2}>
           <div className={styles.point}>
             <Image
               src={expertsIcon}
@@ -120,8 +129,8 @@ const BlackSegment = () => {
               corrupting your styles and functionality
             </p>
           </div>
-        </div>
-      </AnimateOnScroll>
+        </AnimateOnScroll>
+      </div>
     </section>
   );
 };

@@ -1,20 +1,21 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment.module.css";
 
-import deskGraph from "../../../public/deskGraph600x400.webp";
+import blueCode from "../../../public/blueCode600x400.webp";
 
 const PageSegmentMain = () => {
   return (
-    <section className={styles.pageSegment} id="word-assistance">
+    <section className={styles.pageSegment}>
       <div className={styles.imgWrapper} style={{ height: "fit-content" }}>
         <AnimateOnScroll animation="slide-left" duration={1} delay={0}>
           <Image
-            src={deskGraph}
-            alt="Graphs on a desk"
+            src={blueCode}
+            alt="digital design featuring a person and code"
             width={600}
             height={400}
             priority
@@ -25,13 +26,15 @@ const PageSegmentMain = () => {
       <div className={styles.contentWrapper}>
         <AnimateOnScroll animation="fade-up" duration={1} delay={0.3}>
           <div className={styles.content}>
-            <p>Get the guidance you need</p>
-            <h2>Expert Support and Training for Microsoft Word</h2>
+            <p>Bridging the gap</p>
+            <h2>Modern JavaScript Development</h2>
             <p>
-              Our team of Word design experts are available to resolve your
-              issues with Microsoft Word documents and templates. Whenever you
-              need help, our Word experts accept small and large jobs at
-              competitive rates and are just a phone call or email away.
+              At Word Experts, as part of the Office Experts Group we have
+              specialists in Microsoft Word API development and custom
+              integrations. With our combined knowledge of the entire Microsoft
+              Office Suite and hands-on JavaScript development expertise, we can
+              design solutions that save time, reduce errors, and make Microsoft
+              Word a more powerful part of your workflow.
             </p>
           </div>
         </AnimateOnScroll>

@@ -44,10 +44,7 @@ const Contents = () => {
             <path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-40 728H184V184h656v656z"></path>
           </svg>
           <h3>Contents</h3>
-          <a
-            href="#get-in-touch"
-            onClick={(e) => handleLinkClick(e, "#get-in-touch")}
-          >
+          <a href="#contact" onClick={(e) => handleLinkClick(e, "#contact")}>
             <div className={styles.contentLink}>
               <p>Just get in touch</p>
             </div>

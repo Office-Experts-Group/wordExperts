@@ -22,6 +22,8 @@ import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
 } from "../../utils/schemaGenerators";
+import Segment4 from "./(components)/Segment4";
+import PageSegment4New from "./(components)/PageSegment4New";
 
 const schema = {
   "@context": "https://schema.org",
@@ -93,11 +95,13 @@ const Page = () => {
       />
       <ServicePageCards />
       <PageSegmentMain />
-      <PageSegment8 />
-      <PageSegment4 />
+      <Segment4 />
+      {/* <PageSegment4 /> */}
+      <PageSegment4New />
       <ExpertsAwait />
-      <PageSegment5 />
-      <Segment4Repeat />
+      {/* <PageSegment5 />
+      <Segment4Repeat /> */}
+      <PageSegment8 />
       <FAQSection faqs={faqs} />
       <Contact />
     </>

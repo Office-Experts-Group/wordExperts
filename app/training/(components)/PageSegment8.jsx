@@ -9,15 +9,21 @@ import handsIn from "../../../public/handsIn600x400.webp";
 
 const PageSegment8 = () => {
   return (
-    <section className={styles.pageSegment} id="get-in-touch">
+    <section
+      className={styles.pageSegment}
+      id="get-in-touch"
+      style={{ margin: "6rem 0 0 0" }}
+    >
       <AnimateOnScroll animation="slide-right" duration={1} delay={0.2}>
         <div className={styles.content}>
           <div className={styles.underline}>
             <h2>We're Here For You!</h2>
           </div>
           <p>
-            Are you struggling with Word? Do you need some guidance from time to
-            time?
+            <strong style={{ fontSize: "1.1rem" }}>
+              Are you struggling with Word? Do you need some guidance from time
+              to time?
+            </strong>
           </p>
           <p>
             Via remote access or over the phone, we can offer you instant help

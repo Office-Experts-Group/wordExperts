@@ -7,6 +7,9 @@ import ContactLocationSegment from "../../components/ContactLocationSegment";
 import ServicesLocation from "../(components)/ServicesLocation";
 import Promo from "../../components/Promo";
 import GoodToKnow from "../../components/GoodToKnow";
+import LocationSummary from "../(components)/LocationSummary";
+import Testimonials from "../(components)/Testimonials";
+import MeetTheTeamSlider from "../../components/MeetTheTeamSlider";
 
 import canberra from "../../public/pageHeros/canberra.webp";
 import canberraMob from "../../public/pageHeros/mob/canberraMob.webp";
@@ -17,10 +20,6 @@ import {
   generateOrganizationSchema,
 } from "../../utils/schemaGenerators";
 import { testimonials } from "../../testimonials";
-
-import LocationSummary from "../(components)/LocationSummary";
-import Testimonials from "../(components)/Testimonials";
-import MeetTheTeamSlider from "../../components/MeetTheTeamSlider";
 
 const schema = {
   "@context": "https://schema.org",
@@ -37,7 +36,7 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2025-03-26T00:00:00+00:00",
+      dateModified: "2025-09-09T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.wordexperts.com.au/word-consultants-canberra#breadcrumb",
