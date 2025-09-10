@@ -6,11 +6,12 @@ import Contact from "../../components/Contact";
 import ExpertsAwait from "../../components/ExpertsAwait";
 import PageSegmentMain from "./(components)/PageSegmentMain";
 import PageSegment8 from "./(components)/PageSegment8";
-import PageSegment4 from "./(components)/PageSegment4";
-import PageSegment5 from "./(components)/PageSegment5";
-import Segment4Repeat from "./(components)/Segment4Repeat";
+// import PageSegment4 from "./(components)/PageSegment4";
+// import PageSegment5 from "./(components)/PageSegment5";
+// import Segment4Repeat from "./(components)/Segment4Repeat";
 import FAQSection from "../../components/FAQSection";
 import Contents from "./(components)/Contents";
+import PageSegment4New from "./(components)/PageSegment4New";
 
 import faqs from "../../faqs/training";
 import faqSchema from "../../faqs/trainingSchema";
@@ -23,7 +24,6 @@ import {
   generateOrganizationSchema,
 } from "../../utils/schemaGenerators";
 import Segment4 from "./(components)/Segment4";
-import PageSegment4New from "./(components)/PageSegment4New";
 
 const schema = {
   "@context": "https://schema.org",
