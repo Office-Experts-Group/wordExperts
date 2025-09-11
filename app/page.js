@@ -45,7 +45,7 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2017-11-22T14:23:06+00:00",
-      dateModified: "2025-08-05T23:52:31+00:00",
+      dateModified: "2025-09-11T23:52:31+00:00",
       description:
         "Word Experts is the Leading Microsoft Word Design Service in Australia. Expert Word Development & Consulting.",
       breadcrumb: {
