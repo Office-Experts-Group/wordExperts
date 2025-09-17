@@ -110,6 +110,10 @@ export const oldNavigationData = {
             label: "Google Docs Migration",
             href: "/google-docs-to-word-migration",
           },
+          {
+            label: "API Integrations",
+            href: "/microsoft-word-api-integrations",
+          },
         ],
       },
       {
