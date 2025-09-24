@@ -5,26 +5,28 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment4.module.css";
 
-import adobe from "../../../public/adobe-to-word.webp";
+import pdf from "../../../public/pdf-to-word.webp";
 
-const PageSegment4 = () => {
+const PageSegment4Repeat = () => {
   return (
     <div className="animate-wrapper" style={{ marginBottom: "2rem" }}>
       <div className={styles.pageSegment} id="web-apps">
         <AnimateOnScroll animation="slide-right" duration={1} delay={0.2}>
           <div className={styles.content}>
             <div className={styles.underline}>
-              <h2>Adobe to Word Templates</h2>
+              <h2>PDF to Word Conversions</h2>
             </div>
             <p>
-              Are you a graphic artist struggling to create Word templates that
-              are identical to your brilliant Adobe layouts?
+              Do you have important documents locked away in PDF format that you
+              need to edit, update, or rebrand? Our team specialises in
+              professional PDF to Word conversions that keep your original
+              design intact while making the document fully editable in Word.
             </p>
-            <p>Do your Word templates look great but not function well?</p>
             <p>
-              We create Word templates that will match your Adobe layouts
-              perfectly and will have all of the correct functionality to keep
-              your clients happy.
+              While there are plenty of online “PDF to Word converters” out
+              there, with professional documents they can often break layouts,
+              lose images, and strip out essential formatting. That means more
+              time spent fixing errors than actually working on the document.
             </p>
           </div>
         </AnimateOnScroll>
@@ -32,8 +34,8 @@ const PageSegment4 = () => {
         <AnimateOnScroll animation="scale-up" duration={1} delay={0}>
           <div className="image-wrapper">
             <Image
-              src={adobe}
-              alt="adobe to word conversion"
+              src={pdf}
+              alt="pdf to word conversion"
               width={450}
               height={300}
             />
@@ -44,4 +46,4 @@ const PageSegment4 = () => {
   );
 };
 
-export default PageSegment4;
+export default PageSegment4Repeat;

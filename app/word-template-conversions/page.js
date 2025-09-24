@@ -4,6 +4,7 @@ import ServiceHero from "../../components/ServiceHero";
 import Contact from "../../components/Contact";
 import PageSegmentMain from "./(components)/PageSegmentMain";
 import PageSegment4 from "./(components)/PageSegment4";
+import PageSegment4Repeat from "./(components)/PageSegment4Repeat";
 import PageSegment5 from "./(components)/PageSegment5";
 import ExpertsAwait from "../../components/ExpertsAwait";
 import FAQSection from "../../components/FAQSection";
@@ -85,6 +86,7 @@ const Page = () => {
       />
       <PageSegmentMain />
       <PageSegment4 />
+      <PageSegment4Repeat />
       <PageSegment5 />
       <ExpertsAwait />
       <div style={{ marginTop: "6rem" }}>

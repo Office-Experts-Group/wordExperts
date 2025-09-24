@@ -32,7 +32,7 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-07-15T16:09:50+00:00",
-      dateModified: "2025-09-10T00:00:00+00:00",
+      dateModified: "2025-09-24T00:00:00+00:00",
       description:
         "Expert Microsoft Word API development and custom integrations. Connect Word with CRM, SharePoint, databases and business systems for automated document workflows.",
       breadcrumb: {
