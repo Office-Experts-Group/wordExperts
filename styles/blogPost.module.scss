@@ -232,7 +232,8 @@
 
 .quote {
   display: flex;
-  gap: 3rem;
+  flex-direction: column;
+  gap: 0.5rem;
   align-items: center;
   max-width: 80%;
   margin: 2rem auto;
@@ -566,6 +567,205 @@
           display: none;
         }
       }
+    }
+  }
+}
+
+// For pdf to word blog
+
+// Feature grid for the four key benefits
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.featureBox {
+  background: linear-gradient(
+    135deg,
+    rgba($theme, 0.05) 0%,
+    rgba($theme, 0.02) 100%
+  );
+  border-left: 4px solid $theme;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  h3 {
+    color: $theme;
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+
+// Problem list styling (for issues with free converters)
+.problemList {
+  list-style: none;
+  padding-left: 0;
+  margin: 1.5rem 0;
+
+  li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+
+    &::before {
+      content: "⚠";
+      position: absolute;
+      left: 0;
+      color: #dc3545;
+      font-size: 1.2rem;
+    }
+
+    strong {
+      color: $theme;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+  }
+}
+
+// Security concerns list
+.securityList {
+  list-style: none;
+  padding-left: 0;
+  margin: 1.5rem 0;
+  background: rgba(220, 53, 69, 0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #dc3545;
+
+  li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+
+    &::before {
+      content: "🔒";
+      position: absolute;
+      left: 0;
+      font-size: 1.1rem;
+    }
+
+    strong {
+      color: #dc3545;
+      display: inline;
+    }
+  }
+}
+
+// When to use professional services box
+.whenProfessionalBox {
+  background: linear-gradient(
+    135deg,
+    rgba($theme, 0.08) 0%,
+    rgba($theme, 0.03) 100%
+  );
+  border: 2px solid $theme;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+
+    li {
+      position: relative;
+      padding-left: 2rem;
+      margin-bottom: 1rem;
+      line-height: 1.8;
+      font-weight: 500;
+
+      &::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: $theme;
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// Enhanced quote box for citations (extends existing)
+.quoteBox {
+  background: rgba(128, 128, 128, 0.05);
+  border-left: 4px solid $darkGrayText;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 0 8px 8px 0;
+
+  blockquote {
+    margin: 0 0 1rem 0;
+    font-style: italic;
+    color: $darkGrayText;
+    line-height: 1.8;
+
+    p {
+      margin: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  a {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: $theme;
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Responsive adjustments for new elements
+@media (max-width: 768px) {
+  .featureGrid {
+    gap: 1rem;
+  }
+
+  .featureBox {
+    padding: 1rem;
+  }
+
+  .problemList li,
+  .securityList li {
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .whenProfessionalBox {
+    padding: 1.5rem;
+
+    ul li {
+      font-size: 0.95rem;
     }
   }
 }
