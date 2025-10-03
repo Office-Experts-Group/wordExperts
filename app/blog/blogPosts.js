@@ -72,7 +72,7 @@ export const blogPosts = [
     description:
       "Discover why professional PDF to Word conversion matters for business. Learn about accuracy, security, and formatting challenges that free converters can't handle.",
     slug: "pdf-to-word-conversion",
-    date: "February 3, 2025",
+    date: "October 3, 2025",
     author: "Aleisha Robinson",
     readingTime: "10 min",
     category: "Conversions",
