@@ -661,7 +661,7 @@ const PDFToWordBlogPost = () => {
 
           <p>
             Professional conversion services don't just unlock your PDF, they
-            rebuild it as a properly structured, editable Word documnt that
+            rebuild it as a properly structured, editable Word document that
             maintains your brand standards and serves your business needs. For
             documents that represent your organisation, that difference matters.
           </p>

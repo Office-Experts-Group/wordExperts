@@ -1,6 +1,7 @@
 import React from "react";
 
 import ServiceHero from "../../components/ServiceHero";
+import IFrame from "../(components)/IFrame";
 import ServicePageCards from "./(components)/ServicePageCards";
 import Contact from "../../components/Contact";
 import PageSegmentMain from "./(components)/PageSegmentMain";
@@ -140,6 +141,7 @@ const Page = () => {
       <BlackSegment />
       <PageSegment4 />
       <PageSegment5 />
+      <IFrame />
       <FAQSection faqs={faqs} />
       <Contact />
     </>
