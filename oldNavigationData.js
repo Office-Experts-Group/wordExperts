@@ -87,7 +87,7 @@ export const oldNavigationData = {
             href: "/accessibility",
           },
           {
-            label: "Convert Adobe to Word",
+            label: "Converting Documents to Word",
             href: "/word-template-conversions",
           },
           {
@@ -269,6 +269,10 @@ export const oldNavigationData = {
           {
             label: "Excel to Power BI Migration",
             href: `${POWER_PLATFORM_EXPERTS_URL}/excel-to-power-bi-migration`,
+          },
+          {
+            label: "Microsoft Fabric",
+            href: `${POWER_PLATFORM_EXPERTS_URL}/microsoft-fabric`,
           },
         ],
       },
