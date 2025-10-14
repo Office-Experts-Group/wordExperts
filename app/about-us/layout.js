@@ -3,7 +3,7 @@ import React from "react";
 export const metadata = {
   title: "About Us | Word Experts",
   description:
-    "Word Experts are Australia's leading Microsoft Word specialists, creating custom templates, toolbars, ribbons, and document automation solutions for businesses nationwide.",
+    "Australia's leading Microsoft Word specialists, creating custom templates, toolbars, ribbons, and document automation solutions for businesses nationwide.",
 
   openGraph: {
     title: "About Us | Word Experts",

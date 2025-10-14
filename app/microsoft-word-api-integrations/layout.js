@@ -37,12 +37,7 @@ export const metadata = {
   },
 
   alternates: {
-    canonical: "/companies-and-organisations",
-    alternate: [
-      {
-        url: "https://www.wordexperts.com.au/microsoft-word-api-integrations",
-      },
-    ],
+    canonical: "https://www.wordexperts.com.au/microsoft-word-api-integrations",
   },
 };
 

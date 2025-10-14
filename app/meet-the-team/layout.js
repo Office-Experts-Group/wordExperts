@@ -1,13 +1,13 @@
 export const metadata = {
-  title: "Meet The Team | Word Experts",
+  title: "Meet The Team - Word Experts",
   description:
     "Meet our expert team of Microsoft Word consultants, developers, and designers. Professional Word template and document specialists across Australia.",
   keywords: [
     // Team expertise
-    "meet the experts team",
+    "Word Experts team",
   ],
   openGraph: {
-    title: "Meet The Team | Word Experts",
+    title: "Meet The Team - Word Experts",
     description:
       "Meet our expert team of Microsoft Word consultants, developers, and designers. Professional Word specialists across Australia.",
     url: "https://www.wordexperts.com.au/meet-the-team",
@@ -17,7 +17,7 @@ export const metadata = {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Word Experts Logo",
+        alt: "Office Experts Logo",
       },
     ],
     locale: "en-AU",

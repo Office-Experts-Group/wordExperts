@@ -28,7 +28,7 @@ export const metadata = {
   // Additional metadata
   keywords: [
     // Location-specific
-    "Microsoft Word consultants Canberra, NSW",
+    "Microsoft Word consultants Canberra",
   ],
 
   // Twitter Card

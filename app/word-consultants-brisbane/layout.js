@@ -2,13 +2,13 @@ import React from "react";
 
 export const metadata = {
   // Basic metadata
-  title: "Microsoft Word Consultants Brisbane",
+  title: "Microsoft Word Consultants Brisbane - Word Experts",
   description:
-  "Microsoft Word consultants in Brisbane offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+    "Microsoft Word consultants in Brisbane offering expert document development, system integration and support. Trusted solutions for over 25 years.",
 
   // OpenGraph
   openGraph: {
-    title: "Microsoft Word Consultants Brisbane",
+    title: "Microsoft Word Consultants Brisbane - Word Experts",
     description:
       "Microsoft Word consultants in Brisbane offering expert document development, system integration and support. Trusted solutions for over 25 years.",
     url: "https://www.wordexperts.com.au/word-consultants-brisbane",

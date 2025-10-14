@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Microsoft Word Brand Template Services | Word Experts",
   description:
-    "Professional Microsoft Word brand template services. Custom document templates that ensure consistent branding and professional appearance across your organisation.",
+    "Professional Microsoft Word brand template services. Custom document templates that ensure consistent branding and a professional appearance.",
 
   keywords: [
     // Core service keywords
