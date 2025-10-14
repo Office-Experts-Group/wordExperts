@@ -1,48 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://www.wordexperts.com.au/blog/fields-and-repeating-data-in-word</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/accessibility</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/about-us</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/blog/pdf-to-word-conversion</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/blog/word-templates-for-legal-firms</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/blog</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/blog/convert-canva-to-word</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/brand-template</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/blog/google-docs-vs-microsoft-word</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/corporate-global-template-solution</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/blog/ultimate-guide-to-word-templates</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/companies-and-organisations</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/corporate-identity</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/contact-us/request-a-quote</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/contact-us</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/document-rebranding-services</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/fill-in-forms</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/custom-toolbars-and-ribbons</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/government-departments</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/quick-parts</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/client-testimonials</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/microsoft-word-api-integrations</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/video-portal</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/google-docs-to-word-migration</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/locations</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/training</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/remove-repetition-and-increase-productivity</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/word-consultants-adelaide</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/meet-the-team</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/popup-forms</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/word-consultants-melbourne</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/word-consultants-darwin</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/word-consultants-brisbane</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/upgrades-and-migration</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/word-consultants-wollongong</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/word-consultants-canberra</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/word-consultants-sydney</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/word-consultants-richmond</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/word-consultants-northern-rivers-nsw</loc><lastmod>2025-10-13T09:30:46.175Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/word-document-template-creation</loc><lastmod>2025-10-13T09:30:46.176Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/word-consultants-central-coast-nsw</loc><lastmod>2025-10-13T09:30:46.176Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/word-consultants-gold-coast</loc><lastmod>2025-10-13T09:30:46.176Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/word-template-conversions</loc><lastmod>2025-10-13T09:30:46.176Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-<url><loc>https://www.wordexperts.com.au/word-consultants-perth</loc><lastmod>2025-10-13T09:30:46.176Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/accessibility</loc><lastmod>2025-10-14T07:52:36.045Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/blog/ultimate-guide-to-word-templates</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/blog/google-docs-vs-microsoft-word</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/blog</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/blog/convert-canva-to-word</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/blog/pdf-to-word-conversion</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/contact-us</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/brand-template</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/companies-and-organisations</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/corporate-identity</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/blog/word-templates-for-legal-firms</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/corporate-global-template-solution</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/blog/fields-and-repeating-data-in-word</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/contact-us/request-a-quote</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/custom-toolbars-and-ribbons</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/document-rebranding-services</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/about-us</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/government-departments</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/microsoft-word-api-integrations</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/fill-in-forms</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/client-testimonials</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/meet-the-team</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/locations</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/google-docs-to-word-migration</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/quick-parts</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/remove-repetition-and-increase-productivity</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/popup-forms</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/word-consultants-darwin</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/word-consultants-gold-coast</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/word-consultants-adelaide</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/word-consultants-brisbane</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/word-consultants-central-coast-nsw</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/word-consultants-melbourne</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/word-consultants-perth</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/word-consultants-northern-rivers-nsw</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/word-consultants-richmond</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/upgrades-and-migration</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/word-consultants-sydney</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/word-consultants-wollongong</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/word-consultants-canberra</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/word-document-template-creation</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/word-template-conversions</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.wordexperts.com.au/video-portal</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority><additionalTags>
+      <video:video>
+        <video:thumbnail_loc>https://i.ytimg.com/vi/EXAMPLE_ID_1/maxresdefault.jpg</video:thumbnail_loc>
+        <video:title>Document Automation with Word VBA</video:title>
+        <video:description>Learn how to automate repetitive tasks in Microsoft Word using VBA macros. This comprehensive tutorial covers the basics of VBA programming for Word automation.</video:description>
+        <video:player_loc allow_embed="yes">https://www.youtube.com/embed/EXAMPLE_ID_1</video:player_loc>
+        <video:duration>1200</video:duration>
+        <video:upload_date>2025-01-15T00:00:00+00:00</video:upload_date>
+        <video:family_friendly>yes</video:family_friendly>
+      </video:video>
+    
+      <video:video>
+        <video:thumbnail_loc>https://i.ytimg.com/vi/EXAMPLE_ID_2/maxresdefault.jpg</video:thumbnail_loc>
+        <video:title>Creating Professional Word Templates</video:title>
+        <video:description>Master the art of creating professional, reusable Word templates. Learn about styles, building blocks, and content controls for efficient document creation.</video:description>
+        <video:player_loc allow_embed="yes">https://www.youtube.com/embed/EXAMPLE_ID_2</video:player_loc>
+        <video:duration>900</video:duration>
+        <video:upload_date>2025-02-10T00:00:00+00:00</video:upload_date>
+        <video:family_friendly>yes</video:family_friendly>
+      </video:video>
+    
+      <video:video>
+        <video:thumbnail_loc>https://i.ytimg.com/vi/EXAMPLE_ID_3/maxresdefault.jpg</video:thumbnail_loc>
+        <video:title>Advanced Mail Merge Techniques</video:title>
+        <video:description>Discover advanced mail merge techniques for creating personalized documents at scale. Learn about conditional content, custom fields, and troubleshooting common issues.</video:description>
+        <video:player_loc allow_embed="yes">https://www.youtube.com/embed/EXAMPLE_ID_3</video:player_loc>
+        <video:duration>1500</video:duration>
+        <video:upload_date>2025-03-05T00:00:00+00:00</video:upload_date>
+        <video:family_friendly>yes</video:family_friendly>
+      </video:video>
+    
+      <video:video>
+        <video:thumbnail_loc>https://i.ytimg.com/vi/EXAMPLE_ID_4/maxresdefault.jpg</video:thumbnail_loc>
+        <video:title>Working with Word Fields and Formulas</video:title>
+        <video:description>Understanding and implementing Word fields for dynamic content. Learn how to use REF fields, document properties, and formulas for professional documents.</video:description>
+        <video:player_loc allow_embed="yes">https://www.youtube.com/embed/EXAMPLE_ID_4</video:player_loc>
+        <video:duration>1100</video:duration>
+        <video:upload_date>2025-04-20T00:00:00+00:00</video:upload_date>
+        <video:family_friendly>yes</video:family_friendly>
+      </video:video>
+    
+      <video:video>
+        <video:thumbnail_loc>https://i.ytimg.com/vi/EXAMPLE_ID_5/maxresdefault.jpg</video:thumbnail_loc>
+        <video:title>Custom Ribbons and Toolbars in Word</video:title>
+        <video:description>Learn how to create custom ribbons and toolbars to enhance productivity. This tutorial covers XML customization and button functionality.</video:description>
+        <video:player_loc allow_embed="yes">https://www.youtube.com/embed/EXAMPLE_ID_5</video:player_loc>
+        <video:duration>1350</video:duration>
+        <video:upload_date>2025-05-15T00:00:00+00:00</video:upload_date>
+        <video:family_friendly>yes</video:family_friendly>
+      </video:video>
+    </additionalTags></url>
+<url><loc>https://www.wordexperts.com.au/training</loc><lastmod>2025-10-14T07:52:36.046Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
 </urlset>
