@@ -15,9 +15,16 @@ export const formatDuration = (seconds) => {
 export const videoData = [
   {
     id: "copy-and-paste-word-formatting",
-    title: "Copy and Paste Word Formatting",
-    description:
-      "Master the art of copying and pasting formatting in Microsoft Word. Learn how to efficiently transfer styles, fonts, and formatting between documents while maintaining consistency.",
+    title: "Copy and Paste Function",
+    description: `
+      <p>Our Formatting Tab Solution ensures that text pasted from other documents is inserted in a controlled environment, allowing only your corporate styles.</p>
+      <ul>
+        <li>Pasted text will recognise default Word styles like <strong>Headings</strong> and <strong>Normal</strong> and apply your correct formatting</li>
+        <li>Unknown formatting will default to the 'Normal' style, and character formatting (<strong>Bold</strong>, <em>Italic</em>) will remain where possible</li>
+        <li>Default list styles (List or List Number sets) will reset the numbering back to 1 between paragraphs of 'Normal' style text or a heading</li>
+        <li>Tables will paste in and automatically apply the default Table style, maintaining branding consistency throughout</li>
+      </ul>
+    `,
     videoUrl: "/videos/copy-and-paste-word-formatting.mp4",
     url: "/videos/copy-and-paste-word-formatting",
     duration: 46,
@@ -29,8 +36,9 @@ export const videoData = [
   {
     id: "word-template-solutions",
     title: "Word Template Solutions",
-    description:
-      "Learn how to create, customise, and implement professional templates that streamline your document workflows and ensure brand consistency.",
+    description: `
+      <p>Learn how to create, customise, and implement professional templates that streamline your document workflows and ensure brand consistency.</p>
+    `,
     videoUrl: "/videos/word-template-solutions.mp4",
     url: "/videos/word-template-solutions",
     duration: 231,
@@ -42,8 +50,29 @@ export const videoData = [
   {
     id: "insert-and-format-tables-button",
     title: "Insert and Format Tables Button",
-    description:
-      "Learn how to use the Insert and Format Tables button in Microsoft Word to quickly create and style professional tables in your documents.",
+    description: `
+      <p>The <strong>'Insert Table'</strong> button opens a pop-up form prompting the user for:</p>
+      <ul>
+        <li>Number of rows</li>
+        <li>Number of columns</li>
+        <li>Table Style – a drop-down list of specific table styles to be applied to the table</li>
+        <li>Table Caption - a check box to indicate that a caption is required for the table with a prompt for the user to enter the caption text</li>
+      </ul>
+      <p>When the user clicks on the 'Update Document' button within the form, the system will insert a table into the document at the current cursor position. The table will take up the full width of the page and have the selected table style applied. The table will also be automatically captioned if the table caption option was selected. The 'Format Table' pop-up will then be displayed immediately after the new table is inserted so that the user can apply the table formatting options.</p>
+      
+      <p><strong>Format Table Button</strong></p>
+      <p>The Format Table button opens a pop-up form prompting to enable or disable table style options for the table the cursor is currently in:</p>
+      <ul>
+        <li>Table style - a drop-down list of specific table styles to be applied to the table</li>
+        <li>Header row (checkbox)</li>
+        <li>Total row (checkbox)</li>
+        <li>Banded rows (checkbox)</li>
+        <li>First column (checkbox)</li>
+        <li>Last column (checkbox)</li>
+        <li>Banded columns (checkbox)</li>
+      </ul>
+      <p>When the user clicks on the 'Update Document' button within the form, the system will update the currently selected table in accordance with the selections made in the form. Specific options can be setup to be defaulted to on.</p>
+    `,
     videoUrl: "/videos/insert-and-format-tables-button.mp4",
     url: "/videos/insert-and-format-tables-button",
     duration: 38,
@@ -55,8 +84,10 @@ export const videoData = [
   {
     id: "remove-instructional-text-button",
     title: "Remove Instructional Text Button",
-    description:
-      "Discover how to use the Remove Instructional Text button to quickly clean up placeholder text and instructions from your Word templates.",
+    description: `
+      <p>The <strong>'Remove Instructional Text'</strong> button will remove all text in the document formatted to the 'Instruction Text' style.</p>
+      <p><em>Please note this function is not compatible with Editing Restrictions.</em></p>
+    `,
     videoUrl: "/videos/remove-instructional-text-button.mp4",
     url: "/videos/remove-instructional-text-button",
     duration: 16,
@@ -67,9 +98,22 @@ export const videoData = [
   },
   {
     id: "clean-up-styles-button",
-    title: "Clean Up Styles Button",
-    description:
-      "Learn how to use the Clean Up Styles button to remove unwanted formatting and standardise your document styles in Microsoft Word.",
+    title: "Styles Clean Up Button",
+    description: `
+      <p>The styles and formatting of your documents (based on the master template or sub templates) may be open to external formatting corruption if they are used:</p>
+      <ol>
+        <li>Outside of the 'Corporate Formatting Tab'; or</li>
+        <li>In conjunction with content copied from a source other than Word; or</li>
+        <li>In a multi author environment</li>
+      </ol>
+      <p>In these circumstances the users can activate the <strong>'Styles Clean Up'</strong> function, which will ensure that:</p>
+      <ol>
+        <li>Unauthorised styles are removed from the style set</li>
+        <li>Content with incorrect formatting is either cleaned to match the correct default style (for example, headings) or reformatted back to the normal style</li>
+        <li>Default list styles ('List' or 'List Number' sets) will reset the numbering back to '1' between paragraphs of normal text or between headings</li>
+      </ol>
+      <p><em>It is not recommended that the Style Clean up functions are run while within a multi author environment.</em></p>
+    `,
     videoUrl: "/videos/clean-up-styles-button.mp4",
     url: "/videos/clean-up-styles-button",
     duration: 35,
@@ -80,9 +124,15 @@ export const videoData = [
   },
   {
     id: "insert-and-remove-a3-buttons",
-    title: "Insert and Remove A3 Buttons",
-    description:
-      "Master the Insert and Remove A3 buttons to efficiently add or remove A3-sized pages within your Word documents.",
+    title: "Insert / Remove A3 Landscape Pages Button",
+    description: `
+      <p>The <strong>'Insert A3 Page'</strong> button provides two options:</p>
+      <ol>
+        <li><strong>A3 Landscape</strong>, which adds an A3 Landscape page with correct margins, headers & footers</li>
+        <li><strong>A3 Portrait</strong>, which adds an A3 Portrait page with correct margins, headers & footers</li>
+      </ol>
+      <p>A3 pages can easily be converted back to A4 by selecting the <strong>'Change A3 to A4'</strong> button.</p>
+    `,
     videoUrl: "/videos/insert-and-remove-a3-buttons.mp4",
     url: "/videos/insert-and-remove-a3-buttons",
     duration: 28,
@@ -93,9 +143,19 @@ export const videoData = [
   },
   {
     id: "table-list-button",
-    title: "Table List Buttons",
-    description:
-      "Explore the Table List buttons functionality to streamline table management and organisation in your Word documents.",
+    title: "Table List Styles Button",
+    description: `
+      <p>The styles <strong>'Table List Continue'</strong> (1, a, i) and <strong>'Table Cell Lists'</strong> (1, a, i) will be added to the style gallery.</p>
+      <p>The 'Table List' styles will link to the Formatting Tab ribbon buttons giving the user the capability of having:</p>
+      <ul>
+        <li><strong>'Table Cell Lists'</strong> - that restart at each new cell, or</li>
+        <li><strong>'Table List Continue'</strong> - that continue through the cells but restart at each new table</li>
+      </ul>
+      <p><em>Please note that 'Table List Continue' will automatically order the numbers horizontally, as is standard Word functionality.</em></p>
+      <p>The 'Table Cell Lists' and the 'Table List Continue' styles will have identical formatting to keep consistency across table lists.</p>
+      <p>The <strong>'Reset Table Numbering'</strong> button will reset the numbering according to the rules of the 'Table Cell List' or 'Table List Continue' styles.</p>
+      <p><em>It is not recommended that the Reset Table Numbering functions are run while within a multi author environment.</em></p>
+    `,
     videoUrl: "/videos/table-list-button.mp4",
     url: "/videos/table-list-buttons",
     duration: 29,
@@ -106,9 +166,11 @@ export const videoData = [
   },
   {
     id: "image-placement-button",
-    title: "Image Placement Button",
-    description:
-      "Learn how to use the Image Placement button to control image positioning and wrapping in your Word templates.",
+    title: "Image Placement Holders Button",
+    description: `
+      <p>An <strong>'Insert Image'</strong> button will insert an image placeholder with a 'Figure Caption' into which users can insert an image.</p>
+      <p>The placeholders will allocate the correct position and size (height or width) for the image.</p>
+    `,
     videoUrl: "/videos/image-placement-button.mp4",
     url: "/videos/image-placement-button",
     duration: 19,
@@ -119,9 +181,19 @@ export const videoData = [
   },
   {
     id: "insert-landscape-page-button",
-    title: "Insert Landscape Page Button",
-    description:
-      "Discover how to quickly insert landscape-oriented pages into your portrait documents using the Insert Landscape Page button.",
+    title: "Insert / Remove A4 Landscape Pages Button",
+    description: `
+      <p>The <strong>'Insert Landscape A4 Page'</strong> button gives two options:</p>
+      <ul>
+        <li>Insert A4 Landscape Page at selection</li>
+        <li>Insert A4 Landscape Page as last page of document</li>
+      </ul>
+      <p>The <strong>'Remove Landscape A4 Page'</strong> button gives two options:</p>
+      <ul>
+        <li>Change the current landscape section to portrait</li>
+        <li>Change the last landscape section to portrait</li>
+      </ul>
+    `,
     videoUrl: "/videos/insert-landscape-page-button.mp4",
     url: "/videos/insert-landscape-page-button",
     duration: 8,
@@ -132,9 +204,10 @@ export const videoData = [
   },
   {
     id: "insert-appendix-page-button",
-    title: "Insert Appendix Page Button",
-    description:
-      "Learn how to use the Insert Appendix Page button to add properly formatted appendix sections to your Word documents.",
+    title: "Chapter or Appendix Break Page Button",
+    description: `
+      <p><strong>'Chapter or Appendix Break Page'</strong> will give the user the choice whether or not to include break pages and to allow the user to control where these break pages are placed.</p>
+    `,
     videoUrl: "/videos/insert-appendix-page-button.mp4",
     url: "/videos/insert-appendix-page-button",
     duration: 10,
@@ -145,9 +218,11 @@ export const videoData = [
   },
   {
     id: "insert-cover-page",
-    title: "Insert Cover Page",
-    description:
-      "Master the Insert Cover Page button to quickly add professional cover pages to your Word documents with consistent branding.",
+    title: "Covers Button",
+    description: `
+      <p>Cover pages will be designed and stored in the <strong>'Covers'</strong> button on the Formatting Tab.</p>
+      <p>These covers can be seamlessly swapped out in accordance with the user's needs.</p>
+    `,
     videoUrl: "/videos/insert-cover-page.mp4",
     url: "/videos/insert-cover-page",
     duration: 10,
@@ -193,6 +268,24 @@ export const getFeaturedVideos = () => {
 // Helper function to generate Canva embed URL
 export const getCanvaEmbedUrl = (canvaId) => {
   return `https://www.canva.com/design/${canvaId}/view?embed`;
+};
+
+// Helper function to strip HTML tags and truncate text for card previews
+export const getPlainTextPreview = (htmlString, maxLength = 150) => {
+  // Remove HTML tags
+  const plainText = htmlString
+    .replace(/<[^>]*>/g, " ")
+    // Replace multiple spaces with single space
+    .replace(/\s+/g, " ")
+    // Trim whitespace
+    .trim();
+
+  // Truncate and add ellipsis if needed
+  if (plainText.length > maxLength) {
+    return plainText.substring(0, maxLength).trim() + "...";
+  }
+
+  return plainText;
 };
 
 // Default export

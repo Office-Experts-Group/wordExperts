@@ -13,6 +13,7 @@ import {
   getFeaturedVideos,
   getVideosByCategory,
   formatDuration,
+  getPlainTextPreview,
 } from "../../videoData";
 
 import {
@@ -125,6 +126,7 @@ const VideoPortalPage = () => {
   };
 
   // Render video card
+  // Render video card
   const renderVideoCard = (video, isFeatured = false) => (
     <div
       key={video.id}
@@ -157,7 +159,10 @@ const VideoPortalPage = () => {
       </div>
       <div className={styles.videoContent}>
         <h3>{video.title}</h3>
-        <p>{video.description}</p>
+        {/* Use plain text preview for cards, adjust maxLength as needed */}
+        <p className={styles.videoDescription}>
+          {getPlainTextPreview(video.description, isFeatured ? 200 : 150)}
+        </p>
       </div>
     </div>
   );
@@ -286,7 +291,10 @@ const VideoPortalPage = () => {
             </div>
             <div className={styles.videoInfo}>
               <h3>{selectedVideo.title}</h3>
-              <p>{selectedVideo.description}</p>
+              <div
+                className={styles.videoDescription}
+                dangerouslySetInnerHTML={{ __html: selectedVideo.description }}
+              />
             </div>
           </div>
         </div>
