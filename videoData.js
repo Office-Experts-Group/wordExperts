@@ -231,6 +231,22 @@ export const videoData = [
     category: "Templates",
     featured: false,
   },
+  {
+    id: "multi-level-list-clean-up-button",
+    title: "Multi Level List Clean Up Button",
+    description: `
+      <p>When your Lists corrupt, users can activate the <strong>'Multilevel List Clean Up Button'</strong> function, which will ensure that default list styles ('List' or 'List Number' sets) will reset the numbering back to '1' between paragraphs of normal text or between headings.</p>
+      <p>It is not recommended that the Multilevel List Clean Up functions are run while within a multi author environment.
+</p>
+    `,
+    videoUrl: "/videos/multi-level-list-clean-up-button.mp4",
+    url: "/videos/multi-level-list-clean-up-button",
+    duration: 23,
+    uploadDate: "2025-10-21T00:00:00+00:00",
+    thumbnailUrl: "/videos/thumbnails/multi-level-list-clean-up-button.webp",
+    category: "Buttons",
+    featured: false,
+  },
 ];
 
 // Also export as 'videos' for backwards compatibility
