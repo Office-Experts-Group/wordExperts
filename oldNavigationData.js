@@ -244,6 +244,10 @@ export const oldNavigationData = {
             label: "Power BI Integration",
             href: `${ACCESS_EXPERTS_URL}/integrate-access-with-power-bi`,
           },
+          {
+            label: "Database Optimisation and Repair",
+            href: `${ACCESS_EXPERTS_URL}/access-database-optimisation-and-repair`,
+          },
         ],
       },
       {
