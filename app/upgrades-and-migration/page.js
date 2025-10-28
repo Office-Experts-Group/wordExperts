@@ -18,6 +18,7 @@ import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
 } from "../../utils/schemaGenerators";
+import WhyChoose from "./(components)/WhyChoose";
 
 const schema = {
   "@context": "https://schema.org",
@@ -85,11 +86,12 @@ const Page = () => {
         altMob={"an empty office chair at a desk"}
       />
       <ServicePageCards />
-      <PageSegment4 />
       <PageSegmentMain />
+      <PageSegment4 />
       <BlackSegment />
       <Promo />
       <Segment4Repeat />
+      <WhyChoose />
       <ExpertsAwait />
       <Contact />
     </>

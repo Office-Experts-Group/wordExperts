@@ -7,6 +7,11 @@ import styles from "../../../styles/expertsAwait.module.css";
 
 import bg from "../../../public/service-bg.webp";
 
+/**
+ * BlackSegment Component
+ * "Have Word Migration Issues?" section
+ * Focuses on common problems during Word upgrades and migrations
+ */
 const BlackSegment = () => {
   return (
     <section
@@ -26,18 +31,18 @@ const BlackSegment = () => {
           </div>
           <div className={styles.text}>
             <p>
-              Do you have a PDF file that has been migrated into Word, but just
-              doesn't work right? PDF converters can create many issues
-              including:
+              Migrating to a new version of Microsoft Word or transitioning to
+              Microsoft 365 can introduce unexpected complications.
             </p>
             <AnimateOnScroll animation="fade-down" delay={0.3} duration={1.2}>
-              <div className={styles.points}>
+              <div className={styles.points} style={{ maxWidth: "100%" }}>
                 <div className={styles.point}>
                   <div className={styles.cross}>
                     <p>X</p>
                   </div>
                   <p style={{ textAlign: "left" }}>
-                    Inappropriate add in text boxes and section breaks
+                    Document formatting breaks and layout shifts after version
+                    upgrades
                   </p>
                 </div>
 
@@ -46,7 +51,7 @@ const BlackSegment = () => {
                     <p>X</p>
                   </div>
                   <p style={{ textAlign: "left" }}>
-                    Mismanaged content, sometimes with text created as an image
+                    Macros and VBA code stop working in newer Word versions
                   </p>
                 </div>
 
@@ -55,7 +60,7 @@ const BlackSegment = () => {
                     <p>X</p>
                   </div>
                   <p style={{ textAlign: "left" }}>
-                    Incorrect and inconsistent styles
+                    Templates lose functionality or display incorrectly
                   </p>
                 </div>
 
@@ -63,45 +68,15 @@ const BlackSegment = () => {
                   <div className={styles.cross}>
                     <p>X</p>
                   </div>
-                  <p style={{ textAlign: "left" }}>Many accessibility issues</p>
+                  <p style={{ textAlign: "left" }}>
+                    Custom styles and corporate branding inconsistencies
+                  </p>
                 </div>
               </div>
             </AnimateOnScroll>
           </div>
         </div>
       </AnimateOnScroll>
-
-      {/* <AnimateOnScroll animation="fade-down" delay={0.3} duration={1.2}>
-        <div className={styles.points}>
-          <div className={styles.point}>
-            <div className={styles.cross}>
-              <p>X</p>
-            </div>
-            <p>Inappropriate add in text boxes and section breaks</p>
-          </div>
-
-          <div className={styles.point}>
-            <div className={styles.cross}>
-              <p>X</p>
-            </div>
-            <p>Mismanaged content, sometimes with text created as an image</p>
-          </div>
-
-          <div className={styles.point}>
-            <div className={styles.cross}>
-              <p>X</p>
-            </div>
-            <p>Incorrect and inconsistent styles</p>
-          </div>
-
-          <div className={styles.point}>
-            <div className={styles.cross}>
-              <p>X</p>
-            </div>
-            <p>Many accessibility issues</p>
-          </div>
-        </div>
-      </AnimateOnScroll> */}
     </section>
   );
 };
