@@ -80,4 +80,19 @@ export const blogPosts = [
     youtubeId: null,
     imagePath: "/blog/pdf-to-word-template.webp",
   },
+  {
+    id: 7,
+    title:
+      "How to Rebrand Your Business Documents Without Starting From Scratch",
+    description:
+      "Learn how to efficiently rebrand your business documents without rebuilding everything. Discover smart strategies for updating logos, colors, and brand elements while preserving your existing document structure and saving time.",
+    slug: "document-rebranding",
+    date: "October 28, 2025",
+    author: "Daniel Thomas",
+    readingTime: "12 min",
+    category: "Templates",
+    featured: false,
+    youtubeId: null,
+    imagePath: "/blog/rebrand.webp",
+  },
 ];

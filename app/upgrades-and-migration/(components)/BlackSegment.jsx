@@ -7,11 +7,6 @@ import styles from "../../../styles/expertsAwait.module.css";
 
 import bg from "../../../public/service-bg.webp";
 
-/**
- * BlackSegment Component
- * "Have Word Migration Issues?" section
- * Focuses on common problems during Word upgrades and migrations
- */
 const BlackSegment = () => {
   return (
     <section

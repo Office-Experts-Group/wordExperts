@@ -235,12 +235,17 @@
   max-width: 80%;
   margin: 2rem auto;
 }
+.quote a,
 .quote p {
   font-size: 1.25rem;
   font-weight: 700;
   color: #046999;
   font-style: italic;
   text-align: center;
+}
+.quote span {
+  color: #777a7e;
+  font-size: 1rem;
 }
 @media (max-width: 449px) {
   .quote {
@@ -711,5 +716,15 @@
   }
   .whenProfessionalBox ul li {
     font-size: 0.95rem;
+  }
+}
+.split50 {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+@media screen and (max-width: 800px) {
+  .split50 {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=blogPost.module.css.map */
