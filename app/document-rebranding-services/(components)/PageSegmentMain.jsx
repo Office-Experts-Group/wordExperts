@@ -29,8 +29,20 @@ const PageSegmentMain = () => {
             <p>Time for a change?</p>
             <h2>Give Your Documents a Fresh, On-Brand Look</h2>
             <p>
-            When your company updates its brand — whether it's a new logo, a change in colour palette, or a complete visual overhaul — your documents need to keep up. At Word Experts, we specialise in document rebranding that goes beyond design — we implement your new brand and create new template files your team uses every day.</p>
-            <p>Our advanced Word Template Solution with Formatting Tab allows users to efficiently create corporate documents within your branding guidelines. This ensures that external formatting, or limited Word knowledge does not corrupt your <Link href={"/corporate-identity"}>corporate styles and functionality.</Link>
+              When your company updates its brand, a new logo, a change in
+              colour palette, or a complete visual overhaul? Your documents need
+              to keep up. At Word Experts, we specialise in document rebranding
+              that goes beyond design, we implement your new brand and create
+              new template files your team uses every day.
+            </p>
+            <p>
+              Our advanced Word Template Solution with Formatting Tab allows
+              users to efficiently create corporate documents within your
+              branding guidelines. This ensures that external formatting, or
+              limited Word knowledge does not corrupt your{" "}
+              <Link href={"/corporate-identity"}>
+                corporate styles and functionality.
+              </Link>
             </p>
           </div>
         </AnimateOnScroll>

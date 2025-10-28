@@ -6,6 +6,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 import styles from "../../../styles/pageSegment4.module.css";
 
 import success from "../../../public/success400x267.webp";
+import Link from "next/link";
 
 const Segment4Repeat = () => {
   const checkItems = [
@@ -23,11 +24,20 @@ const Segment4Repeat = () => {
       <div className={styles.pageSegment} style={{ margin: "6rem 0 3rem 0" }}>
         <AnimateOnScroll animation="slide-left" duration={1} delay={0}>
           <div className={styles.content}>
-            <h2 style={{ marginBottom: "1rem" }}>What Is Document Rebranding?</h2>
+            <h2 style={{ marginBottom: "1rem" }}>
+              What Is Document Rebranding?
+            </h2>
             <p>
-            Document rebranding is the process of applying your updated brand identity — logo, fonts, colours, layout and tone — to all of your business templates and documentation.
+              Document rebranding is the process of applying your updated brand
+              identity (logo, fonts, colours, layout and tone), consistently to
+              all of your{" "}
+              <Link href={"/corporate-global-template-solution"}>
+                {" "}
+                business templates{" "}
+              </Link>{" "}
+              and documentation.
             </p>
-            <p style={{ margin: "-1rem 0 1rem 0"}}>This Includes:</p>
+            <p style={{ margin: "-1rem 0 1rem 0" }}>This Includes...</p>
           </div>
 
           <div className={styles.points}>
@@ -50,9 +60,12 @@ const Segment4Repeat = () => {
               </div>
             ))}
           </div>
-          <div className={styles.content}
-          style={{ marginTop: "1.5rem" }}>
-          <p>Whether you're simply modernising your look or undergoing a full corporate rebrand, we help ensure your documents reflect your new identity with precision and consistency.</p>
+          <div className={styles.content} style={{ marginTop: "1.5rem" }}>
+            <p>
+              Whether you're simply modernising your look or undergoing a full
+              corporate rebrand, we help ensure your documents reflect your new
+              identity with precision and consistency.
+            </p>
           </div>
         </AnimateOnScroll>
 

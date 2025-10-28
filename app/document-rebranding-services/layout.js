@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Document Rebranding Services | Word Experts",
   description:
-  "Our Microsoft Word experts create custom templates with brand-consistent formatting to ensure your documents maintain a professional look.",
+    "Our Microsoft Word designers create custom templates with brand-consistent formatting and professional rebranding services.",
 
   // OpenGraph
   openGraph: {
     title: "Document Rebranding Services | Word Experts",
     description:
-    "Our Microsoft Word experts create custom templates with brand-consistent formatting to ensure your documents maintain a professional look.",
+      "Our Microsoft Word designers create custom templates with brand-consistent formatting and professional rebranding services.",
     url: "https://www.wordexperts.com.au/document-rebranding-services",
     siteName: "Word Experts",
     images: [
@@ -26,9 +26,7 @@ export const metadata = {
   },
 
   // Additional metadata
-  keywords: [
-    "Document rebranding Services",
-  ],
+  keywords: ["Document rebranding Services"],
 
   // Twitter Card
   twitter: {
@@ -36,7 +34,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Document Rebranding Services | Word Experts",
     description:
-    "Our Microsoft Word experts create custom templates with brand-consistent formatting to ensure your documents maintain a professional look.",
+      "Our Microsoft Word designers create custom templates with brand-consistent formatting and professional rebranding services.",
     images: ["/logo.png"],
   },
 
@@ -55,62 +53,64 @@ export default function RootLayout({ children }) {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            "name": "Document Rebranding Services",
-            "serviceType": "Document Rebranding",
-            "provider": {
+            name: "Document Rebranding Services",
+            serviceType: "Document Rebranding",
+            provider: {
               "@type": "Organization",
-              "name": "Word Experts",
-              "url": "https://www.wordexperts.com.au",
-              "telephone": "+611300122038",
-              "address": {
+              name: "Word Experts",
+              url: "https://www.wordexperts.com.au",
+              telephone: "+611300122038",
+              address: {
                 "@type": "PostalAddress",
-                "addressCountry": "Australia"
-              }
+                addressCountry: "Australia",
+              },
             },
-            "description": "Professional document rebranding service that applies your updated brand identity to all of your business templates and documentation including Microsoft Word templates, PowerPoint presentations, and Excel spreadsheets.",
-            "offers": {
+            description:
+              "Professional document rebranding service that applies your updated brand identity to all of your business templates and documentation including Microsoft Word templates, PowerPoint presentations, and Excel spreadsheets.",
+            offers: {
               "@type": "Offer",
-              "price": "",
-              "priceCurrency": "AUD",
-              "availability": "https://schema.org/InStock"
+              price: "",
+              priceCurrency: "AUD",
+              availability: "https://schema.org/InStock",
             },
-            "areaServed": {
+            areaServed: {
               "@type": "Country",
-              "name": "Australia"
+              name: "Australia",
             },
-            "audience": {
+            audience: {
               "@type": "Audience",
-              "audienceType": "Businesses and Organizations"
+              audienceType: "Businesses and Organizations",
             },
-            "serviceOutput": "Professionally branded document templates and styling",
-            "hasOfferCatalog": {
+            serviceOutput:
+              "Professionally branded document templates and styling",
+            hasOfferCatalog: {
               "@type": "OfferCatalog",
-              "name": "Document Rebranding Services",
-              "itemListElement": [
+              name: "Document Rebranding Services",
+              itemListElement: [
                 {
                   "@type": "Offer",
-                  "itemOffered": {
+                  itemOffered: {
                     "@type": "Service",
-                    "name": "Template Rebranding & Redesign"
-                  }
+                    name: "Template Rebranding & Redesign",
+                  },
                 },
                 {
                   "@type": "Offer",
-                  "itemOffered": {
+                  itemOffered: {
                     "@type": "Service",
-                    "name": "Bulk Template Conversion"
-                  }
+                    name: "Bulk Template Conversion",
+                  },
                 },
                 {
                   "@type": "Offer",
-                  "itemOffered": {
+                  itemOffered: {
                     "@type": "Service",
-                    "name": "Advanced Word Functionality"
-                  }
-                }
-              ]
-            }
-          })
+                    name: "Advanced Word Functionality",
+                  },
+                },
+              ],
+            },
+          }),
         }}
       />
       {children}

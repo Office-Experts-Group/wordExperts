@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react";
 
-import ServiceHero from '../../components/ServiceHero'
-import PageSegmentMain from './(components)/PageSegmentMain'
-import PageSegment4 from './(components)/PageSegment4'
-import PageSegment5 from './(components)/PageSegment5'
-import PageSegmentDropdowns from './(components)/PageSegmentDropdowns'
-import Contact from '../../components/Contact'
+import ServiceHero from "../../components/ServiceHero";
+import PageSegmentMain from "./(components)/PageSegmentMain";
+import PageSegment4 from "./(components)/PageSegment4";
+import PageSegment5 from "./(components)/PageSegment5";
+import PageSegmentDropdowns from "./(components)/PageSegmentDropdowns";
+import Contact from "../../components/Contact";
+import BlackSegment from "./(components)/BlackSegment";
 
-import rebrand from '../../public/pageHeros/rebrand.webp'
-import rebrandingMob from '../../public/pageHeros/mob/rebrandingMob.webp'
-import BlackSegment from './(components)/BlackSegment'
+import rebrand from "../../public/pageHeros/rebrand.webp";
+import rebrandingMob from "../../public/pageHeros/mob/rebrandingMob.webp";
 
 import {
   generateProfessionalServiceSchema,
@@ -30,23 +30,27 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2025-04-30T15:51:37+00:00",
-      dateModified: "2025-04-30T00:00:00+00:00",
+      dateModified: "2025-10-28T00:00:00+00:00",
       description:
-      "Our Microsoft Word experts create custom templates with brand-consistent formatting to ensure your documents maintain a professional look.",
+        "Our Microsoft Word designers create custom templates with brand-consistent formatting and professional rebranding services.",
       breadcrumb: {
-        "@id": "https://www.wordexperts.com.au/document-rebranding-services#breadcrumb",
+        "@id":
+          "https://www.wordexperts.com.au/document-rebranding-services#breadcrumb",
       },
       inLanguage: "en-AU",
       potentialAction: [
         {
           "@type": "ReadAction",
-          target: ["https://www.wordexperts.com.au/document-rebranding-services"],
+          target: [
+            "https://www.wordexperts.com.au/document-rebranding-services",
+          ],
         },
       ],
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.wordexperts.com.au/document-rebranding-services#breadcrumb",
+      "@id":
+        "https://www.wordexperts.com.au/document-rebranding-services#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
@@ -65,14 +69,13 @@ const schema = {
   ],
 };
 const page = () => {
-
   return (
     <main>
-            <script
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-              <ServiceHero
+      <ServiceHero
         title="Document Rebranding Services"
         desktopImage={rebrand}
         mobileImage={rebrandingMob}
@@ -86,7 +89,7 @@ const page = () => {
       <PageSegmentDropdowns />
       <Contact />
     </main>
-  )
-}
+  );
+};
 
-export default page
+export default page;
