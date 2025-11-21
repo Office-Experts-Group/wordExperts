@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import AnimateOnScroll from "./AnimateOnScroll";
 
-import styles from "../styles/promo.module.css";
+import styles from "../styles/promo.module.scss";
 
 import computer from "../public/icons/computer.webp";
 

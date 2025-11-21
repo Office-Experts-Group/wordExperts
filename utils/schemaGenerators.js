@@ -254,7 +254,7 @@ export const generateProfessionalServiceSchema = () => ({
     "@id": `https://www.wordexperts.com.au#organization`,
   },
   telephone: "1300 122 038",
-  email: "consult@wordexperts.com.au",
+  email: "consult@xxxx.wordexperts.com.au",
 });
 
 export const generateOrganizationSchema = () => ({
@@ -263,14 +263,14 @@ export const generateOrganizationSchema = () => ({
   name: "Word Experts Group",
   url: "https://www.wordexperts.com.au/",
   telephone: "1300 122 038",
-  email: "consult@wordexperts.com.au",
+  email: "consult@xxxx.wordexperts.com.au",
   // Enhanced contact point information
   contactPoint: [
     {
       "@type": "ContactPoint",
       contactType: "customer service",
       telephone: "1300 122 038",
-      email: "consult@wordexperts.com.au",
+      email: "consult@xxxx.wordexperts.com.au",
       availableLanguage: ["en", "en-AU"],
       contactOption: "TollFree",
       hoursAvailable: "Mo,Tu,We,Th,Fr 09:00-17:00",

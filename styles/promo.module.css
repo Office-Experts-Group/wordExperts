@@ -73,6 +73,9 @@
   .text p {
     text-align: center;
   }
+  .text h2 {
+  align-items: center;
+}
 }
 @media (min-width: 450px) and (max-width: 766px) {
   .text p {

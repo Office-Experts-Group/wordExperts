@@ -56,6 +56,9 @@
     font-size: 2rem;
     font-weight: 900;
     margin-bottom: 1rem;
+    @media screen and (max-width: "700px") {
+      text-align: center;
+    }
   }
   p {
     color: #777a7e;
@@ -66,6 +69,10 @@
     }
     @include phoneLandscape {
       text-align: center;
+    }
+    @include phone {
+      align-items: center;
+      justify-content: center;
     }
   }
 

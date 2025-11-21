@@ -17,7 +17,7 @@ const MobileContact = ({ styles }) => {
         </div>
         <div className={styles.navContact}>
           <Image src={emailSlide} alt="email" width={15} height={9} />
-          <Link href="mailto:consult@wordexperts.com.au">
+          <Link href="mailto:consult@xxxx.wordexperts.com.au">
             <span>consultwordexperts.com.au</span>
           </Link>
         </div>

@@ -126,7 +126,6 @@ const VideoPortalPage = () => {
   };
 
   // Render video card
-  // Render video card
   const renderVideoCard = (video, isFeatured = false) => (
     <div
       key={video.id}

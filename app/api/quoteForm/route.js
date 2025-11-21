@@ -159,7 +159,7 @@ export async function POST(req) {
       // Send email to business
       await sgMail.send({
         from: "consult@officeexperts.com.au",
-        to: "consult@wordexperts.com.au",
+        to: "consult@xxxx.wordexperts.com.au",
         subject: "New Quote Request Submission",
         text: clientTextMessage,
         html: clientHtmlMessage,

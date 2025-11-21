@@ -20,7 +20,7 @@ const FooterLogoSection = () => {
           <Image src={msg} alt="msg" width={18} height={18} />
           1300 122 038
         </Link>
-        <Link href={"mailto:consult@wordexperts.com.au"}>
+        <Link href={"mailto:consult@xxxx.wordexperts.com.au"}>
           <Image src={emailSlide} alt="msg" width={22} height={13} />
           consult@wordexperts.com.au
         </Link>
