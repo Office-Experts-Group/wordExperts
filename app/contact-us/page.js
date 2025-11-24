@@ -48,7 +48,7 @@ const schema = {
             },
             {
               "@type": "EntryPoint",
-              urlTemplate: "mailto:consult@xxxx.wordexperts.com.au",
+              urlTemplate: "mailto:consult@wordexperts.com.au",
               name: "Email",
             },
           ],
@@ -88,7 +88,7 @@ const schema = {
           "@type": "ContactPoint",
           telephone: "+61-1300-12-20-38",
           contactType: "customer service",
-          email: "consult@xxxx.wordexperts.com.au",
+          email: "consult@wordexperts.com.au",
           availableLanguage: ["en", "en-AU"],
         },
       ],

@@ -34,7 +34,7 @@ const HeadTop = () => {
           </div>
         </div>
         <div>
-          <Link href="mailto:consult@xxxx.wordexperts.com.au">
+          <Link href="mailto:consult@wordexperts.com.au">
             <Image
               src={emailSlide}
               alt="email"
