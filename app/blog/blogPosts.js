@@ -95,4 +95,18 @@ export const blogPosts = [
     youtubeId: null,
     imagePath: "/blog/rebrand.webp",
   },
+  {
+    id: 8,
+    title: "Microsoft Word for Mac: What You Need to Know",
+    description:
+      "Discover the real differences between Word for Mac and Windows. Learn about missing features, VBA limitations, workarounds, and whether Word for Mac is right for your workflow.",
+    slug: "microsoft-word-for-mac",
+    date: "December 13, 2025",
+    author: "Rochelle Robinson",
+    readingTime: "11 min",
+    category: "Word",
+    featured: false,
+    youtubeId: null,
+    imagePath: "/blog/word-mac/word-to-mac.webp",
+  },
 ];

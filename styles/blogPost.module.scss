@@ -99,7 +99,7 @@
 
   h3 {
     font-size: 1.4rem;
-    margin-top: 1.5rem;
+    margin: 1.5rem 0 .5rem 0;
     color: $theme;
   }
 
@@ -270,6 +270,13 @@
   margin: 2rem auto;
   max-width: 90vw;
   height: auto;
+}
+
+.deskImage {
+  margin-top: -14rem;
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
 }
 
 .BgImageContainer {
