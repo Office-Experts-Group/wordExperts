@@ -136,7 +136,7 @@ export const videoData = [
     videoUrl: "/videos/insert-and-remove-a3-buttons.mp4",
     url: "/videos/insert-and-remove-a3-buttons",
     duration: 28,
-    uploadDate: "2025-11-07T00:00:00+00:00",
+    uploadDate: "2025-12-15T00:00:00+00:00",
     thumbnailUrl: "/videos/thumbnails/insert-and-remove-a3-buttons.webp",
     category: "Buttons",
     featured: false,

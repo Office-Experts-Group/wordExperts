@@ -597,7 +597,7 @@ const DocumentRebrandingBlogPost = () => {
                   document transformation projects
                 </Link>
                 . Our team can audit your existing documents,{" "}
-                <Link href={"corporate-global-template-solutions"}>
+                <Link href={"/corporate-global-template-solutions"}>
                   create master templates
                 </Link>{" "}
                 optimised for your workflows, implement automated solutions for

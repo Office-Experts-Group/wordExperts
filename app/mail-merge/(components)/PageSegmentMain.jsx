@@ -24,7 +24,7 @@ const PageSegmentMain = () => {
               data source such as an Excel spreadsheet or Outlook contact list
               with a <Link href={"/corporate-global-template-solution"}>Word document template</Link>. At Word Experts, we help Australian
               businesses set up and optimise Mail Merge workflows that save
-              time, <Link href={"/remove-repetition-and-increase-producivity"}>eliminate repetitive work</Link>, and reduce document errors.
+              time, <Link href={"/remove-repetition-and-increase-productivity"}>eliminate repetitive work</Link>, and reduce document errors.
             </p>
             <p>
               Mail Merge is a feature in Microsoft Word that automates the

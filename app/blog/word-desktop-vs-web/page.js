@@ -323,7 +323,7 @@ const WordDesktopVsWebBlogPost = () => {
             <li>Better Outlook integration</li>
             <li>Works with local files and network drives</li>
             <li>Add-in ecosystem (thousands available)</li>
-            <li>Advanced PDF tools</li>
+                <li><Link href={"/blog/pdf-to-word-conversion"}> Advanced PDF tools</Link></li>
           </ul>
             </div>
             </div>
@@ -414,7 +414,6 @@ const WordDesktopVsWebBlogPost = () => {
             <strong>Best Choice -</strong> Microsoft 365 with Desktop Apps
             (Business Standard or higher, $~19/user/month)
                   </p>
-                  {/* Add a Price? ************ */}
           <p>
             <strong>Why?</strong> Advanced features essential, document quality
             critical,<Link href={"/remove-repetition-and-increase-productivity"}> automation needed</Link>
@@ -480,8 +479,6 @@ const WordDesktopVsWebBlogPost = () => {
             <strong>Best Choice -</strong> Microsoft 365 Personal ($12/month) or
             Office 2021 (~160/year)
                   </p>
-                                    {/* check this is not in USD**************** */}
-
           <p>
             <strong>Why?</strong> Desktop features essential for professional
             work, 1TB OneDrive valuable
@@ -630,7 +627,7 @@ const WordDesktopVsWebBlogPost = () => {
             <li>1TB cloud storage is valuable</li>
             <li>You use multiple devices</li>
             <li>You need mobile app access</li>
-            <li><Link href={"/training"}>Support</Link> and <Link href={"/upgraades-and-migration"}>updates</Link> matter</li>
+            <li><Link href={"/training"}>Support</Link> and <Link href={"/upgrades-and-migration"}>updates</Link> matter</li>
           </ul>
 
           <Image
