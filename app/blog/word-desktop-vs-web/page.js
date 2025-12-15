@@ -6,12 +6,16 @@ import Contact from "../../../components/Contact";
 
 import styles from "../../../styles/blogPost.module.scss";
 
-import rochelle from "../../../public/placeholder.webp";
-import freeVsPaid from "../../../public/placeholder.webp";
-import collaboration from "../../../public/placeholder.webp";
-import desktop from "../../../public/placeholder.webp";
-import pricing from "../../../public/placeholder.webp";
-import hybrid from "../../../public/placeholder.webp";
+import rochelle from "../../../public/blog/rochelle.webp";
+import desktop from "../../../public/blog/desktop/desktop-or-web.webp"
+import evolution from "../../../public/blog/desktop/evolution.webp"
+import uni from "../../../public/blog/desktop/uni.webp"
+import marketing from "../../../public/blog/desktop/marketing.webp"
+import legal from "../../../public/blog/desktop/legal.webp"
+import value from "../../../public/blog/desktop/value.webp"
+import shark from "../../../public/blog/desktop/shark.webp"
+import lochness from "../../../public/blog/desktop/lochness.webp"
+
 
 const WordDesktopVsWebBlogPost = () => {
   const articleSchema = {
@@ -118,8 +122,8 @@ const WordDesktopVsWebBlogPost = () => {
 
         <div className={styles.blogContent}>
           <Image
-            src={freeVsPaid}
-            alt="Free vs paid Microsoft Word comparison"
+            src={desktop}
+            alt="Free vs paid Microsoft Word decisions"
             width={600}
             height={400}
             className={styles.mainImage}
@@ -132,6 +136,14 @@ const WordDesktopVsWebBlogPost = () => {
             decide. For personal-use the free version will often suffice, small businesses can also get away without the subscription fee. But often there is a tipping point where users find themselves needing more features, or suffering through<Link href={"/remove-repetition-and-increase-productivity"}> tireless repetitive tasks</Link>.
           </p>
           <p>Can you skip the subscription? What do you actually get for paying? When is free Word sufficient?</p>
+
+          <h2>What Is "Word for Web"?</h2>
+          <p>
+            Word for Web is Microsoft's browser-based version of Word. It's free
+            with a Microsoft account, works on any device with internet, and
+            stores files in OneDrive (free 5GB). Real-time collaboration is
+            built-in, making it perfect for teams who need to work together.
+          </p>
 
           <div className={styles.quote}>
             <blockquote>
@@ -152,14 +164,6 @@ const WordDesktopVsWebBlogPost = () => {
             </cite>
           </div>
 
-          <h2>What Is "Word for Web"?</h2>
-          <p>
-            Word for Web is Microsoft's browser-based version of Word. It's free
-            with a Microsoft account, works on any device with internet, and
-            stores files in OneDrive (free 5GB). Real-time collaboration is
-            built-in, making it perfect for teams who need to work together.
-          </p>
-
           <h3>Who Uses It?</h3>
           <ul>
             <li>Students with basic needs</li>
@@ -169,15 +173,10 @@ const WordDesktopVsWebBlogPost = () => {
             <li>Those supplementing a desktop version</li>
           </ul>
 
-          <Image
-            src={collaboration}
-            alt="Team collaborating with Word online"
-            width={600}
-            height={400}
-            className={styles.mainImage}
-          />
-
           <h2>Feature Comparison</h2>
+
+          <div className={styles.gridSplit}>
+            <div className={styles.gridFirst}>
 
           <h3>What Web Version CAN Do...</h3>
           
@@ -200,26 +199,6 @@ const WordDesktopVsWebBlogPost = () => {
             <li>Works on any device</li>
           </ul>
 
-          <div className={styles.quote}>
-            <blockquote>
-              <p>
-                "Real-time co-authoring: Multiple users can edit the same
-                document simultaneously, seeing each other's changes in
-                real-time. This eliminates the need for back-and-forth emails
-                and ensures everyone is on the same page."
-              </p>
-            </blockquote>
-            <cite>
-              <Link
-                href="https://laramellortraining.co.uk/word-showdown-web-vs-desktop-which-one-reigns-supreme"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-              >
-                - Lara Mellor Training
-              </Link>
-            </cite>
-          </div>
-
           <h4>Cloud Benefits</h4>
           <ul>
             <li>Auto-saves to OneDrive</li>
@@ -227,7 +206,9 @@ const WordDesktopVsWebBlogPost = () => {
             <li>No software to install or update</li>
             <li>Works on Chromebooks, tablets</li>
           </ul>
-
+            </div>
+            
+              <div className={styles.gridSecond}>
           <h3>What Web Version CANNOT Do...</h3>
 
           <h4>Advanced Formatting</h4>
@@ -242,15 +223,33 @@ const WordDesktopVsWebBlogPost = () => {
 
           <h4>Professional Features</h4>
           <ul>
-            <li>No mail merge</li>
-            <li>No macros or automation</li>
-            <li>Can't install add-ins</li>
+            <li>No<Link href={"/mail-merge"}> mail merge</Link></li>
+            <li>No macros or<Link href={"/remove-repetition-and-increase-productivity"}> automation</Link></li>
+            <li>Can't install<Link href={"https://www.excelexperts.com.au/add-in-development"}> add-ins</Link></li>
             <li>No developer tools</li>
             <li>Limited SmartArt</li>
             <li>No bibliography tools</li>
             <li>Reduced citation management</li>
           </ul>
 
+          <h4>Offline Work</h4>
+          <ul>
+            <li>Must have internet connection (mostly)</li>
+            <li>Limited offline editing (recent browser features help)</li>
+            <li>Can't access without login</li>
+          </ul>
+
+          <h4>File Management</h4>
+          <ul>
+            <li>Can't open local files directly (must upload)</li>
+            <li>Limited file format support</li>
+            <li>Can't save as PDF easily (print to PDF workaround)</li>
+            <li>No "Save As" to local computer (must download)</li>
+            </ul>
+            </div>
+            </div>
+
+          
           <div className={styles.quote}>
             <blockquote>
               <p>
@@ -271,31 +270,18 @@ const WordDesktopVsWebBlogPost = () => {
             </cite>
           </div>
 
-          <h4>Offline Work</h4>
-          <ul>
-            <li>Must have internet connection (mostly)</li>
-            <li>Limited offline editing (recent browser features help)</li>
-            <li>Can't access without login</li>
-          </ul>
-
-          <h4>File Management</h4>
-          <ul>
-            <li>Can't open local files directly (must upload)</li>
-            <li>Limited file format support</li>
-            <li>Can't save as PDF easily (print to PDF workaround)</li>
-            <li>No "Save As" to local computer (must download)</li>
-          </ul>
-
           <Image
-            src={desktop}
-            alt="Microsoft Word desktop application"
+            src={evolution}
+            alt="Famous evolution image changed to show from web to desktop Word application"
             width={600}
             height={400}
-            className={styles.mainImage}
+            className={`${styles.mainImage} ${styles.evolution}`}
           />
 
           <h2>What Desktop Versions Offer</h2>
-
+      
+          <div className={styles.gridSplit}>
+            <div className={styles.gridFirst}>
           <h3>Full Feature Set</h3>
           <ul>
             <li>All formatting options</li>
@@ -308,7 +294,7 @@ const WordDesktopVsWebBlogPost = () => {
           <ul>
             <li>Macros (Windows fully, Mac limited)</li>
             <li>Mail merge for bulk documents</li>
-            <li>Quick Parts and AutoText</li>
+                <li><Link href={"/quick-parts"}>Quick Parts</Link> and AutoText</li>
             <li>Custom keyboard shortcuts</li>
           </ul>
 
@@ -318,30 +304,12 @@ const WordDesktopVsWebBlogPost = () => {
             <li>Table of contents automation</li>
             <li>Cross-references</li>
             <li>Index and table of figures</li>
-            <li>Form controls</li>
+            <li><Link href={"/fill-in-forms"}>Form controls</Link></li>
             <li>Developer tools</li>
-          </ul>
+              </ul>
+              </div>
 
-          <div className={styles.quote}>
-            <blockquote>
-              <p>
-                "Track changes and advanced collaboration: While basic
-                collaboration is available on the web, advanced features like
-                track changes, merging, comparing, and combining documents are
-                exclusive to the desktop version."
-              </p>
-            </blockquote>
-            <cite>
-              <Link
-                href="https://laramellortraining.co.uk/word-showdown-web-vs-desktop-which-one-reigns-supreme"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-              >
-                - Lara Mellor Training
-              </Link>
-            </cite>
-          </div>
-
+            <div className={styles.gridFirst}>
           <h3>Better Performance</h3>
           <ul>
             <li>Handles large documents (100+ pages)</li>
@@ -357,8 +325,40 @@ const WordDesktopVsWebBlogPost = () => {
             <li>Add-in ecosystem (thousands available)</li>
             <li>Advanced PDF tools</li>
           </ul>
+            </div>
+            </div>
+
+                   <div className={styles.quote}>
+            <blockquote>
+              <p>
+                "Track changes and advanced collaboration: While basic
+                collaboration is available on the web, advanced features like
+                track changes, merging, comparing, and combining documents are
+                exclusive to the desktop version."
+              </p>
+            </blockquote>
+            <cite>
+              <Link
+                href="https://laramellortraining.co.uk/word-showdown-web-vs-desktop-which-one-reigns-supreme"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                - Lara Mellor
+              </Link>
+            </cite>
+          </div>
 
           <h2>Real-World Scenarios</h2>
+
+          <div className={styles.BgImageContainer}>
+            <Image
+              src={uni}
+              alt="university student graphic"
+              width={250}
+              height={250}
+              className={styles.BgImage}
+              style={{top: "0rem"}}
+            />
 
           <h3>Scenario 1: University Student</h3>
           <p>
@@ -376,14 +376,15 @@ const WordDesktopVsWebBlogPost = () => {
             <strong>I would Upgrade if...</strong> Writing thesis/dissertation (desktop
             for citations, large docs)
           </p>
-
+          </div>
+          
           <h3>Scenario 2: Small Business Owner</h3>
           <p>
             <strong>Needs -</strong> Letters, invoices, basic documents
           </p>
           <p>
-            <strong>Best Choice -</strong> Microsoft 365 Business Basic
-            ($7/user/month for web/mobile)
+            <strong>Best Choice -</strong>  
+            ($~9/user/month for web/mobile)
                   </p>
                   {/* check this is not in USD**************** */}
           <p>
@@ -395,6 +396,15 @@ const WordDesktopVsWebBlogPost = () => {
             communications, complex templates
           </p>
 
+                   <div className={styles.BgImageContainer}>
+            <Image
+              src={legal}
+              alt="legal professional graphic"
+              width={250}
+              height={250}
+              className={styles.BgImage}
+              style={{top: "0rem"}}
+            />
           <h3>Scenario 3: Legal Professional</h3>
           <p>
             <strong>Needs -</strong> Large documents, precise formatting,
@@ -402,7 +412,7 @@ const WordDesktopVsWebBlogPost = () => {
           </p>
           <p>
             <strong>Best Choice -</strong> Microsoft 365 with Desktop Apps
-            (Business Standard or higher)
+            (Business Standard or higher, $~19/user/month)
                   </p>
                   {/* Add a Price? ************ */}
           <p>
@@ -411,9 +421,10 @@ const WordDesktopVsWebBlogPost = () => {
           </p>
           <p>
             <strong>Web Version -</strong> Use for quick edits only
-          </p>
+            </p>
+            </div>
 
-          <div className={styles.quote}>
+          <div className={styles.quote} style={{marginTop: "4rem"}}>
             <blockquote>
               <p>
                 "For those who need to execute more complex and customized
@@ -432,6 +443,15 @@ const WordDesktopVsWebBlogPost = () => {
             </cite>
           </div>
 
+                    <div className={styles.BgImageContainer}>
+            <Image
+              src={marketing}
+              alt="marketing graphic"
+              width={250}
+              height={250}
+              className={styles.BgImage}
+              style={{top: "6rem"}}
+            />
           <h3>Scenario 4: Marketing Team</h3>
           <p>
             <strong>Needs -</strong> Collaborative editing, proposals,
@@ -449,7 +469,8 @@ const WordDesktopVsWebBlogPost = () => {
             <strong>Strategy...</strong> Use desktop for creation, web for team
             review/edits
           </p>
-
+          </div>
+          
           <h3>Scenario 5: Freelance Writer</h3>
           <p>
             <strong>Needs -</strong> Long documents, reliable offline access,
@@ -457,7 +478,7 @@ const WordDesktopVsWebBlogPost = () => {
           </p>
           <p>
             <strong>Best Choice -</strong> Microsoft 365 Personal ($12/month) or
-            Office 2021 ($249 one-time)
+            Office 2021 (~160/year)
                   </p>
                                     {/* check this is not in USD**************** */}
 
@@ -470,8 +491,8 @@ const WordDesktopVsWebBlogPost = () => {
           </p>
 
           <Image
-            src={pricing}
-            alt="Microsoft 365 pricing options"
+            src={shark}
+            alt="Kevin O'Leary Shark Tank"
             width={600}
             height={400}
             className={styles.mainImage}
@@ -493,7 +514,7 @@ const WordDesktopVsWebBlogPost = () => {
           <h4>Personal Use</h4>
           <ul>
             <li>
-              <strong>Microsoft 365 Personal -</strong> $12/month or $119/year
+              <strong>Microsoft 365 Personal -</strong> $16/month or $159/year
               <ul>
                 <li>1 user, desktop apps, 1TB storage</li>
               </ul>
@@ -501,7 +522,7 @@ const WordDesktopVsWebBlogPost = () => {
               {/* check this is not in USD**************** */}
 
             <li>
-              <strong>Microsoft 365 Family -</strong> $16/month or $159/year
+              <strong>Microsoft 365 Family -</strong> $18/month or $179/year
               <ul>
                 <li>6 users, desktop apps, 1TB each</li>
               </ul>
@@ -513,7 +534,7 @@ const WordDesktopVsWebBlogPost = () => {
           <h4>Business Use</h4>
           <ul>
             <li>
-              <strong>Business Basic -</strong> $7/user/month
+              <strong>Business Basic -</strong> $9/user/month
               <ul>
                 <li>Web/mobile apps only, 1TB storage, business email</li>
               </ul>
@@ -521,7 +542,7 @@ const WordDesktopVsWebBlogPost = () => {
                   {/* check this is not in USD**************** */}
 
             <li>
-              <strong>Business Standard -</strong> $14/user/month
+              <strong>Business Standard -</strong> $19/user/month
               <ul>
                 <li>Desktop apps included, everything in Basic</li>
               </ul>
@@ -529,7 +550,7 @@ const WordDesktopVsWebBlogPost = () => {
              {/* check this is not in USD**************** */}
 
             <li>
-              <strong>Business Premium -</strong> $22/user/month
+              <strong>Business Premium -</strong> $33/user/month
               <ul>
                 <li>Advanced security and device management</li>
               </ul>
@@ -538,47 +559,30 @@ const WordDesktopVsWebBlogPost = () => {
 
           </ul>
 
-          <div className={styles.quote}>
-            <blockquote>
-              <p>
-                "Microsoft 365 for Business experiences benefits of $913,000
-                over three years versus costs of $282,000, adding up to a net
-                present value (NPV) of $631,000 and an ROI of 223%."
-              </p>
-            </blockquote>
-            <cite>
-              <Link
-                href="https://tei.forrester.com/go/Microsoft/365Business/"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-              >
-                - Forrester Total Economic Impact Study
-              </Link>
-            </cite>
-          </div>
-
           <h3>One-Time Purchase</h3>
           <ul>
             <li>
-              <strong>Office Home & Student 2021:</strong> $249.99
+              <strong>Office Home 2024:</strong> $219.99
               <ul>
                 <li>Desktop apps, no OneDrive, no updates</li>
+                <li>For non-commercial use</li>
               </ul>
                       </li>
-           {/* check this is not in USD**************** */}
 
             <li>
-              <strong>Office Home & Business 2021:</strong> $439.99
+              <strong>Office Home & Business 2024:</strong> $379
               <ul>
-                <li>Includes Outlook for commercial use</li>
+                <li>Includes Outlook</li>
+                <li>Available for for commercial use</li>
               </ul>
                       </li>
-         {/* check this is not in USD**************** */}
 
           </ul>
 
           <h2>Decision Framework</h2>
 
+          <div className={styles.gridSplit}>
+            <div className={styles.gridFirst}>
           <h3>Choose FREE Web Version If...</h3>
           <ul>
             <li>Documents are simple (letters, memos, basic reports)</li>
@@ -588,7 +592,8 @@ const WordDesktopVsWebBlogPost = () => {
             <li>You're supplementing a desktop version</li>
             <li>Students with basic needs</li>
           </ul>
-
+            </div>
+            <div className={styles.gridSecond}>
           <h3>Choose PAID Desktop Version If...</h3>
           <ul>
             <li>You work with large or complex documents</li>
@@ -598,7 +603,8 @@ const WordDesktopVsWebBlogPost = () => {
             <li>Your industry requires desktop features</li>
             <li>You need add-ins or developer tools</li>
           </ul>
-
+            </div>
+            </div>
           <div className={styles.quote}>
             <blockquote>
               <p>
@@ -627,26 +633,20 @@ const WordDesktopVsWebBlogPost = () => {
             <li><Link href={"/training"}>Support</Link> and <Link href={"/upgraades-and-migration"}>updates</Link> matter</li>
           </ul>
 
-          <h3>Choose One-Time Purchase If...</h3>
-          <ul>
-            <li>Predictable one-time cost preferred</li>
-            <li>Internet access unreliable</li>
-            <li>Current features sufficient long-term</li>
-            <li>You only use one device</li>
-          </ul>
-
           <Image
-            src={hybrid}
-            alt="Hybrid approach to using Word"
-            width={600}
-            height={400}
-            className={styles.mainImage}
+            src={value}
+            alt="price versus value scale"
+            width={900}
+            height={300}
+            className={`${styles.mainImage} ${styles.deskImageNoMarg}`}
           />
 
           <h2>Hybrid Strategy... Best of Both Worlds?</h2>
 
           <h3>How to Use Both Effectively</h3>
 
+          <div className={styles.gridSplit}>
+          <div className={styles.gridFirst}>
           <h4>Use Desktop for...</h4>
           <ul>
             <li>Creating complex documents</li>
@@ -655,7 +655,8 @@ const WordDesktopVsWebBlogPost = () => {
             <li>Working offline</li>
             <li>Final polishing</li>
           </ul>
-
+            </div>
+            <div className={styles.gridSecond}>
           <h4>Use Web for...</h4>
           <ul>
             <li>Quick edits on the go</li>
@@ -664,7 +665,8 @@ const WordDesktopVsWebBlogPost = () => {
             <li>Accessing from shared/public computers</li>
             <li>Mobile device access</li>
           </ul>
-
+            </div>
+            </div>
           <div className={styles.quote}>
             <blockquote>
               <p>
@@ -680,11 +682,20 @@ const WordDesktopVsWebBlogPost = () => {
                 target="_blank"
                 rel="nofollow noopener noreferrer"
               >
-                - Lara Mellor Training
+                - Lara Mellor
               </Link>
             </cite>
           </div>
 
+                    <div className={styles.BgImageContainer}>
+            <Image
+              src={lochness}
+              alt="lochness graphicc"
+              width={600}
+              height={400}
+              className={styles.BgImage}
+              style={{top: "6rem"}}
+            />
           <h2>Common Misconceptions</h2>
 
           <h3>Myth 1: "Web version is just a limited trial"</h3>
@@ -716,7 +727,8 @@ const WordDesktopVsWebBlogPost = () => {
             <strong>Reality -</strong> Recent browsers offer offline editing
             (though limited).
           </p>
-
+          </div>
+          
           <h2>Migration Path: Starting Free, Upgrading Later</h2>
 
           <h3>How to Test Before Buying</h3>
@@ -749,61 +761,50 @@ const WordDesktopVsWebBlogPost = () => {
             </li>
           </ul>
 
-          <h2>Key Takeaways</h2>
-          <ol>
-            <li>
-              <strong>Web version is legitimately useful</strong>
-              <ul>
-                <li>Not just a "teaser" for desktop</li>
-                <li>Sufficient for many users</li>
-                <li>Excellent for collaboration</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Desktop version worth paying for IF?!?</strong>
-              <ul>
-                <li>Professional work demands it</li>
-                <li>Automation saves you time</li>
-                <li>Offline access is critical</li>
-                <li>Complex documents are routine</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Subscription usually makes sense</strong>
-              <ul>
-                <li>Better value over 2-3 years</li>
-                <li>Cloud storage included</li>
-                <li>Always current features</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Hybrid approach is valid</strong>
-              <ul>
-                <li>Desktop for complex work</li>
-                <li>Web for collaboration and mobile</li>
-                <li>Use right tool for right task</li>
-              </ul>
-            </li>
-          </ol>
-
-          <div className={styles.quote}>
-            <blockquote>
-              <p>
-                "Organizations with comprehensive M365 use reported 66% higher
-                confidence in their ability to adapt and thrive amidst
-                uncertainty."
-              </p>
-            </blockquote>
-            <cite>
-              <Link
-                href="https://www.giaspace.com/microsoft-office-adoption-score/"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-              >
-                - GiaSpace Research
-              </Link>
-            </cite>
-          </div>
+         <h2>Key Takeaways</h2>
+<div className={styles.gridSplit}>
+  <div className={styles.gridFirst}>
+    <ul>
+      <li>
+        <strong>Web version is legitimately useful</strong>
+        <ul>
+          <li>Not just a "teaser" for desktop</li>
+          <li>Sufficient for many users</li>
+          <li>Excellent for collaboration</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Desktop version worth paying for IF?!?</strong>
+        <ul>
+          <li>Professional work demands it</li>
+          <li>Automation saves you time</li>
+          <li>Offline access is critical</li>
+          <li>Complex documents are routine</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div className={styles.Second}>
+    <ul>
+      <li>
+        <strong>Subscription usually makes sense</strong>
+        <ul>
+          <li>Better value over 2-3 years</li>
+          <li>Cloud storage included</li>
+          <li>Always current features</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Hybrid approach is valid</strong>
+        <ul>
+          <li>Desktop for complex work</li>
+          <li>Web for collaboration and mobile</li>
+          <li>Use right tool for right task</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
 
           <h3>Final Recommendation</h3>
           <p>
@@ -816,10 +817,8 @@ const WordDesktopVsWebBlogPost = () => {
                   </p>
                   
                   <div className={styles.disclaimer}>
-                      <p>All prices included in this article are in AUD and relevant as of January 2026. Please check for the latest pricing at <Link href={""}>Microsofts official website</Link></p>
+                      <p>*All prices included in this article are in AUD and relevant as of January 2026. Please check for the latest pricing at <Link href={"https://www.microsoft.com/en-au"}>Microsofts official website</Link></p>
                   </div>
-
-                  {/* Find this Link ******************* */}
 
           <div className={styles.about}>
             <div>

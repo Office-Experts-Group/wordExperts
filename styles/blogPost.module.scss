@@ -278,6 +278,12 @@
     display: none;
   }
 }
+.deskImageNoMarg {
+  margin: 0 auto;
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
 
 .BgImageContainer {
   position: relative;
@@ -790,5 +796,30 @@
   gap: 2rem;
   @media screen and (max-width: 800px) {
     flex-direction: column;
+  }
+}
+
+.evolution {
+  margin: -8rem auto -4rem auto ;
+    @media screen and (max-width: 700px) {
+    display: none;
+  }
+}
+
+.gridSplit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  @media screen and (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.disclaimer {
+  margin: 2rem auto 0 auto;
+  p {
+    font-style: italic;
+    color: $darkGrayText;
+    text-align: center;
   }
 }

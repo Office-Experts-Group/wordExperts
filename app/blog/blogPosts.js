@@ -76,7 +76,7 @@ export const blogPosts = [
     author: "Aleisha Robinson",
     readingTime: "10 min",
     category: "Conversions",
-    featured: true,
+    featured: false,
     youtubeId: null,
     imagePath: "/blog/pdf-to-word-template.webp",
   },
@@ -109,4 +109,18 @@ export const blogPosts = [
     youtubeId: null,
     imagePath: "/blog/word-mac/word-to-mac.webp",
   },
+  {
+  id: 10,
+  title: "Word Desktop vs Web: Do You Really Need to Pay?",
+  description:
+    "Compare Word for Web and desktop versions to find out which is right for you. Understand feature differences, pricing options, and when the free web version is enough for your needs.",
+  slug: "word-desktop-vs-web",
+  date: "December 15, 2025",
+  author: "Rochelle Robinson",
+  readingTime: "15 min",
+  category: "Comparison",
+  featured: true,
+  youtubeId: null,
+  imagePath: "/blog/desktop/desktop-or-web.webp",
+}
 ];
