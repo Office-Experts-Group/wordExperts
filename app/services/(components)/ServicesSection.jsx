@@ -116,6 +116,17 @@ const ServicesSection = () => {
       ],
     },
     {
+      title: "Quick Parts & Building Blocks",
+      description:
+        "Boost productivity with Quick Parts and Building Blocks that put pre-designed content at your users' fingertips. We create custom building blocks including signature blocks, common paragraphs, disclaimers, company information, formatted tables, cover pages, and frequently used document sections. Users can insert these elements with a single click, ensuring consistency and reducing document creation time.",
+      links: [
+        {
+          href: "/quick-parts",
+          text: "Quick Parts",
+        },
+      ],
+    },
+    {
       title: "Training & Support",
       description:
         "Empower your team with expert Word training and responsive support services. We provide customised training programmes covering everything from core skills to advanced template usage, automation, and best practices. Our training is task-specific and practical, designed to solve real business challenges. We offer one-on-one sessions, group meetings, remote training, and ongoing support packages.",
@@ -123,6 +134,40 @@ const ServicesSection = () => {
         {
           href: "/training",
           text: "Training Services",
+        },
+      ],
+    },
+    {
+      title: "Document Rebranding Services",
+      description:
+        "Transform your organisation's documents with professional rebranding services that implement your updated brand identity across all templates and documentation. When your company updates its logo, colour palette, or undergoes a complete visual overhaul, we ensure your Word templates reflect these changes perfectly. Our rebranding services include style sheet recreation, template redesign, image updates, brand guideline implementation, and template distribution.",
+      links: [
+        {
+          href: "/document-rebranding-services",
+          text: "Rebranding Services",
+        },
+        {
+          href: "/brand-template",
+          text: "Brand Templates",
+        },
+        {
+          href: "/corporate-identity",
+          text: "Corporate Identity",
+        },
+      ],
+    },
+    {
+      title: "Microsoft Office Integration",
+      description:
+        "As part of the Office Experts Group, we provide seamless integration between Word and other Microsoft applications. Connect your documents with Excel spreadsheets, Access databases, PowerPoint presentations, Outlook email systems, and SharePoint document management. We automate data flows across the Microsoft ecosystem, eliminate manual data entry, and ensure consistency across all your business applications.",
+      links: [
+        {
+          href: "/microsoft-word-api-integrations",
+          text: "Word API Integrations",
+        },
+        {
+          href: "https://www.officeexperts.com.au",
+          text: "Office Integration",
         },
       ],
     },
