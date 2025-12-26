@@ -3,100 +3,168 @@ import Image from "next/image";
 
 import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
-import styles from "../../../styles/howWeWork.module.css";
+import styles from "../../../styles/pageSegment3.module.css";
 
-import magnify from "../../../public/magnify.webp";
-import pencils from "../../../public/pencils.webp";
-import gears from "../../../public/gears.webp";
-import rocket from "../../../public/rocket.webp";
-import support from "../../../public/supportIcon.webp";
-import analysis from "../../../public/analysis.webp";
-import testing from "../../../public/testing.webp";
+import manufacturing from "../../../public/manufacturing.webp";
+import healthcare from "../../../public/healthcare.webp";
+import government from "../../../public/government.webp";
+import financial from "../../../public/financial.webp";
+import education from "../../../public/education.webp";
+import professional from "../../../public/professional.webp";
+import legal from "../../../public/legal.webp";
+import nonprofit from "../../../public/non-profit.webp";
+import property from "../../../public/property.webp";
+import corporate from "../../../public/corporateIcon.webp";
 
-const HowWeWork = () => {
-  const steps = [
+const IndustrySection = () => {
+  const industries = [
     {
-      icon: magnify,
-      title: "Discovery",
-      subtitle: "Understanding Your Document Needs",
-      description:
-        "We begin by listening. Our consultants meet with your team to understand your document workflows, template challenges, and business objectives. We identify inefficiencies in your current processes, discuss your vision for document automation, and establish clear project goals that align with your organisation's requirements for consistency, compliance, and efficiency.",
+      title: "Government & Public Sector",
+      description: "Accessible documents and compliance templates",
+      detail:
+        "Create WCAG-compliant documents, standardised templates for departmental use, secure document management systems, accessibility auditing, and automated reporting solutions that meet strict government compliance and security requirements.",
+      image: government,
     },
     {
-      icon: analysis,
-      title: "Analysis",
-      subtitle: "Requirements and Technical Assessment",
-      description:
-        "We conduct thorough analysis of your document requirements, evaluating existing templates, reviewing style sheets, and assessing automation opportunities. Our team examines your branding guidelines, compliance needs, user skill levels, and integration requirements. We provide honest recommendations on whether Word is the optimal solution or if alternative approaches better suit your needs.",
+      title: "Legal Services",
+      description: "Precedent documents and matter management",
+      detail:
+        "Design sophisticated precedent libraries, automated document generation from matter data, custom numbering systems for legal documents, clause libraries, contract templates, and document automation that integrates with practice management systems.",
+      image: legal,
     },
     {
-      icon: pencils,
-      title: "Design",
-      subtitle: "Template Architecture and Planning",
-      description:
-        "With requirements defined, we architect your Word solution. This may include designing template structure, planning style hierarchies, mapping automation workflows, designing custom ribbons and forms, and creating detailed specifications. We present mockups and prototypes for your review, ensuring the design meets your needs, maintains brand consistency, and supports your workflows before development begins.",
+      title: "Financial Services",
+      description: "Compliant reporting and secure documentation",
+      detail:
+        "Develop compliant document templates for financial reporting, client communications, regulatory submissions, automated calculation documents, policy templates, and secure document workflows that meet financial services regulations.",
+      image: financial,
     },
     {
-      icon: gears,
-      title: "Development",
-      subtitle: "Building Your Document Solution",
-      description:
-        "Our developers bring the design to life, building custom templates, VBA macros, user forms, content controls, building blocks, and custom ribbons. We follow best practices for template engineering, implement robust error handling, ensure cross-version compatibility, and build with future maintenance in mind. Throughout development, we maintain regular communication, providing progress updates and incorporating your feedback.",
+      title: "Healthcare & Medical",
+      description: "Patient documentation and clinical forms",
+      detail:
+        "Create patient documentation templates, clinical forms with data validation, medical reporting systems, appointment letters, referral documents, and HIPAA-compliant templates that streamline clinical workflows.",
+      image: healthcare,
     },
     {
-      icon: testing,
-      title: "Testing",
-      subtitle: "Quality Assurance and Validation",
-      description:
-        "Rigorous testing ensures your Word solution performs flawlessly. We conduct functional testing of all features, validate formatting consistency across different scenarios, test automation and macros, verify accessibility compliance where required, and check compatibility across Word versions. We involve your team in user acceptance testing, addressing any issues before deployment.",
+      title: "Education & Training",
+      description: "Academic templates and accessible materials",
+      detail:
+        "Design course materials, assessment templates, student reports, accessible educational documents, curriculum templates, and automated certificate generation that support teaching staff and adhere to accessibility standards.",
+      image: education,
     },
     {
-      icon: rocket,
-      title: "Deployment",
-      subtitle: "Implementation and Rollout",
-      description:
-        "We manage the deployment process carefully, whether implementing new templates or upgrading existing systems. This includes template distribution, add-in installation, ribbon deployment, integration with document management systems, and configuration of your IT environment. We can stage rollouts to minimise disruption or implement comprehensive system-wide deployment based on your preferences and organisational needs.",
+      title: "Professional Services",
+      description: "Proposal automation and client reporting",
+      detail:
+        "Automate proposal generation, client report templates, project documentation, statement of work templates, invoice generation, and branded communications that maintain professional standards.",
+      image: professional,
     },
     {
-      icon: support,
-      title: "Support",
-      subtitle: "Training and Ongoing Maintenance",
-      description:
-        "Our relationship doesn't end at deployment. We provide comprehensive training for your team on template usage, create detailed documentation and user guides, and offer ongoing support to ensure long-term success. Whether you need ad-hoc assistance, template updates, or a comprehensive maintenance agreement, we're here to help your Word solutions evolve with your business and adapt to changing requirements.",
+      title: "Manufacturing & Engineering",
+      description: "Technical documentation and procedures",
+      detail:
+        "Develop technical specification templates, quality control procedures, safety documentation, work instructions, equipment manuals, and ISO-compliant documentation systems that ensure consistency in technical communications.",
+      image: manufacturing,
+    },
+    {
+      title: "Corporate Enterprise",
+      description: "Global template systems and brand governance",
+      detail:
+        "Implement enterprise-wide template solutions, multi-brand document systems, automated report generation, executive communications, policy document templates, and centralised template management that enforce corporate identity.",
+      image: corporate,
+    },
+    {
+      title: "Not-for-Profit Organisations",
+      description: "Grant applications and donor communications",
+      detail:
+        "Create grant application templates, donation receipts, volunteer documentation, annual report templates, fundraising materials, and impact reporting documents that help not-for-profits communicate effectively with stakeholders.",
+      image: nonprofit,
+    },
+    {
+      title: "Property & Real Estate",
+      description: "Contract templates and property documentation",
+      detail:
+        "Design property listing templates, contract documents, tenancy agreements, inspection reports, settlement documentation, and automated property communications that streamline real estate transactions.",
+      image: property,
     },
   ];
 
   return (
-    <section className={styles.pageSegment}>
-      <div className={styles.underline}>
-        <h2>How We Work</h2>
-      </div>
-      <div className={styles.ourProcess}>
-        {steps.map((step, index) => (
-          <AnimateOnScroll
-            key={index}
-            animation="slide-up"
-            duration={1}
-            delay={0.1 * index}
+    <section
+      className={styles.pageSegment}
+      id="industries"
+      style={{
+        padding: "6rem 0 0 0",
+        scrollMarginTop: "100px",
+        margin: "0",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+        className={styles.content}
+      >
+        <AnimateOnScroll animation="fade-up" duration={1} delay={0.2}>
+          <div className={styles.underline}>
+            <h2
+              style={{
+                fontSize: "2rem",
+                textAlign: "center",
+                padding: "0 1rem",
+              }}
+            >
+              Industry-Specific Document Solutions
+            </h2>
+          </div>
+          <p
+            style={{
+              maxWidth: "100vw",
+              textAlign: "center",
+              padding: "0 10vw",
+            }}
           >
-            <div className={styles.flexHolder}>
-              <Image
-                src={step.icon}
-                width={100}
-                height={100}
-                alt={step.title}
-              />
-              <div>
-                <h3>{step.title}</h3>
-                <h4>{step.subtitle}</h4>
-                <p>{step.description}</p>
+            Our Word consultants bring deep industry knowledge and cross-sector
+            expertise to every project. Our solutions cover diverse industries
+            throughout Australia, understanding the unique document
+            requirements, compliance needs and automation challenges each sector
+            faces.
+          </p>
+        </AnimateOnScroll>
+
+        <div className={styles.useCases}>
+          {industries.map((industry, index) => (
+            <AnimateOnScroll
+              key={index}
+              animation="slide-left"
+              duration={1}
+              delay={0.2}
+            >
+              <div className={styles.gridHolder}>
+                <Image
+                  src={industry.image}
+                  width={150}
+                  height={150}
+                  alt={`${industry.title} icon`}
+                />
+                <div>
+                  <h3 style={{ color: "#046999" }}>{industry.title}</h3>
+                  <p style={{ fontWeight: "600", marginBottom: "0.5rem" }}>
+                    {industry.description}
+                  </p>
+                  <p style={{ color: "#777a7e" }}>{industry.detail}</p>
+                </div>
               </div>
-            </div>
-          </AnimateOnScroll>
-        ))}
+            </AnimateOnScroll>
+          ))}
+        </div>
       </div>
     </section>
   );
 };
 
-export default HowWeWork;
+export default IndustrySection;
