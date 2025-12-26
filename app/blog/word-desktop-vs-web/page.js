@@ -7,15 +7,14 @@ import Contact from "../../../components/Contact";
 import styles from "../../../styles/blogPost.module.scss";
 
 import rochelle from "../../../public/blog/rochelle.webp";
-import desktop from "../../../public/blog/desktop/desktop-or-web.webp"
-import evolution from "../../../public/blog/desktop/evolution.webp"
-import uni from "../../../public/blog/desktop/uni.webp"
-import marketing from "../../../public/blog/desktop/marketing.webp"
-import legal from "../../../public/blog/desktop/legal.webp"
-import value from "../../../public/blog/desktop/value.webp"
-import shark from "../../../public/blog/desktop/shark.webp"
-import lochness from "../../../public/blog/desktop/lochness.webp"
-
+import desktop from "../../../public/blog/desktop/desktop-or-web.webp";
+import evolution from "../../../public/blog/desktop/evolution.webp";
+import uni from "../../../public/blog/desktop/uni.webp";
+import marketing from "../../../public/blog/desktop/marketing.webp";
+import legal from "../../../public/blog/desktop/legal.webp";
+import value from "../../../public/blog/desktop/value.webp";
+import shark from "../../../public/blog/desktop/shark.webp";
+import lochness from "../../../public/blog/desktop/lochness.webp";
 
 const WordDesktopVsWebBlogPost = () => {
   const articleSchema = {
@@ -23,7 +22,8 @@ const WordDesktopVsWebBlogPost = () => {
     "@type": "Article",
     "@id": "https://www.wordexperts.com.au/blog/word-desktop-vs-web",
 
-    headline: "Word Desktop vs Web: Do You Really Need to Pay for Microsoft 365?",
+    headline:
+      "Word Desktop vs Web: Do You Really Need to Pay for Microsoft 365?",
     alternativeHeadline:
       "Free Word Online vs Desktop: Complete Feature Comparison for Business",
     description:
@@ -56,9 +56,7 @@ const WordDesktopVsWebBlogPost = () => {
     wordCount: 3500,
     timeRequired: "PT15M",
 
-    keywords: [
-      "Word desktop vs web",
-    ],
+    keywords: ["Word desktop vs web"],
 
     mainEntityOfPage: {
       "@type": "WebPage",
@@ -133,9 +131,20 @@ const WordDesktopVsWebBlogPost = () => {
           <p>
             Microsoft offers Word for "free" through the web. But is it really
             enough for professional work? Understanding what you lose helps you
-            decide. For personal-use the free version will often suffice, small businesses can also get away without the subscription fee. But often there is a tipping point where users find themselves needing more features, or suffering through<Link href={"/remove-repetition-and-increase-productivity"}> tireless repetitive tasks</Link>.
+            decide. For personal-use the free version will often suffice, small
+            businesses can also get away without the subscription fee. But often
+            there is a tipping point where users find themselves needing more
+            features, or suffering through
+            <Link href={"/remove-repetition-and-increase-productivity"}>
+              {" "}
+              tireless repetitive tasks
+            </Link>
+            .
           </p>
-          <p>Can you skip the subscription? What do you actually get for paying? When is free Word sufficient?</p>
+          <p>
+            Can you skip the subscription? What do you actually get for paying?
+            When is free Word sufficient?
+          </p>
 
           <h2>What Is "Word for Web"?</h2>
           <p>
@@ -177,79 +186,93 @@ const WordDesktopVsWebBlogPost = () => {
 
           <div className={styles.gridSplit}>
             <div className={styles.gridFirst}>
+              <h3>What Web Version CAN Do...</h3>
 
-          <h3>What Web Version CAN Do...</h3>
-          
-          <h4>Basic Document Creation</h4>
-          <ul>
-            <li>Text formatting (bold, italic, fonts, sizes)</li>
-            <li>Paragraphs and spacing</li>
-            <li>Bullets and numbering</li>
-            <li>Simple tables</li>
-            <li>Insert images and links</li>
-            <li>Spell check</li>
-          </ul>
+              <h4>Basic Document Creation</h4>
+              <ul>
+                <li>Text formatting (bold, italic, fonts, sizes)</li>
+                <li>Paragraphs and spacing</li>
+                <li>Bullets and numbering</li>
+                <li>Simple tables</li>
+                <li>Insert images and links</li>
+                <li>Spell check</li>
+              </ul>
 
-          <h4>Collaboration Features</h4>
-          <ul>
-            <li>Real-time co-authoring</li>
-            <li>Comments and @mentions</li>
-            <li>Share links with permissions</li>
-            <li>Version history</li>
-            <li>Works on any device</li>
-          </ul>
+              <h4>Collaboration Features</h4>
+              <ul>
+                <li>Real-time co-authoring</li>
+                <li>Comments and @mentions</li>
+                <li>Share links with permissions</li>
+                <li>Version history</li>
+                <li>Works on any device</li>
+              </ul>
 
-          <h4>Cloud Benefits</h4>
-          <ul>
-            <li>Auto-saves to OneDrive</li>
-            <li>Access anywhere with internet</li>
-            <li>No software to install or update</li>
-            <li>Works on Chromebooks, tablets</li>
-          </ul>
-            </div>
-            
-              <div className={styles.gridSecond}>
-          <h3>What Web Version CANNOT Do...</h3>
-
-          <h4>Advanced Formatting</h4>
-          <ul>
-            <li>Limited style options</li>
-            <li>Fewer fonts available</li>
-            <li>No advanced layout tools</li>
-            <li>Limited header/footer options</li>
-            <li>No background colors or watermarks</li>
-            <li>Reduced table formatting</li>
-          </ul>
-
-          <h4>Professional Features</h4>
-          <ul>
-            <li>No<Link href={"/mail-merge"}> mail merge</Link></li>
-            <li>No macros or<Link href={"/remove-repetition-and-increase-productivity"}> automation</Link></li>
-            <li>Can't install<Link href={"https://www.excelexperts.com.au/add-in-development"}> add-ins</Link></li>
-            <li>No developer tools</li>
-            <li>Limited SmartArt</li>
-            <li>No bibliography tools</li>
-            <li>Reduced citation management</li>
-          </ul>
-
-          <h4>Offline Work</h4>
-          <ul>
-            <li>Must have internet connection (mostly)</li>
-            <li>Limited offline editing (recent browser features help)</li>
-            <li>Can't access without login</li>
-          </ul>
-
-          <h4>File Management</h4>
-          <ul>
-            <li>Can't open local files directly (must upload)</li>
-            <li>Limited file format support</li>
-            <li>Can't save as PDF easily (print to PDF workaround)</li>
-            <li>No "Save As" to local computer (must download)</li>
-            </ul>
-            </div>
+              <h4>Cloud Benefits</h4>
+              <ul>
+                <li>Auto-saves to OneDrive</li>
+                <li>Access anywhere with internet</li>
+                <li>No software to install or update</li>
+                <li>Works on Chromebooks, tablets</li>
+              </ul>
             </div>
 
-          
+            <div className={styles.gridSecond}>
+              <h3>What Web Version CANNOT Do...</h3>
+
+              <h4>Advanced Formatting</h4>
+              <ul>
+                <li>Limited style options</li>
+                <li>Fewer fonts available</li>
+                <li>No advanced layout tools</li>
+                <li>Limited header/footer options</li>
+                <li>No background colors or watermarks</li>
+                <li>Reduced table formatting</li>
+              </ul>
+
+              <h4>Professional Features</h4>
+              <ul>
+                <li>
+                  No<Link href={"/mail-merge"}> mail merge</Link>
+                </li>
+                <li>
+                  No macros or
+                  <Link href={"/remove-repetition-and-increase-productivity"}>
+                    {" "}
+                    automation
+                  </Link>
+                </li>
+                <li>
+                  Can't install
+                  <Link
+                    href={"https://www.excelexperts.com.au/add-in-development"}
+                  >
+                    {" "}
+                    add-ins
+                  </Link>
+                </li>
+                <li>No developer tools</li>
+                <li>Limited SmartArt</li>
+                <li>No bibliography tools</li>
+                <li>Reduced citation management</li>
+              </ul>
+
+              <h4>Offline Work</h4>
+              <ul>
+                <li>Must have internet connection (mostly)</li>
+                <li>Limited offline editing (recent browser features help)</li>
+                <li>Can't access without login</li>
+              </ul>
+
+              <h4>File Management</h4>
+              <ul>
+                <li>Can't open local files directly (must upload)</li>
+                <li>Limited file format support</li>
+                <li>Can't save as PDF easily (print to PDF workaround)</li>
+                <li>No "Save As" to local computer (must download)</li>
+              </ul>
+            </div>
+          </div>
+
           <div className={styles.quote}>
             <blockquote>
               <p>
@@ -279,56 +302,70 @@ const WordDesktopVsWebBlogPost = () => {
           />
 
           <h2>What Desktop Versions Offer</h2>
-      
+
           <div className={styles.gridSplit}>
             <div className={styles.gridFirst}>
-          <h3>Full Feature Set</h3>
-          <ul>
-            <li>All formatting options</li>
-            <li>Complete style and <Link href="/corporate-global-template-solution">template system</Link></li>
-            <li>Advanced layout tools</li>
-            <li>Professional publishing features</li>
-          </ul>
-
-          <h3>Automation & Productivity</h3>
-          <ul>
-            <li>Macros (Windows fully, Mac limited)</li>
-            <li>Mail merge for bulk documents</li>
-                <li><Link href={"/quick-parts"}>Quick Parts</Link> and AutoText</li>
-            <li>Custom keyboard shortcuts</li>
-          </ul>
-
-          <h3>Professional Tools</h3>
-          <ul>
-            <li>Bibliography and citations</li>
-            <li>Table of contents automation</li>
-            <li>Cross-references</li>
-            <li>Index and table of figures</li>
-            <li><Link href={"/fill-in-forms"}>Form controls</Link></li>
-            <li>Developer tools</li>
+              <h3>Full Feature Set</h3>
+              <ul>
+                <li>All formatting options</li>
+                <li>
+                  Complete style and{" "}
+                  <Link href="/corporate-global-template-solution">
+                    template system
+                  </Link>
+                </li>
+                <li>Advanced layout tools</li>
+                <li>Professional publishing features</li>
               </ul>
-              </div>
+
+              <h3>Automation & Productivity</h3>
+              <ul>
+                <li>Macros (Windows fully, Mac limited)</li>
+                <li>Mail merge for bulk documents</li>
+                <li>
+                  <Link href={"/quick-parts"}>Quick Parts</Link> and AutoText
+                </li>
+                <li>Custom keyboard shortcuts</li>
+              </ul>
+
+              <h3>Professional Tools</h3>
+              <ul>
+                <li>Bibliography and citations</li>
+                <li>Table of contents automation</li>
+                <li>Cross-references</li>
+                <li>Index and table of figures</li>
+                <li>
+                  <Link href={"/fill-in-forms"}>Form controls</Link>
+                </li>
+                <li>Developer tools</li>
+              </ul>
+            </div>
 
             <div className={styles.gridFirst}>
-          <h3>Better Performance</h3>
-          <ul>
-            <li>Handles large documents (100+ pages)</li>
-            <li>Faster for complex formatting</li>
-            <li>No lag from internet connection</li>
-            <li>Offline access always available</li>
-          </ul>
+              <h3>Better Performance</h3>
+              <ul>
+                <li>Handles large documents (100+ pages)</li>
+                <li>Faster for complex formatting</li>
+                <li>No lag from internet connection</li>
+                <li>Offline access always available</li>
+              </ul>
 
-          <h3>Integration</h3>
-          <ul>
-            <li>Better Outlook integration</li>
-            <li>Works with local files and network drives</li>
-            <li>Add-in ecosystem (thousands available)</li>
-                <li><Link href={"/blog/pdf-to-word-conversion"}> Advanced PDF tools</Link></li>
-          </ul>
+              <h3>Integration</h3>
+              <ul>
+                <li>Better Outlook integration</li>
+                <li>Works with local files and network drives</li>
+                <li>Add-in ecosystem (thousands available)</li>
+                <li>
+                  <Link href={"/blog/pdf-to-word-conversion"}>
+                    {" "}
+                    Advanced PDF tools
+                  </Link>
+                </li>
+              </ul>
             </div>
-            </div>
+          </div>
 
-                   <div className={styles.quote}>
+          <div className={styles.quote}>
             <blockquote>
               <p>
                 "Track changes and advanced collaboration: While basic
@@ -357,73 +394,78 @@ const WordDesktopVsWebBlogPost = () => {
               width={250}
               height={250}
               className={styles.BgImage}
-              style={{top: "0rem"}}
+              style={{ top: "0rem" }}
             />
 
-          <h3>Scenario 1: University Student</h3>
-          <p>
-            <strong>Needs -</strong> Essays, basic reports, collaboration with
-            classmates
-          </p>
-          <p>
-            <strong>Best Choice -</strong> Word for Web (free)
-          </p>
-          <p>
-            <strong>Why?</strong> Basic formatting sufficient, collaboration
-            important, saves money for more instant noodles!
-          </p>
-          <p>
-            <strong>I would Upgrade if...</strong> Writing thesis/dissertation (desktop
-            for citations, large docs)
-          </p>
+            <h3>Scenario 1: University Student</h3>
+            <p>
+              <strong>Needs -</strong> Essays, basic reports, collaboration with
+              classmates
+            </p>
+            <p>
+              <strong>Best Choice -</strong> Word for Web (free)
+            </p>
+            <p>
+              <strong>Why?</strong> Basic formatting sufficient, collaboration
+              important, saves money for more instant noodles!
+            </p>
+            <p>
+              <strong>I would Upgrade if...</strong> Writing thesis/dissertation
+              (desktop for citations, large docs)
+            </p>
           </div>
-          
+
           <h3>Scenario 2: Small Business Owner</h3>
           <p>
             <strong>Needs -</strong> Letters, invoices, basic documents
           </p>
           <p>
-            <strong>Best Choice -</strong>  
+            <strong>Best Choice -</strong>
             ($~9/user/month for web/mobile)
-                  </p>
-                  {/* check this is not in USD**************** */}
+          </p>
+          {/* check this is not in USD**************** */}
           <p>
             <strong>Why?</strong> Professional email included, basic needs met,
-            low cost considering the features and benefits yielded over the free version.
+            low cost considering the features and benefits yielded over the free
+            version.
           </p>
           <p>
-            <strong>I would Upgrade if...</strong> You need mail merge for customer
-            communications, complex templates
+            <strong>I would Upgrade if...</strong> You need mail merge for
+            customer communications, complex templates
           </p>
 
-                   <div className={styles.BgImageContainer}>
+          <div className={styles.BgImageContainer}>
             <Image
               src={legal}
               alt="legal professional graphic"
               width={250}
               height={250}
               className={styles.BgImage}
-              style={{top: "0rem"}}
+              style={{ top: "0rem" }}
             />
-          <h3>Scenario 3: Legal Professional</h3>
-          <p>
-            <strong>Needs -</strong> Large documents, precise formatting,
-            templates,<Link href={"/mail-merge"}> mail merge</Link>
-          </p>
-          <p>
-            <strong>Best Choice -</strong> Microsoft 365 with Desktop Apps
-            (Business Standard or higher, $~19/user/month)
-                  </p>
-          <p>
-            <strong>Why?</strong> Advanced features essential, document quality
-            critical,<Link href={"/remove-repetition-and-increase-productivity"}> automation needed</Link>
-          </p>
-          <p>
-            <strong>Web Version -</strong> Use for quick edits only
+            <h3>Scenario 3: Legal Professional</h3>
+            <p>
+              <strong>Needs -</strong> Large documents, precise formatting,
+              templates,<Link href={"/mail-merge"}> mail merge</Link>
             </p>
-            </div>
+            <p>
+              <strong>Best Choice -</strong> Microsoft 365 with Desktop Apps
+              (Business Standard or higher, $~19/user/month)
+            </p>
+            <p>
+              <strong>Why?</strong> Advanced features essential, document
+              quality critical,
+              <Link href={"/remove-repetition-and-increase-productivity"}>
+                {" "}
+                automation needed
+              </Link>
+            </p>
+            <p>
+              <strong>Web Version -</strong> Use for quick edits only
+            </p>
+          </div>
 
-          <div className={styles.quote} style={{marginTop: "4rem"}}>
+          <div className={styles.quote} style={{ marginTop: "4rem" }}>
             <blockquote>
               <p>
                 "For those who need to execute more complex and customized
@@ -442,34 +484,34 @@ const WordDesktopVsWebBlogPost = () => {
             </cite>
           </div>
 
-                    <div className={styles.BgImageContainer}>
+          <div className={styles.BgImageContainer}>
             <Image
               src={marketing}
               alt="marketing graphic"
               width={250}
               height={250}
               className={styles.BgImage}
-              style={{top: "6rem"}}
+              style={{ top: "6rem" }}
             />
-          <h3>Scenario 4: Marketing Team</h3>
-          <p>
-            <strong>Needs -</strong> Collaborative editing, proposals,
-            presentations
-          </p>
-          <p>
-            <strong>Best Choice -</strong> Microsoft 365 Subscription (includes
-            desktop + web)
-          </p>
-          <p>
-            <strong>Why?</strong> Desktop for complex work, web for
-            collaboration
-          </p>
-          <p>
-            <strong>Strategy...</strong> Use desktop for creation, web for team
-            review/edits
-          </p>
+            <h3>Scenario 4: Marketing Team</h3>
+            <p>
+              <strong>Needs -</strong> Collaborative editing, proposals,
+              presentations
+            </p>
+            <p>
+              <strong>Best Choice -</strong> Microsoft 365 Subscription
+              (includes desktop + web)
+            </p>
+            <p>
+              <strong>Why?</strong> Desktop for complex work, web for
+              collaboration
+            </p>
+            <p>
+              <strong>Strategy...</strong> Use desktop for creation, web for
+              team review/edits
+            </p>
           </div>
-          
+
           <h3>Scenario 5: Freelance Writer</h3>
           <p>
             <strong>Needs -</strong> Long documents, reliable offline access,
@@ -478,7 +520,7 @@ const WordDesktopVsWebBlogPost = () => {
           <p>
             <strong>Best Choice -</strong> Microsoft 365 Personal ($12/month) or
             Office 2021 (~160/year)
-                  </p>
+          </p>
           <p>
             <strong>Why?</strong> Desktop features essential for professional
             work, 1TB OneDrive valuable
@@ -515,17 +557,16 @@ const WordDesktopVsWebBlogPost = () => {
               <ul>
                 <li>1 user, desktop apps, 1TB storage</li>
               </ul>
-                      </li>
-              {/* check this is not in USD**************** */}
+            </li>
+            {/* check this is not in USD**************** */}
 
             <li>
               <strong>Microsoft 365 Family -</strong> $18/month or $179/year
               <ul>
                 <li>6 users, desktop apps, 1TB each</li>
               </ul>
-                      </li>
-          {/* check this is not in USD**************** */}
-
+            </li>
+            {/* check this is not in USD**************** */}
           </ul>
 
           <h4>Business Use</h4>
@@ -535,25 +576,24 @@ const WordDesktopVsWebBlogPost = () => {
               <ul>
                 <li>Web/mobile apps only, 1TB storage, business email</li>
               </ul>
-                      </li>
-                  {/* check this is not in USD**************** */}
+            </li>
+            {/* check this is not in USD**************** */}
 
             <li>
               <strong>Business Standard -</strong> $19/user/month
               <ul>
                 <li>Desktop apps included, everything in Basic</li>
               </ul>
-                      </li>
-             {/* check this is not in USD**************** */}
+            </li>
+            {/* check this is not in USD**************** */}
 
             <li>
               <strong>Business Premium -</strong> $33/user/month
               <ul>
                 <li>Advanced security and device management</li>
               </ul>
-                      </li>
-          {/* check this is not in USD**************** */}
-
+            </li>
+            {/* check this is not in USD**************** */}
           </ul>
 
           <h3>One-Time Purchase</h3>
@@ -564,7 +604,7 @@ const WordDesktopVsWebBlogPost = () => {
                 <li>Desktop apps, no OneDrive, no updates</li>
                 <li>For non-commercial use</li>
               </ul>
-                      </li>
+            </li>
 
             <li>
               <strong>Office Home & Business 2024:</strong> $379
@@ -572,36 +612,35 @@ const WordDesktopVsWebBlogPost = () => {
                 <li>Includes Outlook</li>
                 <li>Available for for commercial use</li>
               </ul>
-                      </li>
-
+            </li>
           </ul>
 
           <h2>Decision Framework</h2>
 
           <div className={styles.gridSplit}>
             <div className={styles.gridFirst}>
-          <h3>Choose FREE Web Version If...</h3>
-          <ul>
-            <li>Documents are simple (letters, memos, basic reports)</li>
-            <li>Heavy collaboration is your priority</li>
-            <li>You access from many different devices</li>
-            <li>Budget is extremely tight</li>
-            <li>You're supplementing a desktop version</li>
-            <li>Students with basic needs</li>
-          </ul>
+              <h3>Choose FREE Web Version If...</h3>
+              <ul>
+                <li>Documents are simple (letters, memos, basic reports)</li>
+                <li>Heavy collaboration is your priority</li>
+                <li>You access from many different devices</li>
+                <li>Budget is extremely tight</li>
+                <li>You're supplementing a desktop version</li>
+                <li>Students with basic needs</li>
+              </ul>
             </div>
             <div className={styles.gridSecond}>
-          <h3>Choose PAID Desktop Version If...</h3>
-          <ul>
-            <li>You work with large or complex documents</li>
-            <li>Professional formatting is important</li>
-            <li>You need automation (mail merge, macros)</li>
-            <li>Offline access is essential</li>
-            <li>Your industry requires desktop features</li>
-            <li>You need add-ins or developer tools</li>
-          </ul>
+              <h3>Choose PAID Desktop Version If...</h3>
+              <ul>
+                <li>You work with large or complex documents</li>
+                <li>Professional formatting is important</li>
+                <li>You need automation (mail merge, macros)</li>
+                <li>Offline access is essential</li>
+                <li>Your industry requires desktop features</li>
+                <li>You need add-ins or developer tools</li>
+              </ul>
             </div>
-            </div>
+          </div>
           <div className={styles.quote}>
             <blockquote>
               <p>
@@ -627,7 +666,10 @@ const WordDesktopVsWebBlogPost = () => {
             <li>1TB cloud storage is valuable</li>
             <li>You use multiple devices</li>
             <li>You need mobile app access</li>
-            <li><Link href={"/training"}>Support</Link> and <Link href={"/upgrades-and-migration"}>updates</Link> matter</li>
+            <li>
+              <Link href={"/training"}>Support</Link> and{" "}
+              <Link href={"/upgrades-and-migration"}>updates</Link> matter
+            </li>
           </ul>
 
           <Image
@@ -643,27 +685,27 @@ const WordDesktopVsWebBlogPost = () => {
           <h3>How to Use Both Effectively</h3>
 
           <div className={styles.gridSplit}>
-          <div className={styles.gridFirst}>
-          <h4>Use Desktop for...</h4>
-          <ul>
-            <li>Creating complex documents</li>
-            <li>Formatting and layout</li>
-            <li>Mail merge and automation</li>
-            <li>Working offline</li>
-            <li>Final polishing</li>
-          </ul>
+            <div className={styles.gridFirst}>
+              <h4>Use Desktop for...</h4>
+              <ul>
+                <li>Creating complex documents</li>
+                <li>Formatting and layout</li>
+                <li>Mail merge and automation</li>
+                <li>Working offline</li>
+                <li>Final polishing</li>
+              </ul>
             </div>
             <div className={styles.gridSecond}>
-          <h4>Use Web for...</h4>
-          <ul>
-            <li>Quick edits on the go</li>
-            <li>Team collaboration</li>
-            <li>Reviewing and commenting</li>
-            <li>Accessing from shared/public computers</li>
-            <li>Mobile device access</li>
-          </ul>
+              <h4>Use Web for...</h4>
+              <ul>
+                <li>Quick edits on the go</li>
+                <li>Team collaboration</li>
+                <li>Reviewing and commenting</li>
+                <li>Accessing from shared/public computers</li>
+                <li>Mobile device access</li>
+              </ul>
             </div>
-            </div>
+          </div>
           <div className={styles.quote}>
             <blockquote>
               <p>
@@ -684,48 +726,48 @@ const WordDesktopVsWebBlogPost = () => {
             </cite>
           </div>
 
-                    <div className={styles.BgImageContainer}>
+          <div className={styles.BgImageContainer}>
             <Image
               src={lochness}
               alt="lochness graphicc"
               width={600}
               height={400}
               className={styles.BgImage}
-              style={{top: "6rem"}}
+              style={{ top: "6rem" }}
             />
-          <h2>Common Misconceptions</h2>
+            <h2>Common Misconceptions</h2>
 
-          <h3>Myth 1: "Web version is just a limited trial"</h3>
-          <p>
-            <strong>Reality -</strong> It's a permanent, free product, just with
-            fewer features.
-          </p>
+            <h3>Myth 1: "Web version is just a limited trial"</h3>
+            <p>
+              <strong>Reality -</strong> It's a permanent, free product, just
+              with fewer features.
+            </p>
 
-          <h3>Myth 2: "I can't collaborate without desktop version"</h3>
-          <p>
-            <strong>Reality -</strong> Web version's collaboration is actually
-            superior for real-time editing.
-          </p>
+            <h3>Myth 2: "I can't collaborate without desktop version"</h3>
+            <p>
+              <strong>Reality -</strong> Web version's collaboration is actually
+              superior for real-time editing.
+            </p>
 
-          <h3>Myth 3: "Subscription means I don't own my software"</h3>
-          <p>
-            <strong>Reality -</strong> You own your documents; subscription is
-            for app access and services.
-          </p>
+            <h3>Myth 3: "Subscription means I don't own my software"</h3>
+            <p>
+              <strong>Reality -</strong> You own your documents; subscription is
+              for app access and services.
+            </p>
 
-          <h3>Myth 4: "One-time purchase is always cheaper"</h3>
-          <p>
-            <strong>Reality -</strong> Over 3+ years, subscription often better
-            value (includes storage + updates)
-          </p>
+            <h3>Myth 4: "One-time purchase is always cheaper"</h3>
+            <p>
+              <strong>Reality -</strong> Over 3+ years, subscription often
+              better value (includes storage + updates)
+            </p>
 
-          <h3>Myth 5: "Web version requires constant internet"</h3>
-          <p>
-            <strong>Reality -</strong> Recent browsers offer offline editing
-            (though limited).
-          </p>
+            <h3>Myth 5: "Web version requires constant internet"</h3>
+            <p>
+              <strong>Reality -</strong> Recent browsers offer offline editing
+              (though limited).
+            </p>
           </div>
-          
+
           <h2>Migration Path: Starting Free, Upgrading Later</h2>
 
           <h3>How to Test Before Buying</h3>
@@ -758,50 +800,50 @@ const WordDesktopVsWebBlogPost = () => {
             </li>
           </ul>
 
-         <h2>Key Takeaways</h2>
-<div className={styles.gridSplit}>
-  <div className={styles.gridFirst}>
-    <ul>
-      <li>
-        <strong>Web version is legitimately useful</strong>
-        <ul>
-          <li>Not just a "teaser" for desktop</li>
-          <li>Sufficient for many users</li>
-          <li>Excellent for collaboration</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Desktop version worth paying for IF?!?</strong>
-        <ul>
-          <li>Professional work demands it</li>
-          <li>Automation saves you time</li>
-          <li>Offline access is critical</li>
-          <li>Complex documents are routine</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-  <div className={styles.Second}>
-    <ul>
-      <li>
-        <strong>Subscription usually makes sense</strong>
-        <ul>
-          <li>Better value over 2-3 years</li>
-          <li>Cloud storage included</li>
-          <li>Always current features</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Hybrid approach is valid</strong>
-        <ul>
-          <li>Desktop for complex work</li>
-          <li>Web for collaboration and mobile</li>
-          <li>Use right tool for right task</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</div>
+          <h2>Key Takeaways</h2>
+          <div className={styles.gridSplit}>
+            <div className={styles.gridFirst}>
+              <ul>
+                <li>
+                  <strong>Web version is legitimately useful</strong>
+                  <ul>
+                    <li>Not just a "teaser" for desktop</li>
+                    <li>Sufficient for many users</li>
+                    <li>Excellent for collaboration</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Desktop version worth paying for IF?!?</strong>
+                  <ul>
+                    <li>Professional work demands it</li>
+                    <li>Automation saves you time</li>
+                    <li>Offline access is critical</li>
+                    <li>Complex documents are routine</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div className={styles.Second}>
+              <ul>
+                <li>
+                  <strong>Subscription usually makes sense</strong>
+                  <ul>
+                    <li>Better value over 2-3 years</li>
+                    <li>Cloud storage included</li>
+                    <li>Always current features</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Hybrid approach is valid</strong>
+                  <ul>
+                    <li>Desktop for complex work</li>
+                    <li>Web for collaboration and mobile</li>
+                    <li>Use right tool for right task</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
 
           <h3>Final Recommendation</h3>
           <p>
@@ -811,11 +853,17 @@ const WordDesktopVsWebBlogPost = () => {
             Students and casual users can often thrive on the free web version.
             Test your actual workflow before purchasing to avoid paying for
             features you don't need.
-                  </p>
-                  
-                  <div className={styles.disclaimer}>
-                      <p>*All prices included in this article are in AUD and relevant as of January 2026. Please check for the latest pricing at <Link href={"https://www.microsoft.com/en-au"}>Microsofts official website</Link></p>
-                  </div>
+          </p>
+
+          <div className={styles.disclaimer}>
+            <p>
+              *All prices included in this article are in AUD and relevant as of
+              January 2026. Please check for the latest pricing at{" "}
+              <Link href={"https://www.microsoft.com/en-au"}>
+                Microsofts official website
+              </Link>
+            </p>
+          </div>
 
           <div className={styles.about}>
             <div>

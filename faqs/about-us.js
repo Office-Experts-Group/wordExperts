@@ -1,5 +1,10 @@
 const faqs = [
   {
+    question: "Can you integrate Word with other Microsoft Office apps?",
+    answer:
+      "As part of the Office Experts Group, we provide seamless access to specialists across all Microsoft Office applications. When your Word solutions need to integrate with Access databases, Excel Spreadsheets, PowerPoint presentations, or other Office tools, our broader team ensures complete compatibility.",
+  },
+  {
     question:
       "What makes Word Experts different from general Microsoft Office consultants?",
     answer:

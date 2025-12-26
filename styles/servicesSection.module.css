@@ -1,0 +1,150 @@
+.servicesSection {
+  position: relative;
+  padding: 6rem 0;
+  background-color: #f6f6f6;
+}
+
+.backgroundImage {
+  position: absolute;
+  opacity: 0.4;
+}
+@media (max-width: 449px) {
+  .backgroundImage {
+    display: none;
+  }
+}
+
+.top {
+  top: -4rem;
+  right: 0;
+}
+
+.bottom {
+  bottom: -8rem;
+  left: 4rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.sectionHeader {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 4rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: #046999;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+.sectionTitle::after {
+  content: "";
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4rem;
+  height: 4px;
+  background-color: #046999;
+}
+
+.sectionSubtitle {
+  font-size: 1.1rem;
+  color: #777a7e;
+  margin-top: 2rem;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2.5rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .servicesGrid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 449px) {
+  .servicesGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.serviceCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  height: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2;
+}
+.serviceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.serviceTitle {
+  color: #046999;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+}
+
+.serviceDescription {
+  color: #777a7e;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.serviceLinks {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.serviceLink {
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background-color: #046999;
+  border-radius: 0.25rem;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.serviceLink:hover {
+  background-color: #f2f3f5;
+  color: #333;
+}
+.serviceLink:hover .linkIcon {
+  stroke: #046999;
+}
+.serviceLink span {
+  font-size: 0.9rem;
+}
+
+.linkIcon {
+  width: 16px;
+  height: 16px;
+  stroke: white;
+  fill: none;
+  transition: stroke 0.3s ease;
+  flex-shrink: 0;
+}/*# sourceMappingURL=servicesSection.module.css.map */

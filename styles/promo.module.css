@@ -64,6 +64,11 @@
   font-weight: 900;
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 700px) {
+  .text h2 {
+    text-align: center;
+  }
+}
 .text p {
   color: #777a7e;
   line-height: 2rem;
@@ -73,13 +78,16 @@
   .text p {
     text-align: center;
   }
-  .text h2 {
-  align-items: center;
-}
 }
 @media (min-width: 450px) and (max-width: 766px) {
   .text p {
     text-align: center;
+  }
+}
+@media (max-width: 449px) {
+  .text p {
+    align-items: center;
+    justify-content: center;
   }
 }
 .text a {

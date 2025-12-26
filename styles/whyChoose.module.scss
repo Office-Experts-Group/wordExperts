@@ -8,6 +8,7 @@
   gap: 3rem;
   background-color: $grayBGC;
   overflow: hidden;
+  z-index: -1;
 
   @include phone {
     display: flex;

@@ -1,0 +1,63 @@
+@import "./globals.scss";
+
+.pageSegment {
+  scroll-margin-top: 100px;
+  padding: 1rem 10vw 4rem 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+
+  p {
+    color: $darkGrayText;
+    line-height: 2rem;
+    max-width: 80%;
+  }
+
+  @include phone {
+    padding: 2rem 1rem;
+    p {
+      max-width: 100%;
+    }
+  }
+  @include phoneLandscape {
+    p {
+      max-width: 100%;
+    }
+  }
+  @include tablet {
+    flex-direction: column-reverse;
+  }
+}
+
+.flexHolder {
+  display: flex;
+  gap: 5vw;
+  margin-bottom: 3rem;
+  img {
+    margin-left: auto;
+    align-self: center;
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  h3 {
+    color: $theme;
+    font-size: 1.25rem;
+  }
+}
+
+.underline {
+  border-bottom: 3px solid $theme;
+  h1 {
+    padding: 0 2rem;
+  }
+}
