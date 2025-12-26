@@ -97,7 +97,7 @@ const IndustrySection = () => {
       style={{
         padding: "6rem 0 0 0",
         scrollMarginTop: "100px",
-        margin: "0",
+        margin: "0 0 3rem 0",
       }}
     >
       <div

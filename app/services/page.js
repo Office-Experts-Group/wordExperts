@@ -317,10 +317,10 @@ const Page = () => {
       <ServicesSection />
       <WhyChooseUs />
       <IndustrySection />
+      <ExpertsAwait />
       <HowWeWork />
       <AustraliaWide />
       <Testimonials testimonials={testimonials} />
-      <ExpertsAwait />
       <Contact />
     </>
   );
