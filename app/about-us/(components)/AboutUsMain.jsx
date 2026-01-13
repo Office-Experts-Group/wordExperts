@@ -20,14 +20,14 @@ const AboutUsMain = () => {
           </h2>
           <p className={styles.themeText}>
             We're a team of Word consultants and developers based in Australia,
-            with deep experience across all major versions of Microsoft Word—
-            from Word 2000 to Microsoft 365—on both PC and Mac.
+            with deep experience across all major versions of Microsoft Word, 
+            from Word 2000 to Microsoft 365 - on both PC and Mac.
           </p>
           <div className={styles.text}>
             <p>
               Whether you're a business needing advanced document automation, a
               legal team after precision templates, or anyone frustrated with
-              clunky Word files—we're here to help. Our unique blend of
+              clunky Word files... We're here to help. Our unique blend of
               technical development and practical business know-how allows us to
               deliver smart, time-saving solutions like custom ribbons,
               toolbars, and document workflows tailored to your needs.

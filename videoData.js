@@ -55,7 +55,7 @@ export const videoData = [
       <ul>
         <li>Number of rows</li>
         <li>Number of columns</li>
-        <li>Table Style – a drop-down list of specific table styles to be applied to the table</li>
+        <li>Table Style â€“ a drop-down list of specific table styles to be applied to the table</li>
         <li>Table Caption - a check box to indicate that a caption is required for the table with a prompt for the user to enter the caption text</li>
       </ul>
       <p>When the user clicks on the 'Update Document' button within the form, the system will insert a table into the document at the current cursor position. The table will take up the full width of the page and have the selected table style applied. The table will also be automatically captioned if the table caption option was selected. The 'Format Table' pop-up will then be displayed immediately after the new table is inserted so that the user can apply the table formatting options.</p>
@@ -246,6 +246,67 @@ export const videoData = [
     thumbnailUrl: "/videos/thumbnails/multi-level-list-clean-up-button.webp",
     category: "Buttons",
     featured: false,
+  },
+  {
+    id: "insert-table-of-contents-button",
+    title: "Insert Table of Contents Button",
+    description: `
+      <p>The <strong>'Insert Table of Contents'</strong> button allows the user to choose from a range of TOC options, including a Table of Contents with one to three levels, a Table of Appendices, a Table of Tables, and a Table of Figures.</p>
+    `,
+    videoUrl: "/videos/insert-table-of-contents-button.mp4",
+    url: "/videos/insert-table-of-contents-button",
+    duration: 34,
+    uploadDate: "2025-01-13T00:00:00+00:00",
+    thumbnailUrl: "/videos/thumbnails/insert-table-of-contents-button.webp",
+    category: "Buttons",
+    featured: false,
+    canvaId: "DAGfubKPWAg",
+  },
+  {
+    id: "table-subheading-row-button",
+    title: "Apply Table Sub Header/Format Cells Button",
+    description: `
+      <p>Users select the cells in an existing table that they want to apply the formatting to prior to making their selection from the menu button. Users can select entire rows, columns or individual cells in a table.</p>
+    `,
+    videoUrl: "/videos/table-subheading-row-button.mp4",
+    url: "/videos/table-subheading-row-button",
+    duration: 12,
+    uploadDate: "2025-01-13T00:00:00+00:00",
+    thumbnailUrl: "/videos/thumbnails/table-subheading-row-button.webp",
+    category: "Buttons",
+    featured: false,
+    canvaId: "DAGft_s_3Ro",
+  },
+  {
+    id: "chart-templates-button",
+    title: "Chart Templates Button",
+    description: `
+      <p>The <strong>'Chart Templates'</strong> button will be added to the 'Company Formatting' tab. Upon selection of a chart, the user can navigate to 'Templates' from the 'Chart Templates' button and select from the predefined 'Chart Templates'. The 'Chart Template' will apply the required chart formatting, keeping consistency across your document.</p>
+    `,
+    videoUrl: "/videos/chart-templates-button.mp4",
+    url: "/videos/chart-templates-and-button",
+    duration: 27,
+    uploadDate: "2025-01-13T00:00:00+00:00",
+    thumbnailUrl: "/videos/thumbnails/chart-templates-button.webp",
+    category: "Buttons",
+    featured: false,
+    canvaId: "DAG2gBq4WN4",
+  },
+  {
+    id: "lists",
+    title: "Lists",
+    description: `
+      <p>The user will select the <strong>'Bullet List'</strong>, <strong>'Numbered List'</strong> button or the <strong>'List Continue'</strong> button to apply their Bullets and Numbered List styles.</p>
+      <p><em>Note: The 'Numbered List' button contains functionality to reset the numbering back to one between paragraphs of 'Normal' text style or a heading style, so the users do not need to restart the list numbering back to one manually. If the user does not want the numbering to restart between paragraphs of 'Normal', then please use the 'List Continue' button.</em></p>
+    `,
+    videoUrl: "/videos/lists.mp4",
+    url: "/videos/lists",
+    duration: 15,
+    uploadDate: "2025-01-13T00:00:00+00:00",
+    thumbnailUrl: "/videos/thumbnails/lists.webp",
+    category: "Buttons",
+    featured: false,
+    canvaId: "DAG2gxAeKao",
   },
 ];
 
