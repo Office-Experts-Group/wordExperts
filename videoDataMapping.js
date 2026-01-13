@@ -65,9 +65,9 @@ module.exports = {
       description:
         "The 'Insert A3 Page' button provides options for A3 Landscape or A3 Portrait pages with correct margins, headers and footers. A3 pages can easily be converted back to A4 by selecting the 'Change A3 to A4' button.",
       thumbnailUrl:
-        "https://www.wordexperts.com.au/videos/thumbnails/insert-and-remove-a3-buttons.webp",
+        "https://www.wordexperts.com.au/videos/thumbnails/insert-and-remove-landscape-buttons.webp",
       playerUrl:
-        "https://www.wordexperts.com.au/videos/insert-and-remove-a3-buttons.mp4",
+        "https://www.wordexperts.com.au/videos/insert-and-remove-landscape-buttons.mp4",
       duration: 28,
       uploadDate: "2025-12-15T00:00:00+00:00",
     },

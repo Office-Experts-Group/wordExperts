@@ -123,7 +123,7 @@ export const videoData = [
     featured: false,
   },
   {
-    id: "insert-and-remove-a3-buttons",
+    id: "insert-and-remove-landscape-buttons",
     title: "Insert / Remove A3 Landscape Pages Button",
     description: `
       <p>The <strong>'Insert A3 Page'</strong> button provides two options:</p>
@@ -133,11 +133,11 @@ export const videoData = [
       </ol>
       <p>A3 pages can easily be converted back to A4 by selecting the <strong>'Change A3 to A4'</strong> button.</p>
     `,
-    videoUrl: "/videos/insert-and-remove-a3-buttons.mp4",
-    url: "/videos/insert-and-remove-a3-buttons",
+    videoUrl: "/videos/insert-and-remove-landscape-buttons.mp4",
+    url: "/videos/insert-and-remove-landscape-buttons",
     duration: 28,
     uploadDate: "2025-12-15T00:00:00+00:00",
-    thumbnailUrl: "/videos/thumbnails/insert-and-remove-a3-buttons.webp",
+    thumbnailUrl: "/videos/thumbnails/insert-and-remove-landscape-buttons.webp",
     category: "Buttons",
     featured: false,
   },
