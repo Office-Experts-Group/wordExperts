@@ -37,3 +37,5 @@ check404s.js
 link-check-results.txt
 check-videos.js
 link-check-results.txt
+debug-a3-video.ps1
+debug-a3-video.sh
