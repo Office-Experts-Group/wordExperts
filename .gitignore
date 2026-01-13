@@ -35,3 +35,5 @@ analyze-app-structure.js
 app-routes.json
 check404s.js
 link-check-results.txt
+check-videos.js
+link-check-results.txt

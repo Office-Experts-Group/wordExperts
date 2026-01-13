@@ -88,7 +88,6 @@ const nextConfig = {
         // Regular routes
         source: "/:path*",
         headers: [
-          // Same headers as above
           {
             key: "X-Robots-Tag",
             value: "index, follow, noimageindex",
@@ -112,6 +111,43 @@ const nextConfig = {
           {
             key: "X-XSS-Protection",
             value: "1; mode=block",
+          },
+          {
+            key: "Content-Security-Policy",
+            value:
+              "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' *.vimeo.com *.googletagmanager.com *.google-analytics.com analytics.ahrefs.com https://www.googleadservices.com https://www.google.com https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net *.bing.com *.bat.bing.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com data:; img-src 'self' data: https: *.google-analytics.com *.googletagmanager.com *.google.com *.doubleclick.net *.bing.com; connect-src 'self' *.google-analytics.com *.analytics.google.com *.googletagmanager.com analytics.ahrefs.com *.bing.com *.bat.bing.com; frame-src 'self' *.vimeo.com *.google.com; media-src 'self' blob:",
+          },
+        ],
+      },
+      {
+        // Specific headers for video files
+        source: "/videos/:path*.mp4",
+        headers: [
+          {
+            key: "Content-Type",
+            value: "video/mp4",
+          },
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+          {
+            key: "Accept-Ranges",
+            value: "bytes",
+          },
+        ],
+      },
+      {
+        // Specific headers for video thumbnails
+        source: "/videos/thumbnails/:path*.webp",
+        headers: [
+          {
+            key: "Content-Type",
+            value: "image/webp",
+          },
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
           },
         ],
       },
