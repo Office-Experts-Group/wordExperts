@@ -67,4 +67,7 @@
   top: -3rem;
   left: 5rem;
   opacity: 0.5;
+  @include phone {
+    display: none;
+  }
 }

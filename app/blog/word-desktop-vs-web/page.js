@@ -36,27 +36,40 @@ const WordDesktopVsWebBlogPost = () => {
 
     publisher: {
       "@type": "Organization",
-      name: "Word Experts",
+      name: "Office Experts Group",
       url: "https://www.wordexperts.com.au",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.wordexperts.com.au/logo.png",
+        url: "/logo.png",
         width: 1200,
         height: 630,
       },
     },
 
-    datePublished: "2025-12-15T09:00:00+10:00",
-    dateModified: "2025-12-15T09:00:00+10:00",
+    datePublished: "2025-01-29T09:00:00+10:00",
+    dateModified: "2025-01-29T09:00:00+10:00",
+
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Office Experts Group Logo",
+      },
+    ],
 
     articleSection: "Microsoft Word",
     articleBody:
       "Microsoft offers Word for 'free' through the web. But is it really enough for professional work? Understanding what you lose helps you decide...",
 
-    wordCount: 3500,
-    timeRequired: "PT15M",
+    wordCount: 2200,
+    timeRequired: "PT12M",
 
-    keywords: ["Word desktop vs web"],
+    keywords: [
+      "Word desktop vs web",
+      "Microsoft 365 collaboration",
+      "SharePoint collaboration",
+    ],
 
     mainEntityOfPage: {
       "@type": "WebPage",
@@ -111,7 +124,7 @@ const WordDesktopVsWebBlogPost = () => {
         <div className={styles.preface}>
           <div>
             <p>Author: Rochelle Robinson</p>
-            <p>Reading time: 15min</p>
+            <p>Reading time: 12min</p>
           </div>
         </div>
         <h1 className={styles.blogTitle}>
@@ -131,7 +144,7 @@ const WordDesktopVsWebBlogPost = () => {
           <p>
             Microsoft offers Word for "free" through the web. But is it really
             enough for professional work? Understanding what you lose helps you
-            decide. For personal-use the free version will often suffice, small
+            decide. For personal use, the free version will often suffice; small
             businesses can also get away without the subscription fee. But often
             there is a tipping point where users find themselves needing more
             features, or suffering through
@@ -151,7 +164,8 @@ const WordDesktopVsWebBlogPost = () => {
             Word for Web is Microsoft's browser-based version of Word. It's free
             with a Microsoft account, works on any device with internet, and
             stores files in OneDrive (free 5GB). Real-time collaboration is
-            built-in, making it perfect for teams who need to work together.
+            built-in, making it accessible for simple document collaboration
+            needs.
           </p>
 
           <div className={styles.quote}>
@@ -173,12 +187,13 @@ const WordDesktopVsWebBlogPost = () => {
             </cite>
           </div>
 
+          {/* REVISION: Updated "Who Uses It?" to de-emphasize web collaboration as primary use */}
           <h3>Who Uses It?</h3>
           <ul>
             <li>Students with basic needs</li>
             <li>Casual users (personal letters, simple docs)</li>
-            <li>Teams heavily focused on collaboration</li>
-            <li>People accessing from multiple devices</li>
+            <li>People accessing from multiple devices on the go</li>
+            <li>Quick mobile edits and reviews</li>
             <li>Those supplementing a desktop version</li>
           </ul>
 
@@ -198,9 +213,10 @@ const WordDesktopVsWebBlogPost = () => {
                 <li>Spell check</li>
               </ul>
 
+              {/* REVISION: Modified to indicate basic collaboration capabilities */}
               <h4>Collaboration Features</h4>
               <ul>
-                <li>Real-time co-authoring</li>
+                <li>Real-time co-authoring (basic)</li>
                 <li>Comments and @mentions</li>
                 <li>Share links with permissions</li>
                 <li>Version history</li>
@@ -225,7 +241,7 @@ const WordDesktopVsWebBlogPost = () => {
                 <li>Fewer fonts available</li>
                 <li>No advanced layout tools</li>
                 <li>Limited header/footer options</li>
-                <li>No background colors or watermarks</li>
+                <li>No background colours or watermarks</li>
                 <li>Reduced table formatting</li>
               </ul>
 
@@ -245,6 +261,8 @@ const WordDesktopVsWebBlogPost = () => {
                   Can't install
                   <Link
                     href={"https://www.excelexperts.com.au/add-in-development"}
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
                   >
                     {" "}
                     add-ins
@@ -254,6 +272,15 @@ const WordDesktopVsWebBlogPost = () => {
                 <li>Limited SmartArt</li>
                 <li>No bibliography tools</li>
                 <li>Reduced citation management</li>
+              </ul>
+
+              {/* REVISION: Added collaboration limitations section */}
+              <h4>Collaboration Limitations</h4>
+              <ul>
+                <li>Less stable for complex documents</li>
+                <li>Limited track changes features</li>
+                <li>Can't merge or compare documents</li>
+                <li>Performance issues with large files</li>
               </ul>
 
               <h4>Offline Work</h4>
@@ -328,16 +355,14 @@ const WordDesktopVsWebBlogPost = () => {
                 <li>Custom keyboard shortcuts</li>
               </ul>
 
-              <h3>Professional Tools</h3>
+              {/* REVISION: Added professional collaboration as a key Desktop feature */}
+              <h3>Professional Collaboration</h3>
               <ul>
-                <li>Bibliography and citations</li>
-                <li>Table of contents automation</li>
-                <li>Cross-references</li>
-                <li>Index and table of figures</li>
-                <li>
-                  <Link href={"/fill-in-forms"}>Form controls</Link>
-                </li>
-                <li>Developer tools</li>
+                <li>Stable co-authoring via SharePoint/OneDrive</li>
+                <li>Advanced track changes and compare features</li>
+                <li>Document merging and combining</li>
+                <li>Better performance with complex documents</li>
+                <li>Works offline with sync when reconnected</li>
               </ul>
             </div>
 
@@ -362,28 +387,114 @@ const WordDesktopVsWebBlogPost = () => {
                   </Link>
                 </li>
               </ul>
+
+              <h3>Professional Tools</h3>
+              <ul>
+                <li>Bibliography and citations</li>
+                <li>Table of contents automation</li>
+                <li>Cross-references</li>
+                <li>Index and table of figures</li>
+                <li>
+                  <Link href={"/fill-in-forms"}>Form controls</Link>
+                </li>
+                <li>Developer tools</li>
+              </ul>
             </div>
           </div>
 
+          {/* REVISION: Replaced Lara Mellor quote with Microsoft quote emphasizing Desktop collaboration */}
           <div className={styles.quote}>
             <blockquote>
               <p>
-                "Track changes and advanced collaboration: While basic
-                collaboration is available on the web, advanced features like
-                track changes, merging, comparing, and combining documents are
-                exclusive to the desktop version."
+                "When you open a shared document in a desktop or mobile app, it
+                doesn't matter if you're connected or not, you can keep working.
+                When you're working in Word, the paragraph you're working in is
+                locked so that no one can overwrite what you're working on."
               </p>
             </blockquote>
             <cite>
               <Link
-                href="https://laramellortraining.co.uk/word-showdown-web-vs-desktop-which-one-reigns-supreme"
+                href="https://support.microsoft.com/en-us/office/document-collaboration-and-co-authoring-ee1509b4-1f6e-401e-b04a-782d26f564a4"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
               >
-                - Lara Mellor
+                - Microsoft Support
               </Link>
             </cite>
           </div>
+
+          {/* REVISION: Added new section explaining Desktop collaboration advantages */}
+          <h2>Desktop Collaboration: The Professional Standard</h2>
+          <p>
+            For professional teams working on complex documents, Desktop Word
+            opened from SharePoint or OneDrive provides the most stable and
+            feature-rich collaboration environment. This approach combines the
+            full power of Desktop Word with real-time co-authoring capabilities.
+          </p>
+
+          <h3>Why Desktop Collaboration is Preferred</h3>
+          <ul>
+            <li>
+              <strong>Stability:</strong> Desktop provides a more stable
+              environment for complex documents with extensive formatting, large
+              file sizes, or numerous collaborators.
+            </li>
+            <li>
+              <strong>Full Features While Collaborating:</strong> Access all
+              advanced features (track changes, compare documents, macros, mail
+              merge) whilst collaborating in real-time.
+            </li>
+            <li>
+              <strong>Better Performance:</strong> Handles large documents
+              without the lag or performance issues common in browser-based
+              editing.
+            </li>
+            <li>
+              <strong>Offline Capability:</strong> Continue working offline with
+              changes syncing automatically when you reconnect.
+            </li>
+          </ul>
+
+          <div className={styles.quote}>
+            <blockquote>
+              <p>
+                "To co-author a document or workbook in a desktop app, users
+                must use Microsoft 365 desktop apps. After that, it just takes a
+                few steps to co-author with other people."
+              </p>
+            </blockquote>
+            <cite>
+              <Link
+                href="https://support.microsoft.com/en-us/office/document-collaboration-and-co-authoring-ee1509b4-1f6e-401e-b04a-782d26f564a4"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                - Microsoft Support
+              </Link>
+            </cite>
+          </div>
+
+          <h3>Requirements for Desktop Collaboration</h3>
+          <p>To get the best results when collaborating in Desktop Word:</p>
+          <ul>
+            <li>
+              <strong>Strong Internet Connection:</strong> Reliable internet
+              ensures smooth real-time syncing between collaborators.
+            </li>
+            <li>
+              <strong>Good Hardware:</strong> Adequate processing power and RAM
+              handle large documents efficiently.
+            </li>
+            <li>
+              <strong>Files in SharePoint/OneDrive:</strong> Documents must be
+              stored in SharePoint or OneDrive (not local drives) for
+              co-authoring to work.
+            </li>
+            <li>
+              <strong>Microsoft 365 Subscription:</strong> All collaborators
+              need active Microsoft 365 subscriptions with desktop apps.
+            </li>
+          </ul>
 
           <h2>Real-World Scenarios</h2>
 
@@ -406,8 +517,8 @@ const WordDesktopVsWebBlogPost = () => {
               <strong>Best Choice -</strong> Word for Web (free)
             </p>
             <p>
-              <strong>Why?</strong> Basic formatting sufficient, collaboration
-              important, saves money for more instant noodles!
+              <strong>Why?</strong> Basic formatting sufficient, simple
+              collaboration adequate, saves money for more instant noodles!
             </p>
             <p>
               <strong>I would Upgrade if...</strong> Writing thesis/dissertation
@@ -420,10 +531,9 @@ const WordDesktopVsWebBlogPost = () => {
             <strong>Needs -</strong> Letters, invoices, basic documents
           </p>
           <p>
-            <strong>Best Choice -</strong>
-            ($~9/user/month for web/mobile)
+            <strong>Best Choice -</strong> Microsoft 365 Business Basic
+            ($9/user/month for web/mobile)
           </p>
-          {/* check this is not in USD**************** */}
           <p>
             <strong>Why?</strong> Professional email included, basic needs met,
             low cost considering the features and benefits yielded over the free
@@ -446,11 +556,12 @@ const WordDesktopVsWebBlogPost = () => {
             <h3>Scenario 3: Legal Professional</h3>
             <p>
               <strong>Needs -</strong> Large documents, precise formatting,
-              templates,<Link href={"/mail-merge"}> mail merge</Link>
+              templates,<Link href={"/mail-merge"}> mail merge</Link>,
+              collaboration on contracts
             </p>
             <p>
               <strong>Best Choice -</strong> Microsoft 365 with Desktop Apps
-              (Business Standard or higher, $~19/user/month)
+              (Business Standard or higher, $19/user/month)
             </p>
             <p>
               <strong>Why?</strong> Advanced features essential, document
@@ -459,16 +570,19 @@ const WordDesktopVsWebBlogPost = () => {
                 {" "}
                 automation needed
               </Link>
+              , stable collaboration environment for complex legal documents
             </p>
+            {/* REVISION: Changed from "Web Version - Use for quick edits only" to emphasize Desktop collaboration */}
             <p>
-              <strong>Web Version -</strong> Use for quick edits only
+              <strong>Collaboration Strategy -</strong> Use Desktop Word opened
+              from SharePoint for all collaborative work on complex documents
             </p>
           </div>
 
           <div className={styles.quote} style={{ marginTop: "4rem" }}>
             <blockquote>
               <p>
-                "For those who need to execute more complex and customized
+                "For those who need to execute more complex and customised
                 tasks, it's definitely worth paying for the Microsoft 365
                 subscription to get the desktop app."
               </p>
@@ -493,22 +607,25 @@ const WordDesktopVsWebBlogPost = () => {
               className={styles.BgImage}
               style={{ top: "6rem" }}
             />
+            {/* REVISION: Completely rewrote Scenario 4 to emphasize Desktop collaboration */}
             <h3>Scenario 4: Marketing Team</h3>
             <p>
-              <strong>Needs -</strong> Collaborative editing, proposals,
-              presentations
+              <strong>Needs -</strong> Collaborative editing on proposals,
+              presentations, complex documents
             </p>
             <p>
               <strong>Best Choice -</strong> Microsoft 365 Subscription
-              (includes desktop + web)
+              (Business Standard - includes desktop + web)
             </p>
             <p>
-              <strong>Why?</strong> Desktop for complex work, web for
-              collaboration
+              <strong>Why?</strong> Desktop provides stable collaboration
+              environment for complex marketing materials whilst maintaining
+              full feature access
             </p>
             <p>
-              <strong>Strategy...</strong> Use desktop for creation, web for
-              team review/edits
+              <strong>Collaboration Strategy...</strong> Use Desktop Word opened
+              from SharePoint/OneDrive for all collaborative work. Web version
+              as backup for quick mobile reviews only.
             </p>
           </div>
 
@@ -518,8 +635,8 @@ const WordDesktopVsWebBlogPost = () => {
             professional formatting
           </p>
           <p>
-            <strong>Best Choice -</strong> Microsoft 365 Personal ($12/month) or
-            Office 2021 (~160/year)
+            <strong>Best Choice -</strong> Microsoft 365 Personal ($16/month) or
+            Office 2021 Home & Business ($379 one-time)
           </p>
           <p>
             <strong>Why?</strong> Desktop features essential for professional
@@ -545,7 +662,7 @@ const WordDesktopVsWebBlogPost = () => {
               <strong>Word for Web:</strong> $0
             </li>
             <li>Includes: 5GB OneDrive storage</li>
-            <li>Best for: Casual users, students, light collaboration</li>
+            <li>Best for: Casual users, students, light editing</li>
           </ul>
 
           <h3>Subscription Options</h3>
@@ -558,7 +675,6 @@ const WordDesktopVsWebBlogPost = () => {
                 <li>1 user, desktop apps, 1TB storage</li>
               </ul>
             </li>
-            {/* check this is not in USD**************** */}
 
             <li>
               <strong>Microsoft 365 Family -</strong> $18/month or $179/year
@@ -566,7 +682,6 @@ const WordDesktopVsWebBlogPost = () => {
                 <li>6 users, desktop apps, 1TB each</li>
               </ul>
             </li>
-            {/* check this is not in USD**************** */}
           </ul>
 
           <h4>Business Use</h4>
@@ -577,15 +692,14 @@ const WordDesktopVsWebBlogPost = () => {
                 <li>Web/mobile apps only, 1TB storage, business email</li>
               </ul>
             </li>
-            {/* check this is not in USD**************** */}
 
             <li>
               <strong>Business Standard -</strong> $19/user/month
               <ul>
                 <li>Desktop apps included, everything in Basic</li>
+                <li>Recommended for professional collaboration</li>
               </ul>
             </li>
-            {/* check this is not in USD**************** */}
 
             <li>
               <strong>Business Premium -</strong> $33/user/month
@@ -593,7 +707,6 @@ const WordDesktopVsWebBlogPost = () => {
                 <li>Advanced security and device management</li>
               </ul>
             </li>
-            {/* check this is not in USD**************** */}
           </ul>
 
           <h3>One-Time Purchase</h3>
@@ -610,7 +723,7 @@ const WordDesktopVsWebBlogPost = () => {
               <strong>Office Home & Business 2024:</strong> $379
               <ul>
                 <li>Includes Outlook</li>
-                <li>Available for for commercial use</li>
+                <li>Available for commercial use</li>
               </ul>
             </li>
           </ul>
@@ -622,8 +735,7 @@ const WordDesktopVsWebBlogPost = () => {
               <h3>Choose FREE Web Version If...</h3>
               <ul>
                 <li>Documents are simple (letters, memos, basic reports)</li>
-                <li>Heavy collaboration is your priority</li>
-                <li>You access from many different devices</li>
+                <li>You access from many different devices on the go</li>
                 <li>Budget is extremely tight</li>
                 <li>You're supplementing a desktop version</li>
                 <li>Students with basic needs</li>
@@ -635,29 +747,12 @@ const WordDesktopVsWebBlogPost = () => {
                 <li>You work with large or complex documents</li>
                 <li>Professional formatting is important</li>
                 <li>You need automation (mail merge, macros)</li>
+                <li>Team collaboration on complex documents</li>
                 <li>Offline access is essential</li>
                 <li>Your industry requires desktop features</li>
                 <li>You need add-ins or developer tools</li>
               </ul>
             </div>
-          </div>
-          <div className={styles.quote}>
-            <blockquote>
-              <p>
-                "Word Macro-Enabled Document (.docm) or Word Macro-Enabled
-                Template (.dotm): The document can be opened, but macros do not
-                run."
-              </p>
-            </blockquote>
-            <cite>
-              <Link
-                href="https://support.microsoft.com/en-us/office/differences-between-using-a-document-in-the-browser-and-in-word-90fac46c-2b8e-4fa1-b997-4e55ce4ed754"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-              >
-                - Microsoft Support
-              </Link>
-            </cite>
           </div>
 
           <h3>Choose Subscription Over One-Time Purchase If...</h3>
@@ -680,6 +775,7 @@ const WordDesktopVsWebBlogPost = () => {
             className={`${styles.mainImage} ${styles.deskImageNoMarg}`}
           />
 
+          {/* REVISION: Rewrote Hybrid Strategy section to emphasize Desktop for collaboration */}
           <h2>Hybrid Strategy... Best of Both Worlds?</h2>
 
           <h3>How to Use Both Effectively</h3>
@@ -689,6 +785,7 @@ const WordDesktopVsWebBlogPost = () => {
               <h4>Use Desktop for...</h4>
               <ul>
                 <li>Creating complex documents</li>
+                <li>Professional collaboration (via SharePoint/OneDrive)</li>
                 <li>Formatting and layout</li>
                 <li>Mail merge and automation</li>
                 <li>Working offline</li>
@@ -699,32 +796,22 @@ const WordDesktopVsWebBlogPost = () => {
               <h4>Use Web for...</h4>
               <ul>
                 <li>Quick edits on the go</li>
-                <li>Team collaboration</li>
+                <li>Mobile device access</li>
                 <li>Reviewing and commenting</li>
                 <li>Accessing from shared/public computers</li>
-                <li>Mobile device access</li>
+                <li>When Desktop isn't available</li>
               </ul>
             </div>
           </div>
-          <div className={styles.quote}>
-            <blockquote>
-              <p>
-                "If you value accessibility and real-time collaboration, Word
-                for the Web is a fantastic choice. However, if you need the full
-                suite of features, offline access, and robust performance, Word
-                for Desktop is the way to go."
-              </p>
-            </blockquote>
-            <cite>
-              <Link
-                href="https://laramellortraining.co.uk/word-showdown-web-vs-desktop-which-one-reigns-supreme"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-              >
-                - Lara Mellor
-              </Link>
-            </cite>
-          </div>
+
+          {/* REVISION: Added professional recommendation paragraph */}
+          <p style={{ marginTop: "2rem" }}>
+            <strong>Professional Recommendation:</strong> For business
+            collaboration, prioritise Desktop Word opened from SharePoint or
+            OneDrive. The web version serves as a convenient backup for mobile
+            access or quick edits, but Desktop provides the stability and full
+            feature set needed for professional work on complex documents.
+          </p>
 
           <div className={styles.BgImageContainer}>
             <Image
@@ -743,10 +830,11 @@ const WordDesktopVsWebBlogPost = () => {
               with fewer features.
             </p>
 
-            <h3>Myth 2: "I can't collaborate without desktop version"</h3>
+            {/* REVISION: Completely rewrote Myth 2 to support Desktop collaboration */}
+            <h3>Myth 2: "I must use the web version for collaboration"</h3>
             <p>
-              <strong>Reality -</strong> Web version's collaboration is actually
-              superior for real-time editing.
+              <strong>Reality -</strong> Desktop Word provides superior
+              collaboration when files are opened from SharePoint or OneDrive.
             </p>
 
             <h3>Myth 3: "Subscription means I don't own my software"</h3>
@@ -776,7 +864,7 @@ const WordDesktopVsWebBlogPost = () => {
           <ul>
             <li>Use for all your normal tasks</li>
             <li>Note what features you miss</li>
-            <li>Test collaboration with colleagues</li>
+            <li>Test basic collaboration with colleagues</li>
             <li>Evaluate offline access needs</li>
           </ul>
 
@@ -784,6 +872,7 @@ const WordDesktopVsWebBlogPost = () => {
           <ul>
             <li>Sign up for 1-month trial</li>
             <li>Compare desktop experience</li>
+            <li>Test collaboration via SharePoint/OneDrive</li>
             <li>Test specific features (mail merge, etc.)</li>
             <li>Decide if worth the cost</li>
           </ul>
@@ -795,8 +884,8 @@ const WordDesktopVsWebBlogPost = () => {
               Basic plan
             </li>
             <li>
-              If desktop features were essential = invest in subscription or
-              perpetual license
+              If desktop features or professional collaboration were essential =
+              invest in Business Standard subscription
             </li>
           </ul>
 
@@ -808,17 +897,18 @@ const WordDesktopVsWebBlogPost = () => {
                   <strong>Web version is legitimately useful</strong>
                   <ul>
                     <li>Not just a "teaser" for desktop</li>
-                    <li>Sufficient for many users</li>
-                    <li>Excellent for collaboration</li>
+                    <li>Sufficient for many casual users</li>
+                    <li>Good for mobile access and simple edits</li>
                   </ul>
                 </li>
                 <li>
-                  <strong>Desktop version worth paying for IF?!?</strong>
+                  <strong>Desktop version worth paying for if:</strong>
                   <ul>
                     <li>Professional work demands it</li>
                     <li>Automation saves you time</li>
                     <li>Offline access is critical</li>
                     <li>Complex documents are routine</li>
+                    <li>Professional collaboration is needed</li>
                   </ul>
                 </li>
               </ul>
@@ -836,8 +926,8 @@ const WordDesktopVsWebBlogPost = () => {
                 <li>
                   <strong>Hybrid approach is valid</strong>
                   <ul>
-                    <li>Desktop for complex work</li>
-                    <li>Web for collaboration and mobile</li>
+                    <li>Desktop for professional work and collaboration</li>
+                    <li>Web as backup for mobile and quick access</li>
                     <li>Use right tool for right task</li>
                   </ul>
                 </li>
@@ -848,9 +938,11 @@ const WordDesktopVsWebBlogPost = () => {
           <h3>Final Recommendation</h3>
           <p>
             For Australian businesses and professionals, Microsoft 365
-            subscription (Personal for individuals, Business Standard for teams)
-            offers the best balance of features, flexibility, and value.
-            Students and casual users can often thrive on the free web version.
+            subscription (Business Standard for teams) offers the best balance
+            of features, flexibility, and value. This provides Desktop Word for
+            professional collaboration via SharePoint/OneDrive, whilst
+            maintaining web access as a convenient backup. Students and casual
+            users can often thrive on the free web version for simple documents.
             Test your actual workflow before purchasing to avoid paying for
             features you don't need.
           </p>
@@ -859,8 +951,12 @@ const WordDesktopVsWebBlogPost = () => {
             <p>
               *All prices included in this article are in AUD and relevant as of
               January 2026. Please check for the latest pricing at{" "}
-              <Link href={"https://www.microsoft.com/en-au"}>
-                Microsofts official website
+              <Link
+                href={"https://www.microsoft.com/en-au"}
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                Microsoft's official website
               </Link>
             </p>
           </div>
@@ -869,9 +965,9 @@ const WordDesktopVsWebBlogPost = () => {
             <div>
               <h4>About the Author</h4>
               <p>
-                Rochelle is Office Experts leading Word designer with over 20
-                years of experience creating custom templates, ribbons, and
-                automation for businesses, government, and professional
+                Rochelle is Office Experts Group's leading Word designer with
+                over 20 years of experience creating custom templates, ribbons,
+                and automation for businesses, government, and professional
                 services.
               </p>
             </div>
