@@ -14,7 +14,7 @@ const ServicesSection = () => {
     {
       title: "Corporate Global Template Solution",
       description:
-        "Transform your organisation's document workflow with enterprise-grade Word template solutions. Our custom Template Solutions empower users to efficiently create professional documents within a controlled environment that enforces branding guidelines, maintains consistency, and protects corporate identity. We design intelligent template systems featuring automated styling, pre-built content blocks, custom ribbons, and smart workflows that eliminate repetitive work.",
+        "Transform your organisation's document workflow with enterprise-grade Word template solutions. Our custom Template Solutions empower users to efficiently create professional documents within a controlled environment that enforces branding guidelines, maintains consistency, and protects corporate identity.",
       links: [
         {
           href: "/corporate-global-template-solution",
@@ -25,7 +25,7 @@ const ServicesSection = () => {
     {
       title: "Document Template Creation & Design",
       description:
-        "Professional Word template design and creation services tailored to your organisation's needs. We create easy-to-use, properly engineered templates for all your business documents, from reports and proposals to letters and forms. Our templates go beyond basic formatting to incorporate advanced features like automated styling, building blocks, content controls, dynamic fields, and intelligent workflows.",
+        "Professional Word template design and creation services tailored to your organisation's needs. We create easy-to-use, properly engineered templates for all your business documents, from reports and proposals to letters and forms.",
       links: [
         {
           href: "/word-document-template-creation",
@@ -36,7 +36,7 @@ const ServicesSection = () => {
     {
       title: "Document Automation & VBA Development",
       description:
-        "Eliminate repetitive tasks and streamline document workflows with powerful Word automation solutions. Our VBA macro development services automate everything from document generation and formatting to complex data integration and processing. We create custom automation's that can generate documents from databases, populate templates with external data, perform batch processing, create dynamic reports, and integrate Word with other business systems.",
+        "Eliminate repetitive tasks and streamline document workflows with powerful Word automation solutions. Our VBA macro development services automate everything from document generation and formatting to complex data integration and processing.",
       links: [
         {
           href: "/remove-repetition-and-increase-productivity",
@@ -51,7 +51,7 @@ const ServicesSection = () => {
     {
       title: "Custom Toolbars & Ribbons",
       description:
-        "Boost productivity across your organisation with custom Word toolbars and ribbons tailored to your workflows. We design and implement intuitive ribbon interfaces that put your most-used features at users' fingertips, reducing clicks, minimising training time, and ensuring consistency. Our custom toolbars can include buttons for landscape pages, cover page insertion, chapter breaks, automated formatting, pre-written paragraphs, signature blocks, and any other frequently used functions. ",
+        "Boost productivity across your organisation with custom Word toolbars and ribbons tailored to your workflows. We design and implement intuitive ribbon interfaces that put your most-used features at users' fingertips, reducing clicks, minimising training time, and ensuring consistency.",
       links: [
         {
           href: "/custom-toolbars-and-ribbons",
@@ -62,7 +62,7 @@ const ServicesSection = () => {
     {
       title: "Forms & Data Entry Solutions",
       description:
-        "Create sophisticated Word forms that streamline data collection whilst maintaining document integrity and brand consistency. We design both popup forms with VBA-powered interfaces and fill-in forms using content controls. Our forms feature validated data entry, dropdown lists, checkboxes, date pickers, conditional logic, protected content, and automatic calculations. Forms can integrate with databases, generate completed documents automatically, and ensure data accuracy through intelligent validation.",
+        "Create sophisticated Word forms that streamline data collection whilst maintaining document integrity and brand consistency. We design both popup forms with VBA-powered interfaces and fill-in forms using content controls. Forms can integrate with databases, generate completed documents automatically, and ensure data accuracy through intelligent validation.",
       links: [
         {
           href: "/popup-forms",
@@ -88,7 +88,7 @@ const ServicesSection = () => {
     {
       title: "Accessibility & Compliance",
       description:
-        "Ensure your documents meet WCAG accessibility standards and government compliance requirements. We create and audit Word documents for accessibility, implementing proper heading structures, alternative text, reading order, colour contrast, and semantic markup. Our services include accessibility template creation, document remediation, compliance auditing, and staff training. Essential for government departments, educational institutions, and any organisation committed to inclusive document design.",
+        "Ensure your documents meet WCAG accessibility standards and government compliance requirements. We create and audit Word documents for accessibility, implementing proper heading structures, alternative text, reading order, colour contrast, and semantic markup. Our services include accessibility template creation, document remediation, compliance auditing, and staff training.",
       links: [
         {
           href: "/accessibility",
@@ -99,7 +99,7 @@ const ServicesSection = () => {
     {
       title: "Upgrades, Migration & Conversions",
       description:
-        "Modernise legacy documents and templates with our comprehensive upgrade and migration services. We handle Word version upgrades, resolve compatibility issues, convert documents from other formats (InDesign, PDF, Google Docs), and migrate legacy systems to contemporary architectures. Our process includes thorough testing, formatting preservation, macro updates, style sheet reconstruction, and user training.",
+        "Modernise legacy documents and templates with our comprehensive upgrade and migration services. We handle Word version upgrades, resolve compatibility issues, convert documents from other formats (InDesign, PDF, Google Docs), and migrate legacy systems to contemporary architectures.",
       links: [
         {
           href: "/upgrades-and-migration",
@@ -129,7 +129,7 @@ const ServicesSection = () => {
     {
       title: "Training & Support",
       description:
-        "Empower your team with expert Word training and responsive support services. We provide customised training programmes covering everything from core skills to advanced template usage, automation, and best practices. Our training is task-specific and practical, designed to solve real business challenges. We offer one-on-one sessions, group meetings, remote training, and ongoing support packages.",
+        "Empower your team with expert Word training and responsive support services. We provide customised training programmes covering everything from core skills to advanced template usage, automation, and best practices. Our training is task-specific and practical, designed to solve real business challenges.",
       links: [
         {
           href: "/training",
@@ -140,7 +140,7 @@ const ServicesSection = () => {
     {
       title: "Document Rebranding Services",
       description:
-        "Transform your organisation's documents with professional rebranding services that implement your updated brand identity across all templates and documentation. When your company updates its logo, colour palette, or undergoes a complete visual overhaul, we ensure your Word templates reflect these changes perfectly. Our rebranding services include style sheet recreation, template redesign, image updates, brand guideline implementation, and template distribution.",
+        "Transform your organisation's documents with professional rebranding services that implement your updated brand identity across all templates and documentation. When your company updates its logo, colour palette, or undergoes a complete visual overhaul, we ensure your Word templates reflect these changes perfectly.",
       links: [
         {
           href: "/document-rebranding-services",

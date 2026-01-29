@@ -60,4 +60,11 @@
 }
 .underline h1 {
   padding: 0 2rem;
+}
+
+.imgContainer {
+  position: absolute;
+  top: -3rem;
+  left: 5rem;
+  opacity: 0.5;
 }/*# sourceMappingURL=howWeWork.module.css.map */

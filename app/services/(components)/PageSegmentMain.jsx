@@ -5,18 +5,21 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment.module.css";
 
-import happy from "../../../public/happy.webp";
+import solutions2 from "../../../public/solutions2.webp";
 
 const PageSegmentMain = () => {
   return (
-    <section className={styles.pageSegment} style={{ gap: "0rem" }}>
-      <div className={styles.imgWrapper} style={{ borderBottom: "none" }}>
+    <section className={styles.pageSegment}>
+      <div
+        className={styles.imgWrapper}
+        style={{ borderBottom: "none", paddingTop: "4.5rem" }}
+      >
         <AnimateOnScroll animation="slide-right" duration={1} delay={0}>
           <Image
-            src={happy}
-            alt="3 wooden blocks with faces"
-            width={450}
-            height={300}
+            src={solutions2}
+            alt="hand pressing a lightbulb"
+            width={400}
+            height={267}
             priority
           />
         </AnimateOnScroll>

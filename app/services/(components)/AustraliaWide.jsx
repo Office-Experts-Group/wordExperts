@@ -58,7 +58,11 @@ const AustraliaWide = () => {
             }}
           >
             <div style={{ marginLeft: "auto" }}>
-              <Link href={"/locations"} className={styles.locationBtn}>
+              <Link
+                href={"/locations"}
+                className={styles.locationBtn}
+                style={{ marginTop: "2rem" }}
+              >
                 See All Our Locations
               </Link>
             </div>

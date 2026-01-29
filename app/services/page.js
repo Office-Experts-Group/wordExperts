@@ -35,7 +35,7 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2025-12-26T00:00:00+00:00",
-      dateModified: "2025-12-26T00:00:00+00:00",
+      dateModified: "2026-01-29T00:00:00+00:00",
       description:
         "Comprehensive Microsoft Word services including template creation, document automation, VBA development, accessibility compliance, custom ribbons, forms and training across Australia.",
       breadcrumb: {

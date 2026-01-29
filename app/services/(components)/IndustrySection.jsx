@@ -137,30 +137,32 @@ const IndustrySection = () => {
         </AnimateOnScroll>
 
         <div className={styles.useCases}>
-          {industries.map((industry, index) => (
-            <AnimateOnScroll
-              key={index}
-              animation="slide-left"
-              duration={1}
-              delay={0.2}
-            >
-              <div className={styles.gridHolder}>
-                <Image
-                  src={industry.image}
-                  width={150}
-                  height={150}
-                  alt={`${industry.title} icon`}
-                />
-                <div>
-                  <h3 style={{ color: "#046999" }}>{industry.title}</h3>
-                  <p style={{ fontWeight: "600", marginBottom: "0.5rem" }}>
-                    {industry.description}
-                  </p>
-                  <p style={{ color: "#777a7e" }}>{industry.detail}</p>
+          <div className={styles.industriesGrid}>
+            {industries.map((industry, index) => (
+              <AnimateOnScroll
+                key={index}
+                animation={index % 2 === 0 ? "slide-left" : "slide-right"}
+                duration={1}
+                delay={0.2}
+              >
+                <div className={styles.gridHolder}>
+                  <Image
+                    src={industry.image}
+                    width={150}
+                    height={150}
+                    alt={`${industry.title} icon`}
+                  />
+                  <div>
+                    <h3 style={{ color: "#046999" }}>{industry.title}</h3>
+                    <p style={{ fontWeight: "600", marginBottom: "0.5rem" }}>
+                      {industry.description}
+                    </p>
+                    <p style={{ color: "#777a7e" }}>{industry.detail}</p>
+                  </div>
                 </div>
-              </div>
-            </AnimateOnScroll>
-          ))}
+              </AnimateOnScroll>
+            ))}
+          </div>
         </div>
       </div>
     </section>
