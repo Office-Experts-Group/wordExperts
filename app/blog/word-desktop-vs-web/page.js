@@ -358,7 +358,10 @@ const WordDesktopVsWebBlogPost = () => {
               {/* REVISION: Added professional collaboration as a key Desktop feature */}
               <h3>Professional Collaboration</h3>
               <ul>
-                <li>Stable co-authoring via SharePoint/OneDrive</li>
+                <li>
+                  Greater functionality while co-authoring via
+                  SharePoint/OneDrive
+                </li>
                 <li>Advanced track changes and compare features</li>
                 <li>Document merging and combining</li>
                 <li>Better performance with complex documents</li>
