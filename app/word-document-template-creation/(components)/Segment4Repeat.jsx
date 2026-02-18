@@ -1,13 +1,16 @@
 import React from "react";
-import Image from "next/image";
 
 import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment4.module.css";
 
-import brand from "../../../public/brand600x400.webp";
+import page1 from "../../../public/books/header/page1.webp";
+import page2 from "../../../public/books/header/page2.webp";
+
+import TemplateCards from "../../../components/TemplateCards";
 
 const Segment4Repeat = () => {
+  const images = [page1, page2];
   const checkItems = [
     {
       strong: "Visually striking –",
@@ -27,14 +30,17 @@ const Segment4Repeat = () => {
     <div className="animate-wrapper">
       <div className={styles.pageSegment} style={{ margin: "6rem 0 0 0" }}>
         <AnimateOnScroll animation="slide-left" duration={1} delay={0}>
-          <div className={styles.content}>
+          <div
+            className={styles.content}
+            style={{ zIndex: "12000", maxWidth: "80%" }}
+          >
             <div style={{ marginBottom: "1.5rem" }}>
               <h2>About Our Designs</h2>
             </div>
             <p>
               <strong>
                 We believe a Word template should be more than a blank page with
-                a logo —
+                a logo -
               </strong>{" "}
               it should be elegantly designed, highly functional, and built to
               last. Our templates are:
@@ -78,14 +84,7 @@ const Segment4Repeat = () => {
         </AnimateOnScroll>
 
         <AnimateOnScroll animation="scale-up" duration={1} delay={0.2}>
-          <div className="image-wrapper">
-            <Image
-              src={brand}
-              alt="branding matters"
-              width={450}
-              height={300}
-            />
-          </div>
+          <TemplateCards images={images} />{" "}
         </AnimateOnScroll>
       </div>
     </div>

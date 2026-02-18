@@ -21,7 +21,6 @@
      object-fit: contain;
 }
 .pageSegment img:hover {
-  filter: grayscale(100%);
   transition: all 0.3s ease;
 }
 @media (max-width: 449px) {
@@ -506,5 +505,14 @@
 @media screen and (max-width: 900px) {
   .industriesGrid {
     grid-template-columns: 1fr;
+  }
+}
+
+.templateSection {
+  margin: 4rem auto;
+}
+@media screen and (max-width: 700px) {
+  .templateSection {
+    margin: 4rem auto -2rem auto;
   }
 }/*# sourceMappingURL=pageSegment3.module.css.map */

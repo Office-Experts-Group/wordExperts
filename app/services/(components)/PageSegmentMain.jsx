@@ -1,28 +1,33 @@
 import React from "react";
-import Image from "next/image";
 
 import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment.module.css";
 
-import solutions2 from "../../../public/solutions2.webp";
+import FlipBook from "../../../components/FlipBook";
+
+import page1 from "../../../public/books/environment/page1.webp";
+import page2 from "../../../public/books/environment/page2.webp";
+import page3 from "../../../public/books/environment/page3.webp";
+import page4 from "../../../public/books/environment/page4.webp";
+import page5 from "../../../public/books/environment/page5.webp";
+import page6 from "../../../public/books/environment/page6.webp";
+import page7 from "../../../public/books/environment/page7.webp";
+import page8 from "../../../public/books/environment/page8.webp";
 
 const PageSegmentMain = () => {
   return (
     <section className={styles.pageSegment}>
       <div
         className={styles.imgWrapper}
-        style={{ borderBottom: "none", paddingTop: "4.5rem" }}
+        style={{ borderBottom: "none", paddingTop: "3rem" }}
       >
-        <AnimateOnScroll animation="slide-right" duration={1} delay={0}>
-          <Image
-            src={solutions2}
-            alt="hand pressing a lightbulb"
-            width={400}
-            height={267}
-            priority
-          />
-        </AnimateOnScroll>
+        <FlipBook
+          images={[page1, page2, page3, page4, page5, page6, page7, page8]}
+          size="full"
+          scrollOffset={50} // px of scroll to trigger a page turn
+          animDuration={900} // ms for the flip animation
+        />
       </div>
 
       <div className={styles.contentWrapper}>

@@ -24,7 +24,7 @@
     object-fit: contain;
 
     &:hover {
-      filter: grayscale(100%);
+      // filter: grayscale(100%);
       transition: all 0.3s ease;
     }
 
@@ -442,5 +442,12 @@
 
   @media screen and (max-width: 900px) {
     grid-template-columns: 1fr;
+  }
+}
+
+.templateSection {
+  margin: 4rem auto;
+  @media screen and (max-width: 700px) {
+    margin: 4rem auto -2rem auto;
   }
 }

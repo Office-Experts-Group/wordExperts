@@ -22,6 +22,7 @@ import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
 } from "../../utils/schemaGenerators";
+import BookSegment from "./(components)/BookSegment";
 
 const schema = {
   "@context": "https://schema.org",
@@ -138,6 +139,7 @@ const Page = () => {
       <ServicePageCards />
       <PageSegmentMain />
       <PageSegment8 />
+      <BookSegment />
       <BlackSegment />
       <PageSegment4 />
       <PageSegment5 />

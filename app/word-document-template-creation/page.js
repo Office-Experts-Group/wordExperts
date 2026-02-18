@@ -13,6 +13,7 @@ import Segment7 from "./(components)/Segment7";
 import Segment8 from "./(components)/Segment8";
 import Conclusion from "./(components)/Conclusion";
 import Image from "./(components)/Image";
+import TemplateCards from "../../components/TemplateCards";
 
 import graphTable from "../../public/pageHeros/graphTable.webp";
 import graph from "../../public/pageHeros/mob/graph.webp";
@@ -21,6 +22,15 @@ import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
 } from "../../utils/schemaGenerators";
+
+import page1 from "../../public/books/environment/page1.webp";
+import page2 from "../../public/books/environment/page2.webp";
+import page3 from "../../public/books/environment/page3.webp";
+import page4 from "../../public/books/environment/page4.webp";
+import page5 from "../../public/books/environment/page5.webp";
+import page6 from "../../public/books/environment/page6.webp";
+import page7 from "../../public/books/environment/page7.webp";
+import page8 from "../../public/books/environment/page8.webp";
 
 const schema = {
   "@context": "https://schema.org",
@@ -76,6 +86,8 @@ const schema = {
 };
 
 const Page = () => {
+  const images = [page1, page2, page3, page4, page5, page6, page7, page8];
+
   return (
     <>
       <script
@@ -96,6 +108,7 @@ const Page = () => {
       </section>
       <PageSegment5 />
       <Segment4 />
+      <TemplateCards images={images} cardWidth={340} />
       <Segment5 />
       <Segment6 />
       <Segment7 />

@@ -15,8 +15,39 @@ import legal from "../../../public/legal.webp";
 import nonprofit from "../../../public/non-profit.webp";
 import property from "../../../public/property.webp";
 import corporate from "../../../public/corporateIcon.webp";
+import TemplateCards from "../../../components/TemplateCards";
+
+import page1 from "../../../public/books/coral/page1.webp";
+import page2 from "../../../public/books/coral/page2.webp";
+import page3 from "../../../public/books/coral/page3.webp";
+import page4 from "../../../public/books/coral/page4.webp";
+import page5 from "../../../public/books/coral/page5.webp";
+import page6 from "../../../public/books/coral/page6.webp";
+import page7 from "../../../public/books/coral/page7.webp";
+import page8 from "../../../public/books/coral/page8.webp";
+import page9 from "../../../public/books/coral/page9.webp";
+import page10 from "../../../public/books/coral/page10.webp";
+import page11 from "../../../public/books/coral/page11.webp";
+import page12 from "../../../public/books/coral/page12.webp";
+import page13 from "../../../public/books/coral/page13.webp";
 
 const IndustrySection = () => {
+  const images = [
+    page1,
+    page2,
+    page3,
+    page4,
+    page5,
+    page6,
+    page7,
+    page8,
+    page9,
+    page10,
+    page11,
+    page12,
+    page13,
+  ];
+
   const industries = [
     {
       title: "Government & Public Sector",
@@ -135,6 +166,10 @@ const IndustrySection = () => {
             faces.
           </p>
         </AnimateOnScroll>
+
+        <div className={styles.templateSection}>
+          <TemplateCards images={images} cardWidth={340} />{" "}
+        </div>
 
         <div className={styles.useCases}>
           <div className={styles.industriesGrid}>
