@@ -1,0 +1,131 @@
+.boxSegment {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+@media screen and (max-width: 600px) {
+  .boxSegment {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    padding: 1rem 0;
+  }
+}
+
+.boxDiv {
+  border-radius: 2rem;
+  aspect-ratio: 2/1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.boxDiv p {
+  color: #777a7e;
+  line-height: 1.6;
+}
+
+.left {
+  margin: 6rem 2vw 6rem 10vw;
+}
+@media screen and (max-width: 600px) {
+  .left {
+    margin: 1rem;
+  }
+}
+
+.right {
+  margin: 6rem 10vw 6rem 2vw;
+}
+@media screen and (max-width: 600px) {
+  .right {
+    margin: 1rem;
+  }
+}
+
+.contentContainer {
+  gap: 1rem;
+  align-items: center;
+}
+.contentContainer h2,
+.contentContainer p {
+  text-align: center;
+}
+
+.points {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.point {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+.point p {
+  color: #777a7e;
+  margin: 0 !important;
+  line-height: 1.5rem;
+}
+@media screen and (max-width: 600px) {
+  .point {
+    margin-left: 0;
+  }
+}
+
+.cross {
+  height: 30px;
+  width: 30px;
+  min-width: 30px;
+  border: 1px solid #e53535;
+  background-color: #e53535;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+.cross svg {
+  stroke: #f8f8f8;
+  color: #f8f8f8;
+}
+.cross:hover {
+  transition: all 0.5s ease;
+  background-color: #f8f8f8;
+}
+.cross:hover svg {
+  stroke: #e53535;
+  color: #e53535;
+}
+.cross a {
+  color: #046999;
+}
+
+.tick {
+  height: 30px;
+  width: 30px;
+  min-width: 30px;
+  border: 1px solid #0eaa0e;
+  background-color: #0eaa0e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+.tick svg {
+  stroke: #f8f8f8;
+  color: #f8f8f8;
+}
+.tick:hover {
+  transition: all 0.5s ease;
+  background-color: #f8f8f8;
+}
+.tick:hover svg {
+  stroke: #0eaa0e;
+  color: #0eaa0e;
+}
+.tick a {
+  color: #046999;
+}/*# sourceMappingURL=boxSegment.module.css.map */

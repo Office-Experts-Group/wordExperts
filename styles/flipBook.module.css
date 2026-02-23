@@ -355,4 +355,19 @@
 .bookSegment h2 {
   text-align: center;
   margin-bottom: 3rem;
+}
+.bookSegment p {
+  text-align: center;
+  line-height: 2rem;
+  color: #777a7e;
+  max-width: 60%;
+  margin: 0 auto 2rem auto;
+}
+@media screen and (max-width: 770px) {
+  .bookSegment h2,
+  .bookSegment p {
+    text-align: left;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
 }/*# sourceMappingURL=flipBook.module.css.map */

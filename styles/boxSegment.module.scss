@@ -1,0 +1,129 @@
+@import "./globals.scss";
+
+.boxSegment {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    padding: 1rem 0;
+  }
+}
+
+.boxDiv {
+  border-radius: 2rem;
+  aspect-ratio: 2/1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    color: $darkGrayText;
+    line-height: 1.6;
+  }
+}
+
+.left {
+  margin: 6rem 2vw 6rem 10vw;
+  @media screen and (max-width: 600px) {
+    margin: 1rem;
+  }
+}
+
+.right {
+  margin: 6rem 10vw 6rem 2vw;
+  @media screen and (max-width: 600px) {
+    margin: 1rem;
+  }
+}
+
+.contentContainer {
+  gap: 1rem;
+  align-items: center;
+  h2,
+  p {
+    text-align: center;
+  }
+}
+.pointsContainer {
+}
+
+.points {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.point {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+  p {
+    color: $darkGrayText;
+    margin: 0 !important;
+    line-height: 1.5rem;
+  }
+  @media screen and (max-width: 600px) {
+    margin-left: 0;
+  }
+}
+
+.cross {
+  height: 30px;
+  width: 30px;
+  min-width: 30px;
+  border: 1px solid #e53535;
+  background-color: #e53535;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  svg {
+    stroke: $offWhite;
+    color: $offWhite;
+  }
+  &:hover {
+    transition: all 0.5s ease;
+    background-color: $offWhite;
+    svg {
+      stroke: #e53535;
+      color: #e53535;
+    }
+  }
+  a {
+    color: $theme;
+  }
+}
+
+.tick {
+  height: 30px;
+  width: 30px;
+  min-width: 30px;
+  border: 1px solid #0eaa0e;
+  background-color: #0eaa0e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  svg {
+    stroke: $offWhite;
+    color: $offWhite;
+  }
+  &:hover {
+    transition: all 0.5s ease;
+    background-color: $offWhite;
+    svg {
+      stroke: #0eaa0e;
+      color: #0eaa0e;
+    }
+  }
+  a {
+    color: $theme;
+  }
+}

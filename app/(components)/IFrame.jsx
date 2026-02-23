@@ -10,7 +10,7 @@ const VideoPlayer = () => {
       <h2>Unlock the Power of Microsoft Word</h2>
       <p className={styles.description}>
         Learn how our Word Experts consultants automate document workflows,
-        enforce corporate branding, and reduce creation time—all through
+        enforce corporate branding, and reduce creation time, all through
         templates, toolbars and custom macros. Discover how advanced template
         techniques save your team hours and improve consistency.
       </p>

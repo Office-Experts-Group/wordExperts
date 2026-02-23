@@ -37,11 +37,6 @@
   -o-object-fit: cover;
      object-fit: cover;
   padding-bottom: 0.5rem;
-  filter: grayscale(0%);
-  transition: all 0.3s ease;
-}
-.imgWrapper img:hover {
-  filter: grayscale(100%);
 }
 @media (max-width: 449px) {
   .imgWrapper {
@@ -107,6 +102,11 @@
   color: #777a7e;
   line-height: 2rem;
   margin-top: 1rem;
+}
+@media screen and (max-width: 450px) {
+  .content {
+    margin: 0 !important;
+  }
 }
 
 .points {

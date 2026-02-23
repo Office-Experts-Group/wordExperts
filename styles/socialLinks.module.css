@@ -6,11 +6,13 @@
 .socials svg {
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 15px;
-  height: 15px;
 }
 .socials svg:hover {
   fill: #046999;
+}
+.socials svg {
+  width: 15px;
+  height: 15px;
 }
 
 .socialLinkNav {
