@@ -10,18 +10,18 @@ import Contents from "./(components)/Contents";
 import BookSegment from "./(components)/BookSegment";
 import BoxSegment from "./(components)/BoxSegment";
 import BoxSegmentCopy from "./(components)/BoxSegmentCopy";
+import DeskImage from "./(components)/DeskImage";
 
 import faqs from "../../faqs/corporate-solutions";
 import faqSchema from "../../faqs/corporateSolutionsSchema";
 
 import templates from "../../public/pageHeros/templates.webp";
-import graph from "../../public/pageHeros/mob/graph.webp";
+import templateMob from "../../public/pageHeros/mob/templateMob.webp";
 
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
 } from "../../utils/schemaGenerators";
-import DeskImage from "./(components)/DeskImage";
 
 const schema = {
   "@context": "https://schema.org",
@@ -131,9 +131,9 @@ const Page = () => {
       <ServiceHero
         title="Corporate Global Template Solution"
         desktopImage={templates}
-        mobileImage={graph}
+        mobileImage={templateMob}
         altDesk={"word templates"}
-        altMob={"graphs"}
+        altMob={"word templates"}
       />
       <PageSegmentMain />
       <BookSegment />
