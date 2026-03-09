@@ -33,7 +33,7 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2019-08-06T07:28:06+00:00",
-      dateModified: "2025-08-15T00:00:00+00:00",
+      dateModified: "2026-03-09T00:00:00+00:00",
       description:
         "Meet our expert team of Microsoft Word consultants, developers, and designers. Professional Word template and document specialists across Australia.",
       breadcrumb: {
