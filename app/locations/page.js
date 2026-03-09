@@ -13,6 +13,7 @@ import australiaMob from "../../public/pageHeros/mob/australiaMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 // Import location images
