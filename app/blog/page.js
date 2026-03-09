@@ -2,9 +2,10 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
-import Contact from "../../components/Contact";
-import CTAMain from "../(components)/CTAMain";
+const Contact = dynamic(() => import("../../components/Contact"));
+const CTAMain = dynamic(() => import("../(components)/CTAMain"));
 
 import styles from "../../styles/blog.module.scss";
 
@@ -13,6 +14,7 @@ import { blogPosts } from "./blogPosts";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -20,6 +22,11 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(
+      "https://www.wordexperts.com.au",
+      "Word Experts",
+      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/blog",
@@ -77,15 +84,6 @@ const schema = {
           url: "https://www.wordexperts.com.au/logo.png",
         },
       },
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.wordexperts.com.au#website",
-      url: "https://www.wordexperts.com.au",
-      name: "Word Experts Australia",
-      description:
-        "Australia's leading Microsoft Word specialists, creating custom templates, toolbars, ribbons, and document automation solutions for businesses nationwide.",
-      inLanguage: "en-AU",
     },
   ],
 };

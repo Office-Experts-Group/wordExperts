@@ -1,7 +1,8 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
-import Contact from "../../components/Contact";
-import TestimonialPage from "./(components)/TestimonialPage";
+const Contact = dynamic(() => import("../../components/Contact"));
+const TestimonialPage = dynamic(() => import("./(components)/TestimonialPage"));
 import ServiceHero from "../../components/ServiceHero";
 
 import { getTestimonialsPageSchema } from "../../utils/testimonialSchemaGenerator";
@@ -9,6 +10,7 @@ import { getTestimonialsPageSchema } from "../../utils/testimonialSchemaGenerato
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 import { testimonials } from "../../testimonials";
@@ -26,6 +28,11 @@ const schema = {
     ...getTestimonialsPageSchema(serviceTestimonials, "word")["@graph"],
     generateProfessionalServiceSchema(),
     generateOrganizationSchema(),
+    generateWebSiteSchema(
+      "https://www.wordexperts.com.au",
+      "Word Experts",
+      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/client-testimonials",

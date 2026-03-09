@@ -1,12 +1,14 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
-import ExpertsAwait from "../../components/ExpertsAwait";
-import FAQSection from "../../components/FAQSection";
 import ServiceHero from "../../components/ServiceHero";
-import Contact from "../../components/Contact";
 import PageSegmentMain from "./(components)/PageSegmentMain";
-import Segment4Repeat from "./(components)/Segment4Repeat";
-import BulletPoints from "./(components)/BulletPoints";
+
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
+const FAQSection = dynamic(() => import("../../components/FAQSection"));
+const Contact = dynamic(() => import("../../components/Contact"));
+const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"));
+const BulletPoints = dynamic(() => import("./(components)/BulletPoints"));
 
 import faqs from "../../faqs/automation";
 import faqSchema from "../../faqs/customToolbarsSchema";
@@ -17,6 +19,7 @@ import puzzleMob from "../../public/pageHeros/mob/puzzleMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -24,6 +27,11 @@ const schema = {
   "@graph": [
     generateProfessionalServiceSchema(),
     generateOrganizationSchema(),
+    generateWebSiteSchema(
+      "https://www.wordexperts.com.au",
+      "Word Experts",
+      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/custom-toolbars-and-ribbons",

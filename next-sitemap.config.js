@@ -1,15 +1,3 @@
-// /** @type {import('next-sitemap').IConfig} */
-// module.exports = {
-//   siteUrl: "https://www.wordexperts.com.au",
-//   generateRobotsTxt: true,
-//   // Optional: other configuration
-//   changefreq: "weekly",
-//   priority: 0.7,
-//   exclude: ["/api/*"],
-//   generateIndexSitemap: false,
-//   trailingSlash: false,
-// };
-
 // next-sitemap.config.js
 // Sitemap configuration for Word Experts with video sitemap support
 // Includes video metadata for SEO purposes
@@ -54,7 +42,7 @@ module.exports = {
         <video:upload_date>${video.uploadDate}</video:upload_date>
         <video:family_friendly>yes</video:family_friendly>
       </video:video>
-    `
+    `,
       )
       .join("");
 

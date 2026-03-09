@@ -1,8 +1,9 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
 import MeetTheTeam from "../../components/MeetTheTeam";
-import Contact from "../../components/Contact";
+const Contact = dynamic(() => import("../../components/Contact"));
 
 import handShake from "../../public/pageHeros/handShake.webp";
 import handShakeMob from "../../public/pageHeros/mob/handShakeMob.webp";
@@ -10,6 +11,7 @@ import handShakeMob from "../../public/pageHeros/mob/handShakeMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -17,6 +19,11 @@ const schema = {
   "@graph": [
     generateProfessionalServiceSchema(),
     generateOrganizationSchema(),
+    generateWebSiteSchema(
+      "https://www.wordexperts.com.au",
+      "Word Experts",
+      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/meet-the-team",

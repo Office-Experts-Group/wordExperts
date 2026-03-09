@@ -1,12 +1,14 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
 import PageSegmentMain from "./(components)/PageSegmentMain";
-import Contact from "../../components/Contact";
-import ExpertsAwait from "../../components/ExpertsAwait";
-import PageSegmentEnd from "./(components)/PageSegmentEnd";
-import PageSegment4 from "./(components)/PageSegment4";
-import Segment4Repeat from "./(components)/Segment4Repeat";
+
+const Contact = dynamic(() => import("../../components/Contact"));
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
+const PageSegmentEnd = dynamic(() => import("./(components)/PageSegmentEnd"));
+const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"));
+const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"));
 
 import migration from "../../public/pageHeros/migration.webp";
 import migrationMob from "../../public/pageHeros/mob/migrationMob.webp";
@@ -14,6 +16,7 @@ import migrationMob from "../../public/pageHeros/mob/migrationMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -21,6 +24,11 @@ const schema = {
   "@graph": [
     generateProfessionalServiceSchema(),
     generateOrganizationSchema(),
+    generateWebSiteSchema(
+      "https://www.wordexperts.com.au",
+      "Word Experts",
+      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/gooogle-docs-to-word-migration",

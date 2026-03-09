@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
-import Contact from "../../components/Contact";
-import CTAMain from "../(components)/CTAMain";
+const Contact = dynamic(() => import("../../components/Contact"));
+const CTAMain = dynamic(() => import("../(components)/CTAMain"));
 
 import styles from "../../styles/videoPortal.module.scss";
 
@@ -19,6 +20,7 @@ import {
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 // Generate video schema for each video
@@ -40,6 +42,11 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(
+      "https://www.wordexperts.com.au",
+      "Word Experts",
+      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/video-portal",
@@ -110,7 +117,7 @@ const VideoPortalPage = () => {
   const filteredVideos = getVideosByCategory(selectedCategory).filter(
     (video) =>
       video.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      video.description.toLowerCase().includes(searchTerm.toLowerCase())
+      video.description.toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
   const featuredVideos = getFeaturedVideos();

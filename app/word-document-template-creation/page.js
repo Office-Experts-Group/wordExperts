@@ -1,19 +1,21 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
-import Contact from "../../components/Contact";
 import PageSegmentMain from "./(components)/PageSegmentMain";
-import Segment4Repeat from "./(components)/Segment4Repeat";
-import PageSegment5 from "./(components)/PageSegment5";
-import ExpertsAwait from "../../components/ExpertsAwait";
-import Segment4 from "./(components)/Segment4";
-import Segment5 from "./(components)/Segment5";
-import Segment6 from "./(components)/Segment6";
-import Segment7 from "./(components)/Segment7";
-import Segment8 from "./(components)/Segment8";
-import Conclusion from "./(components)/Conclusion";
-import Image from "./(components)/Image";
-import TemplateCards from "../../components/TemplateCards";
+
+const Contact = dynamic(() => import("../../components/Contact"));
+const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"));
+const PageSegment5 = dynamic(() => import("./(components)/PageSegment5"));
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
+const Segment4 = dynamic(() => import("./(components)/Segment4"));
+const Segment5 = dynamic(() => import("./(components)/Segment5"));
+const Segment6 = dynamic(() => import("./(components)/Segment6"));
+const Segment7 = dynamic(() => import("./(components)/Segment7"));
+const Segment8 = dynamic(() => import("./(components)/Segment8"));
+const Conclusion = dynamic(() => import("./(components)/Conclusion"));
+const Image = dynamic(() => import("./(components)/Image"));
+const TemplateCards = dynamic(() => import("../../components/TemplateCards"));
 
 import graphTable from "../../public/pageHeros/graphTable.webp";
 import graph from "../../public/pageHeros/mob/graph.webp";
@@ -21,6 +23,7 @@ import graph from "../../public/pageHeros/mob/graph.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 import page1 from "../../public/books/environment/page1.webp";
@@ -37,6 +40,11 @@ const schema = {
   "@graph": [
     generateProfessionalServiceSchema(),
     generateOrganizationSchema(),
+    generateWebSiteSchema(
+      "https://www.wordexperts.com.au",
+      "Word Experts",
+      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/word-document-template-creation",
@@ -46,7 +54,7 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-01-13T14:26:07+00:00",
-      dateModified: "2025-08-26T00:00:00+00:00",
+      dateModified: "2026-03-02T00:00:00+00:00",
       description:
         "Professional Microsoft Word template creation services. Custom document templates that maintain brand consistency and improve productivity.",
       breadcrumb: {

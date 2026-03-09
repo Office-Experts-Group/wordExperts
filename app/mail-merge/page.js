@@ -1,19 +1,17 @@
-// Page component for /mail-merge route
+// /mail-merge
 import React from "react";
+import dynamic from "next/dynamic";
 
-// Shared components from main components folder
 import ServiceHero from "../../components/ServiceHero";
-import Contact from "../../components/Contact";
-import ExpertsAwait from "../../components/ExpertsAwait";
-import Promo from "../../components/Promo";
-
-// Page-specific components from local folder
 import PageSegmentMain from "./(components)/PageSegmentMain";
-import PageSegment4 from "./(components)/PageSegment4";
-import Segment4Repeat from "./(components)/Segment4Repeat";
-import PageSegmentEnd from "./(components)/PageSegmentEnd";
 
-// Hero images - update these paths to your actual images
+const Contact = dynamic(() => import("../../components/Contact"));
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
+const Promo = dynamic(() => import("../../components/Promo"));
+const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"));
+const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"));
+const PageSegmentEnd = dynamic(() => import("./(components)/PageSegmentEnd"));
+
 import mailMerge from "../../public/pageHeros/mailMerge.webp";
 import mailMergeMob from "../../public/pageHeros/mob/mailMergeMob.webp";
 
@@ -21,6 +19,7 @@ import mailMergeMob from "../../public/pageHeros/mob/mailMergeMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 // JSON-LD structured data for search engines
@@ -29,6 +28,11 @@ const schema = {
   "@graph": [
     generateProfessionalServiceSchema(),
     generateOrganizationSchema(),
+    generateWebSiteSchema(
+      "https://www.wordexperts.com.au",
+      "Word Experts",
+      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/mail-merge",
@@ -93,10 +97,10 @@ const Page = () => {
       <PageSegment4 />
       <ExpertsAwait />
       <Promo
-  h2="Get Started with Mail Merge Today"
-  p="If you're tired of copy-pasting names and details into dozens of Word documents, it's time to automate your process. We'll help you set up a professional Mail Merge system tailored to your business."
-/>
-<PageSegmentEnd />
+        h2="Get Started with Mail Merge Today"
+        p="If you're tired of copy-pasting names and details into dozens of Word documents, it's time to automate your process. We'll help you set up a professional Mail Merge system tailored to your business."
+      />
+      <PageSegmentEnd />
       <Contact />
     </>
   );

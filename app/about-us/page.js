@@ -1,20 +1,25 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
 import AboutUsMain from "./(components)/AboutUsMain";
-import Testimonials from "../(components)/Testimonials";
-import WhyChooseUs from "./(components)/WhyChooseUs";
-import GoodToKnow from "./(components)/GoodToKnow";
-import MeetTheTeamSlider from "./(components)/MeetTheTeamSlider";
-import Contact from "../../components/Contact";
-import Promo from "../../components/Promo";
-import ExpertsAwait from "../../components/ExpertsAwait";
+
+const Testimonials = dynamic(() => import("../(components)/Testimonials"));
+const WhyChooseUs = dynamic(() => import("./(components)/WhyChooseUs"));
+const GoodToKnow = dynamic(() => import("./(components)/GoodToKnow"));
+const MeetTheTeamSlider = dynamic(
+  () => import("./(components)/MeetTheTeamSlider"),
+);
+const Contact = dynamic(() => import("../../components/Contact"));
+const Promo = dynamic(() => import("../../components/Promo"));
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
 
 import { getAboutPageSchema } from "../../utils/testimonialSchemaGenerator";
 import { testimonials } from "../../testimonials";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 import aboutUs from "../../public/pageHeros/aboutUs.webp";
@@ -26,16 +31,21 @@ const schema = {
     ...getAboutPageSchema(testimonials, "word")["@graph"],
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(
+      "https://www.wordexperts.com.au",
+      "Word Experts",
+      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/about-us",
       url: "https://www.wordexperts.com.au/about-us",
-      name: "About Us | Excel Experts",
+      name: "About Us | Word Experts",
       isPartOf: {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2025-07-30T00:00:00+00:00",
+      dateModified: "2026-03-02T00:00:00+00:00",
       name: "About Us | Word Experts",
       description:
         "Australia's leading Microsoft Word specialists, creating custom templates, toolbars, ribbons, and document automation solutions for businesses nationwide.",

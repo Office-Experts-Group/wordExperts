@@ -1,16 +1,17 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
-import IFrame from "../(components)/IFrame";
-import Contact from "../../components/Contact";
 import PageSegmentMain from "./(components)/PageSegmentMain";
-import BlackSegment from "./(components)/BlackSegment";
-import FAQSection from "../../components/FAQSection";
-import Contents from "./(components)/Contents";
-import BookSegment from "./(components)/BookSegment";
-import BoxSegment from "./(components)/BoxSegment";
-import BoxSegmentCopy from "./(components)/BoxSegmentCopy";
-import DeskImage from "./(components)/DeskImage";
+
+const IFrame = dynamic(() => import("../(components)/IFrame"));
+const Contact = dynamic(() => import("../../components/Contact"));
+const BlackSegment = dynamic(() => import("./(components)/BlackSegment"));
+const FAQSection = dynamic(() => import("../../components/FAQSection"));
+const Contents = dynamic(() => import("./(components)/Contents"));
+const BookSegment = dynamic(() => import("./(components)/BookSegment"));
+const BoxSegment = dynamic(() => import("./(components)/BoxSegment"));
+// import DeskImage from "./(components)/DeskImage";
 
 import faqs from "../../faqs/corporate-solutions";
 import faqSchema from "../../faqs/corporateSolutionsSchema";
@@ -138,8 +139,6 @@ const Page = () => {
       <PageSegmentMain />
       <BookSegment />
       <BlackSegment />
-      <DeskImage />
-      <BoxSegmentCopy />
       <BoxSegment />
       <IFrame />
       <FAQSection faqs={faqs} />

@@ -1,13 +1,15 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
 import PageSegmentMain from "./(components)/PageSegmentMain";
-import Contact from "../../components/Contact";
-import Segment4Repeat from "./(components)/Segment4Repeat";
-import PageSegment5 from "./(components)/PageSegment5";
-import ExpertsAwait from "../../components/ExpertsAwait";
-import Promo from "../../components/Promo";
-import FAQSection from "../../components/FAQSection";
+
+const Contact = dynamic(() => import("../../components/Contact"));
+const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"));
+const PageSegment5 = dynamic(() => import("./(components)/PageSegment5"));
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
+const Promo = dynamic(() => import("../../components/Promo"));
+const FAQSection = dynamic(() => import("../../components/FAQSection"));
 
 import faqs from "../../faqs/popup-forms";
 import faqSchema from "../../faqs/popupSchema";
@@ -18,6 +20,7 @@ import graphTableMob from "../../public/pageHeros/mob/graphTableMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -25,6 +28,11 @@ const schema = {
   "@graph": [
     generateProfessionalServiceSchema(),
     generateOrganizationSchema(),
+    generateWebSiteSchema(
+      "https://www.wordexperts.com.au",
+      "Word Experts",
+      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/popup-forms",

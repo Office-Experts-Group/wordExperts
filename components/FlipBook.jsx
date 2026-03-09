@@ -308,13 +308,6 @@ export default function FlipBook({
           />
         ))}
       </div>
-
-      {/* Scroll/click hint  only on the cover */}
-      {currentPage === 0 && (
-        <p className={styles.hint} aria-hidden="true">
-          scroll or click to open
-        </p>
-      )}
     </div>
   );
 }

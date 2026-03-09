@@ -1,9 +1,11 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
 import LocationGroups from "./(components)/LocationGroups";
-import Promo from "../../components/Promo";
-import Contact from "../../components/Contact";
+
+const Promo = dynamic(() => import("../../components/Promo"));
+const Contact = dynamic(() => import("../../components/Contact"));
 
 import australia from "../../public/pageHeros/australia.webp";
 import australiaMob from "../../public/pageHeros/mob/australiaMob.webp";
@@ -32,6 +34,11 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(
+      "https://www.wordexperts.com.au",
+      "Word Experts",
+      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/locations",

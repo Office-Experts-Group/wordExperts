@@ -1,25 +1,34 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
-import LocationPages from "../(components)/LocationPages";
-import CTAMainProps from "../(components)/CTAMainProps";
-import ContactLocationSegment from "../../components/ContactLocationSegment";
-import ServicesLocation from "../(components)/ServicesLocation";
-import Promo from "../../components/Promo";
-import GoodToKnow from "../../components/GoodToKnow";
 import LocationSummary from "../(components)/LocationSummary";
-import Testimonials from "../(components)/Testimonials";
-import MeetTheTeamSlider from "../../components/MeetTheTeamSlider";
 
-import canberra from "../../public/pageHeros/canberra.webp";
-import canberraMob from "../../public/pageHeros/mob/canberraMob.webp";
+const LocationPages = dynamic(() => import("../(components)/LocationPages"));
+const CTAMainProps = dynamic(() => import("../(components)/CTAMainProps"));
+const ContactLocationSegment = dynamic(
+  () => import("../../components/ContactLocationSegment"),
+);
+const ServicesLocation = dynamic(
+  () => import("../(components)/ServicesLocation"),
+);
+const Promo = dynamic(() => import("../../components/Promo"));
+const GoodToKnow = dynamic(() => import("../../components/GoodToKnow"));
+const Testimonials = dynamic(() => import("../(components)/Testimonials"));
+const MeetTheTeamSlider = dynamic(
+  () => import("../../components/MeetTheTeamSlider"),
+);
 
 import { getHomePageSchema } from "../../utils/testimonialSchemaGenerator";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 import { testimonials } from "../../testimonials";
+
+import canberra from "../../public/pageHeros/canberra.webp";
+import canberraMob from "../../public/pageHeros/mob/canberraMob.webp";
 
 const schema = {
   "@context": "https://schema.org",
@@ -27,6 +36,11 @@ const schema = {
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
     ...getHomePageSchema(testimonials, "word")["@graph"],
+    generateWebSiteSchema(
+      "https://www.wordexperts.com.au",
+      "Word Experts",
+      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/word-consultants-canberra",

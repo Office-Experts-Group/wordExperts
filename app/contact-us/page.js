@@ -1,8 +1,8 @@
 import React from "react";
 
 import Contact from "../../components/Contact";
-import ServiceHero from "../../components/ServiceHero";
 import CTAMain from "./(components)/CTAMain";
+import ServiceHero from "../../components/ServiceHero";
 
 import contactUs from "../../public/pageHeros/contactUs.webp";
 import contactUsMob from "../../public/pageHeros/mob/contactUsMob.webp";
@@ -10,6 +10,7 @@ import contactUsMob from "../../public/pageHeros/mob/contactUsMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -17,6 +18,11 @@ const schema = {
   "@graph": [
     generateProfessionalServiceSchema(),
     generateOrganizationSchema(),
+    generateWebSiteSchema(
+      "https://www.wordexperts.com.au",
+      "Word Experts",
+      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/contact-us",

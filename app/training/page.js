@@ -1,17 +1,16 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
 import ServicePageCards from "./(components)/ServicePageCards";
-import Contact from "../../components/Contact";
-import ExpertsAwait from "../../components/ExpertsAwait";
-import PageSegmentMain from "./(components)/PageSegmentMain";
-import PageSegment8 from "./(components)/PageSegment8";
-// import PageSegment4 from "./(components)/PageSegment4";
-// import PageSegment5 from "./(components)/PageSegment5";
-// import Segment4Repeat from "./(components)/Segment4Repeat";
-import FAQSection from "../../components/FAQSection";
 import Contents from "./(components)/Contents";
-import PageSegment4New from "./(components)/PageSegment4New";
+
+const Contact = dynamic(() => import("../../components/Contact"));
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
+const PageSegmentMain = dynamic(() => import("./(components)/PageSegmentMain"));
+const PageSegment8 = dynamic(() => import("./(components)/PageSegment8"));
+const FAQSection = dynamic(() => import("../../components/FAQSection"));
+const PageSegment4New = dynamic(() => import("./(components)/PageSegment4New"));
 
 import faqs from "../../faqs/training";
 import faqSchema from "../../faqs/trainingSchema";
@@ -22,6 +21,7 @@ import coffeeMob from "../../public/pageHeros/mob/coffeeMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 import Segment4 from "./(components)/Segment4";
 
@@ -30,6 +30,11 @@ const schema = {
   "@graph": [
     generateProfessionalServiceSchema(),
     generateOrganizationSchema(),
+    generateWebSiteSchema(
+      "https://www.wordexperts.com.au",
+      "Word Experts",
+      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/training",

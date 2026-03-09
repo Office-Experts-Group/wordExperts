@@ -1,18 +1,23 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
 import PageSegmentMain from "./(components)/PageSegmentMain";
-import PageSegment4 from "./(components)/PageSegment4";
-import PageSegment5 from "./(components)/PageSegment5";
-import PageSegmentDropdowns from "./(components)/PageSegmentDropdowns";
-import Contact from "../../components/Contact";
-import BlackSegment from "./(components)/BlackSegment";
+
+const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"));
+const PageSegment5 = dynamic(() => import("./(components)/PageSegment5"));
+const PageSegmentDropdowns = dynamic(
+  () => import("./(components)/PageSegmentDropdowns"),
+);
+const Contact = dynamic(() => import("../../components/Contact"));
+const BlackSegment = dynamic(() => import("./(components)/BlackSegment"));
 
 import rebrand from "../../public/pageHeros/rebrand.webp";
 import rebrandingMob from "../../public/pageHeros/mob/rebrandingMob.webp";
 
 import {
   generateProfessionalServiceSchema,
+  generateWebSiteSchema,
   generateOrganizationSchema,
 } from "../../utils/schemaGenerators";
 
@@ -21,6 +26,11 @@ const schema = {
   "@graph": [
     generateProfessionalServiceSchema(),
     generateOrganizationSchema(),
+    generateWebSiteSchema(
+      "https://www.wordexperts.com.au",
+      "Word Experts",
+      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/document-rebranding-services",

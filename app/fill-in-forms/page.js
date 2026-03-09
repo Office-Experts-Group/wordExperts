@@ -1,11 +1,13 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
 import PageSegmentMain from "./(components)/PageSegmentMain";
-import Contact from "../../components/Contact";
-import Segment4Repeat from "./(components)/Segment4Repeat";
-import ExpertsAwait from "../../components/ExpertsAwait";
-import FAQSection from "../../components/FAQSection";
+
+const Contact = dynamic(() => import("../../components/Contact"));
+const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"));
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
+const FAQSection = dynamic(() => import("../../components/FAQSection"));
 
 import faqs from "../../faqs/fill-in-forms";
 import faqSchema from "../../faqs/fillFormsSchema";
@@ -16,6 +18,7 @@ import glassesMob from "../../public/pageHeros/mob/glassesMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -23,6 +26,11 @@ const schema = {
   "@graph": [
     generateProfessionalServiceSchema(),
     generateOrganizationSchema(),
+    generateWebSiteSchema(
+      "https://www.wordexperts.com.au",
+      "Word Experts",
+      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/fill-in-forms",

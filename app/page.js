@@ -9,8 +9,8 @@ import Hero from "./(components)/Hero";
 const Services = dynamic(() => import("./(components)/Services"));
 const CTAMain = dynamic(() => import("./(components)/CTAMain"));
 const IsRight = dynamic(() => import("./(components)/IsRight"));
-const SolutionsCarousel = dynamic(() =>
-  import("./(components)/SolutionsCarousel")
+const SolutionsCarousel = dynamic(
+  () => import("./(components)/SolutionsCarousel"),
 );
 const CTAFull = dynamic(() => import("./(components)/CTAFull"));
 const Testimonials = dynamic(() => import("./(components)/Testimonials"));
@@ -27,6 +27,7 @@ import { getHomePageSchema } from "../utils/testimonialSchemaGenerator";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../utils/schemaGenerators";
 import { testimonials } from "../testimonials";
 
@@ -36,6 +37,11 @@ const schema = {
     generateProfessionalServiceSchema(),
     generateOrganizationSchema(),
     ...getHomePageSchema(testimonials, "word")["@graph"],
+    generateWebSiteSchema(
+      "https://www.wordexperts.com.au",
+      "Word Experts",
+      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au",

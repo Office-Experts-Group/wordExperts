@@ -1,12 +1,16 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
-import Contact from "../../components/Contact";
 import PageSegmentMain from "./(components)/PageSegmentMain";
-import BlackSegment from "./(components)/BlackSegment";
-import PageSegment4 from "./(components)/PageSegment4";
-import PageSegment5 from "./(components)/PageSegment5";
-import PageSegmentDropdowns from "./(components)/PageSegmentDropdowns";
+
+const Contact = dynamic(() => import("../../components/Contact"));
+const BlackSegment = dynamic(() => import("./(components)/BlackSegment"));
+const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"));
+const PageSegment5 = dynamic(() => import("./(components)/PageSegment5"));
+const PageSegmentDropdowns = dynamic(
+  () => import("./(components)/PageSegmentDropdowns"),
+);
 
 import brandTemplate from "../../public/pageHeros/brandTemplate.webp";
 import brandTemplateMob from "../../public/pageHeros/mob/brandTemplateMob.webp";
@@ -14,6 +18,7 @@ import brandTemplateMob from "../../public/pageHeros/mob/brandTemplateMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -21,6 +26,11 @@ const schema = {
   "@graph": [
     generateProfessionalServiceSchema(),
     generateOrganizationSchema(),
+    generateWebSiteSchema(
+      "https://www.wordexperts.com.au",
+      "Word Experts",
+      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/brand-template",

@@ -1,14 +1,16 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
-import Contact from "../../components/Contact";
 import PageSegmentMain from "./(components)/PageSegmentMain";
-import PageSegment4 from "./(components)/PageSegment4";
-import DeskImage from "./(components)/DeskImage";
-import ExpertsAwait from "../../components/ExpertsAwait";
-import Bullets from "./(components)/Bullets";
-import UseCases from "./(components)/UseCases";
-import WhyExperts from "./(components)/WhyExperts";
+
+const Contact = dynamic(() => import("../../components/Contact"));
+const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"));
+const DeskImage = dynamic(() => import("./(components)/DeskImage"));
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
+const Bullets = dynamic(() => import("./(components)/Bullets"));
+const UseCases = dynamic(() => import("./(components)/UseCases"));
+const WhyExperts = dynamic(() => import("./(components)/WhyExperts"));
 
 import javascript from "../../public/pageHeros/javascript.webp";
 import javascriptMob from "../../public/pageHeros/mob/javascriptMob.webp";
@@ -16,6 +18,7 @@ import javascriptMob from "../../public/pageHeros/mob/javascriptMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -23,6 +26,11 @@ const schema = {
   "@graph": [
     generateProfessionalServiceSchema(),
     generateOrganizationSchema(),
+    generateWebSiteSchema(
+      "https://www.wordexperts.com.au",
+      "Word Experts",
+      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/microsoft-word-api-integrations",

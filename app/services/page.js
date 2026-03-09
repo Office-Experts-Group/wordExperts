@@ -1,15 +1,21 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
 import PageSegmentMain from "./(components)/PageSegmentMain";
-import ServicesSection from "./(components)/ServicesSection";
-import WhyChooseUs from "../../app/about-us/(components)/WhyChooseUs";
-import IndustrySection from "./(components)/IndustrySection";
-import HowWeWork from "./(components)/HowWeWork";
-import AustraliaWide from "./(components)/AustraliaWide";
-import Testimonials from "../../app/(components)/Testimonials";
-import ExpertsAwait from "../../components/ExpertsAwait";
-import Contact from "../../components/Contact";
+
+const ServicesSection = dynamic(() => import("./(components)/ServicesSection"));
+const WhyChooseUs = dynamic(
+  () => import("../../app/about-us/(components)/WhyChooseUs"),
+);
+const IndustrySection = dynamic(() => import("./(components)/IndustrySection"));
+const HowWeWork = dynamic(() => import("./(components)/HowWeWork"));
+const AustraliaWide = dynamic(() => import("./(components)/AustraliaWide"));
+const Testimonials = dynamic(
+  () => import("../../app/(components)/Testimonials"),
+);
+const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
+const Contact = dynamic(() => import("../../components/Contact"));
 
 import { testimonials } from "../../testimonials";
 
@@ -19,6 +25,7 @@ import servicesMob from "../../public/pageHeros/mob/servicesMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -26,6 +33,11 @@ const schema = {
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateWebSiteSchema(
+      "https://www.wordexperts.com.au",
+      "Word Experts",
+      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/services",
