@@ -18,6 +18,7 @@
 
   @media screen and (max-width: 770px) {
     padding: 0 1rem;
+    margin-top: 4rem;
   }
 }
 
@@ -27,10 +28,16 @@
   line-height: 2;
   max-width: 80%;
   margin-bottom: 2rem;
+  @media screen and (max-width: 770px) {
+    max-width: 100%;
+  }
 }
 
 .video {
   margin: 2rem auto 0 auto;
+  @media screen and (max-width: 770px) {
+    margin: 2rem auto -1rem auto;
+  }
 }
 
 .sub {

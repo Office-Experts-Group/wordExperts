@@ -20,7 +20,11 @@ import page13 from "../../../public/books/coral/page13.webp";
 
 const BookSegment = () => {
   return (
-    <div className={styles.bookSegment}>
+    <div
+      className={styles.bookSegment}
+      id="template-services"
+      style={{ scrollMarginTop: "100px" }}
+    >
       <h2>Professional Document Template Services</h2>
       <p>
         With Word Experts, your not just getting a template, your getting a long

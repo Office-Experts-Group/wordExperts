@@ -1,7 +1,7 @@
 import React from "react";
 import dynamic from "next/dynamic";
 
-import ServiceHero from "../../components/ServiceHero";
+import ServiceHero from "../../components/NewServiceHero";
 import PageSegmentMain from "./(components)/PageSegmentMain";
 
 const IFrame = dynamic(() => import("../(components)/IFrame"));

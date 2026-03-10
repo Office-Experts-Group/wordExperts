@@ -3,7 +3,7 @@ import React from "react";
 import AnimateOnScroll from "../../../components/AnimateOnScroll";
 import TemplateCards from "../../../components/TemplateCards";
 
-import styles from "../../../styles/pageSegment.module.css";
+import styles from "../../../styles/newPageSegment.module.css";
 
 import page1 from "../../../public/books/community/page1.webp";
 import page2 from "../../../public/books/community/page2.webp";
@@ -29,7 +29,7 @@ const PageSegmentMain = () => {
   ];
 
   return (
-    <section className={styles.pageSegment}>
+    <section className={styles.pageSegment} id="consistent-branding">
       <div
         className={styles.imgWrapper}
         style={{

@@ -3,7 +3,11 @@ import styles from "../../styles/iframe.module.scss";
 
 const VideoPlayer = () => {
   return (
-    <section className={styles.videoSection}>
+    <section
+      className={styles.videoSection}
+      id="video"
+      style={{ scrollMarginTop: "-250px" }}
+    >
       <div className={styles.sub}>
         <p>Automate Your Workflows</p>
       </div>

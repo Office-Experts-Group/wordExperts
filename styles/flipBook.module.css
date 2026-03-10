@@ -353,8 +353,9 @@
   margin: 4rem 0;
 }
 .bookSegment h2 {
+  font-size: 2.5rem;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 .bookSegment p {
   text-align: center;
