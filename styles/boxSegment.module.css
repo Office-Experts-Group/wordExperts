@@ -125,6 +125,10 @@
     font-size: 1.6rem;
   }
 }
+.contentBox a {
+  color: #046999;
+  font-weight: 700;
+}
 
 .lightCard .pointsBox li::before {
   color: #0eaa0e;
@@ -158,8 +162,8 @@
 .pointsBox li::before {
   content: "•";
   position: absolute;
-  left: 0;
-  top: 0.2rem;
+  left: 0.2rem;
+  top: 0.1rem;
   transition: color 2700ms ease;
 }
 .pointsBox li:last-child {
