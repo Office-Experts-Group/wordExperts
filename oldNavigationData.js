@@ -174,7 +174,7 @@ export const oldNavigationData = {
           },
           {
             label: "Brand Templates",
-            href: "/brand-templates",
+            href: "/brand-template",
           },
           {
             label: "Google Docs Migration",
