@@ -11,7 +11,7 @@
     color: $darkGrayText;
     line-height: 2rem;
     &:last-of-type {
-      color: $theme;
+      // color: $theme;
       letter-spacing: 1px;
       margin: 1rem 0;
     }
@@ -37,7 +37,7 @@
   height: auto;
   object-fit: contain;
   justify-self: center;
-  align-self: center; 
+  align-self: center;
 }
 
 .img {
@@ -54,7 +54,7 @@
     }
     @media screen and (max-width: 700px) {
       display: none;
-    }   
+    }
   }
 }
 
@@ -137,7 +137,7 @@
     color: $black;
     margin: 0;
     padding-right: 1rem;
-    font-weight: 500;
+    font-weight: 700;
   }
 
   .content {

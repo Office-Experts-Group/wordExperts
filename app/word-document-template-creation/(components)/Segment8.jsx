@@ -3,9 +3,10 @@ import Image from "next/image";
 
 import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
-import styles from "../../../styles/pageSegment4.module.css";
+import styles from "../../../styles/newPageSegment4.module.css";
 
 import experts from "../../../public/experts600x400.webp";
+import BookSegment from "./BookSegment";
 
 const Segment8 = () => {
   const checkItems = [
@@ -36,57 +37,52 @@ const Segment8 = () => {
               <h2>Why Choose Word Experts?</h2>
             </div>
             <p>
-              Our templates are more than just documents — they are{" "}
+              Our templates are more than just documents, they are{" "}
               <strong>strategically designed tools</strong> that combine beauty,
               functionality, and efficiency. With Word Experts, you get:
             </p>
-          </div>
 
-          <div className={styles.points}>
-            {checkItems.map(({ strong, text }, index) => (
-              <div
-                key={index}
-                className={styles.point}
-                style={{ marginTop: ".5rem" }}
-              >
-                <div className={styles.tick}>
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth="1"
-                    viewBox="0 0 24 24"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"></path>
-                  </svg>
+            <div className={styles.points}>
+              {checkItems.map(({ strong, text }, index) => (
+                <div
+                  key={index}
+                  className={styles.point}
+                  style={{ marginTop: ".5rem" }}
+                >
+                  <div className={styles.tick}>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      strokeWidth="1"
+                      viewBox="0 0 24 24"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"></path>
+                    </svg>
+                  </div>
+                  <p>
+                    <strong>{strong}</strong> {text}
+                  </p>
                 </div>
-                <p>
-                  <strong>{strong}</strong> {text}
-                </p>
-              </div>
-            ))}
-          </div>
-          <div className={styles.content} style={{ marginTop: "1rem" }}>
-            <p>
-              With our expertise, your team can focus on producing outstanding
-              content while we ensure the templates are beautiful, functional,
-              and effortlessly easy to use.
-            </p>
-          </div>
-        </AnimateOnScroll>
-
-        <AnimateOnScroll animation="scale-up" duration={1} delay={0.2}>
-          <div className="image-wrapper">
-            <Image
-              src={experts}
-              alt="ask the experts card"
-              width={450}
-              height={300}
-            />
+              ))}
+            </div>
+            <div
+              className={styles.content}
+              style={{ marginTop: "1rem", paddingBottom: "0" }}
+            >
+              <p>
+                With our expertise, your team can focus on producing outstanding
+                content while we ensure the templates are beautiful, functional,
+                and effortlessly easy to use.
+              </p>
+            </div>
           </div>
         </AnimateOnScroll>
+        <div className={styles.deskOnly}>
+          <BookSegment />
+        </div>
       </div>
     </div>
   );

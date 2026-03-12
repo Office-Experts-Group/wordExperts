@@ -1,0 +1,29 @@
+.scrollRevealWrapper {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 449px) {
+  .index0,
+  .index1 {
+    display: none;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .index0,
+  .index1 {
+    display: none;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .index0,
+  .index1 {
+    display: none;
+  }
+}
+
+@media (max-width: 449px) {
+  .index3 {
+    display: none;
+  }
+}/*# sourceMappingURL=compareScrollReveal.module.css.map */

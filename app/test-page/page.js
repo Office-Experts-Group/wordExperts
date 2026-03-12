@@ -119,7 +119,7 @@ const schema = {
 
 const Page = () => {
   return (
-    <>
+    <section style={{ maxWidth: "1400px" }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -143,7 +143,7 @@ const Page = () => {
       <IFrame />
       <FAQSection faqs={faqs} />
       <Contact />
-    </>
+    </section>
   );
 };
 

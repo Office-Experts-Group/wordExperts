@@ -9,7 +9,10 @@ import inDesign from "../../../public/inDesign-to-word.webp";
 
 const PageSegment3 = () => {
   return (
-    <section className={`${styles.pageSegment} ${styles.mobPad}`}>
+    <section
+      className={`${styles.pageSegment} ${styles.mobPad}`}
+      style={{ marginTop: "4rem" }}
+    >
       <AnimateOnScroll animation="slide-left" duration={1} delay={0}>
         <Image
           src={inDesign}

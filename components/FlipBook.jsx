@@ -68,27 +68,19 @@ export default function FlipBook({
       setActiveSheet(movingSheet);
       setCurrentPage(next);
       if (goingForward) {
-        // On the final flip there is no right-bg to reveal — clear it immediately.
         if (next === maxPage) {
           setDisplayPage(next);
         }
-        // On the first flip (currentPage === 0) the left-bg must be delayed —
-        // the sheet needs to sweep across before the left side becomes visible.
-        // All other forward flips can update the left immediately.
-        if (currentPage !== 0) {
-          setDisplayLeftPage(next);
-        }
+        // displayLeftPage intentionally NOT touched here at all
         setTimeout(() => {
           setDisplayPage(next);
-          setDisplayLeftPage(next);
+          setDisplayLeftPage(next); // only update left AFTER sheet has landed
           setIsAnimating(false);
           setActiveSheet(null);
         }, animDuration);
       } else {
-        // Going backward: on the last back-flip (next === 0) the left-bg should
-        // clear immediately since there's nothing to show at page 0.
         if (next === 0) {
-          setDisplayLeftPage(next);
+          setDisplayLeftPage(0);
         }
         setDisplayPage(next);
         setTimeout(() => {
@@ -111,16 +103,16 @@ export default function FlipBook({
       const rect = containerRef.current.getBoundingClientRect();
       const inView =
         rect.top < window.innerHeight * 0.7 &&
-        rect.bottom > window.innerHeight * 0.5;
+        rect.bottom > window.innerHeight * 0.3;
 
       if (!inView) {
         accumulatedScroll.current = 0;
-        lastScrollY.current = window.scrollY;
+        lastScrollY.current = window.scrollY; // keep this in sync while out of view
         return;
       }
 
       const delta = window.scrollY - lastScrollY.current;
-      lastScrollY.current = window.scrollY;
+      lastScrollY.current = window.scrollY; // ← move this BEFORE the navigate check
       accumulatedScroll.current += delta;
 
       if (Math.abs(accumulatedScroll.current) >= scrollOffset) {

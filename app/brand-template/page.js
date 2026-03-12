@@ -20,6 +20,7 @@ import {
   generateOrganizationSchema,
   generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
+import CompareContainer from "./(components)/CompareContainer";
 
 const schema = {
   "@context": "https://schema.org",
@@ -160,6 +161,7 @@ const Page = () => {
         <PageSegment4 />
         <BlackSegment />
         <PageSegment5 />
+        <CompareContainer />
         <PageSegmentDropdowns />
         <Contact />
       </main>

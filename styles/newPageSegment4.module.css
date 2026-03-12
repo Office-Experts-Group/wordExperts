@@ -1,0 +1,119 @@
+.pageSegment {
+  scroll-margin-top: 100px;
+  padding: 0 10vw;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+.pageSegment img {
+  flex: 0 0 600px;
+  height: auto;
+  filter: grayscale(0%);
+  transition: all 0.3s ease;
+}
+@media (max-width: 449px) {
+  .pageSegment {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 1rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .pageSegment {
+    display: flex;
+    padding: 0 1rem;
+    flex-direction: column-reverse;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .pageSegment {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.pageSegment a {
+  color: #046999;
+  font-weight: 700;
+}
+
+.content {
+  flex: 1;
+  padding-bottom: 5rem;
+}
+.content p {
+  color: #777a7e;
+  line-height: 2rem;
+}
+.content p:first-of-type {
+  margin-bottom: 1rem;
+}
+.content a {
+  color: #046999;
+  font-weight: 700;
+}
+.content a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 449px) {
+  .deskOnly {
+    display: none;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .deskOnly {
+    display: none;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .deskOnly {
+    display: none;
+  }
+}
+
+.points {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.point {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+.point p {
+  color: #777a7e;
+  margin: 0 !important;
+  line-height: 1.5rem;
+}
+
+.tick {
+  height: 30px;
+  width: 30px;
+  min-width: 30px;
+  border: 1px solid #0eaa0e;
+  background-color: #0eaa0e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+.tick svg {
+  stroke: #f8f8f8;
+  color: #f8f8f8;
+}
+.tick:hover {
+  transition: all 0.5s ease;
+  background-color: #f8f8f8;
+}
+.tick:hover svg {
+  stroke: #0eaa0e;
+  color: #0eaa0e;
+}
+.tick a {
+  color: #046999 !important;
+}/*# sourceMappingURL=newPageSegment4.module.css.map */

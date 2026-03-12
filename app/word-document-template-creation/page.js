@@ -17,7 +17,7 @@ const Conclusion = dynamic(() => import("./(components)/Conclusion"));
 const Image = dynamic(() => import("./(components)/Image"));
 const TemplateCards = dynamic(() => import("../../components/TemplateCards"));
 
-import graphTable from "../../public/pageHeros/graphTable.webp";
+import startup from "../../public/pageHeros/startup.webp";
 import graph from "../../public/pageHeros/mob/graph.webp";
 
 import {
@@ -104,9 +104,9 @@ const Page = () => {
       />
       <ServiceHero
         title="Word Document Template Creation"
-        desktopImage={graphTable}
+        desktopImage={startup}
         mobileImage={graph}
-        altDesk={"graphs on a table"}
+        altDesk={"Word template"}
         altMob={"graphs"}
       />
       <PageSegmentMain />
