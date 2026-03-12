@@ -20,8 +20,18 @@ import page13 from "../../../public/books/coral/page13.webp";
 
 const BookSegment = () => {
   return (
-    <div className={styles.bookSegment}>
+    <div
+      className={styles.bookSegment}
+      id="template-services"
+      style={{ scrollMarginTop: "100px" }}
+    >
       <h2>Professional Document Template Services</h2>
+      <p>
+        With Word Experts, your not just getting a template, your getting a long
+        term solution for consistent branding, efficient workflows and polished
+        communication.Every document your team creates will be consistently
+        visually striking, professionally formatted and error free.
+      </p>
       <FlipBook
         images={[
           page1,

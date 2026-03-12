@@ -11,6 +11,9 @@ const PageSegment5 = dynamic(() => import("./(components)/PageSegment5"));
 const PageSegmentDropdowns = dynamic(
   () => import("./(components)/PageSegmentDropdowns"),
 );
+const CompareContainer = dynamic(
+  () => import("./(components)/CompareContainer"),
+);
 
 import brandTemplate from "../../public/pageHeros/brandTemplate.webp";
 import brandTemplateMob from "../../public/pageHeros/mob/brandTemplateMob.webp";
@@ -20,7 +23,7 @@ import {
   generateOrganizationSchema,
   generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
-import CompareContainer from "./(components)/CompareContainer";
+import BoxSegment from "./(components)/BoxSegment";
 
 const schema = {
   "@context": "https://schema.org",
@@ -41,7 +44,7 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-07-15T16:09:50+00:00",
-      dateModified: "2025-07-30T00:00:00+00:00",
+      dateModified: "2026-03-12T00:00:00+00:00",
       description:
         "Professional Microsoft Word brand template services. Custom document templates that ensure consistent branding and professional appearance across your organization.",
       breadcrumb: {
@@ -160,8 +163,9 @@ const Page = () => {
         <PageSegmentMain />
         <PageSegment4 />
         <BlackSegment />
-        <PageSegment5 />
         <CompareContainer />
+        <BoxSegment />
+        {/* <PageSegment5 /> */}
         <PageSegmentDropdowns />
         <Contact />
       </main>

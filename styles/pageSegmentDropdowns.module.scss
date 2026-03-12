@@ -4,7 +4,7 @@
   margin: 0 auto;
   padding: 8rem 10vw;
   display: grid;
-  grid-template-columns: 1fr 40%;
+  grid-template-columns: 1fr 35%;
   gap: 2rem;
 
   p {
@@ -12,7 +12,7 @@
     line-height: 2rem;
     &:last-of-type {
       // color: $theme;
-      letter-spacing: 1px;
+      // letter-spacing: 1px;
       margin: 1rem 0;
     }
   }

@@ -1,7 +1,6 @@
 // styles/compareContainer.module.scss
 @import "./globals.scss";
 
-$theme: #046999;
 $theme-dark: #034e73;
 $theme-light: #e8f4f9;
 $text: #1a1a2e;
@@ -11,9 +10,19 @@ $border: rgba(0, 0, 0, 0.08);
 // ── Section wrapper ──────────────────────────────────────────────────────────
 .compareContainer {
   width: 100%;
-  padding: 6rem 10vw 2rem 10vw;
+  padding: 8rem 10vw;
   position: relative;
-  box-sizing: border-box;
+  @include phone {
+    padding: 5rem 1rem 0 1rem;
+  }
+  @include phoneLandscape {
+    padding: 5rem 1rem 0 1rem;
+  }
+}
+
+.container {
+  width: 100%;
+  position: relative;
   @include phone {
     padding: 5rem 1rem 0 1rem;
   }
@@ -22,8 +31,7 @@ $border: rgba(0, 0, 0, 0.08);
 // ── Heading block ────────────────────────────────────────────────────────────
 .headingBlock {
   max-width: 1080px;
-  margin: 0 auto 3.5rem;
-  text-align: center;
+  margin-bottom: 4rem;
 }
 
 .heading {

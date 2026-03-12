@@ -332,6 +332,12 @@
   color: $darkGrayText;
   font-size: 1.125rem;
   line-height: 2rem;
+  @media screen and (max-width: "770px") {
+    justify-content: center;
+    p {
+      text-align: center;
+    }
+  }
 }
 
 .centerText {

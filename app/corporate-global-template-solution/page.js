@@ -1,30 +1,27 @@
 import React from "react";
 import dynamic from "next/dynamic";
 
-import Contents from "./(components)/Contents";
-import ServiceHero from "../../components/ServiceHero";
-import ServicePageCards from "./(components)/ServicePageCards";
+import ServiceHero from "../../components/NewServiceHero";
+import PageSegmentMain from "./(components)/PageSegmentMain";
 
 const IFrame = dynamic(() => import("../(components)/IFrame"));
 const Contact = dynamic(() => import("../../components/Contact"));
-const PageSegmentMain = dynamic(() => import("./(components)/PageSegmentMain"));
 const BlackSegment = dynamic(() => import("./(components)/BlackSegment"));
-const PageSegment8 = dynamic(() => import("./(components)/PageSegment8"));
-const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"));
-const PageSegment5 = dynamic(() => import("./(components)/PageSegment5"));
 const FAQSection = dynamic(() => import("../../components/FAQSection"));
+const Contents = dynamic(() => import("./(components)/Contents"));
 const BookSegment = dynamic(() => import("./(components)/BookSegment"));
+const BoxSegment = dynamic(() => import("./(components)/BoxSegment"));
+// import DeskImage from "./(components)/DeskImage";
 
 import faqs from "../../faqs/corporate-solutions";
 import faqSchema from "../../faqs/corporateSolutionsSchema";
 
-import deskGraph from "../../public/pageHeros/deskGraph.webp";
-import graph from "../../public/pageHeros/mob/graph.webp";
+import templates from "../../public/pageHeros/templates.webp";
+import templateMob from "../../public/pageHeros/mob/templateMob.webp";
 
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
-  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -32,11 +29,6 @@ const schema = {
   "@graph": [
     generateProfessionalServiceSchema(),
     generateOrganizationSchema(),
-    generateWebSiteSchema(
-      "https://www.wordexperts.com.au",
-      "Word Experts",
-      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
-    ),
     {
       "@type": "WebPage",
       "@id":
@@ -47,7 +39,7 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-07-15T15:50:26+00:00",
-      dateModified: "2025-07-30T00:00:00+00:00",
+      dateModified: "2026-03-12T00:00:00+00:00",
       description:
         "Advanced Corporate Word Template Solutions enabling efficient creation of corporate documents, brand consistency and document integrity.",
       breadcrumb: {
@@ -139,18 +131,15 @@ const Page = () => {
       <Contents />
       <ServiceHero
         title="Corporate Global Template Solution"
-        desktopImage={deskGraph}
-        mobileImage={graph}
-        altDesk={"graphs"}
-        altMob={"graphs"}
+        desktopImage={templates}
+        mobileImage={templateMob}
+        altDesk={"word templates"}
+        altMob={"word templates"}
       />
-      <ServicePageCards />
       <PageSegmentMain />
-      <PageSegment8 />
       <BookSegment />
       <BlackSegment />
-      <PageSegment4 />
-      <PageSegment5 />
+      <BoxSegment />
       <IFrame />
       <FAQSection faqs={faqs} />
       <Contact />

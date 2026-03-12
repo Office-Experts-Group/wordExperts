@@ -23,6 +23,16 @@
   background-color: #232528;
 }
 
+.singleSection {
+  margin-top: -4rem;
+}
+@media screen and (max-width: 770px) {
+  .singleSection {
+    gap: 4rem;
+    margin-top: 2rem;
+  }
+}
+
 .cardWrapper {
   perspective: 1600px;
   perspective-origin: center 40%;

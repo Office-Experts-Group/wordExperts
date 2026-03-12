@@ -1,11 +1,8 @@
 import React from "react";
-import Image from "next/image";
-
-import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegmentDropdowns.module.css";
 
-import word from "../../../public/word600x400.webp";
+import CompareContainer from "./CompareContainerCopy";
 
 const BrandingServices = () => {
   const serviceDetails = [
@@ -52,7 +49,7 @@ const BrandingServices = () => {
     <div className={styles.upgradeSection}>
       <div className={styles.content}>
         <h2>Our Microsoft Word Branding Services</h2>
-        <p style={{ fontWeight: "700", marginBottom: "1rem" }}>
+        <p style={{ marginBottom: "1rem" }}>
           We create efficient branded templates to match your business identity,
           whether you're starting fresh or rebranding.
         </p>
@@ -80,21 +77,9 @@ const BrandingServices = () => {
         </div>
       </div>
 
-      <AnimateOnScroll animation="scale-up" duration={1} delay={0.2}>
-        <div
-          className={styles.imgSection}
-          style={{ height: "100%", display: "flex" }}
-        >
-          <Image
-            src={word}
-            alt="microsoft word screenshot"
-            width={600}
-            height={400}
-            className={`${styles.mainImg}`}
-            style={{ margin: "0 auto" }}
-          />
-        </div>
-      </AnimateOnScroll>
+      <div className={styles.imgSection}>
+        <CompareContainer />
+      </div>
     </div>
   );
 };

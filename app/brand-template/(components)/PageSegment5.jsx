@@ -13,7 +13,7 @@ const BrandTemplateTargets = () => {
     "Businesses seeking to standardise document formats",
     "Organisations looking to improve professional presentation",
     "Teams that need user-friendly documentation tools",
-    "Companies merging with consistent document styles"
+    "Companies merging with consistent document styles",
   ];
 
   return (
@@ -33,10 +33,14 @@ const BrandTemplateTargets = () => {
       <div className={styles.content}>
         <AnimateOnScroll animation="fade-up" duration={1} delay={0.2}>
           <div className={styles.underline}>
-            <h2 style={{ fontSize: "2rem"}}>Who Needs Brand Templates?</h2>
+            <h2 style={{ fontSize: "2rem" }}>Who Needs Brand Templates?</h2>
           </div>
           <p>
-            Our Microsoft Word brand template services are perfect for:
+            Organisations produce a large volume of documents every day,
+            including reports, proposals, letters, and internal communications.
+            Without well-structured templates, these documents can quickly vary
+            in style, formatting, and branding, creating an inconsistent
+            experience for both staff and clients.{" "}
           </p>
 
           <div className={styles.points}>
