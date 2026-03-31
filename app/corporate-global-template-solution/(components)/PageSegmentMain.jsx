@@ -50,11 +50,6 @@ const PageSegmentMain = () => {
             <p>Advanced Corporate Template Solutions</p>
             <h2>Efficient and Consistent Branding for Your Documents</h2>
             <p>
-              Our advanced Corporate Word Template Solution enables users to
-              efficiently create corporate documents in a controlled environment
-              within your branding guidelines.
-            </p>
-            <p>
               Office Experts Group have developed an advanced Corporate Word
               Template Solution to enable users to effectively and efficiently
               create corporate documents in house. These documents are created

@@ -29,8 +29,8 @@ const BookSegment = () => {
       <p>
         With Word Experts, your not just getting a template, your getting a long
         term solution for consistent branding, efficient workflows and polished
-        communication.Every document your team creates will be consistently
-        visually striking, professionally formatted and error free.
+        communication. Every document your team creates will be consistently
+        visually striking, professionally formatted and hassle free.
       </p>
       <FlipBook
         images={[

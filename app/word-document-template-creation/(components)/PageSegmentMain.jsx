@@ -56,19 +56,19 @@ const PageSegmentMain = () => {
             <p>
               We create Microsoft Word templates that are{" "}
               <strong>striking, refined, and impeccably crafted.</strong> Every
-              design blends elegant form and flawless function — with polished
-              layouts, brand-perfect styling, and user-friendly features that
-              make document creation effortless.
+              design blends elegant form and function with polished layouts,
+              branded styling, and user-friendly features that make document
+              creation effortless.
             </p>
             <p>
-              We create Microsoft Word templates that are striking, refined, and
-              impeccably crafted. Every design blends elegant form and flawless
-              function — with polished layouts, brand-perfect styling, and
-              user-friendly features that make document creation effortless. Our
-              templates are robust and reliable, ensuring their formatting while
-              accompanied with our custom ribbon solution. They save your team
-              valuable time, reduce errors, and deliver consistent,
-              professional, and visually stunning results..
+              Our templates are robust and reliable, ensuring their formatting
+              while accompanied with our
+              <Link href="/custom-toolbars-and-ribbons">
+                {" "}
+                custom ribbon solution
+              </Link>
+              . They save your team valuable time, reduce errors, and deliver
+              consistent, professional, and visually stunning results.
             </p>
           </div>
         </AnimateOnScroll>
