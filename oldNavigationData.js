@@ -340,6 +340,10 @@ export const oldNavigationData = {
             href: `${POWER_PLATFORM_EXPERTS_URL}/services/microsoft-power-platform/microsoft-power-pages`,
           },
           {
+            label: "Data Analytics with Microsoft Fabric",
+            href: `${POWER_PLATFORM_EXPERTS_URL}/microsoft-fabric`,
+          },
+          {
             label: "Power Bi Support",
             href: `${POWER_PLATFORM_EXPERTS_URL}/power-bi-support`,
           },
