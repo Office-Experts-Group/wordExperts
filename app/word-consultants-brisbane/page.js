@@ -24,17 +24,21 @@ import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
   generateWebSiteSchema,
+  generateLocalBusinessSchema,
 } from "../../utils/schemaGenerators";
 import { testimonials } from "../../testimonials";
 
 import Brisbane from "../../public/pageHeros/brisbane.webp";
 import BrisbaneMob from "../../public/pageHeros/mob/brisbaneMob.webp";
 
+const location = "Brisbane";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateLocalBusinessSchema(location),
     ...getHomePageSchema(testimonials, "word")["@graph"],
     generateWebSiteSchema(
       "https://www.wordexperts.com.au",
@@ -46,11 +50,13 @@ const schema = {
       "@id": "https://www.wordexperts.com.au/word-consultants-brisbane",
       url: "https://www.wordexperts.com.au/word-consultants-brisbane",
       name: "Microsoft Word Consultants Brisbane",
+      description:
+        "Australia-wide Microsoft Word consulting team with experienced consultants based in Brisbane. Over 25 years of expertise with remote or onsite support.",
       isPartOf: {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2025-03-26T00:00:00+00:00",
+      dateModified: "2026-05-13T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.wordexperts.com.au/word-consultants-brisbane#breadcrumb",
@@ -86,8 +92,6 @@ const schema = {
 };
 
 const Page = () => {
-  const location = "Brisbane";
-
   return (
     <>
       <script

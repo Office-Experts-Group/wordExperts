@@ -24,17 +24,21 @@ import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
   generateWebSiteSchema,
+  generateLocalBusinessSchema,
 } from "../../utils/schemaGenerators";
 import { testimonials } from "../../testimonials";
 
 import centralCoast from "../../public/pageHeros/centralCoast.webp";
 import centralCoastMob from "../../public/pageHeros/mob/centralCoastMob.webp";
 
+const location = "Central Coast, NSW";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateLocalBusinessSchema(location),
     ...getHomePageSchema(testimonials, "word")["@graph"],
     generateWebSiteSchema(
       "https://www.wordexperts.com.au",
@@ -47,11 +51,13 @@ const schema = {
         "https://www.wordexperts.com.au/word-consultants-central-coast-nsw",
       url: "https://www.wordexperts.com.au/word-consultants-central-coast-nsw",
       name: "Microsoft Word Consultants Central Coast, NSW",
+      description:
+        "Australia-wide Microsoft Word consulting team with experienced consultants based in the Central Coast NSW. Over 25 years of expertise delivering document development, system integration, workflow automation and practical business support solutions.",
       isPartOf: {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2025-03-26T00:00:00+00:00",
+      dateModified: "2026-05-13T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.wordexperts.com.au/word-consultants-central-coast-nsw#breadcrumb",
@@ -89,8 +95,6 @@ const schema = {
 };
 
 const Page = () => {
-  const location = "Central Coast, NSW";
-
   return (
     <>
       <script

@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Word Consultants Richmond",
   description:
-  "Microsoft Word consultants in Richmond offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+    "Australia-wide Microsoft Word consulting team with consultants in Richmond. Over 25 years of experience in document development and system integrations with remote or onsite support.",
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Word Consultants Richmond",
     description:
-      "Microsoft Word consultants in Richmond offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+      "Australia-wide Microsoft Word consulting team with consultants in Richmond. Over 25 years of experience in document development and system integrations with remote or onsite support.",
     url: "https://www.wordexperts.com.au/word-consultants-richmond",
     siteName: "Word Experts",
     images: [
@@ -37,7 +37,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Word Experts Richmond | Microsoft Office Solutions",
     description:
-      "Microsoft Word consultants in Richmond offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+      "Australia-wide Microsoft Word consulting team with consultants in Richmond. Over 25 years of experience in document development and system integrations with remote or onsite support.",
     images: ["/logo.png"],
   },
 

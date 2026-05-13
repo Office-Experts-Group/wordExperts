@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Word Consultants Sydney",
   description:
-  "Microsoft Word consultants in Sydney offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+    "Microsoft Word consultants in Sydney as part of an Australia-wide team. 25+ years experience in templates, custom ribbons, document development, system integration and support.",
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Word Consultants Sydney",
     description:
-      "Microsoft Word consultants in Sydney offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+      "Microsoft Word consultants in Sydney as part of an Australia-wide team. 25+ years experience in templates, custom ribbons, document development, system integration and support.",
     url: "https://www.wordexperts.com.au/word-consultants-sydney",
     siteName: "Word Experts",
     images: [
@@ -37,7 +37,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Word Experts Sydney | Microsoft Office Solutions",
     description:
-      "Microsoft Word consultants in Sydney offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+      "Microsoft Word consultants in Sydney as part of an Australia-wide team. 25+ years experience in templates, custom ribbons, document development, system integration and support.",
     images: ["/logo.png"],
   },
 

@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Word Consultants Central Coast, NSW",
   description:
-  "Microsoft Word consultants in Central Coast NSW's offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+    "Australia-wide Microsoft Word consulting team with experienced consultants based in the Central Coast NSW. Over 25 years of expertise delivering document development, system integration, workflow automation and practical business support solutions.",
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Word Consultants Central Coast, NSW",
     description:
-      "Microsoft Word consultants in Central Coast NSW's offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+      "Australia-wide Microsoft Word consulting team with experienced consultants based in the Central Coast NSW. Over 25 years of expertise delivering document development, system integration, workflow automation and practical business support solutions.",
     url: "https://www.wordexperts.com.au/word-consultants-central-coast-nsw",
     siteName: "Word Experts",
     images: [
@@ -37,7 +37,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Word Experts Central Coast, NSW | Microsoft Office Solutions",
     description:
-      "Microsoft Word consultants in Central Coast NSW's offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+      "Australia-wide Microsoft Word consulting team with experienced consultants based in the Central Coast NSW. Over 25 years of expertise delivering document development, system integration, workflow automation and practical business support solutions.",
     images: ["/logo.png"],
   },
 

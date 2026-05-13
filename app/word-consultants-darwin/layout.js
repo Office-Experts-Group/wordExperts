@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Word Consultants Darwin",
   description:
-  "Microsoft Word consultants in Darwin offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+    "Australia-wide Microsoft Word consulting team with experienced consultants based in Darwin. Over 25 years of expertise delivering document development, integration and remote or onsite support.",
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Word Consultants Darwin",
     description:
-      "Microsoft Word consultants in Darwin offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+      "Australia-wide Microsoft Word consulting team with experienced consultants based in Darwin. Over 25 years of expertise delivering document development, integration and remote or onsite support.",
     url: "https://www.wordexperts.com.au/word-consultants-darwin",
     siteName: "Word Experts",
     images: [
@@ -37,7 +37,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Word Experts Darwin | Microsoft Office Solutions",
     description:
-      "Microsoft Word consultants in Darwin offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+      "Australia-wide Microsoft Word consulting team with experienced consultants based in Darwin. Over 25 years of expertise delivering document development, integration and remote or onsite support.",
     images: ["/logo.png"],
   },
 

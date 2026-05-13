@@ -24,17 +24,21 @@ import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
   generateWebSiteSchema,
+  generateLocalBusinessSchema,
 } from "../../utils/schemaGenerators";
 import { testimonials } from "../../testimonials";
 
 import northernRivers from "../../public/pageHeros/northernRivers.webp";
 import northernRiversMob from "../../public/pageHeros/mob/northernRiversMob.webp";
 
+const location = "Northern Rivers, NSW";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateLocalBusinessSchema(location),
     ...getHomePageSchema(testimonials, "word")["@graph"],
     generateWebSiteSchema(
       "https://www.wordexperts.com.au",
@@ -47,11 +51,13 @@ const schema = {
         "https://www.wordexperts.com.au/word-consultants-northern-rivers-nsw",
       url: "https://www.wordexperts.com.au/word-consultants-northern-rivers-nsw",
       name: "Microsoft Word Consultants northern-rivers-nsw",
+      description:
+        "Word Experts is headquartered in Northern Rivers NSW, providing Australia-wide Microsoft Word consulting. Over 25 years of expertise in document development, system integration and support.",
       isPartOf: {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2025-03-26T00:00:00+00:00",
+      dateModified: "2026-05-13T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.wordexperts.com.au/word-consultants-northern-rivers-nsw#breadcrumb",
@@ -89,8 +95,6 @@ const schema = {
 };
 
 const Page = () => {
-  const location = "Northern Rivers, NSW";
-
   return (
     <>
       <script

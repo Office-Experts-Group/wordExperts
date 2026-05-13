@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Word Consultants Gold Coast",
   description:
-  "Microsoft Word consultants in Gold Coast offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+    "Australia-wide Microsoft Word consulting team with experienced consultants based on the Gold Coast. Over 25 years of expertise delivering document development, automation and remote or onsite support.",
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Word Consultants Gold Coast",
     description:
-      "Microsoft Word consultants in Gold Coast offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+      "Australia-wide Microsoft Word consulting team with experienced consultants based on the Gold Coast. Over 25 years of expertise delivering document development, automation and remote or onsite support.",
     url: "https://www.wordexperts.com.au/word-consultants-gold-coast",
     siteName: "Word Experts",
     images: [
@@ -37,7 +37,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Word Experts Gold Coast | Microsoft Office Solutions",
     description:
-      "Microsoft Word consultants in Gold Coast offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+      "Australia-wide Microsoft Word consulting team with experienced consultants based on the Gold Coast. Over 25 years of expertise delivering document development, automation and remote or onsite support.",
     images: ["/logo.png"],
   },
 

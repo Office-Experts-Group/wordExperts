@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Word Consultants Canberra, NSW",
   description:
-    "Microsoft Word consultants in Canberra offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+    "Australia-wide Microsoft Word consulting team with experienced consultants based in Canberra. Over 25 years of expertise delivering document development, system integration and custom business solutions.",
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Word Consultants Canberra, NSW",
     description:
-      "Microsoft Word consultants in Canberra offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+      "Australia-wide Microsoft Word consulting team with experienced consultants based in Canberra. Over 25 years of expertise delivering document development, system integration and custom business solutions.",
     url: "https://www.wordexperts.com.au/word-consultants-canberra",
     siteName: "Word Experts",
     images: [
@@ -37,7 +37,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Word Experts Canberra, NSW | Microsoft Office Solutions",
     description:
-      "Microsoft Word consultants in Canberra offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+      "Australia-wide Microsoft Word consulting team with experienced consultants based in Canberra. Over 25 years of expertise delivering document development, system integration and custom business solutions.",
     images: ["/logo.png"],
   },
 

@@ -24,17 +24,21 @@ import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
   generateWebSiteSchema,
+  generateLocalBusinessSchema,
 } from "../../utils/schemaGenerators";
 import { testimonials } from "../../testimonials";
 
 import sydney from "../../public/pageHeros/sydney.webp";
 import sydneyMob from "../../public/pageHeros/mob/sydneyMob.webp";
 
+const location = "Sydney";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateLocalBusinessSchema(location),
     ...getHomePageSchema(testimonials, "word")["@graph"],
     generateWebSiteSchema(
       "https://www.wordexperts.com.au",
@@ -46,11 +50,13 @@ const schema = {
       "@id": "https://www.wordexperts.com.au/word-consultants-sydney",
       url: "https://www.wordexperts.com.au/word-consultants-sydney",
       name: "Microsoft Word Consultants Sydney",
+      description:
+        "Microsoft Word consultants in Sydney as part of an Australia-wide team. 25+ years experience in templates, custom ribbons, document development, system integration and support.",
       isPartOf: {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2025-03-26T00:00:00+00:00",
+      dateModified: "2026-05-13T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.wordexperts.com.au/word-consultants-sydney#breadcrumb",
@@ -86,8 +92,6 @@ const schema = {
 };
 
 const Page = () => {
-  const location = "Sydney";
-
   return (
     <>
       <script

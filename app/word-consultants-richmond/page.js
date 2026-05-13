@@ -24,17 +24,21 @@ import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
   generateWebSiteSchema,
+  generateLocalBusinessSchema,
 } from "../../utils/schemaGenerators";
 import { testimonials } from "../../testimonials";
 
 import richmond from "../../public/pageHeros/richmond.webp";
 import richmondMob from "../../public/pageHeros/mob/richmondMob.webp";
 
+const location = "Richmond";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateLocalBusinessSchema(location),
     ...getHomePageSchema(testimonials, "word")["@graph"],
     generateWebSiteSchema(
       "https://www.wordexperts.com.au",
@@ -46,11 +50,13 @@ const schema = {
       "@id": "https://www.wordexperts.com.au/word-consultants-richmond",
       url: "https://www.wordexperts.com.au/word-consultants-richmond",
       name: "Microsoft Word Consultants richmond",
+      description:
+        "Australia-wide Microsoft Word consulting team with consultants in Richmond. Over 25 years of experience in document development and system integrations with remote or onsite support.",
       isPartOf: {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2025-03-26T00:00:00+00:00",
+      dateModified: "2026-05-13T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.wordexperts.com.au/word-consultants-richmond#breadcrumb",
@@ -86,8 +92,6 @@ const schema = {
 };
 
 const Page = () => {
-  const location = "Richmond";
-
   return (
     <>
       <script

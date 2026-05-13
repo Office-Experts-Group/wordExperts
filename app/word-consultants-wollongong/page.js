@@ -24,17 +24,21 @@ import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
   generateWebSiteSchema,
+  generateLocalBusinessSchema,
 } from "../../utils/schemaGenerators";
 import { testimonials } from "../../testimonials";
 
 import wollongong from "../../public/pageHeros/wollongong.webp";
 import wollongongMob from "../../public/pageHeros/mob/wollongongMob.webp";
 
+const location = "Wollongong";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateLocalBusinessSchema(location),
     ...getHomePageSchema(testimonials, "word")["@graph"],
     generateWebSiteSchema(
       "https://www.wordexperts.com.au",
@@ -46,11 +50,13 @@ const schema = {
       "@id": "https://www.wordexperts.com.au/word-consultants-wollongong",
       url: "https://www.wordexperts.com.au/word-consultants-wollongong",
       name: "Microsoft Word Consultants wollongong",
+      description:
+        "Local consultants supporting Wollongong businesses within an Australia-wide team. Over 25 years of experience in document automation, custom templates, ribbon development and system integration.",
       isPartOf: {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2025-03-26T00:00:00+00:00",
+      dateModified: "2026-05-13T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.wordexperts.com.au/word-consultants-wollongong#breadcrumb",
@@ -88,8 +94,6 @@ const schema = {
 };
 
 const Page = () => {
-  const location = "Wollongong";
-
   return (
     <>
       <script

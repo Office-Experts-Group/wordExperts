@@ -24,17 +24,21 @@ import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
   generateWebSiteSchema,
+  generateLocalBusinessSchema,
 } from "../../utils/schemaGenerators";
 import { testimonials } from "../../testimonials";
 
 import darwin from "../../public/pageHeros/darwin.webp";
 import darwinMob from "../../public/pageHeros/mob/darwinMob.webp";
 
+const location = "Darwin";
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
     generateOrganizationSchema(),
     generateProfessionalServiceSchema(),
+    generateLocalBusinessSchema(location),
     ...getHomePageSchema(testimonials, "word")["@graph"],
     generateWebSiteSchema(
       "https://www.wordexperts.com.au",
@@ -46,11 +50,13 @@ const schema = {
       "@id": "https://www.wordexperts.com.au/word-consultants-darwin",
       url: "https://www.wordexperts.com.au/word-consultants-darwin",
       name: "Microsoft Word Consultants darwin",
+      description:
+        "Australia-wide Microsoft Word consulting team with experienced consultants based in Darwin. Over 25 years of expertise delivering document development, integration and remote or onsite support.",
       isPartOf: {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2024-10-26T00:00:00+00:00",
-      dateModified: "2025-03-26T00:00:00+00:00",
+      dateModified: "2026-05-13T00:00:00+00:00",
       breadcrumb: {
         "@id":
           "https://www.wordexperts.com.au/word-consultants-darwin#breadcrumb",
@@ -86,8 +92,6 @@ const schema = {
 };
 
 const Page = () => {
-  const location = "Darwin";
-
   return (
     <>
       <script

@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Word Consultants Brisbane - Word Experts",
   description:
-    "Microsoft Word consultants in Brisbane offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+    "Australia-wide Microsoft Word consulting team with experienced consultants based in Brisbane. Over 25 years of expertise with remote or onsite support.",
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Word Consultants Brisbane - Word Experts",
     description:
-      "Microsoft Word consultants in Brisbane offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+      "Australia-wide Microsoft Word consulting team with experienced consultants based in Brisbane. Over 25 years of expertise with remote or onsite support.",
     url: "https://www.wordexperts.com.au/word-consultants-brisbane",
     siteName: "Word Experts",
     images: [
@@ -37,7 +37,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Word Experts Brisbane | Microsoft Office Solutions",
     description:
-      "Microsoft Word consultants in Brisbane offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+      "Australia-wide Microsoft Word consulting team with experienced consultants based in Brisbane. Over 25 years of expertise with remote or onsite support.",
     images: ["/logo.png"],
   },
 

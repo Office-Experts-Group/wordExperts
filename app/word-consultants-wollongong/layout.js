@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Word Consultants Wollongong",
   description:
-  "Microsoft Word consultants in Wollongong offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+    "Local consultants supporting Wollongong businesses within an Australia-wide team. Over 25 years of experience in document automation, custom templates, ribbon development and system integration.",
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Word Consultants Wollongong",
     description:
-      "Microsoft Word consultants in Wollongong offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+      "Local consultants supporting Wollongong businesses within an Australia-wide team. Over 25 years of experience in document automation, custom templates, ribbon development and system integration.",
     url: "https://www.wordexperts.com.au/word-consultants-wollongong",
     siteName: "Word Experts",
     images: [
@@ -37,7 +37,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Word Experts Wollongong | Microsoft Office Solutions",
     description:
-      "Microsoft Word consultants in Wollongong offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+      "Local consultants supporting Wollongong businesses within an Australia-wide team. Over 25 years of experience in document automation, custom templates, ribbon development and system integration.",
     images: ["/logo.png"],
   },
 

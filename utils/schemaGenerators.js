@@ -2,6 +2,69 @@
 // Generates reusable Organization, LocalBusiness, and WebSite schemas for Word Experts
 // Part of the Office Experts Group network — wordexperts.com.au
 
+const CITY_META = {
+  Adelaide: {
+    addressRegion: "SA",
+    postalCode: "5000",
+    slug: "word-consultants-adelaide",
+  },
+  Brisbane: {
+    addressRegion: "QLD",
+    postalCode: "4000",
+    slug: "word-consultants-brisbane",
+  },
+  Canberra: {
+    addressRegion: "ACT",
+    postalCode: "2600",
+    slug: "word-consultants-canberra",
+  },
+  "Central Coast, NSW": {
+    addressRegion: "NSW",
+    postalCode: "2250",
+    slug: "word-consultants-central-coast-nsw",
+  },
+  Darwin: {
+    addressRegion: "NT",
+    postalCode: "0800",
+    slug: "word-consultants-darwin",
+  },
+  "Gold Coast": {
+    addressRegion: "QLD",
+    postalCode: "4217",
+    slug: "word-consultants-gold-coast",
+  },
+  Melbourne: {
+    addressRegion: "VIC",
+    postalCode: "3000",
+    slug: "word-consultants-melbourne",
+  },
+  "Northern Rivers, NSW": {
+    addressRegion: "NSW",
+    postalCode: "2480",
+    slug: "word-consultants-northern-rivers-nsw",
+  },
+  Perth: {
+    addressRegion: "WA",
+    postalCode: "6000",
+    slug: "word-consultants-perth",
+  },
+  Richmond: {
+    addressRegion: "VIC",
+    postalCode: "3121",
+    slug: "word-consultants-richmond",
+  },
+  Sydney: {
+    addressRegion: "NSW",
+    postalCode: "2000",
+    slug: "word-consultants-sydney",
+  },
+  Wollongong: {
+    addressRegion: "NSW",
+    postalCode: "2500",
+    slug: "word-consultants-wollongong",
+  },
+};
+
 // Shared service area used by both Organization and ProfessionalService schemas
 const SERVICE_AREAS = [
   { "@type": "Country", name: "Australia" },
@@ -234,7 +297,7 @@ export const generateProfessionalServiceSchema = () => ({
   description:
     "Professional Microsoft Word consulting, document design, and template development services across Australia",
   priceRange: "$$",
-  telephone: "1300 122 038",
+  telephone: "1300102810",
   email: "consult@wordexperts.com.au",
   areaServed: SERVICE_AREAS,
   location: LOCATIONS,
@@ -251,14 +314,14 @@ export const generateOrganizationSchema = () => ({
   "@id": "https://www.wordexperts.com.au#organization",
   name: "Word Experts Group",
   url: "https://www.wordexperts.com.au",
-  telephone: "1300 122 038",
+  telephone: "1300102810",
   email: "consult@wordexperts.com.au",
   foundingDate: "2000",
   contactPoint: [
     {
       "@type": "ContactPoint",
       contactType: "customer service",
-      telephone: "1300 122 038",
+      telephone: "1300102810",
       email: "consult@wordexperts.com.au",
       availableLanguage: "en-AU",
       contactOption: "TollFree",
@@ -320,3 +383,58 @@ export const generateWebSiteSchema = (
   ],
   inLanguage: "en-AU",
 });
+
+export const generateLocalBusinessSchema = (location) => {
+  const domain = "https://www.wordexperts.com.au";
+  const city = CITY_META[location];
+
+  // Warn in development if an unmapped city is passed — falls back to safe defaults
+  if (!city) {
+    console.warn(
+      `generateLocalBusinessSchema: no CITY_META entry for "${location}". Add it to CITY_META in schemaGenerators.js`,
+    );
+  }
+
+  const addressLocality = location.includes(",")
+    ? location.split(",")[0].trim()
+    : location;
+
+  const addressRegion = city?.addressRegion ?? "NSW";
+  const postalCode = city?.postalCode ?? "2000";
+  const slug =
+    city?.slug ??
+    `word-consultants-${location.toLowerCase().replace(/[\s,]+/g, "-")}`;
+  const pageUrl = `${domain}/${slug}`;
+
+  return {
+    "@type": "LocalBusiness",
+    "@id": `${pageUrl}#localbusiness`,
+    name: `Word Experts ${location}`,
+    url: pageUrl,
+    telephone: "1300 102 810",
+    email: "consult@wordexperts.com.au",
+    priceRange: "$$",
+    // City-specific address — the key geographic signal for this schema node
+    address: {
+      "@type": "PostalAddress",
+      addressLocality,
+      addressRegion,
+      postalCode,
+      addressCountry: "AU",
+    },
+    // Scoped to the specific city — deliberately narrower than the sitewide ProfessionalService node
+    areaServed: {
+      "@type": "City",
+      name: addressLocality,
+    },
+    // References the parent organisation without duplicating its full data
+    parentOrganization: {
+      "@id": `${domain}#organization`,
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: `Microsoft Word Consulting Services — ${location}`,
+      itemListElement: buildOffers(),
+    },
+  };
+};

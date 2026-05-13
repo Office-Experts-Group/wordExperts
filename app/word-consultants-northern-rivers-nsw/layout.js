@@ -4,13 +4,13 @@ export const metadata = {
   // Basic metadata
   title: "Microsoft Word Consultants Northern Rivers, NSW",
   description:
-  "Microsoft Word consultants in Northern Rivers NSW offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+    "Word Experts is headquartered in Northern Rivers NSW, providing Australia-wide Microsoft Word consulting. Over 25 years of expertise in document development, system integration and support.",
 
   // OpenGraph
   openGraph: {
     title: "Microsoft Word Consultants Northern Rivers, NSW",
     description:
-      "Microsoft Word consultants in Northern Rivers NSW offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+      "Word Experts is headquartered in Northern Rivers NSW, providing Australia-wide Microsoft Word consulting. Over 25 years of expertise in document development, system integration and support.",
     url: "https://www.wordexperts.com.au/word-consultants-northern-rivers-nsw",
     siteName: "Word Experts",
     images: [
@@ -37,7 +37,7 @@ export const metadata = {
     site: "@OfficeExpertsG1",
     title: "Word Experts Northern Rivers, NSW | Microsoft Office Solutions",
     description:
-      "Microsoft Word consultants in Northern Rivers NSW offering expert document development, system integration and support. Trusted solutions for over 25 years.",
+      "Word Experts is headquartered in Northern Rivers NSW, providing Australia-wide Microsoft Word consulting. Over 25 years of expertise in document development, system integration and support.",
     images: ["/logo.png"],
   },
 
