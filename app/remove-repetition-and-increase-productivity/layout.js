@@ -1,15 +1,12 @@
 export const metadata = {
-  title: "Remove Repetition and Increase Productivity | Word Experts",
+  title: "Word Document Automation Services | Word Experts Australia",
   description:
-    "Automate repetitive Word tasks and increase productivity. Custom automation solutions for Microsoft Word documents and templates. Streamline your workflow.",
-  keywords: [
-    // Core benefits
-    "Increase productivity with word",
-  ],
+    "Automate repetitive Word tasks and increase productivity. Custom automation solutions for Microsoft Word documents and templates.",
+  keywords: ["Word document automation"],
   openGraph: {
-    title: "Remove Repetition and Increase Productivity | Word Experts",
+    title: "Word Document Automation Services | Word Experts Australia",
     description:
-      "Automate repetitive Word tasks and increase productivity. Custom automation solutions for Microsoft Word documents.",
+      "Automate repetitive Word tasks and increase productivity. Custom automation solutions for Microsoft Word documents and templates.",
     url: "https://www.wordexperts.com.au/remove-repetition-and-increase-productivity",
     siteName: "Word Experts",
     images: [
@@ -26,9 +23,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@WordExpertsAU",
-    title: "Remove Repetition and Increase Productivity | Word Experts",
+    title: "Word Document Automation Services | Word Experts Australia",
     description:
-      "Automate repetitive Word tasks and increase productivity. Custom automation solutions for Microsoft Word documents.",
+      "Automate repetitive Word tasks and increase productivity. Custom automation solutions for Microsoft Word documents and templates.",
     images: ["/logo.png"],
   },
   alternates: {

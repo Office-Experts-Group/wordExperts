@@ -4,17 +4,15 @@ import dynamic from "next/dynamic";
 import ServiceHero from "../../components/ServiceHero";
 import PageSegmentMain from "./(components)/PageSegmentMain";
 
-const Contact = dynamic(() => import("../../components/Contact"));
+const PageSegmentImpact = dynamic(
+  () => import("./(components)/PageSegmentImpact"),
+);
 const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"));
 const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
-const Promo = dynamic(() => import("../../components/Promo"));
-const FAQSection = dynamic(() => import("../../components/FAQSection"));
+const Contact = dynamic(() => import("../../components/Contact"));
 
-import faqs from "../../faqs/remove-repitition";
-import faqSchema from "../../faqs/repititionSchema";
-
-import desk from "../../public/pageHeros/desk.webp";
-import glassesMob from "../../public/pageHeros/mob/glassesMob.webp";
+import repetition from "../../public/pageHeros/repetition.webp";
+import repetitionMob from "../../public/pageHeros/mob/repetitionMob.webp";
 
 import {
   generateProfessionalServiceSchema,
@@ -37,12 +35,12 @@ const schema = {
       "@id":
         "https://www.wordexperts.com.au/remove-repetition-and-increase-productivity",
       url: "https://www.wordexperts.com.au/remove-repetition-and-increase-productivity",
-      name: "Word Remove Repetition | Word Increase Productivity | Word Document Services",
+      name: "Word Document Automation Services | Word Experts",
       isPartOf: {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-07-15T16:11:12+00:00",
-      dateModified: "2024-11-12T00:00:00+00:00",
+      dateModified: "2026-06-17T00:00:00+00:00",
       description:
         "Automate repetitive Word tasks and increase productivity. Custom automation solutions for Microsoft Word documents and templates.",
       breadcrumb: {
@@ -73,7 +71,7 @@ const schema = {
         {
           "@type": "ListItem",
           position: 2,
-          name: "Remove Repetition and Increase Productivity",
+          name: "Word Document Automation",
           item: "https://www.wordexperts.com.au/remove-repetition-and-increase-productivity",
         },
       ],
@@ -82,32 +80,36 @@ const schema = {
       "@type": "Service",
       "@id":
         "https://www.wordexperts.com.au/remove-repetition-and-increase-productivity#service",
-      name: "Word Automation Solutions",
+      name: "Word Document Automation",
       provider: {
         "@id": "https://www.wordexperts.com.au#organization",
       },
       description:
-        "Professional Microsoft Word automation services for improved productivity",
-      serviceType: "Document Automation",
+        "Automate repetitive Word tasks and increase productivity. Custom automation solutions for Microsoft Word documents and templates.",
       category: "Productivity Solutions",
+      areaServed: {
+        "@type": "Country",
+        name: "Australia",
+      },
       hasOfferCatalog: {
         "@type": "OfferCatalog",
-        name: "Productivity Services",
+        name: "Word Automation Services",
         itemListElement: [
           {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "Task Automation",
-              description: "Automation of repetitive document tasks",
+              name: "VBA Macro Development",
+              description:
+                "Custom macro development for Word document automation",
             },
           },
           {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "Workflow Optimization",
-              description: "Streamlining document creation processes",
+              name: "Building Blocks & Quick Parts",
+              description: "Pre-built reusable document element libraries",
             },
           },
           {
@@ -115,15 +117,15 @@ const schema = {
             itemOffered: {
               "@type": "Service",
               name: "Template Automation",
-              description: "Automated document template solutions",
+              description: "Automated document template solutions for teams",
             },
           },
           {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "VBA Development",
-              description: "Custom macro development for automation",
+              name: "Header & Footer Automation",
+              description: "Dynamic header and footer content automation",
             },
           },
         ],
@@ -139,25 +141,17 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
       <ServiceHero
-        title="Remove Repetition and Increase Productivity"
-        desktopImage={desk}
-        mobileImage={glassesMob}
-        altDesk={"office desk items"}
-        altMob={"reading glasses on a computer desk"}
+        title="Word Document Automation"
+        desktopImage={repetition}
+        mobileImage={repetitionMob}
+        altDesk={"Microsoft Word automation flow"}
+        altMob={"Microsoft Word automation flow"}
       />
       <PageSegmentMain />
+      <PageSegmentImpact />
       <PageSegment4 />
-      <Promo
-        h2="Boost Productivity with Automated Document Templates"
-        p="Our automation solutions make document creation faster and more consistent, allowing your team to focus on high-priority work while we handle the repetitive tasks."
-      />
       <ExpertsAwait />
-      <FAQSection faqs={faqs} />
       <Contact />
     </>
   );
