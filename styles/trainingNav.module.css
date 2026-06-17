@@ -1,0 +1,136 @@
+.nav {
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  padding: 0 1.5rem;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2.5rem 1.25rem;
+  text-decoration: none;
+  color: #0d1b2a;
+  border-right: 1px solid rgba(0, 0, 0, 0.07);
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+  position: relative;
+}
+
+.card:last-child {
+  border-right: none;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #046999;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.card:hover::after {
+  transform: scaleX(1);
+}
+
+.card:hover {
+  background: #f2f3f5;
+  color: #046999;
+}
+
+.iconWrap {
+  flex-shrink: 0;
+  color: #046999;
+  opacity: 0.85;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.card:hover .iconWrap {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+.text {
+  flex: 1;
+  min-width: 0;
+}
+
+.eyebrow {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #a0a2a6;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.15rem;
+}
+
+.title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.arrow {
+  flex-shrink: 0;
+  color: #046999;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.card:hover .arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card:nth-child(2) {
+    border-right: none;
+  }
+
+  .card:nth-child(1),
+  .card:nth-child(2) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  }
+}
+
+@media (max-width: 480px) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1.25rem 1rem;
+  }
+}

@@ -34,7 +34,7 @@ export const metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    site: "@OfficeExpertsG1",
+    site: "@WordExpertsAU",
     title: "Word Experts Central Coast, NSW | Microsoft Office Solutions",
     description:
       "Australia-wide Microsoft Word consulting team with experienced consultants based in the Central Coast NSW. Over 25 years of expertise delivering document development, system integration, workflow automation and practical business support solutions.",

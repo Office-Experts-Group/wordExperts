@@ -24,7 +24,7 @@ export const metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    site: "@OfficeExpertsG1",
+    site: "@WordExpertsAU",
     title: "Google Docs to Microsoft Word Migration Services",
     description:
       "Professional Google Docs to Microsoft Word migration with 100% formatting preservation. Custom templates, enterprise solutions, and ongoing support.",

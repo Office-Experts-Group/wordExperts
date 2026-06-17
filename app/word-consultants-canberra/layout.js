@@ -2,13 +2,13 @@ import React from "react";
 
 export const metadata = {
   // Basic metadata
-  title: "Microsoft Word Consultants Canberra, NSW",
+  title: "Microsoft Word Consultants Canberra, ACT",
   description:
     "Australia-wide Microsoft Word consulting team with experienced consultants based in Canberra. Over 25 years of expertise delivering document development, system integration and custom business solutions.",
 
   // OpenGraph
   openGraph: {
-    title: "Microsoft Word Consultants Canberra, NSW",
+    title: "Microsoft Word Consultants Canberra, ACT",
     description:
       "Australia-wide Microsoft Word consulting team with experienced consultants based in Canberra. Over 25 years of expertise delivering document development, system integration and custom business solutions.",
     url: "https://www.wordexperts.com.au/word-consultants-canberra",
@@ -34,8 +34,8 @@ export const metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    site: "@OfficeExpertsG1",
-    title: "Word Experts Canberra, NSW | Microsoft Office Solutions",
+    site: "@WordExpertsAU",
+    title: "Word Experts Canberra, ACT | Microsoft Office Solutions",
     description:
       "Australia-wide Microsoft Word consulting team with experienced consultants based in Canberra. Over 25 years of expertise delivering document development, system integration and custom business solutions.",
     images: ["/logo.png"],

@@ -43,7 +43,7 @@
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   color: #1a1a1a;
-  border-bottom: 3px solid $theme;
+  border-bottom: 3px solid $accent;
   padding-bottom: 0.5rem;
   width: fit-content;
 }
@@ -94,13 +94,13 @@
     font-size: 1.8rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    color: $theme;
+    color: $accent;
   }
 
   h3 {
     font-size: 1.4rem;
-    margin: 1.5rem 0 .5rem 0;
-    color: $theme;
+    margin: 1.5rem 0 0.5rem 0;
+    color: $accent;
   }
 
   p {
@@ -118,7 +118,7 @@
   }
 
   a {
-    color: $theme;
+    color: $accent;
     font-weight: 700;
   }
 
@@ -223,7 +223,7 @@
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  border: 10px solid $theme;
+  border: 10px solid $accent;
   img {
     border-radius: 50%;
     filter: grayscale(100%);
@@ -242,7 +242,7 @@
   p {
     font-size: 1.25rem;
     font-weight: 700;
-    color: $theme;
+    color: $accent;
     font-style: italic;
     text-align: center;
   }
@@ -472,7 +472,7 @@
   }
 
   thead {
-    background: $theme;
+    background: $accent;
     color: white;
 
     th {
@@ -511,8 +511,8 @@
 
       &:first-child {
         font-weight: 600;
-        color: $theme;
-        background: rgba($theme, 0.05);
+        color: $accent;
+        background: rgba($accent, 0.05);
       }
     }
   }
@@ -570,7 +570,7 @@
         text-align: left;
 
         &:first-child {
-          background: $theme;
+          background: $accent;
           color: white;
           font-weight: 700;
           margin-bottom: 0.5rem;
@@ -579,7 +579,7 @@
         &:before {
           content: attr(data-label) ": ";
           font-weight: bold;
-          color: $theme;
+          color: $accent;
         }
 
         &:first-child:before {
@@ -607,13 +607,15 @@
 .featureBox {
   background: linear-gradient(
     135deg,
-    rgba($theme, 0.05) 0%,
-    rgba($theme, 0.02) 100%
+    rgba($accent, 0.05) 0%,
+    rgba($accent, 0.02) 100%
   );
-  border-left: 4px solid $theme;
+  border-left: 4px solid $accent;
   padding: 1.5rem;
   border-radius: 8px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 
   &:hover {
     transform: translateY(-4px);
@@ -621,7 +623,7 @@
   }
 
   h3 {
-    color: $theme;
+    color: $accent;
     font-size: 1.2rem;
     margin: 0 0 0.5rem 0;
   }
@@ -654,7 +656,7 @@
     }
 
     strong {
-      color: $theme;
+      color: $accent;
       display: block;
       margin-bottom: 0.25rem;
     }
@@ -695,10 +697,10 @@
 .whenProfessionalBox {
   background: linear-gradient(
     135deg,
-    rgba($theme, 0.08) 0%,
-    rgba($theme, 0.03) 100%
+    rgba($accent, 0.08) 0%,
+    rgba($accent, 0.03) 100%
   );
-  border: 2px solid $theme;
+  border: 2px solid $accent;
   border-radius: 12px;
   padding: 2rem;
   margin: 2rem 0;
@@ -719,7 +721,7 @@
         content: "✓";
         position: absolute;
         left: 0;
-        color: $theme;
+        color: $accent;
         font-size: 1.3rem;
         font-weight: bold;
       }
@@ -754,7 +756,7 @@
   a {
     display: inline-block;
     font-size: 0.9rem;
-    color: $theme;
+    color: $accent;
     text-decoration: none;
     font-weight: 600;
 
@@ -800,8 +802,8 @@
 }
 
 .evolution {
-  margin: -8rem auto -4rem auto ;
-    @media screen and (max-width: 700px) {
+  margin: -8rem auto -4rem auto;
+  @media screen and (max-width: 700px) {
     display: none;
   }
 }

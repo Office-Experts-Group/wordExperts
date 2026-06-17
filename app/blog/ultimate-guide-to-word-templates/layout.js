@@ -23,6 +23,14 @@ export const metadata = {
     locale: "en-AU",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    site: "@WordExpertsAU",
+    title: "Ultimate Guide to Microsoft Word Templates",
+    description:
+      "What is a Word Template? Expert insights, tips, and guides for Microsoft Word users from Australia's leading Word specialists.",
+    images: ["/logo.png"],
+  },
 
   alternates: {
     canonical: "/blog/ultimate-guide-to-word-templates",

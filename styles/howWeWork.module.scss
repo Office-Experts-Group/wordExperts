@@ -50,13 +50,13 @@
   }
 
   h3 {
-    color: $theme;
+    color: $accent;
     font-size: 1.25rem;
   }
 }
 
 .underline {
-  border-bottom: 3px solid $theme;
+  border-bottom: 3px solid $accent;
   h1 {
     padding: 0 2rem;
   }

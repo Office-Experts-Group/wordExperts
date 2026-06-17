@@ -2,15 +2,17 @@ import React from "react";
 
 export const metadata = {
   // Basic metadata
-  title: "Microsoft Word for Mac: What You Need to Know About Features and Limitations",
+  title:
+    "Microsoft Word for Mac: What You Need to Know About Features and Limitations",
   description:
     "Discover the real differences between Word for Mac and Windows. Learn about missing features, VBA limitations, workarounds, and whether Word for Mac is right for you.",
 
   // OpenGraph
   openGraph: {
-    title: "Microsoft Word for Mac: What You Need to Know About Features and Limitations",
-  description:
-    "Discover the real differences between Word for Mac and Windows. Learn about missing features, VBA limitations, workarounds, and whether Word for Mac is right for you.",
+    title:
+      "Microsoft Word for Mac: What You Need to Know About Features and Limitations",
+    description:
+      "Discover the real differences between Word for Mac and Windows. Learn about missing features, VBA limitations, workarounds, and whether Word for Mac is right for you.",
     url: "https://www.wordexperts.com.au/blog/microsoft-word-for-mac",
     siteName: "Word Experts",
     images: [
@@ -26,17 +28,16 @@ export const metadata = {
   },
 
   // Additional metadata
-  keywords: [
-    "Word for Mac",
-  ],
+  keywords: ["Word for Mac"],
 
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    site: "@OfficeExpertsG1",
-    title: "Microsoft Word for Mac: What You Need to Know About Features and Limitations",
-  description:
-    "Discover the real differences between Word for Mac and Windows. Learn about missing features, VBA limitations, workarounds, and whether Word for Mac is right for you.",
+    site: "@WordExpertsAU",
+    title:
+      "Microsoft Word for Mac: What You Need to Know About Features and Limitations",
+    description:
+      "Discover the real differences between Word for Mac and Windows. Learn about missing features, VBA limitations, workarounds, and whether Word for Mac is right for you.",
     images: ["/logo.png"],
   },
 

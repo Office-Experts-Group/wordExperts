@@ -20,6 +20,16 @@ export const metadata = {
     locale: "en-AU",
     type: "website",
   },
+
+  // Twitter Card
+  twitter: {
+    card: "summary_large_image",
+    site: "@WordExpertsAU",
+    title: "Corporate Global Template Solution - Microsoft Word",
+    description:
+      "Advanced Corporate Word Template Solutions enabling efficient creation of corporate documents, brand consistency and document integrity.",
+    images: ["/logo.png"],
+  },
   alternates: {
     canonical: "/corporate-global-template-solution",
   },

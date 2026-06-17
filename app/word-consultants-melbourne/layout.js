@@ -34,7 +34,7 @@ export const metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    site: "@OfficeExpertsG1",
+    site: "@WordExpertsAU",
     title: "Word Experts Melbourne | Microsoft Office Solutions",
     description:
       "Australia-wide Microsoft Word consultants based in Melbourne. 25+ years expertise in document solutions and workflow optimisation. Get a free assessment today.",

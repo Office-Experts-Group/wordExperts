@@ -23,6 +23,14 @@ export const metadata = {
     locale: "en-AU",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    site: "@WordExpertsAU",
+    title: "Remove Repetition and Increase Productivity | Word Experts",
+    description:
+      "Automate repetitive Word tasks and increase productivity. Custom automation solutions for Microsoft Word documents.",
+    images: ["/logo.png"],
+  },
   alternates: {
     canonical: "/remove-repetition-and-increase-productivity",
   },

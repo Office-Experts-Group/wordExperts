@@ -23,6 +23,17 @@ export const metadata = {
     locale: "en-AU",
     type: "website",
   },
+
+  // Twitter Card
+  twitter: {
+    card: "summary_large_image",
+    site: "@WordExpertsAU",
+    title: "Microsoft Word Document Quick Parts Services - Word Experts",
+    description:
+      "Expert Microsoft Word Quick Parts implementation. Enhance document creation with pre-built content and automated building blocks.",
+    images: ["/logo.png"],
+  },
+
   alternates: {
     canonical: "/quick-parts",
   },

@@ -31,7 +31,7 @@ export const metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    site: "@OfficeExpertsG1",
+    site: "@WordExpertsAU",
     title: "Creating Word Templates for Legal Firms: Best Practices",
     description:
       "Create professional Word templates for legal firms. Discover best practices for reducing errors, ensuring consistency, and protecting client confidentiality.",

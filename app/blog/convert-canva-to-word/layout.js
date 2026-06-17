@@ -31,7 +31,7 @@ export const metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    site: "@OfficeExpertsG1",
+    site: "@WordExpertsAU",
     title: "How to Convert a Canva Design into a Microsoft Word Template",
     description:
       "Convert Canva designs into functional Microsoft Word templates. Create editable Word documents while maintaining your brand elements from Canva designs.",

@@ -24,6 +24,14 @@ export const metadata = {
     locale: "en-AU",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    site: "@WordExpertsAU",
+    title: "Word Upgrades and Migration | Word Experts",
+    description:
+      "Expert Microsoft Word upgrade and migration services. Resolve formatting issues, maintain document integrity, and ensure smooth transitions.",
+    images: ["/logo.png"],
+  },
   alternates: {
     canonical: "/upgrades-and-migration",
   },

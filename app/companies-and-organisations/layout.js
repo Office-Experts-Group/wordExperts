@@ -9,7 +9,7 @@ export const metadata = {
   ],
   openGraph: {
     title: "Word Template Designers | Word Experts - Microsoft Word",
-        description:
+    description:
       "Professional Word template solutions for companies and organisations. Custom document templates that protect corporate identity.",
     url: "https://www.wordexperts.com.au/companies-and-organisations",
     siteName: "Word Experts",
@@ -26,29 +26,21 @@ export const metadata = {
   },
   alternates: {
     canonical: "/companies-and-organisations",
-    alternate: [
-      {
-        url: "https://www.excelexperts.com.au/services/microsoft-word/companies-and-organisations",
-      },
-      {
-        url: "https://www.excelexperts.com.au/services/microsoft-word/companies-and-organisations",
-      },
-    ],
   },
 
-    // Twitter Card
-    twitter: {
-      card: "summary_large_image",
-      site: "@OfficeExpertsG1",
-      title: "Word Template Designers | Word Experts - Microsoft Word",
-      description:
-    "Professional Word template solutions for companies and organisations. Custom document templates that protect corporate identity.",
-      images: ["/logo.png"],
-    },
-  
-    alternates: {
-      canonical: "/companies-and-organisations",
-    },
+  // Twitter Card
+  twitter: {
+    card: "summary_large_image",
+    site: "@WordExpertsAU",
+    title: "Word Template Designers | Word Experts - Microsoft Word",
+    description:
+      "Professional Word template solutions for companies and organisations. Custom document templates that protect corporate identity.",
+    images: ["/logo.png"],
+  },
+
+  alternates: {
+    canonical: "/companies-and-organisations",
+  },
 };
 
 export default function Layout({ children }) {

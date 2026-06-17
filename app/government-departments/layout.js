@@ -23,6 +23,14 @@ export const metadata = {
     locale: "en-AU",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    site: "@WordExpertsAU",
+    title: "Government Department Word Document Solutions | Word Experts",
+    description:
+      "Specialised Microsoft Word solutions for government departments. Accessible documents, compliant templates, and secure document management solutions.",
+    images: ["/logo.png"],
+  },
   alternates: {
     canonical: "/government-departments",
   },

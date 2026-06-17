@@ -22,6 +22,16 @@ export const metadata = {
     type: "website",
   },
 
+  // Twitter Card
+  twitter: {
+    card: "summary_large_image",
+    site: "@WordExpertsAU",
+    title: "Microsoft Word Training | Word Experts",
+    description:
+      "Professional Microsoft Word training and support services. Expert help with templates, documents, and automation. Available remotely or onsite across Australia.",
+    images: ["/logo.png"],
+  },
+
   alternates: {
     canonical: "/training",
   },

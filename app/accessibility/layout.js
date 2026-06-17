@@ -24,6 +24,14 @@ export const metadata = {
     locale: "en-AU",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    site: "@WordExpertsAU",
+    title: "Microsoft Word Accessibility | Word Experts",
+    description:
+      "Accessible Word document creation and template services. WCAG-compliant documents, accessibility audits, and remediation services for government and enterprise.",
+    images: ["/logo.png"],
+  },
   alternates: {
     canonical: "/accessibility",
   },

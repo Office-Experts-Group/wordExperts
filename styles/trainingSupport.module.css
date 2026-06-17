@@ -1,0 +1,124 @@
+.section {
+  padding: 5rem 1.5rem;
+  background: #18232e;
+  position: relative;
+  overflow: hidden;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 50% 80% at 10% 50%, rgba(4, 105, 153, 0.2) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.iconCol {
+  display: flex;
+  justify-content: center;
+}
+
+.iconRing {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid rgba(4, 105, 153, 0.4);
+  background: rgba(4, 105, 153, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.iconRing::after {
+  content: "";
+  position: absolute;
+  inset: -12px;
+  border-radius: 50%;
+  border: 1px dashed rgba(4, 105, 153, 0.2);
+}
+
+.icon {
+  color: #046999;
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #046999;
+  margin-bottom: 0.75rem;
+}
+
+.heading {
+  font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.body {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.55);
+  max-width: 580px;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.9rem 2.25rem;
+  background: #046999;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.btn:hover {
+  background: #035a82;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .iconCol {
+    order: -1;
+  }
+
+  .body {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 4rem 1.25rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -27,7 +27,7 @@ export const metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    site: "@OfficeExpertsG1",
+    site: "@WordExpertsAU",
     title: "Word Document Template Creation",
     description:
       "Professional Microsoft Word template creation services. Custom document templates that maintain brand consistency and improve productivity.",

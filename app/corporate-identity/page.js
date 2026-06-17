@@ -36,12 +36,12 @@ const schema = {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/corporate-identity",
       url: "https://www.wordexperts.com.au/corporate-identity",
-      name: "Word/Corporate Global Template Solution / Corporate Governance Word Document",
+      name: "Corporate Identity | Word Experts",
       isPartOf: {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-07-15T15:51:37+00:00",
-      dateModified: "2024-11-12T00:00:00+00:00",
+      dateModified: "2026-06-15T00:00:00+00:00",
       description:
         "Professional corporate identity protection through Microsoft Word templates. Ensure brand consistency and document compliance across your organisation.",
       breadcrumb: {

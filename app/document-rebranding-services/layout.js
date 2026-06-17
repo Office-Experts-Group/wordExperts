@@ -31,7 +31,7 @@ export const metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    site: "@OfficeExpertsG1",
+    site: "@WordExpertsAU",
     title: "Document Rebranding Services | Word Experts",
     description:
       "Our Microsoft Word designers create custom templates with brand-consistent formatting and professional rebranding services.",

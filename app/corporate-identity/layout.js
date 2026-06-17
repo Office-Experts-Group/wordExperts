@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Word Corporate Global Template Solution | Word Experts",
+  title: "Corporate Identity | Word Experts",
   description:
     "Professional corporate identity protection through Microsoft Word templates. Ensure brand consistency and document compliance across your organisation.",
   keywords: [
@@ -7,7 +7,7 @@ export const metadata = {
     "corporate document control",
   ],
   openGraph: {
-    title: "Word Corporate Global Template Solution | Word Experts",
+    title: "Corporate Identity | Word Experts",
     description:
       "Professional corporate identity protection through Microsoft Word templates. Ensure brand consistency and document compliance across your organisation.",
 
@@ -23,6 +23,14 @@ export const metadata = {
     ],
     locale: "en-AU",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@WordExpertsAU",
+    title: "Corporate Identity | Word Experts",
+    description:
+      "Professional corporate identity protection through Microsoft Word templates. Ensure brand consistency and document compliance across your organisation.",
+    images: ["/logo.png"],
   },
   alternates: {
     canonical: "/corporate-identity",

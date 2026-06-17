@@ -23,6 +23,16 @@ export const metadata = {
     locale: "en-AU",
     type: "website",
   },
+
+  // Twitter Card
+  twitter: {
+    card: "summary_large_image",
+    site: "@WordExpertsAU",
+    title: "Custom Toolbars and Ribbons | Word Experts",
+    description:
+      "Expert Microsoft Word toolbar and ribbon customisation services. Improve productivity with custom Word toolbars.",
+    images: ["/logo.png"],
+  },
   alternates: {
     canonical: "/custom-toolbars-and-ribbons",
   },

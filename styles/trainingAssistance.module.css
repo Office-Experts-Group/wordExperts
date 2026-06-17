@@ -1,0 +1,153 @@
+.section {
+  padding: 6rem 1.5rem;
+  background: #f6f6f6;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+/* SVG column */
+.svgCol {
+  display: flex;
+  justify-content: center;
+}
+
+.svgCard {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid rgba(4, 105, 153, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  box-shadow: 0 4px 24px rgba(4, 105, 153, 0.08);
+}
+
+.accent {
+  color: #046999;
+}
+
+.mainIcon {
+  color: #046999;
+}
+
+.svgAccent {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  width: 64px;
+  height: 64px;
+  background: #046999;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(4, 105, 153, 0.35);
+}
+
+.accentIcon {
+  color: #ffffff;
+}
+
+.svgLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #a0a2a6;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Content */
+.eyebrow {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #046999;
+  margin-bottom: 0.75rem;
+}
+
+.heading {
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  font-weight: 800;
+  color: #0d1b2a;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.25rem;
+}
+
+.body {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #4a5568;
+  margin-bottom: 1.75rem;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.tick {
+  flex-shrink: 0;
+  display: flex;
+}
+
+.ctas {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.link {
+  font-weight: 700;
+  color: #046999;
+}
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .svgCol {
+    order: -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 4rem 1.25rem;
+  }
+
+  .svgCard {
+    width: 200px;
+    height: 200px;
+  }
+  .svgCol {
+    display: none;
+  }
+}

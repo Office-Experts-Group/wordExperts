@@ -24,16 +24,17 @@ export const metadata = {
     type: "website",
   },
 
+  twitter: {
+    card: "summary_large_image",
+    site: "@WordExpertsAU",
+    title: "Word template conversions | Word Experts",
+    description:
+      "Professional Word template conversion services. Convert Adobe, InDesign and other formats to fully functional Microsoft Word templates.",
+    images: ["/logo.png"],
+  },
+
   alternates: {
     canonical: "/word-template-conversions",
-    alternate: [
-      {
-        url: "https://www.excelexperts.com.au/services/microsoft-word/word-template-conversions",
-      },
-      {
-        url: "https://www.officeexperts.com.au/services/microsoft-word/word-template-conversions",
-      },
-    ],
   },
 };
 

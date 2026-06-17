@@ -23,6 +23,14 @@ export const metadata = {
     locale: "en-AU",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    site: "@WordExpertsAU",
+    title: "Word Popup Form | Word Experts",
+    description:
+      "Professional Microsoft Word popup form development. Custom data entry forms with validation and automation.",
+    images: ["/logo.png"],
+  },
   alternates: {
     canonical: "/popup-forms",
   },

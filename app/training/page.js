@@ -2,20 +2,20 @@ import React from "react";
 import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
-import ServicePageCards from "./(components)/ServicePageCards";
-import Contents from "./(components)/Contents";
+import TrainingHero from "./(components)/TrainingHero";
 
+const TrainingNav = dynamic(() => import("./(components)/TrainingNav"));
+const TrainingAssistance = dynamic(
+  () => import("./(components)/TrainingAssistance"),
+);
+const TrainingSkills = dynamic(() => import("./(components)/TrainingSkills"));
+const TrainingEfficiency = dynamic(
+  () => import("./(components)/TrainingEfficiency"),
+);
+const TrainingSupport = dynamic(() => import("./(components)/TrainingSupport"));
 const Contact = dynamic(() => import("../../components/Contact"));
-const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
-const PageSegmentMain = dynamic(() => import("./(components)/PageSegmentMain"));
-const PageSegment8 = dynamic(() => import("./(components)/PageSegment8"));
-const FAQSection = dynamic(() => import("../../components/FAQSection"));
-const PageSegment4New = dynamic(() => import("./(components)/PageSegment4New"));
 
-import faqs from "../../faqs/training";
-import faqSchema from "../../faqs/trainingSchema";
-
-import twoComputers from "../../public/pageHeros/twoComputers.webp";
+import training from "../../public/pageHeros/training.webp";
 import coffeeMob from "../../public/pageHeros/mob/coffeeMob.webp";
 
 import {
@@ -23,7 +23,6 @@ import {
   generateOrganizationSchema,
   generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
-import Segment4 from "./(components)/Segment4";
 
 const schema = {
   "@context": "https://schema.org",
@@ -46,7 +45,7 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-07-15T15:59:22+00:00",
-      dateModified: "2025-07-30T00:00:00+00:00",
+      dateModified: "2026-06-17T00:00:00+00:00",
       breadcrumb: {
         "@id": "https://www.wordexperts.com.au/training#breadcrumb",
       },
@@ -71,7 +70,7 @@ const schema = {
         {
           "@type": "ListItem",
           position: 2,
-          name: "MIcrosoft Word Training",
+          name: "Microsoft Word Training",
           item: "https://www.wordexperts.com.au/training",
         },
       ],
@@ -86,28 +85,18 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <Contents />
       <ServiceHero
         title="Microsoft Word Support and Training"
-        desktopImage={twoComputers}
+        desktopImage={training}
         mobileImage={coffeeMob}
-        altDesk={"two computers"}
+        altDesk={"computer with word documents"}
         altMob={"coffee cup and laptop"}
       />
-      <ServicePageCards />
-      <PageSegmentMain />
-      <Segment4 />
-      {/* <PageSegment4 /> */}
-      <PageSegment4New />
-      <ExpertsAwait />
-      {/* <PageSegment5 />
-      <Segment4Repeat /> */}
-      <PageSegment8 />
-      <FAQSection faqs={faqs} />
+      <TrainingHero />
+      <TrainingNav />
+      <TrainingAssistance />
+      <TrainingSkills />
+      <TrainingEfficiency />
       <Contact />
     </>
   );

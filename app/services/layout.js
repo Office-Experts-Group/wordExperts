@@ -34,7 +34,7 @@ export const metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    site: "@OfficeExpertsG1",
+    site: "@WordExpertsAU",
     title: "Microsoft Word Services | Word Consultants Australia",
     description:
       "Comprehensive Microsoft Word services including template creation, document automation, VBA development, accessibility compliance and training across Australia.",

@@ -25,6 +25,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@WordExpertsAU",
     title: "Contact Word Experts | Professional Microsoft Word Solutions",
     description:
       "Contact Word Experts for professional Microsoft Word solutions. Expert consultants across Australia.",

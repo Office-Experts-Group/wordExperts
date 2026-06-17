@@ -29,7 +29,7 @@ export const metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    site: "@OfficeExpertsG1",
+    site: "@WordExpertsAU",
     title: "Microsoft Word API Development & Integrations",
     description:
       "Expert Microsoft Word API development and custom integrations. Connect Word with CRM, SharePoint, databases and business systems.",

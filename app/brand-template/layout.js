@@ -29,7 +29,7 @@ export const metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    site: "@OfficeExpertsG1",
+    site: "@WordExpertsAU",
     title: "Microsoft Word Brand Template Services | Word Experts",
     description:
       "Professional Microsoft Word brand template services. Custom document templates that ensure consistent branding and professional appearance across your organisation.",

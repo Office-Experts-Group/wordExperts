@@ -33,7 +33,7 @@ export const metadata = {
   // Twitter Card metadata
   twitter: {
     card: "summary_large_image",
-    site: "@OfficeExpertsG1",
+    site: "@WordExpertsAU",
     title: "Mail Merge Services | Microsoft Word Experts Australia",
     description:
       "Professional Mail Merge solutions for Australian businesses. Automate letters, invoices, labels, and emails with Microsoft Word and Excel.",

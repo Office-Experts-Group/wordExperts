@@ -3,8 +3,8 @@ import React from "react";
 export const metadata = {
   // Basic metadata
   title: "Word Desktop vs Web: Do You Really Need to Pay for Microsoft 365?",
-    description:
-      "Discover the real differences between Word for Web and Desktop versions. Learn when the free version is enough and when it simply is not.",
+  description:
+    "Discover the real differences between Word for Web and Desktop versions. Learn when the free version is enough and when it simply is not.",
 
   // OpenGraph
   openGraph: {
@@ -26,14 +26,12 @@ export const metadata = {
   },
 
   // Additional metadata
-  keywords: [
-    "Word desktop vs web",,
-  ],
+  keywords: ["Word desktop vs web", ,],
 
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    site: "@OfficeExpertsG1",
+    site: "@WordExpertsAU",
     title: "Word Desktop vs Web: Do You Really Need to Pay for Microsoft 365?",
     description:
       "Discover the real differences between Word for Web and Desktop versions. Learn when the free version is enough and when it simply is not.",

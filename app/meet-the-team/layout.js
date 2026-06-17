@@ -23,6 +23,14 @@ export const metadata = {
     locale: "en-AU",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    site: "@WordExpertsAU",
+    title: "Meet The Team - Word Experts",
+    description:
+      "Meet our expert team of Microsoft Word consultants, developers, and designers. Professional Word specialists across Australia.",
+    images: ["/logo.png"],
+  },
   alternates: {
     canonical: "/meet-the-team",
   },

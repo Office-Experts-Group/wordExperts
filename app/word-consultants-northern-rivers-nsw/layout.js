@@ -34,7 +34,7 @@ export const metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    site: "@OfficeExpertsG1",
+    site: "@WordExpertsAU",
     title: "Word Experts Northern Rivers, NSW | Microsoft Office Solutions",
     description:
       "Word Experts is headquartered in Northern Rivers NSW, providing Australia-wide Microsoft Word consulting. Over 25 years of expertise in document development, system integration and support.",

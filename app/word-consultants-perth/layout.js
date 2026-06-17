@@ -34,7 +34,7 @@ export const metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    site: "@OfficeExpertsG1",
+    site: "@WordExpertsAU",
     title: "Word Experts Perth | Microsoft Office Solutions",
     description:
       "Australia-wide Microsoft Word consulting team with experienced consultants based in Perth. Over 25 years of expertise delivering document development, system integration and remote or onsite support.",

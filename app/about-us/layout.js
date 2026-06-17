@@ -27,7 +27,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    site: "@OfficeExpertsG1",
+    site: "@WordExpertsAU",
     title: "About Us | Word Experts",
     description:
       "Australia's leading Microsoft Word specialists, creating custom templates, toolbars, ribbons, and document automation solutions for businesses nationwide.",

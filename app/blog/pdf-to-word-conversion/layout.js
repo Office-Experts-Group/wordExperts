@@ -31,7 +31,7 @@ export const metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    site: "@OfficeExpertsG1",
+    site: "@WordExpertsAU",
     title: "PDF to Word Conversion That Works for Business",
     description:
       "Discover why professional PDF to Word conversion matters for business. Learn about accuracy, security, and formatting that free converters can't deliver.",

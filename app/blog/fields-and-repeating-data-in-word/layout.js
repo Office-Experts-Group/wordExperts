@@ -31,7 +31,7 @@ export const metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    site: "@OfficeExpertsG1",
+    site: "@WordExpertsAU",
     title: "Fields and Repeating Data in Word - Business Templates",
     description:
       "Learn how to use Word's fields to transform static templates into dynamic, error-resistant tools. Master REF fields, document properties, and content controls.",

@@ -23,6 +23,16 @@ export const metadata = {
     locale: "en-AU",
     type: "website",
   },
+
+  // Twitter Card
+  twitter: {
+    card: "summary_large_image",
+    site: "@WordExpertsAU",
+    title: "Expert Creation of Word Fill in Forms | Word Experts",
+    description:
+      "Professional Microsoft Word form creation services. Custom fillable forms with data validation and protection.",
+    images: ["/logo.png"],
+  },
   alternates: {
     canonical: "/fill-in-forms",
   },

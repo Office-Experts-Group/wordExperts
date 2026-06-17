@@ -34,7 +34,7 @@ export const metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    site: "@OfficeExpertsG1",
+    site: "@WordExpertsAU",
     title: "Word Experts Wollongong | Microsoft Office Solutions",
     description:
       "Local consultants supporting Wollongong businesses within an Australia-wide team. Over 25 years of experience in document automation, custom templates, ribbon development and system integration.",
