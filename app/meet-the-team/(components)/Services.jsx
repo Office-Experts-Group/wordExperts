@@ -24,10 +24,7 @@ const Services = ({ meetStyles, teamMembers }) => {
             programming, and analysis. Our team of over 25 professionals works
             remotely or onsite to deliver the custom solutions your business
             deserves. Learn more about what makes us tick on the{" "}
-            <Link href={"https://www.officeexperts.com.au/about-us"}>
-              About Us
-            </Link>{" "}
-            page.
+            <Link href={"/about-us"}>About Us</Link> page.
           </p>
           <div className={styles.signature}>
             <div>
