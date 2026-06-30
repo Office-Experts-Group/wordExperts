@@ -9,11 +9,11 @@ const TrainingHero = () => {
       <div className={styles.inner}>
         <div className={styles.content}>
           <p className={styles.eyebrow}>Australia-Wide Support</p>
-          <h1 className={styles.heading}>
+          <h2 className={styles.heading}>
             Support &amp; Training
             <br />
             <span className={styles.accent}>That Actually Sticks</span>
-          </h1>
+          </h2>
           <p className={styles.sub}>
             Practical, task-specific Word training for individuals, teams, and
             entire organisations. Remote or onsite. Delivered by specialists who
