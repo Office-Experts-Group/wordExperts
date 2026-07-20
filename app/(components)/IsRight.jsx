@@ -74,7 +74,9 @@ const IsRight = () => {
             </div>
           </div>
 
-          <button className={`btn ${styles.btn}`}>Learn More</button>
+          <Link href="/about-us" className={`btn ${styles.btn}`}>
+            Learn More
+          </Link>
         </div>
       </AnimateOnScroll>
     </div>

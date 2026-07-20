@@ -1,0 +1,162 @@
+.section {
+  scroll-behavior: smooth;
+  background: #ffffff;
+  padding: 7rem 8rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .section {
+    padding: 5rem 4rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .section {
+    padding: 4rem 1.5rem;
+  }
+}
+@media (max-width: 449px) {
+  .section {
+    padding: 4rem 1.25rem;
+  }
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 5rem;
+  align-items: start;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+@media (max-width: 449px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.leftCol {
+  position: sticky;
+  top: 130px;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .leftCol {
+    position: static;
+  }
+}
+@media (max-width: 449px) {
+  .leftCol {
+    position: static;
+  }
+}
+
+.eyebrow {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #046999;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: clamp(1.9rem, 3vw, 2.5rem);
+  font-weight: 900;
+  color: #0d1b2a;
+  line-height: 1.2;
+  margin: 0 0 1.5rem;
+}
+
+.intro {
+  color: #4a5568;
+  line-height: 1.85;
+  font-size: 1rem;
+  margin: 0 0 1.2rem;
+}
+.intro:last-child {
+  margin-bottom: 0;
+}
+
+.inlineLink {
+  color: #046999;
+  font-weight: 700;
+}
+
+.servicesList {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.service {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 2rem;
+}
+@media (max-width: 449px) {
+  .service {
+    padding: 1.5rem;
+  }
+}
+
+.serviceTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.9rem;
+}
+
+.serviceHeading {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #0d1b2a;
+}
+
+.serviceTag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #046999;
+  background: #e8f4fa;
+  padding: 0.3rem 0.75rem;
+  border-radius: 2rem;
+  white-space: nowrap;
+}
+
+.serviceDescription {
+  color: #4a5568;
+  line-height: 1.8;
+  font-size: 0.98rem;
+  margin-bottom: 1.25rem;
+}
+
+.capabilities {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.capabilities li {
+  position: relative;
+  padding-left: 1.4rem;
+  color: #4a5568;
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+.capabilities li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #046999;
+}/*# sourceMappingURL=wordToPdfServices.module.css.map */

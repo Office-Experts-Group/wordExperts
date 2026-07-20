@@ -114,6 +114,10 @@
   color: rgba(255, 255, 255, 0.55);
   line-height: 1.85;
 }
+.para a {
+  color: #046999;
+  font-weight: 700;
+}
 
 .remoteStrip {
   display: flex;

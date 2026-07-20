@@ -13,7 +13,7 @@ const Testimonials = ({ testimonials }) => {
 
     // Filter out testimonials without images or content
     const validTestimonials = sortedTestimonials.filter(
-      (testimonial) => testimonial.image && testimonial.content.trim()
+      (testimonial) => testimonial.image && testimonial.content.trim(),
     );
 
     // Return the requested number of testimonials

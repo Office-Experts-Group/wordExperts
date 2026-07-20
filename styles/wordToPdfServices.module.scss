@@ -1,0 +1,161 @@
+// styles/wordToPdfServices.module.scss
+@import "./globals.scss";
+
+.section {
+  scroll-behavior: smooth;
+
+  background: $white;
+  padding: 7rem 8rem;
+
+  @include tablet {
+    padding: 5rem 4rem;
+  }
+
+  @include phoneLandscape {
+    padding: 4rem 1.5rem;
+  }
+
+  @include phone {
+    padding: 4rem 1.25rem;
+  }
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 5rem;
+  align-items: start;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  @include phone {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.leftCol {
+  position: sticky;
+  top: 130px;
+
+  @include tablet {
+    position: static;
+  }
+
+  @include phone {
+    position: static;
+  }
+}
+
+.eyebrow {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $accent;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: clamp(1.9rem, 3vw, 2.5rem);
+  font-weight: 900;
+  color: $text-primary;
+  line-height: 1.2;
+  margin: 0 0 1.5rem;
+}
+
+.intro {
+  color: $text-secondary;
+  line-height: 1.85;
+  font-size: 1rem;
+  margin: 0 0 1.2rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.inlineLink {
+  color: $accent;
+  font-weight: 700;
+}
+
+.servicesList {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.service {
+  border: 1px solid $border;
+  border-radius: 12px;
+  padding: 2rem;
+
+  @include phone {
+    padding: 1.5rem;
+  }
+}
+
+.serviceTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.9rem;
+}
+
+.serviceHeading {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: $text-primary;
+}
+
+.serviceTag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: $accent;
+  background: $accent-light;
+  padding: 0.3rem 0.75rem;
+  border-radius: 2rem;
+  white-space: nowrap;
+}
+
+.serviceDescription {
+  color: $text-secondary;
+  line-height: 1.8;
+  font-size: 0.98rem;
+  margin-bottom: 1.25rem;
+}
+
+.capabilities {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+
+  li {
+    position: relative;
+    padding-left: 1.4rem;
+    color: $text-secondary;
+    font-size: 0.93rem;
+    line-height: 1.6;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.55rem;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: $accent;
+    }
+  }
+}

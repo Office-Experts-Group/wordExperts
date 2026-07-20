@@ -1,0 +1,108 @@
+.section {
+  scroll-behavior: smooth;
+  background: #ffffff;
+  padding: 7rem 8rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .section {
+    padding: 5rem 4rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .section {
+    padding: 4rem 1.5rem;
+  }
+}
+@media (max-width: 449px) {
+  .section {
+    padding: 4rem 1.25rem;
+  }
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+@media (max-width: 449px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.eyebrow {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #046999;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: clamp(1.9rem, 3vw, 2.4rem);
+  font-weight: 900;
+  color: #0d1b2a;
+  line-height: 1.25;
+  margin: 0 0 1.5rem;
+}
+
+.body {
+  color: #4a5568;
+  line-height: 1.85;
+  font-size: 1rem;
+  margin: 0 0 1.2rem;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #046999;
+  text-decoration: none;
+  border-bottom: 2px solid #046999;
+  padding-bottom: 2px;
+}
+
+.steps {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.step {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.stepNum {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: rgba(4, 105, 153, 0.3);
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.stepHeading {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0d1b2a;
+  margin-bottom: 0.5rem;
+}
+
+.stepBody {
+  color: #4a5568;
+  line-height: 1.75;
+  font-size: 0.95rem;
+}/*# sourceMappingURL=wordToPdfProcess.module.css.map */

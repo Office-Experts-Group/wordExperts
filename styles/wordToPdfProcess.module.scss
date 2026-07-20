@@ -1,0 +1,107 @@
+// styles/wordToPdfProcess.module.scss
+@import "./globals.scss";
+
+.section {
+  scroll-behavior: smooth;
+
+  background: $white;
+  padding: 7rem 8rem;
+
+  @include tablet {
+    padding: 5rem 4rem;
+  }
+
+  @include phoneLandscape {
+    padding: 4rem 1.5rem;
+  }
+
+  @include phone {
+    padding: 4rem 1.25rem;
+  }
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  @include phone {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.eyebrow {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $accent;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: clamp(1.9rem, 3vw, 2.4rem);
+  font-weight: 900;
+  color: $text-primary;
+  line-height: 1.25;
+  margin: 0 0 1.5rem;
+}
+
+.body {
+  color: $text-secondary;
+  line-height: 1.85;
+  font-size: 1rem;
+  margin: 0 0 1.2rem;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: $accent;
+  text-decoration: none;
+  border-bottom: 2px solid $accent;
+  padding-bottom: 2px;
+}
+
+.steps {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.step {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.stepNum {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: $accent-border;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.stepHeading {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: $text-primary;
+  margin-bottom: 0.5rem;
+}
+
+.stepBody {
+  color: $text-secondary;
+  line-height: 1.75;
+  font-size: 0.95rem;
+}

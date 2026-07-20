@@ -113,6 +113,10 @@
   font-size: 1rem;
   color: $white-55;
   line-height: 1.85;
+  a {
+    color: $accent;
+    font-weight: 700;
+  }
 }
 
 // ── Remote service callout strip ──────────────────────────

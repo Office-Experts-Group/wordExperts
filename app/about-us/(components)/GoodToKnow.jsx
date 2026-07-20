@@ -3,6 +3,7 @@
 import AnimateOnScroll from "../../../components/AnimateOnScroll";
 import { AustralasiaMapSvg } from "../(svgs)/AustralasiaMapSvg";
 import styles from "../../../styles/goodToKnow.module.css";
+import Link from "next/link";
 
 const GoodToKnow = () => {
   return (
@@ -21,11 +22,14 @@ const GoodToKnow = () => {
         <div className={styles.contentPanel}>
           {/* Paragraphs — text unchanged from original */}
           <p className={styles.para}>
-            Beginning in 2000 from a small office in Northern New South Wales,
-            Office Experts Group has grown into a team of over 25 consultants
-            located in nearly every major city across Australia. From humble
-            beginnings, we now work with clients ranging from small rural
-            businesses to government organisations and multinational
+            Beginning in 2000 from a small office in Northern New South Wales,{" "}
+            <Link href="https://www.officeexperts.com.au">
+              Office Experts Group
+            </Link>{" "}
+            along with Word Experts have grown into a team of over 25
+            consultants located in nearly every major city across Australia.
+            From humble beginnings, we now work with clients ranging from small
+            rural businesses to government organisations and multinational
             corporations.
           </p>
 

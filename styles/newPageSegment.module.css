@@ -321,4 +321,27 @@
   .imgMarginTop {
     margin-top: 6rem;
   }
+}
+
+.homePromo {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  gap: 6rem;
+  padding: 6rem 10vw 6rem 5vw;
+}
+.homePromo .content {
+  place-self: center;
+}
+.homePromo .content p {
+  text-align: center;
+}
+@media (max-width: 449px) {
+  .homePromo {
+    display: none;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .homePromo {
+    display: none;
+  }
 }/*# sourceMappingURL=newPageSegment.module.css.map */

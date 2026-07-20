@@ -1,118 +1,106 @@
 import React from "react";
+
 import dynamic from "next/dynamic";
 
-import ServiceHero from "../../components/NewServiceHero";
-import PageSegmentMain from "./(components)/PageSegmentMain";
+// Keep Hero static as it's above fold
+import Hero from "../(components)/Hero";
 
-const IFrame = dynamic(() => import("../(components)/IFrame"));
+// Dynamically import everything else
+const Services = dynamic(() => import("./(components)/Services"));
+const CTAMain = dynamic(() => import("../(components)/CTAMain"));
+const IsRight = dynamic(() => import("./(components)/IsRight"));
+const SolutionsCarousel = dynamic(
+  () => import("./(components)/SolutionsCarousel"),
+);
+const CTAFull = dynamic(() => import("../(components)/CTAFull"));
+const Testimonials = dynamic(() => import("../(components)/Testimonials"));
+const Brands = dynamic(() => import("./(components)/Brands"));
 const Contact = dynamic(() => import("../../components/Contact"));
-const BlackSegment = dynamic(() => import("./(components)/BlackSegment"));
-const FAQSection = dynamic(() => import("../../components/FAQSection"));
-const Contents = dynamic(() => import("./(components)/Contents"));
-const BookSegment = dynamic(() => import("./(components)/BookSegment"));
-const BoxSegment = dynamic(() => import("./(components)/BoxSegment"));
-// import DeskImage from "./(components)/DeskImage";
+const GoodToKnow = dynamic(() => import("../about-us/(components)/GoodToKnow"));
+const HomePromo = dynamic(() => import("./(components)/HomePromo"));
 
-import faqs from "../../faqs/corporate-solutions";
-import faqSchema from "../../faqs/corporateSolutionsSchema";
+import faqSchema from "../../faqs/homeSchema";
 
-import templates from "../../public/pageHeros/templates.webp";
-import templateMob from "../../public/pageHeros/mob/templateMob.webp";
+import { getHomePageSchema } from "../../utils/testimonialSchemaGenerator";
 
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
+import { testimonials } from "../../testimonials";
 
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
     generateProfessionalServiceSchema(),
     generateOrganizationSchema(),
+    ...getHomePageSchema(testimonials, "word")["@graph"],
+    generateWebSiteSchema(
+      "https://www.wordexperts.com.au",
+      "Word Experts",
+      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
-      "@id":
-        "https://www.wordexperts.com.au/corporate-global-template-solution",
-      url: "https://www.wordexperts.com.au/corporate-global-template-solution",
-      name: "Corporate Word Solutions | Microsoft Word Corporate Integrity",
+      "@id": "https://www.wordexperts.com.au",
+      url: "https://www.wordexperts.com.au",
+      name: "Microsoft Word Designer & Experts | Word Consulting",
       isPartOf: {
         "@id": "https://www.wordexperts.com.au#website",
       },
-      datePublished: "2018-07-15T15:50:26+00:00",
-      dateModified: "2025-07-30T00:00:00+00:00",
+      datePublished: "2017-11-22T14:23:06+00:00",
+      dateModified: "2026-07-13T23:52:31+00:00",
       description:
-        "Advanced Corporate Word Template Solutions enabling efficient creation of corporate documents, brand consistency and document integrity.",
+        "Word Experts is the Leading Microsoft Word Design Service in Australia. Expert Word Development & Consulting.",
       breadcrumb: {
-        "@id":
-          "https://www.wordexperts.com.au/corporate-global-template-solution#breadcrumb",
+        "@id": "https://www.wordexperts.com.au#breadcrumb",
       },
       inLanguage: "en-AU",
       potentialAction: [
         {
           "@type": "ReadAction",
-          target: [
-            "https://www.wordexperts.com.au/corporate-global-template-solution",
-          ],
+          target: ["https://www.wordexperts.com.au"],
         },
       ],
     },
     {
+      "@type": "WebSite",
+      "@id": "https://www.wordexperts.com.au#website",
+      url: "https://www.wordexperts.com.au",
+      name: "Word Experts: Microsoft Word Development and Consulting Services",
+      description:
+        "Word Experts is the Leading Microsoft Word Design Service in Australia. Expert Word Development & Consulting.",
+      publisher: {
+        "@id": "https://www.wordexperts.com.au#organization",
+      },
+      potentialAction: [
+        {
+          "@type": "SearchAction",
+          target: {
+            "@type": "EntryPoint",
+            urlTemplate:
+              "https://www.wordexperts.com.au?s={search_term_string}",
+          },
+          "query-input": {
+            "@type": "PropertyValueSpecification",
+            valueRequired: true,
+            valueName: "search_term_string",
+          },
+        },
+      ],
+      inLanguage: "en-AU",
+    },
+    {
       "@type": "BreadcrumbList",
-      "@id":
-        "https://www.wordexperts.com.au/corporate-global-template-solution#breadcrumb",
+      "@id": "https://www.wordexperts.com.au#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.wordexperts.com.au",
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Corporate Global Template Solution",
-          item: "https://www.wordexperts.com.au/corporate-global-template-solution",
         },
       ],
-    },
-    {
-      "@type": "Service",
-      "@id":
-        "https://www.wordexperts.com.au/corporate-global-template-solution#service",
-      name: "Corporate Global Template Solution",
-      provider: {
-        "@id": "https://www.wordexperts.com.au#organization",
-      },
-      description:
-        "Advanced Corporate Word Template Solution for enterprise-wide document control and brand consistency",
-      serviceType: "Enterprise Document Management",
-      category: "Corporate Solutions",
-      areaServed: {
-        "@type": "Country",
-        name: "Australia",
-      },
-      hasOfferCatalog: {
-        "@type": "OfferCatalog",
-        name: "Corporate Template Services",
-        itemListElement: [
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
-              name: "Global Template Development",
-              description: "Creation of enterprise-wide document templates",
-            },
-          },
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
-              name: "Template Implementation",
-              description: "Deployment and integration of corporate templates",
-            },
-          },
-        ],
-      },
     },
   ],
 };
@@ -128,20 +116,16 @@ const Page = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <Contents />
-      <ServiceHero
-        title="Corporate Global Template Solution"
-        desktopImage={templates}
-        mobileImage={templateMob}
-        altDesk={"word templates"}
-        altMob={"word templates"}
-      />
-      <PageSegmentMain />
-      <BookSegment />
-      <BlackSegment />
-      <BoxSegment />
-      <IFrame />
-      <FAQSection faqs={faqs} />
+      <Hero />
+      <Services />
+      <CTAMain />
+      <IsRight />
+      <SolutionsCarousel />
+      <Testimonials testimonials={testimonials} />
+      <CTAFull />
+      <Brands isBelowFold={true} />
+      {/* <HomePromo /> */}
+      <GoodToKnow />
       <Contact />
     </>
   );

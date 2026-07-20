@@ -1,0 +1,177 @@
+// styles/wordToPdfFaq.module.scss
+@import "./globals.scss";
+
+.section {
+  scroll-behavior: smooth;
+
+  background: $light-bg;
+  padding: 7rem 8rem;
+
+  @include tablet {
+    padding: 5rem 4rem;
+  }
+
+  @include phoneLandscape {
+    padding: 4rem 1.5rem;
+  }
+
+  @include phone {
+    padding: 4rem 1.25rem;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
+}
+
+.headerLeft {
+  max-width: 620px;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $accent;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: clamp(1.9rem, 3vw, 2.4rem);
+  font-weight: 900;
+  color: $text-primary;
+  line-height: 1.25;
+  margin: 0 0 1rem;
+}
+
+.accentLine {
+  color: $accent;
+}
+
+.intro {
+  color: $text-secondary;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.filterRow {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  background: $white;
+  border: 1px solid $border;
+  border-radius: 2rem;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: $text-secondary;
+  cursor: pointer;
+  transition:
+    background 0.18s,
+    color 0.18s,
+    border-color 0.18s;
+
+  &:hover {
+    border-color: $accent-border;
+  }
+}
+
+.filterBtnActive {
+  background: $accent;
+  border-color: $accent;
+  color: $white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 3rem;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
+
+  @include phone {
+    grid-template-columns: 1fr;
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  border-bottom: 1px solid $border;
+}
+
+.question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 1.4rem 0;
+  cursor: pointer;
+}
+
+.questionText {
+  font-size: 1rem;
+  font-weight: 700;
+  color: $text-primary;
+  line-height: 1.4;
+}
+
+.chevron {
+  flex-shrink: 0;
+  color: $accent;
+  transition: transform 0.25s ease;
+}
+
+.itemOpen .chevron {
+  transform: rotate(90deg);
+}
+
+.answer {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.itemOpen .answer {
+  max-height: 400px;
+}
+
+.answerInner {
+  padding-bottom: 1.5rem;
+}
+
+.answerText {
+  color: $text-secondary;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.link {
+  color: $accent;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid $accent-border;
+
+  &:hover {
+    border-bottom-color: $accent;
+  }
+}

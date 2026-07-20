@@ -301,3 +301,23 @@
     margin-top: 6rem;
   }
 }
+
+.homePromo {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  gap: 6rem;
+  padding: 6rem 10vw 6rem 5vw;
+
+  .content {
+    place-self: center;
+    p {
+      text-align: center;
+    }
+  }
+  @include phone {
+    display: none;
+  }
+  @include phoneLandscape {
+    display: none;
+  }
+}

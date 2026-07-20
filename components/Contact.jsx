@@ -20,7 +20,11 @@ const Contact = ({ isQuote }) => {
   }, []);
 
   return (
-    <section id="contact" className={styles.contact}>
+    <section
+      id="contact"
+      className={styles.contact}
+      style={{ scrollMarginTop: "130px" }}
+    >
       <div className={styles.sidebar}>
         <div className={styles.optionsWrapper}>
           <div

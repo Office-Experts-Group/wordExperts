@@ -1,0 +1,130 @@
+// styles/wordToPdfComparison.module.scss
+@import "./globals.scss";
+
+.section {
+  scroll-behavior: smooth;
+  background: $light-bg;
+  padding: 7rem 8rem;
+
+  @include tablet {
+    padding: 5rem 4rem;
+  }
+
+  @include phoneLandscape {
+    padding: 4rem 1.5rem;
+  }
+
+  @include phone {
+    padding: 4rem 1.25rem;
+  }
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 700px;
+  margin: 0 auto 3.5rem;
+  text-align: center;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $accent;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: clamp(1.9rem, 3vw, 2.5rem);
+  font-weight: 900;
+  color: $text-primary;
+  line-height: 1.3;
+  margin: 0 0 1.25rem;
+}
+
+.accentSpan {
+  color: $accent;
+}
+
+.intro {
+  color: $text-secondary;
+  line-height: 1.8;
+  font-size: 1.02rem;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid $border;
+  background: $white;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;
+}
+
+.thLabel {
+  width: 22%;
+}
+
+.thFree,
+.thPro {
+  width: 39%;
+  text-align: left;
+  padding: 1.5rem 1.5rem 1rem;
+}
+
+.thBadge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $text-muted;
+}
+
+.thBadgePro {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $accent;
+}
+
+.row {
+  border-top: 1px solid $border;
+}
+
+.tdLabel {
+  padding: 1.5rem;
+  font-weight: 700;
+  color: $text-primary;
+  font-size: 0.93rem;
+  vertical-align: top;
+}
+
+.tdFree {
+  padding: 1.5rem;
+  color: $text-muted;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  vertical-align: top;
+}
+
+.tdPro {
+  padding: 1.5rem;
+  color: $text-secondary;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  vertical-align: top;
+  background: $accent-light;
+}

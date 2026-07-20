@@ -71,10 +71,12 @@
   font-weight: 900;
   color: #f8f8f8;
   margin: 1rem 0 2rem 0;
+  line-height: 1;
 }
 .content p {
   color: #a0a2a6;
   line-height: 2rem;
+  margin-bottom: 0.5rem;
 }
 @media (min-width: 450px) and (max-width: 766px) {
   .content {
@@ -91,9 +93,13 @@
   color: #046999;
 }
 
+.accent {
+  color: #046999;
+}
+
 .subBox p {
-  color: #f8f8f8;
-  font-weight: 500;
+  color: #046999;
+  font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: -0.8rem;
   display: inline;

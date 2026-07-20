@@ -33,10 +33,6 @@
     padding: 7rem 1rem;
   }
 }
-.isRight a {
-  font-weight: 700;
-  color: #046999;
-}
 
 .imgDiv {
   position: relative;
@@ -119,7 +115,7 @@
 .sub p {
   color: #046999;
   letter-spacing: 1px;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: -0.5rem;
 }
 
@@ -197,10 +193,41 @@
   color: #046999;
 }
 
-.btn {
-  margin-top: 2.6rem;
-  padding: 2rem 4rem;
+.linkBtn {
+  -moz-user-select: none;
+  background: #046999;
+  border: medium none;
+  border-radius: 0.1rem;
+  color: #fff !important;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 1rem 2rem;
+  text-align: center;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-transform: uppercase;
 }
-.btn:hover {
-  border: 1px solid #046999;
+.linkBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+.linkBtn:hover {
+  color: #046999 !important;
+}
+.linkBtn:hover::before {
+  left: 0;
 }/*# sourceMappingURL=isRight.module.css.map */

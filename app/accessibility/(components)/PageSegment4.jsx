@@ -21,11 +21,14 @@ const Segment4Repeat = () => {
               We Understand Accessibility!
             </h2>
             <p>
-              Office Experts Group have worked with many <Link href="/government-departments">Government departments,</Link>
+              Office Experts Group have worked with many{" "}
+              <Link href="/government-departments">
+                Government departments,
+              </Link>{" "}
               state, federal and corporate, over many years. We understand the
-              department's needs and can tailor a solution that will
-              assist hundreds of users in creating documents that not only look
-              great but also adhere to the latest accessibility guidelines.
+              department's needs and can tailor a solution that will assist
+              hundreds of users in creating documents that not only look great
+              but also adhere to the latest accessibility guidelines.
             </p>
             <p>
               With our master templates, users can create many sub templates in

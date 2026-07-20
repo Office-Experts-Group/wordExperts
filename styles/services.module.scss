@@ -69,10 +69,12 @@
     font-weight: 900;
     color: $offWhite;
     margin: 1rem 0 2rem 0;
+    line-height: 1;
   }
   p {
     color: $grayText;
     line-height: 2rem;
+    margin-bottom: 0.5rem;
   }
   @include phoneLandscape {
     padding-right: 0;
@@ -87,10 +89,14 @@
   }
 }
 
+.accent {
+  color: $accent;
+}
+
 .subBox {
   p {
-    color: $offWhite;
-    font-weight: 500;
+    color: $accent;
+    font-weight: 700;
     letter-spacing: 1px;
     margin-bottom: -0.8rem;
     display: inline;

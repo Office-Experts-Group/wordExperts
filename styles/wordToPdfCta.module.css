@@ -1,0 +1,130 @@
+.section {
+  scroll-behavior: smooth;
+  background: #111820;
+  padding: 6rem 8rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .section {
+    padding: 4.5rem 4rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .section {
+    padding: 4rem 1.5rem;
+  }
+}
+@media (max-width: 449px) {
+  .section {
+    padding: 4rem 1.25rem;
+  }
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+@media (max-width: 449px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.eyebrow {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #046999;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: clamp(1.9rem, 3vw, 2.4rem);
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.25;
+  margin: 0 0 1.25rem;
+}
+
+.body {
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.8;
+  font-size: 1rem;
+  max-width: 520px;
+}
+
+.ctas {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.ctaPrimary {
+  display: inline-block;
+  background: #046999;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.92rem;
+  padding: 0.9rem 1.75rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background 0.18s;
+}
+.ctaPrimary:hover {
+  background: rgb(3.2203821656, 84.5350318471, 123.1796178344);
+}
+
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.88);
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 0.9rem 0.5rem;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
+.ctaSecondary:hover {
+  border-bottom-color: rgba(255, 255, 255, 0.88);
+}
+
+.trustList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.trustItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+}
+
+.trustCheck {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(4, 105, 153, 0.15);
+  color: #046999;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}/*# sourceMappingURL=wordToPdfCta.module.css.map */
