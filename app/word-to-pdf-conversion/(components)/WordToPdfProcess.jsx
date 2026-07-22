@@ -6,18 +6,18 @@ import styles from "../../../styles/wordToPdfProcess.module.css";
 const steps = [
   {
     num: "01",
-    heading: "Tell us what you're converting",
-    body: "Send through a sample document, or a batch of them, and let us know whether the end result needs to be a straight PDF or a fillable form. We will flag anything in the source file likely to cause formatting issues.",
+    heading: "Tell us what the document needs to do",
+    body: "Send through a sample document and let us know whether it needs to become a fillable form, a more reliable template, or a straight PDF. We will flag anything in the source file likely to cause issues.",
   },
   {
     num: "02",
-    heading: "We convert and check every file",
-    body: "Each document is converted and checked against the original, fonts, tables, images, and layout included. For fillable forms, fields are added, tested, and set up with a logical tab order.",
+    heading: "We build it properly in Adobe Acrobat",
+    body: "Fillable forms are built with the right field types, validation, and a logical tab order, then tested. Straight conversions are checked against the original for fonts, tables, and layout.",
   },
   {
     num: "03",
     heading: "You receive finished, ready-to-use files",
-    body: "Completed PDFs are delivered ready to send, publish, or hand to your team. If it's a recurring job, we document the process so future conversions can run without our involvement.",
+    body: "Completed PDFs are delivered ready to send, publish, or hand to your team. For recurring documents, we hand over a template built to convert reliably every time, without our involvement.",
   },
 ];
 
@@ -28,12 +28,14 @@ const WordToPdfProcess = () => {
         <div className={styles.leftCol}>
           <span className={styles.eyebrow}>How We Work</span>
           <h2 className={styles.heading}>
-            What it's like to work with Word Experts.
+            What it's like to work with{" "}
+            <span className={styles.accent}>Word Experts</span>
           </h2>
           <p className={styles.body}>
             No account to set up, no per-file pricing to work through, and no
             uploading confidential documents to a tool you know nothing about.
-            Just tell us what you need converted.
+            Chat with skilled designers about your needs and get a personalised
+            service to achieve what you actually need.
           </p>
           <p className={styles.body}>
             As part of the nationwide{" "}
@@ -58,7 +60,7 @@ const WordToPdfProcess = () => {
               Power Platform
             </Link>{" "}
             teams for jobs that need document conversion connected to a larger
-            data or automation system.
+            database or automation systems.
           </p>
           <Link href="#contact" className={styles.cta}>
             Start a conversation

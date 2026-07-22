@@ -1,220 +1,209 @@
-import React from "react";
+// app/(components)/SolutionsCarousel.jsx
+
 import Link from "next/link";
-import Image from "next/image";
+import AnimateOnScroll from "../../components/AnimateOnScroll";
 
-import styles from "../../styles/solutionsCarousel.module.css";
+import styles from "../../styles/solutionsCarousel2.module.css";
 
-import keyboard from "../../public/350x260/keyboard.webp";
-import coder from "../../public/350x260/coder.webp";
-import dashboard from "../../public/350x260/dashboard.webp";
-import graph from "../../public/350x260/graph.webp";
-import desk from "../../public/350x260/desk.webp";
-import magnify from "../../public/350x260/magnify.webp";
-import code from "../../public/350x260/code.webp";
-import hands from "../../public/350x260/hands.webp";
-import scrabble from "../../public/350x260/scrabble.webp";
-import laptop from "../../public/350x260/laptop.webp";
-import graph2 from "../../public/350x260/graph2.webp";
-import automation from "../../public/350x260/automation.webp";
-import government from "../../public/cards/government350x200.webp";
+import { ShieldIcon } from "../(svgs)/ShieldIcon";
+import { CodeIcon } from "../(svgs)/CodeIcon";
+import { InstitutionIcon } from "../(svgs)/InstitutionIcon";
+import { OrgChartIcon } from "../(svgs)/OrgChartIcon";
+import { RefreshIcon } from "../(svgs)/RefreshIcon";
+import { PopupIcon } from "../(svgs)/PopupIcon";
+import { ChecklistIcon } from "../(svgs)/ChecklistIcon";
+import { UpgradeIcon } from "../(svgs)/UpgradeIcon";
+import { CloudIcon } from "../(svgs)/CloudIcon";
+import { SwapIcon } from "../(svgs)/SwapIcon";
+import { SlidersIcon } from "../(svgs)/SlidersIcon";
+import { GraduationIcon } from "../(svgs)/GraduationIcon";
 
-const SolutionsCarousel = () => {
-  const solutionsData = [
-    {
-      title: "Corporate Identity",
-      link: "/corporate-identity",
-      image: keyboard,
-      alt: "keyboard",
-      description: [
-        "Corporate identity protection",
-        "Let users concentrate on content, not design",
-        "Corporate styles ensure consistent formatting across all document pages",
-      ],
-    },
-    {
-      title: "VBA & Macro Development",
-      link: "https://www.officeexperts.com.au/services/by-business-solution/vba-macro-development",
-      image: coder,
-      alt: "coder working",
-      description: [
-        "Data import/export",
-        "Data parsing and processing",
-        "Data formatting automation",
-        "Automated data manipulation solutions",
-        "CSV, XML, SQL, JSON, etc",
-      ],
-    },
-    {
-      title: "Government Departments",
-      link: "/government-departments",
-      image: government,
-      alt: "dashboard design",
-      description: [
-        "Create accessible templates and documents",
-        "Users can create sub templates from master templates",
-        "Protect branding",
-        "Create reports inhouse",
-      ],
-    },
-    {
-      title: "Companies and Organisations",
-      link: "/companies-and-organisations",
-      image: graph,
-      alt: "graph",
-      description: [
-        "Protect and control Corporate Identity",
-        "Save $$ by creating Reports and all documents inhouse in a controlled environment",
-        "Users cannot stray from the Corporate Identity",
-      ],
-    },
-    {
-      title: "Remove Repetition and Increase Productivity",
-      link: "/remove-repetition-and-increase-productivity",
-      image: automation,
-      alt: "automation",
-      description: [
-        "Let users focus on content, not design",
-        "Users add prebuilt elements with one click",
-        "Enter key information once and auto populate it throughout the content",
-      ],
-    },
-    {
-      title: "Popup Forms",
-      link: "/popup-forms",
-      image: magnify,
-      alt: "magnifying glass over graphs",
-      description: [
-        "With easy to use popup forms your staff can enter data efficiently with validated and protected document integrity.",
-      ],
-    },
-    {
-      title: "Fill In Forms",
-      link: "/fill-in-forms",
-      image: code,
-      alt: "code on a screen",
-      description: [
-        "Step-by-step fill in forms for easy data entry by your staff or clients.",
-        "Drop selection lists and check boxes.",
-        "Protect content from editing.",
-      ],
-    },
-    {
-      title: "Upgrading Word To 2016",
-      link: "/upgrades-and-migration",
-      image: hands,
-      alt: "hands",
-      description: [
-        "Pagination issues solved.",
-        "Table issues solved.",
-        "Image issues solved.",
-        "Macro issues solved.",
-      ],
-    },
-    {
-      title: "Online Solutions",
-      link: "https://www.officeexperts.com.au/services/by-business-solution/online-solutions",
-      image: scrabble,
-      alt: "scrabble pieces",
-      description: [
-        "Need your Office document(s) online or connected to a database?",
-        "TNeed help with Office 365 or SharePoint?",
-      ],
-    },
-    {
-      title: "Convert Adobe To Word",
-      link: "/word-template-conversions",
-      image: laptop,
-      alt: "laptop",
-      description: [
-        "InDesign, Illustrator, PDF or other documents and layouts created in professional, easy to use Word documents and templates.",
-      ],
-    },
-    {
-      title: "Custom Toolbars and Ribbons",
-      link: "/custom-toolbars-and-ribbons",
-      image: graph2,
-      alt: "graph",
-      description: [
-        "Automate features that you use daily.",
-        "Buttons for Landscape pages, A3 pages, Covers & Chapter Breaks, paragraphs of common text.",
-      ],
-    },
-    {
-      title: "Help and Training",
-      link: "/training",
-      image: desk,
-      alt: "desk in an office",
-      description: [
-        "We can train your staff to use Word efficiently.",
-        "On call support via screen sharing – don't waste time pulling your hair out, get the answers fast (fees apply).",
-        "Video and PDF tutorials.",
-      ],
-    },
-  ];
+const SITE_BRAND = "Word Experts";
 
-  // Duplicate first few items to create seamless loop
-  const extendedSolutions = [...solutionsData, ...solutionsData.slice(0, 3)];
+// ─────────────────────────────────────────────
+// Solutions data — each row keeps the link and icon carried over
+// from the original carousel, paired with the new full-paragraph
+// description. "description" stays an array so a row can later
+// take a second paragraph without changing the data shape.
+// ─────────────────────────────────────────────
+const solutionsData = [
+  {
+    title: "Corporate Identity",
+    link: "/corporate-identity",
+    Icon: ShieldIcon,
+    description: [
+      "Protect your corporate identity with Word templates that keep branding, fonts, colours and formatting consistent. Staff can focus on writing content instead of worrying about document design.",
+    ],
+  },
+  {
+    title: "VBA & Macro Development",
+    link: "https://www.officeexperts.com.au/services/by-business-solution/vba-macro-development",
+    Icon: CodeIcon,
+    description: [
+      "Automate repetitive tasks such as importing, exporting, formatting and processing data. We develop Word VBA solutions that work with CSV, XML, SQL, JSON and many other data sources.",
+    ],
+  },
+  {
+    title: "Government Departments",
+    link: "/government-departments",
+    Icon: InstitutionIcon,
+    description: [
+      "Create accessible Word templates that protect branding while giving staff the flexibility to generate approved documents and sub-templates from a central master template.",
+    ],
+  },
+  {
+    title: "Companies and Organisations",
+    link: "/companies-and-organisations",
+    Icon: OrgChartIcon,
+    description: [
+      "Maintain complete control over your corporate identity while allowing staff to create reports and documents in-house. Built-in controls help ensure documents always follow your company standards.",
+    ],
+  },
+  {
+    title: "Remove Repetition and Increase Productivity",
+    link: "/remove-repetition-and-increase-productivity",
+    Icon: RefreshIcon,
+    description: [
+      "Reduce repetitive work by letting users insert common content with a click and automatically reuse key information throughout a document. Your team spends less time formatting and more time producing content.",
+    ],
+  },
+  {
+    title: "Popup Forms",
+    link: "/popup-forms",
+    Icon: PopupIcon,
+    description: [
+      "Popup forms make data entry faster and more accurate by guiding users through the information they need to enter while protecting the structure of the document.",
+    ],
+  },
+  {
+    title: "Fill In Forms",
+    link: "/fill-in-forms",
+    Icon: ChecklistIcon,
+    description: [
+      "Create easy-to-use fill-in forms with dropdown lists, checkboxes and protected fields. Staff or clients can complete documents quickly without accidentally changing the layout.",
+    ],
+  },
+  {
+    title: "Upgrading Word For 2026",
+    link: "/upgrades-and-migration",
+    Icon: UpgradeIcon,
+    description: [
+      "Upgrading Word can introduce issues with page layouts, tables, images and macros. We can identify and resolve compatibility problems so your documents continue to work as expected.",
+    ],
+  },
+  {
+    title: "Online Solutions",
+    link: "https://www.officeexperts.com.au/services/by-business-solution/online-solutions",
+    Icon: CloudIcon,
+    description: [
+      "Need your Word documents connected to a database or available online? We can integrate Word with Microsoft 365, SharePoint and other online systems.",
+    ],
+  },
+  {
+    title: "Convert Adobe To Word",
+    link: "/word-template-conversions",
+    Icon: SwapIcon,
+    description: [
+      "Convert documents created in InDesign, Illustrator, PDF and other design applications into professional Word templates that are easy for your staff to edit and maintain.",
+    ],
+  },
+  {
+    title: "Custom Toolbars and Ribbons",
+    link: "/custom-toolbars-and-ribbons",
+    Icon: SlidersIcon,
+    description: [
+      "Create custom Word ribbons and toolbars that put your most-used features one click away, from page layouts and section breaks to commonly used text and document tools.",
+    ],
+  },
+  {
+    title: "Help and Training",
+    link: "/training",
+    Icon: GraduationIcon,
+    description: [
+      "We provide Word training, remote support and practical documentation to help your staff work more efficiently. When you need assistance, we're available through screen sharing, with video and PDF guides also available.",
+    ],
+  },
+];
 
-  return (
-    <div className={styles.solutions}>
-      <div className={styles.title}>
-        <h2>No Problems... Only Solutions</h2>
+const SolutionsCarousel = () => (
+  <section className={styles.section}>
+    {/* ── Opening header ── */}
+    <AnimateOnScroll animation="fade-up" duration={0.6}>
+      <div className={styles.header}>
+        <p className={styles.eyebrow}>With over 25 years experience</p>
+        <h2 className={styles.heading}>
+          No problems...{" "}
+          <span className={styles.headingMuted}>only solutions.</span>
+        </h2>
+        <p className={styles.intro}>
+          Whether you need a professionally designed template, want to automate
+          repetitive tasks, improve document consistency across your
+          organisation, or modernise older Word systems, our consultants can
+          help. Browse our services below to see how we help businesses get more
+          from Microsoft Word.
+        </p>
+        <p className={styles.intro} style={{ marginTop: "1rem" }}>
+          Unsure of what you need?{" "}
+          <Link href="#contact">Speak with one of our consultants today.</Link>
+        </p>
       </div>
+    </AnimateOnScroll>
 
-      <div className={styles.carouselContainer}>
-        <div className={styles.carouselTrack} aria-label="Solutions carousel">
-          {extendedSolutions.map((solution, index) => (
-            <div
-              key={`solution-${index}`}
-              className={styles.cardWrapper}
-              aria-label={`Solution ${(index % solutionsData.length) + 1}`}
-            >
-              <div className={styles.description}>
-                {solution.description.map((item, i) => (
-                  <p key={i}>{item}</p>
+    {/* ── Solution rows ── */}
+    <div className={styles.rows} role="list">
+      {solutionsData.map((solution, i) => {
+        const { Icon } = solution;
+        const num = String(i + 1).padStart(2, "0");
+
+        return (
+          <AnimateOnScroll
+            key={solution.link}
+            animation="fade-up"
+            duration={0.55}
+            delay={i * 0.05}
+          >
+            <Link href={solution.link} className={styles.row} role="listitem">
+              {/* ── Left: ghost number + title ── */}
+              <div className={styles.rowLeft}>
+                <span className={styles.rowNum} aria-hidden="true">
+                  {num}
+                </span>
+                <h3 className={styles.rowName}>{solution.title}</h3>
+              </div>
+
+              {/* ── Right: faint icon behind the description ── */}
+              <div className={styles.rowRight}>
+                <span className={styles.rowIcon} aria-hidden="true">
+                  <Icon />
+                </span>
+                {solution.description.map((paragraph, j) => (
+                  <p key={j} className={styles.rowDesc}>
+                    {paragraph}
+                  </p>
                 ))}
               </div>
-              <Link href={solution.link}>
-                <div
-                  className={`${styles.card} ${
-                    styles[`card${(index % solutionsData.length) + 1}`]
-                  }`}
-                >
-                  <div className={styles.imageWrapper}>
-                    <Image
-                      src={solution.image}
-                      alt={solution.alt}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 350px"
-                      className={styles.carouselImage}
-                    />
-                  </div>
-                  <div className={styles.popIn}>
-                    <h3>
-                      <span>Word Experts</span>
-                      <br />
-                      {solution.title}
-                    </h3>
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      strokeWidth="0"
-                      viewBox="0 0 1024 1024"
-                      height="1em"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 0 0 0-48.4z"></path>
-                    </svg>
-                  </div>
-                </div>
-              </Link>
-            </div>
-          ))}
-        </div>
-      </div>
+            </Link>
+          </AnimateOnScroll>
+        );
+      })}
     </div>
-  );
-};
+
+    {/* ── CTA row, styled as a dashed final row rather than a filled tile ── */}
+    <Link href="/services" className={styles.cta}>
+      <span className={styles.ctaText}>View all services</span>
+      <span className={styles.ctaArrow} aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path
+            d="M3 8h10M9 4l4 4-4 4"
+            stroke="currentColor"
+            strokeWidth="1.6"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </span>
+    </Link>
+  </section>
+);
 
 export default SolutionsCarousel;

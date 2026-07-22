@@ -5,32 +5,32 @@ import styles from "../../../styles/wordToPdfProblem.module.css";
 
 const painPoints = [
   {
-    id: "broken-tables",
+    id: "static-only",
     number: "01",
+    name: "Flat PDFs when you actually needed a form",
+    description:
+      "A straight Word to PDF export gives you a static document. To get an interactive, fillable PDF, a plain conversion was never going to cut it. That takes a proper conversion built in Adobe Acrobat.",
+  },
+  {
+    id: "template-drift",
+    number: "02",
+    name: "The same template, a different result each time",
+    description:
+      "If your Word template was never built with PDF export in mind, every conversion is a bit of a gamble. Rebuilding the template properly once removes the guesswork from every conversion after it.",
+  },
+  {
+    id: "broken-tables",
+    number: "03",
     name: "Tables and columns that fall apart",
     description:
-      "Multi-column layouts, merged cells, and nested tables are where most free converters fail first. Rows shift, borders vanish, and a document that looked fine in Word arrives as a mess in PDF.",
+      "Multi-column layouts, merged cells, and nested tables are where most free converters fail first. Rows shift, borders vanish, and a document that looked fine in Word arrives as a complete mess in your PDF.",
   },
   {
     id: "font-substitution",
-    number: "02",
+    number: "04",
     name: "Fonts swapped for a default",
     description:
-      "A branded document set in your corporate typeface can come out in a generic system font instead. Nobody notices until a client or regulator opens the file and it looks nothing like your other materials.",
-  },
-  {
-    id: "no-batching",
-    number: "03",
-    name: "No way to do it at volume",
-    description:
-      "Converting one file is easy. Converting three hundred policy documents, contracts, or staff records one at a time through a browser tab is not a job anyone wants to do manually, and it is not a job free tools are built for.",
-  },
-  {
-    id: "static-only",
-    number: "04",
-    name: "Flat PDFs when you actually needed a form",
-    description:
-      "A straight Word to PDF export gives you a static document. If the goal was ever for someone to type into it, tick a box, or sign it on screen, a plain conversion was never going to get you there.",
+      "A branded document set in your corporate typeface can come out in a generic system font instead. This can easily go undetected until a client or regulator opens the file and it looks nothing like your other materials.",
   },
   {
     id: "privacy-risk",
@@ -51,10 +51,9 @@ const WordToPdfProblem = () => (
           <span className={styles.headingMuted}>let businesses down.</span>
         </h2>
         <p className={styles.intro}>
-          A quick conversion is fine for a personal document. It becomes a
-          problem the moment the file represents your business, needs to be
-          filled in by someone else, or has to be produced fifty times a week
-          without anyone checking each one by hand.
+          Five ways a Word to PDF conversion quietly goes wrong, and the point
+          at which each one stops being a minor annoyance and starts costing you
+          time or credibility.
         </p>
       </div>
     </AnimateOnScroll>

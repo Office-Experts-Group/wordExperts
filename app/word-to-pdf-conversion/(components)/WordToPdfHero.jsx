@@ -11,29 +11,31 @@ import styles from "../../../styles/wordToPdfHero.module.css";
 const capabilities = [
   {
     id: "01",
-    title: "Single and bulk document conversion",
-    desc: "One contract or a thousand policy documents, we convert with consistent formatting, fonts, and layout preserved exactly as they appear in your Word documents.",
-    href: "#bulk-conversion",
+    title: "Fillable and editable PDF forms",
+    desc: "Word documents converted into proper fillable PDF forms, with text fields, checkboxes, dropdowns, and signature fields your clients or staff can complete on their phone or computer.",
+    href: "./fill-in-forms",
+    linkText: "Fillable Forms",
   },
   {
     id: "02",
-    title: "Fillable and editable PDF forms",
-    desc: "Word documents rebuilt as proper fillable PDF forms, with text fields, checkboxes, and dropdowns your clients or staff can complete on screen.",
-    href: "#fillable-forms",
+    title: "Templates built to convert reliably",
+    desc: "We design or rebuild your Word templates so every future export to PDF holds its formatting, without a manual check needed every time.",
+    href: "./corporate-global-template-solution",
+    linkText: "Template Solutions",
   },
   {
     id: "03",
-    title: "Template-based conversion pipelines",
-
-    desc: "For businesses converting the same document types regularly, we set up a repeatable template and process so every future conversion is consistent and fast.",
-    href: "#templates",
+    title: "Secure handling of sensitive documents",
+    desc: "Contracts, HR records, and financial documents handled without leaking your data. Your files stay within a controlled, agreed process, not a random online tool with unclear data handling.",
+    href: "./companies-and-organisations",
+    linkText: "Companies & Organisations",
   },
   {
     id: "04",
-    title: "Secure handling of sensitive documents",
-
-    desc: "Contracts, HR records, and financial documents converted without leaking your data. Your files stay within a controlled, agreed process.",
-    href: "#security",
+    title: "Straightforward document conversion",
+    desc: "For document sets that just need a clean conversion, we check formatting, fonts, and layout against the original before anything is delivered.",
+    href: "#conversion",
+    linkText: "Learn More",
   },
 ];
 
@@ -113,7 +115,7 @@ const WordToPdfHero = () => {
                     <div className={styles.capDesc}>
                       <p>{cap.desc}</p>
                       <Link href={cap.href} className={styles.capLink}>
-                        Learn more
+                        {cap.linkText}
                         <ArrowIcon />
                       </Link>
                     </div>

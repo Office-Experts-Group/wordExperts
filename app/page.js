@@ -14,12 +14,11 @@ const SolutionsCarousel = dynamic(
 );
 const CTAFull = dynamic(() => import("./(components)/CTAFull"));
 const Testimonials = dynamic(() => import("./(components)/Testimonials"));
-const Brands = dynamic(() => import("../components/Brands"));
-const Promo = dynamic(() => import("../components/Promo"));
+const Brands = dynamic(() => import("./(components)/Brands"));
 const Contact = dynamic(() => import("../components/Contact"));
-const FAQSection = dynamic(() => import("../components/FAQSection"));
+const GoodToKnow = dynamic(() => import("./about-us/(components)/GoodToKnow"));
+const HomePromo = dynamic(() => import("./(components)/HomePromo"));
 
-import faqs from "../faqs/home";
 import faqSchema from "../faqs/homeSchema";
 
 import { getHomePageSchema } from "../utils/testimonialSchemaGenerator";
@@ -51,7 +50,7 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2017-11-22T14:23:06+00:00",
-      dateModified: "2025-09-11T23:52:31+00:00",
+      dateModified: "2026-07-22T23:52:31+00:00",
       description:
         "Word Experts is the Leading Microsoft Word Design Service in Australia. Expert Word Development & Consulting.",
       breadcrumb: {
@@ -105,7 +104,6 @@ const schema = {
     },
   ],
 };
-
 const Page = () => {
   return (
     <>
@@ -123,15 +121,10 @@ const Page = () => {
       <IsRight />
       <SolutionsCarousel />
       <Testimonials testimonials={testimonials} />
-      <Brands isBelowFold={true} />
       <CTAFull />
-      <Promo
-        h2="Master Your Documents"
-        p="Discover how our Microsoft Word solutions can protect your brand, boost efficiency, and deliver consistent, professional documents with ease."
-      />
-      <div style={{ marginTop: "-6rem" }}>
-        <FAQSection faqs={faqs} />
-      </div>
+      <Brands isBelowFold={true} />
+      {/* <HomePromo /> */}
+      <GoodToKnow />
       <Contact />
     </>
   );

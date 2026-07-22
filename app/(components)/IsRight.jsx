@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import AnimateOnScroll from "../../components/AnimateOnScroll";
 
 import styles from "../../styles/isRight.module.css";
 
 import isRight from "../../public/isRight.webp";
-import Link from "next/link";
 
 const IsRight = () => {
   return (
@@ -33,22 +33,12 @@ const IsRight = () => {
           <h2>Professional Word Template Solutions for Your Business</h2>
           <p className={styles.text}>
             At Word Experts we create sophisticated Microsoft Word solutions
-            that protect, maintain your{" "}
-            <Link href="/corporate-identity">corporate identity</Link>, and
-            streamline document creation. Our team of experienced consultants
-            deliver
-            <Link href="/word-document-template-creation">
-              {" "}
-              professional templates
-            </Link>{" "}
-            with built-in automation, ensuring consistent branding and
-            formatting across your organisation. From{" "}
-            <Link href="/government-departments">
-              government departments
-            </Link>{" "}
-            to corporate entities, we provide comprehensive document solutions
-            including template design,{" "}
-            <Link href="/accessibility"> accessibility compliance</Link>, and
+            that protect, maintain your corporate identity, and streamline
+            document creation. Our team of experienced consultants deliver
+            professional templates with built-in automation, ensuring consistent
+            branding and formatting across your organisation. From government
+            departments to corporate entities, we provide comprehensive document
+            solutions including template design, accessibility compliance, and
             custom automation to save time and reduce errors.
           </p>
           <div className={styles.contentGrid}>
@@ -74,8 +64,8 @@ const IsRight = () => {
             </div>
           </div>
 
-          <Link href="/about-us" className={`btn ${styles.btn}`}>
-            Learn More
+          <Link href="/about-us" className={`${styles.linkBtn}`}>
+            About Us
           </Link>
         </div>
       </AnimateOnScroll>

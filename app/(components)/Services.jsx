@@ -21,10 +21,7 @@ const Services = () => {
       <AnimateOnScroll animation="slide-left" delay={0} duration={1.5}>
         <div className={styles.content}>
           <div className={styles.subBox}>
-            <p>
-              From Design to implementation
-              <span> for Microsoft Word</span>
-            </p>
+            <p>From Design to implementation</p>
           </div>
           <h1>Microsoft Word Designers and Consultants</h1>
           <p>
@@ -33,18 +30,18 @@ const Services = () => {
             styling tools such as fonts, themes, and layouts.
           </p>
           <p>
-            Properly engineered Word templates function as dynamic
-            frameworks—leveraging advanced elements to enforce document
-            consistency, automate formatting, and streamline workflows.
+            Properly engineered Word templates function as dynamic frameworks
+            that utilise advanced elements to enforce document consistency with
+            automated formatting, and maintain your brand identity.
           </p>
           <p>
-            They become more than just documents—they're intelligent tools that
-            drive consistency and cut down manual work and human error. With our
-            custom automation we push Word to its limits—creating smart
-            solutions that generate documents, handle complex logic, and adapt
-            to real-world workflows. Whether you're producing reports,
-            proposals, or legal docs, our templates quietly run the show so
-            teams stay efficient and on-brand without barely lifting a finger.
+            Our solutions enforce consistency across your organisation by
+            cutting down on manual work and human error. With our custom
+            automation we push Word to its limits by creating simpler mechanisms
+            to generate documents, handle complex logic, and adapt to real-world
+            workflows. Whether you're producing reports, proposals, or legal
+            docs, our templates quietly run the show so teams stay efficient and
+            on-brand without barely lifting a finger.
           </p>
           <div className={styles.signature}>
             <div>
@@ -60,60 +57,59 @@ const Services = () => {
         </div>
       </AnimateOnScroll>
 
-      <AnimateOnScroll animation="fade-down" delay={0} duration={1.5}>
-        <div className={styles.cards}>
-          <CardIntersectionWrapper>
-            <ServicesCard
-              src={corporate}
-              alt={"Corporate Global Template Solution"}
-              h3={"Corporate Global Template Solution"}
-              li={[
-                "Our advanced Corporate Word Template Solution enables users to efficiently create corporate documents in a controlled environment within your branding guidelines.",
-              ]}
-              link={"/corporate-global-template-solution"}
-              linkText={"Template Solutions"}
-            />
-          </CardIntersectionWrapper>
-          <CardIntersectionWrapper>
-            <ServicesCard
-              src={word}
-              alt={"Word Document & Template Creation"}
-              h3={"Word Document & Template Creation"}
-              li={[
-                "Let us take the stress out of your company templates. We create easy to use templates for all of your organisation's documents with your branding, a consistent look and a professional feel.",
-              ]}
-              link={"/word-document-template-creation"}
-              linkText={"Template Creation"}
-            />
-          </CardIntersectionWrapper>
-          <CardIntersectionWrapper>
-            <ServicesCard
-              src={accessibility}
-              alt={"Accessibility"}
-              h3={"Accessibility"}
-              li={[
-                "Templates created to Accessibility Guidelines.",
-                "Ensure your Corporate or Government documentation adheres to Accessibility Guidelines.",
-              ]}
-              link={"/accessibility"}
-              linkText={"Accessibility"}
-            />
-          </CardIntersectionWrapper>
-          <CardIntersectionWrapper>
-            <ServicesCard
-              src={quickParts}
-              alt={"Quick Parts"}
-              h3={"Quick Parts"}
-              li={[
-                "Increase productivity and reduce repetition",
-                "With Quick Parts and Building Blocks we can pre-design page layouts, content, image placements and more for easy insertion by users",
-              ]}
-              link={"/quick-parts"}
-              linkText={"Quick Parts"}
-            />
-          </CardIntersectionWrapper>
-        </div>
-      </AnimateOnScroll>
+      {/* <AnimateOnScroll animation="fade-down" delay={0} duration={1.5}> */}
+      <div className={styles.cards}>
+        <CardIntersectionWrapper>
+          <ServicesCard
+            src={corporate}
+            alt={"Corporate Global Template Solutions"}
+            h3={"Corporate Global Template Solutions"}
+            li={[
+              "Our advanced Corporate Word Template Solutions enables users to efficiently create corporate documents in a controlled environment within your branding guidelines.",
+            ]}
+            link={"/corporate-global-template-solution"}
+            linkText={"Template Solutions"}
+          />
+        </CardIntersectionWrapper>
+        <CardIntersectionWrapper>
+          <ServicesCard
+            src={word}
+            alt={"Word Document & Template Creation"}
+            h3={"Word Document & Template Creation"}
+            li={[
+              "Let us take the stress out of your company templates. We create easy to use templates for all of your organisation's documents with your branding, a consistent look and a professional feel.",
+            ]}
+            link={"/word-document-template-creation"}
+            linkText={"Template Creation"}
+          />
+        </CardIntersectionWrapper>
+        <CardIntersectionWrapper>
+          <ServicesCard
+            src={accessibility}
+            alt={"Accessibility"}
+            h3={"Accessibility"}
+            li={[
+              "Templates created to Accessibility Guidelines.",
+              "Ensure your Corporate or Government documentation adheres to Accessibility Guidelines.",
+            ]}
+            link={"/accessibility"}
+            linkText={"Accessibility"}
+          />
+        </CardIntersectionWrapper>
+        <CardIntersectionWrapper>
+          <ServicesCard
+            src={quickParts}
+            alt={"Quick Parts"}
+            h3={"Quick Parts"}
+            li={[
+              "Increase productivity and reduce repetition",
+              "With Quick Parts and Building Blocks we can pre-design page layouts, content, image placements and more for easy insertion by users",
+            ]}
+            link={"/quick-parts"}
+            linkText={"Quick Parts"}
+          />
+        </CardIntersectionWrapper>
+      </div>
     </section>
   );
 };

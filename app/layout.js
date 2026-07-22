@@ -89,8 +89,8 @@ export const metadata = {
     images: ["/logo.png"],
   },
   robots: {
-    index: true,
-    follow: true,
+    index: false,
+    follow: false,
     "max-image-preview": "large",
     "max-snippet": -1,
     "max-video-preview": -1,
@@ -98,7 +98,7 @@ export const metadata = {
   metadataBase: new URL(
     process.env.NODE_ENV === "production"
       ? "https://www.wordexperts.com.au"
-      : "http://localhost:3000"
+      : "http://localhost:3000",
   ),
   alternates: {
     canonical: "https://www.wordexperts.com.au",

@@ -56,6 +56,10 @@
   margin: 0 0 1.5rem;
 }
 
+.accent {
+  color: #046999;
+}
+
 .body {
   color: #4a5568;
   line-height: 1.85;

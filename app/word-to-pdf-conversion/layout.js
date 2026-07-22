@@ -4,12 +4,13 @@ import React from "react";
 export const metadata = {
   title: "Word to PDF Conversion & Fillable PDF Forms | Word Experts",
   description:
-    "Professional Word to PDF conversion for Australian businesses. Bulk document conversion and fillable, editable PDF forms built by the experts. Fixed-price quotes.",
+    "More than a free online Word to PDF converter. We build fillable, editable PDF forms in Adobe Acrobat and Word templates that convert reliably every time. Free Consultation.",
 
+  // OpenGraph
   openGraph: {
     title: "Word to PDF Conversion & Fillable PDF Forms | Word Experts",
     description:
-      "Professional Word to PDF conversion for Australian businesses. Bulk document conversion and fillable, editable PDF forms built by the experts. Fixed-price quotes.",
+      "More than a free online Word to PDF converter. We build fillable, editable PDF forms in Adobe Acrobat and Word templates that convert reliably every time. Free Consultation.",
     url: "https://www.wordexperts.com.au/word-to-pdf-conversion",
     siteName: "Word Experts",
     images: [
@@ -24,19 +25,16 @@ export const metadata = {
     type: "website",
   },
 
-  keywords: [
-    "word to pdf conversion",
-    "convert word to pdf",
-    "fillable pdf forms",
-    "editable pdf forms from word",
-  ],
+  // Keywords
+  keywords: ["word to pdf conversion"],
 
+  // Twitter Card
   twitter: {
     card: "summary_large_image",
     site: "@OfficeExpertsG1",
     title: "Word to PDF Conversion & Fillable PDF Forms | Word Experts",
     description:
-      "Professional Word to PDF conversion for Australian businesses. Bulk document conversion and fillable, editable PDF forms built by the experts. Fixed-price quotes.",
+      "More than a free online Word to PDF converter. We build fillable, editable PDF forms in Adobe Acrobat and Word templates that convert reliably every time. Free Consultation.",
     images: ["/logo.png"],
   },
 
@@ -45,6 +43,6 @@ export const metadata = {
   },
 };
 
-export default function WordToPdfConversionLayout({ children }) {
+export default function WordToPdfLayout({ children }) {
   return <>{children}</>;
 }

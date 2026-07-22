@@ -12,22 +12,25 @@ const WordToPdfHeroServer = () => {
         <div className={styles.leftCol}>
           <span className={styles.eyebrow}>With 25+ years experience</span>
 
-          <h1 className={styles.heading}>
-            Word to PDF conversion,{" "}
-            <span className={styles.accentWord}>done properly.</span>
-          </h1>
+          <h2 className={styles.heading}>
+            Editable PDF forms,{" "}
+            <span className={styles.accentWord}>
+              built properly in Adobe Acrobat.
+            </span>
+          </h2>
 
           <div className={styles.body}>
             <p>
-              Anyone can drag a file into a free online converter. Getting the
-              fonts, tables, and layout to come out exactly as they went in,
-              every time, at volume, without your documents passing through an
-              unknown server, is a different job entirely.
+              A free online Word to PDF converter is probably going to do a
+              reasonable job for a static, one-off document, some of the time...
+              But it cannot turn that document into something a client or staff
+              member can actually type into, tick, or sign on screen. That takes
+              proper form-building work in Adobe Acrobat Pro.
             </p>
             <p>
-              We convert Word documents to PDF for businesses that need it done
-              right the first time, including fillable PDF forms built from your
-              existing Word templates.
+              We build fillable, editable PDF forms from your existing Word
+              documents, and design Word templates engineered to convert cleanly
+              to PDF every time, so future conversions never need a second look.
             </p>
           </div>
           <div className={styles.ctaRow}>
@@ -35,7 +38,7 @@ const WordToPdfHeroServer = () => {
               Get a free quote
             </Link>
             <Link href="#services" className={styles.ctaSecondary}>
-              See what we convert
+              See how we build forms
             </Link>
           </div>
         </div>

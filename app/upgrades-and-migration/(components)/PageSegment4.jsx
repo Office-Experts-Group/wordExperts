@@ -24,7 +24,7 @@ const PageSegment4 = () => {
               versions. We eliminate the risk of formatting disruptions,
               maintain document integrity throughout version transitions, and
               ensure your business continuity with minimal downtime. Whether
-              you're upgrading from Word 2010, 2013, 2016, 2019, or migrating to
+              you're upgrading from early versions of Word, or migrating to
               Microsoft 365, our consultants provide comprehensive support to
               prevent data loss, resolve compatibility issues, and optimise your
               document management workflow.

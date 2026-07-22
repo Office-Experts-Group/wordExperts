@@ -728,7 +728,7 @@ const GoogleDocsVsWordBlogPost = () => {
           <div className={styles.quoteBox}>
             <blockquote cite="https://uk.pcmag.com/business/77669/at-home-with-google-g-suite">
               <p>
-                "Comparing G Suite to Office 2016 is like bringing a handgun to
+                "Comparing G Suite to Office 2026 is like bringing a handgun to
                 a cannon fight … Google's suite is designed to have most
                 features most people use daily."
               </p>

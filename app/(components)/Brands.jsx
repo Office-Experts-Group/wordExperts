@@ -3,9 +3,9 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "../../../styles/brands.module.css";
+import styles from "../../styles/brands.module.css";
 
-import { brandData } from "../../../brandData";
+import { brandData } from "../../brandData";
 
 export default function Brands() {
   // State to track which brand index each position is showing

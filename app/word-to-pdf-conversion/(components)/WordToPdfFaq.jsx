@@ -10,36 +10,6 @@ import styles from "../../../styles/wordToPdfFaq.module.css";
 
 const faqs = [
   {
-    id: "why-pay-for-conversion",
-    category: "Conversion",
-    q: "Why would I pay for Word to PDF conversion when free tools exist?",
-    a: (
-      <>
-        Free tools work well for a simple, one-off document. They tend to
-        struggle with complex tables, embedded fonts, and multi-column layouts,
-        and they cannot batch-process hundreds of files at once. Professional
-        conversion is worth it once accuracy, volume, or confidentiality
-        actually matter.
-      </>
-    ),
-    plainText:
-      "Free tools work well for simple, one-off documents but struggle with complex tables, embedded fonts, and multi-column layouts, and cannot batch-process large volumes. Professional conversion is worth it once accuracy, volume, or confidentiality matter.",
-  },
-  {
-    id: "bulk-conversion",
-    category: "Conversion",
-    q: "Can you convert a large batch of Word documents to PDF at once?",
-    a: (
-      <>
-        Yes. We regularly convert large batches, from dozens to hundreds of
-        files, checking that formatting stays consistent across every single one
-        rather than only the first few.
-      </>
-    ),
-    plainText:
-      "Yes, large batches of Word documents can be converted to PDF at once, with formatting checked for consistency across every file in the batch.",
-  },
-  {
     id: "what-is-fillable-pdf",
     category: "Fillable Forms",
     q: "What is a fillable PDF form and how is it different from a normal PDF?",
@@ -90,6 +60,22 @@ const faqs = [
       "Text fields, checkboxes, radio button groups, dropdown lists, date fields, and signature fields can all be added to a converted PDF, along with field validation and required-field rules where needed.",
   },
   {
+    id: "template-reliability",
+    category: "Templates",
+    q: "Can you make our Word template convert to PDF more reliably?",
+    a: (
+      <>
+        Yes. If the same template keeps producing a slightly different result
+        every time it's converted, the underlying Word file is usually the cause
+        rather than the conversion step itself. We rebuild the template so
+        tables, fonts, and layout survive the export to PDF cleanly and
+        consistently, every time it's used.
+      </>
+    ),
+    plainText:
+      "Yes, Word templates that produce inconsistent results when converted to PDF can be rebuilt so tables, fonts, and layout survive the export cleanly and consistently every time the template is used.",
+  },
+  {
     id: "document-security",
     category: "Security",
     q: "How is confidentiality handled for sensitive documents?",
@@ -105,22 +91,42 @@ const faqs = [
       "Documents are not uploaded to anonymous online converters. Handling and storage is agreed with the client up front, which is important for contracts, HR records, financial documents, and other sensitive material.",
   },
   {
+    id: "why-pay-for-conversion",
+    category: "Conversion",
+    q: "Why would I pay for Word to PDF conversion when free tools exist?",
+    a: (
+      <>
+        For a simple, one-off document, a free online converter is usually fine.
+        It's worth paying for a professional service once you need a fillable
+        form, a template that converts the same way every time, or confidential
+        documents handled without uploading them to an unknown server.
+      </>
+    ),
+    plainText:
+      "For a simple, one-off document, a free online converter is usually fine. Professional conversion is worth it once a fillable form, template reliability, or confidential document handling is required.",
+  },
+  {
     id: "formats-supported",
     category: "Conversion",
     q: "Which file formats can be converted to PDF?",
     a: (
       <>
         We work with .doc, .docx, and .rtf source files. If your documents are
-        in another format, or you are consolidating a mix of formats into a
-        single conversion job, let us know and we will advise the best approach.
+        in another format, let us know and we will advise the best approach.
       </>
     ),
     plainText:
-      "Word document formats .doc, .docx, and .rtf can be converted to PDF. Mixed-format batches can also be handled on request.",
+      "Word document formats .doc, .docx, and .rtf can be converted to PDF. Other formats can be handled on request.",
   },
 ];
 
-const categories = ["All", "Conversion", "Fillable Forms", "Security"];
+const categories = [
+  "All",
+  "Fillable Forms",
+  "Templates",
+  "Security",
+  "Conversion",
+];
 
 // JSON-LD FAQPage schema — plain text answers only, no JSX or links
 const FaqSchema = () => {
@@ -209,8 +215,8 @@ const WordToPdfFaq = () => {
                 </span>
               </h2>
               <p className={styles.intro}>
-                Straight answers on conversion, fillable PDF forms, and how we
-                handle sensitive documents.
+                Straight answers on fillable PDF forms, reliable templates, and
+                how we handle sensitive documents.
               </p>
             </div>
 

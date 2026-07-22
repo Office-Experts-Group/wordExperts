@@ -10,19 +10,20 @@ const WordToPdfCta = () => {
         <div className={styles.content}>
           <span className={styles.eyebrow}>Get Started</span>
           <h2 className={styles.heading}>
-            Have Word documents that need to become PDFs?
+            Need a Word document turned into a fillable PDF form?
           </h2>
           <p className={styles.body}>
             Send through a sample file and let us know whether you need a
-            straight conversion or a fillable form. We'll come back with an
-            honest assessment and a fixed price before any work begins.
+            fillable form, a more reliable template, or a straight conversion.
+            We'll come back with an honest assessment and a fixed price before
+            any work begins.
           </p>
           <div className={styles.ctas}>
             <Link href="#contact" className={styles.ctaPrimary}>
               Request a free quote
             </Link>
             <Link href="/fill-in-forms" className={styles.ctaSecondary}>
-              Fillable PDF forms
+              See our fill-in form service
             </Link>
           </div>
         </div>
@@ -50,7 +51,7 @@ const WordToPdfCta = () => {
             <span className={styles.trustCheck} aria-hidden="true">
               ✓
             </span>
-            Bulk conversion and fillable forms both handled in-house
+            Fillable PDF forms and document conversion both handled in-house
           </li>
         </ul>
       </div>

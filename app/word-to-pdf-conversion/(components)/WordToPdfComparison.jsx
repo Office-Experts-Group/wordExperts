@@ -4,29 +4,24 @@ import styles from "../../../styles/wordToPdfComparison.module.css";
 
 const rows = [
   {
+    attribute: "Fillable forms",
+    free: "Not supported, or limited to basic field recognition that needs manual fixing",
+    pro: "Built and reviewed by senior designers with validated fields and logical tab order",
+  },
+  {
     attribute: "Formatting accuracy",
     free: "Tables, columns, and fonts often shift or substitute on complex documents",
     pro: "Layout checked and corrected so the PDF matches the source exactly",
   },
   {
-    attribute: "Volume",
-    free: "One file at a time through a browser, manually, every time",
-    pro: "Bulk conversion of hundreds of files in a single batch",
-  },
-  {
-    attribute: "Fillable forms",
-    free: "Not supported, or limited to basic field recognition that needs manual fixing",
-    pro: "Built properly in Adobe Acrobat Pro with validated fields and logical tab order",
+    attribute: "Template reliability",
+    free: "Generic templates, different result each time, depending on the file and browser",
+    pro: "Templates rebuilt to convert cleanly and consistently every time they're used",
   },
   {
     attribute: "Document security",
     free: "Files uploaded to a third-party server with unclear retention practices",
-    pro: "Handled through an agreed, controlled process with no unknown third parties",
-  },
-  {
-    attribute: "Consistency at scale",
-    free: "Every conversion is a one-off, quality depends on the specific file",
-    pro: "A repeatable process means every document comes out the same way",
+    pro: "Handled through an agreed, controlled process with strict data security",
   },
 ];
 
@@ -44,10 +39,9 @@ const WordToPdfComparison = () => {
             </span>
           </h2>
           <p className={styles.intro}>
-            A free tool is a perfectly reasonable choice for a personal, one-off
-            document. Once the file represents your business, needs to be filled
-            in by someone else, or has to be produced repeatedly, the trade-offs
-            start to matter.
+            Both routes will get you a PDF. The table below is where they
+            actually diverge, so you can see exactly what you're trading off
+            before you choose one.
           </p>
         </div>
 

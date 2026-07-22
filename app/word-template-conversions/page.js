@@ -43,9 +43,9 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-01-13T14:25:35+00:00",
-      dateModified: "2024-11-12T00:00:00+00:00",
+      dateModified: "2025-07-21T00:00:00+00:00",
       description:
-        "Professional Word template conversion services. Convert Adobe, InDesign and other formats to fully functional Microsoft Word templates with preserved branding.",
+        "Professional Word template conversions in Australia. We convert Adobe, InDesign and PDF files into fully functional, on-brand Microsoft Word templates.",
       breadcrumb: {
         "@id":
           "https://www.wordexperts.com.au/word-template-conversions#breadcrumb",
