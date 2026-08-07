@@ -1,3 +1,4 @@
+// working header module
 @import "./globals.scss";
 
 // HeadTop component
@@ -5,7 +6,7 @@
   position: fixed;
   width: 100vw;
   max-width: 100vw;
-  z-index: 10000;
+  z-index: 1000;
   background-color: $black;
   display: flex;
   align-items: center;
@@ -270,7 +271,7 @@ $cycle-duration: 33s;
   padding: 0rem 1rem;
   background-color: rgba(0, 0, 0, 0.109);
   transition: all 0.3s ease;
-  z-index: 10000;
+  z-index: 10;
   border-bottom: 1px solid #ffffff27;
   margin-top: 40px;
   transition: all 0.5s ease;
@@ -626,12 +627,13 @@ $cycle-duration: 33s;
     scale: 0.5;
   }
   margin-left: auto;
+  margin-right: 1rem;
 }
 
 .microLogoScrolled {
   filter: brightness(100%);
   scale: 0.7;
-  margin: 0 -1.2rem 0 auto;
+  margin: 0 1rem 0 auto;
   transition: all 0.5s ease;
   @include phone {
     scale: 0.5;
