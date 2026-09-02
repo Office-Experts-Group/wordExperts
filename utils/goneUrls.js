@@ -42,7 +42,6 @@ export const goneUrls = [
   "/testimonials/van-zeller-communications/",
   "/testimonials/windowline/",
   "/category/uncategorized/",
-  "/home/",
   "/feed/",
   "/sitemap.html",
   "/reference-request-form",
