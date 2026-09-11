@@ -39,3 +39,5 @@ check-videos.js
 link-check-results.txt
 debug-a3-video.ps1
 debug-a3-video.sh
+
+aiReport.md

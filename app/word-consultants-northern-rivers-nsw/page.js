@@ -18,6 +18,7 @@ const Testimonials = dynamic(() => import("../(components)/Testimonials"));
 const MeetTheTeamSlider = dynamic(
   () => import("../../components/MeetTheTeamSlider"),
 );
+// const TeamCardGrid = dynamic(() => import("../../components/TeamCardGrid"));
 
 import { getHomePageSchema } from "../../utils/testimonialSchemaGenerator";
 import {
@@ -112,6 +113,7 @@ const Page = () => {
       <LocationPages location={location} />
       <CTAMainProps location={location} />
       <ServicesLocation location={location} />
+      {/* <TeamCardGrid location={"northernRivers"} /> */}
       <MeetTheTeamSlider />
       <GoodToKnow />
       <Testimonials testimonials={testimonials} />

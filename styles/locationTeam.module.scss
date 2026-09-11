@@ -1,0 +1,34 @@
+// locationTeam.module.scss
+@import "./globals.scss";
+
+.locationTeam {
+  padding: 4rem 0;
+  margin: 2rem 10vw;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: $black;
+  margin-bottom: 3rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 3rem;
+  justify-content: center;
+  margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    max-width: calc(3 * (240px + 1.5rem));
+  }
+}

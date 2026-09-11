@@ -1,3 +1,4 @@
+// components/Testimonials.jsx
 import React from "react";
 import Link from "next/link";
 
@@ -39,17 +40,29 @@ const Testimonials = ({ testimonials }) => {
         aria-label="Testimonials carousel"
       >
         <div className={styles.testimonialsTrack}>
-          {extendedTestimonials.map((testimonial, index) => (
-            <div
-              key={`testimonial-${index}`}
-              className={styles.testimonialSlide}
-              aria-label={`Testimonial ${
-                (index % selectedTestimonials.length) + 1
-              }`}
-            >
-              <TestimonialCard key={index} {...testimonial} index={index} />
-            </div>
-          ))}
+          {extendedTestimonials.map((testimonial, index) => {
+            // The appended buffer slides (index >= selectedTestimonials.length)
+            // exist only so the marquee has slides to scroll into at the
+            // end of the loop, avoiding a blank gap. They repeat real
+            // testimonial content, so they're hidden from crawlers and
+            // assistive tech to prevent duplicate content appearing twice
+            // on the page - only the original slides remain discoverable.
+            const isDuplicate = index >= selectedTestimonials.length;
+
+            return (
+              <div
+                key={`testimonial-${index}`}
+                className={styles.testimonialSlide}
+                aria-label={`Testimonial ${
+                  (index % selectedTestimonials.length) + 1
+                }`}
+                aria-hidden={isDuplicate || undefined}
+                inert={isDuplicate || undefined}
+              >
+                <TestimonialCard key={index} {...testimonial} index={index} />
+              </div>
+            );
+          })}
         </div>
       </div>
       <Link href={"/client-testimonials"} className={`btn ${styles.btn}`}>
