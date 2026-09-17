@@ -1,19 +1,30 @@
+// app/accessibility/page.js
 import React from "react";
 import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
 import PageSegmentMain from "./(components)/PageSegmentMain";
 
+// Below-the-fold sections loaded dynamically to keep the initial bundle lean
+const AccessibilityStandards = dynamic(
+  () => import("./(components)/AccessibilityStandards"),
+);
+const AccessibilityChecklist = dynamic(
+  () => import("./(components)/AccessibilityChecklist"),
+);
 const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"));
+const AccessibilityProcess = dynamic(
+  () => import("./(components)/AccessibilityProcess"),
+);
 const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
 const FAQSection = dynamic(() => import("../../components/FAQSection"));
 const Contact = dynamic(() => import("../../components/Contact"));
 
-import faqs from "../../faqs/accesibility";
+import faqs from "../../faqs/accessibility";
 import faqSchema from "../../faqs/accessibilitySchema";
 
-import deskGraph from "../../public/pageHeros/deskGraph.webp";
-import calcMob from "../../public/pageHeros/mob/calcMob.webp";
+import accessibility from "../../public/pageHeros/accessibility.webp";
+import accessibilityMob from "../../public/pageHeros/mob/accessibilityMob.webp";
 
 import {
   generateProfessionalServiceSchema,
@@ -40,7 +51,7 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-07-15T16:14:28+00:00",
-      dateModified: "2025-07-30T00:00:00+00:00",
+      dateModified: "2026-09-11T00:00:00+00:00",
       description:
         "Accessible Word document creation and template services. WCAG-compliant documents, accessibility audits, and remediation services for government and enterprise.",
       breadcrumb: {
@@ -131,14 +142,17 @@ const Page = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <ServiceHero
-        title="Accessibility"
-        desktopImage={deskGraph}
-        mobileImage={calcMob}
-        altDesk={"Graphs on a table"}
-        altMob={"Calculator on a table"}
+        title="Accessibility & Compliance"
+        desktopImage={accessibility}
+        mobileImage={accessibilityMob}
+        altDesk={"accessibility in word documents design"}
+        altMob={"accessibility in word documents design"}
       />
       <PageSegmentMain />
+      <AccessibilityStandards />
+      <AccessibilityChecklist />
       <PageSegment4 />
+      <AccessibilityProcess />
       <ExpertsAwait />
       <FAQSection faqs={faqs} />
       <Contact />

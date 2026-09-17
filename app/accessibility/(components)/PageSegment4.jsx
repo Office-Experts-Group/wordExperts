@@ -1,11 +1,12 @@
+// app/accessibility/(components)/PageSegment4.jsx
+
 import React from "react";
-import Image from "next/image";
 
 import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 import styles from "../../../styles/pageSegment4.module.css";
 
-import presentation from "../../../public/presentation600x450.webp";
+import TemplateGovernanceSVG from "../(svgs)/TemplateGovernanceSVG";
 import Link from "next/link";
 
 const Segment4Repeat = () => {
@@ -21,11 +22,11 @@ const Segment4Repeat = () => {
               We Understand Accessibility!
             </h2>
             <p>
-              Office Experts Group have worked with many{" "}
+              Word Experts have worked with many{" "}
               <Link href="/government-departments">
                 Government departments,
               </Link>{" "}
-              state, federal and corporate, over many years. We understand the
+              state, federal and corporate, over 25 years. We understand the
               department's needs and can tailor a solution that will assist
               hundreds of users in creating documents that not only look great
               but also adhere to the latest accessibility guidelines.
@@ -37,16 +38,9 @@ const Segment4Repeat = () => {
           </div>
         </AnimateOnScroll>
 
-        <AnimateOnScroll animation="scale-up" duration={1} delay={0.2}>
-          <div className="image-wrapper">
-            <Image
-              src={presentation}
-              alt="person giving a presentation with a white board"
-              width={450}
-              height={300}
-            />
-          </div>
-        </AnimateOnScroll>
+        <div className={styles.svg}>
+          <TemplateGovernanceSVG />
+        </div>
       </div>
     </div>
   );

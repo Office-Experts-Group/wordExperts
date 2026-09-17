@@ -1,0 +1,91 @@
+.section {
+  background: #ffffff;
+  padding: 0 1.5rem 6rem 1.5rem;
+}
+
+.inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 3.5rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 449px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+.leftCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.eyebrow {
+  display: inline-block;
+  color: #046999;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.heading {
+  color: #0d1b2a;
+  font-size: 1.9rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.body {
+  color: #4a5568;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.cta {
+  display: inline-block;
+  color: #046999;
+  font-weight: 700;
+  margin-top: 0.75rem;
+}
+
+.steps {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.step {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.stepNum {
+  flex-shrink: 0;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #e8f4fa;
+  -webkit-text-stroke: 1.5px #046999;
+}
+
+.stepContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.stepHeading {
+  color: #0d1b2a;
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
+}
+
+.stepBody {
+  color: #4a5568;
+  line-height: 1.65;
+}/*# sourceMappingURL=accessibilityProcess.module.css.map */
