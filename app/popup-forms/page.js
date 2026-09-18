@@ -25,8 +25,8 @@ const Contact = dynamic(() => import("../../components/Contact"));
 import faqs from "../../faqs/popup-forms";
 import faqSchema from "../../faqs/popupFormsSchema";
 
-import notes from "../../public/pageHeros/notes.webp";
-import graphTableMob from "../../public/pageHeros/mob/graphTableMob.webp";
+import popupForm from "../../public/pageHeros/popupForm.webp";
+import popupFormMob from "../../public/pageHeros/mob/popupFormMob.webp";
 
 import {
   generateProfessionalServiceSchema,
@@ -158,10 +158,10 @@ const Page = () => {
       />
       <ServiceHero
         title="Popup Forms"
-        desktopImage={notes}
-        mobileImage={graphTableMob}
-        altDesk={"sticky notes on a table"}
-        altMob={"graphs on an office table"}
+        desktopImage={popupForm}
+        mobileImage={popupFormMob}
+        altDesk={"Popup form to document diagram"}
+        altMob={"Popup form to document diagram"}
       />
       <PopupFormsHero />
       <PopupFormsProblem />
