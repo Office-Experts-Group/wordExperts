@@ -1,0 +1,119 @@
+.section {
+  background: #111820;
+  padding: 7rem 6vw;
+}
+@media (max-width: 449px) {
+  .section {
+    padding: 4rem 6vw;
+  }
+}
+
+.header {
+  max-width: 700px;
+  margin: 0 auto 3.5rem;
+  text-align: center;
+}
+
+.eyebrow {
+  display: block;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.75rem;
+}
+
+.heading {
+  font-size: 2rem;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.1rem;
+}
+@media (max-width: 449px) {
+  .heading {
+    font-size: 1.6rem;
+  }
+}
+
+.intro {
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 449px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: #18232e;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardAccent {
+  background: #046999;
+  border-color: #046999;
+}
+.cardAccent .cardHeading,
+.cardAccent .cardDescription,
+.cardAccent .cardLink {
+  color: #ffffff;
+}
+.cardAccent .iconWrap {
+  color: #ffffff;
+}
+
+.iconWrap {
+  color: #046999;
+  margin-bottom: 1.25rem;
+}
+.iconWrap svg {
+  width: 40px;
+  height: 40px;
+}
+
+.cardHeading {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0.6rem;
+}
+
+.cardDescription {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.cardLink {
+  display: inline-block;
+  margin-top: 1.25rem;
+  color: #046999;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.cardLink:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=govDeptCapabilities.module.css.map */

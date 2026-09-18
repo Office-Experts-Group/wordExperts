@@ -2,10 +2,19 @@ import React from "react";
 import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
-import PageSegmentMain from "./(components)/PageSegmentMain";
+import GovDeptIntro from "./(components)/GovDeptIntro";
 
 const Contact = dynamic(() => import("../../components/Contact"));
-const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"));
+const GovDeptCompliance = dynamic(
+  () => import("./(components)/GovDeptCompliance"),
+);
+const GovDeptTemplateSystem = dynamic(
+  () => import("./(components)/GovDeptTemplateSystem"),
+);
+const GovDeptCapabilities = dynamic(
+  () => import("./(components)/GovDeptCapabilities"),
+);
+const GovDeptProcess = dynamic(() => import("./(components)/GovDeptProcess"));
 const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
 const FAQSection = dynamic(() => import("../../components/FAQSection"));
 
@@ -40,7 +49,7 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-07-15T16:07:45+00:00",
-      dateModified: "2024-11-12T00:00:00+00:00",
+      dateModified: "2026-09-18T00:00:00+00:00",
       description:
         "Specialised Microsoft Word solutions for government departments. Accessible documents, compliant templates, and secure document management solutions.",
       breadcrumb: {
@@ -94,8 +103,11 @@ const Page = () => {
         altDesk={"graphs on a table"}
         altMob={"meeting at an office a table"}
       />
-      <PageSegmentMain />
-      <Segment4Repeat />
+      <GovDeptIntro />
+      <GovDeptCompliance />
+      <GovDeptTemplateSystem />
+      <GovDeptCapabilities />
+      <GovDeptProcess />
       <ExpertsAwait />
       <FAQSection faqs={faqs} />
       <Contact />

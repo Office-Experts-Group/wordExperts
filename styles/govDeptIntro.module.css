@@ -1,0 +1,80 @@
+.section {
+  padding: 6rem 10vw;
+}
+@media (max-width: 449px) {
+  .section {
+    padding: 3.5rem 6vw;
+  }
+}
+
+.accent {
+  color: #046999;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+@media (max-width: 449px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.iconWrap {
+  color: #046999;
+}
+.iconWrap svg {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+}
+@media (max-width: 449px) {
+  .iconWrap {
+    display: none;
+  }
+}
+
+.content p {
+  color: #4a5568;
+  line-height: 1.7;
+}
+.content p a {
+  color: #046999;
+  font-weight: 700;
+}
+.content p + p {
+  margin-top: 1rem;
+}
+
+.eyebrow {
+  display: block;
+  color: #046999;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.75rem;
+}
+
+.heading {
+  font-size: 2rem;
+  line-height: 1.25;
+  color: #0d1b2a;
+  margin-bottom: 1.25rem;
+}
+@media (max-width: 449px) {
+  .heading {
+    font-size: 1.6rem;
+  }
+}/*# sourceMappingURL=govDeptIntro.module.css.map */
