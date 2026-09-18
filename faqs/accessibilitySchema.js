@@ -7,7 +7,7 @@ export const faqSchema = {
       name: "What accessibility standards do your Word templates comply with?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Our Word templates comply with WCAG 2.1 guidelines and meet government accessibility requirements. We ensure all templates include proper heading structures, alternative text capabilities, reading order optimization, and accessible table formats. This makes documents usable for people relying on screen readers and other assistive technologies.",
+        text: "Our Word templates can comply with WCAG 2.1 guidelines and meet government accessibility requirements. We ensure all templates include proper heading structures, alternative text capabilities, reading order optimization, and accessible table formats. This makes documents usable for people relying on screen readers and other assistive technologies.",
       },
     },
     {

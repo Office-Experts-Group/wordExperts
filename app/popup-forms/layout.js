@@ -1,15 +1,17 @@
 export const metadata = {
-  title: "Word Popup Form | Word Experts",
+  title: "Word Popup Forms | Custom VBA Data Entry Forms | Word Experts",
   description:
-    "Professional Microsoft Word popup form development. Custom data entry forms with validation and automation. Improve efficiency and data accuracy.",
+    "Custom Microsoft Word popup forms with guided data entry, validation, conditional logic and direct document integration. Reduce errors and keep every document consistent.",
   keywords: [
-    // Core features
     "word popup forms",
+    "word userform vba",
+    "word data entry form",
+    "word form validation",
   ],
   openGraph: {
-    title: "Word Popup Form | Word Experts",
+    title: "Word Popup Forms | Custom VBA Data Entry Forms | Word Experts",
     description:
-      "Professional Microsoft Word popup form development. Custom data entry forms with validation and automation.",
+      "Custom Microsoft Word popup forms with guided data entry, validation, conditional logic and direct document integration.",
     url: "https://www.wordexperts.com.au/popup-forms",
     siteName: "Word Experts",
     images: [
@@ -26,9 +28,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@WordExpertsAU",
-    title: "Word Popup Form | Word Experts",
+    title: "Word Popup Forms | Custom VBA Data Entry Forms | Word Experts",
     description:
-      "Professional Microsoft Word popup form development. Custom data entry forms with validation and automation.",
+      "Custom Microsoft Word popup forms with guided data entry, validation, conditional logic and direct document integration.",
     images: ["/logo.png"],
   },
   alternates: {

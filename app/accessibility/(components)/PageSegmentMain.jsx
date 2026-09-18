@@ -30,7 +30,7 @@ const PageSegmentMain = () => {
           <p>
             <strong>Why is it important?</strong> An inaccessible document can
             lock people with disability out of information entirely, and for
-            government and many enterprise organisations, it's a legal and
+            government and many enterprise organisations, it's a legal
             requirement, not just an added benefit.
           </p>
           <p>

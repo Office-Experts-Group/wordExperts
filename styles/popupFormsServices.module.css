@@ -1,0 +1,198 @@
+.section {
+  background: #111820;
+  padding: 7rem 6vw;
+}
+@media (max-width: 449px) {
+  .section {
+    padding: 4rem 6vw;
+  }
+}
+
+.accent {
+  color: #046999;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+@media (max-width: 449px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.leftCol {
+  position: sticky;
+  top: 6rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .leftCol {
+    position: static;
+  }
+}
+@media (max-width: 449px) {
+  .leftCol {
+    position: static;
+  }
+}
+
+.eyebrow {
+  display: block;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.9);
+}
+@media (max-width: 449px) {
+  .heading {
+    font-size: 1.7rem;
+  }
+}
+
+.intro {
+  margin-top: 1.25rem;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.svgWrap {
+  margin-top: 2.5rem;
+}
+.svgWrap svg {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .svgWrap {
+    display: none;
+  }
+}
+@media (max-width: 449px) {
+  .svgWrap {
+    display: none;
+  }
+}
+
+.servicesList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.service {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.serviceAccent {
+  background: #046999;
+  border-color: #046999;
+}
+.serviceAccent .serviceHeading {
+  color: #ffffff;
+}
+.serviceAccent .serviceTag {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.18);
+}
+.serviceAccent .serviceDescription,
+.serviceAccent .capabilities li {
+  color: rgba(255, 255, 255, 0.88);
+}
+.serviceAccent .capabilities li::before {
+  background: #ffffff;
+}
+.serviceAccent .iconWrap {
+  color: #ffffff;
+}
+
+.serviceTop {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.iconWrap {
+  color: #046999;
+  flex-shrink: 0;
+}
+.iconWrap svg {
+  width: 40px;
+  height: 40px;
+}
+
+.serviceTitleGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.serviceHeading {
+  font-size: 1.3rem;
+  color: #0d1b2a;
+}
+
+.serviceTag {
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 0.75rem;
+  color: #046999;
+  background: #e8f4fa;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
+
+.serviceDescription {
+  color: #4a5568;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+
+.capabilities {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.capabilities li {
+  position: relative;
+  padding-left: 1.4rem;
+  color: #4a5568;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+.capabilities li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #046999;
+}/*# sourceMappingURL=popupFormsServices.module.css.map */

@@ -1,18 +1,29 @@
+// app/popup-forms/page.js
 import React from "react";
 import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
-import PageSegmentMain from "./(components)/PageSegmentMain";
+import PopupFormsHero from "./(components)/PopupFormsHero";
 
-const Contact = dynamic(() => import("../../components/Contact"));
-const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"));
-const PageSegment5 = dynamic(() => import("./(components)/PageSegment5"));
+// Below-the-fold components loaded dynamically
+const PopupFormsProblem = dynamic(
+  () => import("./(components)/PopupFormsProblem"),
+);
+const PopupFormsServices = dynamic(
+  () => import("./(components)/PopupFormsServices"),
+);
+const PopupFormsUseCases = dynamic(
+  () => import("./(components)/PopupFormsUseCases"),
+);
+const PopupFormsProcess = dynamic(
+  () => import("./(components)/PopupFormsProcess"),
+);
 const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
-const Promo = dynamic(() => import("../../components/Promo"));
 const FAQSection = dynamic(() => import("../../components/FAQSection"));
+const Contact = dynamic(() => import("../../components/Contact"));
 
 import faqs from "../../faqs/popup-forms";
-import faqSchema from "../../faqs/popupSchema";
+import faqSchema from "../../faqs/popupFormsSchema";
 
 import notes from "../../public/pageHeros/notes.webp";
 import graphTableMob from "../../public/pageHeros/mob/graphTableMob.webp";
@@ -23,6 +34,9 @@ import {
   generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
+const PAGE_URL = "https://www.wordexperts.com.au/popup-forms";
+
+// ── Structured data ────────────────────────────────────────
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -35,30 +49,30 @@ const schema = {
     ),
     {
       "@type": "WebPage",
-      "@id": "https://www.wordexperts.com.au/popup-forms",
-      url: "https://www.wordexperts.com.au/popup-forms",
+      "@id": PAGE_URL,
+      url: PAGE_URL,
       name: "Word Popup Form | Word Popup Window | Word Experts",
       isPartOf: {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-01-13T14:27:08+00:00",
-      dateModified: "2024-11-12T00:00:00+00:00",
+      dateModified: "2026-09-18T00:00:00+00:00",
       description:
-        "Professional Microsoft Word popup form development. Custom data entry forms with validation and automation. Improve efficiency and data accuracy.",
+        "Professional Microsoft Word popup form development. Custom data entry forms with validation, conditional logic and document integration. Improve efficiency and data accuracy.",
       breadcrumb: {
-        "@id": "https://www.wordexperts.com.au/popup-forms#breadcrumb",
+        "@id": `${PAGE_URL}#breadcrumb`,
       },
       inLanguage: "en-AU",
       potentialAction: [
         {
           "@type": "ReadAction",
-          target: ["https://www.wordexperts.com.au/popup-forms"],
+          target: [PAGE_URL],
         },
       ],
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.wordexperts.com.au/popup-forms#breadcrumb",
+      "@id": `${PAGE_URL}#breadcrumb`,
       itemListElement: [
         {
           "@type": "ListItem",
@@ -70,19 +84,19 @@ const schema = {
           "@type": "ListItem",
           position: 2,
           name: "Popup Forms",
-          item: "https://www.wordexperts.com.au/popup-forms",
+          item: PAGE_URL,
         },
       ],
     },
     {
       "@type": "Service",
-      "@id": "https://www.wordexperts.com.au/popup-forms#service",
+      "@id": `${PAGE_URL}#service`,
       name: "Word Popup Form Development",
       provider: {
         "@id": "https://www.wordexperts.com.au#organization",
       },
       description:
-        "Professional Microsoft Word popup form development and automation services",
+        "Professional Microsoft Word popup form development and automation services, including guided data capture, validation, conditional logic and document integration.",
       serviceType: "Form Development",
       category: "Document Automation",
       hasOfferCatalog: {
@@ -93,34 +107,36 @@ const schema = {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "Custom Form Development",
-              description: "Development of tailored popup forms for data entry",
-            },
-          },
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
-              name: "Data Validation",
+              name: "Guided Data Capture",
               description:
-                "Implementation of data validation and error checking",
+                "Custom VBA UserForms that guide staff through document data entry",
             },
           },
           {
             "@type": "Offer",
             itemOffered: {
               "@type": "Service",
-              name: "Form Automation",
-              description: "Automation of form data processing and integration",
-            },
-          },
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Service",
-              name: "VBA Development",
+              name: "Validation & Error Checking",
               description:
-                "Custom VBA programming for advanced form functionality",
+                "Field validation, mandatory field enforcement and business rule checks",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Conditional Logic & Branching",
+              description:
+                "Forms that adapt fields and requirements based on earlier answers",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Document & Field Integration",
+              description:
+                "Direct insertion of captured data into Word bookmarks, content controls and mail merge fields",
             },
           },
         ],
@@ -147,14 +163,11 @@ const Page = () => {
         altDesk={"sticky notes on a table"}
         altMob={"graphs on an office table"}
       />
-      <PageSegmentMain />
-      <Segment4Repeat />
-      <PageSegment5 />
-      <Promo
-        h2="Empowering Your Documents with Seamless Integration"
-        p="Our popup forms are designed to simplify data entry, reduce errors, and enhance document consistency, giving your team a more efficient and reliable way to work in Microsoft Word."
-      />
-
+      <PopupFormsHero />
+      <PopupFormsProblem />
+      <PopupFormsServices />
+      <PopupFormsUseCases />
+      <PopupFormsProcess />
       <ExpertsAwait />
       <FAQSection faqs={faqs} />
       <Contact />

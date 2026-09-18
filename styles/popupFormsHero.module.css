@@ -1,0 +1,252 @@
+.section {
+  background: #f7f8f9;
+  padding: 7rem 6vw;
+}
+@media (max-width: 449px) {
+  .section {
+    padding: 4rem 6vw;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: start;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+@media (max-width: 449px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.leftCol {
+  position: sticky;
+  top: 6rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .leftCol {
+    position: static;
+  }
+}
+@media (max-width: 449px) {
+  .leftCol {
+    position: static;
+  }
+}
+
+.heading {
+  font-size: 2.6rem;
+  line-height: 1.15;
+  color: #0d1b2a;
+}
+@media (max-width: 449px) {
+  .heading {
+    font-size: 1.9rem;
+  }
+}
+
+.accent {
+  color: #046999;
+}
+
+.ctaBtn:hover {
+  border: 1px solid #046999;
+}
+
+.body {
+  margin-top: 1.5rem;
+  color: #4a5568;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+.body p + p {
+  margin-top: 1rem;
+}
+
+.ctaRow {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #046999;
+  font-weight: 700;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+@media (max-width: 449px) {
+  .stats {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.statNum {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #046999;
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  color: #9a9da1;
+}
+
+.statDivider {
+  width: 1px;
+  height: 32px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.rightCol {
+  position: relative;
+}
+
+.capLabel {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #9a9da1;
+  margin-bottom: 1rem;
+}
+
+.capList {
+  position: relative;
+  list-style: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.trackLine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  background: #046999;
+  transition: height 0.3s ease;
+}
+
+.capItem {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  outline: none;
+}
+
+.capItemInner {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem 0.5rem;
+}
+
+.capLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-width: 2.5rem;
+}
+
+.capNum {
+  font-size: 0.85rem;
+  color: #9a9da1;
+  font-weight: 700;
+}
+
+.capDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.capItemActive .capDot {
+  background: #046999;
+}
+
+.capContent {
+  flex: 1;
+}
+
+.capHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.capTitle {
+  font-size: 1.1rem;
+  color: #0d1b2a;
+}
+
+.capTag {
+  font-size: 0.75rem;
+  color: #046999;
+  background: #e8f4fa;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.capDesc {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.capDesc p {
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: 0.75rem;
+}
+
+.capItemActive .capDesc,
+.capItem:focus-within .capDesc {
+  max-height: 12rem;
+}
+
+.capLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+  color: #046999;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.capArrow {
+  color: #9a9da1;
+  flex-shrink: 0;
+}
+
+.capItemActive .capArrow {
+  color: #046999;
+}/*# sourceMappingURL=popupFormsHero.module.css.map */

@@ -46,8 +46,9 @@ const AccessibilityStandards = () => {
             A document can look fine to the untrained eye and still fail a
             screen reader completely. Colours may be legible to many on first
             glance yet fall short of contrast requirements for those with
-            impaired vision. We build every template against WCAG 2.1 AA and the
-            standards designed for use in professional documents Australia-wide.
+            impaired vision. We can build every template against WCAG 2.1 AA and
+            the standards designed for use in professional documents
+            Australia-wide.
           </p>
           <Link href="#contact" style={{ color: "#046999", fontWeight: "700" }}>
             Talk to us about your compliance requirements.

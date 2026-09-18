@@ -8,7 +8,7 @@ const faqs = [
     question:
       "What accessibility standards do your Word templates comply with?",
     answer:
-      "Our Word templates comply with WCAG 2.1 guidelines and meet government accessibility requirements. We ensure all templates include proper heading structures, alternative text capabilities, reading order optimisation, and accessible table formats. This makes documents usable for people relying on screen readers and other assistive technologies.",
+      "Our Word templates can comply with WCAG 2.1 guidelines and meet government accessibility requirements. We ensure all templates include proper heading structures, alternative text capabilities, reading order optimisation, and accessible table formats. This makes documents usable for people relying on screen readers and other assistive technologies.",
   },
   {
     question:
@@ -36,13 +36,13 @@ const faqs = [
     question:
       "Do accessible Word documents also need to work as accessible PDFs?",
     answer:
-      "Often, yes. If your Word document will be exported to PDF for publishing, we structure the source document so the tagging carries across cleanly, meeting PDF/UA requirements. We also test the exported PDF separately, since export settings can strip or reorder tags even when the Word source is correct.",
+      "Often, yes. If your Word document will be exported to PDF for publishing, we structure the source document so the tagging carries across cleanly, meeting PDF/UA requirements. We can also test the exported PDF separately, since export settings can strip or reorder tags even when the Word source is correct.",
   },
   {
     question:
       "What's the difference between an accessibility checker pass and true compliance?",
     answer:
-      "Word's built-in accessibility checker catches common issues like missing alt text, but it can't detect an illogical reading order, a heading used purely for visual styling, or a table that reads correctly on screen but announces incorrectly to a screen reader. We combine automated checks with a manual screen reader review before signing off on any document.",
+      "Word's built-in accessibility checker catches common issues like missing alt text, but it can't detect an illogical reading order, a heading used purely for visual styling, or a table that reads correctly on screen but announces incorrectly to a screen reader. We can combine automated checks with a manual screen reader review before signing off on any document.",
   },
   {
     question:
