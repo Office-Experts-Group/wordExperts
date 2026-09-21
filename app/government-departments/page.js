@@ -21,8 +21,8 @@ const FAQSection = dynamic(() => import("../../components/FAQSection"));
 import faqs from "../../faqs/government-departments";
 import faqSchema from "../../faqs/govSchema";
 
-import deskGraph from "../../public/pageHeros/deskGraph.webp";
-import meetingMob from "../../public/pageHeros/mob/meetingMob.webp";
+import government from "../../public/pageHeros/government.webp";
+import governmentMob from "../../public/pageHeros/mob/governmentMob.webp";
 
 import {
   generateProfessionalServiceSchema,
@@ -98,10 +98,10 @@ const Page = () => {
       />
       <ServiceHero
         title="Government Departments"
-        desktopImage={deskGraph}
-        mobileImage={meetingMob}
-        altDesk={"graphs on a table"}
-        altMob={"meeting at an office a table"}
+        desktopImage={government}
+        mobileImage={governmentMob}
+        altDesk={"Canberra Parliament house with word documents"}
+        altMob={"Canberra Parliament house with word documents"}
       />
       <GovDeptIntro />
       <GovDeptCompliance />

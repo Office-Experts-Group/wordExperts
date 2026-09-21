@@ -31,11 +31,10 @@ const GovDeptIntro = () => {
             <p>
               Our team of Word programmers and designers have worked with state
               and federal government departments for over 25 years, building
-              document templates that adhere to the unique challenges when
-              working with strictly compliant and accessible documents, often
-              for hundreds of staff with strict formatting rules and documents
-              that need to look and behave identically no matter who creates
-              them.
+              document templates that adhere to the challenges when working with
+              strictly compliant and accessible documents, often for hundreds of
+              staff with strict formatting rules and documents that need to look
+              and behave identically no matter who creates them.
             </p>
             <p>
               We take document accessibility seriously and build every template
