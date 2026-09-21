@@ -1,0 +1,131 @@
+.section {
+  max-width: 1300px;
+  margin: 6rem auto;
+  padding: 0 6vw;
+}
+@media (max-width: 449px) {
+  .section {
+    margin: 4rem auto;
+  }
+}
+
+.accent {
+  color: #046999;
+}
+
+.intro {
+  max-width: 760px;
+  margin: 0 auto 3.5rem;
+  text-align: center;
+}
+.intro p:first-child {
+  color: #046999;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.intro h2 {
+  margin-top: 1rem;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  color: #0d1b2a;
+}
+@media (max-width: 449px) {
+  .intro h2 {
+    font-size: 1.75rem;
+  }
+}
+
+.introBody {
+  margin-top: 1.25rem;
+  color: #4a5568;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+.introBody a {
+  color: #046999;
+  font-weight: 700;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .body {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+@media (max-width: 449px) {
+  .body {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.svgWrapper {
+  position: sticky;
+  top: 6rem;
+}
+.svgWrapper svg {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .svgWrapper {
+    position: static;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 449px) {
+  .svgWrapper {
+    position: static;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+
+.scenarios {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.scenario {
+  border-left: 3px solid rgba(4, 105, 153, 0.3);
+  padding-left: 1.5rem;
+}
+
+.scenarioTag {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #046999;
+  margin-bottom: 0.5rem;
+}
+
+.scenarioBody {
+  color: #4a5568;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.footNote {
+  margin-top: 0.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+.footNote a {
+  color: #046999;
+  font-weight: 700;
+}/*# sourceMappingURL=formBuilding.module.css.map */

@@ -6,14 +6,21 @@ import PageSegmentMain from "./(components)/PageSegmentMain";
 
 const Contact = dynamic(() => import("../../components/Contact"));
 const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"));
+const FormFieldsAnatomy = dynamic(
+  () => import("./(components)/FormFieldsAnatomy"),
+);
+const FormProtectionExplainer = dynamic(
+  () => import("./(components)/FormProtectionExplainer"),
+);
+const FormDataJourney = dynamic(() => import("./(components)/FormDataJourney"));
 const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
 const FAQSection = dynamic(() => import("../../components/FAQSection"));
 
 import faqs from "../../faqs/fill-in-forms";
 import faqSchema from "../../faqs/fillFormsSchema";
 
-import penPoint from "../../public/pageHeros/penPoint.webp";
-import glassesMob from "../../public/pageHeros/mob/glassesMob.webp";
+import fillForm from "../../public/pageHeros/fillForm.webp";
+import fillFormMob from "../../public/pageHeros/mob/fillFormMob.webp";
 
 import {
   generateProfessionalServiceSchema,
@@ -35,12 +42,12 @@ const schema = {
       "@type": "WebPage",
       "@id": "https://www.wordexperts.com.au/fill-in-forms",
       url: "https://www.wordexperts.com.au/fill-in-forms",
-      name: "Expert Creation of Word Fill in Forms | Word Fill In Form Experts | Word Experts",
+      name: "Expert Creation of Word Fill in Forms",
       isPartOf: {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-01-13T14:30:12+00:00",
-      dateModified: "2024-11-12T00:00:00+00:00",
+      dateModified: "2026-09-21T00:00:00+00:00",
       description:
         "Professional Microsoft Word form creation services. Custom fillable forms with data validation and protection. Improve data entry efficiency and accuracy.",
       breadcrumb: {
@@ -88,13 +95,16 @@ const Page = () => {
       />
       <ServiceHero
         title="Fill In Forms"
-        desktopImage={penPoint}
-        mobileImage={glassesMob}
-        altDesk={"pointing a pen at a computer screen"}
-        altMob={"reading glasses on a table"}
+        desktopImage={fillForm}
+        mobileImage={fillFormMob}
+        altDesk={"Fill in forms with Microsoft Word"}
+        altMob={"Fill in forms with Microsoft Word"}
       />
       <PageSegmentMain />
+      <FormFieldsAnatomy />
+      <FormProtectionExplainer />
       <Segment4Repeat />
+      <FormDataJourney />
       <ExpertsAwait />
       <FAQSection faqs={faqs} />
       <Contact />

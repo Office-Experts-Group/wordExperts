@@ -18,10 +18,15 @@
   }
 }
 
-.svg {
+.imgWrapper {
+  overflow: visible;
+}
+.imgWrapper svg {
   width: 100%;
   height: auto;
-  @media screen and (max-width: 700px) {
+}
+@media screen and (max-width: 700px) {
+  .imgWrapper {
     display: none;
   }
 }
@@ -54,4 +59,4 @@
 .ctaBtn:hover {
   border: 1px solid #046999;
   color: #046999;
-} /*# sourceMappingURL=accessibilityPageSegmentMain.module.css.map */
+}/*# sourceMappingURL=accessibilityPageSegmentMain.module.css.map */

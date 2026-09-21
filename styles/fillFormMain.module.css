@@ -1,0 +1,69 @@
+.pageSegment {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 7rem 6vw;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .pageSegment {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 5rem 6vw;
+  }
+}
+@media (max-width: 449px) {
+  .pageSegment {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 4rem 6vw;
+  }
+}
+
+.accent {
+  color: #046999;
+}
+
+.contentWrapper {
+  order: 1;
+}
+
+.content p:first-child {
+  color: #046999;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.content h2 {
+  margin-top: 1rem;
+  font-size: 2.3rem;
+  line-height: 1.2;
+  color: #0d1b2a;
+}
+@media (max-width: 449px) {
+  .content h2 {
+    font-size: 1.8rem;
+  }
+}
+.content p {
+  margin-top: 1.25rem;
+  color: #4a5568;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.svgWrapper {
+  order: 2;
+}
+.svgWrapper svg {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 700px) {
+  .svgWrapper {
+    display: none;
+  }
+}/*# sourceMappingURL=fillFormMain.module.css.map */

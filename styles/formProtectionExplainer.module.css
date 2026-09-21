@@ -1,0 +1,203 @@
+.section {
+  background: #111820;
+  padding: 7rem 6vw;
+}
+@media (max-width: 449px) {
+  .section {
+    padding: 4rem 6vw;
+  }
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 4rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  align-items: center;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+@media (max-width: 449px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+}
+
+.eyebrow {
+  display: block;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: 2.2rem;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.9);
+}
+@media (max-width: 449px) {
+  .heading {
+    font-size: 1.7rem;
+  }
+}
+
+.accent {
+  color: #046999;
+}
+
+.body {
+  margin-top: 1.25rem;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.body strong {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.diagram {
+  display: flex;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+@media (max-width: 449px) {
+  .diagram {
+    flex-direction: column;
+  }
+}
+
+.method {
+  flex: 1;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 1.75rem;
+}
+
+.methodCurrent {
+  background: rgba(4, 105, 153, 0.15);
+  border-color: rgba(4, 105, 153, 0.3);
+}
+
+.methodBadge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #046999;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+}
+
+.methodBadgeMuted {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+}
+
+.methodTitle {
+  margin-top: 0.9rem;
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.methodTitleMuted {
+  margin-top: 0.9rem;
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.methodList {
+  margin-top: 1.1rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+.methodList li {
+  position: relative;
+  padding-left: 1.3rem;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.methodList li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #046999;
+}
+
+.methodListMuted {
+  margin-top: 1.1rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+.methodListMuted li {
+  position: relative;
+  padding-left: 1.3rem;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.methodListMuted li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.methodDivider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.methodDivider span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (max-width: 449px) {
+  .methodDivider span {
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=formProtectionExplainer.module.css.map */

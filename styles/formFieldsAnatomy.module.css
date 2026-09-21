@@ -1,0 +1,160 @@
+.section {
+  background: #f7f8f9;
+  padding: 7rem 6vw;
+}
+@media (max-width: 449px) {
+  .section {
+    padding: 4rem 6vw;
+  }
+}
+
+.header {
+  max-width: 720px;
+  margin: 0 auto 4.5rem;
+  text-align: center;
+}
+
+.eyebrow {
+  display: block;
+  color: #046999;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  color: #0d1b2a;
+}
+@media (max-width: 449px) {
+  .heading {
+    font-size: 1.8rem;
+  }
+}
+
+.accent {
+  color: #046999;
+}
+
+.intro {
+  margin-top: 1.25rem;
+  color: #4a5568;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 3.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+@media (max-width: 449px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.mockColumn {
+  position: sticky;
+  top: 6rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .mockColumn {
+    position: static;
+  }
+}
+@media (max-width: 449px) {
+  .mockColumn {
+    position: static;
+  }
+}
+
+.mockForm {
+  border-radius: 14px;
+  box-shadow: 0 30px 60px -30px rgba(13, 27, 42, 0.18);
+  overflow: hidden;
+}
+.mockForm svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  margin-top: 7vw;
+}
+
+.row {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.rowSummary {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 1.15rem 0.25rem;
+  cursor: pointer;
+  list-style: none;
+}
+.rowSummary::-webkit-details-marker {
+  display: none;
+}
+
+.rowDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #046999;
+  flex-shrink: 0;
+}
+
+.rowLabel {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0d1b2a;
+}
+
+.rowPreview {
+  margin-left: auto;
+  font-size: 0.85rem;
+  color: #9a9da1;
+  white-space: nowrap;
+}
+@media (max-width: 449px) {
+  .rowPreview {
+    display: none;
+  }
+}
+
+.chevron {
+  display: flex;
+  color: #9a9da1;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+.row[open] .chevron {
+  transform: rotate(180deg);
+}
+
+.rowAnswer {
+  padding: 0 0.25rem 1.25rem 1.95rem;
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}/*# sourceMappingURL=formFieldsAnatomy.module.css.map */

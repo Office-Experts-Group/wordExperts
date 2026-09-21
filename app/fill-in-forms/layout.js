@@ -9,7 +9,7 @@ export const metadata = {
   openGraph: {
     title: "Expert Creation of Word Fill in Forms | Word Experts",
     description:
-      "Professional Microsoft Word form creation services. Custom fillable forms with data validation and protection.",
+      "Professional Microsoft Word form creation services. Custom fillable forms with data validation and protection. Improve data entry efficiency and accuracy.",
     url: "https://www.wordexperts.com.au/fill-in-forms",
     siteName: "Word Experts",
     images: [
@@ -30,7 +30,7 @@ export const metadata = {
     site: "@WordExpertsAU",
     title: "Expert Creation of Word Fill in Forms | Word Experts",
     description:
-      "Professional Microsoft Word form creation services. Custom fillable forms with data validation and protection.",
+      "Professional Microsoft Word form creation services. Custom fillable forms with data validation and protection. Improve data entry efficiency and accuracy.",
     images: ["/logo.png"],
   },
   alternates: {
