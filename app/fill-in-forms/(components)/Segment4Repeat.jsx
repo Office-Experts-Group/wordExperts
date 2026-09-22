@@ -41,8 +41,8 @@ const Segment4Repeat = () => {
               printed checklist, or an old{" "}
               <Link href="/popup-forms">popup form</Link> that&rsquo;s become
               awkward to maintain. We rebuild it as a proper fill-in form
-              without losing the branding, tone or layout your staff and clients
-              already recognise.
+              without losing the branding, tone or layout that your staff and
+              clients already recognise.
             </p>
           </AnimateOnScroll>
         </div>

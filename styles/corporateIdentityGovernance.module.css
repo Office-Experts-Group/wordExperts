@@ -1,0 +1,159 @@
+.section {
+  background: #ffffff;
+  padding: 7rem 8rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .section {
+    padding: 6rem 4rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .section {
+    padding: 5rem 2rem;
+  }
+}
+@media (max-width: 449px) {
+  .section {
+    padding: 5rem 1.25rem;
+  }
+}
+
+.header {
+  max-width: 680px;
+  margin: 0 auto 4rem auto;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #046999;
+  padding: 0.32rem 0.85rem;
+  border: 1px solid rgba(4, 105, 153, 0.3);
+  border-radius: 2rem;
+  background: #e8f4fa;
+}
+
+.heading {
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  font-weight: 800;
+  color: #0d1b2a;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  margin: 1rem 0 0 0;
+}
+
+.accent {
+  color: #046999;
+}
+
+.intro {
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.8;
+  margin: 1.25rem 0 0 0;
+}
+
+.staircase {
+  max-width: 880px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.rung {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  background: #111820;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 1.4rem 1.75rem;
+  margin-left: calc(var(--rung-index) * 2.5rem);
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .rung {
+    margin-left: calc(var(--rung-index) * 1.25rem);
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .rung {
+    margin-left: calc(var(--rung-index) * 0.75rem);
+  }
+}
+@media (max-width: 449px) {
+  .rung {
+    margin-left: 0;
+    grid-template-columns: 2.75rem 1fr;
+    gap: 1rem;
+    padding: 1.1rem 1.25rem;
+  }
+}
+
+.rungIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rungIcon svg {
+  width: 2.6rem;
+  height: auto;
+}
+
+.rungContent {
+  min-width: 0;
+}
+
+.rungName {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0 0 0.35rem 0;
+}
+
+.rungDetail {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.footer {
+  max-width: 880px;
+  margin: 3.5rem auto 0 auto;
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(4, 105, 153, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+@media (max-width: 449px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.footerText {
+  font-size: 0.98rem;
+  color: #4a5568;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 480px;
+}
+
+.ctaBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.ctaBtn:hover {
+  border: 1px solid #046999;
+}/*# sourceMappingURL=corporateIdentityGovernance.module.css.map */

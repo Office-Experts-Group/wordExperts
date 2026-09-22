@@ -1,11 +1,16 @@
+// app/corporate-identity/page.js
 import React from "react";
 import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
-import PageSegmentMain from "./(components)/PageSegmentMain";
+import CorporateIdentityAnatomy from "./(components)/CorporateIdentityAnatomy";
 
-const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"));
-const PageSegment5 = dynamic(() => import("./(components)/PageSegment5"));
+const CorporateIdentityDrift = dynamic(
+  () => import("./(components)/CorporateIdentityDrift"),
+);
+const CorporateIdentityGovernance = dynamic(
+  () => import("./(components)/CorporateIdentityGovernance"),
+);
 const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
 const FAQSection = dynamic(() => import("../../components/FAQSection"));
 const Contact = dynamic(() => import("../../components/Contact"));
@@ -13,8 +18,8 @@ const Contact = dynamic(() => import("../../components/Contact"));
 import faqs from "../../faqs/corporate-identity";
 import faqSchema from "../../faqs/corporateSchema";
 
-import invoice from "../../public/pageHeros/invoice.webp";
-import codingMob from "../../public/pageHeros/mob/codingMob.webp";
+import identity from "../../public/pageHeros/identity.webp";
+import identityMob from "../../public/pageHeros/mob/identityMob.webp";
 
 import {
   generateProfessionalServiceSchema,
@@ -41,9 +46,9 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-07-15T15:51:37+00:00",
-      dateModified: "2026-06-15T00:00:00+00:00",
+      dateModified: "2026-09-22T00:00:00+00:00",
       description:
-        "Professional corporate identity protection through Microsoft Word templates. Ensure brand consistency and document compliance across your organisation.",
+        "Professional corporate identity protection expert Microsoft Word designers. Ensure brand consistency and document compliance across your organisation.",
       breadcrumb: {
         "@id": "https://www.wordexperts.com.au/corporate-identity#breadcrumb",
       },
@@ -104,14 +109,14 @@ const Page = () => {
       />
       <ServiceHero
         title="Corporate Identity"
-        desktopImage={invoice}
-        mobileImage={codingMob}
-        altDesk={"spreadsheet on a computer screen"}
-        altMob={"code being written on a computer"}
+        desktopImage={identity}
+        mobileImage={identityMob}
+        altDesk={"Design pallette for documents"}
+        altMob={"Design pallette for documents"}
       />
-      <PageSegmentMain />
-      <PageSegment4 />
-      <PageSegment5 />
+      <CorporateIdentityAnatomy />
+      <CorporateIdentityDrift />
+      <CorporateIdentityGovernance />
       <ExpertsAwait />
       <FAQSection faqs={faqs} />
       <Contact />

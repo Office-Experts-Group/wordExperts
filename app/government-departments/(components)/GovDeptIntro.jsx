@@ -30,17 +30,18 @@ const GovDeptIntro = () => {
             </h2>
             <p>
               Our team of Word programmers and designers have worked with state
-              and federal government departments for over 25 years, building
-              document templates that adhere to the challenges when working with
-              strictly compliant and accessible documents, often for hundreds of
-              staff with strict formatting rules and documents that need to look
-              and behave identically no matter who creates them.
+              and federal government departments for over 25 years. We pride
+              ourselves on building accessible document templates that cater for
+              potentially hundreds of users, whilst ensuring adherence to strict
+              formatting and accessibility requirements, so that the documents
+              will look and behave identically no matter who creates or edits
+              them.
             </p>
             <p>
               We take document accessibility seriously and build every template
-              against WCAG 2.1 AA from the outset, alongside consistent
-              formatting, protected corporate identity, and the version control
-              a department-wide rollout needs.
+              in accordance with WCAG 2.1 AA from the outset, alongside
+              consistent formatting, protected corporate identity, and the
+              version control that a department-wide rollout needs.
             </p>
           </div>
         </AnimateOnScroll>
