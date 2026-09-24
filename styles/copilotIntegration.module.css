@@ -152,7 +152,7 @@
 }
 
 .ctaBtn {
-  text-transform: capitalize;
+  text-transform: capitalize !important;
 }
 .ctaBtn:hover {
   border: 1px solid #046999;

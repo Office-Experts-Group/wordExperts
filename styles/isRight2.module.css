@@ -140,7 +140,7 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .linkBtn::before {
   content: "";
