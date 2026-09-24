@@ -1,0 +1,28 @@
+.ourTemplates {
+  padding: 6rem 10vw;
+  background-color: #111820;
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  gap: 2rem;
+}
+
+.accent {
+  color: #046999;
+}
+
+.content {
+  margin-top: 5vw;
+}
+.content h2 {
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+.content p {
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.content a {
+  margin-top: 1.5rem;
+  text-transform: capitalize;
+}/*# sourceMappingURL=ourTemplates.module.css.map */

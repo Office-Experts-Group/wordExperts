@@ -1,6 +1,5 @@
 // app/about-us/(components)/GoodToKnow.jsx
 
-import AnimateOnScroll from "../../../components/AnimateOnScroll";
 import { AustralasiaMapSvg } from "../(svgs)/AustralasiaMapSvg";
 import styles from "../../../styles/goodToKnow.module.css";
 import Link from "next/link";

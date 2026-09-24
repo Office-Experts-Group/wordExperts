@@ -1,0 +1,38 @@
+.formatTab {
+  padding: 6rem 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background: #111820;
+}
+.formatTab h2 {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.formatTab p {
+  color: rgba(255, 255, 255, 0.88);
+  text-align: center;
+  line-height: 1.6rem;
+  margin-bottom: 1rem;
+}
+.formatTab img {
+  width: 100vw;
+  max-width: 1520px;
+  margin: 1rem auto;
+}
+
+.accent {
+  color: #046999;
+}
+
+.img {
+  margin-top: 1.5rem;
+}
+.img p {
+  color: #a0a2a6;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-top: 0.5rem;
+}/*# sourceMappingURL=formatTab.module.css.map */

@@ -1,0 +1,175 @@
+.section {
+  background: #f7f8f9;
+  padding: 14rem 10vw 7rem 10vw;
+  margin-top: -9rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .section {
+    padding: 6rem 4rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .section {
+    padding: 5rem 2rem;
+  }
+}
+@media (max-width: 449px) {
+  .section {
+    padding: 5rem 1.25rem;
+  }
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 40%;
+  gap: 4rem;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.heading {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  color: #0d1b2a;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+.accent {
+  color: #046999;
+}
+
+.subheading {
+  font-size: 1.25rem;
+  color: #0d1b2a;
+  font-weight: 700;
+}
+
+.lead {
+  color: #4a5568;
+  line-height: 1.4;
+}
+.lead strong {
+  color: #0d1b2a;
+}
+
+.reassure {
+  background: #e8f4fa;
+  border-left: 3px solid #046999;
+  border-radius: 0 6px 6px 0;
+  padding: 1rem 1.25rem;
+  color: #0d1b2a;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.listIntro {
+  font-weight: 700;
+  color: #0d1b2a;
+  margin-bottom: 0.9rem;
+}
+
+.capabilities {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+@media (min-width: 1025px) and (max-width: 1199px) {
+  .capabilities {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .capabilities {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 449px) {
+  .capabilities {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.capability {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background: #f2f3f5;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  border-radius: 8px;
+  padding: 1rem 0.75rem;
+  text-align: center;
+  color: #454545;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.35;
+  max-width: 180px;
+  transition: all 0.3s ease-in-out;
+}
+.capability:hover {
+  background: #046999;
+  transform: scale(1.05);
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.capabilityIcon svg {
+  display: block;
+  width: 36px;
+  height: 36px;
+}
+
+.ctaRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding-top: 1.5rem;
+}
+
+.ctaText {
+  flex: 1 1 240px;
+  color: #0d1b2a;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.ctaBtn {
+  text-transform: capitalize;
+}
+.ctaBtn:hover {
+  border: 1px solid #046999;
+}
+
+.visual svg {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 1024px) {
+  .visual {
+    max-width: 460px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 449px) {
+  .visual {
+    display: none;
+  }
+}/*# sourceMappingURL=copilotIntegration.module.css.map */

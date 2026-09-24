@@ -75,6 +75,7 @@ import tsubaki from "./public/logos/tsubaki.webp";
 import rcs from "./public/logos/rcs.webp";
 // new testimonials 10/9/2025
 import fbrice from "./public/logos/fbrice.png";
+import geneWarehouse from "./public/logos/geneWarehouse.webp";
 
 export const testimonials = [
   {
@@ -812,5 +813,13 @@ export const testimonials = [
     image: dulux,
     width: 150,
     height: 38,
+  },
+  {
+    content: "Very prompt and efficient service. Highly recomended.",
+    name: "Harry Wilson",
+    contact: "Gene Warehouse",
+    image: geneWarehouse,
+    width: 150,
+    height: 50,
   },
 ];
