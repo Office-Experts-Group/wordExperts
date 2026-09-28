@@ -1,0 +1,259 @@
+.section {
+  background: #f7f8f9;
+  padding: 7rem 8rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .section {
+    padding: 6rem 4rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .section {
+    padding: 5rem 2rem;
+  }
+}
+@media (max-width: 449px) {
+  .section {
+    padding: 5rem 1.25rem;
+  }
+}
+
+.header {
+  max-width: 720px;
+  margin-bottom: 2.5rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #046999;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-size: clamp(1.9rem, 3.2vw, 2.75rem);
+  font-weight: 800;
+  color: #0d1b2a;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin: 0 0 1rem;
+}
+
+.accent {
+  color: #046999;
+}
+
+.intro {
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.meters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .meters {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 449px) {
+  .meters {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.meter {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  padding: 1.5rem;
+}
+
+.meterTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.meterName {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0d1b2a;
+}
+
+.meterValue {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.meterTrack {
+  height: 6px;
+  background: #f2f3f5;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.meterFill {
+  height: 100%;
+  width: var(--fill);
+  border-radius: 3px;
+}
+
+.meterCaption {
+  display: block;
+  font-size: 0.78rem;
+  color: #9a9da1;
+  margin-top: 0.6rem;
+}
+
+.meter_ms .meterValue {
+  color: #9a9da1;
+}
+.meter_ms .meterFill {
+  background: #9a9da1;
+}
+
+.meter_oeg {
+  border-color: rgba(4, 105, 153, 0.3);
+}
+.meter_oeg .meterValue {
+  color: #046999;
+}
+.meter_oeg .meterFill {
+  background: #046999;
+}
+
+.tableWrapper {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+.table th,
+.table td {
+  padding: 0.75rem 1.25rem;
+  text-align: left;
+}
+@media (max-width: 449px) {
+  .table th,
+  .table td {
+    padding: 0.65rem 0.75rem;
+  }
+}
+.table thead th {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #4a5568;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+}
+@media (max-width: 449px) {
+  .table thead th {
+    font-size: 0.62rem;
+    letter-spacing: 0.5px;
+  }
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 3rem;
+  font-size: 0.8rem;
+}
+
+.caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.groupRow {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #046999;
+  background: #e8f4fa;
+}
+
+.row {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.control {
+  font-weight: 600;
+  color: #0d1b2a;
+  min-width: 11rem;
+}
+@media (max-width: 449px) {
+  .control {
+    min-width: 8rem;
+  }
+}
+
+.oegCol {
+  background: rgba(4, 105, 153, 0.035);
+}
+thead .oegCol {
+  color: #046999;
+}
+
+.state {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: 449px) {
+  .stateLabel {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+}
+
+.state_locked {
+  color: #9a9da1;
+}
+
+.state_open,
+.state_managed {
+  color: #046999;
+}
+
+.note {
+  display: block;
+  font-size: 0.75rem;
+  color: #4a5568;
+  margin-top: 0.2rem;
+}/*# sourceMappingURL=corporateIdentityComparison.module.css.map */

@@ -1,7 +1,13 @@
 // app/copilot-and-ai-templates/(components)/AiTemplatesReality.jsx
 
+// next/image serves static-imported SVGs as-is (no optimisation pass), fine for SSR
+import Image from "next/image";
+
 // Compiled CSS module (source: styles/aiTemplatesReality.module.scss)
 import styles from "../../../styles/aiTemplatesReality.module.css";
+
+// Decorative illustration: the four failures below drawn on one Word page
+import AiTemplatesRealitySvg from "../(svgs)/AiTemplatesRealitySvg";
 
 // Not a sequence, so rendered as an unordered list rather than numbered steps
 const realities = [
@@ -28,17 +34,22 @@ const AiTemplatesReality = () => {
     <section className={styles.section}>
       <div className={styles.inner}>
         <header className={styles.header}>
-          <h2 className={styles.heading}>
-            AI in Word isn't the magic button it's sold as{" "}
-            <span className={styles.accent}>(yet...)</span>
-          </h2>
-          <p className={styles.lead}>
-            Copilot, ChatGPT for Word and Claude for Word are improving every
-            month. Microsoft alone has shipped model switching, agentic editing
-            and tracked-change support in 2026. But in real business documents,
-            the gap between the demo and the day-to-day is still wide. These are
-            the complaints we hear most from Australian organisations.
-          </p>
+          <div className={styles.intro}>
+            <h2 className={styles.heading}>
+              AI in Word isn't the magic button it's sold as{" "}
+              <span className={styles.accent}>(yet...)</span>
+            </h2>
+            <p className={styles.lead}>
+              Copilot, ChatGPT for Word and Claude for Word are improving every
+              month. Microsoft alone has shipped model switching, agentic
+              editing and tracked-change support in 2026. But in real business
+              documents, the gap between the demo and the day-to-day is still
+              wide. These are the complaints we hear most from Australian
+              organisations.
+            </p>
+          </div>
+
+          <AiTemplatesRealitySvg />
         </header>
 
         <ul className={styles.list}>

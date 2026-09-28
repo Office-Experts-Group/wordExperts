@@ -3,13 +3,15 @@ import React from "react";
 import dynamic from "next/dynamic";
 
 import ServiceHero from "../../components/ServiceHero";
-import CorporateIdentityAnatomy from "./(components)/CorporateIdentityAnatomy";
+const CorporateIdentityAnatomy = dynamic(
+  () => import("./(components)/CorporateIdentityAnatomy"),
+);
 
 const CorporateIdentityDrift = dynamic(
   () => import("./(components)/CorporateIdentityDrift"),
 );
-const CorporateIdentityGovernance = dynamic(
-  () => import("./(components)/CorporateIdentityGovernance"),
+const CorporateIdentityComparison = dynamic(
+  () => import("./(components)/CorporateIdentityComparison"),
 );
 const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
 const FAQSection = dynamic(() => import("../../components/FAQSection"));
@@ -116,7 +118,7 @@ const Page = () => {
       />
       <CorporateIdentityAnatomy />
       <CorporateIdentityDrift />
-      <CorporateIdentityGovernance />
+      <CorporateIdentityComparison />
       <ExpertsAwait />
       <FAQSection faqs={faqs} />
       <Contact />

@@ -41,7 +41,7 @@ const AiTemplatesHero = () => {
           {/* In-page anchors, so plain <a> rather than next/link */}
           <div className={styles.actions}>
             <a href="#contact" className={`btn ${styles.primary}`}>
-              Are your templates are Ai ready?
+              Are your templates AI ready?
             </a>
             <a href="#ai-agents" className={styles.secondary}>
               See how AI agents work

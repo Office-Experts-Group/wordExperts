@@ -31,10 +31,33 @@
 }
 
 .header {
+  display: grid;
+  grid-template-columns: minmax(0, 46rem) 1fr;
+  align-items: center;
+  gap: 3rem;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .header {
+    grid-template-columns: 1fr;
+  }
+}
+
+.intro {
   display: flex;
   flex-direction: column;
   gap: 1.1rem;
-  max-width: 46rem;
+}
+
+.illustration {
+  justify-self: end;
+  width: 100%;
+  max-width: 24rem;
+  height: auto;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .illustration {
+    display: none;
+  }
 }
 
 .heading {

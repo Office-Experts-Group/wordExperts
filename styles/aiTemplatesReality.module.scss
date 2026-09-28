@@ -28,11 +28,34 @@
   margin: 0 auto;
 }
 
+// ── Intro copy left, illustration fills the right ──
 .header {
+  display: grid;
+  grid-template-columns: minmax(0, 46rem) 1fr;
+  align-items: center;
+  gap: 3rem;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
+}
+
+.intro {
   display: flex;
   flex-direction: column;
   gap: 1.1rem;
-  max-width: 46rem;
+}
+
+.illustration {
+  justify-self: end;
+  width: 100%;
+  max-width: 24rem;
+  height: auto;
+
+  // Decorative only, so drop it once the columns stack
+  @include tablet {
+    display: none;
+  }
 }
 
 .heading {
