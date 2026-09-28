@@ -137,10 +137,10 @@ const Page = () => {
         altMob={"word templates"}
       />
       <PageSegmentMain />
+      <IFrame />
       <BookSegment />
       <BlackSegment />
       <BoxSegment />
-      <IFrame />
       <FAQSection faqs={faqs} />
       <Contact />
     </>

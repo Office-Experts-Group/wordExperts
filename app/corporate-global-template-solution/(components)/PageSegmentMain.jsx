@@ -48,7 +48,10 @@ const PageSegmentMain = () => {
             style={{ paddingTop: "2rem", marginLeft: "2rem" }}
           >
             <p>Advanced Corporate Template Solutions</p>
-            <h2>Efficient and Consistent Branding for Your Documents</h2>
+            <h2>
+              Efficient and Consistent Branding for{" "}
+              <span className={styles.accent}>Your Documents</span>
+            </h2>
             <p>
               Office Experts Group have developed an advanced Corporate Word
               Template Solution to enable users to effectively and efficiently

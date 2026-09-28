@@ -159,9 +159,10 @@ const CopilotIntegration = () => {
             styles and brand-safe formatting.
           </p>
 
-          <p>
-            You don&apos;t need to worry about the technical details. We take
-            care of all of it.
+          <p className={styles.lead}>
+            No need to worry about the technical details, our team can build
+            simple solutions for existing documents right through to custom Ai
+            Agents that continually monitor and grow with your business
           </p>
 
           <div>
@@ -189,8 +190,11 @@ const CopilotIntegration = () => {
               If you want templates that are genuinely Copilot-ready, we build
               them for you.
             </p>
-            <Link href="#contact" className={`btn ${styles.ctaBtn}`}>
-              Get Copilot-ready templates
+            <Link
+              href="/copilot-and-ai-templates"
+              className={`btn ${styles.ctaBtn}`}
+            >
+              Ai-ready templates
             </Link>
           </div>
         </div>

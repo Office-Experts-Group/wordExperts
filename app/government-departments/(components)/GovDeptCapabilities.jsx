@@ -58,9 +58,9 @@ const GovDeptCapabilities = () => {
           What Word solutions do you build for government departments?
         </h2>
         <p className={styles.intro}>
-          Beyond a single accessible template, most departments also need
-          systems integrated to allow for: bulk document generation, protected
-          branding, and integration with the records systems already in use.
+          Beyond a single accessible template,most departments also need systems
+          integrated to allow for: bulk document generation, protected branding,
+          and integration with the records systems already in use.
         </p>
       </div>
 

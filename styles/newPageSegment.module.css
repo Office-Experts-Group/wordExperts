@@ -24,6 +24,10 @@
   }
 }
 
+.accent {
+  color: #046999;
+}
+
 .imgWrapper {
   z-index: 2;
   flex: 1;

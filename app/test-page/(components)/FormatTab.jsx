@@ -1,9 +1,47 @@
+// components/FormatTab.jsx
 import React from "react";
 import Image from "next/image";
 
+// Compiled CSS module (built from styles/formatTab.module.scss)
 import styles from "../../../styles/formatTab.module.css";
 
+// Static imports let next/image read each file's dimensions at build time,
+// so no width/height props are needed on the <Image> elements
 import formatTab from "../../../public/formatTab.webp";
+import formatTab2 from "../../../public/formatTab2.webp"; // rename to match your import
+import formatTab3 from "../../../public/formatTab3.webp"; // rename to match your import
+
+// Slider content. Keyframes in the SCSS are written for exactly 3 slides.
+// If you add or remove slides, update the keyframe percentages to match.
+const slides = [
+  {
+    src: formatTab,
+    alt: "Custom formatting tab in Word",
+    caption:
+      "Built to fit your workflows. Select the features you need, or ask us about creating new functionality for your team.",
+  },
+  {
+    src: formatTab2,
+    alt: "Build tab in Word",
+    caption:
+      "Separate your functions into easy-to-use categories. Build – Contains all of the specialised functions used to create or modify your template.",
+  },
+  {
+    src: formatTab3,
+    alt: "Apply tab in Word",
+    caption: "Apply – Apply lists, styles, and cleanup tools to your template.",
+  },
+];
+
+// Renders one slide. `isClone` marks the duplicate first slide at the end of
+// the track, which only exists to make the loop seamless, so it's hidden from
+// screen readers to avoid the first slide being announced twice.
+const Slide = ({ src, alt, caption, isClone = false }) => (
+  <div className={styles.slide} aria-hidden={isClone || undefined}>
+    <Image src={src} alt={isClone ? "" : alt} />
+    <p>{caption}</p>
+  </div>
+);
 
 const FormatTab = () => {
   return (
@@ -30,17 +68,14 @@ const FormatTab = () => {
           and other commonly used actions.
         </p>
       </div>
+
+      {/* .img is the visible window; the slides move inside it */}
       <div className={styles.img}>
-        <Image
-          src={formatTab}
-          alt="custom formatting tab in word"
-          width={1520}
-          height={161}
-        />
-        <p>
-          Built to fit your workflows. Select the features you need, or ask us
-          about creating new functionality for your team.
-        </p>
+        {slides.map((slide) => (
+          <Slide key={slide.alt} {...slide} />
+        ))}
+        {/* Clone of the first slide, so the end of the loop is invisible */}
+        <Slide {...slides[0]} isClone />
       </div>
     </section>
   );

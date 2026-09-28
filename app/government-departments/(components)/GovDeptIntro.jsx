@@ -38,10 +38,10 @@ const GovDeptIntro = () => {
               them.
             </p>
             <p>
-              We take document accessibility seriously and build every template
-              in accordance with WCAG 2.1 AA from the outset, alongside
-              consistent formatting, protected corporate identity, and the
-              version control that a department-wide rollout needs.
+              We take document accessibility seriously and can build templates
+              with WCAG 2.1 AA in mind from the outset, alongside consistent
+              formatting, protected corporate identity, and the version control
+              that a department-wide rollout needs.
             </p>
           </div>
         </AnimateOnScroll>
