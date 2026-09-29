@@ -172,7 +172,7 @@ const Page = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <ServiceHero
-        title="Ai Integration in Word"
+        title="AI Integration in Word"
         desktopImage={AiWord}
         mobileImage={AiWordMob}
         altDesk={"Ai in Word documents"}

@@ -138,9 +138,11 @@ const CorporateIdentityComparison = () => {
         <p className={styles.intro}>
           Word&rsquo;s built-in Restrict Editing keeps documents on-brand by
           locking almost everything, leaving staff unable to bold a word or
-          adjust a margin. Our governed templates lock only what controls your
-          corporate identity, such as fonts, sizes and colours, and give your
-          team the freedom they need to do their work.
+          adjust a margin. Our Global Template solution, added to a governed
+          template through the Formatting tab, locks only what controls your
+          corporate identity, such as fonts, sizes and colours, and gives your
+          team the freedom they need to do their work. Without the solution, a
+          governed template still functions like a standard template.
         </p>
       </div>
 

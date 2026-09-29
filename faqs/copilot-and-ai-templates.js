@@ -15,11 +15,6 @@ const faqs = [
       "Copilot works from the document's underlying styles, not how it looks on screen. Where text is formatted manually, or styles are missing or duplicated, its edits can appear random, and it may even report a change as complete when nothing has changed. A clean, consistent style set gives it something correct to apply.",
   },
   {
-    question: "Can Copilot fill in a Word template?",
-    answer:
-      "Yes, when the template is designed for it. Microsoft 365 Copilot can draft from a template or existing document while keeping its structure, but results depend heavily on how the template is built. Clearly titled content controls and protected sections make filling far more reliable.",
-  },
-  {
     question: "What is an AI-ready Word template?",
     answer:
       "An AI-ready template is a Word template structured so AI tools can understand it: a clean style hierarchy, named content controls for each piece of variable information, locked zones for fixed wording, and built-in guidance on what to write. It works equally well for people, screen readers and AI.",
