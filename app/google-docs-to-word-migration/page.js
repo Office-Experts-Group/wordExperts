@@ -31,8 +31,8 @@ const schema = {
     ),
     {
       "@type": "WebPage",
-      "@id": "https://www.wordexperts.com.au/gooogle-docs-to-word-migration",
-      url: "https://www.wordexperts.com.au/gooogle-docs-to-word-migration",
+      "@id": "https://www.wordexperts.com.au/google-docs-to-word-migration",
+      url: "https://www.wordexperts.com.au/google-docs-to-word-migration",
       name: "Google Docs to Microsoft Word Migration Services",
       isPartOf: {
         "@id": "https://www.wordexperts.com.au#website",
@@ -43,14 +43,14 @@ const schema = {
         "Professional Google Docs to Microsoft Word migration services. Seamless document conversion with 100% formatting preservation, custom templates, and enterprise support.",
       breadcrumb: {
         "@id":
-          "https://www.wordexperts.com.au/gooogle-docs-to-word-migration#breadcrumb",
+          "https://www.wordexperts.com.au/google-docs-to-word-migration#breadcrumb",
       },
       inLanguage: "en-AU",
       potentialAction: [
         {
           "@type": "ReadAction",
           target: [
-            "https://www.wordexperts.com.au/gooogle-docs-to-word-migration",
+            "https://www.wordexperts.com.au/google-docs-to-word-migration",
           ],
         },
       ],
