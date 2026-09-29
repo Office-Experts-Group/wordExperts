@@ -9,6 +9,9 @@ import Hero from "./(components)/Hero";
 const Services = dynamic(() => import("./(components)/Services"));
 const CTAMain = dynamic(() => import("./(components)/CTAMain"));
 const IsRight = dynamic(() => import("./(components)/IsRight"));
+const LockedFormatting = dynamic(
+  () => import("./(components)/LockedFormatting"),
+);
 const SolutionsCarousel = dynamic(
   () => import("./(components)/SolutionsCarousel"),
 );
@@ -123,6 +126,7 @@ const Page = () => {
       <CTAMain />
       <CopilotIntegration />
       <FormatTab />
+      <LockedFormatting />
       <IsRight />
       <SolutionsCarousel />
       <Testimonials testimonials={testimonials} />

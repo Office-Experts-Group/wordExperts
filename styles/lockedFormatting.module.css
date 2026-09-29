@@ -1,0 +1,132 @@
+.section {
+  padding: 7rem 8rem 0 8rem;
+  background: #f7f8f9;
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  .section {
+    padding: 6rem 4rem;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  .section {
+    padding: 5rem 2rem;
+  }
+}
+@media (max-width: 449px) {
+  .section {
+    padding: 5rem 1.25rem;
+  }
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+.visual svg {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 1024px) {
+  .visual {
+    max-width: 480px;
+  }
+}
+@media (max-width: 449px) {
+  .visual {
+    display: none;
+  }
+}
+.visual :global(.lfFloat) {
+  animation: float 6s ease-in-out infinite;
+}
+.visual :global(.lfDelay1) {
+  animation-delay: -1.2s;
+}
+.visual :global(.lfDelay2) {
+  animation-delay: -2.4s;
+}
+.visual :global(.lfDelay3) {
+  animation-delay: -3.6s;
+}
+.visual :global(.lfDelay4) {
+  animation-delay: -4.8s;
+}
+.visual :global(.lfShackle) {
+  animation: lock 1.1s 0.5s cubic-bezier(0.3, 1.6, 0.5, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .visual :global(.lfFloat),
+  .visual :global(.lfShackle) {
+    animation: none;
+  }
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(-8px);
+  }
+}
+@keyframes lock {
+  from {
+    transform: translateY(-18px);
+  }
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.accent {
+  color: #046999;
+}
+
+.lead {
+  color: #4a5568;
+  line-height: 1.8;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  list-style: none;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.95rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #046999;
+  background: #e8f4fa;
+  border: 1px solid rgba(4, 105, 153, 0.3);
+  border-radius: 999px;
+}
+
+.callout {
+  padding: 0 1.5rem 0.5rem 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0d1b2a;
+}
+
+.comic {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #c0392b;
+  -webkit-text-decoration: line-through 2px;
+          text-decoration: line-through 2px;
+}/*# sourceMappingURL=lockedFormatting.module.css.map */

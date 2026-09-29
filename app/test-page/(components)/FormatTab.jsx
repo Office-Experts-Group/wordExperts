@@ -24,12 +24,13 @@ const slides = [
     src: formatTab2,
     alt: "Build tab in Word",
     caption:
-      "Separate your functions into easy-to-use categories. Build – Contains all of the specialised functions used to create or modify your template.",
+      "Build Tab – Contains all of the specialised functions used to create or modify your template.",
   },
   {
     src: formatTab3,
     alt: "Apply tab in Word",
-    caption: "Apply – Apply lists, styles, and cleanup tools to your template.",
+    caption:
+      "Apply Tab – Apply lists, styles, and cleanup tools to your template.",
   },
 ];
 
