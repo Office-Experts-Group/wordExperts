@@ -11,6 +11,10 @@
   display: grid;
   grid-template-columns: 50% 1fr;
   gap: 2rem;
+
+  @media screen and (max-width: 1200px) {
+    display: flex;
+  }
 }
 
 .video {
@@ -21,6 +25,10 @@
   em {
     margin: 0.5rem auto;
     color: $darkGrayText;
+  }
+
+  @media screen and (max-width: 1200px) {
+    display: none;
   }
 }
 

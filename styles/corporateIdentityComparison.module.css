@@ -2,19 +2,9 @@
   background: #f7f8f9;
   padding: 7rem 8rem;
 }
-@media (min-width: 767px) and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .section {
-    padding: 6rem 4rem;
-  }
-}
-@media (min-width: 450px) and (max-width: 766px) {
-  .section {
-    padding: 5rem 2rem;
-  }
-}
-@media (max-width: 449px) {
-  .section {
-    padding: 5rem 1.25rem;
+    display: none;
   }
 }
 

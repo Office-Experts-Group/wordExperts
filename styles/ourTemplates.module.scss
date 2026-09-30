@@ -6,6 +6,9 @@
   display: grid;
   grid-template-columns: 40% 1fr;
   gap: 2rem;
+  @media screen and (max-width: 768px) {
+    display: flex;
+  }
 }
 
 .accent {
@@ -28,5 +31,11 @@
   a {
     margin-top: 1.5rem;
     text-transform: capitalize;
+  }
+}
+
+.deskOnly {
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 }

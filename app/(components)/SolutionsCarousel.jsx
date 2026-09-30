@@ -1,10 +1,13 @@
 // app/(components)/SolutionsCarousel.jsx
 
 import Link from "next/link";
+// Client-side wrapper that fades each tile in as it enters the viewport
 import AnimateOnScroll from "../../components/AnimateOnScroll";
 
+// Compiled CSS from styles/solutionsCarousel2.module.scss
 import styles from "../../styles/solutionsCarousel2.module.css";
 
+// Inline SVG icon components — each renders a stroke icon using currentColor
 import { ShieldIcon } from "../(svgs)/ShieldIcon";
 import { CodeIcon } from "../(svgs)/CodeIcon";
 import { InstitutionIcon } from "../(svgs)/InstitutionIcon";
@@ -18,13 +21,10 @@ import { SwapIcon } from "../(svgs)/SwapIcon";
 import { SlidersIcon } from "../(svgs)/SlidersIcon";
 import { GraduationIcon } from "../(svgs)/GraduationIcon";
 
-const SITE_BRAND = "Word Experts";
-
 // ─────────────────────────────────────────────
-// Solutions data — each row keeps the link and icon carried over
-// from the original carousel, paired with the new full-paragraph
-// description. "description" stays an array so a row can later
-// take a second paragraph without changing the data shape.
+// Solutions data — title, link and icon make up the tile face;
+// "description" is shown in the hover/focus tooltip. It stays an
+// array so an entry can take a second paragraph later.
 // ─────────────────────────────────────────────
 const solutionsData = [
   {
@@ -128,81 +128,82 @@ const solutionsData = [
 const SolutionsCarousel = () => (
   <section className={styles.section}>
     {/* ── Opening header ── */}
-    <AnimateOnScroll animation="fade-up" duration={0.6}>
-      <div className={styles.header}>
-        <p className={styles.eyebrow}>With over 25 years experience</p>
-        <h2 className={styles.heading}>
-          No problems...{" "}
-          <span className={styles.headingMuted}>only solutions.</span>
-        </h2>
-        <p className={styles.intro}>
-          Whether you need a professionally designed template, want to automate
-          repetitive tasks, improve document consistency across your
-          organisation, or modernise older Word systems, our consultants can
-          help. Browse our services below to see how we help businesses get more
-          from Microsoft Word.
-        </p>
-        <p className={styles.intro} style={{ marginTop: "1rem" }}>
-          Unsure of what you need?{" "}
-          <Link href="#contact">Speak with one of our consultants today.</Link>
-        </p>
-      </div>
-    </AnimateOnScroll>
-
-    {/* ── Solution rows ── */}
-    <div className={styles.rows} role="list">
-      {solutionsData.map((solution, i) => {
-        const { Icon } = solution;
-        const num = String(i + 1).padStart(2, "0");
-
-        return (
-          <AnimateOnScroll
-            key={solution.link}
-            animation="fade-up"
-            duration={0.55}
-            delay={i * 0.05}
-          >
-            <Link href={solution.link} className={styles.row} role="listitem">
-              {/* ── Left: ghost number + title ── */}
-              <div className={styles.rowLeft}>
-                <span className={styles.rowNum} aria-hidden="true">
-                  {num}
-                </span>
-                <h3 className={styles.rowName}>{solution.title}</h3>
-              </div>
-
-              {/* ── Right: faint icon behind the description ── */}
-              <div className={styles.rowRight}>
-                <span className={styles.rowIcon} aria-hidden="true">
-                  <Icon />
-                </span>
-                {solution.description.map((paragraph, j) => (
-                  <p key={j} className={styles.rowDesc}>
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
-            </Link>
-          </AnimateOnScroll>
-        );
-      })}
+    <div className={styles.header}>
+      <p className={styles.eyebrow}>With over 25 years experience</p>
+      <h2 className={styles.heading}>
+        No problems...{" "}
+        <span className={styles.headingMuted}>only solutions.</span>
+      </h2>
+      <p className={styles.intro}>
+        Whether you need a professionally designed template, want to automate
+        repetitive tasks, improve document consistency across your organisation,
+        or modernise older Word systems, our consultants can help. Browse our
+        services below to see how we help businesses get more from Microsoft
+        Word.
+      </p>
+      <p className={styles.intro} style={{ marginTop: "1rem" }}>
+        Unsure of what you need?{" "}
+        <Link href="#contact">Speak with one of our consultants today.</Link>
+      </p>
     </div>
 
-    {/* ── CTA row, styled as a dashed final row rather than a filled tile ── */}
-    <Link href="/services" className={styles.cta}>
-      <span className={styles.ctaText}>View all services</span>
-      <span className={styles.ctaArrow} aria-hidden="true">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path
-            d="M3 8h10M9 4l4 4-4 4"
-            stroke="currentColor"
-            strokeWidth="1.6"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </span>
-    </Link>
+    {/* ── Solution tiles ── */}
+    <ul className={styles.grid}>
+      {solutionsData.map((solution, i) => {
+        const { Icon } = solution;
+        // Stable id so the link can reference its tooltip for screen readers
+        const tooltipId = `solution-tooltip-${i}`;
+
+        return (
+          // The <li> is the positioning container for the tooltip and is
+          // lifted above neighbouring tiles while hovered or focused
+          <li key={solution.link} className={styles.cell}>
+            <AnimateOnScroll
+              animation="fade-up"
+              duration={0.55}
+              delay={i * 0.05}
+            >
+              <Link
+                href={solution.link}
+                className={styles.tile}
+                aria-describedby={tooltipId}
+              >
+                <span className={styles.tileIcon} aria-hidden="true">
+                  <Icon />
+                </span>
+                <h3 className={styles.tileTitle}>{solution.title}</h3>
+              </Link>
+            </AnimateOnScroll>
+
+            {/* Sits outside the link so it isn't scaled with the tile.
+                Always in the server-rendered HTML, so crawlers still index it. */}
+            <div id={tooltipId} role="tooltip" className={styles.tooltip}>
+              {solution.description.map((paragraph, j) => (
+                <p key={j}>{paragraph}</p>
+              ))}
+            </div>
+          </li>
+        );
+      })}
+    </ul>
+
+    {/* ── CTA ── */}
+    <div className={styles.linkWrapper}>
+      <Link href="/services" className={styles.cta}>
+        View all our services
+        <span className={styles.ctaArrow} aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path
+              d="M3 8h10M9 4l4 4-4 4"
+              stroke="currentColor"
+              strokeWidth="1.6"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </span>
+      </Link>
+    </div>
   </section>
 );
 

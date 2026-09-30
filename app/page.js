@@ -9,6 +9,9 @@ import Hero from "./(components)/Hero";
 const Services = dynamic(() => import("./(components)/Services"));
 const CTAMain = dynamic(() => import("./(components)/CTAMain"));
 const IsRight = dynamic(() => import("./(components)/IsRight"));
+const LockedFormatting = dynamic(
+  () => import("./(components)/LockedFormatting"),
+);
 const SolutionsCarousel = dynamic(
   () => import("./(components)/SolutionsCarousel"),
 );
@@ -17,9 +20,11 @@ const Testimonials = dynamic(() => import("./(components)/Testimonials"));
 const Brands = dynamic(() => import("./(components)/Brands"));
 const Contact = dynamic(() => import("../components/Contact"));
 const GoodToKnow = dynamic(() => import("./about-us/(components)/GoodToKnow"));
-const HomePromo = dynamic(() => import("./(components)/HomePromo"));
-
-import faqSchema from "../faqs/homeSchema";
+const OurTemplates = dynamic(() => import("./(components)/OurTemplates"));
+const CopilotIntegration = dynamic(
+  () => import("./(components)/CopilotIntegration"),
+);
+const FormatTab = dynamic(() => import("./(components)/FormatTab"));
 
 import { getHomePageSchema } from "../utils/testimonialSchemaGenerator";
 
@@ -29,6 +34,8 @@ import {
   generateWebSiteSchema,
 } from "../utils/schemaGenerators";
 import { testimonials } from "../testimonials";
+
+import faqSchema from "../faqs/homeSchema";
 
 const schema = {
   "@context": "https://schema.org",
@@ -50,7 +57,7 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2017-11-22T14:23:06+00:00",
-      dateModified: "2026-07-22T23:52:31+00:00",
+      dateModified: "2026-09-30T23:52:31+00:00",
       description:
         "Word Experts is the Leading Microsoft Word Design Service in Australia. Expert Word Development & Consulting.",
       breadcrumb: {
@@ -117,13 +124,16 @@ const Page = () => {
       />
       <Hero />
       <Services />
+      <OurTemplates />
       <CTAMain />
+      <CopilotIntegration />
+      <FormatTab />
+      <LockedFormatting />
       <IsRight />
       <SolutionsCarousel />
       <Testimonials testimonials={testimonials} />
       <CTAFull />
       <Brands isBelowFold={true} />
-      {/* <HomePromo /> */}
       <GoodToKnow />
       <Contact />
     </>

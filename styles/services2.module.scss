@@ -48,6 +48,10 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 3rem;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .signature {
@@ -72,5 +76,9 @@
   // margin-right: 10vw;
   &:hover {
     border: 1px solid $accent;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 2rem;
   }
 }

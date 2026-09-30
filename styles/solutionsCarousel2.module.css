@@ -88,6 +88,11 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media screen and (max-width: 767px) {
+  .grid {
+    gap: 0.5rem;
+  }
+}
 
 .cell {
   position: relative;
@@ -121,6 +126,11 @@
 @media (prefers-reduced-motion: reduce) {
   .tile:hover, .tile:focus-visible {
     transform: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tile {
+    max-width: 150px;
   }
 }
 
@@ -231,6 +241,11 @@
 }
 .cta:hover svg {
   color: #fff;
+}
+@media screen and (max-width: 767px) {
+  .cta {
+    margin-bottom: 3rem;
+  }
 }
 
 .ctaArrow {

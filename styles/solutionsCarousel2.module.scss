@@ -82,6 +82,9 @@
   @include phone {
     grid-template-columns: repeat(2, 1fr);
   }
+  @media screen and (max-width: 767px) {
+    gap: 0.5rem;
+  }
 }
 
 // Containing block for the tooltip. Raised while active so the
@@ -124,6 +127,10 @@
     &:focus-visible {
       transform: none;
     }
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 150px;
   }
 }
 
@@ -251,6 +258,9 @@
     svg {
       color: #fff;
     }
+  }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 3rem;
   }
 }
 
