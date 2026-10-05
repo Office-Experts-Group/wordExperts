@@ -1,9 +1,6 @@
 # *
 User-agent: *
 Allow: /
-
-# *
-User-agent: *
 Disallow: /api/
 
 # Host
@@ -11,3 +8,4 @@ Host: https://www.wordexperts.com.au
 
 # Sitemaps
 Sitemap: https://www.wordexperts.com.au/sitemap.xml
+Sitemap: https://www.wordexperts.com.au/video-sitemap.xml
