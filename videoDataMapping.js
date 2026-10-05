@@ -14,7 +14,7 @@ module.exports = {
       playerUrl:
         "https://www.wordexperts.com.au/videos/copy-and-paste-word-formatting.mp4",
       duration: 46,
-      uploadDate: "2025-10-13T00:00:00+00:00",
+      uploadDate: "2026-10-06T00:00:00+00:00",
     },
     {
       title: "Word Template Solutions",
@@ -25,7 +25,7 @@ module.exports = {
       playerUrl:
         "https://www.wordexperts.com.au/videos/word-template-solutions.mp4",
       duration: 231,
-      uploadDate: "2025-10-13T00:00:00+00:00",
+      uploadDate: "2026-10-05T00:00:00+00:00",
     },
     {
       title: "Insert and Format Tables Button",
@@ -36,7 +36,7 @@ module.exports = {
       playerUrl:
         "https://www.wordexperts.com.au/videos/insert-and-format-tables-button.mp4",
       duration: 38,
-      uploadDate: "2025-10-13T00:00:00+00:00",
+      uploadDate: "2026-10-05T00:00:00+00:00",
     },
     {
       title: "Remove Instructional Text Button",
@@ -47,7 +47,7 @@ module.exports = {
       playerUrl:
         "https://www.wordexperts.com.au/videos/remove-instructional-text-button.mp4",
       duration: 16,
-      uploadDate: "2025-10-13T00:00:00+00:00",
+      uploadDate: "2026-10-05T00:00:00+00:00",
     },
     {
       title: "Styles Clean Up Button",
@@ -58,7 +58,7 @@ module.exports = {
       playerUrl:
         "https://www.wordexperts.com.au/videos/clean-up-styles-button.mp4",
       duration: 35,
-      uploadDate: "2025-10-13T00:00:00+00:00",
+      uploadDate: "2026-10-05T00:00:00+00:00",
     },
     {
       title: "Insert / Remove A3 Landscape Pages Button",
@@ -69,7 +69,7 @@ module.exports = {
       playerUrl:
         "https://www.wordexperts.com.au/videos/insert-and-remove-landscape-buttons.mp4",
       duration: 28,
-      uploadDate: "2025-12-15T00:00:00+00:00",
+      uploadDate: "2026-10-06T00:00:00+00:00",
     },
     {
       title: "Table List Styles Button",
@@ -79,7 +79,7 @@ module.exports = {
         "https://www.wordexperts.com.au/videos/thumbnails/table-list-button.webp",
       playerUrl: "https://www.wordexperts.com.au/videos/table-list-button.mp4",
       duration: 29,
-      uploadDate: "2025-10-13T00:00:00+00:00",
+      uploadDate: "2026-10-05T00:00:00+00:00",
     },
     {
       title: "Image Placement Holders Button",
@@ -90,7 +90,7 @@ module.exports = {
       playerUrl:
         "https://www.wordexperts.com.au/videos/image-placement-button.mp4",
       duration: 19,
-      uploadDate: "2025-10-13T00:00:00+00:00",
+      uploadDate: "2026-10-05T00:00:00+00:00",
     },
     {
       title: "Insert / Remove A4 Landscape Pages Button",
@@ -101,7 +101,7 @@ module.exports = {
       playerUrl:
         "https://www.wordexperts.com.au/videos/insert-landscape-page-button.mp4",
       duration: 8,
-      uploadDate: "2025-10-13T00:00:00+00:00",
+      uploadDate: "2026-10-05T00:00:00+00:00",
     },
     {
       title: "Chapter or Appendix Break Page Button",
@@ -112,7 +112,7 @@ module.exports = {
       playerUrl:
         "https://www.wordexperts.com.au/videos/insert-appendix-page-button.mp4",
       duration: 18,
-      uploadDate: "2025-11-07T00:00:00+00:00",
+      uploadDate: "2026-10-05T00:00:00+00:00",
     },
     {
       title: "Covers Button",
@@ -122,7 +122,7 @@ module.exports = {
         "https://www.wordexperts.com.au/videos/thumbnails/insert-cover-page.webp",
       playerUrl: "https://www.wordexperts.com.au/videos/insert-cover-page.mp4",
       duration: 10,
-      uploadDate: "2025-10-13T00:00:00+00:00",
+      uploadDate: "2026-10-05T00:00:00+00:00",
     },
     {
       title: "Multi Level List Clean Up Button",
@@ -133,7 +133,7 @@ module.exports = {
       playerUrl:
         "https://www.wordexperts.com.au/videos/multi-level-list-clean-up-button.mp4",
       duration: 23,
-      uploadDate: "2025-10-21T00:00:00+00:00",
+      uploadDate: "2026-10-06T00:00:00+00:00",
     },
     {
       title: "Insert Table of Contents Button",
@@ -144,7 +144,7 @@ module.exports = {
       playerUrl:
         "https://www.wordexperts.com.au/videos/insert-table-of-contents-button.mp4",
       duration: 34,
-      uploadDate: "2025-01-13T00:00:00+00:00",
+      uploadDate: "2026-10-06T00:00:00+00:00",
     },
     {
       title: "Apply Table Sub Header/Format Cells Button",
@@ -155,7 +155,7 @@ module.exports = {
       playerUrl:
         "https://www.wordexperts.com.au/videos/thumbnails/table-subheading-row-button.mp4",
       duration: 12,
-      uploadDate: "2025-01-13T00:00:00+00:00",
+      uploadDate: "2025-10-06T00:00:00+00:00",
     },
     {
       title: "Chart Templates Button",
@@ -166,7 +166,7 @@ module.exports = {
       playerUrl:
         "https://www.wordexperts.com.au/videos/chart-templates-button.mp4",
       duration: 27,
-      uploadDate: "2025-01-13T00:00:00+00:00",
+      uploadDate: "2025-10-06T00:00:00+00:00",
     },
     {
       title: "Lists",
@@ -176,7 +176,7 @@ module.exports = {
         "https://www.wordexperts.com.au/videos/thumbnails/lists.webp",
       playerUrl: "https://www.wordexperts.com.au/videos/lists.mp4",
       duration: 15,
-      uploadDate: "2025-01-13T00:00:00+00:00",
+      uploadDate: "2026-10-13T00:00:00+00:00",
     },
   ],
 };
