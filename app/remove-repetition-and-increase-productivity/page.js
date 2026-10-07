@@ -8,7 +8,7 @@ const PageSegmentImpact = dynamic(
   () => import("./(components)/PageSegmentImpact"),
 );
 const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"));
-const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
+const RelatedLinks = dynamic(() => import("../../components/RelatedLinks"));
 const Contact = dynamic(() => import("../../components/Contact"));
 
 import repetition from "../../public/pageHeros/repetition.webp";
@@ -151,7 +151,37 @@ const Page = () => {
       <PageSegmentMain />
       <PageSegmentImpact />
       <PageSegment4 />
-      <ExpertsAwait />
+      <RelatedLinks
+        theme="dark"
+        eyebrow="Case Studies"
+        heading="Projects that removed repetitive document work"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/financial-planning-word-document-builder",
+            linkText: "View the report builder",
+            title:
+              "Building each financial planning report from a pop-up form and a library of ready-made headings",
+            description:
+              "A financial planning client's reports combine free text with a large library of headings and content in three tiers. We built a Word document builder with a pop-up form for choosing only the items needed, automatic parent headings, custom Heading 3 items that format themselves, and a background library the Administrator maintains and rolls out to staff templates.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/financial-planning-word-document-builder-libraryLg.webp",
+            imageAlt:
+              "Word document builder with a pop-up form and heading library for financial planning reports",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/windowline-proposals-database",
+            linkText: "Explore the Access to SQL Server build",
+            title:
+              "Replacing 50-page proposals built with a database-driven document generator",
+            description:
+              "A window and door installer was assembling proposals, quotes and contracts, often 50 pages or more, by hand from paper records and Excel. We designed an Access database, later migrated to SQL Server, where staff select the sections they need and the full Word document is generated with project and client details, quote tables, data and images.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/windowline-proposals-databaseLg.png",
+            imageAlt:
+              "Access database generating long Word proposals and contracts",
+          },
+        ]}
+      />
       <Contact />
     </>
   );

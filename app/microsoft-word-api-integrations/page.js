@@ -11,6 +11,7 @@ const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
 const Bullets = dynamic(() => import("./(components)/Bullets"));
 const UseCases = dynamic(() => import("./(components)/UseCases"));
 const WhyExperts = dynamic(() => import("./(components)/WhyExperts"));
+const RelatedLinks = dynamic(() => import("../../components/RelatedLinks"));
 
 import javascript from "../../public/pageHeros/javascript.webp";
 import javascriptMob from "../../public/pageHeros/mob/javascriptMob.webp";
@@ -166,6 +167,36 @@ const Page = () => {
       <PageSegmentMain />
       <DeskImage />
       <Bullets />
+      <RelatedLinks
+        theme="dark"
+        eyebrow="Case Studies"
+        heading="Word automation projects we've delivered"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/internal-ai-proposal-assistant-azure-migration",
+            linkText: "See the proposal assistant",
+            title:
+              "Turning call notes and a rate card into a first-pass proposal inside the real Word template",
+            description:
+              "Proposal drafting relied on re-reading transcripts and copy-pasting fees and consultant details from older proposals. We built a conversational AI assistant that drafts a first-pass proposal directly into the real Word template, with live fee tables, payment milestones and a consultant roster pulled from the current rate card, then migrated it fully inside the Microsoft and Azure tenant.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/internal-ai-proposal-assistant.png",
+            imageAlt: "AI assistant drafting proposals into a Word template",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/financial-planning-word-document-builder",
+            linkText: "Explore the heading library",
+            title:
+              "Building each financial planning report from a pop-up form and a library of ready-made headings",
+            description:
+              "A financial planning client's reports combine free text with a large library of headings and content in three tiers. We built a Word document builder with a pop-up form for choosing only the items needed, automatic parent headings, custom Heading 3 items that format themselves, and a background library the Administrator maintains and rolls out to staff templates.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/financial-planning-word-document-builder-libraryLg.webp",
+            imageAlt:
+              "Word document builder with a pop-up form and heading library for financial planning reports",
+          },
+        ]}
+      />
       <PageSegment4 />
       <ExpertsAwait />
       <UseCases />

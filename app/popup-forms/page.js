@@ -18,7 +18,7 @@ const PopupFormsUseCases = dynamic(
 const PopupFormsProcess = dynamic(
   () => import("./(components)/PopupFormsProcess"),
 );
-const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
+const RelatedLinks = dynamic(() => import("../../components/RelatedLinks"));
 const FAQSection = dynamic(() => import("../../components/FAQSection"));
 const Contact = dynamic(() => import("../../components/Contact"));
 
@@ -168,7 +168,36 @@ const Page = () => {
       <PopupFormsServices />
       <PopupFormsUseCases />
       <PopupFormsProcess />
-      <ExpertsAwait />
+      <RelatedLinks
+        theme="dark"
+        eyebrow="Case Studies"
+        heading="Some Pop-up form projects delivered to happy clients"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/insurance-word-quoting-report-popup-form",
+            linkText: "See the pop-up form",
+            title:
+              "Turning slow, error-prone quoting reports into one guided pop-up form in Word",
+            description:
+              "Staff completing quoting reports in Word had to hunt through the document for fields, with no way to tell afterwards whether any had been missed. We built a pop-up form that gathers every field in one place, flags missed mandatory fields, populates the report automatically, and keeps drop-down lists in one background copy the Administrator maintains for all templates.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/insurance-word-quoting-report-popup-form.webp",
+            imageAlt: "Pop-up form for completing quoting reports in Word",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/government-workplace-safety-interactive-word-forms",
+            linkText: "Explore the content controls",
+            title:
+              "Rebuilding static assessment and referral forms into guided, tamper-proof Word documents",
+            description:
+              "A government workplace safety authority's complex Word forms were inconsistent and easy to break. We rebuilt the suite with structured styles, content controls (dropdown lists, text-only fields, checkboxes and image placeholders), dynamic tables and document protection, so staff tab through guided fields without altering the layout or deleting mandatory content.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/government-workplace-safety-interactive-formsLg.webp",
+            imageAlt:
+              "Guided, protected Word forms for a government workplace safety authority",
+          },
+        ]}
+      />
       <FAQSection faqs={faqs} />
       <Contact />
     </>

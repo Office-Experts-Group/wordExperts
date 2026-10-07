@@ -16,6 +16,7 @@ const Segment8 = dynamic(() => import("./(components)/Segment8"));
 const Conclusion = dynamic(() => import("./(components)/Conclusion"));
 const Image = dynamic(() => import("./(components)/Image"));
 const TemplateCards = dynamic(() => import("../../components/TemplateCards"));
+const RelatedLinks = dynamic(() => import("../../components/RelatedLinks"));
 
 import startup from "../../public/pageHeros/startup.webp";
 import graph from "../../public/pageHeros/mob/graph.webp";
@@ -123,6 +124,37 @@ const Page = () => {
       <ExpertsAwait />
       <Segment8 />
       <Conclusion />
+      <RelatedLinks
+        theme="dark"
+        eyebrow="Case Studies"
+        heading="Word template builds we've delivered"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/committee-report-master-template-pdf-merge",
+            linkText: "See the weekend turnaround",
+            title:
+              "Turning a multi-author committee report into one polished PDF over a weekend",
+            description:
+              "A local executive committee needed reports from several authors with limited Word experience combined into a single submission against an urgent deadline. We built a Master Template, transferred each author's content into it after hours and over the weekend, then merged the result with several supporting PDFs into one clean PDF.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/committee-report-master-template-pdf-mergeLg.png",
+            imageAlt:
+              "Master Template and merged PDF for a multi-author committee report",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/water-education-program-word-powerpoint-templates",
+            linkText: "See the lesson templates",
+            title:
+              "Turning an InDesign lesson design into Word and PowerPoint templates educators can use",
+            description:
+              "The client's water education program had a lesson design built in InDesign, but curriculum writers across Western Australia needed to build lessons in Word and PowerPoint. We translated the design into working Word and PowerPoint templates, including Quick Parts for the Word layouts and a PowerPoint Slide Master system with precise placeholders, locked-down brand elements and purpose-built layouts for activities, diagrams and assessment pages.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/water-education-program-templatesLg.png",
+            imageAlt:
+              "Word and PowerPoint lesson templates for a water education program",
+          },
+        ]}
+      />
       <Contact />
     </>
   );

@@ -7,13 +7,13 @@ import PageSegmentMain from "./(components)/PageSegmentMain";
 const Contact = dynamic(() => import("../../components/Contact"));
 const BlackSegment = dynamic(() => import("./(components)/BlackSegment"));
 const PageSegment4 = dynamic(() => import("./(components)/PageSegment4"));
-const PageSegment5 = dynamic(() => import("./(components)/PageSegment5"));
 const PageSegmentDropdowns = dynamic(
   () => import("./(components)/PageSegmentDropdowns"),
 );
 const CompareContainer = dynamic(
   () => import("./(components)/CompareContainer"),
 );
+const RelatedLinks = dynamic(() => import("../../components/RelatedLinks"));
 
 import brandTemplate from "../../public/pageHeros/brandTemplate.webp";
 import brandTemplateMob from "../../public/pageHeros/mob/brandTemplateMob.webp";
@@ -44,7 +44,7 @@ const schema = {
         "@id": "https://www.wordexperts.com.au#website",
       },
       datePublished: "2018-07-15T16:09:50+00:00",
-      dateModified: "2026-03-12T00:00:00+00:00",
+      dateModified: "2026-10-06T00:00:00+00:00",
       description:
         "Professional Microsoft Word brand template services. Custom document templates that ensure consistent branding and professional appearance across your organization.",
       breadcrumb: {
@@ -165,8 +165,35 @@ const Page = () => {
         <BlackSegment />
         <CompareContainer />
         <BoxSegment />
-        {/* <PageSegment5 /> */}
         <PageSegmentDropdowns />
+        <RelatedLinks
+          theme="dark"
+          eyebrow="Case Studies"
+          heading="Microsoft Word projects we've delivered"
+          links={[
+            {
+              href: "https://www.officeexperts.com.au/case-studies/advisory-branding-template-rollout",
+              linkText: "See how we locked in the brand",
+              title:
+                "Rebuilding a full template suite to lock a new brand in, not just apply it",
+              description:
+                "The client's Word templates kept breaking, and staff could freely override brand fonts and sizes. We rebuilt the suite from one Master Template into eleven sub-templates, added a custom Formatting tab that locks down font controls, and built branded Quick Parts for cover pages and other template elements.",
+              image:
+                "https://www.officeexperts.com.au/case-studies/red-fox-advisory-brand-templatesLg.png",
+              imageAlt: "Word Experts Brand Templates",
+            },
+            {
+              href: "https://www.officeexperts.com.au/case-studies/government-department-enterprise-office-template-suite",
+              title: "17 enterprise Word templates for a state department",
+              linkText: "Explore the enterprise template suite",
+              description:
+                "After a major brand refresh, the client needed its Office environment brought into line, with pasted content regularly breaking the corporate styles. We redesigned 17 enterprise Word templates, built a custom Formatting Control tab that enforces approved styles, and delivered a PowerPoint framework with 10 precinct-specific themes.",
+              image:
+                "https://www.officeexperts.com.au/case-studies/government-enterprise-office-templatesLg.png",
+              imageAlt: "Word Experts Brand Templates",
+            },
+          ]}
+        />
         <Contact />
       </main>
     </>

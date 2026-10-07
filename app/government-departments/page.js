@@ -15,7 +15,7 @@ const GovDeptCapabilities = dynamic(
   () => import("./(components)/GovDeptCapabilities"),
 );
 const GovDeptProcess = dynamic(() => import("./(components)/GovDeptProcess"));
-const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
+const RelatedLinks = dynamic(() => import("../../components/RelatedLinks"));
 const FAQSection = dynamic(() => import("../../components/FAQSection"));
 
 import faqs from "../../faqs/government-departments";
@@ -108,7 +108,49 @@ const Page = () => {
       <GovDeptTemplateSystem />
       <GovDeptCapabilities />
       <GovDeptProcess />
-      <ExpertsAwait />
+      <RelatedLinks
+        theme="dark"
+        eyebrow="Case Studies"
+        heading="Projects we've delivered for government departments"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/government-department-enterprise-office-template-suite",
+            linkText: "Explore the template suite",
+            title:
+              "A custom Word ribbon that stops corporate templates breaking under everyday use",
+            description:
+              "After a major brand refresh, a state government department needed its Office environment modernised. We redesigned 17 enterprise Word templates, built a custom Formatting Control Tab that enforces approved styles, tables and numbering, and added controlled copy-and-paste with a one-click Styles Clean Up tool. The same project delivered a PowerPoint framework with 10 precinct-specific themes.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/government-enterprise-office-templatesLg.png",
+            imageAlt:
+              "Custom Word ribbon and enterprise templates for a state government department",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/government-workplace-safety-interactive-word-forms",
+            linkText: "See our guided Word forms",
+            title:
+              "Rebuilding static assessment and referral forms into guided, tamper-proof Word documents",
+            description:
+              "A government workplace safety authority's complex Word forms were inconsistent and easy to break. We rebuilt the suite with structured styles, content controls (dropdown lists, text-only fields, checkboxes and image placeholders), dynamic tables and document protection, so staff tab through guided fields without altering the layout or deleting mandatory content.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/government-workplace-safety-interactive-formsLg.webp",
+            imageAlt:
+              "Guided, protected Word forms for a government workplace safety authority",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/government-health-department-editable-pdf-forms",
+            linkText: "View the editable PDF forms",
+            title:
+              "Turning brand templates into editable PDF forms staff can fill in and maintain",
+            description:
+              "A state government health department needed two internal forms on the same branded foundation as its other documents. We built both forms into its existing master template, converted them to editable PDFs using Adobe Acrobat Pro, and trained the client's team to make minor content changes themselves.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/government-health-editable-pdf-formsLg.png",
+            imageAlt:
+              "Editable PDF forms built on a state government health department master template",
+          },
+        ]}
+      />
       <FAQSection faqs={faqs} />
       <Contact />
     </>

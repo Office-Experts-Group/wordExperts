@@ -16,7 +16,26 @@ import value from "../../../public/blog/desktop/value.webp";
 import shark from "../../../public/blog/desktop/shark.webp";
 import lochness from "../../../public/blog/desktop/lochness.webp";
 
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+  generateWebSiteSchema,
+} from "../../../utils/schemaGenerators";
+
 const WordDesktopVsWebBlogPost = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      generateOrganizationSchema(),
+      generateProfessionalServiceSchema(),
+      generateWebSiteSchema(
+        "https://www.wordexperts.com.au",
+        "Word Experts",
+        "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+      ),
+    ],
+  };
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -118,6 +137,10 @@ const WordDesktopVsWebBlogPost = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <div className={styles.head}></div>
       <div className={styles.blogContainer}>

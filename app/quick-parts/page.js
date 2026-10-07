@@ -6,6 +6,7 @@ import PageSegmentMain from "./(components)/PageSegmentMain";
 
 const Contact = dynamic(() => import("../../components/Contact"));
 const Segment4Repeat = dynamic(() => import("./(components)/Segment4Repeat"));
+const RelatedLinks = dynamic(() => import("../../components/RelatedLinks"));
 const PageSegment5 = dynamic(() => import("./(components)/PageSegment5"));
 const ExpertsAwait = dynamic(() => import("../../components/ExpertsAwait"));
 const Promo = dynamic(() => import("../../components/Promo"));
@@ -149,6 +150,37 @@ const Page = () => {
       />
       <PageSegmentMain />
       <Segment4Repeat />
+      <RelatedLinks
+        theme="dark"
+        eyebrow="Case Studies"
+        heading="Quick Parts projects we've delivered"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/advisory-branding-template-rollout",
+            linkText: "See how the brand was locked in",
+            title:
+              "Rebuilding a full Word template suite to lock a new brand in, not just apply it",
+            description:
+              "While updating its branding, the client's Word templates kept breaking, with formatting corruption and staff freely overriding brand elements. We rebuilt the suite from a single Master Template with eleven sub-templates, added a custom Formatting tab that locks down font and font-size controls, and built branded Quick Parts for cover pages and other template elements.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/red-fox-advisory-brand-templatesLg.png",
+            imageAlt:
+              "Branded Word template suite built from a single Master Template",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/water-education-program-word-powerpoint-templates",
+            linkText: "Explore the Quick Parts and Slide Master",
+            title:
+              "Turning an InDesign lesson design into Word and PowerPoint templates educators can use",
+            description:
+              "The client's water education program had a lesson design built in InDesign, but curriculum writers across Western Australia needed to build lessons in Word and PowerPoint. We translated the design into working Word and PowerPoint templates, including Quick Parts for the Word layouts and a PowerPoint Slide Master system with precise placeholders, locked-down brand elements and purpose-built layouts for activities, diagrams and assessment pages.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/water-education-program-templatesLg.png",
+            imageAlt:
+              "Word and PowerPoint lesson templates for a water education program",
+          },
+        ]}
+      />
       <PageSegment5 />
       <Promo
         h2="Optimise Document Creation with Quick Parts"

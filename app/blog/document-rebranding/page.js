@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 
 import Contact from "../../../components/Contact";
+import RelatedLinks from "../../../components/RelatedLinks";
 
 import styles from "../../../styles/blogPost.module.scss";
 
@@ -16,7 +17,25 @@ import buildingBlocks from "../../../public/blog/buildingBlocks.webp";
 import monitor from "../../../public/blog/monitor.webp";
 import askExpert from "../../../public/askExpert540x480.webp";
 
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+  generateWebSiteSchema,
+} from "../../../utils/schemaGenerators";
 const DocumentRebrandingBlogPost = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      generateOrganizationSchema(),
+      generateProfessionalServiceSchema(),
+      generateWebSiteSchema(
+        "https://www.wordexperts.com.au",
+        "Word Experts",
+        "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+      ),
+    ],
+  };
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -101,6 +120,10 @@ const DocumentRebrandingBlogPost = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <div className={styles.head}></div>
       <div className={styles.blogContainer}>
@@ -724,6 +747,37 @@ const DocumentRebrandingBlogPost = () => {
           </div>
         </div>
       </div>
+      <RelatedLinks
+        theme="dark"
+        eyebrow="See it in practice"
+        heading="Document rebranding projects designed by Word Experts"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/advisory-branding-template-rollout",
+            linkText: "View the template suite rebrand",
+            title:
+              "Rebranding a full Word template suite to lock a new brand in, not just apply it",
+            description:
+              "While updating its branding, the client's Word templates kept breaking, with formatting corruption and staff freely overriding brand elements. We rebuilt the suite from a single Master Template with eleven sub-templates, added a custom Formatting tab that locks down font and font-size controls, and built branded Quick Parts for cover pages and other template elements.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/red-fox-advisory-brand-templatesLg.png",
+            imageAlt:
+              "Branded Word template suite built from a single Master Template",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/environmental-consultancy-word-template-rebuild",
+            linkText: "See the how we did it",
+            title:
+              "Rebuilding a beautifully designed template that Word itself couldn't cope with",
+            description:
+              "The client's new Word templates looked exactly right, but hadn't been built the way Word needs to be built, which made them inefficient to use and prone to formatting errors. We rebuilt the entire suite on proper styles, headings and page structure, keeping the approved design intact.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/environmental-consultancy-word-template-rebuildLg.png",
+            imageAlt:
+              "Word template suite rebuilt on proper styles and page structure",
+          },
+        ]}
+      />
       <Contact />
     </>
   );

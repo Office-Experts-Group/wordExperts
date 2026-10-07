@@ -2,17 +2,225 @@ import Link from "next/link";
 import Image from "next/image";
 
 import styles from "../../../styles/wordTemplatesBlog.module.scss";
+
 import ServiceHero from "../../../components/ServiceHero";
+import Contact from "../../../components/Contact";
+import RelatedLinks from "../../../components/RelatedLinks";
 
 import word from "../../../public/blog/word-template.webp";
 import wordMob from "../../../public/blog/mob/word-template.webp";
 import meme from "../../../public/blog/automate-meme.webp";
 import math from "../../../public/blog/math-meme.webp";
 import template from "../../../public/template.webp";
+import aleisha from "../../../public/team/aleisha.webp";
+
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+  generateWebSiteSchema,
+} from "../../../utils/schemaGenerators";
 
 export default function WordTemplatesBlogPost() {
+  const DATE_PUBLISHED = "";
+  ("2026-10-07T09:00:00+10:00");
+  const DATE_MODIFIED = "";
+  ("2026-10-07T09:00:00+10:00");
+
+  const SITE_URL = "https://www.wordexperts.com.au";
+  const PAGE_URL = `${SITE_URL}/blog/ultimate-guide-to-word-templates`;
+  const ORG_ID = `${SITE_URL}#organization`;
+  const WEBSITE_ID = `${SITE_URL}#website`;
+  const HEADLINE = "The Ultimate Guide to Microsoft Word Templates";
+  const DESCRIPTION =
+    "Learn what a Microsoft Word template is, the benefits of using templates, the types of Word templates, and how to manage them across your organisation.";
+
+  const imageSchema = {
+    "@type": "ImageObject",
+    "@id": `${PAGE_URL}#primaryimage`,
+    url: `${SITE_URL}/blog/word-template.webp`,
+    contentUrl: `${SITE_URL}/blog/word-template.webp`,
+    caption: "finger touching a file",
+    inLanguage: "en-AU",
+  };
+
+  const breadcrumbSchema = {
+    "@type": "BreadcrumbList",
+    "@id": `${PAGE_URL}#breadcrumb`,
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Blog",
+        item: `${SITE_URL}/blog`,
+      },
+      { "@type": "ListItem", position: 3, name: HEADLINE, item: PAGE_URL },
+    ],
+  };
+
+  const webPageSchema = {
+    "@type": "WebPage",
+    "@id": `${PAGE_URL}#webpage`,
+    url: PAGE_URL,
+    name: HEADLINE,
+    description: DESCRIPTION,
+    inLanguage: "en-AU",
+    isPartOf: { "@id": WEBSITE_ID },
+    primaryImageOfPage: { "@id": `${PAGE_URL}#primaryimage` },
+    image: { "@id": `${PAGE_URL}#primaryimage` },
+    breadcrumb: { "@id": `${PAGE_URL}#breadcrumb` },
+    mainEntity: { "@id": `${PAGE_URL}#article` },
+    relatedLink: [
+      "https://www.officeexperts.com.au/case-studies/environmental-consultancy-word-template-rebuild",
+      "https://www.officeexperts.com.au/case-studies/corporate-group-multi-entity-master-template-suite",
+    ],
+    ...(DATE_PUBLISHED && { datePublished: DATE_PUBLISHED }),
+    ...(DATE_MODIFIED && { dateModified: DATE_MODIFIED }),
+    potentialAction: [{ "@type": "ReadAction", target: [PAGE_URL] }],
+  };
+
+  const templateTypesSchema = {
+    "@type": "ItemList",
+    "@id": `${PAGE_URL}#template-types`,
+    name: "Types of Word templates",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Normal.dotm",
+        description:
+          "The default template that loads automatically whenever Word is opened.",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "User Templates",
+        description:
+          "Custom templates created or modified by users for specific document types, typically stored in the User Templates folder.",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Workgroup Templates",
+        description:
+          "Templates designed to be shared across a team or department, stored in a centralised location accessible to all members of the workgroup.",
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: "Global Templates",
+        description:
+          "Templates that load automatically whenever Word is opened and must be saved in the startup folder. They provide additional functionality available to all documents.",
+      },
+      {
+        "@type": "ListItem",
+        position: 5,
+        name: "Add-in Templates",
+        description:
+          "Specialised global templates designed to extend Word's functionality.",
+      },
+    ],
+  };
+
+  const howToSchema = {
+    "@type": "HowTo",
+    "@id": `${PAGE_URL}#howto`,
+    name: "How to set the Workgroup templates location in Word",
+    description:
+      "Set the Workgroup templates location in Word so a team can share templates from one central folder.",
+    inLanguage: "en-AU",
+    isPartOf: { "@id": `${PAGE_URL}#article` },
+    tool: [{ "@type": "HowToTool", name: "Microsoft Word" }],
+    step: [
+      {
+        "@type": "HowToStep",
+        position: 1,
+        name: "Open the Advanced options",
+        text: "Go to File > Options > Advanced.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 2,
+        name: "Find the General section",
+        text: "Scroll down to the General section.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 3,
+        name: "Open File Locations",
+        text: 'Click "File Locations".',
+      },
+      {
+        "@type": "HowToStep",
+        position: 4,
+        name: "Set the Workgroup templates path",
+        text: 'Select "Workgroup templates" and modify the path.',
+      },
+    ],
+  };
+
+  const articleSchema = {
+    "@type": "BlogPosting",
+    "@id": `${PAGE_URL}#article`,
+    mainEntityOfPage: { "@id": `${PAGE_URL}#webpage` },
+    headline: HEADLINE,
+    alternativeHeadline:
+      "What is a Word Template? Benefits, Types, and Implementation",
+    description: DESCRIPTION,
+    image: [{ "@id": `${PAGE_URL}#primaryimage` }],
+    // Swap for a Person node if the article has a named author.
+    author: "aleisha",
+    publisher: { "@id": ORG_ID },
+    inLanguage: "en-AU",
+    isPartOf: {
+      "@type": "Blog",
+      "@id": `${SITE_URL}/blog#Blog`,
+      name: "Word Experts Blog",
+    },
+    articleSection: "Microsoft Word templates",
+    ...(DATE_PUBLISHED && { datePublished: DATE_PUBLISHED }),
+    ...(DATE_MODIFIED && { dateModified: DATE_MODIFIED }),
+    keywords: ["Microsoft Word templates"],
+    about: [
+      { "@type": "Thing", name: "Microsoft Word templates" },
+      { "@id": `${PAGE_URL}#template-types` },
+    ],
+    mentions: [
+      {
+        "@type": "SoftwareApplication",
+        name: "Microsoft Word",
+        applicationCategory: "Word Processing Software",
+      },
+      { "@type": "SoftwareApplication", name: "Microsoft SharePoint" },
+    ],
+    hasPart: [{ "@id": `${PAGE_URL}#howto` }],
+  };
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      generateOrganizationSchema(),
+      generateProfessionalServiceSchema(),
+      generateWebSiteSchema(
+        SITE_URL,
+        "Word Experts",
+        "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+      ),
+      webPageSchema,
+      articleSchema,
+      howToSchema,
+      templateTypesSchema,
+      breadcrumbSchema,
+      imageSchema,
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <ServiceHero
         title="What is a Word Template?"
         desktopImage={word}
@@ -20,7 +228,7 @@ export default function WordTemplatesBlogPost() {
         altDesk={"finger touching a file"}
         altMob={"finger touching a file"}
       />
-      <main className={styles.blogContainer}>
+      <section className={styles.blogContainer}>
         <article className={styles.blogPost}>
           <p style={{ marginBottom: ".5rem" }}>
             Benefits, Types, and Implementation
@@ -555,7 +763,38 @@ export default function WordTemplatesBlogPost() {
             </p>
           </div>
         </article>
-      </main>
+      </section>
+      <RelatedLinks
+        theme="dark"
+        eyebrow="See it in practice"
+        heading="Word template projects we've delivered"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/environmental-consultancy-word-template-rebuild",
+            linkText: "View the rebuilt suite",
+            title: "Rebuilding a beautifully designed template under the hood",
+            description:
+              "The client's new Word templates looked exactly right, but hadn't been built the way Word needs to be built, which made them inefficient to use and prone to formatting errors. We rebuilt the entire suite on proper styles, headings and page structure, keeping the approved design intact.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/environmental-consultancy-word-template-rebuildLg.png",
+            imageAlt:
+              "Word template suite rebuilt on proper styles and page structure",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/corporate-group-multi-entity-master-template-suite",
+            linkText: "See the Global Common template",
+            title:
+              "One shared Global Common template keeping four entities on-brand",
+            description:
+              "A corporate group needed consistent, professional templates across four related entities without four separate builds. We built a shared Global Common template, a custom Master Template for each entity on top of it, and a custom Formatting tab with a copy/paste macro that strips foreign formatting and applies approved styling automatically.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/corporate-group-multi-entity-templatesLg.png",
+            imageAlt:
+              "Master Templates for four entities built from one Global Common template",
+          },
+        ]}
+      />
+      <Contact />
     </>
   );
 }

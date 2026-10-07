@@ -6,7 +6,7 @@ import ServiceHero from "../../components/ServiceHero";
 const CorporateIdentityAnatomy = dynamic(
   () => import("./(components)/CorporateIdentityAnatomy"),
 );
-
+const RelatedLinks = dynamic(() => import("../../components/RelatedLinks"));
 const CorporateIdentityDrift = dynamic(
   () => import("./(components)/CorporateIdentityDrift"),
 );
@@ -118,6 +118,37 @@ const Page = () => {
       />
       <CorporateIdentityAnatomy />
       <CorporateIdentityDrift />
+      <RelatedLinks
+        theme="dark"
+        eyebrow="Case Studies"
+        heading="Template solutions we've delivered"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/sporting-organisation-multi-brand-word-template",
+            linkText: "View the Master Template approach",
+            title:
+              "One Word Master Template and a colour theme for every discipline's brand",
+            description:
+              "A national sporting organisation runs several disciplines under one parent brand, each with its own colours. We built a single Word Master Template with a suite of discipline colour themes, so sub-templates pick up the right brand colours across covers, styles, numbering and tables. We also added more than 30 brand colours beyond Word's standard colour theme and trained the client's team to manage the templates.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/theme-swap-sample.webp",
+            imageAlt:
+              "Word colour themes for each discipline of a national sporting organisation",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/advisory-branding-template-rollout",
+            linkText: "Explore the Formatting tab",
+            title:
+              "Rebuilding a full Word template suite to lock a new brand in, not just apply it",
+            description:
+              "While updating its branding, the client's Word templates kept breaking, with formatting corruption and staff freely overriding brand elements. We rebuilt the suite from a single Master Template with eleven sub-templates, added a custom Formatting tab that locks down font and font-size controls, and built branded Quick Parts for cover pages and other template elements.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/red-fox-advisory-brand-templatesLg.png",
+            imageAlt:
+              "Branded Word template suite built from a single Master Template",
+          },
+        ]}
+      />
       <CorporateIdentityComparison />
       <ExpertsAwait />
       <FAQSection faqs={faqs} />

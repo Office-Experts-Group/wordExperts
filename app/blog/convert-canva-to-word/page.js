@@ -3,11 +3,29 @@ import Link from "next/link";
 
 import CodeBlock from "../../../components/CodeBlock";
 import Contact from "../../../components/Contact";
+import RelatedLinks from "../../../components/RelatedLinks";
 
 import styles from "../../../styles/blogPost.module.scss";
 import Image from "next/image";
 
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+  generateWebSiteSchema,
+} from "../../../utils/schemaGenerators";
 const CanvaToWordBlogPost = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      generateOrganizationSchema(),
+      generateProfessionalServiceSchema(),
+      generateWebSiteSchema(
+        "https://www.wordexperts.com.au",
+        "Word Experts",
+        "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+      ),
+    ],
+  };
   // Sample code for Word style setup
   const wordStylesCode = `# Setting up Word Styles for brand consistency
 1. Go to the Home tab in Word
@@ -113,14 +131,7 @@ const CanvaToWordBlogPost = () => {
         description: "Professional business document formatting solutions",
       },
     ],
-    keywords: [
-      "Canva to Word template",
-      "convert Canva design",
-      "Microsoft Word templates",
-      "document conversion",
-      "brand consistency",
-      "template design",
-    ],
+    keywords: ["Canva to Word template"],
     wordCount: 1800,
     timeRequired: "PT5M",
     articleSection: "Tutorial",
@@ -398,6 +409,7 @@ const CanvaToWordBlogPost = () => {
       breadcrumbSchema,
       organizationSchema,
       webPageSchema,
+      schema,
     ],
   };
 
@@ -566,8 +578,11 @@ const CanvaToWordBlogPost = () => {
             </li>
           </ol>
           <p>
-            <strong>Bonus:</strong> Save it as a <code>.dotx</code> Word
-            Template file for reuse.
+            <strong>Bonus:</strong> Save it as a <code>.dotx</code>{" "}
+            <Link href={"/blog/ultimate-guide-to-word-templates"}>
+              Word Template
+            </Link>{" "}
+            file for reuse.
           </p>
 
           <h3>Option B: Canva's Export-to-Word Feature (Limited)</h3>
@@ -588,7 +603,8 @@ const CanvaToWordBlogPost = () => {
           <h2>Tips for Keeping Your Brand Consistent in Word</h2>
           <p>
             One of the biggest challenges when converting from Canva to Word is
-            maintaining brand consistency. Here are some strategies:
+            maintaining <Link href={"/brand-template"}>brand consistency</Link>.
+            Here are some strategies:
           </p>
 
           <h3>Using Word Styles</h3>
@@ -599,12 +615,18 @@ const CanvaToWordBlogPost = () => {
           <p>
             By setting up proper Styles for Heading 1, Heading 2, Body text,
             etc., you can ensure that formatting remains consistent throughout
-            your document and across all documents based on your template.
+            your document and across{" "}
+            <Link href={"/word-document-template-creation"}>
+              all documents based on your template
+            </Link>
+            .
           </p>
 
           <h3>Content Controls for User Input</h3>
-          <p>To create fillable areas while protecting your design:</p>
-
+          <p>
+            To create <Link href={"/fill-in-forms"}>fillable areas</Link> while
+            protecting your design:
+          </p>
           <CodeBlock code={contentControlsCode} language="text" />
 
           <p>
@@ -640,9 +662,15 @@ const CanvaToWordBlogPost = () => {
           </p>
           <ul>
             <li>Have a multi-page branded document</li>
-            <li>Need fillable sections or interactivity</li>
+            <li>
+              Need fillable sections or{" "}
+              <Link href={"/popup-forms"}>interactivity</Link>
+            </li>
             <li>Want to restrict editing to protect your brand</li>
-            <li>Need compatibility across devices and screen readers</li>
+            <li>
+              Need compatibility across devices and{" "}
+              <Link href={"/accessibility"}>screen readers</Link>
+            </li>
             <li>
               Are{" "}
               <Link href={"../../custom-toolbars-and-ribbons"}>
@@ -651,9 +679,12 @@ const CanvaToWordBlogPost = () => {
             </li>
           </ul>
           <p>
-            At <strong>Word Experts</strong>, we specialise in turning Canva or
-            PDF designs into clean, editable, on-brand Word templates for
-            businesses, NDIS providers, consultants, and more.
+            At <strong>Word Experts</strong>, we specialise in{" "}
+            <Link href={"/word-template-conversions"}>
+              turning Canva or PDF designs into clean, editable, on-brand Word
+              templates
+            </Link>{" "}
+            for businesses, NDIS providers, consultants, and more.
           </p>
 
           <h2>Conclusion</h2>
@@ -678,6 +709,37 @@ const CanvaToWordBlogPost = () => {
           </p>
         </div>
       </div>
+      <RelatedLinks
+        theme="dark"
+        eyebrow="See it in practice"
+        heading="Turning a designed layout into working Word templates"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/water-education-program-word-powerpoint-templates",
+            linkText: "View the InDesign translation",
+            title:
+              "Turning an InDesign lesson design into Word and PowerPoint templates educators can use",
+            description:
+              "The client's water education program had a lesson design built in InDesign, but curriculum writers across Western Australia needed to build lessons in Word and PowerPoint. We translated the design into working Word and PowerPoint templates, including Quick Parts for the Word layouts and a PowerPoint Slide Master system with precise placeholders, locked-down brand elements and purpose-built layouts for activities, diagrams and assessment pages.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/water-education-program-templatesLg.png",
+            imageAlt:
+              "Word and PowerPoint lesson templates for a water education program",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/environmental-consultancy-word-template-rebuild",
+            linkText: "See the template rebuild",
+            title:
+              "Rebuilding a beautifully designed template that Word itself couldn't cope with",
+            description:
+              "The client had a new set of Word templates designed to their brand, and visually they were exactly right. Underneath, the templates hadn't been built the way Word needs to be built, which made them inefficient to use and prone to formatting errors. We rebuilt the entire suite from the ground up, keeping the approved design intact while making the templates fit for daily use.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/environmental-consultancy-word-template-rebuildLg.png",
+            imageAlt:
+              "Rebuilt Word template suite for an environmental consultancy",
+          },
+        ]}
+      />
       <Contact />
     </>
   );

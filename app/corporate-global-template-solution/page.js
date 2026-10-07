@@ -11,7 +11,7 @@ const FAQSection = dynamic(() => import("../../components/FAQSection"));
 const Contents = dynamic(() => import("./(components)/Contents"));
 const BookSegment = dynamic(() => import("./(components)/BookSegment"));
 const BoxSegment = dynamic(() => import("./(components)/BoxSegment"));
-// import DeskImage from "./(components)/DeskImage";
+const RelatedLinks = dynamic(() => import("../../components/RelatedLinks"));
 
 import faqs from "../../faqs/corporate-solutions";
 import faqSchema from "../../faqs/corporateSolutionsSchema";
@@ -22,6 +22,7 @@ import templateMob from "../../public/pageHeros/mob/templateMob.webp";
 import {
   generateProfessionalServiceSchema,
   generateOrganizationSchema,
+  generateWebSiteSchema,
 } from "../../utils/schemaGenerators";
 
 const schema = {
@@ -29,6 +30,11 @@ const schema = {
   "@graph": [
     generateProfessionalServiceSchema(),
     generateOrganizationSchema(),
+    generateWebSiteSchema(
+      "https://www.wordexperts.com.au",
+      "Word Experts",
+      "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+    ),
     {
       "@type": "WebPage",
       "@id":
@@ -141,6 +147,37 @@ const Page = () => {
       <BookSegment />
       <BlackSegment />
       <BoxSegment />
+      <RelatedLinks
+        theme="light"
+        eyebrow="Case Studies"
+        heading="Corporate and multi-brand template projects we've delivered"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/corporate-group-multi-entity-master-template-suite",
+            linkText: "See the Global Common template",
+            title:
+              "One shared Global Common template keeping four entities on-brand",
+            description:
+              "A corporate group needed consistent, professional templates across four related entities without four separate builds. We built a shared Global Common template, a custom Master Template for each entity on top of it, and a custom Formatting tab with a copy/paste macro that strips foreign formatting and applies approved styling automatically.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/corporate-group-multi-entity-templatesLg.png",
+            imageAlt:
+              "Master Templates for four entities built from one Global Common template",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/sporting-organisation-multi-brand-word-template",
+            linkText: "Explore the multi-brand template",
+            title:
+              "One Word Master Template and a colour theme for every discipline's brand",
+            description:
+              "A national sporting organisation runs several disciplines under one parent brand, each with its own colours. We built a single Word Master Template with a suite of discipline colour themes, so sub-templates pick up the right brand colours across covers, styles, numbering and tables. We also added more than 30 brand colours beyond Word's standard colour theme and trained the client's team to manage the templates.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/theme-swap-sample.webp",
+            imageAlt:
+              "Word colour themes for each discipline of a national sporting organisation",
+          },
+        ]}
+      />
       <FAQSection faqs={faqs} />
       <Contact />
     </>

@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import Contact from "../../../components/Contact";
+import RelatedLinks from "../../../components/RelatedLinks";
 
 import styles from "../../../styles/blogPost.module.scss";
 
@@ -16,7 +17,26 @@ import computer from "../../../public/blog/computer.webp";
 import books from "../../../public/blog/books.webp";
 import Link from "next/link";
 
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+  generateWebSiteSchema,
+} from "../../../utils/schemaGenerators";
+
 const LegalTemplatesBlogPost = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      generateOrganizationSchema(),
+      generateProfessionalServiceSchema(),
+      generateWebSiteSchema(
+        "https://www.wordexperts.com.au",
+        "Word Experts",
+        "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+      ),
+    ],
+  };
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -102,6 +122,10 @@ const LegalTemplatesBlogPost = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <div className={styles.head}></div>
       <div className={styles.blogContainer}>
@@ -750,6 +774,36 @@ const LegalTemplatesBlogPost = () => {
           </div>
         </div>
       </div>
+      <RelatedLinks
+        theme="dark"
+        eyebrow="See it in practice"
+        heading="Word Experts projects with legal firms around Australia"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/legal-firm-template-suite-formatting-tab",
+            linkText: "View the locked-down formatting",
+            title:
+              "Locking a law firm's style guide into templates staff couldn't quietly override",
+            description:
+              "Staff at a legal firm were editing documents to suit their own preferences rather than following the firm's style guide. We built a full document suite around the guide, built the firm's legal numbering lists into the templates, and added our custom Formatting tab for one-click access to them while locking down formatting controls.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/legal-firm-template-formatting-tabLg.png",
+            imageAlt:
+              "Word template suite and Formatting tab built around a legal firm's style guide",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/legal-firm-word-training-workshop",
+            linkText: "Explore the workshop content",
+            title:
+              "Turning a 90-minute Word training session into fewer formatting headaches across the firm",
+            description:
+              "A legal firm wanted stronger Word skills but was really facing inconsistent formatting, numbering issues in long documents and copy-and-paste problems. We delivered a live 90-minute Microsoft Teams session to around 29 legal professionals, built around the firm's own documents and covering Styles, multilevel numbering, Track Changes and PDF conversion.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/legal-firm-word-training-workshopLg.png",
+            imageAlt: "Live Word training session for a legal firm",
+          },
+        ]}
+      />
       <Contact />
     </>
   );

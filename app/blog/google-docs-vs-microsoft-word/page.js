@@ -11,8 +11,25 @@ import docs from "../../../public/blog/google-docs-or-word.webp";
 import docsGrow from "../../../public/blog/document-growth.webp";
 import wordEcosystem from "../../../public/blog/word-ecosystem.webp";
 
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+  generateWebSiteSchema,
+} from "../../../utils/schemaGenerators";
 const GoogleDocsVsWordBlogPost = () => {
-  // Main BlogPosting Schema
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      generateOrganizationSchema(),
+      generateProfessionalServiceSchema(),
+      generateWebSiteSchema(
+        "https://www.wordexperts.com.au",
+        "Word Experts",
+        "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+      ),
+    ],
+  };
+
   const blogPostingSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -291,6 +308,7 @@ const GoogleDocsVsWordBlogPost = () => {
       breadcrumbSchema,
       organizationSchema,
       webPageSchema,
+      schema,
     ],
   };
 

@@ -14,7 +14,25 @@ import windowsOrMac from "../../../public/blog/word-mac/windows-or-mac.webp";
 import questionMark from "../../../public/blog/word-mac/question-mark.webp";
 import money from "../../../public/blog/word-mac/money.webp";
 
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+  generateWebSiteSchema,
+} from "../../../utils/schemaGenerators";
 const WordForMacBlogPost = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      generateOrganizationSchema(),
+      generateProfessionalServiceSchema(),
+      generateWebSiteSchema(
+        "https://www.wordexperts.com.au",
+        "Word Experts",
+        "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+      ),
+    ],
+  };
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -101,6 +119,10 @@ const WordForMacBlogPost = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <div className={styles.head}></div>
       <div className={styles.blogContainer}>

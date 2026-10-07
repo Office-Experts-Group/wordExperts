@@ -43,6 +43,9 @@ const nextConfig = {
   swcMinify: true,
 
   images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "www.officeexperts.com.au" },
+    ],
     formats: ["image/webp"],
     minimumCacheTTL: 31536000,
   },

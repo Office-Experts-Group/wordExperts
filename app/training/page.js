@@ -12,7 +12,7 @@ const TrainingSkills = dynamic(() => import("./(components)/TrainingSkills"));
 const TrainingEfficiency = dynamic(
   () => import("./(components)/TrainingEfficiency"),
 );
-const TrainingSupport = dynamic(() => import("./(components)/TrainingSupport"));
+const RelatedLinks = dynamic(() => import("../../components/RelatedLinks"));
 const Contact = dynamic(() => import("../../components/Contact"));
 
 import training from "../../public/pageHeros/training.webp";
@@ -97,6 +97,36 @@ const Page = () => {
       <TrainingAssistance />
       <TrainingSkills />
       <TrainingEfficiency />
+      <RelatedLinks
+        theme="dark"
+        eyebrow="Case Studies"
+        heading="Word training and handover projects with past clients"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/legal-firm-word-training-workshop",
+            linkText: "See the training session",
+            title:
+              "Turning a 90-minute Word training session into fewer formatting headaches across the firm",
+            description:
+              "A legal firm wanted stronger Word skills but was really facing inconsistent formatting, numbering issues in long documents and copy-and-paste problems. We delivered a live 90-minute Microsoft Teams session to around 29 legal professionals, built around the firm's own documents and covering Styles, multilevel numbering, Track Changes and PDF conversion.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/legal-firm-word-training-workshopLg.png",
+            imageAlt: "Live Word training session for a legal firm",
+          },
+          {
+            href: "https://www.officeexperts.com.au/case-studies/government-health-department-editable-pdf-forms",
+            linkText: "View the fillable form project",
+            title:
+              "Turning brand templates into editable PDF forms staff can fill in and maintain",
+            description:
+              "A state government health department needed two internal forms on the same branded foundation as its other documents. We built both forms into its existing master template, converted them to editable PDFs using Adobe Acrobat Pro, and trained the client's team to make minor content changes themselves.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/government-health-editable-pdf-formsLg.png",
+            imageAlt:
+              "Editable PDF forms built on a state government health department master template",
+          },
+        ]}
+      />
       <Contact />
     </>
   );

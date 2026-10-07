@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Contact from "../../../components/Contact";
+import RelatedLinks from "../../../components/RelatedLinks";
 
 import styles from "../../../styles/blogPost.module.scss";
 
@@ -15,7 +16,26 @@ import director from "../../../public/blog/director.webp";
 import pitfall from "../../../public/blog/pitfall.webp";
 import waste from "../../../public/blog/waste.webp";
 
+import {
+  generateProfessionalServiceSchema,
+  generateOrganizationSchema,
+  generateWebSiteSchema,
+} from "../../../utils/schemaGenerators";
+
 const FieldsRepeatingDataBlogPost = () => {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      generateOrganizationSchema(),
+      generateProfessionalServiceSchema(),
+      generateWebSiteSchema(
+        "https://www.wordexperts.com.au",
+        "Word Experts",
+        "Australia-wide Microsoft Word Design, Development and Consulting Experts",
+      ),
+    ],
+  };
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -104,6 +124,10 @@ const FieldsRepeatingDataBlogPost = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <div className={styles.head}></div>
       <div className={styles.blogContainer}>
         <div className={styles.preface}>
@@ -171,10 +195,8 @@ const FieldsRepeatingDataBlogPost = () => {
             <p>
               According to IDC research, employees spend nearly{" "}
               <strong>30% of their time simply searching for documents</strong>.
-              When you combine this with the manual re-entry of data across
-              <Link href={"../../fill-in-forms"}>
-                forms, contracts, and reports
-              </Link>
+              When you combine this with the manual re-entry of data across{" "}
+              <Link href={"/fill-in-forms"}>forms, contracts, and reports</Link>
               , the inefficiency quickly compounds.
             </p>
             <p>
@@ -602,6 +624,25 @@ const FieldsRepeatingDataBlogPost = () => {
           </div>
         </div>
       </div>
+      <RelatedLinks
+        theme="dark"
+        eyebrow="See it in practice"
+        heading="Word document builder projects we've delivered"
+        links={[
+          {
+            href: "https://www.officeexperts.com.au/case-studies/financial-planning-word-document-builder",
+            linkText: "See the document builder",
+            title:
+              "Building each financial planning report from a pop-up form and a library of ready-made headings",
+            description:
+              "A financial planning client's reports combine free text with a large library of headings and content in three tiers. We built a Word document builder with a pop-up form for choosing only the items needed, automatic parent headings, custom Heading 3 items that format themselves, and a background library the Administrator maintains and rolls out to staff templates.",
+            image:
+              "https://www.officeexperts.com.au/case-studies/financial-planning-word-document-builder-libraryLg.webp",
+            imageAlt:
+              "Word document builder with a pop-up form and heading library for financial planning reports",
+          },
+        ]}
+      />
       <Contact />
     </>
   );
