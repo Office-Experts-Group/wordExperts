@@ -18,7 +18,7 @@ const REDIRECTS = [
   },
   {
     source: "/vba-and-macro-development/",
-    destination: "https://www.excelexperts.com.au/vba-and-macro-development",
+    destination: "https://www.excelexperts.com.au/vba-macro-development",
     permanent: true,
   },
   {
