@@ -401,7 +401,7 @@ export const oldNavigationData = {
         items: [
           {
             label: "Office 365",
-            href: `/services/microsoft-office-365`,
+            href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365`,
           },
           {
             label: "SharePoint",
@@ -409,31 +409,31 @@ export const oldNavigationData = {
           },
           {
             label: "Business Process Automation",
-            href: `/services/microsoft-office-365/business-process-automation`,
+            href: `${OFFICE_EXPERTS_URL}/services/microsoft-office-365/business-process-automation`,
           },
           {
             label: "Azure Cloud Solutions",
-            href: `/services/by-business-solution/cloud-based-solutions-with-azure`,
+            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/cloud-based-solutions-with-azure`,
           },
           {
             label: "SQL Server",
-            href: `/services/by-business-solution/sql-server-and-access-integration`,
+            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/sql-server-and-access-integration`,
           },
           {
             label: "PowerPoint",
-            href: `/services/microsoft-powerpoint`,
+            href: `${OFFICE_EXPERTS_URL}/services/microsoft-powerpoint`,
           },
           {
             label: ".NET",
-            href: `/services/microsoft-dot-net`,
+            href: `${OFFICE_EXPERTS_URL}/services/microsoft-dot-net`,
           },
           {
             label: "Outlook",
-            href: `/services/by-business-solution/custom-office-solutions`,
+            href: `${OFFICE_EXPERTS_URL}/services/by-business-solution/custom-office-solutions`,
           },
           {
             label: "Publisher",
-            href: `/services/microsoft-publisher`,
+            href: `${OFFICE_EXPERTS_URL}/services/microsoft-publisher`,
           },
         ],
       },
