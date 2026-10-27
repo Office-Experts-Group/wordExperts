@@ -47,7 +47,7 @@ const skills = [
         Go beyond the basics with tools that cut repetitive work. From{" "}
         <Link href="/mail-merge">mail merge</Link> and automated numbering to
         introductory{" "}
-        <a href="https://www.officeexperts.com.au/services/by-business-solution/vba-macro-development">
+        <a href="https://www.officeexperts.com.au/services/vba-macro-development">
           VBA and macros
         </a>
         , we help staff streamline tasks and recover hours each week.

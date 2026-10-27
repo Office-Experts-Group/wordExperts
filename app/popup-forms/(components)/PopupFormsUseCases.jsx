@@ -53,7 +53,7 @@ const scenarios = [
     capability:
       "Structured popup forms with required fields and dropdown answers make internal paperwork consistent and searchable, and can write directly into a tracking spreadsheet or database at the same time.",
     tag: "Internal process",
-    href: "/services/by-business-solution/custom-office-solutions",
+    href: "/services/custom-office-solutions",
   },
   {
     id: "repeating-data",
@@ -69,7 +69,13 @@ const scenarios = [
 
 // ── Small arrow icon ──────────────────────────────────────────────────────────
 const ArrowRight = () => (
-  <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+  <svg
+    width="13"
+    height="13"
+    viewBox="0 0 14 14"
+    fill="none"
+    aria-hidden="true"
+  >
     <path
       d="M3 7h8M7 3l4 4-4 4"
       stroke="currentColor"
@@ -105,7 +111,12 @@ const PopupFormsUseCases = () => (
     {/* ── Scenario grid ── */}
     <div className={styles.grid}>
       {scenarios.map((s, i) => (
-        <AnimateOnScroll key={s.id} animation="fade-up" duration={0.5} delay={i * 0.07}>
+        <AnimateOnScroll
+          key={s.id}
+          animation="fade-up"
+          duration={0.5}
+          delay={i * 0.07}
+        >
           <article className={styles.card}>
             <div className={styles.cardHeader}>
               <span className={styles.cardTag}>{s.tag}</span>
@@ -116,15 +127,18 @@ const PopupFormsUseCases = () => (
 
             <div className={styles.block}>
               <span className={styles.blockLabel}>
-                <span className={styles.labelDot} aria-hidden="true" />
-                A common challenge
+                <span className={styles.labelDot} aria-hidden="true" />A common
+                challenge
               </span>
               <p className={styles.blockText}>{s.challenge}</p>
             </div>
 
             <div className={`${styles.block} ${styles.blockSolution}`}>
               <span className={styles.blockLabel}>
-                <span className={`${styles.labelDot} ${styles.labelDotAccent}`} aria-hidden="true" />
+                <span
+                  className={`${styles.labelDot} ${styles.labelDotAccent}`}
+                  aria-hidden="true"
+                />
                 How we can help
               </span>
               <p className={styles.blockText}>{s.capability}</p>

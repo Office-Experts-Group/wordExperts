@@ -145,19 +145,19 @@ const FooterServicesSection = () => {
           <div className={styles.dropdownContent}>
             <Link
               rel="nofollow noopener noreferrer"
-              href="https://www.officeexperts.com.au/services/by-business-solution/cloud-based-solutions-with-azure"
+              href="https://www.officeexperts.com.au/services/cloud-based-solutions-with-azure"
             >
               Microsoft Azure
             </Link>
             <Link
               rel="nofollow noopener noreferrer"
-              href="https://www.officeexperts.com.au/services/by-business-solution/sql-server-and-access-integration"
+              href="https://www.officeexperts.com.au/services/sql-server-and-access-integration"
             >
               Microsoft SQL Server
             </Link>
             <Link
               rel="nofollow noopener noreferrer"
-              href="https://www.officeexperts.com.au/services/by-business-solution/online-solutions"
+              href="https://www.officeexperts.com.au/services/online-solutions"
             >
               Microsoft SharePoint
             </Link>
@@ -169,7 +169,7 @@ const FooterServicesSection = () => {
             </Link>
             <Link
               rel="nofollow noopener noreferrer"
-              href="https://www.officeexperts.com.au/services/by-business-solution/custom-office-solutions"
+              href="https://www.officeexperts.com.au/services/custom-office-solutions"
             >
               Microsoft Outlook
             </Link>

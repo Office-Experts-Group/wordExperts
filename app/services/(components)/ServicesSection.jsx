@@ -43,7 +43,7 @@ const ServicesSection = () => {
           text: "Automation Services",
         },
         {
-          href: "https://www.officeexperts.com.au/services/by-business-solution/vba-macro-development",
+          href: "https://www.officeexperts.com.au/services/vba-macro-development",
           text: "VBA Development",
         },
       ],

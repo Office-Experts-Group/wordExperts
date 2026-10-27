@@ -37,7 +37,7 @@ const solutionsData = [
   },
   {
     title: "VBA & Macro Development",
-    link: "https://www.officeexperts.com.au/services/by-business-solution/vba-macro-development",
+    link: "https://www.officeexperts.com.au/services/vba-macro-development",
     Icon: CodeIcon,
     description: [
       "Automate repetitive tasks such as importing, exporting, formatting and processing data. We develop Word VBA solutions that work with CSV, XML, SQL, JSON and many other data sources.",
@@ -93,7 +93,7 @@ const solutionsData = [
   },
   {
     title: "Online Solutions",
-    link: "https://www.officeexperts.com.au/services/by-business-solution/online-solutions",
+    link: "https://www.officeexperts.com.au/services/online-solutions",
     Icon: CloudIcon,
     description: [
       "Need your Word documents connected to a database or available online? We can integrate Word with Microsoft 365, SharePoint and other online systems.",
