@@ -1,37 +1,7 @@
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
-const REDIRECTS = [
-  {
-    source: "/https/officeexperts.com.au",
-    destination: "https://www.officeexperts.com.au",
-    permanent: true,
-  },
-  {
-    source: "/home/",
-    destination: "https://www.wordexperts.com.au",
-    permanent: true,
-  },
-  {
-    source: "/convert-canva-to-word",
-    destination: "https://www.wordexperts.com.au/blog/convert-canva-to-word",
-    permanent: true,
-  },
-  {
-    source: "/vba-and-macro-development/",
-    destination: "https://www.excelexperts.com.au/vba-macro-development",
-    permanent: true,
-  },
-  {
-    source: "/privacy-policy/",
-    destination: "https://www.officeexperts.com.au/privacy-policy",
-    permanent: true,
-  },
-  {
-    source: "/reference-request-form/",
-    destination: "https://www.wordexperts.com.au/contact-us/request-a-quote",
-    permanent: true,
-  },
-];
+// Every redirect for this site lives in ./redirects (index.js collects them)
+const REDIRECTS = require("./redirects");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
