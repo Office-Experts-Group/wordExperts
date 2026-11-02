@@ -1,23 +1,20 @@
 // redirects/index.js
 // Collects every redirect for next.config.js.
-// Next.js uses the first rule that matches, so keep specific rules above the catch-all.
+// Next.js uses the first rule that matches.
 // All files in this folder are CommonJS (module.exports / require) because next.config.js loads them directly.
-const { permanent } = require("./helpers.js");
+//
+// There is deliberately NO catch-all rule. A URL with no rule here must return 404 (or 410),
+// never a redirect to the Word hub or the home page: Google treats mass redirects of unrelated
+// URLs to one page as soft 404s. robots.txt and the sitemaps are not redirected, so they keep
+// working on the old domain while Google recrawls it.
 const pageRedirects = require("./pageRedirects.js");
 const locationRedirects = require("./locationRedirects.js");
 const blogRedirects = require("./blogRedirects.js");
-
-// Anything not mapped above goes to the Word hub, never the home page (migration plan, section 10.2).
-// The negative lookahead leaves Next.js internals and the files search engines fetch directly alone,
-// so robots.txt and the sitemaps keep working on the old domain while Google recrawls it.
-const catchAll = permanent(
-  "/:path((?!_next/|robots\\.txt|sitemap\\.xml|video-sitemap\\.xml).*)",
-  "/services/microsoft-word",
-);
+const legacyRedirects = require("./legacyRedirects.js");
 
 module.exports = [
   ...pageRedirects,
   ...locationRedirects,
   ...blogRedirects,
-  catchAll,
+  ...legacyRedirects,
 ];
