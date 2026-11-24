@@ -81,8 +81,11 @@ export function middleware(request) {
       "https://pagead2.googlesyndication.com " +
       "https://www.googleadservices.com " +
       "https://www.google.com " +
+      "https://www.google.com.au " +
       "https://google.com " +
-      "https://googleads.g.doubleclick.net;"
+      "https://googleads.g.doubleclick.net;" +
+      "seo.gurulytics.app" +
+      "*.clarity.ms",
   );
 
   // Handle Next.js system paths
